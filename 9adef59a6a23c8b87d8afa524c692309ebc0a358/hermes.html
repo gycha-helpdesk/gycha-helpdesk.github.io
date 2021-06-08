@@ -1,0 +1,425 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hermes II &#8212; Documentation Technique Chamblandes</title>
+    
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Section MachineVirtuelle" href="MachineVirtuelle.html" />
+    <link rel="prev" title="Identifiants et mots de passe" href="mdp.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/logoCh.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Documentation Technique Chamblandes</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="current nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="Jamf.html">
+   Section Jamf
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfAddPrinter.html">
+     Comment créé une règle pour ajouter une imprimante sur Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfAddRegle.html">
+     Tuto pour ajouter des règles sur Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfRechercheAvance.html">
+     Recherche avancé
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfUpdateApplication.html">
+     Mise à jour des applications dans Jamf
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="Utile.html">
+   Section Utile
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="mdp.html">
+     Identifiants et mots de passe
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mdp.html#connectez-vous">
+     Connectez-vous
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Hermes II
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="MachineVirtuelle.html">
+   Section MachineVirtuelle
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="WMwareFusion.html">
+     VMWare  fusion  comment crée une machine virtuelle de base
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="Enroller.html">
+   Section Enroller
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="EnrollJamf.html">
+     Comment enroller un post dans Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Enrollipad.html">
+     Comment enroller un Ipad dans Jamf
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="ServeurReseau.html">
+   Section Réseau
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="ad.html">
+     Active Directory de la DGEP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="config-switch.html">
+     Configurer un switch Netgear GS108T
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Programmation.html">
+   Section Programmation
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/hermes.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#connexion">
+   Connexion
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#horaires">
+   Horaires
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#annuaire">
+   Annuaire
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aide">
+   Aide
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="hermes-ii">
+<h1>Hermes II<a class="headerlink" href="#hermes-ii" title="Permalink to this headline">¶</a></h1>
+<p>Hermes II est un outil qui vous sera fourni et qui vous permettra de rechercher des informations concernant les élèves, maîtres et classes du gymnase.</p>
+<p>Hermes ne pourra être accédé uniquement à partir du réseau du gymnase. Son adresse est la suivante:</p>
+<p><a class="reference external" href="https://www3.gycham.vd.ch/gymnase/login/">https://www3.gycham.vd.ch/gymnase/login/</a></p>
+<hr class="docutils" />
+<div class="section" id="connexion">
+<h2>Connexion<a class="headerlink" href="#connexion" title="Permalink to this headline">¶</a></h2>
+<p>Une fois que vous êtes sur le site, vous devriez voir le formulaire suivant:</p>
+<a class="reference internal image-reference" href="_images/connexion_hermes.png" id="connexion-hermes"><img alt="_images/connexion_hermes.png" class="align-center" id="connexion-hermes" src="_images/connexion_hermes.png" style="width: 500px;" /></a>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Si le formulaire ressemble plutôt à ceci:</p>
+<p>{image} images/fausse_connexion_hermes.png
+:width: 500px
+:name: fausse_connexion_hermes
+:align: center</p>
+<p>C’est que vous êtes bien sur le site d’Hermes, mais à l’adresse: <a class="reference external" href="https://www3.gycham.vd.ch/login/?next=/">https://www3.gycham.vd.ch/login/?next=/</a></p>
+<p>Et non: <a class="reference external" href="https://www3.gycham.vd.ch/gymnase/login/">https://www3.gycham.vd.ch/gymnase/login/</a></p>
+<p>Parfois, le raccourci ne marche pas et vous redirige à la mauvaise adresse.</p>
+</div>
+<p>Ensuite, rentrez votre identifiant et mot de passe de votre compte qui est dans l’AD. Sélectionnez, comme sur l’image ci-dessus, le champ <em>Service</em> pour la première combobox et <em>Gymnase de Chamblandes</em> pour la deuxième. Il suffit après cela d’appuyer sur le bouton <em>Connexion</em>.</p>
+<p>Vous devriez ensuite vous trouver sur une page qui ressemble à ceci:</p>
+<a class="reference internal image-reference" href="_images/accueil_hermes.png" id="accueil-hermes"><img alt="_images/accueil_hermes.png" class="align-center" id="accueil-hermes" src="_images/accueil_hermes.png" style="width: 500px;" /></a>
+</div>
+<hr class="docutils" />
+<div class="section" id="horaires">
+<h2>Horaires<a class="headerlink" href="#horaires" title="Permalink to this headline">¶</a></h2>
+<p>Vous pouvez ensuite consulter les horaires des élèves, maîtres et salles du Gymnase.</p>
+<p>Après avoir cliqué sur <em>Horaires</em>, vous devriez voir le formulaire ci dessous:</p>
+<a class="reference internal image-reference" href="_images/recherche_horaire_hermes.png" id="recherche-horaire-hermes"><img alt="_images/recherche_horaire_hermes.png" class="align-center" id="recherche-horaire-hermes" src="_images/recherche_horaire_hermes.png" style="width: 500px;" /></a>
+<p>Mettez dans le champ <em>Recherche</em> l’élève, maître ou salle que vous recherchez, par exemple comme ceci:¨</p>
+<a class="reference internal image-reference" href="_images/recherche_horaire_2_hermes.png" id="recherche-horaire-2-hermes"><img alt="_images/recherche_horaire_2_hermes.png" class="align-center" id="recherche-horaire-2-hermes" src="_images/recherche_horaire_2_hermes.png" style="width: 500px;" /></a>
+<p>Il est aussi possible de choisir un semestre ou une semaine spécifique.</p>
+<p>Si vous appuyez sur <em>Afficher</em>, vous devriez voir un horaire qui s’est généré, comme suit:</p>
+<a class="reference internal image-reference" href="_images/horaire_hermes.png" id="horaire-hermes"><img alt="_images/horaire_hermes.png" class="align-center" id="horaire-hermes" src="_images/horaire_hermes.png" style="width: 500px;" /></a>
+<p>Sur cet horaire, vous pouvez retrouver des informations telles que quelle matière est enseignée, qui est l’enseignant qui donne le cours ou encore quelle est la classe qui assiste au cours.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Il est possible d’afficher plusieurs horaires en une fois et les informations seront superposées et triées par couleurs.</p>
+</div>
+<p>Vous pouvez cliquer sur l’abbréviation d’un maître (Cy pour <strong>C</strong>hame<strong>y</strong> Claudine par exemple) pour avoir plus d’informations à son sujet:</p>
+<a class="reference internal image-reference" href="_images/infos_maitre_hermes.png" id="infos-maitre-hermes"><img alt="_images/infos_maitre_hermes.png" class="align-center" id="infos-maitre-hermes" src="_images/infos_maitre_hermes.png" style="width: 500px;" /></a>
+<p>Toutes les abbréviations des enseignants sont détaillées en bas de l’horaire:</p>
+<a class="reference internal image-reference" href="_images/abb_maitre_hermes.png" id="abb-maitre-hermes"><img alt="_images/abb_maitre_hermes.png" class="align-center" id="abb-maitre-hermes" src="_images/abb_maitre_hermes.png" style="width: 500px;" /></a>
+<p>Vous pouvez également cliquer sur les petites loupes dans les différentes cases pour afficher quelles salles sont libres à la période donnée:</p>
+<a class="reference internal image-reference" href="_images/salles_libres_hermes.png" id="salles-libres-hermes"><img alt="_images/salles_libres_hermes.png" class="align-center" id="salles-libres-hermes" src="_images/salles_libres_hermes.png" style="width: 500px;" /></a>
+</div>
+<hr class="docutils" />
+<div class="section" id="annuaire">
+<h2>Annuaire<a class="headerlink" href="#annuaire" title="Permalink to this headline">¶</a></h2>
+<p>L’annuaire permet de voir des informations sur les élèves et les enseignants, ainsi que de voir la liste des élèves par classe et la liste des maîtres par file.</p>
+<p>Après avoir cliqué sur <em>Annuaire</em>, mettez le nom du maître, de l’élève, de la classe ou encore de la file sur lequel vous voulez avoir plus d’informations dans le champ <em>Recherche</em>, comme suit:</p>
+<a class="reference internal image-reference" href="_images/infos_eleve_recherche_hermes.png" id="infos-eleve-recherche-hermes"><img alt="_images/infos_eleve_recherche_hermes.png" class="align-center" id="infos-eleve-recherche-hermes" src="_images/infos_eleve_recherche_hermes.png" style="width: 500px;" /></a>
+<p>Le bouton <em>Afficher</em> va montrer la photo du Gymnase de l’élève ainsi que sa date de naissance, sa classe, son maître conseiller et son doyen:</p>
+<a class="reference internal image-reference" href="_images/infos_eleve_hermes.png" id="infos-eleve-hermes"><img alt="_images/infos_eleve_hermes.png" class="align-center" id="infos-eleve-hermes" src="_images/infos_eleve_hermes.png" style="width: 500px;" /></a>
+</div>
+<hr class="docutils" />
+<div class="section" id="aide">
+<h2>Aide<a class="headerlink" href="#aide" title="Permalink to this headline">¶</a></h2>
+<p>L’aide d’Hermes est présente sous la forme d’une F.A.Q avec plusieurs liens qui vous expliquent comment faire les choses, si vous en avez les droits.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="mdp.html" title="previous page">Identifiants et mots de passe</a>
+    <a class='right-next' id="next-link" href="MachineVirtuelle.html" title="next page">Section MachineVirtuelle</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Jupyter Book community<br/>
+        
+            &copy; Copyright 2020.<br/>
+          <div class="extra_footer">
+            <p>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+</a>
+<br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+</a>.
+</p>
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
