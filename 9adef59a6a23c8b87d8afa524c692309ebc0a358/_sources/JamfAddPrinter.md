@@ -29,17 +29,11 @@ Mettez l'imprimante que vous voulez pour le retrouver dans Jamf.
 :align: center
 ```
 
-## Début de la marche à suivre :
+Maintenant ouvrez un navigateur et allez sur le Dashboard de Jamf.
 
-Tout d'abord ouvrez un navigateur et notez https://10.225.232.161:8443/ dans l'URL.
-
-| Identifiant | Mot de passe |
-|-------------|--------------|
-|Gychameta|Gym_09|
-
-```{image} images/login-jamf.png
+```{image} images/Dashboard-jamf.png
 :width: 500px
-:name: log
+:name: dashboard
 :align: center
 ```
 
