@@ -1,14 +1,14 @@
 # Configurer un switch Netgear GS108T
 
-Pour commencer, branchez le switch au courant et attendez que tous les témoins lumineux au dessus des ports ethernet s'eteignent.
+Pour commencer, branchez le switch au courant et attendez que tous les témoins lumineux au-dessus des ports Ethernet s'éteignent.
 
-Si au cours de ce guide vous faites une erreur qui aurait pour effet de vous déconnecter du switch et que vous ne pouvez ensuite plus y accéder, il est toujours possible de réinitialiser ce dernier en appuyant sur le bouton *Factory Defaults* (petit trou à la droite droite du switch). Vous devrez alors tout reprendre depuis le départ.
+Si au cours de ce guide vous faites une erreur qui aurait pour effet de vous déconnecter du switch et que vous ne pouvez ensuite plus y accéder, il est toujours possible de réinitialiser ce dernier en appuyant sur le bouton *Factory Defaults* (petit trou à la droite du switch). Vous devrez alors tout reprendre depuis le départ.
 
 ---
 
 ## Accès au switch
 
-Désactivez tout d'abord votre wifi si il est actif.
+Désactivez tout d'abord votre wifi s’il est actif.
 
 Branchez ensuite un câble ethernet depuis le port "1" du switch (celui qui est en jaune) jusqu'à votre ordinateur.
 
@@ -33,9 +33,9 @@ Configurez le réseau ethernet comme sur l'image ci-dessus.
 
 Appuyez ensuite sur *Appliquer*.
 
-Ouvrez ensuite un navigateur et tapez l'adresse IP du switch dans la barre de recherche. Par défaut cette adresse est: 192.168.0.239.
+Ouvrez ensuite un navigateur et tapez l'adresse IP du switch dans la barre de recherche. Par défaut cette adresse est : 192.168.0.239.
 
-Vous devriez tomber sur la page suivante:
+Vous devriez tomber sur la page suivante :
 
 ```{image} images/connexion.png
 :width: 500px
@@ -43,9 +43,9 @@ Vous devriez tomber sur la page suivante:
 :align: center
 ```
 
-Le mot de passe par défaut de ce modèle est: *password*.
+Le mot de passe par défaut de ce modèle est : *password*.
 
-Si vous tombez sur la page suivante, c'est que tout fonctionne:
+Si vous tombez sur la page suivante, c'est que tout fonctionne :
 ```{image} images/home.png
 :width: 500px
 :name: home
@@ -137,7 +137,7 @@ Dans cet exemple, le premier port *tag* (*tagged* → T) le VLAN et les ports 5,
 Ainsi, vous pouvez configurer quels VLAN passera dans quel port. De manière générale, tous les VLAN seront en *tagged* dans le premier port et en *untagged* dans les ports spécifiques dans lesquels ils passeront.
 
 ### Exemple de configuration VLAN Membership
-Dans cet exemple, les ports 2 à 4 donnent du VLAN 40, les ports 5 à 7 du VLAN 48 et le port 8 du VLAN 38. Comme dis précedemment, tous les VLAN sont donnés par le premier port, en *tagged*, contrairement aux autres ports ou le VLAN est en *untagged*.
+Dans cet exemple, les ports 2 à 4 donnent du VLAN 40, les ports 5 à 7 du VLAN 48 et le port 8 du VLAN 38. Comme dis précédemment, tous les VLAN sont donnés par le premier port, en *tagged*, contrairement aux autres ports ou le VLAN est en *untagged*.
 
 | VLAN ID | Name↓ Ports→ | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
 |:-------:|-------------:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -160,9 +160,9 @@ Dans cet exemple, seul le VLAN 40 est donné par tous les ports.
 
 ## Port PVID Configuration
 
-Ensuite, dans Port PVID Configuration, il est question de définir quels VLAN passera part quel port. Cette étape peut ressembler à l'étape précédente mais elle est toutefois nécessaire.
+Ensuite, dans Port PVID Configuration, il est question de définir quels VLAN passera part quel port. Cette étape peut ressembler à l'étape précédente, mais elle est toutefois nécessaire.
 
-Allez tout d'abord dans Port PVID Configuration:
+Allez tout d'abord dans Port PVID Configuration :
 
 ```{image} images/go_port_pvid.png
 :width: 500px
@@ -186,7 +186,7 @@ Il est possible de modifier plusieures lignes en une fois.
 
 Faites bien attention à garder la 1ère ligne avec le PVID 1, et à ne pas mettre le PVID 32.
 
-Le résultat final pourrait ressembler à cela:
+Le résultat final pourrait ressembler à cela :
 
 ```{image} images/port_pvid_final.png
 :width: 500px
@@ -198,7 +198,7 @@ Le résultat final pourrait ressembler à cela:
 
 Enfin, la dernière chose qu'il reste à faire est de configurer l'adresse IP finale du switch, son masque de sous-réseau, son gateway ainsi que son port de management.
 
-Pour ce faire, allez dans l'onglet System, puis IP Configuration:
+Pour ce faire, allez dans l'onglet System, puis IP Configuration :
 
 ```{image} images/go_ip_config.png
 :width: 500px
@@ -210,7 +210,7 @@ Pour ce faire, allez dans l'onglet System, puis IP Configuration:
 
 Changez la configuration de *Dynamic IP Adress* à *Static IP Adress*.
 
-Complétez ensuite le formulaire, l'image suivante est un exemple correct:
+Complétez ensuite le formulaire, l'image suivante est un exemple correct :
 
 ```{image} images/ip_config_final.png
 :width: 500px

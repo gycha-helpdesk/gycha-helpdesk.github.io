@@ -1,14 +1,14 @@
-# Comment enroller un post dans Jamf
+# Comment enrôler un post dans Jamf
 
-il y a différen moyen d'enroller un poste:
+il y a différent moyen d'enrôler un poste :
 
-1. Se fait automatiquement des le moment de l'instalation (configuration du post du tout début)
+1. Ce fait automatiquement des le moment de l'installation (configuration du post du tout début)
 
 sinon
 
-2. Grace a un site web ( apres configuration)
+2. Grace a un site web (après configuration)
 
-je vais vous expliquez la deuxième méthode
+je vais vous expliquer la deuxième méthode
 
 ## Début
 
@@ -27,7 +27,7 @@ identifiant
 |-------------|--------------|
 |jamfenroll|DGEPEnroll2019|
 
-Après ne remplisser pas la premier ligne et indiquer juste dans quel gymnase vous êtes "GYCHA"
+Après ne remplissez pas la première ligne et indiquer juste dans quel gymnase vous êtes "GYCHA"
 
 ```{image} images/enrollename.png
 :width: 500px
@@ -35,10 +35,10 @@ Après ne remplisser pas la premier ligne et indiquer juste dans quel gymnase vo
 :align: center
 ```
 
-en suite cliquer et télécharger le premier profils 
+En suite cliquer et télécharger le premier profils 
 
 ATTENTIOOOOOOOOON
 
-Revenir sur la page et recliquer pour les profils restants
+Revenez sur la page et recliquez pour les profils restants
 
-Voila vous l'avez enroller.
+Voilà vous l'avez enrôler.

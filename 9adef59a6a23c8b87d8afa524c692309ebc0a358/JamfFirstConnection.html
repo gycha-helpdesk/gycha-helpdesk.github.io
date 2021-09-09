@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Section Jamf &#8212; Documentation Technique Chamblandes</title>
+    <title>Avant de commencer &#8212; Documentation Technique Chamblandes</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,8 +51,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Avant de commencer" href="JamfFirstConnection.html" />
-    <link rel="prev" title="Introduction" href="intro.html" />
+    <link rel="next" title="Comment créer une règle pour ajouter une imprimante sur Jamf" href="JamfAddPrinter.html" />
+    <link rel="prev" title="Section Jamf" href="Jamf.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -84,7 +84,7 @@
     <div class="bd-toc-item active">
         <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+  <a class="reference internal" href="Jamf.html">
    Section Jamf
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
@@ -92,9 +92,9 @@
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="JamfFirstConnection.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Avant de commencer
     </a>
    </li>
@@ -245,7 +245,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/Jamf.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/JamfFirstConnection.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -270,6 +270,36 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#description-jamf">
+   Description Jamf :
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#connexion-au-jamf-pro">
+   Connexion au Jamf Pro
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#identification">
+     Identification
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jamf-pro">
+     JamF Pro
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -278,9 +308,43 @@
         
               <div>
                 
-  <div class="section" id="section-jamf">
-<h1>Section Jamf<a class="headerlink" href="#section-jamf" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
+  <div class="section" id="avant-de-commencer">
+<h1>Avant de commencer<a class="headerlink" href="#avant-de-commencer" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="description-jamf">
+<h2>Description Jamf :<a class="headerlink" href="#description-jamf" title="Permalink to this headline">¶</a></h2>
+<p>C’est une application utilisée par les administrateurs système pour configurer et automatiser les tâches d’administration informatique pour les appareils macOS, iOS</p>
+</div>
+<div class="section" id="connexion-au-jamf-pro">
+<h2>Connexion au Jamf Pro<a class="headerlink" href="#connexion-au-jamf-pro" title="Permalink to this headline">¶</a></h2>
+<p>Pour accéder au Jamf Pro, vous allez passer par son appliance WEB
+<br/> -&gt; <a class="reference external" href="https://10.225.232.161:8443">https://10.225.232.161:8443</a></p>
+<div class="section" id="identification">
+<h3>Identification<a class="headerlink" href="#identification" title="Permalink to this headline">¶</a></h3>
+<p>JamF Pro vous demande de vous logger avec un compte utilisateur:</p>
+<a class="reference internal image-reference" href="_images/login-jamf.png" id="log"><img alt="_images/login-jamf.png" class="align-center" id="log" src="_images/login-jamf.png" style="width: 300px;" /></a>
+<br/>
+Identifiant pour un utilisateur JamF Pro:
+<br/>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Identifiant</p></th>
+<th class="text-align:center head"><p>Mot de passe</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>Gychameta</p></td>
+<td class="text-align:center"><p>Gym_09</p></td>
+</tr>
+</tbody>
+</table>
+<p>⚠ Identifiant pour un super utilisateur Jamf Pro se trouve dans PaswordState mais vous allez pas avoir besoin de vous connecter au JamF en tant que superuser.</p>
+</div>
+<div class="section" id="jamf-pro">
+<h3>JamF Pro<a class="headerlink" href="#jamf-pro" title="Permalink to this headline">¶</a></h3>
+<p>Après avoir se connecter au JamF Pro sans erreur. Vous aurez une interface qui resemble à ce que vous voyez dans la capture ci-dessous.</p>
+<a class="reference internal image-reference" href="_images/Dashboard-jamf.png" id="dashboard"><img alt="_images/Dashboard-jamf.png" class="align-center" id="dashboard" src="_images/Dashboard-jamf.png" style="width: 500px;" /></a>
+<br/>
+</div>
 </div>
 </div>
 
@@ -309,8 +373,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">Introduction</a>
-    <a class='right-next' id="next-link" href="JamfFirstConnection.html" title="next page">Avant de commencer</a>
+    <a class='left-prev' id="prev-link" href="Jamf.html" title="previous page">Section Jamf</a>
+    <a class='right-next' id="next-link" href="JamfAddPrinter.html" title="next page">Comment créer une règle pour ajouter une imprimante sur Jamf</a>
 
         </div>
         

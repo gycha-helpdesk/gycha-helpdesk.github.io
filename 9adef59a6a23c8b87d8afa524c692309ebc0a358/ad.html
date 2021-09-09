@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Active Directory de la DGEP &#8212; Documentation Technique Chamblandes</title>
     
-  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,14 +20,10 @@
 
     
       
-  <link rel="stylesheet"
-    href="_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -34,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
 
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -44,7 +41,7 @@
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -56,14 +53,14 @@
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Configurer un switch Netgear GS108T" href="config-switch.html" />
     <link rel="prev" title="Section Réseau" href="ServeurReseau.html" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-
-
-
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -72,28 +69,38 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="index.html">
-  
-  <img src="_static/logoCh.png" class="logo" alt="logo">
-  
-  
-  <h1 class="site-logo" id="site-title">Documentation Technique Chamblandes</h1>
-  
-</a>
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/logoCh.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Documentation Technique Chamblandes</h1>
+      
+    </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="current nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="Jamf.html">
    Section Jamf
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfFirstConnection.html">
+     Comment créer une règle pour ajouter une imprimante sur Jamf
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="JamfAddPrinter.html">
-     Comment créé une règle pour ajouter une imprimante sur Jamf
+     Comment créer une règle pour ajouter une imprimante sur Jamf
     </a>
    </li>
    <li class="toctree-l2">
@@ -112,22 +119,20 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="Utile.html">
    Section Utile
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="mdp.html">
      Identifiants et mots de passe
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="mdp.html#connectez-vous">
-     Connectez-vous
     </a>
    </li>
    <li class="toctree-l2">
@@ -136,31 +141,37 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="MachineVirtuelle.html">
    Section MachineVirtuelle
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="WMwareFusion.html">
      VMWare  fusion  comment crée une machine virtuelle de base
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="Enroller.html">
    Section Enroller
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="EnrollJamf.html">
-     Comment enroller un post dans Jamf
+     Comment enrôler un post dans Jamf
     </a>
    </li>
    <li class="toctree-l2">
@@ -169,14 +180,17 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 current active collapsible-parent">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="ServeurReseau.html">
    Section Réseau
   </a>
-  <ul class="current collapse-ul">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
      Active Directory de la DGEP
@@ -188,8 +202,6 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Programmation.html">
@@ -198,6 +210,7 @@
  </li>
 </ul>
 
+    </div>
 </nav> <!-- To handle the deprecated key -->
 
 </div>
@@ -209,21 +222,21 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="row topbar fixed-top container-xl">
-    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
-    </div>
-    <div class="col pl-2 topbar-main">
-        
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        
-        
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
@@ -241,27 +254,32 @@
     </div>
 </div>
 
-        <!-- Source interaction buttons -->
+            <!-- Source interaction buttons -->
 
+            <!-- Full screen (wrap in <a> to have style consistency -->
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                title="Fullscreen mode"><i
-                    class="fas fa-expand"></i></button></a>
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
-        <!-- Launch buttons -->
+            <!-- Launch buttons -->
 
-    </div>
-
-    <!-- Table of contents -->
-    <div class="d-none d-md-block col-md-2 bd-toc show">
-        
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> Contents
         </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tous-les-comptes-eduvaud-des-eleves-et-des-professeurs-sont-dans-une-active-directory-centralisee-l-acces-a-l-ad-est-utile-pour-rechercher-des-informations-sur-le-compte-de-quelqu-un-ainsi-que-pour-effectuer-des-manipulations-telles-que-reinitialiser-le-mot-de-passe-d-une-personne-par-exemple">
+   Tous les comptes Eduvaud des élèves et des professeurs sont dans une Active Directory centralisée. L’accès à l’AD est utile pour rechercher des informations sur le compte de quelqu’un ainsi que pour effectuer des manipulations telles que réinitialiser le mot de passe d’une personne par exemple.
+  </a>
+ </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#connexion">
    Connexion
@@ -289,8 +307,8 @@
  </li>
 </ul>
 
-        </nav>
-        
+            </nav>
+        </div>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -300,8 +318,9 @@
                 
   <div class="section" id="active-directory-de-la-dgep">
 <h1>Active Directory de la DGEP<a class="headerlink" href="#active-directory-de-la-dgep" title="Permalink to this headline">¶</a></h1>
-<p>Tous les comptes Eduvaud des élèves et des professeurs sont dans une Active Directory centralisée. L’accès à l’AD est utile pour rechercher des informations sur le compte de quelqu’un ainsi que pour effectuer des manipulations tels que réinitialiser le mot de passe d’une personne par exemple.</p>
-<hr class="docutils" />
+<div class="section" id="tous-les-comptes-eduvaud-des-eleves-et-des-professeurs-sont-dans-une-active-directory-centralisee-l-acces-a-l-ad-est-utile-pour-rechercher-des-informations-sur-le-compte-de-quelqu-un-ainsi-que-pour-effectuer-des-manipulations-telles-que-reinitialiser-le-mot-de-passe-d-une-personne-par-exemple">
+<h2>Tous les comptes Eduvaud des élèves et des professeurs sont dans une Active Directory centralisée. L’accès à l’AD est utile pour rechercher des informations sur le compte de quelqu’un ainsi que pour effectuer des manipulations telles que réinitialiser le mot de passe d’une personne par exemple.<a class="headerlink" href="#tous-les-comptes-eduvaud-des-eleves-et-des-professeurs-sont-dans-une-active-directory-centralisee-l-acces-a-l-ad-est-utile-pour-rechercher-des-informations-sur-le-compte-de-quelqu-un-ainsi-que-pour-effectuer-des-manipulations-telles-que-reinitialiser-le-mot-de-passe-d-une-personne-par-exemple" title="Permalink to this headline">¶</a></h2>
+</div>
 <div class="section" id="connexion">
 <h2>Connexion<a class="headerlink" href="#connexion" title="Permalink to this headline">¶</a></h2>
 <p>Que vous soyez connectés dans le réseau du Gymnase ou pas, la procédure d’accès à l’AD est similaire au début.</p>
@@ -309,14 +328,14 @@
 <a class="reference internal image-reference" href="_images/msrd_appstore_ad.png" id="msrd-appstore-ad"><img alt="_images/msrd_appstore_ad.png" class="align-center" id="msrd-appstore-ad" src="_images/msrd_appstore_ad.png" style="width: 500px;" /></a>
 <p>Ensuite, cliquez sur le petit “+” dans la barre d’outils, puis <em>Add PC</em>:</p>
 <a class="reference internal image-reference" href="_images/add_pc_ad.png" id="add-pc-ad"><img alt="_images/add_pc_ad.png" class="align-center" id="add-pc-ad" src="_images/add_pc_ad.png" style="width: 500px;" /></a>
-<a class="reference internal image-reference" href="_images/add_pc_2_ad.png" id="add-pc-ad2"><img alt="_images/add_pc_2_ad.png" class="align-center" id="add-pc-ad2" src="_images/add_pc_2_ad.png" style="width: 500px;" /></a>
-<p>Vous devriez voir le formulaire suivant:</p>
-<a class="reference internal image-reference" href="_images/formulaire_add_pc_empty_ad.png" id="addpcempty"><img alt="_images/formulaire_add_pc_empty_ad.png" class="align-center" id="addpcempty" src="_images/formulaire_add_pc_empty_ad.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/add_pc_2_ad.png" id="id1"><img alt="_images/add_pc_2_ad.png" class="align-center" id="id1" src="_images/add_pc_2_ad.png" style="width: 500px;" /></a>
+<p>Vous devriez voir le formulaire suivant :</p>
+<a class="reference internal image-reference" href="_images/formulaire_add_pc_empty_ad.png" id="addpc"><img alt="_images/formulaire_add_pc_empty_ad.png" class="align-center" id="addpc" src="_images/formulaire_add_pc_empty_ad.png" style="width: 500px;" /></a>
 </div>
 <div class="section" id="dans-le-reseau-du-gymnase">
 <h2>Dans le réseau du Gymnase<a class="headerlink" href="#dans-le-reseau-du-gymnase" title="Permalink to this headline">¶</a></h2>
 <p>À l’intérieur du réseau du Gymnase, il suffit d’ajouter un nouveau PC paramétré comme suit:</p>
-<a class="reference internal image-reference" href="_images/formulaire_add_pc_ad.png" id="addpc"><img alt="_images/formulaire_add_pc_ad.png" class="align-center" id="addpc" src="_images/formulaire_add_pc_ad.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/formulaire_add_pc_ad.png" id="id2"><img alt="_images/formulaire_add_pc_ad.png" class="align-center" id="id2" src="_images/formulaire_add_pc_ad.png" style="width: 500px;" /></a>
 <p>Pour le premier champ, <em>PC Name</em>, mettez l’adresse IP du serveur de la DGEP, <em>10.226.34.17</em>.</p>
 <p>Pour le deuxième champ, <em>User Account</em>, un compte doit être créé pour vous.</p>
 <p>Les autres champs peuvent être laissés par défaut.</p>
@@ -324,10 +343,10 @@
 <p class="admonition-title">Tip</p>
 <p>Je conseille de remplir le champ <em>Friendly name</em>, il vous permettra de retrouver l’ordinateur plus simplement plus tard.</p>
 </div>
-<p>Cliquez ensuite sur <em>Add</em> et vous devriez voir l’ordinateur suivant qui est apparu sur la page principale:</p>
+<p>Cliquez ensuite sur <em>Add</em> et vous devriez voir l’ordinateur suivant qui est apparu sur la page principale :</p>
 <a class="reference internal image-reference" href="_images/pc_created_ad.png" id="pccree"><img alt="_images/pc_created_ad.png" class="align-center" id="pccree" src="_images/pc_created_ad.png" style="width: 500px;" /></a>
 <p>Comme vous pouvez le voir, j’ai mis “Server AD” dans le champ <em>Friendly name</em> du formulaire.</p>
-<p>Finalement, double-cliquez sur le carré et une nouvelle fenêtre devrais s’ouvrir, vous demandant si vous voulez bien vous connecter au serveur:</p>
+<p>Finalement, double-cliquez sur le carré et une nouvelle fenêtre devrais s’ouvrir, vous demandant si vous voulez bien vous connecter au serveur :</p>
 <a class="reference internal image-reference" href="_images/connect_confirm_ad.png" id="confirmation"><img alt="_images/connect_confirm_ad.png" class="align-center" id="confirmation" src="_images/connect_confirm_ad.png" style="width: 500px;" /></a>
 <p>Cliquez sur <em>Continue</em>, et vous le serveur de la DGEP devrais s’ouvrir dans une nouvelle fenêtre.</p>
 <div class="admonition note">
@@ -339,52 +358,52 @@
 <div class="section" id="hors-du-reseau-du-gymnase">
 <h2>Hors du réseau du Gymnase<a class="headerlink" href="#hors-du-reseau-du-gymnase" title="Permalink to this headline">¶</a></h2>
 <p>Hors du réseau du Gymnase, la procédure est un peu plus complexe.</p>
-<p>Tout d’abord, ajoutez un nouvel ordinateur dans <em>Microsoft Remote Desktop</em> parametré comme suit:</p>
+<p>Tout d’abord, ajoutez un nouvel ordinateur dans <em>Microsoft Remote Desktop</em> parametré comme suit :</p>
 <a class="reference internal image-reference" href="_images/formulaire_add_pc_farm_ad.png" id="formulaire-add-pc-farm-ad"><img alt="_images/formulaire_add_pc_farm_ad.png" class="align-center" id="formulaire-add-pc-farm-ad" src="_images/formulaire_add_pc_farm_ad.png" style="width: 500px;" /></a>
 <p>Avec pour l’adresse de l’ordinateur, <em>PC name</em>: <a class="reference external" href="http://rdfarm.dgep.edu-vaud.ch">rdfarm.dgep.edu-vaud.ch</a>.</p>
 <p>L’<em>User account</em> est le même que précedemment, il doit être créé pour vous.</p>
-<p>Un paramètre supplémentaire doit être rentré, le <em>Gateway</em>. Pour ce faire, cliquez sur <em>Gateway</em> &gt; <em>Add Gateway</em>. Vous devriez voir le formulaire suivant:</p>
+<p>Un paramètre supplémentaire doit être rentré, le <em>Gateway</em>. Pour ce faire, cliquez sur <em>Gateway</em> &gt; <em>Add Gateway</em>. Vous devriez voir le formulaire suivant :</p>
 <a class="reference internal image-reference" href="_images/formulaire_add_gateway_ad.png" id="formulaire-add-gateway-ad"><img alt="_images/formulaire_add_gateway_ad.png" class="align-center" id="formulaire-add-gateway-ad" src="_images/formulaire_add_gateway_ad.png" style="width: 500px;" /></a>
-<p>Dans <em>Gateway name</em>, mettez: <a class="reference external" href="http://remote.dgep.edu-vaud.ch">remote.dgep.edu-vaud.ch</a>.</p>
+<p>Dans <em>Gateway name</em>, mettez : <a class="reference external" href="http://remote.dgep.edu-vaud.ch">remote.dgep.edu-vaud.ch</a>.</p>
 <p>Mettez le nom que vous voulez dans <em>Friendly name</em>, puis votre compte dans <em>User account</em>.</p>
 <p>Une fois que c’est fait, double-cliquez sur le nouvel ordinateur qui s’est ajouté et vous devriez entrer dans le bureau du serveur Windows.</p>
 <p>Recherchez ensuite l’application <em>Microsoft Remote Connection</em>:</p>
 <a class="reference internal image-reference" href="_images/rdfarm_search.png" id="rdfarm-search"><img alt="_images/rdfarm_search.png" class="align-center" id="rdfarm-search" src="_images/rdfarm_search.png" style="width: 500px;" /></a>
-<p>Ouvrez-la, vous devriez arriver sur un formulaire que vous compléterez comme suit:</p>
+<p>Ouvrez-la, vous devriez arriver sur un formulaire que vous compléterez comme suit :</p>
 <a class="reference internal image-reference" href="_images/rdfarm_form.png" id="rdfarm-form"><img alt="_images/rdfarm_form.png" class="align-center" id="rdfarm-form" src="_images/rdfarm_form.png" style="width: 500px;" /></a>
 <p>Dans <em>Computer</em>, mettez l’ip <em>10.226.34.17</em>.</p>
 <p>Dans <em>Username</em>, mettez <em>DGEP\&lt;votre_id&gt;</em> où &lt;votre_id&gt; est l’identifiant qui a été créé pour vous.</p>
-<p>Vous pouvez ensuite sauvegarder sous (Save As) cette configuration sur le bureau:</p>
+<p>Vous pouvez ensuite sauvegarder sous (Save As) cette configuration sur le bureau :</p>
 <a class="reference internal image-reference" href="_images/rdfarm_saveas.png" id="rdfarm-saveas"><img alt="_images/rdfarm_saveas.png" class="align-center" id="rdfarm-saveas" src="_images/rdfarm_saveas.png" style="width: 500px;" /></a>
 <p>Il suffit ensuite de double-cliquer sur l’icône ainsi créée pour se connecter à l’Active Directory.</p>
 </div>
 <div class="section" id="rechercher-un-compte">
 <h2>Rechercher un compte<a class="headerlink" href="#rechercher-un-compte" title="Permalink to this headline">¶</a></h2>
-<p>Tous d’abbord il faut rechercher “Active Directory” dans la barre de recherche (en bas à gauche).</p>
-<p>Ensuite, Selectionez EDU –&gt; si possible allez sous dossier GYCHA</p>
+<p>Tous d’abord il faut rechercher “Active Directory” dans la barre de recherche (en bas à gauche).</p>
+<p>Ensuite, Sélectionnez EDU –&gt; si possible allez sous dossier GYCHA</p>
 <p>Double-cliquez sur la loupe pour mener une recherche de compte.
-( elle se trouve au dessus des dossier dans la barre d’outils prêt du filtre ).</p>
+(elle se trouve au-dessus des dossiers dans la barre d’outils prêts du filtre).</p>
 <a class="reference internal image-reference" href="_images/recherche_ou.png" id="recherche-ou"><img alt="_images/recherche_ou.png" class="align-center" id="recherche-ou" src="_images/recherche_ou.png" style="width: 500px;" /></a>
 <p>Notez le nom, le prénom ou les deux et validez la recherche de compte.</p>
 <a class="reference internal image-reference" href="_images/recherche_utilisateur.png" id="recherche-utilisateur"><img alt="_images/recherche_utilisateur.png" class="align-center" id="recherche-utilisateur" src="_images/recherche_utilisateur.png" style="width: 500px;" /></a>
-<p>Normalment le compte utilisateur devrait apparaitre. Si cela ne marche pas, essayer d’effectuer la recherche plus loins (Genre : <a class="reference external" href="http://dgep.edu-vaud.ch">dgep.edu-vaud.ch</a>)</p>
+<p>Normalement le compte utilisateur devrait apparaitre. Si cela ne marche pas, essayer d’effectuer la recherche plus loin (Genre : <a class="reference external" href="http://dgep.edu-vaud.ch">dgep.edu-vaud.ch</a>)</p>
 <a class="reference internal image-reference" href="_images/AD_recherche_utilisateur.png" id="ad-recherche-utilisateur"><img alt="_images/AD_recherche_utilisateur.png" class="align-center" id="ad-recherche-utilisateur" src="_images/AD_recherche_utilisateur.png" style="width: 500px;" /></a>
-<p>Faite un clic-droit sur un des compte et sélectionné “propreties”.</p>
+<p>Faite un clic-droit sur un des comptes et sélectionnés “propreties”.</p>
 <a class="reference internal image-reference" href="_images/propreties.png" id="propreties"><img alt="_images/propreties.png" class="align-center" id="propreties" src="_images/propreties.png" style="width: 500px;" /></a>
-<p>Dans “General” vous pouvez voir son Email.</p>
+<p>Dans “General” vous pouvez voir son email.</p>
 <a class="reference internal image-reference" href="_images/propreties-email.png" id="propreties-email"><img alt="_images/propreties-email.png" class="align-center" id="propreties-email" src="_images/propreties-email.png" style="width: 500px;" /></a>
-<p>Dans “Account” vous pouvez voir ses identifiant et Email.</p>
+<p>Dans “Account” vous pouvez voir ses identifiants et son email.</p>
 <a class="reference internal image-reference" href="_images/propreties-log.png" id="propreties-log"><img alt="_images/propreties-log.png" class="align-center" id="propreties-log" src="_images/propreties-log.png" style="width: 500px;" /></a>
 </div>
 <div class="section" id="reinitialiser-le-mot-de-passe-d-une-personne">
 <h2>Réinitialiser le mot de passe d’une personne<a class="headerlink" href="#reinitialiser-le-mot-de-passe-d-une-personne" title="Permalink to this headline">¶</a></h2>
-<p>Rendez-vous sur le résultat de la recheche des comptes utilisateurs.</p>
-<a class="reference internal image-reference" href="_images/AD_recherche_utilisateur.png" id="ad-recherche-utilisateur2"><img alt="_images/AD_recherche_utilisateur.png" class="align-center" id="ad-recherche-utilisateur2" src="_images/AD_recherche_utilisateur.png" style="width: 500px;" /></a>
+<p>Rendez-vous sur le résultat de la recherche des comptes utilisateurs.</p>
+<a class="reference internal image-reference" href="_images/AD_recherche_utilisateur.png" id="id3"><img alt="_images/AD_recherche_utilisateur.png" class="align-center" id="id3" src="_images/AD_recherche_utilisateur.png" style="width: 500px;" /></a>
 <p>Clic-droit sur le nom de l’utilisateur qui est affiché et cliquez sur reset password.</p>
 <a class="reference internal image-reference" href="_images/Changer_Pwd.png" id="changer-pwd"><img alt="_images/Changer_Pwd.png" class="align-center" id="changer-pwd" src="_images/Changer_Pwd.png" style="width: 500px;" /></a>
-<p>Mettez lui comme code : Chamblades2021 .</p>
-<p>Cochez l’option pour que l’utilisateur aille la possibiliter de changer son mot de passe.
-Si vous n’avez pas le droit de cocher l’option c’est que l’utilisateur ne fais pas partie du gymnase</p>
+<p>Mettez-lui comme code : Chamblades2021.</p>
+<p>Cochez l’option pour que l’utilisateur aille la possibilité de changer son mot de passe.
+Si vous n’avez pas le droit de cocher l’option, c’est que l’utilisateur ne fais pas partie du gymnase</p>
 <p>Envoyez un mail de confirmation à la personne.</p>
 <p>Voilà maintenant vous savez tout.</p>
 </div>
@@ -412,15 +431,15 @@ Si vous n’avez pas le droit de cocher l’option c’est que l’utilisateur n
 
               </div>
               
-        </div>
-    </div>
-    
-    
-    <div class='prev-next-bottom'>
         
+        <div class='prev-next-bottom'>
+            
     <a class='left-prev' id="prev-link" href="ServeurReseau.html" title="previous page">Section Réseau</a>
     <a class='right-next' id="next-link" href="config-switch.html" title="next page">Configurer un switch Netgear GS108T</a>
 
+        </div>
+        
+        </div>
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">
@@ -448,11 +467,9 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
 
       </div>
     </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    
-  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
-
-
-    
+  
   </body>
 </html>

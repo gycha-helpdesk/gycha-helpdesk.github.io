@@ -1,7 +1,7 @@
 
 # Comment enroller un Ipad dans Jamf
 
-on auro besoin de l'application gratuite sur l'app store "apple configuratior 2"
+on aura besoin de l'application gratuite sur l'app store "apple configuratior 2"
 
 ```{image} images/appAppleConfigurator2.png
 :width: 500px
@@ -11,7 +11,7 @@ on auro besoin de l'application gratuite sur l'app store "apple configuratior 2"
 
 
 
-l'aplication sera comme ceci.
+l'application sera comme ceci.
 
 ```{image} images/ipadNonConnecter.png
 :width: 500px
@@ -20,8 +20,8 @@ l'aplication sera comme ceci.
 ```
 
 
-ensuite, brancher l'ipad sur l'ordinateur pour commencer la configuration.
-et faite confianse a l'ordinateur ( ipad ).
+Ensuite, brancher l'iPad sur l'ordinateur pour commencer la configuration.
+et faites confiance à l'ordinateur ( ipad ).
 
 ```{image} images/ConnecterIpad.jpeg
 :width: 500px
@@ -31,9 +31,9 @@ et faite confianse a l'ordinateur ( ipad ).
 
 ## Début de la manipulation
 
-une foix connecter cliquez sur préparer (barre de menu)
+une fois connecter cliquez sur préparer (barre de menu)
 
-choisissez une configuration manuelle, cochez "superviser l'appareil" et autoriser le jumelage.
+Choisissez une configuration manuelle, cochez "superviser l'appareil" et autoriser le jumelage.
 
 ```{image} images/superviserIpad.png
 :width: 500px
@@ -42,30 +42,28 @@ choisissez une configuration manuelle, cochez "superviser l'appareil" et autoris
 ```
 
 
-il vous demanderont si vous avez un serveur mdm, vous selectionez "ne passe s'inscrire... MDM"
-
+Il vous demandera si vous avez un serveur mdm, vous sélectionnez "ne passe s'inscrire... MDM"
 ```{image} images/nonMDM.png
 :width: 500px
 :name: ServeurMDM
 :align: center
 ```
 
-Maintenant vous allez créer une organisation pour Chamblandes, si lorganisation est deja crée vous pouvez la selectionner.
-
+Maintenant vous allez créer une organisation pour Chamblandes, si l'organisation est déjà créée vous pouvez la sélectionner.
 ```{image} images/organisation.png
 :width: 500px
 :name: Organisation
 :align: center
 ```
 
-Choisissez les confs. que vous voulez sur votre Ipad.
+Choisissez-les configurations que vous voulez sur votre iPad.
 
 ```{image} images/choixconf.png
 :width: 500px
 :name: ChoixConf
 :align: center
 ```
-Voila il ne reste plus qu'appliquer les parametres  sur l'Ipad.
+Voilà il ne reste plus qu'appliquer les paramètres  sur l'iPad.
 
 ```{image} images/loadingConf.jpeg
 :width: 500px
