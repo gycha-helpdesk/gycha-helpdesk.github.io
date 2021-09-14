@@ -7,6 +7,7 @@ C'est une application utilisée par les administrateurs système pour configurer
 ## Connexion au Jamf Pro 
 Pour accéder au Jamf Pro, vous allez passer par son appliance WEB
 <br/> -> https://10.225.232.161:8443
+<br/> -> serveur Jamf pro Aus000021.dgep.edu-vaud.ch
 
 ### Identification
 
