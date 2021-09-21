@@ -1,8 +1,6 @@
-# Comment créer une règle pour ajouter une imprimante sur Jamf
+# Créer une règle pour ajouter une imprimante dans Jamf
 
-## Description Jamf :
 
-C'est une application utilisée par les administrateurs système pour configurer et automatiser les tâches d'administration informatique pour les appareils macOS, iOS
 
 ## Avant de débuter 
 

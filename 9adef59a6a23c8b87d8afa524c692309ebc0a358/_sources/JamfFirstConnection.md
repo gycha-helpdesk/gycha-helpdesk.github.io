@@ -11,7 +11,7 @@ Pour accéder au Jamf Pro, vous allez passer par son appliance WEB
 
 ### Identification
 
-JamF Pro vous demande de vous logger avec un compte utilisateur:
+Jamf Pro vous demande de vous logger avec un compte utilisateur:
 
 
 ```{image} images/login-jamf.png
@@ -29,11 +29,11 @@ Identifiant pour un utilisateur JamF Pro:
 |    :----:   |    :----:    |
 |  Gychameta  |    Gym_09    | 
 
-⚠ Identifiant pour un super utilisateur Jamf Pro se trouve dans PaswordState mais vous allez pas avoir besoin de vous connecter au JamF en tant que superuser.
+⚠ <p>Identifiant pour un super utilisateur Jamf Pro se trouve dans <a href="https://pass.dgep.edu-vaud.ch:9119" target="_blank">PaswordState</a> (DGEP Password) mais vous allez pas avoir besoin de vous connecter au Jamf en tant que superuser.</p>
 
 
-### JamF Pro
-Après avoir se connecter au JamF Pro sans erreur. Vous aurez une interface qui resemble à ce que vous voyez dans la capture ci-dessous.
+### Jamf Pro
+Après avoir se connecter au Jamf Pro sans erreur. Vous aurez une interface qui resemble à ce que vous voyez dans la capture ci-dessous.
 
 ```{image} images/Dashboard-jamf.png
 :width: 500px

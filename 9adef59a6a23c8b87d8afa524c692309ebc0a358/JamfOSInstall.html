@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ajouter une règle &#8212; Documentation Technique Chamblandes</title>
+    <title>Déploiement OS depuis Jamf &#8212; Documentation Technique Chamblandes</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,8 +51,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Créer une règle pour ajouter une imprimante dans Jamf" href="JamfAddPrinter.html" />
-    <link rel="prev" title="Avant de commencer" href="JamfFirstConnection.html" />
+    <link rel="next" title="Recherche avancé" href="JamfRechercheAvance.html" />
+    <link rel="prev" title="Créer une règle pour ajouter une imprimante dans Jamf" href="JamfAddPrinter.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -98,8 +98,8 @@
      Avant de commencer
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfAddRule.html">
      Ajouter une règle
     </a>
    </li>
@@ -108,8 +108,8 @@
      Créer une règle pour ajouter une imprimante dans Jamf
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="JamfOSInstall.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Déploiement OS depuis Jamf
     </a>
    </li>
@@ -250,7 +250,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/JamfAddRule.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/JamfOSInstall.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -275,6 +275,26 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#copy-le-logiciel">
+   Copy le logiciel
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jamf-regles">
+     Jamf/Règles
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -283,35 +303,19 @@
         
               <div>
                 
-  <div class="section" id="ajouter-une-regle">
-<h1>Ajouter une règle<a class="headerlink" href="#ajouter-une-regle" title="Permalink to this headline">¶</a></h1>
-<p>Dans dashboard (accueil) du jamf, allez sous ordinateur en haut à gauche et cliquer “Règles”.</p>
-<a class="reference internal image-reference" href="_images/regle-jamf.png" id="regle"><img alt="_images/regle-jamf.png" class="align-center" id="regle" src="_images/regle-jamf.png" style="width: 300px;" /></a>
-<p><br/>Ensuite, cliquez sur nouveau en haut à droite.</p>
-<a class="reference internal image-reference" href="_images/addRegle-jamf.png" id="addregle"><img alt="_images/addRegle-jamf.png" class="align-center" id="addregle" src="_images/addRegle-jamf.png" style="width: 500px;" /></a>
-<p><br/>Sous Général donner lui un nom (nom de l’application ou ce que vous voulez).</p>
-<a class="reference internal image-reference" href="_images/nomNouvelleRegle-jamf.png" id="nomdelaregle"><img alt="_images/nomNouvelleRegle-jamf.png" class="align-center" id="nomdelaregle" src="_images/nomNouvelleRegle-jamf.png" style="width: 500px;" /></a>
-<p><br/>Toujours dans Général descendez et cochez les options indiquées.</p>
-<a class="reference internal image-reference" href="_images/generalRegle-jamf.png" id="reglebase"><img alt="_images/generalRegle-jamf.png" class="align-center" id="reglebase" src="_images/generalRegle-jamf.png" style="width: 500px;" /></a>
-<p><br/>Maintenant allez sous “Paquets” (dans la colonne de gauche).</p>
-<a class="reference internal image-reference" href="_images/addPaquet-jamf.png" id="adddespaquets"><img alt="_images/addPaquet-jamf.png" class="align-center" id="adddespaquets" src="_images/addPaquet-jamf.png" style="width: 500px;" /></a>
-<p><br/>Cliquez sur “ajouter” à droite sur le paquet que vous voulez.</p>
-<a class="reference internal image-reference" href="_images/choixPaquet-jamf.png" id="choixpaquet"><img alt="_images/choixPaquet-jamf.png" class="align-center" id="choixpaquet" src="_images/choixPaquet-jamf.png" style="width: 500px;" /></a>
-<p><br/>Quelques options suplémentaires comme les mises à jour et le point de distribution.</p>
-<a class="reference internal image-reference" href="_images/finPaquet.png" id="optionsup"><img alt="_images/finPaquet.png" class="align-center" id="optionsup" src="_images/finPaquet.png" style="width: 500px;" /></a>
-<p><br/>Ensuite allez sur Maintenance (dans la colonne de gauche)</p>
-<a class="reference internal image-reference" href="_images/ConfMaintenance-jamf.png" id="maintenance"><img alt="_images/ConfMaintenance-jamf.png" class="align-center" id="maintenance" src="_images/ConfMaintenance-jamf.png" style="width: 500px;" /></a>
-<p><br/>Regardez que la première case est cochée (Mettre à jours dans l’inventaire)</p>
-<a class="reference internal image-reference" href="_images/maintenanceOption-jamf.png" id="optiondemaintenance"><img alt="_images/maintenanceOption-jamf.png" class="align-center" id="optiondemaintenance" src="_images/maintenanceOption-jamf.png" style="width: 500px;" /></a>
-<p><br/>Si tout est bien configurer passons au “Perimètre” de la règle.
-Selectionnez un ordinateur ou un groupe dans ce cas là ça sera un groupe.
-Pour l’ajouter cliquez sur “add” à droite du groupe.</p>
-<a class="reference internal image-reference" href="_images/perimetreGroupe-jamf.png" id="perimetre"><img alt="_images/perimetreGroupe-jamf.png" class="align-center" id="perimetre" src="_images/perimetreGroupe-jamf.png" style="width: 500px;" /></a>
-<p><br/>Permet de mettre à disposition la règle pour tout les utilisateurs.</p>
-<a class="reference internal image-reference" href="_images/selfService-jamf.png" id="selfservice"><img alt="_images/selfService-jamf.png" class="align-center" id="selfservice" src="_images/selfService-jamf.png" style="width: 500px;" /></a>
-<p><br/>Se paramètre permet d’afficher l’état d’avancement de l’implémentation de la règle.</p>
-<a class="reference internal image-reference" href="_images/afficheDansDashboard-jamf.png" id="dashboard"><img alt="_images/afficheDansDashboard-jamf.png" class="align-center" id="dashboard" src="_images/afficheDansDashboard-jamf.png" style="width: 500px;" /></a>
-<p><br/>Félicitation vous savez créé une règle.</p>
+  <div class="section" id="deploiement-os-depuis-jamf">
+<h1>Déploiement OS depuis Jamf<a class="headerlink" href="#deploiement-os-depuis-jamf" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="copy-le-logiciel">
+<h2>Copy le logiciel<a class="headerlink" href="#copy-le-logiciel" title="Permalink to this headline">¶</a></h2>
+<p>Pour déploiement OSX sur une machine, il nous faut copier le logiciel (pkg) depuis le serveur sur dans le dossier application de la machineen local.
+Il y a une règle pour automatiser ce processus dans Jamf.</p>
+<div class="section" id="jamf-regles">
+<h3>Jamf/Règles<a class="headerlink" href="#jamf-regles" title="Permalink to this headline">¶</a></h3>
+<p>Allez sur l’onglet ordinateur de Jamf et ensuite “Règles”. Ici vous pouvez faire une recherche pour trouver une règle qui nous aide à copier le package OS depuis le serveur. Si vous ecrivez “copy” dans le champ de recherche il vous affiche les differents packages d’OS.</p>
+<p style="color: 'red'">La version de l'OS (HighSierra, BigSur, etc...) va dependre de la machine sur laquelle vous vous voulez faire cette installe. Pour trouver des infos sur l'OS de la machine vous pouvez maintenant cliquer sur l'icône de pomme au coin de votre monitor et choisir "à propos de ce Mac".</p>
+<p>Quand vous êtes sur de la version de l’OS que vous allez installer, vous pouvez selectionner n’import quelle règle et regarder ses configurations.</p>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -339,8 +343,8 @@ Pour l’ajouter cliquez sur “add” à droite du groupe.</p>
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="JamfFirstConnection.html" title="previous page">Avant de commencer</a>
-    <a class='right-next' id="next-link" href="JamfAddPrinter.html" title="next page">Créer une règle pour ajouter une imprimante dans Jamf</a>
+    <a class='left-prev' id="prev-link" href="JamfAddPrinter.html" title="previous page">Créer une règle pour ajouter une imprimante dans Jamf</a>
+    <a class='right-next' id="next-link" href="JamfRechercheAvance.html" title="next page">Recherche avancé</a>
 
         </div>
         
