@@ -73,7 +73,7 @@ Cliquez sur "Configure".
 
 ```{image} images/addPrint.png
 :width: 500px
-:name: addPrint
+:name: addPrint2
 :align: center
 ```
 
