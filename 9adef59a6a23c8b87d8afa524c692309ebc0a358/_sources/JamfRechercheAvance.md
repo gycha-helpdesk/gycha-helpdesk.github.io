@@ -1,24 +1,5 @@
 # Recherche avancé
 
-## Description Jamf :
-
-C'est une application utilisée par les administrateurs système pour configurer et automatiser les tâches d'administrations informatique pour les appareils macOS, iOS
-
-## Début de la marche à suivre :
-
-Tout d'abord ouvrez un navigateur et notez https://10.225.232.161:8443/ dans l'URL.
-
-| Identifiant | Mot de passe |
-|-------------|--------------|
-|Gychameta|Gym_09|
-
-
-```{image} images/login-jamf.png
-:width: 500px
-:name: login-jamf
-:align: center
-```
-
 Aprés, c 'être log, aller dans Recheche avancer
 
 ```{image} images/rechercheMenu.png
@@ -76,7 +57,7 @@ dans la dernière partie vous touchez au type du rapport et le télécharger.
 Cliquez sur afficher pour voir le résultat
 
 
-##exemple de recherche avancé
+## exemple de recherche avancé
 
 Dans l'exemple , je vais utiliser une recherche avancer déjà crée
 
