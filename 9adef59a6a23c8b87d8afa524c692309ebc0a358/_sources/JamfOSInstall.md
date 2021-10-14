@@ -1,3 +1,9 @@
+<!--
+Author: 	Noor Mohammad Alizadeh
+Date:		September 2021
+Description:	How to deploy packages using Jamf
+-->
+
 # Déploiement OS depuis Jamf
 
 ## Copy le logiciel
@@ -62,7 +68,9 @@ sudo jamf policy -event copycatalina
 - **jamf**: la commande que permet de lancer le jamf-CLI (Commande Line Interface) et donner des tâches spéicifique à Jamf
 - **policy**: cette commande dit à jamf de contôler les differents stratégie dans le serveur de logiciel Jamf (JSS - Jamf Software Server)
 - **event**: cette une option/flag qui modifie le fonctionnement d'une commande. Ici notre flag appelle un declancheur pour notre package. Il dit à commande "policy" de prendre l'evenement "copycatalina" dans JSS.  
-- **declancheur**: c'est un evenement personalisé qu'on avait vu dans les paramètres de cette règle\
+- **declancheur**: c'est un evenement personalisé qu'on avait vu dans les paramètres de cette règle
+
+</br>
 
 Quand le package est copié, on peut le voir dans le dossier /Applications, on peut maintenant passer à l'étap suivant. 
 
@@ -73,7 +81,7 @@ Quand le package est copié, on peut le voir dans le dossier /Applications, on p
 ```
 
 #### Effacer le système et le reinstaller du zéro
- 
+
 Toujours sur la machine client, ouvrez le Terminal. Cette fois pour effacer l'OS et le reinstaller de nouveau. Cette commande efface le système entièrement ensuite install le package OS qu'on vient de copier dans le dossier /Applications.
 
 ```Shell

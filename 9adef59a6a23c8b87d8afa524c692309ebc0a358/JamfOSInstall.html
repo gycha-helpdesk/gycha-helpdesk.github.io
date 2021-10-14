@@ -320,7 +320,12 @@
         
               <div>
                 
-  <div class="section" id="deploiement-os-depuis-jamf">
+  <!--
+Author: 	Noor Mohammad Alizadeh
+Date:		September 2021
+Description:	How to deploy packages using Jamf
+-->
+<div class="section" id="deploiement-os-depuis-jamf">
 <h1>Déploiement OS depuis Jamf<a class="headerlink" href="#deploiement-os-depuis-jamf" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="copy-le-logiciel">
 <h2>Copy le logiciel<a class="headerlink" href="#copy-le-logiciel" title="Permalink to this headline">¶</a></h2>
@@ -359,8 +364,9 @@ Ovrez d’abord le Terminal de la machine, l’installation des packages depuis 
 <li><p><strong>jamf</strong>: la commande que permet de lancer le jamf-CLI (Commande Line Interface) et donner des tâches spéicifique à Jamf</p></li>
 <li><p><strong>policy</strong>: cette commande dit à jamf de contôler les differents stratégie dans le serveur de logiciel Jamf (JSS - Jamf Software Server)</p></li>
 <li><p><strong>event</strong>: cette une option/flag qui modifie le fonctionnement d’une commande. Ici notre flag appelle un declancheur pour notre package. Il dit à commande “policy” de prendre l’evenement “copycatalina” dans JSS.</p></li>
-<li><p><strong>declancheur</strong>: c’est un evenement personalisé qu’on avait vu dans les paramètres de cette règle\</p></li>
+<li><p><strong>declancheur</strong>: c’est un evenement personalisé qu’on avait vu dans les paramètres de cette règle</p></li>
 </ul>
+</br>
 <p>Quand le package est copié, on peut le voir dans le dossier /Applications, on peut maintenant passer à l’étap suivant.</p>
 <a class="reference internal image-reference" href="_images/terminalCopyOS_2.png" id="copyosinapps"><img alt="_images/terminalCopyOS_2.png" class="align-center" id="copyosinapps" src="_images/terminalCopyOS_2.png" style="width: 750px;" /></a>
 </div>

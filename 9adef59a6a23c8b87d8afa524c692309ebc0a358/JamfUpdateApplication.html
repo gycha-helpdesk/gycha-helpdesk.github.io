@@ -282,17 +282,17 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#description-jamf">
-   Description Jamf :
+   Description Jamf
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#avant-de-la-marche-a-suivre">
-   avant de la marche à suivre :
+   avant de la marche à suivre
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#debut-de-la-marche-a-suivre-avec-jamf">
-   Début de la marche à suivre avec Jamf:
+   Début de la marche à suivre avec Jamf
   </a>
  </li>
 </ul>
@@ -309,11 +309,11 @@
   <div class="section" id="mise-a-jour-des-applications-dans-jamf">
 <h1>Mise à jour des applications dans Jamf<a class="headerlink" href="#mise-a-jour-des-applications-dans-jamf" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="description-jamf">
-<h2>Description Jamf :<a class="headerlink" href="#description-jamf" title="Permalink to this headline">¶</a></h2>
+<h2>Description Jamf<a class="headerlink" href="#description-jamf" title="Permalink to this headline">¶</a></h2>
 <p>C’est une application utilisée par les administrateurs système pour configurer et automatiser les tâches d’administrations informatique pour les appareils macOS, iOS</p>
 </div>
 <div class="section" id="avant-de-la-marche-a-suivre">
-<h2>avant de la marche à suivre :<a class="headerlink" href="#avant-de-la-marche-a-suivre" title="Permalink to this headline">¶</a></h2>
+<h2>avant de la marche à suivre<a class="headerlink" href="#avant-de-la-marche-a-suivre" title="Permalink to this headline">¶</a></h2>
 <p>vous devez installez la nouvelle version que vous voulez.</p>
 <p>si elle est en .pkg c’est cool raoul</p>
 <p>si c’est en dmg je vous laisse suivre le tuto juste en bas.</p>
@@ -328,24 +328,15 @@
 <p>Cliquez sur “Build as PKG” pour le crée.</p>
 <a class="reference internal image-reference" href="_images/buildPkg.png" id="build"><img alt="_images/buildPkg.png" class="align-center" id="build" src="_images/buildPkg.png" style="width: 500px;" /></a>
 <p>Renomer le avec la convention de nomage de JamfAdmin</p>
+<blockquote>
+<div><p>ALL_[nom du package avec sa version].pkg
+</br>
+GYCH_[nom du package avec sa version].pkg</p>
+</div></blockquote>
 <a class="reference internal image-reference" href="_images/vlcRename.png" id="rename"><img alt="_images/vlcRename.png" class="align-center" id="rename" src="_images/vlcRename.png" style="width: 500px;" /></a>
 </div>
 <div class="section" id="debut-de-la-marche-a-suivre-avec-jamf">
-<h2>Début de la marche à suivre avec Jamf:<a class="headerlink" href="#debut-de-la-marche-a-suivre-avec-jamf" title="Permalink to this headline">¶</a></h2>
-<p>Ouvrez un navigateur et notez <a class="reference external" href="https://10.225.232.161:8443/">https://10.225.232.161:8443/</a> dans l’URL.</p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Identifiant</p></th>
-<th class="head"><p>Mot de passe</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Gychameta</p></td>
-<td><p>Gym_09</p></td>
-</tr>
-</tbody>
-</table>
-<a class="reference internal image-reference" href="_images/login-jamf.png" id="log"><img alt="_images/login-jamf.png" class="align-center" id="log" src="_images/login-jamf.png" style="width: 500px;" /></a>
+<h2>Début de la marche à suivre avec Jamf<a class="headerlink" href="#debut-de-la-marche-a-suivre-avec-jamf" title="Permalink to this headline">¶</a></h2>
 <p>Aprés, c ‘être log, allez dans Règle</p>
 <a class="reference internal image-reference" href="_images/regleVLC.png" id="jamf"><img alt="_images/regleVLC.png" class="align-center" id="jamf" src="_images/regleVLC.png" style="width: 500px;" /></a>
 <p>aller dans la regle déjà existente et changer l’ancien .pkg par le nouveau.</p>

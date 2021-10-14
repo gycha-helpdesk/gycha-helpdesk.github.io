@@ -1,11 +1,10 @@
 # Mise à jour des applications dans Jamf
 
-## Description Jamf :
+## Description Jamf
 
 C'est une application utilisée par les administrateurs système pour configurer et automatiser les tâches d'administrations informatique pour les appareils macOS, iOS
 
-
-## avant de la marche à suivre :
+## avant de la marche à suivre
 
 vous devez installez la nouvelle version que vous voulez.
 
@@ -14,7 +13,6 @@ si elle est en .pkg c'est cool raoul
 si c'est en dmg je vous laisse suivre le tuto juste en bas.
 
 Prenons comme exemple VLC
-
 
 ```{image} images/downloadVLC.png
 :width: 500px
@@ -34,7 +32,6 @@ Rendez vous sur composeur est faites new en haut à gauche.
 
 Bon VLC est déjà installé mais vous avez compris le principe.
 
-
 ```{image} images/CreatPkg.png
 :width: 500px
 :name: PKG
@@ -45,7 +42,6 @@ Enlever les dossiers en trop on veut que l'as mise a jour.
 
 Cliquez sur "Build as PKG" pour le crée.
 
-
 ```{image} images/buildPkg.png
 :width: 500px
 :name: Build
@@ -54,6 +50,9 @@ Cliquez sur "Build as PKG" pour le crée.
 
 Renomer le avec la convention de nomage de JamfAdmin
 
+> ALL_[nom du package avec sa version].pkg
+</br>
+> GYCH_[nom du package avec sa version].pkg
 
 ```{image} images/vlcRename.png
 :width: 500px
@@ -61,23 +60,9 @@ Renomer le avec la convention de nomage de JamfAdmin
 :align: center
 ```
 
-## Début de la marche à suivre avec Jamf:
-
-Ouvrez un navigateur et notez https://10.225.232.161:8443/ dans l'URL.
-
-| Identifiant | Mot de passe |
-|-------------|--------------|
-|Gychameta|Gym_09|
-
-
-```{image} images/login-jamf.png
-:width: 500px
-:name: log
-:align: center
-```
+## Début de la marche à suivre avec Jamf
 
 Aprés, c 'être log, allez dans Règle
-
 
 ```{image} images/regleVLC.png
 :width: 500px
@@ -85,16 +70,13 @@ Aprés, c 'être log, allez dans Règle
 :align: center
 ```
 
-
 aller dans la regle déjà existente et changer l'ancien .pkg par le nouveau.
-
 
 ```{image} images/addNewVersionVlc.png
 :width: 500px
 :name: addNewVersionVlc
 :align: center
 ```
-
 
 Pour finir allez dans groupe inteligent de VLC
 

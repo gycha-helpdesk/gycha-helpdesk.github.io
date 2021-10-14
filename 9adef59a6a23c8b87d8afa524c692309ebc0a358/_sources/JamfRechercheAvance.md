@@ -3,7 +3,7 @@
 Aprés, c 'être log, aller dans Recheche avancer
 
 ```{image} images/rechercheMenu.png
-:width: 500px
+:width: 300px
 :name: Menu
 :align: center
 ```
@@ -11,7 +11,6 @@ Aprés, c 'être log, aller dans Recheche avancer
 vous voila devant les recherches avancées, vous pouvez voir les régles déja misent en place.
 
 Cliquez sur add pour une nouvelle recherche avancée
-
 
 ```{image} images/addRegle.png
 :width: 500px
@@ -26,7 +25,6 @@ Donnez un nom à la regle.
 :name: reglesEnregistre
 :align: center
 ```
-
 
 Vous avez plusieur option à disposition, choisissez les bonne caractéristique.
 
@@ -56,17 +54,16 @@ dans la dernière partie vous touchez au type du rapport et le télécharger.
 
 Cliquez sur afficher pour voir le résultat
 
-
 ## exemple de recherche avancé
 
 Dans l'exemple , je vais utiliser une recherche avancer déjà crée
-
 
 ```{image} images/rechecheExistente.png
 :width: 500px
 :name: rechecheExistente
 :align: center
 ```
+
 Ensuite cliquez sur afficher en bas a droite.
 
 ```{image} images/afficherRecherche.png
@@ -87,7 +84,6 @@ Cliquez sur un ordinateur (que vous voulez sup.)
 
 et allez en bas a droite sur la poubelle et double-clique.
 
-
 ```{image} images/supprimerResultat.png
 :width: 500px
 :name: supprimerResultat
@@ -105,7 +101,7 @@ puis valider la pop-up qui apparait
 Sinon aller au "début" sur afficher en bas à droite il y a un bouton action.
 
 Selectionner les ordinateurs.
- 
+
 ```{image} images/SupprimerTout.png
 :width: 500px
 :name: SupprimerTout
@@ -119,4 +115,5 @@ Cliquez sur suivant et suivez les demandes.
 :name: rapportRegle
 :align: center
 ```
+
 Terminer

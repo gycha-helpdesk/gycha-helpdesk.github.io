@@ -1,3 +1,9 @@
+<!--
+Author:		NoorMohammad Alizadeh
+Date:		September 2021
+Description:	First steps in using jamf service
+-->
+
 # Avant de commencer
 
 ## Description Jamf
