@@ -1,23 +1,22 @@
 # Recherche avancé
 
-Aprés, c 'être log, aller dans Recheche avancer
+Dans le menu de Jamf Pro > le tab "Ordinateurs" , cliquez sur la "Recherche dans l'inventaire"
 
 ```{image} images/rechercheMenu.png
 :width: 300px
 :name: Menu
 :align: center
 ```
-
-vous voila devant les recherches avancées, vous pouvez voir les régles déja misent en place.
-
-Cliquez sur add pour une nouvelle recherche avancée
+</br>
+Vous voila devant les recherches avancées, vous pouvez voir les régles déja misent en place.
+Cliquez sur add pour une nouvelle recherche avancée  
 
 ```{image} images/addRegle.png
 :width: 500px
 :name: addRegle
 :align: center
 ```
-
+</br>
 Donnez un nom à la regle.
 
 ```{image} images/reglesEnregistre.png
@@ -25,7 +24,7 @@ Donnez un nom à la regle.
 :name: reglesEnregistre
 :align: center
 ```
-
+</br>
 Vous avez plusieur option à disposition, choisissez les bonne caractéristique.
 
 Vous pouvez en rajoutez au tant que vous voulez.
@@ -35,7 +34,7 @@ Vous pouvez en rajoutez au tant que vous voulez.
 :name: critereRegle
 :align: center
 ```
-
+</br>
 Vous pouvez plusieur option à cocher, choisissez les bonnes coches pour la règle.
 
 ```{image} images/affichageRegle.png
@@ -43,7 +42,7 @@ Vous pouvez plusieur option à cocher, choisissez les bonnes coches pour la règ
 :name: affichageRegle
 :align: center
 ```
-
+</br>
 dans la dernière partie vous touchez au type du rapport et le télécharger.
 
 ```{image} images/rapportRegle.png
@@ -51,7 +50,7 @@ dans la dernière partie vous touchez au type du rapport et le télécharger.
 :name: rapportRegle
 :align: center
 ```
-
+</br>
 Cliquez sur afficher pour voir le résultat
 
 ## exemple de recherche avancé
@@ -63,7 +62,7 @@ Dans l'exemple , je vais utiliser une recherche avancer déjà crée
 :name: rechecheExistente
 :align: center
 ```
-
+</br>
 Ensuite cliquez sur afficher en bas a droite.
 
 ```{image} images/afficherRecherche.png
@@ -71,7 +70,7 @@ Ensuite cliquez sur afficher en bas a droite.
 :name: afficherRecherche
 :align: center
 ```
-
+</br>
 la recherche vas afficher ce que vous demander et maintenant on va effacer un ordinateur (dans ce cas).
 
 ```{image} images/resultatRecherche.png
@@ -79,7 +78,7 @@ la recherche vas afficher ce que vous demander et maintenant on va effacer un or
 :name: resultatRecherche
 :align: center
 ```
-
+</br>
 Cliquez sur un ordinateur (que vous voulez sup.)
 
 et allez en bas a droite sur la poubelle et double-clique.
@@ -89,7 +88,7 @@ et allez en bas a droite sur la poubelle et double-clique.
 :name: supprimerResultat
 :align: center
 ```
-
+</br>
 puis valider la pop-up qui apparait
 
 ```{image} images/supprimerResultatConf.png
@@ -97,7 +96,7 @@ puis valider la pop-up qui apparait
 :name: supprimerResultatConf
 :align: center
 ```
-
+</br>
 Sinon aller au "début" sur afficher en bas à droite il y a un bouton action.
 
 Selectionner les ordinateurs.
@@ -107,13 +106,13 @@ Selectionner les ordinateurs.
 :name: SupprimerTout
 :align: center
 ```
-
+</br>
 Cliquez sur suivant et suivez les demandes.
 
 ```{image} images/rapportRegle.png
 :width: 500px
-:name: rapportRegle
+:name: rapportRegle2
 :align: center
 ```
-
+</br>
 Terminer

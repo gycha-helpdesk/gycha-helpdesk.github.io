@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Créer une règle pour ajouter une imprimante dans Jamf &#8212; Documentation Technique Chamblandes</title>
+    <title>Créer une règle pour ajouter une imprimante dans Jam &#8212; Documentation Technique Chamblandes</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -105,7 +106,7 @@
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Créer une règle pour ajouter une imprimante dans Jamf
+     Créer une règle pour ajouter une imprimante dans Jam
     </a>
    </li>
    <li class="toctree-l2">
@@ -121,6 +122,16 @@
    <li class="toctree-l2">
     <a class="reference internal" href="JamfUpdateApplication.html">
      Mise à jour des applications dans Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfEnroll.html">
+     Comment enrôler un post dans Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfEnrolliPad.html">
+     Comment enroller un Ipad dans Jamf
     </a>
    </li>
   </ul>
@@ -145,6 +156,11 @@
      Hermes II
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Glpi.html">
+     Glpi
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -165,33 +181,11 @@
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="Enroller.html">
-   Section Enroller
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="EnrollJamf.html">
-     Comment enrôler un post dans Jamf
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Enrollipad.html">
-     Comment enroller un Ipad dans Jamf
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
   <a class="reference internal" href="ServeurReseau.html">
    Section Réseau
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -303,12 +297,12 @@
         
               <div>
                 
-  <div class="section" id="creer-une-regle-pour-ajouter-une-imprimante-dans-jamf">
-<h1>Créer une règle pour ajouter une imprimante dans Jamf<a class="headerlink" href="#creer-une-regle-pour-ajouter-une-imprimante-dans-jamf" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="creer-une-regle-pour-ajouter-une-imprimante-dans-jam">
+<h1>Créer une règle pour ajouter une imprimante dans Jam<a class="headerlink" href="#creer-une-regle-pour-ajouter-une-imprimante-dans-jam" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="avant-de-debuter">
 <h2>Avant de débuter<a class="headerlink" href="#avant-de-debuter" title="Permalink to this headline">¶</a></h2>
-<p>Il faut ajouter l’imprimante sur le poste, je vous laisse la marche à suivre sur le lien :
-<a class="reference external" href="https://sites.google.com/view/gycha-it/ressources#h.r65nzqlnc3we">https://sites.google.com/view/gycha-it/ressources#h.r65nzqlnc3we</a></p>
+<p>Il faut ajouter l’imprimante sur le poste, je vous laisse la marche à suivre sur le lien:</p>
+<p><a class="reference external" href="https://sites.google.com/view/gycha-it/ressources#h.r65nzqlnc3we">Gycha-IT</a></p>
 <div class="section" id="et">
 <h3>et<a class="headerlink" href="#et" title="Permalink to this headline">¶</a></h3>
 <p>Rajoutez l’imprimante dans Jamf admin si ce n’est pas déja fait .</p>
@@ -333,7 +327,7 @@
 <a class="reference internal image-reference" href="_images/addPrintData.png" id="ajouter"><img alt="_images/addPrintData.png" class="align-center" id="ajouter" src="_images/addPrintData.png" style="width: 500px;" /></a>
 <p>Pour finir allez dans périmètre.</p>
 <a class="reference internal image-reference" href="_images/perimetrePrint.png" id="perimetre"><img alt="_images/perimetrePrint.png" class="align-center" id="perimetre" src="_images/perimetrePrint.png" style="width: 500px;" /></a>
-<p>Sélectionez le groupe ou un ordinateur que vous voulez (vous pouvez en choissir plus) .</p>
+<p>Sélectionez le groupe ou un ordinateur que vous voulez (vous pouvez en choissir plus)</p>
 <a class="reference internal image-reference" href="_images/perimetreAddPrint.png" id="choix"><img alt="_images/perimetreAddPrint.png" class="align-center" id="choix" src="_images/perimetreAddPrint.png" style="width: 500px;" /></a>
 <p>Il manque plus qu’à appuyer sur “Terminer”.</p>
 <p>Félicitation vous savez créé une règle pour ajouter une imprimante.</p>

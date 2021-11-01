@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -52,7 +53,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Recherche avancé" href="JamfRechercheAvance.html" />
-    <link rel="prev" title="Créer une règle pour ajouter une imprimante dans Jamf" href="JamfAddPrinter.html" />
+    <link rel="prev" title="Créer une règle pour ajouter une imprimante dans Jam" href="JamfAddPrinter.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -105,7 +106,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="JamfAddPrinter.html">
-     Créer une règle pour ajouter une imprimante dans Jamf
+     Créer une règle pour ajouter une imprimante dans Jam
     </a>
    </li>
    <li class="toctree-l2 current active">
@@ -121,6 +122,16 @@
    <li class="toctree-l2">
     <a class="reference internal" href="JamfUpdateApplication.html">
      Mise à jour des applications dans Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfEnroll.html">
+     Comment enrôler un post dans Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfEnrolliPad.html">
+     Comment enroller un Ipad dans Jamf
     </a>
    </li>
   </ul>
@@ -145,6 +156,11 @@
      Hermes II
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Glpi.html">
+     Glpi
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -165,33 +181,11 @@
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="Enroller.html">
-   Section Enroller
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="EnrollJamf.html">
-     Comment enrôler un post dans Jamf
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Enrollipad.html">
-     Comment enroller un Ipad dans Jamf
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
   <a class="reference internal" href="ServeurReseau.html">
    Section Réseau
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -359,6 +353,8 @@ Ovrez d’abord le Terminal de la machine, l’installation des packages depuis 
 </pre></div>
 </div>
 <a class="reference internal image-reference" href="_images/terminalCopyOS.png" id="terminalcopyos"><img alt="_images/terminalCopyOS.png" class="align-center" id="terminalcopyos" src="_images/terminalCopyOS.png" style="width: 500px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <ul class="simple">
 <li><p><strong>sudo</strong>: il vous permet de lancer des commandes en tant qu’administrateur, dans notre cas pour lancer la commande “jamf” il faut un droit d’administrateur.</p></li>
 <li><p><strong>jamf</strong>: la commande que permet de lancer le jamf-CLI (Commande Line Interface) et donner des tâches spéicifique à Jamf</p></li>
@@ -366,13 +362,14 @@ Ovrez d’abord le Terminal de la machine, l’installation des packages depuis 
 <li><p><strong>event</strong>: cette une option/flag qui modifie le fonctionnement d’une commande. Ici notre flag appelle un declancheur pour notre package. Il dit à commande “policy” de prendre l’evenement “copycatalina” dans JSS.</p></li>
 <li><p><strong>declancheur</strong>: c’est un evenement personalisé qu’on avait vu dans les paramètres de cette règle</p></li>
 </ul>
+</div>
 </br>
 <p>Quand le package est copié, on peut le voir dans le dossier /Applications, on peut maintenant passer à l’étap suivant.</p>
 <a class="reference internal image-reference" href="_images/terminalCopyOS_2.png" id="copyosinapps"><img alt="_images/terminalCopyOS_2.png" class="align-center" id="copyosinapps" src="_images/terminalCopyOS_2.png" style="width: 750px;" /></a>
 </div>
 <div class="section" id="effacer-le-systeme-et-le-reinstaller-du-zero">
 <h4>Effacer le système et le reinstaller du zéro<a class="headerlink" href="#effacer-le-systeme-et-le-reinstaller-du-zero" title="Permalink to this headline">¶</a></h4>
-<p>Toujours sur la machine client, ouvrez le Terminal. Cette fois pour effacer l’OS et le reinstaller de nouveau. Cette commande efface le système entièrement ensuite install le package OS qu’on vient de copier dans le dossier /Applications.</p>
+<p>Toujours sur la machine client, ouvrez le Terminal. Cette fois pour effacer l’OS et le reinstaller de nouveau. Cette commande efface le système entièrement ensuite install le package OS qu’on vient de copier dans le répertoire /Applications.</p>
 <div class="highlight-Shell notranslate"><div class="highlight"><pre><span></span>sudo jamf policy -event eraseinstallcatalina
 </pre></div>
 </div>
@@ -414,7 +411,7 @@ Quand cette commande est lancée on peut le laisser, il fera ce procès tout seu
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="JamfAddPrinter.html" title="previous page">Créer une règle pour ajouter une imprimante dans Jamf</a>
+    <a class='left-prev' id="prev-link" href="JamfAddPrinter.html" title="previous page">Créer une règle pour ajouter une imprimante dans Jam</a>
     <a class='right-next' id="next-link" href="JamfRechercheAvance.html" title="next page">Recherche avancé</a>
 
         </div>

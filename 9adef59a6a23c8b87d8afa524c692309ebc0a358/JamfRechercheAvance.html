@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -105,7 +106,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="JamfAddPrinter.html">
-     Créer une règle pour ajouter une imprimante dans Jamf
+     Créer une règle pour ajouter une imprimante dans Jam
     </a>
    </li>
    <li class="toctree-l2">
@@ -121,6 +122,16 @@
    <li class="toctree-l2">
     <a class="reference internal" href="JamfUpdateApplication.html">
      Mise à jour des applications dans Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfEnroll.html">
+     Comment enrôler un post dans Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfEnrolliPad.html">
+     Comment enroller un Ipad dans Jamf
     </a>
    </li>
   </ul>
@@ -145,6 +156,11 @@
      Hermes II
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Glpi.html">
+     Glpi
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -165,33 +181,11 @@
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="Enroller.html">
-   Section Enroller
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="EnrollJamf.html">
-     Comment enrôler un post dans Jamf
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Enrollipad.html">
-     Comment enroller un Ipad dans Jamf
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
   <a class="reference internal" href="ServeurReseau.html">
    Section Réseau
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -298,40 +292,53 @@
                 
   <div class="section" id="recherche-avance">
 <h1>Recherche avancé<a class="headerlink" href="#recherche-avance" title="Permalink to this headline">¶</a></h1>
-<p>Aprés, c ‘être log, aller dans Recheche avancer</p>
+<p>Dans le menu de Jamf Pro &gt; le tab “Ordinateurs” , cliquez sur la “Recherche dans l’inventaire”</p>
 <a class="reference internal image-reference" href="_images/rechercheMenu.png" id="menu"><img alt="_images/rechercheMenu.png" class="align-center" id="menu" src="_images/rechercheMenu.png" style="width: 300px;" /></a>
-<p>vous voila devant les recherches avancées, vous pouvez voir les régles déja misent en place.</p>
-<p>Cliquez sur add pour une nouvelle recherche avancée</p>
+</br>
+Vous voila devant les recherches avancées, vous pouvez voir les régles déja misent en place.
+Cliquez sur add pour une nouvelle recherche avancée  
 <a class="reference internal image-reference" href="_images/addRegle.png" id="addregle"><img alt="_images/addRegle.png" class="align-center" id="addregle" src="_images/addRegle.png" style="width: 500px;" /></a>
-<p>Donnez un nom à la regle.</p>
+</br>
+Donnez un nom à la regle.
 <a class="reference internal image-reference" href="_images/reglesEnregistre.png" id="reglesenregistre"><img alt="_images/reglesEnregistre.png" class="align-center" id="reglesenregistre" src="_images/reglesEnregistre.png" style="width: 500px;" /></a>
-<p>Vous avez plusieur option à disposition, choisissez les bonne caractéristique.</p>
+</br>
+Vous avez plusieur option à disposition, choisissez les bonne caractéristique.
 <p>Vous pouvez en rajoutez au tant que vous voulez.</p>
 <a class="reference internal image-reference" href="_images/critereRegle.png" id="critereregle"><img alt="_images/critereRegle.png" class="align-center" id="critereregle" src="_images/critereRegle.png" style="width: 500px;" /></a>
-<p>Vous pouvez plusieur option à cocher, choisissez les bonnes coches pour la règle.</p>
+</br>
+Vous pouvez plusieur option à cocher, choisissez les bonnes coches pour la règle.
 <a class="reference internal image-reference" href="_images/affichageRegle.png" id="affichageregle"><img alt="_images/affichageRegle.png" class="align-center" id="affichageregle" src="_images/affichageRegle.png" style="width: 500px;" /></a>
-<p>dans la dernière partie vous touchez au type du rapport et le télécharger.</p>
+</br>
+dans la dernière partie vous touchez au type du rapport et le télécharger.
 <a class="reference internal image-reference" href="_images/rapportRegle.png" id="rapportregle"><img alt="_images/rapportRegle.png" class="align-center" id="rapportregle" src="_images/rapportRegle.png" style="width: 500px;" /></a>
-<p>Cliquez sur afficher pour voir le résultat</p>
+</br>
+Cliquez sur afficher pour voir le résultat
 <div class="section" id="exemple-de-recherche-avance">
 <h2>exemple de recherche avancé<a class="headerlink" href="#exemple-de-recherche-avance" title="Permalink to this headline">¶</a></h2>
 <p>Dans l’exemple , je vais utiliser une recherche avancer déjà crée</p>
 <a class="reference internal image-reference" href="_images/rechecheExistente.png" id="rechecheexistente"><img alt="_images/rechecheExistente.png" class="align-center" id="rechecheexistente" src="_images/rechecheExistente.png" style="width: 500px;" /></a>
-<p>Ensuite cliquez sur afficher en bas a droite.</p>
+</br>
+Ensuite cliquez sur afficher en bas a droite.
 <a class="reference internal image-reference" href="_images/afficherRecherche.png" id="afficherrecherche"><img alt="_images/afficherRecherche.png" class="align-center" id="afficherrecherche" src="_images/afficherRecherche.png" style="width: 500px;" /></a>
-<p>la recherche vas afficher ce que vous demander et maintenant on va effacer un ordinateur (dans ce cas).</p>
+</br>
+la recherche vas afficher ce que vous demander et maintenant on va effacer un ordinateur (dans ce cas).
 <a class="reference internal image-reference" href="_images/resultatRecherche.png" id="resultatrecherche"><img alt="_images/resultatRecherche.png" class="align-center" id="resultatrecherche" src="_images/resultatRecherche.png" style="width: 500px;" /></a>
-<p>Cliquez sur un ordinateur (que vous voulez sup.)</p>
+</br>
+Cliquez sur un ordinateur (que vous voulez sup.)
 <p>et allez en bas a droite sur la poubelle et double-clique.</p>
 <a class="reference internal image-reference" href="_images/supprimerResultat.png" id="supprimerresultat"><img alt="_images/supprimerResultat.png" class="align-center" id="supprimerresultat" src="_images/supprimerResultat.png" style="width: 500px;" /></a>
-<p>puis valider la pop-up qui apparait</p>
+</br>
+puis valider la pop-up qui apparait
 <a class="reference internal image-reference" href="_images/supprimerResultatConf.png" id="supprimerresultatconf"><img alt="_images/supprimerResultatConf.png" class="align-center" id="supprimerresultatconf" src="_images/supprimerResultatConf.png" style="width: 500px;" /></a>
-<p>Sinon aller au “début” sur afficher en bas à droite il y a un bouton action.</p>
+</br>
+Sinon aller au "début" sur afficher en bas à droite il y a un bouton action.
 <p>Selectionner les ordinateurs.</p>
 <a class="reference internal image-reference" href="_images/SupprimerTout.png" id="supprimertout"><img alt="_images/SupprimerTout.png" class="align-center" id="supprimertout" src="_images/SupprimerTout.png" style="width: 500px;" /></a>
-<p>Cliquez sur suivant et suivez les demandes.</p>
-<a class="reference internal image-reference" href="_images/rapportRegle.png" id="id1"><img alt="_images/rapportRegle.png" class="align-center" id="id1" src="_images/rapportRegle.png" style="width: 500px;" /></a>
-<p>Terminer</p>
+</br>
+Cliquez sur suivant et suivez les demandes.
+<a class="reference internal image-reference" href="_images/rapportRegle.png" id="rapportregle2"><img alt="_images/rapportRegle.png" class="align-center" id="rapportregle2" src="_images/rapportRegle.png" style="width: 500px;" /></a>
+</br>
+Terminer
 </div>
 </div>
 

@@ -1,11 +1,10 @@
-# Créer une règle pour ajouter une imprimante dans Jamf
-
-
+# Créer une règle pour ajouter une imprimante dans Jam
 
 ## Avant de débuter 
 
-Il faut ajouter l'imprimante sur le poste, je vous laisse la marche à suivre sur le lien :
-https://sites.google.com/view/gycha-it/ressources#h.r65nzqlnc3we
+Il faut ajouter l'imprimante sur le poste, je vous laisse la marche à suivre sur le lien:
+
+[Gycha-IT][1]
 
 ### et
 
@@ -93,7 +92,7 @@ Pour finir allez dans périmètre.
 :align: center
 ```
 
-Sélectionez le groupe ou un ordinateur que vous voulez (vous pouvez en choissir plus) .
+Sélectionez le groupe ou un ordinateur que vous voulez (vous pouvez en choissir plus)
 
 ```{image} images/perimetreAddPrint.png
 :width: 500px
@@ -105,8 +104,5 @@ Il manque plus qu'à appuyer sur "Terminer".
 
 Félicitation vous savez créé une règle pour ajouter une imprimante.
 
- 
-
-
-
-
+[//]: # (Links)
+[1]: https://sites.google.com/view/gycha-it/ressources#h.r65nzqlnc3we

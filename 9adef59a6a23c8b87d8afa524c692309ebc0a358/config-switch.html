@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -105,7 +106,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="JamfAddPrinter.html">
-     Créer une règle pour ajouter une imprimante dans Jamf
+     Créer une règle pour ajouter une imprimante dans Jam
     </a>
    </li>
    <li class="toctree-l2">
@@ -121,6 +122,16 @@
    <li class="toctree-l2">
     <a class="reference internal" href="JamfUpdateApplication.html">
      Mise à jour des applications dans Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfEnroll.html">
+     Comment enrôler un post dans Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfEnrolliPad.html">
+     Comment enroller un Ipad dans Jamf
     </a>
    </li>
   </ul>
@@ -145,6 +156,11 @@
      Hermes II
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Glpi.html">
+     Glpi
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -164,34 +180,12 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="Enroller.html">
-   Section Enroller
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="EnrollJamf.html">
-     Comment enrôler un post dans Jamf
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Enrollipad.html">
-     Comment enroller un Ipad dans Jamf
-    </a>
-   </li>
-  </ul>
- </li>
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="ServeurReseau.html">
    Section Réseau
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -578,7 +572,7 @@
 <p>Changez la configuration de <em>Dynamic IP Adress</em> à <em>Static IP Adress</em>.</p>
 <p>Complétez ensuite le formulaire, l’image suivante est un exemple correct :</p>
 <a class="reference internal image-reference" href="_images/ip_config_final.png" id="ip-config-final"><img alt="_images/ip_config_final.png" class="align-center" id="ip-config-final" src="_images/ip_config_final.png" style="width: 500px;" /></a>
-<p>Pour le champ <em>IP Adress</em>, une adresse IP pas encore utilisée sur le réseau doit être entrée. Pour voir tous les objets sur le réseau, vous pouvez aller sur <span class="xref myst">http://ipam.dgep.edu-vaud.ch</span>.</p>
+<p>Pour le champ <em>IP Adress</em>, une adresse IP pas encore utilisée sur le réseau doit être entrée. Pour voir tous les objets sur le réseau, vous pouvez aller sur <a class="reference external" href="http://ipam.dgep.edu-vaud.ch">http://ipam.dgep.edu-vaud.ch</a>.</p>
 <p>Pour le champ <em>Subnet Mask</em>, mettez 255.255.255.0.</p>
 <p>Pour le champ <em>Default Gateway</em>, l’IP du gateway doit être mise, sur ce réseau elle est 10.226.32.1.</p>
 <p>Enfin, pour le champ Management VLAN ID, mettez 32.</p>

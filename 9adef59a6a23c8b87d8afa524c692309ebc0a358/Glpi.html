@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hermes II &#8212; Documentation Technique Chamblandes</title>
+    <title>Glpi &#8212; Documentation Technique Chamblandes</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -52,8 +52,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Glpi" href="Glpi.html" />
-    <link rel="prev" title="Identifiants et mots de passe" href="mdp.html" />
+    <link rel="next" title="Section MachineVirtuelle" href="MachineVirtuelle.html" />
+    <link rel="prev" title="Hermes II" href="hermes.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -151,13 +151,13 @@
      Identifiants et mots de passe
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="hermes.html">
      Hermes II
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Glpi.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Glpi
     </a>
    </li>
@@ -244,7 +244,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/hermes.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/Glpi.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -275,24 +275,26 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#connexion">
-   Connexion
+  <a class="reference internal nav-link" href="#authentification">
+   Authentification
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#horaires">
-   Horaires
+  <a class="reference internal nav-link" href="#gestion-des-tickets">
+   Gestion des tickets
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#annuaire">
-   Annuaire
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#aide">
-   Aide
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#list-des-tickets">
+     List des tickets
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#attribution-des-tickets">
+     Attribution des tickets
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -305,64 +307,47 @@
         
               <div>
                 
-  <div class="section" id="hermes-ii">
-<h1>Hermes II<a class="headerlink" href="#hermes-ii" title="Permalink to this headline">¶</a></h1>
-<p>Hermes II est un outil qui vous sera fourni et qui vous permettra de rechercher des informations concernant les élèves, maîtres et classes du gymnase.</p>
-<p>Hermes ne pourra être accédé uniquement à partir du réseau du gymnase. Son adresse est la suivante :</p>
-<p><a class="reference external" href="https://www3.gycham.vd.ch/gymnase/login/">https://www3.gycham.vd.ch/gymnase/login/</a></p>
-<hr class="docutils" />
-<div class="section" id="connexion">
-<h2>Connexion<a class="headerlink" href="#connexion" title="Permalink to this headline">¶</a></h2>
-<p>Une fois que vous êtes sur le site, vous devriez voir le formulaire suivant :</p>
-<a class="reference internal image-reference" href="_images/connexion_hermes.png" id="connexion-hermes"><img alt="_images/connexion_hermes.png" class="align-center" id="connexion-hermes" src="_images/connexion_hermes.png" style="width: 200px;" /></a>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Si le formulaire ressemble plutôt à ceci:</p>
-<a class="reference internal image-reference" href="_images/fausse_connexion_hermes.png" id="fausse-connexion-hermes"><img alt="_images/fausse_connexion_hermes.png" class="align-left" id="fausse-connexion-hermes" src="_images/fausse_connexion_hermes.png" style="width: 200px;" /></a>
-<p>C’est que vous êtes bien sur le site d’Hermes, mais à l’adresse: <a class="reference external" href="https://www3.gycham.vd.ch/login/?next=/">https://www3.gycham.vd.ch/login/?next=/</a></p>
-<p>Et non: <a class="reference external" href="https://www3.gycham.vd.ch/gymnase/login/">https://www3.gycham.vd.ch/gymnase/login/</a></p>
-<p>Parfois, le raccourci ne marche pas et vous redirige à la mauvaise adresse.</p>
+  <div class="section" id="glpi">
+<h1>Glpi<a class="headerlink" href="#glpi" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>Glpi est une application WEB qui aide les entreprises à gérer leur système d’information.
+Cette solution est capable de construire un inventaire de toutes les ressources de la société et de réaliser la gestion des tâches administratives et financières.</p>
+<p>(source: Wikipedia)</p>
+</div></blockquote>
+<p>Ici à Gycha, nous utilisons ce service pour la gestion des tickets et des demandes qu’on recevoi par mail.</p>
+<div class="section" id="authentification">
+<h2>Authentification<a class="headerlink" href="#authentification" title="Permalink to this headline">¶</a></h2>
+<p>Le lien pour accèder à l’interface de Glpi est: <a class="reference external" href="http://glpi.edu-vaud.ch/">http://glpi.edu-vaud.ch/</a>
+Ce lien vous dirige vers la page login du Glpi.
+Vous pouvez vous logger avec votre identifiant et mot de passe eduvaud.</p>
+<a class="reference internal image-reference" href="_images/glpi-login.png" id="glpi-login"><img alt="_images/glpi-login.png" class="align-center" id="glpi-login" src="_images/glpi-login.png" style="width: 500px;" /></a>
 </div>
-<p>Ensuite, rentrez votre identifiant et mot de passe de votre compte qui est dans l’AD. Sélectionnez, comme sur l’image ci-dessus, le champ <em>Service</em> pour la première combo box et <em>Gymnase de Chamblandes</em> pour la deuxième. Il suffit après cela d’appuyer sur le bouton <em>Connexion</em>.</p>
-<p>Vous devriez ensuite vous trouver sur une page qui ressemble à ceci :</p>
-<a class="reference internal image-reference" href="_images/accueil_hermes.png" id="accueil-hermes"><img alt="_images/accueil_hermes.png" class="align-center" id="accueil-hermes" src="_images/accueil_hermes.png" style="width: 500px;" /></a>
+<div class="section" id="gestion-des-tickets">
+<h2>Gestion des tickets<a class="headerlink" href="#gestion-des-tickets" title="Permalink to this headline">¶</a></h2>
+<p>Si vous vous authentifiez correctement, vous entrez à la page d’accueil du Glpi.
+Depuis ici, vous povez allez vers la section des Tickets pour les gérer.</p>
+<a class="reference internal image-reference" href="_images/glpi-tickets.png" id="glpi-tickets"><img alt="_images/glpi-tickets.png" class="align-center" id="glpi-tickets" src="_images/glpi-tickets.png" style="width: 500px;" /></a>
+<br/>
+<p>Pour bien pouvoir voir tous les tickets,
+controllez bien que vous êtes en mode supervisor.</p>
+<a class="reference internal image-reference" href="_images/glpi-mode.png" id="glpi-mode"><img alt="_images/glpi-mode.png" class="align-center" id="glpi-mode" src="_images/glpi-mode.png" style="width: 500px;" /></a>
+<div class="section" id="list-des-tickets">
+<h3>List des tickets<a class="headerlink" href="#list-des-tickets" title="Permalink to this headline">¶</a></h3>
+<p>Lest des cas céés par Glpi (soi depuis un email envoyé à la boîte mail de Glpi soi le ticket est
+créé depuis <strong>interface de Glpi</strong>) sont afficher depuis un filtrage par defaut
+qui affiche tout les tickets “non-résolus”</p>
+<a class="reference internal image-reference" href="_images/glpi-tickets-2.png" id="glpi-tickets-2"><img alt="_images/glpi-tickets-2.png" class="align-center" id="glpi-tickets-2" src="_images/glpi-tickets-2.png" style="width: 500px;" /></a>
+<br/>
+<p>Avec ce util vous pouvez facilement ranger les tickets ou trouver les tickets que vous souhaitez.</p>
+<a class="reference internal image-reference" href="_images/glpi-tickets-filter.png" id="glpi-tickets-filter"><img alt="_images/glpi-tickets-filter.png" class="align-center" id="glpi-tickets-filter" src="_images/glpi-tickets-filter.png" style="width: 500px;" /></a>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Tips!</p>
+<p>Vous pouvez aussi savegarder, reseter ou masquer votre filtre avec les options qui sont situés à côté du boutons de la recherche. <img alt="tips-filter" src="_images/glpi-tickets-filter-tips.png" /></p>
 </div>
-<hr class="docutils" />
-<div class="section" id="horaires">
-<h2>Horaires<a class="headerlink" href="#horaires" title="Permalink to this headline">¶</a></h2>
-<p>Vous pouvez ensuite consulter les horaires des élèves, maîtres et salles du Gymnase.</p>
-<p>Après avoir cliqué sur <em>Horaires</em>, vous devriez voir le formulaire ci-dessous :</p>
-<a class="reference internal image-reference" href="_images/recherche_horaire_hermes.png" id="recherche-horaire-hermes"><img alt="_images/recherche_horaire_hermes.png" class="align-center" id="recherche-horaire-hermes" src="_images/recherche_horaire_hermes.png" style="width: 500px;" /></a>
-<p>Mettez dans le champ <em>Recherche</em> l’élève, maître ou salle que vous recherchez, par exemple comme ceci :¨</p>
-<a class="reference internal image-reference" href="_images/recherche_horaire_2_hermes.png" id="recherche-horaire-2-hermes"><img alt="_images/recherche_horaire_2_hermes.png" class="align-center" id="recherche-horaire-2-hermes" src="_images/recherche_horaire_2_hermes.png" style="width: 500px;" /></a>
-<p>Il est aussi possible de choisir un semestre ou une semaine spécifique.</p>
-<p>Si vous appuyez sur <em>Afficher</em>, vous devriez voir un horaire qui s’est généré, comme suit:</p>
-<a class="reference internal image-reference" href="_images/horaire_hermes.png" id="horaire-hermes"><img alt="_images/horaire_hermes.png" class="align-center" id="horaire-hermes" src="_images/horaire_hermes.png" style="width: 500px;" /></a>
-<p>Sur cet horaire, vous pouvez retrouver des informations telles que quelle matière est enseignée, qui est l’enseignant qui donne le cours ou encore quelle est la classe qui assiste au cours.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Il est possible d’afficher plusieurs horaires en une fois et les informations seront superposées et triées par couleurs.</p>
 </div>
-<p>Vous pouvez cliquer sur l’abréviation d’un maître (Cy pour <strong>C</strong>hame<strong>y</strong> Claudine par exemple) pour avoir plus d’informations à son sujet :</p>
-<a class="reference internal image-reference" href="_images/infos_maitre_hermes.png" id="infos-maitre-hermes"><img alt="_images/infos_maitre_hermes.png" class="align-center" id="infos-maitre-hermes" src="_images/infos_maitre_hermes.png" style="width: 500px;" /></a>
-<p>Toutes les abbréviations des enseignants sont détaillées en bas de l’horaire :</p>
-<a class="reference internal image-reference" href="_images/abb_maitre_hermes.png" id="abb-maitre-hermes"><img alt="_images/abb_maitre_hermes.png" class="align-center" id="abb-maitre-hermes" src="_images/abb_maitre_hermes.png" style="width: 500px;" /></a>
-<p>Vous pouvez également cliquer sur les petites loupes dans les différentes cases pour afficher quelles salles sont libres à la période donnée :</p>
-<a class="reference internal image-reference" href="_images/salles_libres_hermes.png" id="salles-libres-hermes"><img alt="_images/salles_libres_hermes.png" class="align-center" id="salles-libres-hermes" src="_images/salles_libres_hermes.png" style="width: 500px;" /></a>
+<div class="section" id="attribution-des-tickets">
+<h3>Attribution des tickets<a class="headerlink" href="#attribution-des-tickets" title="Permalink to this headline">¶</a></h3>
 </div>
-<hr class="docutils" />
-<div class="section" id="annuaire">
-<h2>Annuaire<a class="headerlink" href="#annuaire" title="Permalink to this headline">¶</a></h2>
-<p>L’annuaire permet de voir des informations sur les élèves et les enseignants, ainsi que de voir la liste des élèves par classe et la liste des maîtres par file.</p>
-<p>Après avoir cliqué sur <em>Annuaire</em>, mettez le nom du maître, de l’élève, de la classe ou encore de la file sur lequel vous voulez avoir plus d’informations dans le champ <em>Recherche</em>, comme suit :</p>
-<a class="reference internal image-reference" href="_images/infos_eleve_recherche_hermes.png" id="infos-eleve-recherche-hermes"><img alt="_images/infos_eleve_recherche_hermes.png" class="align-center" id="infos-eleve-recherche-hermes" src="_images/infos_eleve_recherche_hermes.png" style="width: 500px;" /></a>
-<p>Le bouton <em>Afficher</em> va montrer la photo du Gymnase de l’élève ainsi que sa date de naissance, sa classe, son maître conseiller et son doyen :</p>
-<a class="reference internal image-reference" href="_images/infos_eleve_hermes.png" id="infos-eleve-hermes"><img alt="_images/infos_eleve_hermes.png" class="align-center" id="infos-eleve-hermes" src="_images/infos_eleve_hermes.png" style="width: 500px;" /></a>
-</div>
-<hr class="docutils" />
-<div class="section" id="aide">
-<h2>Aide<a class="headerlink" href="#aide" title="Permalink to this headline">¶</a></h2>
-<p>L’aide d’Hermes est présente sous la forme d’une F.A.Q avec plusieurs liens qui vous expliquent comment faire les choses, si vous en avez les droits.</p>
 </div>
 </div>
 
@@ -391,8 +376,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="mdp.html" title="previous page">Identifiants et mots de passe</a>
-    <a class='right-next' id="next-link" href="Glpi.html" title="next page">Glpi</a>
+    <a class='left-prev' id="prev-link" href="hermes.html" title="previous page">Hermes II</a>
+    <a class='right-next' id="next-link" href="MachineVirtuelle.html" title="next page">Section MachineVirtuelle</a>
 
         </div>
         

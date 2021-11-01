@@ -218,7 +218,7 @@ Complétez ensuite le formulaire, l'image suivante est un exemple correct :
 :align: center
 ```
 
-Pour le champ *IP Adress*, une adresse IP pas encore utilisée sur le réseau doit être entrée. Pour voir tous les objets sur le réseau, vous pouvez aller sur [http://ipam.dgep.edu-vaud.ch](ipam.dgep.edu-vaud.ch).
+Pour le champ *IP Adress*, une adresse IP pas encore utilisée sur le réseau doit être entrée. Pour voir tous les objets sur le réseau, vous pouvez aller sur http://ipam.dgep.edu-vaud.ch.
 
 Pour le champ *Subnet Mask*, mettez 255.255.255.0.
 

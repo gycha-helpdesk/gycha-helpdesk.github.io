@@ -1,11 +1,9 @@
 # Active Directory de la DGEP
 
+```{admonition} Information
 Tous les comptes Eduvaud des élèves et des professeurs sont dans une Active Directory centralisée. L'accès à l'AD est utile pour rechercher des informations sur le compte de quelqu'un ainsi que pour effectuer des manipulations telles que réinitialiser le mot de passe d'une personne par exemple.
----
-
-## Connexion
-
-Que vous soyez connectés dans le réseau du Gymnase ou pas, la procédure d'accès à l'AD est similaire au début.
+`oiQue vous soyez connectés dans le réseau du Gymnase ou pas, la procédure d'accès à l'AD est similaire au début.
+```
 
 Tout d'abord, installez l'application *Microsoft Remote Desktop* (vous pouvez la trouver sur l'App Store).
 
@@ -31,7 +29,6 @@ Ensuite, cliquez sur le petit "+" dans la barre d'outils, puis *Add PC*:
 
 Vous devriez voir le formulaire suivant :
 
-
 ```{image} images/formulaire_add_pc_empty_ad.png
 :width: 500px
 :name: AddPc
@@ -48,7 +45,7 @@ Vous devriez voir le formulaire suivant :
 :align: center
 ```
 
-Pour le premier champ, *PC Name*, mettez l'adresse IP du serveur de la DGEP, *10.226.34.17*.
+Pour le premier champ, *PC Name*, mettez l'adresse IP du serveur de la DGEP, **10.226.34.17**.
 
 Pour le deuxième champ, *User Account*, un compte doit être créé pour vous.
 
@@ -58,7 +55,7 @@ Les autres champs peuvent être laissés par défaut.
 Je conseille de remplir le champ *Friendly name*, il vous permettra de retrouver l'ordinateur plus simplement plus tard.
 ```
 
-Cliquez ensuite sur *Add* et vous devriez voir l'ordinateur suivant qui est apparu sur la page principale :
+Cliquez ensuite sur *Add* et vous devriez voir l'ordinateur suivant qui est apparu sur la page principale:
 
 ```{image} images/pc_created_ad.png
 :width: 500px
@@ -96,7 +93,7 @@ Tout d'abord, ajoutez un nouvel ordinateur dans *Microsoft Remote Desktop* param
 :align: center
 ```
 
-Avec pour l'adresse de l'ordinateur, *PC name*: rdfarm.dgep.edu-vaud.ch.
+Avec pour l'adresse de l'ordinateur, *PC name*: **rdfarm.dgep.edu-vaud.ch**
 
 L'*User account* est le même que précedemment, il doit être créé pour vous.
 
@@ -108,7 +105,7 @@ Un paramètre supplémentaire doit être rentré, le *Gateway*. Pour ce faire, c
 :align: center
 ```
 
-Dans *Gateway name*, mettez : remote.dgep.edu-vaud.ch.
+Dans *Gateway name*, mettez : **remote.dgep.edu-vaud.ch**
 
 Mettez le nom que vous voulez dans *Friendly name*, puis votre compte dans *User account*.
 
@@ -130,7 +127,7 @@ Ouvrez-la, vous devriez arriver sur un formulaire que vous compléterez comme su
 :align: center
 ```
 
-Dans *Computer*, mettez l'ip *10.226.34.17*.
+Dans le champ *Computer*, mettez l'IP, **10.226.34.17**
 
 Dans *Username*, mettez *DGEP\\<votre_id>* où <votre_id> est l'identifiant qui a été créé pour vous.
 
@@ -168,6 +165,7 @@ Notez le nom, le prénom ou les deux et validez la recherche de compte.
 ```
 
 Normalement le compte utilisateur devrait apparaitre. Si cela ne marche pas, essayer d'effectuer la recherche plus loin (Genre : dgep.edu-vaud.ch)
+
 ```{image} images/AD_recherche_utilisateur.png
 :width: 500px
 :name: AD_recherche_utilisateur
@@ -198,7 +196,7 @@ Dans "Account" vous pouvez voir ses identifiants et son email.
 :align: center
 ```
 
-## Réinitialiser le mot de passe d'une personne 
+## Réinitialiser le mot de passe d'une personne
 
 Rendez-vous sur le résultat de la recherche des comptes utilisateurs.
 
@@ -215,7 +213,7 @@ Clic-droit sur le nom de l'utilisateur qui est affiché et cliquez sur reset pas
 :name: Changer_Pwd
 :align: center
 ```
-
+  
 Mettez-lui comme code : Chamblades2021.
 
 Cochez l'option pour que l'utilisateur aille la possibilité de changer son mot de passe.
