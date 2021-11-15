@@ -13,7 +13,7 @@ C'est une application utilisée par les administrateurs système pour configurer
 ## Connexion au Jamf Pro
 
 Pour accéder au Jamf Pro, vous allez passer par son appliance WEB
-</br> -> [https://10.225.232.161:8443][1]
+</br> -> https://10.225.232.161:8443
 </br> -> [Jamf Pro Serve Server][2]
 
 ### Identification
@@ -27,13 +27,24 @@ Jamf Pro vous demande de vous logger avec un compte utilisateur:
 ```
 
 </br>
-Identifiant pour un utilisateur JamF Pro:
 
-| Identifiant | Mot de passe |
-|    :----:   |    :----:    |
-|  Gychameta  |    Gym_09    |
+`````{admonition} Identifiant pour un utilisateur JamF Pro
+:class: note, dropdown
 
-Identifiant pour un super utilisateur Jamf Pro se trouve dans [Password State][3] (DGEP Password) mais vous allez pas avoir besoin de vous connecter au Jamf en tant que superuser.
+````{panels}
+:column: col-5
+:card: border-2
+Identifiant
+^^^
+Gychameta
+---
+```{dropdown} Mot de passe
+Gym_09
+```
+````
+`````
+
+Identifiant pour un super utilisateur Jamf Pro se trouve dans [Password State][1] (DGEP Password) mais vous allez pas avoir besoin de vous connecter au Jamf en tant que superuser.
 
 ### Jamf Pro
 
@@ -47,7 +58,7 @@ Après avoir se connecter au Jamf Pro sans erreur. Vous aurez une interface qui 
 
 [//]: # (Links)
 
-[1]: https://10.225.232.161:8443
+[1]: https://pass.dgep.edu-vaud.ch:9119
 [2]: https://Aus000021.dgep.edu-vaud.ch
-[3]: https://pass.dgep.edu-vaud.ch:9119
+
 
