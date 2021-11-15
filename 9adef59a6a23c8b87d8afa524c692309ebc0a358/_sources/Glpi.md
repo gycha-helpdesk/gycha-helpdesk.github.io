@@ -12,7 +12,8 @@ Description:	Start using Glpi IT management
 > 
 > (source: Wikipedia)
 
-Ici à Gycha, nous utilisons ce service pour la gestion des tickets et des demandes qu'on recevoi par mail.
+Ici à Gycha, nous utilisons ce service pour la gestion des tickets et 
+des demandes qu'on recevoi par mail.
 
 ## Authentification
 

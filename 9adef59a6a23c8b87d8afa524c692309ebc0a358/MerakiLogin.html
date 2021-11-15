@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Section Utile &#8212; Documentation Technique Chamblandes</title>
+    <title>Introduction &#8212; Documentation Technique Chamblandes</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -52,8 +52,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Identifiants et mots de passe" href="mdp.html" />
-    <link rel="prev" title="Cisco Meraki" href="MerakiLogin.html" />
+    <link rel="next" title="Section Utile" href="Utile.html" />
+    <link rel="prev" title="Section Meraki" href="Meraki.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -136,28 +136,28 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="Meraki.html">
    Section Meraki
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="MerakiLogin.html">
-     Cisco Meraki
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Introduction
     </a>
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="Utile.html">
    Section Utile
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
@@ -261,7 +261,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/Utile.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/MerakiLogin.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -286,6 +286,19 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#login">
+   Login
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -294,9 +307,58 @@
         
               <div>
                 
-  <div class="section" id="section-utile">
-<h1>Section Utile<a class="headerlink" href="#section-utile" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
+  <!--
+Author:		    NoorMohammad Alizadeh
+Date:		    15-nov, 2021
+Description:	Meraki web interface login
+-->
+<div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>Meraki offre une gestion centralisée des appareils
+Cisco qui sont facilement accessible depuis un
+navigateur web (aussi les telephones portable via
+Application Meraki).</p>
+</div></blockquote>
+<div class="tabbed-set docutils">
+<input checked="checked" id="79a6076f-fff3-4e6a-9aab-28f23f6c23dc" name="653c0705-6d71-4cd3-b9cd-d163ac1cfe0f" type="radio">
+</input><label class="tabbed-label" for="79a6076f-fff3-4e6a-9aab-28f23f6c23dc">
+WEB</label><div class="tabbed-content docutils">
+<a class="reference internal image-reference" href="_images/meraki-web.gif" id="meraki-web"><img alt="_images/meraki-web.gif" class="align-left" id="meraki-web" src="_images/meraki-web.gif" style="width: 450px;" /></a>
+</div>
+<input id="c52c9b0d-176d-40fe-bf8a-3b2bdf3d0e6c" name="653c0705-6d71-4cd3-b9cd-d163ac1cfe0f" type="radio">
+</input><label class="tabbed-label" for="c52c9b0d-176d-40fe-bf8a-3b2bdf3d0e6c">
+iOS</label><div class="tabbed-content docutils">
+<a class="reference internal image-reference" href="_images/meraki-appstore.png" id="meraki-ios"><img alt="_images/meraki-appstore.png" class="align-left" id="meraki-ios" src="_images/meraki-appstore.png" style="width: 450px;" /></a>
+</div>
+<input id="3587b181-3a55-4bd5-a5a6-251e4d3bd302" name="653c0705-6d71-4cd3-b9cd-d163ac1cfe0f" type="radio">
+</input><label class="tabbed-label" for="3587b181-3a55-4bd5-a5a6-251e4d3bd302">
+Android</label><div class="tabbed-content docutils">
+<a class="reference internal image-reference" href="_images/meraki-googleplay.png" id="meraki-android"><img alt="_images/meraki-googleplay.png" class="align-left" id="meraki-android" src="_images/meraki-googleplay.png" style="width: 450px;" /></a>
+</div>
+</div>
+<div class="section" id="login">
+<h2>Login<a class="headerlink" href="#login" title="Permalink to this headline">¶</a></h2>
+<p>Pour se connecter à l’interface WEB du Meraki, dabord
+il faut que vous demandiez à votre personne responsable d
+e céer un accès à cette interface, ensuite un email avec
+le lien pour créer un mot de passe sera envoyé dans votre
+boîte mail.</p>
+<p>Ensuite, pour acceder au dashboard du Meraki, copiez le
+lien ci-dessous dans votre navigateur WEB:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">n213</span><span class="o">.</span><span class="n">meraki</span><span class="o">.</span><span class="n">com</span>
+</pre></div>
+</div>
+<p>Ce lien vous amène ver la page login du site Meraki.
+Vous allez simplement tapper votre e-mail via le quel
+votre compte Meraki a été créé, ensuite tappez votre
+mot de passe.</p>
+<a class="reference internal image-reference" href="_images/meraki-login-2.png" id="meraki-login"><img alt="_images/meraki-login-2.png" class="align-center" id="meraki-login" src="_images/meraki-login-2.png" style="width: 500px;" /></a>
+<p>Après avoir saisie l’identifiant et le mot de passe,
+si les informations ont été correctes, vous serez
+dirigez vers le “dashboard” du Meraki, qui va resembler
+à la photo ci-dessous.</p>
+<a class="reference internal image-reference" href="_images/meraki-dashboard.png" id="meraki-dashboard"><img alt="_images/meraki-dashboard.png" class="align-center" id="meraki-dashboard" src="_images/meraki-dashboard.png" style="width: 500px;" /></a>
 </div>
 </div>
 
@@ -325,8 +387,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="MerakiLogin.html" title="previous page">Cisco Meraki</a>
-    <a class='right-next' id="next-link" href="mdp.html" title="next page">Identifiants et mots de passe</a>
+    <a class='left-prev' id="prev-link" href="Meraki.html" title="previous page">Section Meraki</a>
+    <a class='right-next' id="next-link" href="Utile.html" title="next page">Section Utile</a>
 
         </div>
         
