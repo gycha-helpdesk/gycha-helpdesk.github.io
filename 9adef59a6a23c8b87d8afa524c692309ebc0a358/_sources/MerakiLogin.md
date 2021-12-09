@@ -8,8 +8,8 @@ Description:	Meraki web interface login
 
 > Meraki offre une gestion centralisée des appareils 
 > Cisco qui sont facilement accessible depuis un 
-> navigateur web (aussi les telephones portable via 
-> Application Meraki). 
+> navigateur web ainsi que les telephones portables via 
+> Application Meraki. 
 
 ````{tabbed} WEB
 ```{image} images/meraki-web.gif

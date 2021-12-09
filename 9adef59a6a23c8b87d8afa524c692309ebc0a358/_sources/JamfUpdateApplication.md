@@ -1,92 +1,100 @@
+<!-- 
+Author:         -
+Date:           2020    
+Description:    How to update packages in jamf
+----------------------------------------------
+Edit:           3-Dec 2021, Noor Alizadeh
+ -->
+
 # Mise à jour des applications dans Jamf
 
-## Description Jamf
+## Types des packages
 
-C'est une application utilisée par les administrateurs système pour configurer et automatiser les tâches d'administrations informatique pour les appareils macOS, iOS
+Quand vous télécharger la nouvelle version de votre application/package, son type/format sera en pkg ou DMG.
 
-## avant de la marche à suivre
+Si c'est un PKG on est bon et on peut passer à l'étap **[Charger le PKG dans JamfAdmin](jamf-admin)**. 
+Si c'est un DMG, nous allons essayer de créer un PKG.
 
-vous devez installez la nouvelle version que vous voulez.
+### Création d'un PKG à partir d'un fichier DMG
 
-si elle est en .pkg c'est cool raoul
+Prenons comme exemple VLC qui est un DMG.
 
-si c'est en dmg je vous laisse suivre le tuto juste en bas.
-
-Prenons comme exemple VLC
-
-```{image} images/downloadVLC.png
+```{image} images/update-pkg-vlc.png
 :width: 500px
-:name: VLC
+:name: VLC-update
 :align: center
 ```
 
-Vous voila avec un fichier DMG
-
-```{image} images/downloadDMG.png
-:width: 500px
-:name: downloadDMG
-:align: center
-```
-
-Rendez vous sur composeur est faites new en haut à gauche.
-
-Bon VLC est déjà installé mais vous avez compris le principe.
-
-```{image} images/CreatPkg.png
-:width: 500px
-:name: PKG
-:align: center
-```
-
-Enlever les dossiers en trop on veut que l'as mise a jour.
-
-Cliquez sur "Build as PKG" pour le crée.
-
-```{image} images/buildPkg.png
-:width: 500px
-:name: Build
-:align: center
-```
-
-Renomer le avec la convention de nomage de JamfAdmin
-
-> ALL_[nom du package avec sa version].pkg
 </br>
-> GYCH_[nom du package avec sa version].pkg
 
-```{image} images/vlcRename.png
+1. Double cliquez sur ce package et l'installez sur votre système. 
+2. Ensuite dans le dossier /Applications vous aurez la nouvelle version du VLC, glissez le dans le paneau gauche du JamfComposer 
+3. Cela sera ajouté dans la liste des packages à traiter dans JamfComposer.
+
+```{image} images/jamf-update-vlc.png
 :width: 500px
-:name: Rename
+:name: jamf-update-vlc
 :align: center
 ```
 
-## Début de la marche à suivre avec Jamf
+</br>
 
-Aprés, c 'être log, allez dans Règle
+Ensuite nous pouvons aller changer le nom du package pour que il 
+aie la même norme de nommage que les autre packages.
 
-```{image} images/regleVLC.png
-:width: 500px
-:name: Jamf
+> **GYCH_VLC_3.0.16.pkg**
+> * **_GYCH_** ou **_ALL_** pour montrer que c'est un packet global (ALL) ou specifique pour un etablissement (GYCH)
+> * **_VLC_**: ici vous mettez le nom du package, normalement vous n'avez pas besoin de changer le nom du package
+> * **_3.0.16_**: la version du package vient après le nom du package, l'info sur la version du package se trouve dans "à propos" de chaque application
+
+```{image} images/jamf-update-vlc-rename.png
+:width: 600px
+:name: jamf-update-vlc-rename
 :align: center
 ```
+</br>
 
-aller dans la regle déjà existente et changer l'ancien .pkg par le nouveau.
+1. Maintenant on peut passer à créer le package en cliquant sur le "Build as PKG"
+2. Choisissez ou vous sauvegardez votre PKG et JamfComposer commence à créer le PKG.
+
+(jamf-admin)=
+## Charger le le PKG dans le JamfAdmin
+
+Nous avons maintenant un package en format PKG qui est pret à être chargé dans le JamfAdmin. </br>
+Ouvrez le JamfAdmin, et il vous juste suffit de glissez le .PKG dans JamfAdmin.
+
+```{image} images/jamf-update-vlc-jamfadmin.png
+:width: 500px
+:name: jamf-update-vlc-jamfadmin
+:align: center
+```
+</br>
+
+Après avoir le mettre dans le JamfAdmin, sauvegardez les changements et le package sera accessible depuis le Jamf dans les règles.
+
+### Modification des règles pour le package
+
+Ouvrez le Jamf dans votre navigateur, ensuite aller dans Règles
+Chercher le nom du package (VLC dans notre cas), modifiez le et dans "Paquets", effacer l'ancien package et ajouter le nouveau puis sauvegardez.
 
 ```{image} images/addNewVersionVlc.png
 :width: 500px
 :name: addNewVersionVlc
 :align: center
 ```
+</br>
 
-Pour finir allez dans groupe inteligent de VLC
+Pour finir, aller dans "Groupes intellignets" et chercher le nom de votre package. </br>
+Vous allez trouver un group qui un nome commençant par "InstallUpdate_"
 
 ```{image} images/goupIntelligent.png
 :width: 500px
 :name: goupIntelligent
 :align: center
 ```
+</br>
 
-en suite modifier le critère du groupe inteligent avec la nouvelle version de VLC
+Ensuite, tapez la nouvelle version du package dans le champ et sauvegardez.
 
 ```{image} images/ModifCritere.png
 :width: 500px
@@ -94,5 +102,4 @@ en suite modifier le critère du groupe inteligent avec la nouvelle version de V
 :align: center
 ```
 
-Félicitation tu sais mettre à jour les applications!!!
 
