@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Section Meraki &#8212; Documentation Technique Chamblandes</title>
+    <title>Cisco Meraki &#8212; Documentation Technique Chamblandes</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -52,8 +52,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Introduction" href="MerakiLogin.html" />
-    <link rel="prev" title="Comment enroller un Ipad dans Jamf" href="JamfEnrolliPad.html" />
+    <link rel="next" title="Section Programmation" href="Programmation.html" />
+    <link rel="prev" title="Configurer un switch Netgear GS108T" href="config-switch.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -141,21 +141,9 @@
      Comment enroller un Ipad dans Jamf
     </a>
    </li>
-  </ul>
- </li>
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
-   Section Meraki
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="MerakiLogin.html">
-     Introduction
+    <a class="reference internal" href="JamfAutoLogout.html">
+     Fermeture Automatique de la sesssion
     </a>
    </li>
   </ul>
@@ -164,8 +152,8 @@
   <a class="reference internal" href="Utile.html">
    Section Utile
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -191,8 +179,8 @@
   <a class="reference internal" href="MachineVirtuelle.html">
    Section MachineVirtuelle
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -204,24 +192,34 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="ServeurReseau.html">
    Section Réseau
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="ad.html">
      Active Directory de la DGEP
     </a>
    </li>
    <li class="toctree-l2">
+    <a class="reference internal" href="Update-inventory.html">
+     Mettre à jour l’inventaire
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="config-switch.html">
      Configurer un switch Netgear GS108T
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Cisco Meraki
     </a>
    </li>
   </ul>
@@ -293,6 +291,19 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenu
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#login">
+   Login
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -301,9 +312,58 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="section-meraki">
-<h1>Section Meraki<a class="headerlink" href="#section-meraki" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
+  <!--
+Author:		    NoorMohammad Alizadeh
+Date:		    15-nov, 2021
+Description:	Meraki web interface login
+-->
+<div class="tex2jax_ignore mathjax_ignore section" id="cisco-meraki">
+<h1>Cisco Meraki<a class="headerlink" href="#cisco-meraki" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>Meraki offre une gestion centralisée des appareils
+Cisco qui sont facilement accessible depuis un
+navigateur web ainsi que les telephones portables via
+Application Meraki.</p>
+</div></blockquote>
+<div class="tabbed-set docutils">
+<input checked="checked" id="6ccaba82-452a-4f21-9b0e-752d8903886f" name="a22d35df-03d9-4c1f-a9a3-eaa3d35b53bc" type="radio">
+</input><label class="tabbed-label" for="6ccaba82-452a-4f21-9b0e-752d8903886f">
+WEB</label><div class="tabbed-content docutils">
+<a class="reference internal image-reference" href="_images/meraki-web.gif" id="meraki-web"><img alt="_images/meraki-web.gif" class="align-left" id="meraki-web" src="_images/meraki-web.gif" style="width: 450px;" /></a>
+</div>
+<input id="3f7136cc-7beb-4e02-bdff-0ee0474f9b63" name="a22d35df-03d9-4c1f-a9a3-eaa3d35b53bc" type="radio">
+</input><label class="tabbed-label" for="3f7136cc-7beb-4e02-bdff-0ee0474f9b63">
+iOS</label><div class="tabbed-content docutils">
+<a class="reference internal image-reference" href="_images/meraki-appstore.png" id="meraki-ios"><img alt="_images/meraki-appstore.png" class="align-left" id="meraki-ios" src="_images/meraki-appstore.png" style="width: 450px;" /></a>
+</div>
+<input id="354c95c0-d98b-47c8-ba44-f42cf91cc9e0" name="a22d35df-03d9-4c1f-a9a3-eaa3d35b53bc" type="radio">
+</input><label class="tabbed-label" for="354c95c0-d98b-47c8-ba44-f42cf91cc9e0">
+Android</label><div class="tabbed-content docutils">
+<a class="reference internal image-reference" href="_images/meraki-googleplay.png" id="meraki-android"><img alt="_images/meraki-googleplay.png" class="align-left" id="meraki-android" src="_images/meraki-googleplay.png" style="width: 450px;" /></a>
+</div>
+</div>
+<div class="section" id="login">
+<h2>Login<a class="headerlink" href="#login" title="Permalink to this headline">¶</a></h2>
+<p>Pour se connecter à l’interface WEB du Meraki, dabord
+il faut que vous demandiez à votre personne responsable d
+e céer un accès à cette interface, ensuite un email avec
+le lien pour créer un mot de passe sera envoyé dans votre
+boîte mail.</p>
+<p>Ensuite, pour acceder au dashboard du Meraki, copiez le
+lien ci-dessous dans votre navigateur WEB:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">n213</span><span class="o">.</span><span class="n">meraki</span><span class="o">.</span><span class="n">com</span>
+</pre></div>
+</div>
+<p>Ce lien vous amène ver la page login du site Meraki.
+Vous allez simplement tapper votre e-mail via le quel
+votre compte Meraki a été créé, ensuite tappez votre
+mot de passe.</p>
+<a class="reference internal image-reference" href="_images/meraki-login-2.png" id="meraki-login"><img alt="_images/meraki-login-2.png" class="align-center" id="meraki-login" src="_images/meraki-login-2.png" style="width: 500px;" /></a>
+<p>Après avoir saisie l’identifiant et le mot de passe,
+si les informations ont été correctes, vous serez
+dirigez vers le “dashboard” du Meraki, qui va resembler
+à la photo ci-dessous.</p>
+<a class="reference internal image-reference" href="_images/meraki-dashboard.png" id="meraki-dashboard"><img alt="_images/meraki-dashboard.png" class="align-center" id="meraki-dashboard" src="_images/meraki-dashboard.png" style="width: 500px;" /></a>
 </div>
 </div>
 
@@ -332,17 +392,17 @@
         
             <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="JamfEnrolliPad.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="config-switch.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Comment enroller un Ipad dans Jamf</p>
+            <p class="prev-next-title">Configurer un switch Netgear GS108T</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="MerakiLogin.html" title="next page">
+    <a class='right-next' id="next-link" href="Programmation.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Introduction</p>
+        <p class="prev-next-title">Section Programmation</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

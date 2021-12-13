@@ -20,7 +20,7 @@ Ici vous pouvez faire une recherche pour trouver une règle qui nous aide à cop
 Si vous ecrivez "copy" dans le champ de recherche il vous affiche les differents packages d'OS.
 
 ```{image} images/copyOS.png
-:width: 500px
+:width: 600px
 :name: CopyOSRule"
 :align: center
 ```
@@ -39,6 +39,7 @@ Ici vous voyez un champ qui s'appelle "Evenement personalisé" la valeur de ce c
 
 Ce processus est similaire entre les règles et on peut les appeler par leurs propres declancheurs.
 
+(jamf-terminal)=
 ### Jamf/Terminal
 
 #### Copier le package
@@ -105,5 +106,5 @@ Après l'installation il rest que les configuration de la langue et region à fa
 
 <!---
 [1]
-[ 2]
+[2]
 --->

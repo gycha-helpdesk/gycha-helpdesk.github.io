@@ -149,28 +149,11 @@
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="Meraki.html">
-   Section Meraki
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="MerakiLogin.html">
-     Introduction
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
   <a class="reference internal" href="Utile.html">
    Section Utile
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -196,8 +179,8 @@
   <a class="reference internal" href="MachineVirtuelle.html">
    Section MachineVirtuelle
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -213,8 +196,8 @@
   <a class="reference internal" href="ServeurReseau.html">
    Section Réseau
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -232,6 +215,11 @@
    <li class="toctree-l2">
     <a class="reference internal" href="config-switch.html">
      Configurer un switch Netgear GS108T
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Meraki.html">
+     Cisco Meraki
     </a>
    </li>
   </ul>
@@ -317,11 +305,18 @@
   <a class="reference internal nav-link" href="#changer-nom-d-un-poste">
    Changer nom d’un poste
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#lancer-le-script-python">
-   Lancer le script Python
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lancer-le-script-python">
+     Lancer le script Python
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#changement-du-nom-sur-le-poste">
+     Changement du nom sur le poste
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -334,7 +329,11 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="mettre-a-jour-l-inventaire">
+  <!-- 
+author:         Noor Mohammad Alizadeh
+
+ -->
+<div class="tex2jax_ignore mathjax_ignore section" id="mettre-a-jour-l-inventaire">
 <h1>Mettre à jour l’inventaire<a class="headerlink" href="#mettre-a-jour-l-inventaire" title="Permalink to this headline">¶</a></h1>
 <p>Pour bien suivre et prendre une trace de changements au niveau des matériels
 informatiuques il faut toujours mettre à jour le fichier inventaire dans qui
@@ -376,9 +375,8 @@ Cela prendre beacoup de temps si on le fesait à la main. Il existe un script Py
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">IT</span><span class="o">/</span><span class="n">inventaire</span><span class="o">/</span><span class="mi">2021</span><span class="o">/</span><span class="n">InventaireNaming</span><span class="o">.</span><span class="n">xlsx</span>
 </pre></div>
 </div>
-</div>
 <div class="section" id="lancer-le-script-python">
-<h2>Lancer le script Python<a class="headerlink" href="#lancer-le-script-python" title="Permalink to this headline">¶</a></h2>
+<span id="python-script"></span><h3>Lancer le script Python<a class="headerlink" href="#lancer-le-script-python" title="Permalink to this headline">¶</a></h3>
 <p>Dans le même dossier se trouve le fichier script. Il s’appelle <code class="docutils literal notranslate"><span class="pre">gycham_naming_export.py</span></code> . </br>
 Pour lancer ce fichier nous aurons besoin du terminal. Dans terminal tappez python ensuite une espace, epuis glisser le script dans terminal.</p>
 <a class="reference internal image-reference" href="_images/inventory-change-post-name.png" id="inventory-change-post-name"><img alt="_images/inventory-change-post-name.png" class="align-center" id="inventory-change-post-name" src="_images/inventory-change-post-name.png" style="width: 600px;" /></a>
@@ -388,6 +386,21 @@ Pour lancer ce fichier nous aurons besoin du terminal. Dans terminal tappez pyth
 </pre></div>
 </div>
 <p>Dans ce fichier vous pouvez chercher le pc dont vous venez de changer le nom.</p>
+</div>
+<div class="section" id="changement-du-nom-sur-le-poste">
+<h3>Changement du nom sur le poste<a class="headerlink" href="#changement-du-nom-sur-le-poste" title="Permalink to this headline">¶</a></h3>
+<p>Normalement les ordinateur au GYCHA lance recurremment la régle qui met à jour les information de l’ordinateur avec l’AD.
+Mais parfois vous avez besoin de changer son nom plus rapidement (par exemple dans les cas où nous faisons changement d’un ordinateur).</p>
+<p>Il existe quatre différents règles dans Jamf qui nous permettent de mettre ajour le nom de l’ordinateur avec le fichier CSV qu’on a généré dans <a class="reference internal" href="#python-script"><span class="std std-ref">l’étap précédente</span></a>.</p>
+<blockquote>
+<div><p><strong>renameComputer</strong> : met à jour le nom de l’ordinateur
+</br> <strong>renamrComputerAD</strong> : il appelle la règle <em>renameComputer</em> en mettant à jour le même ordinateur dans l’AD
+</br> <strong>renameComputerIN</strong> : il appelle la règle <em>renameComputer</em> en inserant l’ordinateur (qui n’était pas dans AD/Inventaire) dans Active Directory
+</br> <strong>renameComputerOUT</strong> : contrairement la commande précédente, après lancement <em>renameComputer</em>, il sort l’ordinateur de l’AD (utilisé pour mettre en horsstock les ordinateurs)</p>
+</div></blockquote>
+<p>Pour savoir comment lancer ces règles on peut référer à l’article “Déploiment OS depuis Jamf”, il y a un exemple de comment lancer une règle Jamf depuis terminal:</p>
+<p><a class="sphinx-bs btn text-wrap btn-outline-info reference internal" href="JamfOSInstall.html#jamf-terminal"><span class="std std-ref">cliquez ici</span></a></p>
+</div>
 </div>
 </div>
 

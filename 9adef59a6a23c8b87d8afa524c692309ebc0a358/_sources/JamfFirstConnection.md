@@ -39,12 +39,14 @@ Identifiant
 Gychameta
 ---
 ```{dropdown} Mot de passe
+:animate: fade-in
 Gym_09
 ```
 ````
 `````
 
-Identifiant pour un super utilisateur Jamf Pro se trouve dans [Password State][1] (DGEP Password) mais vous allez pas avoir besoin de vous connecter au Jamf en tant que superuser.
+Identifiant pour un super utilisateur Jamf Pro se trouve dans [Password State][1] (DGEP Password) mais vous allez pas avoir besoin de vous connecter au Jamf en tant que superuser. 
+
 
 ### Jamf Pro
 
@@ -52,7 +54,7 @@ Après avoir se connecter au Jamf Pro sans erreur. Vous aurez une interface qui 
 
 ```{image} images/Dashboard-jamf.png
 :width: 500px
-:name: dashboard
+:name: Dashboard-jamf
 :align: center
 ```
 

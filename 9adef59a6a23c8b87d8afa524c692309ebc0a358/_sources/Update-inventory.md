@@ -1,3 +1,8 @@
+<!-- 
+author:         Noor Mohammad Alizadeh
+
+ -->
+
 # Mettre à jour l'inventaire
 
 Pour bien suivre et prendre une trace de changements au niveau des matériels
@@ -65,7 +70,8 @@ Emplacement du fichier inventaire à mettre à jour (dans serveur des fichiers):
 /IT/inventaire/2021/InventaireNaming.xlsx
 ```
 
-## Lancer le script Python
+(python-script)=
+### Lancer le script Python
 
 Dans le même dossier se trouve le fichier script. Il s'appelle ```gycham_naming_export.py``` . </br>
 Pour lancer ce fichier nous aurons besoin du terminal. Dans terminal tappez python ensuite une espace, epuis glisser le script dans terminal. 
@@ -85,3 +91,23 @@ Emplacement du fichier CSV (dans serveur des fichiers):
 ```
 
 Dans ce fichier vous pouvez chercher le pc dont vous venez de changer le nom.
+
+### Changement du nom sur le poste
+
+Normalement les ordinateur au GYCHA lance recurremment la régle qui met à jour les information de l'ordinateur avec l'AD. 
+Mais parfois vous avez besoin de changer son nom plus rapidement (par exemple dans les cas où nous faisons changement d'un ordinateur). 
+
+Il existe quatre différents règles dans Jamf qui nous permettent de mettre ajour le nom de l'ordinateur avec le fichier CSV qu'on a généré dans [l'étap précédente](python-script). 
+
+> **renameComputer** : met à jour le nom de l'ordinateur
+> </br> **renamrComputerAD** : il appelle la règle _renameComputer_ en mettant à jour le même ordinateur dans l'AD
+> </br> **renameComputerIN** : il appelle la règle _renameComputer_ en inserant l'ordinateur (qui n'était pas dans AD/Inventaire) dans Active Directory 
+> </br> **renameComputerOUT** : contrairement la commande précédente, après lancement _renameComputer_, il sort l'ordinateur de l'AD (utilisé pour mettre en horsstock les ordinateurs)
+
+Pour savoir comment lancer ces règles on peut référer à l'article "Déploiment OS depuis Jamf", il y a un exemple de comment lancer une règle Jamf depuis terminal: 
+
+:::{link-button} jamf-terminal
+:type: ref
+:text: cliquez ici
+:classes: btn btn-outline-info
+:::

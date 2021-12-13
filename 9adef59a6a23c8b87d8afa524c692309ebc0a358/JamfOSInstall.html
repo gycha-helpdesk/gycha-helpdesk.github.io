@@ -141,21 +141,9 @@
      Comment enroller un Ipad dans Jamf
     </a>
    </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="Meraki.html">
-   Section Meraki
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="MerakiLogin.html">
-     Introduction
+    <a class="reference internal" href="JamfAutoLogout.html">
+     Fermeture Automatique de la sesssion
     </a>
    </li>
   </ul>
@@ -164,8 +152,8 @@
   <a class="reference internal" href="Utile.html">
    Section Utile
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -191,8 +179,8 @@
   <a class="reference internal" href="MachineVirtuelle.html">
    Section MachineVirtuelle
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -208,8 +196,8 @@
   <a class="reference internal" href="ServeurReseau.html">
    Section Réseau
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -220,8 +208,18 @@
     </a>
    </li>
    <li class="toctree-l2">
+    <a class="reference internal" href="Update-inventory.html">
+     Mettre à jour l’inventaire
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="config-switch.html">
      Configurer un switch Netgear GS108T
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Meraki.html">
+     Cisco Meraki
     </a>
    </li>
   </ul>
@@ -355,7 +353,7 @@ premièrement copier le package depuis le serveur dans le dossier application de
 <p>Allez sur l’onglet ordinateur de Jamf et ensuite “Règles”.
 Ici vous pouvez faire une recherche pour trouver une règle qui nous aide à copier le package OS depuis le serveur.
 Si vous ecrivez “copy” dans le champ de recherche il vous affiche les differents packages d’OS.</p>
-<a class="reference internal image-reference" href="_images/copyOS.png" id="copyosrule"><img alt="_images/copyOS.png" class="align-center" id="copyosrule" src="_images/copyOS.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/copyOS.png" id="copyosrule"><img alt="_images/copyOS.png" class="align-center" id="copyosrule" src="_images/copyOS.png" style="width: 600px;" /></a>
 <blockquote>
 <div><p>La version de l’OS (HighSierra, BigSur, etc…) va dependre de la machine sur laquelle vous vous voulez faire cette installation.
 Pour trouver des infos sur l’OS de la machine vous pouvez maintenant cliquer sur l’icône d’Apple  au coin de votre monitor et choisir “à propos de ce Mac”.</p>
@@ -366,7 +364,7 @@ Ici vous voyez un champ qui s’appelle “Evenement personalisé” la valeur d
 <p>Ce processus est similaire entre les règles et on peut les appeler par leurs propres declancheurs.</p>
 </div>
 <div class="section" id="jamf-terminal">
-<h3>Jamf/Terminal<a class="headerlink" href="#jamf-terminal" title="Permalink to this headline">¶</a></h3>
+<span id="id1"></span><h3>Jamf/Terminal<a class="headerlink" href="#jamf-terminal" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="copier-le-package">
 <h4>Copier le package<a class="headerlink" href="#copier-le-package" title="Permalink to this headline">¶</a></h4>
 <p>Nous pouvons maintenant passer à faire l’installation sur la machine client.
@@ -403,7 +401,7 @@ Quand cette commande est lancée on peut le laisser, il fera ce procès tout seu
 <p>Après l’installation il rest que les configuration de la langue et region à faire.</p>
 <!---
 [1]
-[ 2]
+[2]
 --->
 </div>
 </div>
