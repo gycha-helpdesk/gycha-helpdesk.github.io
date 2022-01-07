@@ -1,0 +1,484 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Déploiement OS depuis Jamf &#8212; Documentation Technique Chamblandes</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Recherche avancé" href="JamfRechercheAvance.html" />
+    <link rel="prev" title="Créer une règle pour ajouter une imprimante dans Jam" href="JamfAddPrinter.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logoCh.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Documentation Technique Chamblandes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Rechercher dans ce livre ..." aria-label="Rechercher dans ce livre ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="Jamf.html">
+   Section Jamf
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfFirstConnection.html">
+     Avant de commencer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfAddRule.html">
+     Ajouter une règle
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfAddPrinter.html">
+     Créer une règle pour ajouter une imprimante dans Jam
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Déploiement OS depuis Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfRechercheAvance.html">
+     Recherche avancé
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfUpdateApplication.html">
+     Mise à jour des applications dans Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfEnroll.html">
+     Comment enrôler un post dans Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfEnrolliPad.html">
+     Comment enroller un Ipad dans Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfAutoLogout.html">
+     Fermeture Automatique de la sesssion
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="Utile.html">
+   Section Utile
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mdp.html">
+     Identifiants et mots de passe
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="hermes.html">
+     Hermes II
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Glpi.html">
+     Glpi
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="MachineVirtuelle.html">
+   Section MachineVirtuelle
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="WMwareFusion.html">
+     VMWare  fusion  comment crée une machine virtuelle de base
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="ServeurReseau.html">
+   Section Réseau
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ad.html">
+     Active Directory de la DGEP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Update-inventory.html">
+     Mettre à jour l’inventaire
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="config-switch.html">
+     Configurer un switch Netgear GS108T
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Meraki.html">
+     Cisco Meraki
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Programmation.html">
+   Section Programmation
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Basculer la navigation" aria-controls="site-navigation"
+                title="Basculer la navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Téléchargez cette page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/JamfOSInstall.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimer au format PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Mode plein écran"
+        title="Mode plein écran"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenu
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#copy-le-logiciel">
+   Copy le logiciel
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jamf-regles">
+     Jamf/Règles
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jamf-terminal">
+     Jamf/Terminal
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#copier-le-package">
+       Copier le package
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#effacer-le-systeme-et-le-reinstaller-du-zero">
+       Effacer le système et le reinstaller du zéro
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <!--
+Author: 	Noor Mohammad Alizadeh
+Date:		September 2021
+Description:	How to deploy packages using Jamf
+-->
+<div class="tex2jax_ignore mathjax_ignore section" id="deploiement-os-depuis-jamf">
+<h1>Déploiement OS depuis Jamf<a class="headerlink" href="#deploiement-os-depuis-jamf" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="copy-le-logiciel">
+<h2>Copy le logiciel<a class="headerlink" href="#copy-le-logiciel" title="Permalink to this headline">¶</a></h2>
+<p>Pour déploiement OSX sur une machine, il y a deux étaps principeaux, il nous faut d
+premièrement copier le package depuis le serveur dans le dossier application de la machine en local, ensuite nous pouvons le lancer pour reinstaller le système.</p>
+<p>Tous ces différents règle se trouve dans Jamf.</p>
+<div class="section" id="jamf-regles">
+<h3>Jamf/Règles<a class="headerlink" href="#jamf-regles" title="Permalink to this headline">¶</a></h3>
+<p>Allez sur l’onglet ordinateur de Jamf et ensuite “Règles”.
+Ici vous pouvez faire une recherche pour trouver une règle qui nous aide à copier le package OS depuis le serveur.
+Si vous ecrivez “copy” dans le champ de recherche il vous affiche les differents packages d’OS.</p>
+<a class="reference internal image-reference" href="_images/copyOS.png" id="copyosrule"><img alt="_images/copyOS.png" class="align-center" id="copyosrule" src="_images/copyOS.png" style="width: 600px;" /></a>
+<blockquote>
+<div><p>La version de l’OS (HighSierra, BigSur, etc…) va dependre de la machine sur laquelle vous vous voulez faire cette installation.
+Pour trouver des infos sur l’OS de la machine vous pouvez maintenant cliquer sur l’icône d’Apple  au coin de votre monitor et choisir “à propos de ce Mac”.</p>
+</div></blockquote>
+<p>Quand vous êtes sur de la version de l’OS que vous allez installer, vous pouvez selectionner n’import quelle règle et regarder ses configurations.
+Ici vous voyez un champ qui s’appelle “Evenement personalisé” la valeur de ce champ permet de declancher l’execution de cette règle.</p>
+<a class="reference internal image-reference" href="_images/copyOSgeneral.png" id="copyosgeneral"><img alt="_images/copyOSgeneral.png" class="align-center" id="copyosgeneral" src="_images/copyOSgeneral.png" style="width: 750px;" /></a>
+<p>Ce processus est similaire entre les règles et on peut les appeler par leurs propres declancheurs.</p>
+</div>
+<div class="section" id="jamf-terminal">
+<span id="id1"></span><h3>Jamf/Terminal<a class="headerlink" href="#jamf-terminal" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="copier-le-package">
+<h4>Copier le package<a class="headerlink" href="#copier-le-package" title="Permalink to this headline">¶</a></h4>
+<p>Nous pouvons maintenant passer à faire l’installation sur la machine client.
+Ovrez d’abord le Terminal de la machine, l’installation des packages depuis Jamf peut se faire en ligne de commande.</p>
+<a class="reference internal image-reference" href="_images/terminal.png" id="terminal"><img alt="_images/terminal.png" class="align-center" id="terminal" src="_images/terminal.png" style="width: 500px;" /></a>
+<p>Il nous faut d’abord copier le package depuis le serveur sur la machine client en local. \Ce-ci est la commande pour copier avec Jamf.</p>
+<div class="highlight-Shell notranslate"><div class="highlight"><pre><span></span>sudo jamf policy -event copycatalina
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/terminalCopyOS.png" id="terminalcopyos"><img alt="_images/terminalCopyOS.png" class="align-center" id="terminalcopyos" src="_images/terminalCopyOS.png" style="width: 500px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p><strong>sudo</strong>: il vous permet de lancer des commandes en tant qu’administrateur, dans notre cas pour lancer la commande “jamf” il faut un droit d’administrateur.</p></li>
+<li><p><strong>jamf</strong>: la commande que permet de lancer le jamf-CLI (Commande Line Interface) et donner des tâches spéicifique à Jamf</p></li>
+<li><p><strong>policy</strong>: cette commande dit à jamf de contôler les differents stratégie dans le serveur de logiciel Jamf (JSS - Jamf Software Server)</p></li>
+<li><p><strong>event</strong>: cette une option/flag qui modifie le fonctionnement d’une commande. Ici notre flag appelle un declancheur pour notre package. Il dit à commande “policy” de prendre l’evenement “copycatalina” dans JSS.</p></li>
+<li><p><strong>declancheur</strong>: c’est un evenement personalisé qu’on avait vu dans les paramètres de cette règle</p></li>
+</ul>
+</div>
+</br>
+<p>Quand le package est copié, on peut le voir dans le dossier /Applications, on peut maintenant passer à l’étap suivant.</p>
+<a class="reference internal image-reference" href="_images/terminalCopyOS_2.png" id="copyosinapps"><img alt="_images/terminalCopyOS_2.png" class="align-center" id="copyosinapps" src="_images/terminalCopyOS_2.png" style="width: 750px;" /></a>
+</div>
+<div class="section" id="effacer-le-systeme-et-le-reinstaller-du-zero">
+<h4>Effacer le système et le reinstaller du zéro<a class="headerlink" href="#effacer-le-systeme-et-le-reinstaller-du-zero" title="Permalink to this headline">¶</a></h4>
+<p>Toujours sur la machine client, ouvrez le Terminal. Cette fois pour effacer l’OS et le reinstaller de nouveau. Cette commande efface le système entièrement ensuite install le package OS qu’on vient de copier dans le répertoire /Applications.</p>
+<div class="highlight-Shell notranslate"><div class="highlight"><pre><span></span>sudo jamf policy -event eraseinstallcatalina
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/terminalEraseInstallCatalina.png" id="terminaleraseinstallcatalina"><img alt="_images/terminalEraseInstallCatalina.png" class="align-center" id="terminaleraseinstallcatalina" src="_images/terminalEraseInstallCatalina.png" style="width: 500px;" /></a>
+<p>Comme on voit dans la photo, le declancheur pour effacer et installer est “eraseInstallCatalina”.
+Quand cette commande est lancée on peut le laisser, il fera ce procès tout seul.</p>
+<p>Après l’installation il rest que les configuration de la langue et region à faire.</p>
+<!---
+[1]
+[2]
+--->
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="JamfAddPrinter.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Créer une règle pour ajouter une imprimante dans Jam</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="JamfRechercheAvance.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Recherche avancé</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          Par The Jupyter Book community<br/>
+        
+            &copy; droits d'auteur 2021.<br/>
+          <div class="extra_footer">
+            <p>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+</a>
+<br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+</a>.
+</p>
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

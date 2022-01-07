@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Configurer un switch Netgear GS108T &#8212; Documentation Technique Chamblandes</title>
     
-  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -19,34 +20,31 @@
 
     
       
-  <link rel="stylesheet"
-    href="_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -56,14 +54,17 @@
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Section Programmation" href="Programmation.html" />
     <link rel="prev" title="Active Directory de la DGEP" href="ad.html" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
 
-
-
+    <!-- Google Analytics -->
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -72,33 +73,52 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="index.html">
-  
-  <img src="_static/logoCh.png" class="logo" alt="logo">
-  
-  
-  <h1 class="site-logo" id="site-title">Documentation Technique Chamblandes</h1>
-  
-</a>
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logoCh.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Documentation Technique Chamblandes</h1>
+      
+    </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="current nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Rechercher dans ce livre ..." aria-label="Rechercher dans ce livre ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="Jamf.html">
    Section Jamf
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="JamfAddPrinter.html">
-     Comment créé une règle pour ajouter une imprimante sur Jamf
+    <a class="reference internal" href="JamfFirstConnection.html">
+     Avant de commencer
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="JamfAddRegle.html">
-     Tuto pour ajouter des règles sur Jamf
+    <a class="reference internal" href="JamfAddRule.html">
+     Ajouter une règle
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfAddPrinter.html">
+     Créer une règle pour ajouter une imprimante dans Jam
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfOSInstall.html">
+     Déploiement OS depuis Jamf
     </a>
    </li>
    <li class="toctree-l2">
@@ -111,23 +131,48 @@
      Mise à jour des applications dans Jamf
     </a>
    </li>
-  </ul>
-  <i class="fas fa-chevron-down">
-  </i>
- </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="Utile.html">
-   Section Utile
-  </a>
-  <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="mdp.html">
-     Identifiants et mots de passe
+    <a class="reference internal" href="JamfEnroll.html">
+     Comment enrôler un post dans Jamf
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="mdp.html#connectez-vous">
-     Connectez-vous
+    <a class="reference internal" href="JamfEnrolliPad.html">
+     Comment enroller un Ipad dans Jamf
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="Meraki.html">
+   Section Meraki
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="MerakiLogin.html">
+     Introduction
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="Utile.html">
+   Section Utile
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mdp.html">
+     Identifiants et mots de passe
     </a>
    </li>
    <li class="toctree-l2">
@@ -135,48 +180,40 @@
      Hermes II
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Glpi.html">
+     Glpi
+    </a>
+   </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="MachineVirtuelle.html">
    Section MachineVirtuelle
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="WMwareFusion.html">
      VMWare  fusion  comment crée une machine virtuelle de base
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="Enroller.html">
-   Section Enroller
-  </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="EnrollJamf.html">
-     Comment enroller un post dans Jamf
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Enrollipad.html">
-     Comment enroller un Ipad dans Jamf
-    </a>
-   </li>
-  </ul>
-  <i class="fas fa-chevron-down">
-  </i>
- </li>
- <li class="toctree-l1 current active collapsible-parent">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="ServeurReseau.html">
    Section Réseau
   </a>
-  <ul class="current collapse-ul">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="ad.html">
      Active Directory de la DGEP
@@ -188,8 +225,6 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Programmation.html">
@@ -198,6 +233,7 @@
  </li>
 </ul>
 
+    </div>
 </nav> <!-- To handle the deprecated key -->
 
 </div>
@@ -209,23 +245,23 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="row topbar fixed-top container-xl">
-    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
-    </div>
-    <div class="col pl-2 topbar-main">
-        
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        
-        
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Basculer la navigation" aria-controls="site-navigation"
+                title="Basculer la navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
 <div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Téléchargez cette page"><i
             class="fas fa-download"></i></button>
 
     <div class="dropdown-buttons">
@@ -233,35 +269,35 @@
         
         <!-- Download raw file -->
         <a class="dropdown-buttons" href="_sources/config-switch.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimer au format PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
-        <!-- Source interaction buttons -->
+            <!-- Source interaction buttons -->
 
+            <!-- Full screen (wrap in <a> to have style consistency -->
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                title="Fullscreen mode"><i
-                    class="fas fa-expand"></i></button></a>
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Mode plein écran"
+        title="Mode plein écran"><i
+            class="fas fa-expand"></i></button></a>
 
-        <!-- Launch buttons -->
+            <!-- Launch buttons -->
 
-    </div>
-
-    <!-- Table of contents -->
-    <div class="d-none d-md-block col-md-2 bd-toc show">
-        
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> Contents
         </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenu
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#acces-au-switch">
    Accès au switch
@@ -311,8 +347,8 @@
  </li>
 </ul>
 
-        </nav>
-        
+            </nav>
+        </div>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -320,14 +356,14 @@
         
               <div>
                 
-  <div class="section" id="configurer-un-switch-netgear-gs108t">
+  <div class="tex2jax_ignore mathjax_ignore section" id="configurer-un-switch-netgear-gs108t">
 <h1>Configurer un switch Netgear GS108T<a class="headerlink" href="#configurer-un-switch-netgear-gs108t" title="Permalink to this headline">¶</a></h1>
-<p>Pour commencer, branchez le switch au courant et attendez que tous les témoins lumineux au dessus des ports ethernet s’eteignent.</p>
-<p>Si au cours de ce guide vous faites une erreur qui aurait pour effet de vous déconnecter du switch et que vous ne pouvez ensuite plus y accéder, il est toujours possible de réinitialiser ce dernier en appuyant sur le bouton <em>Factory Defaults</em> (petit trou à la droite droite du switch). Vous devrez alors tout reprendre depuis le départ.</p>
+<p>Pour commencer, branchez le switch au courant et attendez que tous les témoins lumineux au-dessus des ports Ethernet s’éteignent.</p>
+<p>Si au cours de ce guide vous faites une erreur qui aurait pour effet de vous déconnecter du switch et que vous ne pouvez ensuite plus y accéder, il est toujours possible de réinitialiser ce dernier en appuyant sur le bouton <em>Factory Defaults</em> (petit trou à la droite du switch). Vous devrez alors tout reprendre depuis le départ.</p>
 <hr class="docutils" />
 <div class="section" id="acces-au-switch">
 <h2>Accès au switch<a class="headerlink" href="#acces-au-switch" title="Permalink to this headline">¶</a></h2>
-<p>Désactivez tout d’abord votre wifi si il est actif.</p>
+<p>Désactivez tout d’abord votre wifi s’il est actif.</p>
 <p>Branchez ensuite un câble ethernet depuis le port “1” du switch (celui qui est en jaune) jusqu’à votre ordinateur.</p>
 <p>Ensuite, allez dans <em>Préférences Système</em> &gt; <em>Réseau</em>.</p>
 <a class="reference internal image-reference" href="_images/manual_ip.png" id="manual-ip"><img alt="_images/manual_ip.png" class="align-center" id="manual-ip" src="_images/manual_ip.png" style="width: 500px;" /></a>
@@ -342,11 +378,11 @@
 <p><em>Sous-réseau</em>: 255.255.255.0</p>
 </div></blockquote>
 <p>Appuyez ensuite sur <em>Appliquer</em>.</p>
-<p>Ouvrez ensuite un navigateur et tapez l’adresse IP du switch dans la barre de recherche. Par défaut cette adresse est: 192.168.0.239.</p>
-<p>Vous devriez tomber sur la page suivante:</p>
+<p>Ouvrez ensuite un navigateur et tapez l’adresse IP du switch dans la barre de recherche. Par défaut cette adresse est : 192.168.0.239.</p>
+<p>Vous devriez tomber sur la page suivante :</p>
 <a class="reference internal image-reference" href="_images/connexion.png" id="connexion"><img alt="_images/connexion.png" class="align-center" id="connexion" src="_images/connexion.png" style="width: 500px;" /></a>
-<p>Le mot de passe par défaut de ce modèle est: <em>password</em>.</p>
-<p>Si vous tombez sur la page suivante, c’est que tout fonctionne:</p>
+<p>Le mot de passe par défaut de ce modèle est : <em>password</em>.</p>
+<p>Si vous tombez sur la page suivante, c’est que tout fonctionne :</p>
 <a class="reference internal image-reference" href="_images/home.png" id="home"><img alt="_images/home.png" class="align-center" id="home" src="_images/home.png" style="width: 500px;" /></a>
 </div>
 <hr class="docutils" />
@@ -406,7 +442,7 @@
 <p>Ainsi, vous pouvez configurer quels VLAN passera dans quel port. De manière générale, tous les VLAN seront en <em>tagged</em> dans le premier port et en <em>untagged</em> dans les ports spécifiques dans lesquels ils passeront.</p>
 <div class="section" id="exemple-de-configuration-vlan-membership">
 <h3>Exemple de configuration VLAN Membership<a class="headerlink" href="#exemple-de-configuration-vlan-membership" title="Permalink to this headline">¶</a></h3>
-<p>Dans cet exemple, les ports 2 à 4 donnent du VLAN 40, les ports 5 à 7 du VLAN 48 et le port 8 du VLAN 38. Comme dis précedemment, tous les VLAN sont donnés par le premier port, en <em>tagged</em>, contrairement aux autres ports ou le VLAN est en <em>untagged</em>.</p>
+<p>Dans cet exemple, les ports 2 à 4 donnent du VLAN 40, les ports 5 à 7 du VLAN 48 et le port 8 du VLAN 38. Comme dis précédemment, tous les VLAN sont donnés par le premier port, en <em>tagged</em>, contrairement aux autres ports ou le VLAN est en <em>untagged</em>.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p>VLAN ID</p></th>
@@ -538,8 +574,8 @@
 <hr class="docutils" />
 <div class="section" id="port-pvid-configuration">
 <h2>Port PVID Configuration<a class="headerlink" href="#port-pvid-configuration" title="Permalink to this headline">¶</a></h2>
-<p>Ensuite, dans Port PVID Configuration, il est question de définir quels VLAN passera part quel port. Cette étape peut ressembler à l’étape précédente mais elle est toutefois nécessaire.</p>
-<p>Allez tout d’abord dans Port PVID Configuration:</p>
+<p>Ensuite, dans Port PVID Configuration, il est question de définir quels VLAN passera part quel port. Cette étape peut ressembler à l’étape précédente, mais elle est toutefois nécessaire.</p>
+<p>Allez tout d’abord dans Port PVID Configuration :</p>
 <a class="reference internal image-reference" href="_images/go_port_pvid.png" id="go-port-pvid"><img alt="_images/go_port_pvid.png" class="align-center" id="go-port-pvid" src="_images/go_port_pvid.png" style="width: 500px;" /></a>
 <p>Ensuite, il s’agit de modifier les lignes afin de définir le VLAN que donnera chaque port. Une ligne peut-être modifiée en cliquant sur le carré à sa gauche, ensuite, l’ID peut être modifié à celui correspondant:</p>
 <a class="reference internal image-reference" href="_images/port_pvid_select.png" id="port-pvid-select"><img alt="_images/port_pvid_select.png" class="align-center" id="port-pvid-select" src="_images/port_pvid_select.png" style="width: 500px;" /></a>
@@ -549,18 +585,18 @@
 <p>Il est possible de modifier plusieures lignes en une fois.</p>
 </div>
 <p>Faites bien attention à garder la 1ère ligne avec le PVID 1, et à ne pas mettre le PVID 32.</p>
-<p>Le résultat final pourrait ressembler à cela:</p>
+<p>Le résultat final pourrait ressembler à cela :</p>
 <a class="reference internal image-reference" href="_images/port_pvid_final.png" id="port-pvid-final"><img alt="_images/port_pvid_final.png" class="align-center" id="port-pvid-final" src="_images/port_pvid_final.png" style="width: 500px;" /></a>
 </div>
 <div class="section" id="ip-configuration">
 <h2>IP Configuration<a class="headerlink" href="#ip-configuration" title="Permalink to this headline">¶</a></h2>
 <p>Enfin, la dernière chose qu’il reste à faire est de configurer l’adresse IP finale du switch, son masque de sous-réseau, son gateway ainsi que son port de management.</p>
-<p>Pour ce faire, allez dans l’onglet System, puis IP Configuration:</p>
+<p>Pour ce faire, allez dans l’onglet System, puis IP Configuration :</p>
 <a class="reference internal image-reference" href="_images/go_ip_config.png" id="go-ip-config"><img alt="_images/go_ip_config.png" class="align-center" id="go-ip-config" src="_images/go_ip_config.png" style="width: 500px;" /></a>
 <p>Changez la configuration de <em>Dynamic IP Adress</em> à <em>Static IP Adress</em>.</p>
-<p>Complétez ensuite le formulaire, l’image suivante est un exemple correct:</p>
+<p>Complétez ensuite le formulaire, l’image suivante est un exemple correct :</p>
 <a class="reference internal image-reference" href="_images/ip_config_final.png" id="ip-config-final"><img alt="_images/ip_config_final.png" class="align-center" id="ip-config-final" src="_images/ip_config_final.png" style="width: 500px;" /></a>
-<p>Pour le champ <em>IP Adress</em>, une adresse IP pas encore utilisée sur le réseau doit être entrée. Pour voir tous les objets sur le réseau, vous pouvez aller sur <span class="xref myst">http://ipam.dgep.edu-vaud.ch</span>.</p>
+<p>Pour le champ <em>IP Adress</em>, une adresse IP pas encore utilisée sur le réseau doit être entrée. Pour voir tous les objets sur le réseau, vous pouvez aller sur <a class="reference external" href="http://ipam.dgep.edu-vaud.ch">http://ipam.dgep.edu-vaud.ch</a>.</p>
 <p>Pour le champ <em>Subnet Mask</em>, mettez 255.255.255.0.</p>
 <p>Pour le champ <em>Default Gateway</em>, l’IP du gateway doit être mise, sur ce réseau elle est 10.226.32.1.</p>
 <p>Enfin, pour le champ Management VLAN ID, mettez 32.</p>
@@ -594,23 +630,34 @@
 
               </div>
               
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ad.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Active Directory de la DGEP</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Programmation.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Section Programmation</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
         </div>
     </div>
-    
-    
-    <div class='prev-next-bottom'>
-        
-    <a class='left-prev' id="prev-link" href="ad.html" title="previous page">Active Directory de la DGEP</a>
-    <a class='right-next' id="next-link" href="Programmation.html" title="next page">Section Programmation</a>
-
-    </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
-          By The Jupyter Book community<br/>
+          Par The Jupyter Book community<br/>
         
-            &copy; Copyright 2020.<br/>
+            &copy; droits d'auteur 2021.<br/>
           <div class="extra_footer">
             <p>
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
@@ -630,11 +677,8 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
 
       </div>
     </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-    
-  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
-
-
-    
   </body>
 </html>

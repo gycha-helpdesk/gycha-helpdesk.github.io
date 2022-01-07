@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajouter une règle &#8212; Documentation Technique Chamblandes</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Créer une règle pour ajouter une imprimante dans Jam" href="JamfAddPrinter.html" />
+    <link rel="prev" title="Avant de commencer" href="JamfFirstConnection.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logoCh.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Documentation Technique Chamblandes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Rechercher dans ce livre ..." aria-label="Rechercher dans ce livre ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="Jamf.html">
+   Section Jamf
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfFirstConnection.html">
+     Avant de commencer
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Ajouter une règle
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfAddPrinter.html">
+     Créer une règle pour ajouter une imprimante dans Jam
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfOSInstall.html">
+     Déploiement OS depuis Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfRechercheAvance.html">
+     Recherche avancé
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfUpdateApplication.html">
+     Mise à jour des applications dans Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfEnroll.html">
+     Comment enrôler un post dans Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfEnrolliPad.html">
+     Comment enroller un Ipad dans Jamf
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="Meraki.html">
+   Section Meraki
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="MerakiLogin.html">
+     Introduction
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="Utile.html">
+   Section Utile
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mdp.html">
+     Identifiants et mots de passe
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="hermes.html">
+     Hermes II
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Glpi.html">
+     Glpi
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="MachineVirtuelle.html">
+   Section MachineVirtuelle
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="WMwareFusion.html">
+     VMWare  fusion  comment crée une machine virtuelle de base
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="ServeurReseau.html">
+   Section Réseau
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ad.html">
+     Active Directory de la DGEP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="config-switch.html">
+     Configurer un switch Netgear GS108T
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Programmation.html">
+   Section Programmation
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Basculer la navigation" aria-controls="site-navigation"
+                title="Basculer la navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Téléchargez cette page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/JamfAddRule.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimer au format PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Mode plein écran"
+        title="Mode plein écran"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="ajouter-une-regle">
+<h1>Ajouter une règle<a class="headerlink" href="#ajouter-une-regle" title="Permalink to this headline">¶</a></h1>
+<p>Dans dashboard (accueil) du jamf, allez sous ordinateur en haut à gauche et cliquer “Règles”.</p>
+<a class="reference internal image-reference" href="_images/regle-jamf.png" id="regle"><img alt="_images/regle-jamf.png" class="align-center" id="regle" src="_images/regle-jamf.png" style="width: 300px;" /></a>
+<p><br/>Ensuite, cliquez sur nouveau en haut à droite.</p>
+<a class="reference internal image-reference" href="_images/addRegle-jamf.png" id="addregle"><img alt="_images/addRegle-jamf.png" class="align-center" id="addregle" src="_images/addRegle-jamf.png" style="width: 500px;" /></a>
+<p><br/>Sous Général donner lui un nom (nom de l’application ou ce que vous voulez).</p>
+<a class="reference internal image-reference" href="_images/nomNouvelleRegle-jamf.png" id="nomdelaregle"><img alt="_images/nomNouvelleRegle-jamf.png" class="align-center" id="nomdelaregle" src="_images/nomNouvelleRegle-jamf.png" style="width: 500px;" /></a>
+<p><br/>Toujours dans Général descendez et cochez les options indiquées.</p>
+<a class="reference internal image-reference" href="_images/generalRegle-jamf.png" id="reglebase"><img alt="_images/generalRegle-jamf.png" class="align-center" id="reglebase" src="_images/generalRegle-jamf.png" style="width: 500px;" /></a>
+<p><br/>Maintenant allez sous “Paquets” (dans la colonne de gauche).</p>
+<a class="reference internal image-reference" href="_images/addPaquet-jamf.png" id="adddespaquets"><img alt="_images/addPaquet-jamf.png" class="align-center" id="adddespaquets" src="_images/addPaquet-jamf.png" style="width: 500px;" /></a>
+<p><br/>Cliquez sur “ajouter” à droite sur le paquet que vous voulez.</p>
+<a class="reference internal image-reference" href="_images/choixPaquet-jamf.png" id="choixpaquet"><img alt="_images/choixPaquet-jamf.png" class="align-center" id="choixpaquet" src="_images/choixPaquet-jamf.png" style="width: 500px;" /></a>
+<p><br/>Quelques options suplémentaires comme les mises à jour et le point de distribution.</p>
+<a class="reference internal image-reference" href="_images/finPaquet.png" id="optionsup"><img alt="_images/finPaquet.png" class="align-center" id="optionsup" src="_images/finPaquet.png" style="width: 500px;" /></a>
+<p><br/>Ensuite allez sur Maintenance (dans la colonne de gauche)</p>
+<a class="reference internal image-reference" href="_images/ConfMaintenance-jamf.png" id="maintenance"><img alt="_images/ConfMaintenance-jamf.png" class="align-center" id="maintenance" src="_images/ConfMaintenance-jamf.png" style="width: 500px;" /></a>
+<p><br/>Regardez que la première case est cochée (Mettre à jours dans l’inventaire)</p>
+<a class="reference internal image-reference" href="_images/maintenanceOption-jamf.png" id="optiondemaintenance"><img alt="_images/maintenanceOption-jamf.png" class="align-center" id="optiondemaintenance" src="_images/maintenanceOption-jamf.png" style="width: 500px;" /></a>
+<p><br/>Si tout est bien configurer passons au “Perimètre” de la règle.
+Selectionnez un ordinateur ou un groupe dans ce cas là ça sera un groupe.
+Pour l’ajouter cliquez sur “add” à droite du groupe.</p>
+<a class="reference internal image-reference" href="_images/perimetreGroupe-jamf.png" id="perimetre"><img alt="_images/perimetreGroupe-jamf.png" class="align-center" id="perimetre" src="_images/perimetreGroupe-jamf.png" style="width: 500px;" /></a>
+<p><br/>Permet de mettre à disposition la règle pour tout les utilisateurs.</p>
+<a class="reference internal image-reference" href="_images/selfService-jamf.png" id="selfservice"><img alt="_images/selfService-jamf.png" class="align-center" id="selfservice" src="_images/selfService-jamf.png" style="width: 500px;" /></a>
+<p><br/>Se paramètre permet d’afficher l’état d’avancement de l’implémentation de la règle.</p>
+<a class="reference internal image-reference" href="_images/afficheDansDashboard-jamf.png" id="dashboard"><img alt="_images/afficheDansDashboard-jamf.png" class="align-center" id="dashboard" src="_images/afficheDansDashboard-jamf.png" style="width: 500px;" /></a>
+<p><br/>Félicitation vous savez créé une règle.</p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="JamfFirstConnection.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Avant de commencer</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="JamfAddPrinter.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Créer une règle pour ajouter une imprimante dans Jam</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          Par The Jupyter Book community<br/>
+        
+            &copy; droits d'auteur 2021.<br/>
+          <div class="extra_footer">
+            <p>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+</a>
+<br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+</a>.
+</p>
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

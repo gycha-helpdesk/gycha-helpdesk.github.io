@@ -1,13 +1,15 @@
 
 # VMWare  fusion  comment crée une machine virtuelle de base
 
-##  C'est quoi VMWare fusion ?
+## C'est quoi VMWare fusion ?
+
 VMware Fusion permet aux Mac Intel d'exécuter des machines virtuelles avec des systèmes d'exploitation invités (tels que Microsoft Windows, Linux, NetWare, Solaris ou macOS) dans le système d'exploitation macOS hôte.
 
-(wikipedia) 
+(wikipedia)
+
 ## Début de la marche à suivre
 
-Nous alleon utilisez VMware 
+Nous alleon utilisez VMware
 
 ```{image} images/composeur.png
 :width: 500px
@@ -16,7 +18,6 @@ Nous alleon utilisez VMware
 ```
 
 Assurez vous que vous avez un fichier .iso pour les machines virtuelles
-
 
 ```{image} images/imageIso.png
 :width: 500px
@@ -56,7 +57,7 @@ Cliquez sur celle que vous voulez.
 :align: center
 ```
 
-Prenez le système d'exploitation qui coïncide avec l'iso 
+Prenez le système d'exploitation qui coïncide avec l'iso
 
 ```{image} images/choixSysteme.png
 :width: 500px

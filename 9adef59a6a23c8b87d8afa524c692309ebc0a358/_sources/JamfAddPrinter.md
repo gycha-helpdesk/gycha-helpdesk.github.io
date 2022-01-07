@@ -1,13 +1,10 @@
-# Comment créé une règle pour ajouter une imprimante sur Jamf
-
-## Description Jamf :
-
-C'est une application utilisée par les administrateurs système pour configurer et automatiser les tâches d'administration informatique pour les appareils macOS, iOS
+# Créer une règle pour ajouter une imprimante dans Jam
 
 ## Avant de débuter 
 
-Il faut ajouter l'impriamte sur le poste, je vous laisse la marche à suivre sur le lien :
-https://sites.google.com/view/gycha-it/ressources#h.r65nzqlnc3we
+Il faut ajouter l'imprimante sur le poste, je vous laisse la marche à suivre sur le lien:
+
+[Gycha-IT][1]
 
 ### et
 
@@ -29,17 +26,11 @@ Mettez l'imprimante que vous voulez pour le retrouver dans Jamf.
 :align: center
 ```
 
-## Début de la marche à suivre :
+Maintenant ouvrez un navigateur et allez sur le Dashboard de Jamf.
 
-Tout d'abord ouvrez un navigateur et notez https://10.225.232.161:8443/ dans l'URL.
-
-| Identifiant | Mot de passe |
-|-------------|--------------|
-|Gychameta|Gym_09|
-
-```{image} images/login-jamf.png
+```{image} images/Dashboard-jamf.png
 :width: 500px
-:name: log
+:name: dashboard
 :align: center
 ```
 
@@ -51,7 +42,7 @@ Ensuite dirigez vous sur ordinateur -> Règles
 :align: center
 ```
 
-Aprés vérifiez dans les règles déjà existante s'il y a l'imprimante que vous chercher.
+Après vérifier dans les règles déjà existantes s'il y a l'imprimante que vous chercher.
 
 ```{image} images/verifierImprimante.png
 :width: 500px
@@ -61,7 +52,7 @@ Aprés vérifiez dans les règles déjà existante s'il y a l'imprimante que vou
 
 Si elle n'est pas la crée une nouvelle règle
 
-Donnez lui un nom, en cohérence avec l'imprimante que vous voulez (Exemple : Add_Print_b25)
+Donnez-lui un nom, en cohérence avec l'imprimante que vous voulez (Exemple : Add_Print_b25)
 
 ```{image} images/namePrintRegle.png
 :width: 500px
@@ -81,7 +72,7 @@ Cliquez sur "Configure".
 
 ```{image} images/addPrint.png
 :width: 500px
-:name: addPrint
+:name: addPrint2
 :align: center
 ```
 
@@ -101,7 +92,7 @@ Pour finir allez dans périmètre.
 :align: center
 ```
 
-Selectionez le groupe ou un ordinateur que vous voulez (vous pouvez en choissir plus) .
+Sélectionez le groupe ou un ordinateur que vous voulez (vous pouvez en choissir plus)
 
 ```{image} images/perimetreAddPrint.png
 :width: 500px
@@ -113,8 +104,5 @@ Il manque plus qu'à appuyer sur "Terminer".
 
 Félicitation vous savez créé une règle pour ajouter une imprimante.
 
- 
-
-
-
-
+[//]: # (Links)
+[1]: https://sites.google.com/view/gycha-it/ressources#h.r65nzqlnc3we
