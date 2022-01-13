@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hermes II &#8212; Documentation Technique Chamblandes</title>
+    <title>Anaconda &#8212; Documentation Technique Chamblandes</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -52,8 +52,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Glpi" href="Glpi.html" />
-    <link rel="prev" title="Identifiants et mots de passe" href="mdp.html" />
+    <link rel="next" title="Section MachineVirtuelle" href="MachineVirtuelle.html" />
+    <link rel="prev" title="Glpi" href="Glpi.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -163,14 +163,19 @@
      Identifiants et mots de passe
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="hermes.html">
      Hermes II
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="Glpi.html">
      Glpi
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Anaconda
     </a>
    </li>
   </ul>
@@ -266,7 +271,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/hermes.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/Anaconda.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -297,24 +302,21 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#connexion">
-   Connexion
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#horaires">
-   Horaires
+  <a class="reference internal nav-link" href="#installation-jupyter-book">
+   Installation Jupyter-Book
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#annuaire">
-   Annuaire
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#aide">
-   Aide
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gui-installation-jupyter-book">
+     GUI: Installation Jupyter-Book
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -326,7 +328,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Hermes II</h1>
+                <h1>Anaconda</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -337,24 +339,21 @@
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#connexion">
-   Connexion
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#horaires">
-   Horaires
+  <a class="reference internal nav-link" href="#installation-jupyter-book">
+   Installation Jupyter-Book
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#annuaire">
-   Annuaire
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#aide">
-   Aide
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gui-installation-jupyter-book">
+     GUI: Installation Jupyter-Book
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -365,64 +364,75 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="hermes-ii">
-<h1>Hermes II<a class="headerlink" href="#hermes-ii" title="Permalink to this headline">¶</a></h1>
-<p>Hermes II est un outil qui vous sera fourni et qui vous permettra de rechercher des informations concernant les élèves, maîtres et classes du gymnase.</p>
-<p>Hermes ne pourra être accédé uniquement à partir du réseau du gymnase. Son adresse est la suivante :</p>
-<p><a class="reference external" href="https://www3.gycham.vd.ch/gymnase/login/">https://www3.gycham.vd.ch/gymnase/login/</a></p>
-<hr class="docutils" />
-<div class="section" id="connexion">
-<h2>Connexion<a class="headerlink" href="#connexion" title="Permalink to this headline">¶</a></h2>
-<p>Une fois que vous êtes sur le site, vous devriez voir le formulaire suivant :</p>
-<a class="reference internal image-reference" href="_images/connexion_hermes.png" id="connexion-hermes"><img alt="_images/connexion_hermes.png" class="align-center" id="connexion-hermes" src="_images/connexion_hermes.png" style="width: 200px;" /></a>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Si le formulaire ressemble plutôt à ceci:</p>
-<a class="reference internal image-reference" href="_images/fausse_connexion_hermes.png" id="fausse-connexion-hermes"><img alt="_images/fausse_connexion_hermes.png" class="align-left" id="fausse-connexion-hermes" src="_images/fausse_connexion_hermes.png" style="width: 200px;" /></a>
-<p>C’est que vous êtes bien sur le site d’Hermes, mais à l’adresse: <a class="reference external" href="https://www3.gycham.vd.ch/login/?next=/">https://www3.gycham.vd.ch/login/?next=/</a></p>
-<p>Et non: <a class="reference external" href="https://www3.gycham.vd.ch/gymnase/login/">https://www3.gycham.vd.ch/gymnase/login/</a></p>
-<p>Parfois, le raccourci ne marche pas et vous redirige à la mauvaise adresse.</p>
+  <!-- 
+Author:         NoorAlizadeh
+Date:           12-Jan 2022
+Description:    Installation Anaconda/Jupyter-Book
+ -->
+<div class="tex2jax_ignore mathjax_ignore section" id="anaconda">
+<h1>Anaconda<a class="headerlink" href="#anaconda" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>Anaconda est une distribution libre et open source2 des langages de
+programmation Python et R appliqué au développement d’applications
+dédiées à la science des données et à l’apprentissage automatique
+(traitement de données à grande échelle, analyse prédictive, calcul scientifique),
+qui vise à simplifier la gestion des paquets et de déploiement3. Les versions de
+paquetages sont gérées par le système de gestion de paquets conda4. <a class="footnote-reference brackets" href="#id4" id="id1">1</a>
+(Source: Wikipdeia)</p>
+</div></blockquote>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Dans ce stage/projet pour documenter les differents activié informatique du gymnase,
+nous utilison le package Jupyter-Book qui converti les pages Markdown (.md) dans les
+quelles on travail en format Html qui sera enresgistré et publié via Github.</p>
 </div>
-<p>Ensuite, rentrez votre identifiant et mot de passe de votre compte qui est dans l’AD. Sélectionnez, comme sur l’image ci-dessus, le champ <em>Service</em> pour la première combo box et <em>Gymnase de Chamblandes</em> pour la deuxième. Il suffit après cela d’appuyer sur le bouton <em>Connexion</em>.</p>
-<p>Vous devriez ensuite vous trouver sur une page qui ressemble à ceci :</p>
-<a class="reference internal image-reference" href="_images/accueil_hermes.png" id="accueil-hermes"><img alt="_images/accueil_hermes.png" class="align-center" id="accueil-hermes" src="_images/accueil_hermes.png" style="width: 500px;" /></a>
+<div class="section" id="installation-jupyter-book">
+<h2>Installation Jupyter-Book<a class="headerlink" href="#installation-jupyter-book" title="Permalink to this headline">¶</a></h2>
+<p>Logiquement nous allons besoin d’installler <a class="reference internal" href="#"><span class="doc std std-doc">1</span></a> d’abord mais il est normalement
+déjà installé sur les postes Gycham et c’est compliqué de l’installer nonplus.</p>
+<p>Il y a plusieurs maniers d’installer Jupyter-Book, depuis GUI<a class="footnote-reference brackets" href="#id5" id="id2">2</a> de
+Anaconda Navigateur ou l’interface en CLI<a class="footnote-reference brackets" href="#id6" id="id3">3</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Vous aller de toute façon avoir besoin de vos connaissances basiques sur les
+ligne de commandes pour utiliser Jupyter-Book même si on installe le package via la methode GUI.</p>
 </div>
-<hr class="docutils" />
-<div class="section" id="horaires">
-<h2>Horaires<a class="headerlink" href="#horaires" title="Permalink to this headline">¶</a></h2>
-<p>Vous pouvez ensuite consulter les horaires des élèves, maîtres et salles du Gymnase.</p>
-<p>Après avoir cliqué sur <em>Horaires</em>, vous devriez voir le formulaire ci-dessous :</p>
-<a class="reference internal image-reference" href="_images/recherche_horaire_hermes.png" id="recherche-horaire-hermes"><img alt="_images/recherche_horaire_hermes.png" class="align-center" id="recherche-horaire-hermes" src="_images/recherche_horaire_hermes.png" style="width: 500px;" /></a>
-<p>Mettez dans le champ <em>Recherche</em> l’élève, maître ou salle que vous recherchez, par exemple comme ceci :¨</p>
-<a class="reference internal image-reference" href="_images/recherche_horaire_2_hermes.png" id="recherche-horaire-2-hermes"><img alt="_images/recherche_horaire_2_hermes.png" class="align-center" id="recherche-horaire-2-hermes" src="_images/recherche_horaire_2_hermes.png" style="width: 500px;" /></a>
-<p>Il est aussi possible de choisir un semestre ou une semaine spécifique.</p>
-<p>Si vous appuyez sur <em>Afficher</em>, vous devriez voir un horaire qui s’est généré, comme suit:</p>
-<a class="reference internal image-reference" href="_images/horaire_hermes.png" id="horaire-hermes"><img alt="_images/horaire_hermes.png" class="align-center" id="horaire-hermes" src="_images/horaire_hermes.png" style="width: 500px;" /></a>
-<p>Sur cet horaire, vous pouvez retrouver des informations telles que quelle matière est enseignée, qui est l’enseignant qui donne le cours ou encore quelle est la classe qui assiste au cours.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Il est possible d’afficher plusieurs horaires en une fois et les informations seront superposées et triées par couleurs.</p>
+<div class="section" id="gui-installation-jupyter-book">
+<h3>GUI: Installation Jupyter-Book<a class="headerlink" href="#gui-installation-jupyter-book" title="Permalink to this headline">¶</a></h3>
+<p>Dans votre machine, ouvrez Anaconda navigateur. Ce nous intéresess est dans la barre de gauche,
+Environments (les environements).</p>
+<a class="reference internal image-reference" href="_images/anaconda-home.png" id="anaconda-home"><img alt="_images/anaconda-home.png" class="align-center" id="anaconda-home" src="_images/anaconda-home.png" style="width: 600px;" /></a>
+<p>Quand vous cliquez sur “Environments” vous allez voir toutes les environements disponibles, dans
+notre cas il y a seulement le “base” a disposition, nous allons donc créer un autre envoronment pour
+notre package Jupyter-Book.</p>
+<a class="reference internal image-reference" href="_images/anaconda-environment.png" id="anaconda-envorinments"><img alt="_images/anaconda-environment.png" class="align-center" id="anaconda-envorinments" src="_images/anaconda-environment.png" style="width: 600px;" /></a>
+<p>Quand vous allez créer un nouveau environment, il vous demande de nommer votre environement et choisir une version Python.
+Pour le nom nous allons mettre <strong>jupyter-book</strong> et pour la version c’est mieux de choisir une version différente de 3.8
+parceque apparemment il y avait un problème avec cette version. Choisissez 3.7 ou une version plus récente que 3.8
+(j’ai 3.10 actuellement et ça me semble assez stable).</p>
+<a class="reference internal image-reference" href="_images/anaconda-python-version.png" id="anaconda-python-version"><img alt="_images/anaconda-python-version.png" class="align-center" id="anaconda-python-version" src="_images/anaconda-python-version.png" style="width: 500px;" /></a>
+<p>Quand l’environement est créé, choisissez le. Ensuite:</p>
+<ol class="simple">
+<li><p>Choisissez “not installed” pour afficher les packages qui ne sont pas installés</p></li>
+<li><p>cherchez pour le package “jupyter-book”</p></li>
+<li><p>Selectionnez le package “jupyter-book” dans les resultats</p></li>
+<li><p>Appliques votre choix</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/anaconda-jupyterbook.png" id="anaconda-jupyterbook"><img alt="_images/anaconda-jupyterbook.png" class="align-center" id="anaconda-jupyterbook" src="_images/anaconda-jupyterbook.png" style="width: 600px;" /></a>
+<!-- Refrences dans footer -->
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id4"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p><a href="https://fr.wikipedia.org/wiki/Anaconda_(distribution_Python)">Anaconda (Wikipedia)</a></p>
+</dd>
+<dt class="label" id="id5"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>Graphical User Interface, GUI (Interface Graphique)</p>
+</dd>
+<dt class="label" id="id6"><span class="brackets"><a class="fn-backref" href="#id3">3</a></span></dt>
+<dd><p>Command Line interface, CLI (Lnterface en Ligne de Commande)</p>
+</dd>
+</dl>
 </div>
-<p>Vous pouvez cliquer sur l’abréviation d’un maître (Cy pour <strong>C</strong>hame<strong>y</strong> Claudine par exemple) pour avoir plus d’informations à son sujet :</p>
-<a class="reference internal image-reference" href="_images/infos_maitre_hermes.png" id="infos-maitre-hermes"><img alt="_images/infos_maitre_hermes.png" class="align-center" id="infos-maitre-hermes" src="_images/infos_maitre_hermes.png" style="width: 500px;" /></a>
-<p>Toutes les abbréviations des enseignants sont détaillées en bas de l’horaire :</p>
-<a class="reference internal image-reference" href="_images/abb_maitre_hermes.png" id="abb-maitre-hermes"><img alt="_images/abb_maitre_hermes.png" class="align-center" id="abb-maitre-hermes" src="_images/abb_maitre_hermes.png" style="width: 500px;" /></a>
-<p>Vous pouvez également cliquer sur les petites loupes dans les différentes cases pour afficher quelles salles sont libres à la période donnée :</p>
-<a class="reference internal image-reference" href="_images/salles_libres_hermes.png" id="salles-libres-hermes"><img alt="_images/salles_libres_hermes.png" class="align-center" id="salles-libres-hermes" src="_images/salles_libres_hermes.png" style="width: 500px;" /></a>
-</div>
-<hr class="docutils" />
-<div class="section" id="annuaire">
-<h2>Annuaire<a class="headerlink" href="#annuaire" title="Permalink to this headline">¶</a></h2>
-<p>L’annuaire permet de voir des informations sur les élèves et les enseignants, ainsi que de voir la liste des élèves par classe et la liste des maîtres par file.</p>
-<p>Après avoir cliqué sur <em>Annuaire</em>, mettez le nom du maître, de l’élève, de la classe ou encore de la file sur lequel vous voulez avoir plus d’informations dans le champ <em>Recherche</em>, comme suit :</p>
-<a class="reference internal image-reference" href="_images/infos_eleve_recherche_hermes.png" id="infos-eleve-recherche-hermes"><img alt="_images/infos_eleve_recherche_hermes.png" class="align-center" id="infos-eleve-recherche-hermes" src="_images/infos_eleve_recherche_hermes.png" style="width: 500px;" /></a>
-<p>Le bouton <em>Afficher</em> va montrer la photo du Gymnase de l’élève ainsi que sa date de naissance, sa classe, son maître conseiller et son doyen :</p>
-<a class="reference internal image-reference" href="_images/infos_eleve_hermes.png" id="infos-eleve-hermes"><img alt="_images/infos_eleve_hermes.png" class="align-center" id="infos-eleve-hermes" src="_images/infos_eleve_hermes.png" style="width: 500px;" /></a>
-</div>
-<hr class="docutils" />
-<div class="section" id="aide">
-<h2>Aide<a class="headerlink" href="#aide" title="Permalink to this headline">¶</a></h2>
-<p>L’aide d’Hermes est présente sous la forme d’une F.A.Q avec plusieurs liens qui vous expliquent comment faire les choses, si vous en avez les droits.</p>
 </div>
 </div>
 
@@ -451,17 +461,17 @@
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="mdp.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="Glpi.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Identifiants et mots de passe</p>
+            <p class="prev-next-title">Glpi</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="Glpi.html" title="next page">
+    <a class='right-next' id="next-link" href="MachineVirtuelle.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Glpi</p>
+        <p class="prev-next-title">Section MachineVirtuelle</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

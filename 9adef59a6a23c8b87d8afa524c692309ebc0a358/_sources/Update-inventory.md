@@ -1,6 +1,7 @@
 <!-- 
-author:         Noor Mohammad Alizadeh
-
+Author:         Noor Mohammad Alizadeh
+Date:           10-Dec 2021
+Description:    Update inventory items, names, etc...
  -->
 
 # Mettre à jour l'inventaire

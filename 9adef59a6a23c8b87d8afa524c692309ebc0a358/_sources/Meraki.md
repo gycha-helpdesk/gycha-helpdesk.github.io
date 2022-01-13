@@ -25,6 +25,12 @@ Description:	Meraki web interface login
 :name: meraki-ios
 :align: left
 ```
+
+:::{link-button} https://apps.apple.com/us/app/meraki/id693056161
+:type: url
+:text: App Store
+:classes: btn btn-outline-primary
+:::
 ````
 
 ````{tabbed} Android
@@ -33,6 +39,12 @@ Description:	Meraki web interface login
 :name: meraki-android
 :align: left
 ```
+
+:::{link-button} https://play.google.com/store/apps/details?id=com.meraki.Dashboard&hl=fr_CH&gl=US
+:type: url
+:text: Google Play Store
+:classes: btn btn-outline-success
+:::
 ````
 
 ## Login
