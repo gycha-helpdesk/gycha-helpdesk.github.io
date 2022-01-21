@@ -4,6 +4,8 @@ Date:		    November 2021
 Description:	Start using Glpi IT management
 -->
 
+<!-- reference pour (GLPI)= dans la page LienUtile -->
+(GLPI)=
 # Glpi
 
 > Glpi est une application WEB qui aide les entreprises à gérer leur système d'information.

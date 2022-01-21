@@ -203,8 +203,6 @@ jupyter-book build .
 
 Quand il a bien généré le site, il vous donne un lien vers le site en local, vous pouvez le copiez dans votre navigateur web pour voir les modifications que vous avec dans vos documentations.
 
-
-
 [//]: # (Links)
 
 [1]: https://www.anaconda.com/products/individual#macos

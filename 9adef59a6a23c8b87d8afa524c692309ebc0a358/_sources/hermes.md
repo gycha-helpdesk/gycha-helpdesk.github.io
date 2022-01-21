@@ -1,42 +1,37 @@
+(Hermes-II)=
 # Hermes II
 
 Hermes II est un outil qui vous sera fourni et qui vous permettra de rechercher des informations concernant les élèves, maîtres et classes du gymnase.
 
-Hermes ne pourra être accédé uniquement à partir du réseau du gymnase. Son adresse est la suivante : 
+Hermes ne pourra être accédé uniquement à partir du réseau du gymnase. Son adresse est la suivante: 
 
-[https://www3.gycham.vd.ch/gymnase/login/](https://www3.gycham.vd.ch/gymnase/login/)
+[https://hermes.edu-vaud.ch/login/](https://hermes.edu-vaud.ch/login/?next=/)
 
 ---
 
 ## Connexion
 
-Une fois que vous êtes sur le site, vous devriez voir le formulaire suivant :
+Une fois que vous êtes sur le site, vous devriez voir le formulaire suivant:
 
 ```{image} images/connexion_hermes.png
-:width: 200px
+:width: 500px
 :name: connexion_hermes
 :align: center
 ```
 
 ::::{warning}
-Si le formulaire ressemble plutôt à ceci:
-
 ```{image} images/fausse_connexion_hermes.png
 :width: 200px
 :name: fausse_connexion_hermes
 :align: left
 ```
 
-C'est que vous êtes bien sur le site d'Hermes, mais à l'adresse: [https://www3.gycham.vd.ch/login/?next=/](https://www3.gycham.vd.ch/login/?next=/)
-
-Et non: [https://www3.gycham.vd.ch/gymnase/login/](https://www3.gycham.vd.ch/gymnase/login/)
-
-Parfois, le raccourci ne marche pas et vous redirige à la mauvaise adresse.
+Le compte **gychameta** ne fonctionne plus, utilisez votre compte eduvaud pour vous connecter. 
 ::::
 
 Ensuite, rentrez votre identifiant et mot de passe de votre compte qui est dans l'AD. Sélectionnez, comme sur l'image ci-dessus, le champ *Service* pour la première combo box et *Gymnase de Chamblandes* pour la deuxième. Il suffit après cela d'appuyer sur le bouton *Connexion*.
 
-Vous devriez ensuite vous trouver sur une page qui ressemble à ceci :
+Vous devriez ensuite vous trouver sur une page qui ressemble à ceci:
 
 ```{image} images/accueil_hermes.png
 :width: 500px
@@ -50,7 +45,7 @@ Vous devriez ensuite vous trouver sur une page qui ressemble à ceci :
 
 Vous pouvez ensuite consulter les horaires des élèves, maîtres et salles du Gymnase.
 
-Après avoir cliqué sur *Horaires*, vous devriez voir le formulaire ci-dessous :
+Après avoir cliqué sur *Horaires*, vous devriez voir le formulaire ci-dessous:
 
 ```{image} images/recherche_horaire_hermes.png
 :width: 500px
@@ -82,7 +77,7 @@ Sur cet horaire, vous pouvez retrouver des informations telles que quelle matiè
 Il est possible d'afficher plusieurs horaires en une fois et les informations seront superposées et triées par couleurs.
 ```
 
-Vous pouvez cliquer sur l'abréviation d'un maître (Cy pour **C**hame**y** Claudine par exemple) pour avoir plus d'informations à son sujet :
+Vous pouvez cliquer sur l'abréviation d'un maître (Cy pour **C**hame**y** Claudine par exemple) pour avoir plus d'informations à son sujet:
 
 ```{image} images/infos_maitre_hermes.png
 :width: 500px

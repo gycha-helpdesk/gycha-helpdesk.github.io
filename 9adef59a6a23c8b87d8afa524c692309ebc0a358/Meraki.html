@@ -178,6 +178,11 @@
      Anaconda
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LiensUtiles.html">
+     Liens Utiles
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -306,6 +311,11 @@
    Login
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#configuer-un-port">
+   Configuer un port
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -331,6 +341,11 @@
    Login
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#configuer-un-port">
+   Configuer un port
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -354,19 +369,19 @@ navigateur web ainsi que les telephones portables via
 Application Meraki.</p>
 </div></blockquote>
 <div class="tabbed-set docutils">
-<input checked="checked" id="0f21be9b-e003-4343-b013-6fb1e6db0371" name="cf1816ab-ec24-4ba7-82f6-21936b6eafb8" type="radio">
-</input><label class="tabbed-label" for="0f21be9b-e003-4343-b013-6fb1e6db0371">
+<input checked="checked" id="a80759e1-6601-4f78-84ae-7e72d1251660" name="79b86404-29d3-4d09-9c57-99213e1e5345" type="radio">
+</input><label class="tabbed-label" for="a80759e1-6601-4f78-84ae-7e72d1251660">
 WEB</label><div class="tabbed-content docutils">
 <a class="reference internal image-reference" href="_images/meraki-web.gif" id="meraki-web"><img alt="_images/meraki-web.gif" class="align-left" id="meraki-web" src="_images/meraki-web.gif" style="width: 450px;" /></a>
 </div>
-<input id="9039c86e-9ec0-4327-bdc9-d0a7cc1474ed" name="cf1816ab-ec24-4ba7-82f6-21936b6eafb8" type="radio">
-</input><label class="tabbed-label" for="9039c86e-9ec0-4327-bdc9-d0a7cc1474ed">
+<input id="23ff8364-3f31-4da1-b19c-d604723505bb" name="79b86404-29d3-4d09-9c57-99213e1e5345" type="radio">
+</input><label class="tabbed-label" for="23ff8364-3f31-4da1-b19c-d604723505bb">
 iOS</label><div class="tabbed-content docutils">
 <a class="reference internal image-reference" href="_images/meraki-appstore.png" id="meraki-ios"><img alt="_images/meraki-appstore.png" class="align-left" id="meraki-ios" src="_images/meraki-appstore.png" style="width: 450px;" /></a>
 <p><a class="sphinx-bs btn text-wrap btn-outline-primary reference external" href="https://apps.apple.com/us/app/meraki/id693056161"><span>App Store</span></a></p>
 </div>
-<input id="a4741ec0-2f06-4a03-84da-47729c21e9b7" name="cf1816ab-ec24-4ba7-82f6-21936b6eafb8" type="radio">
-</input><label class="tabbed-label" for="a4741ec0-2f06-4a03-84da-47729c21e9b7">
+<input id="07882ecd-8336-4c03-85f0-2dead4b03af8" name="79b86404-29d3-4d09-9c57-99213e1e5345" type="radio">
+</input><label class="tabbed-label" for="07882ecd-8336-4c03-85f0-2dead4b03af8">
 Android</label><div class="tabbed-content docutils">
 <a class="reference internal image-reference" href="_images/meraki-googleplay.png" id="meraki-android"><img alt="_images/meraki-googleplay.png" class="align-left" id="meraki-android" src="_images/meraki-googleplay.png" style="width: 450px;" /></a>
 <p><a class="sphinx-bs btn text-wrap btn-outline-success reference external" href="https://play.google.com/store/apps/details?id=com.meraki.Dashboard&amp;hl=fr_CH&amp;gl=US"><span>Google Play Store</span></a></p>
@@ -394,6 +409,63 @@ si les informations ont été correctes, vous serez
 dirigez vers le “dashboard” du Meraki, qui va resembler
 à la photo ci-dessous.</p>
 <a class="reference internal image-reference" href="_images/meraki-dashboard.png" id="meraki-dashboard"><img alt="_images/meraki-dashboard.png" class="align-center" id="meraki-dashboard" src="_images/meraki-dashboard.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="configuer-un-port">
+<h2>Configuer un port<a class="headerlink" href="#configuer-un-port" title="Permalink to this headline">¶</a></h2>
+<p>Sur meraki vous pouvez configurer le port pour un swuitch à distant et le faire marcher via différents VLAN.
+Je vous montre comment configurer un port pour avoir accès au réseau imprimantes.</p>
+<ol class="simple">
+<li><p>Allez sur le site Meraki et vous logger. Dans le menu à gauche choisissez Switchs.</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/meraki-switch.png" id="meraki-switch"><img alt="_images/meraki-switch.png" class="align-center" id="meraki-switch" src="_images/meraki-switch.png" style="width: 500px;" /></a>
+<ol class="simple">
+<li><p>Dans la list des switch, je choisis SW-A-A19-01 pour notre test.</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/meraki-switch-a19.png" id="meraki-switch-a19"><img alt="_images/meraki-switch-a19.png" class="align-center" id="meraki-switch-a19" src="_images/meraki-switch-a19.png" style="width: 500px;" /></a>
+<ol class="simple">
+<li><p>Maintenant on peut choisir quel port on veut configurer.</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/meraki-switch-port.png" id="meraki-switch-port"><img alt="_images/meraki-switch-port.png" class="align-center" id="meraki-switch-port" src="_images/meraki-switch-port.png" style="width: 500px;" /></a>
+<ol class="simple">
+<li><p>Je prends le port 13 comme c’est un port libre.</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/meraki-switch-port-13.png" id="meraki-switch-port-13"><img alt="_images/meraki-switch-port-13.png" class="align-center" id="meraki-switch-port-13" src="_images/meraki-switch-port-13.png" style="width: 500px;" /></a>
+<p>On voit que ce port est configurer avec le VLAN 32 qui est le VLAN management, Trunk.
+Cliquez sur l’icône à coté de Configuration pour modifier le port.</p>
+<ol class="simple">
+<li><p>Danse ces photo vous voyez les modifications nécessaire pour changer le VLAN</p></li>
+</ol>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text"><strong>VLAN 32</strong></p>
+</div>
+<div class="card-body docutils">
+<a class="reference internal image-reference" href="_images/meraki-switch-port-edit.png" id="meraki-switch-port-edit"><img alt="_images/meraki-switch-port-edit.png" class="align-left" id="meraki-switch-port-edit" src="_images/meraki-switch-port-edit.png" style="width: 400px;" /></a>
+</div>
+<div class="card-footer docutils">
+<p class="card-text">Avant de changements</p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text"><strong>VLAN 38</strong></p>
+</div>
+<div class="card-body docutils">
+<a class="reference internal image-reference" href="_images/meraki-switch-port-edited.png" id="meraki-switch-port-edited"><img alt="_images/meraki-switch-port-edited.png" class="align-right" id="meraki-switch-port-edited" src="_images/meraki-switch-port-edited.png" style="width: 400px;" /></a>
+</div>
+<div class="card-footer docutils">
+<p class="card-text">Après les changements</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Ensuite sauvegardez votre modificaition, l’appareil qui sera connecté à ce port sera dans le VLAN 38, imprimantes.</p>
 </div>
 </div>
 
