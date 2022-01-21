@@ -23,7 +23,7 @@ Ensuite, cliquez sur le petit "+" dans la barre d'outils, puis *Add PC*:
 
 ```{image} images/add_pc_2_ad.png
 :width: 500px
-:name: add_pc_ad
+:name: add_pc_ad-2
 :align: center
 ```
 
@@ -41,7 +41,7 @@ Vous devriez voir le formulaire suivant :
 
 ```{image} images/formulaire_add_pc_ad.png
 :width: 500px
-:name: Addpc
+:name: Addpc-formulaire
 :align: center
 ```
 
@@ -202,7 +202,7 @@ Rendez-vous sur le résultat de la recherche des comptes utilisateurs.
 
 ```{image} images/AD_recherche_utilisateur.png
 :width: 500px
-:name: AD_recherche_utilisateur
+:name: AD_recherche_utilisateur-2
 :align: center
 ```
   

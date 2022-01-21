@@ -83,3 +83,71 @@ dirigez vers le "dashboard" du Meraki, qui va resembler
 :name: meraki-dashboard
 :align: center
 ```
+
+## Configuer un port
+
+Sur meraki vous pouvez configurer le port pour un swuitch à distant et le faire marcher via différents VLAN.
+Je vous montre comment configurer un port pour avoir accès au réseau imprimantes. 
+
+1. Allez sur le site Meraki et vous logger. Dans le menu à gauche choisissez Switchs. 
+
+```{image} images/meraki-switch.png
+:width: 500px
+:name: meraki-switch
+:align: center
+```
+
+2. Dans la list des switch, je choisis SW-A-A19-01 pour notre test.
+
+```{image} images/meraki-switch-a19.png
+:width: 500px
+:name: meraki-switch-a19
+:align: center
+```
+
+3. Maintenant on peut choisir quel port on veut configurer. 
+
+```{image} images/meraki-switch-port.png
+:width: 500px
+:name: meraki-switch-port
+:align: center
+```
+
+4. Je prends le port 13 comme c'est un port libre. 
+   
+```{image} images/meraki-switch-port-13.png
+:width: 500px
+:name: meraki-switch-port-13
+:align: center
+```
+
+On voit que ce port est configurer avec le VLAN 32 qui est le VLAN management, Trunk.
+Cliquez sur l'icône à coté de Configuration pour modifier le port.
+
+5. Danse ces photo vous voyez les modifications nécessaire pour changer le VLAN
+
+````{panels}
+**VLAN 32**
+^^^
+```{image} images/meraki-switch-port-edit.png
+:width: 400px
+:name: meraki-switch-port-edit
+:align: left
+```
++++
+Avant de changements
+---
+
+**VLAN 38**
+^^^
+```{image} images/meraki-switch-port-edited.png
+:width: 400px
+:name: meraki-switch-port-edited
+:align: right
+```
++++
+Après les changements
+````
+
+Ensuite sauvegardez votre modificaition, l'appareil qui sera connecté à ce port sera dans le VLAN 38, imprimantes.
+
