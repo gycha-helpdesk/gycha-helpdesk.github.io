@@ -64,7 +64,7 @@ Voilà maintenant vous vous êtes bien connecter au serveur des fichiers et vous
 ## Changer nom d'un poste
 
 Dans les cas où on veut changer le nom d'un pc ou laptop dans l'inventaire nous devons aussi le changer dans Active Directory.
-Cela prendre beacoup de temps si on le fesait à la main. Il existe un script Python qui met à jour AD par rappot aux changements dans le fichier inventaire et crée un fichier CSV dans dossier Readonly (il se trouve dans le dossier racine). Donc si on met à jour ce fichier inventaire et lancer le script, AD sera aussi à jour.
+Cela prend beaucoup de temps si on le fais à la main. Il existe un script Python qui met à jour AD par rappot aux changements dans le fichier inventaire et crée un fichier CSV dans dossier Readonly (il se trouve dans le dossier racine). Donc si on met à jour ce fichier inventaire et lancer le script, AD sera aussi à jour.
 
 Emplacement du fichier inventaire à mettre à jour (dans serveur des fichiers):
 ```
