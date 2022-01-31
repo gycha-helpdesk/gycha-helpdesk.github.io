@@ -53,9 +53,9 @@ controllez bien que vous êtes en mode supervisor.
 :align: center
 ```
 
-### List des tickets
+### Liste des tickets
 
-List des cas céés par Glpi (soit depuis un email envoyé à la boîte mail de Glpi soit le ticket est 
+Liste des cas céés par Glpi (soit depuis un email envoyé à la boîte mail de Glpi soit le ticket est 
 créé depuis **interface de Glpi**) sont afficher depuis un filtrage par defaut 
 qui affiche tout les tickets "non-résolus"
 
@@ -67,7 +67,7 @@ qui affiche tout les tickets "non-résolus"
 
 </br>
 
-Avec ce util vous pouvez facilement ranger les tickets ou trouver les tickets que vous souhaitez. 
+Avec cet outils vous pouvez facilement ranger les tickets ou trouver les tickets que vous souhaitez. 
 
 ```{image} images/glpi-tickets-filter.png
 :width: 500px
@@ -87,9 +87,9 @@ Vous pouvez aussi savegarder, réinitialiser ou masquer votre filtre avec les op
 Routage des ticket informatique, ou bien l'attribution des ticket permet de circuler les tickets entre l'équipe du support et facilite le traîtement des tickets.
 ```
 
-Pour attribuer un ticket à sun utilisateur ou votre collègue par exemple, vous allez cliquer sur le ticket, 
-ensite dans la page du ticket cliquer sur la menue déroulant "Action".
-Depuis la vous voyez l'option "Ajouter un acteur".
+Pour attribuer un ticket à sois même ou a un collègue par exemple, vous allez cliquer sur le ticket, 
+ensuite dans la page du ticket cliquer sur le menu déroulant "Action".
+Depuis la vous verrez l'option "Ajouter un acteur".
 
 ```{image} images/glpi-tickets-user-attribution.png
 :width: 500px
@@ -108,6 +108,6 @@ en vous demandant de choisir le type d'action (Demandeur, observateur, attribuer
 :align: center
 ```
 
-Puis validez votre choix est attribution du ticket est faite!
+Puis validez votre choix est l'attribution du ticket est faite!
 
 ### 

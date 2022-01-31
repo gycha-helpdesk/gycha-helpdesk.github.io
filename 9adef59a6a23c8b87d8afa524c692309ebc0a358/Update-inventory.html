@@ -421,7 +421,7 @@ Teams &gt; GychaIT &gt; Files &gt; Inventaire &gt; 2020</p>
 <div class="section" id="changer-nom-d-un-poste">
 <h2>Changer nom d’un poste<a class="headerlink" href="#changer-nom-d-un-poste" title="Permalink to this headline">¶</a></h2>
 <p>Dans les cas où on veut changer le nom d’un pc ou laptop dans l’inventaire nous devons aussi le changer dans Active Directory.
-Cela prend beaucoup de temps si on le fais à la main. Il existe un script Python qui met à jour AD par rappot aux changements dans le fichier inventaire et crée un fichier CSV dans dossier Readonly (il se trouve dans le dossier racine). Donc si on met à jour ce fichier inventaire et lancer le script, AD sera aussi à jour.</p>
+Cela prend beaucoup de temps si on le fait à la main. Il existe un script Python qui met à jour AD par rappot aux changements dans le fichier inventaire et crée un fichier CSV dans dossier Readonly (il se trouve dans le dossier racine). Donc si on met à jour ce fichier inventaire et lancer le script, AD sera aussi à jour.</p>
 <p>Emplacement du fichier inventaire à mettre à jour (dans serveur des fichiers):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">IT</span><span class="o">/</span><span class="n">inventaire</span><span class="o">/</span><span class="mi">2021</span><span class="o">/</span><span class="n">InventaireNaming</span><span class="o">.</span><span class="n">xlsx</span>
 </pre></div>
@@ -429,9 +429,9 @@ Cela prend beaucoup de temps si on le fais à la main. Il existe un script Pytho
 <div class="section" id="lancer-le-script-python">
 <span id="python-script"></span><h3>Lancer le script Python<a class="headerlink" href="#lancer-le-script-python" title="Permalink to this headline">¶</a></h3>
 <p>Dans le même dossier se trouve le fichier script. Il s’appelle <code class="docutils literal notranslate"><span class="pre">gycham_naming_export.py</span></code> . </br>
-Pour lancer ce fichier nous aurons besoin du terminal. Dans terminal tappez python ensuite une espace, epuis glisser le script dans terminal.</p>
+Pour lancer ce fichier nous aurons besoin du terminal. Dans terminal tappez python ensuite une espace, puis glisser le script dans le terminal.</p>
 <a class="reference internal image-reference" href="_images/inventory-change-post-name.png" id="inventory-change-post-name"><img alt="_images/inventory-change-post-name.png" class="align-center" id="inventory-change-post-name" src="_images/inventory-change-post-name.png" style="width: 600px;" /></a>
-<p>Maintenant il vous seulement tappez sur la touche “Enter” pour lancement script. Quand operation réussit, nous pouvons aller voir le fichier CSV que ce script à généré pour voir si le changement à été effectué sans erreur.</p>
+<p>Maintenant il vous faut seulement tappez sur la touche “Enter” pour lancement script. Quand l’operation réussie, nous pouvons aller voir le fichier CSV que ce script à généré pour voir si le changement à été effectué sans erreur.</p>
 <p>Emplacement du fichier CSV (dans serveur des fichiers):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">IT</span><span class="o">/</span><span class="n">ReadOnly</span><span class="o">/</span><span class="n">GYCH_naming</span><span class="o">.</span><span class="n">csv</span>
 </pre></div>
@@ -440,9 +440,9 @@ Pour lancer ce fichier nous aurons besoin du terminal. Dans terminal tappez pyth
 </div>
 <div class="section" id="changement-du-nom-sur-le-poste">
 <h3>Changement du nom sur le poste<a class="headerlink" href="#changement-du-nom-sur-le-poste" title="Permalink to this headline">¶</a></h3>
-<p>Normalement les ordinateur au GYCHA lance recurremment la régle qui met à jour les information de l’ordinateur avec l’AD.
-Mais parfois vous avez besoin de changer son nom plus rapidement (par exemple dans les cas où nous faisons changement d’un ordinateur).</p>
-<p>Il existe quatre différents règles dans Jamf qui nous permettent de mettre ajour le nom de l’ordinateur avec le fichier CSV qu’on a généré dans <a class="reference internal" href="#python-script"><span class="std std-ref">l’étap précédente</span></a>.</p>
+<p>Normalement les ordinateurs du GYCHA lance recurremment la régle qui met à jour les information de l’ordinateur avec l’AD.
+Mais parfois vous avez besoin de changer son nom plus rapidement (par exemple dans les cas où nous faisons le changement d’ordinateur).</p>
+<p>Il existe quatre différentes règles dans Jamf qui nous permettent de mettre ajour le nom de l’ordinateur avec le fichier CSV qu’on a généré dans <a class="reference internal" href="#python-script"><span class="std std-ref">l’étap précédente</span></a>.</p>
 <blockquote>
 <div><p><strong>renameComputer</strong> : met à jour le nom de l’ordinateur
 </br> <strong>renamrComputerAD</strong> : il appelle la règle <em>renameComputer</em> en mettant à jour le même ordinateur dans l’AD

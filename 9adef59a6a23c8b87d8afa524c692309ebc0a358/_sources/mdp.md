@@ -44,7 +44,7 @@ remplisser les champs: (Title, userName, description, password les deux et la ca
 :align: center
 ```
 
-Vous savez des maitenant ajouter un message.
+Vous savez des maitenant ajouter un mot de passe.
 
 [//]: # (Links)
 [1]: https://pass.dgep.edu-vaud.ch:9119/

@@ -69,6 +69,3 @@ Voilà il ne reste plus qu'appliquer les paramètres  sur l'iPad.
 :name: loadingConf
 :align: center
 ```
-
-Tuto terminée.
-

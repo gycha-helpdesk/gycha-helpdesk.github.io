@@ -64,7 +64,7 @@ Voilà maintenant vous vous êtes bien connecter au serveur des fichiers et vous
 ## Changer nom d'un poste
 
 Dans les cas où on veut changer le nom d'un pc ou laptop dans l'inventaire nous devons aussi le changer dans Active Directory.
-Cela prend beaucoup de temps si on le fais à la main. Il existe un script Python qui met à jour AD par rappot aux changements dans le fichier inventaire et crée un fichier CSV dans dossier Readonly (il se trouve dans le dossier racine). Donc si on met à jour ce fichier inventaire et lancer le script, AD sera aussi à jour.
+Cela prend beaucoup de temps si on le fait à la main. Il existe un script Python qui met à jour AD par rappot aux changements dans le fichier inventaire et crée un fichier CSV dans dossier Readonly (il se trouve dans le dossier racine). Donc si on met à jour ce fichier inventaire et lancer le script, AD sera aussi à jour.
 
 Emplacement du fichier inventaire à mettre à jour (dans serveur des fichiers):
 ```
@@ -75,7 +75,7 @@ Emplacement du fichier inventaire à mettre à jour (dans serveur des fichiers):
 ### Lancer le script Python
 
 Dans le même dossier se trouve le fichier script. Il s'appelle ```gycham_naming_export.py``` . </br>
-Pour lancer ce fichier nous aurons besoin du terminal. Dans terminal tappez python ensuite une espace, epuis glisser le script dans terminal. 
+Pour lancer ce fichier nous aurons besoin du terminal. Dans terminal tappez python ensuite une espace, puis glisser le script dans le terminal. 
 
 ```{image} images/inventory-change-post-name.png
 :width: 600px
@@ -83,7 +83,7 @@ Pour lancer ce fichier nous aurons besoin du terminal. Dans terminal tappez pyth
 :align: center
 ```
 
-Maintenant il vous seulement tappez sur la touche "Enter" pour lancement script. Quand operation réussit, nous pouvons aller voir le fichier CSV que ce script à généré pour voir si le changement à été effectué sans erreur. 
+Maintenant il vous faut seulement tappez sur la touche "Enter" pour lancement script. Quand l'operation réussie, nous pouvons aller voir le fichier CSV que ce script à généré pour voir si le changement à été effectué sans erreur. 
 
 Emplacement du fichier CSV (dans serveur des fichiers): 
 
@@ -95,10 +95,10 @@ Dans ce fichier vous pouvez chercher le pc dont vous venez de changer le nom.
 
 ### Changement du nom sur le poste
 
-Normalement les ordinateur au GYCHA lance recurremment la régle qui met à jour les information de l'ordinateur avec l'AD. 
-Mais parfois vous avez besoin de changer son nom plus rapidement (par exemple dans les cas où nous faisons changement d'un ordinateur). 
+Normalement les ordinateurs du GYCHA lance recurremment la régle qui met à jour les information de l'ordinateur avec l'AD. 
+Mais parfois vous avez besoin de changer son nom plus rapidement (par exemple dans les cas où nous faisons le changement d'ordinateur). 
 
-Il existe quatre différents règles dans Jamf qui nous permettent de mettre ajour le nom de l'ordinateur avec le fichier CSV qu'on a généré dans [l'étap précédente](python-script). 
+Il existe quatre différentes règles dans Jamf qui nous permettent de mettre ajour le nom de l'ordinateur avec le fichier CSV qu'on a généré dans [l'étap précédente](python-script). 
 
 > **renameComputer** : met à jour le nom de l'ordinateur
 > </br> **renamrComputerAD** : il appelle la règle _renameComputer_ en mettant à jour le même ordinateur dans l'AD

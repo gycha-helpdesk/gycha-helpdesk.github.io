@@ -24,7 +24,7 @@ quelles on travail en format Html qui sera enresgistré et publié via Github.
 ## Installation Jupyter-Book
 
 Logiquement nous allons besoin d'installler [Anaconda][1] d'abord mais il est normalement 
-déjà installé sur les postes Gycham et c'est compliqué de l'installer nonplus. 
+déjà installé sur les postes Gycham. 
 
 Il y a plusieurs maniers d'installer Jupyter-Book, depuis GUI[^2] de 
 Anaconda Navigateur ou CLI[^3].
@@ -36,7 +36,7 @@ ligne de commandes pour utiliser Jupyter-Book même si on installe le package vi
 
 ### GUI: Installation Jupyter-Book
 
-Dans votre machine, ouvrez Anaconda navigateur. Ce nous intéresess est dans la barre de gauche, 
+Depuis votre machine, ouvrez Anaconda navigateur. Ce nous intéresess est dans la barre de gauche, 
 Environments (les environements). 
 
 ```{image} images/anaconda-home.png
@@ -45,8 +45,8 @@ Environments (les environements).
 :align: center
 ```
 
-Quand vous cliquez sur "Environments" vous allez voir toutes les environements disponibles, dans 
-notre cas il y a seulement le "base" a disposition, nous allons donc créer un autre envoronment pour
+Quand vous cliquez sur "Environments" vous allez voir tout les environements disponibles, dans 
+notre cas il y a seulement le "base" a disposition, nous allons donc créer un autre environement pour
 notre package Jupyter-Book.
 
 ```{image} images/anaconda-environment.png
@@ -55,10 +55,9 @@ notre package Jupyter-Book.
 :align: center
 ```
 
-Quand vous allez créer un nouveau environment, il vous demande de nommer votre environement et choisir une version Python. 
-Pour le nom nous allons mettre **jupyter-book** et pour la version c'est mieux de choisir une version différente de 3.8 
-parceque apparemment il y avait un problème avec cette version. Choisissez 3.7 ou une version plus récente que 3.8 
-(j'ai 3.10 actuellement et ça me semble assez stable).
+Quand vous allez créer un nouvel environment, il vous demande de nommer votre environement et choisir une version de Python. 
+Pour le nom nous allons mettre **jupyter-book** et pour la version vous pouvez choisir soit une version antérieur a la 3.8 ou toutes celles d'après.
+(j'ai actuellement la 3.10 et elle me semble assez stable).
 
 ```{image} images/anaconda-python-version.png
 :width: 500px
@@ -102,8 +101,8 @@ Nous pouvons maintenant passer à [Comment Utiliser Jupyter-Book](Utilisation-Ju
 
 L'installation Anaconda sera la même que l'étap précédent. 
 
-1. Pour installer Jupyter-Book ouvrez le terminal dans votre machine.
-Puis ouvrez le terminal de votre machine et tapez "conda" pour voir si c'est reconnu. Si l'installation Anaconda à été correctement fait vou verrez les messages suivant dans le terminal.
+1. Pour installer Jupyter-Book ouvrez le terminal de votre machine.
+Puis tapez "conda" pour voir si c'est la commande est reconnue. Si l'installation de Anaconda à été correctement fait vous verrez les messages suivant dans le terminal.
 
 ```{image} images/anaconda-cli-conda.png
 :width: 600px
@@ -112,7 +111,7 @@ Puis ouvrez le terminal de votre machine et tapez "conda" pour voir si c'est rec
 ```
 
 2. Ensuite nous allons créer l'environment qui contiendra notre package Jupyter-Book. 
-La commande pour créer un environment (nous allon nommer notre environment "jupyter-book"):
+La commande pour créer un environment. (nous allons nommer notre environment "jupyter-book"):
 
 ```shell
 conda create -name jupyter-book
@@ -132,7 +131,7 @@ conda create -name jupyter-book python=3.9
 ```
 
 3. Maintenant on passe à l'installation package jupyter-book dans cet environnement. 
-Avant d'installer le package jupyter-book il faut d'abord activer l'environment qu'on vien de créer:
+Avant d'installer le package jupyter-book il faut d'abord activer l'environment que nous venons de créer:
 
 ```shell
 conda activate jupyter-book
@@ -165,7 +164,7 @@ conda install jupyter-book
 :align: center
 ```
 
-Ensuite conda teste les différentes sources pour collecter des packages et les installer. Quand la collection est fini conda vous demande de valider l'installation, tappez "y" pour valider et normalement c'est tout!
+Ensuite conda teste les différentes sources pour collecter des packages et les installer. Quand la collecte est fini conda vous demande de valider l'installation, tappez "y" pour valider et normalement c'est tout!
 
 ```{image} images/anaconda-cli-conda-jupyterbook.png
 :width: 600px
@@ -186,10 +185,10 @@ Jupyter-book suit un schemas pour créer le site, on ne peut pas lancer le build
 :align: center
 ```
 
-Dans l'image ci-dessus, on voit le dossier documentation-stage-meta (qui est le dossier on clone depuis Github), les emplacements des fichiers et les sous-dossiers. Le dossier qui nous concerne le plus pour lancer jupyter-book est **src**. Ce dossier contient les documents que vous modifiez pour le site et les photos. De coup c'est depuis ce dossier que vous pouvez lancer jupyter-book et créer le site.
+Dans l'image ci-dessus, on voit le dossier documentation-stage-meta (qui est le dossier qu'on clone depuis Github), les emplacements des fichiers et les sous-dossiers. Le dossier qui nous concerne le plus pour lancer jupyter-book est **src**. Ce dossier contient les documents que vous allez modifiez pour le site et les photos. De coup c'est depuis ce dossier que vous pouvez lancer jupyter-book et créer le site.
 
 
-En utilisant comand cd[^4] vous pouvez naviguez entre les dossiers. Quand vous êtes bien à l'emplacement dossier source, vous pouvez lancer ce commande: 
+En utilisant comand cd[^4] vous pouvez naviguez entre les dossiers. Quand vous êtes bien à l'emplacement dossier source, vous pouvez lancer cette commande: 
 
 ```shell
 jupyter-book build .
@@ -201,7 +200,7 @@ jupyter-book build .
 :align: center
 ```
 
-Quand il a bien généré le site, il vous donne un lien vers le site en local, vous pouvez le copiez dans votre navigateur web pour voir les modifications que vous avec dans vos documentations.
+Quand il a bien généré le site, il vous donne un lien vers le site en local, vous pouvez le copiez dans votre navigateur web pour voir les modifications que vous avez effectué dans vos documentations.
 
 [//]: # (Links)
 

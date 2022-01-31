@@ -9,7 +9,7 @@ VMware Fusion permet aux Mac Intel d'exécuter des machines virtuelles avec des 
 
 ## Début de la marche à suivre
 
-Nous alleon utilisez VMware
+Nous allons utilisez VMware
 
 ```{image} images/composeur.png
 :width: 500px

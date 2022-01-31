@@ -415,7 +415,7 @@ quelles on travail en format Html qui sera enresgistré et publié via Github.</
 <div class="section" id="installation-jupyter-book">
 <h2>Installation Jupyter-Book<a class="headerlink" href="#installation-jupyter-book" title="Permalink to this headline">¶</a></h2>
 <p>Logiquement nous allons besoin d’installler <a class="reference external" href="https://www.anaconda.com/products/individual#macos">Anaconda</a> d’abord mais il est normalement
-déjà installé sur les postes Gycham et c’est compliqué de l’installer nonplus.</p>
+déjà installé sur les postes Gycham.</p>
 <p>Il y a plusieurs maniers d’installer Jupyter-Book, depuis GUI<a class="footnote-reference brackets" href="#id6" id="id2">2</a> de
 Anaconda Navigateur ou CLI<a class="footnote-reference brackets" href="#id7" id="id3">3</a>.</p>
 <div class="admonition note">
@@ -425,17 +425,16 @@ ligne de commandes pour utiliser Jupyter-Book même si on installe le package vi
 </div>
 <div class="section" id="gui-installation-jupyter-book">
 <h3>GUI: Installation Jupyter-Book<a class="headerlink" href="#gui-installation-jupyter-book" title="Permalink to this headline">¶</a></h3>
-<p>Dans votre machine, ouvrez Anaconda navigateur. Ce nous intéresess est dans la barre de gauche,
+<p>Depuis votre machine, ouvrez Anaconda navigateur. Ce nous intéresess est dans la barre de gauche,
 Environments (les environements).</p>
 <a class="reference internal image-reference" href="_images/anaconda-home.png" id="anaconda-home"><img alt="_images/anaconda-home.png" class="align-center" id="anaconda-home" src="_images/anaconda-home.png" style="width: 600px;" /></a>
-<p>Quand vous cliquez sur “Environments” vous allez voir toutes les environements disponibles, dans
-notre cas il y a seulement le “base” a disposition, nous allons donc créer un autre envoronment pour
+<p>Quand vous cliquez sur “Environments” vous allez voir tout les environements disponibles, dans
+notre cas il y a seulement le “base” a disposition, nous allons donc créer un autre environement pour
 notre package Jupyter-Book.</p>
 <a class="reference internal image-reference" href="_images/anaconda-environment.png" id="anaconda-envorinments"><img alt="_images/anaconda-environment.png" class="align-center" id="anaconda-envorinments" src="_images/anaconda-environment.png" style="width: 600px;" /></a>
-<p>Quand vous allez créer un nouveau environment, il vous demande de nommer votre environement et choisir une version Python.
-Pour le nom nous allons mettre <strong>jupyter-book</strong> et pour la version c’est mieux de choisir une version différente de 3.8
-parceque apparemment il y avait un problème avec cette version. Choisissez 3.7 ou une version plus récente que 3.8
-(j’ai 3.10 actuellement et ça me semble assez stable).</p>
+<p>Quand vous allez créer un nouvel environment, il vous demande de nommer votre environement et choisir une version de Python.
+Pour le nom nous allons mettre <strong>jupyter-book</strong> et pour la version vous pouvez choisir soit une version antérieur a la 3.8 ou toutes celles d’après.
+(j’ai actuellement la 3.10 et elle me semble assez stable).</p>
 <a class="reference internal image-reference" href="_images/anaconda-python-version.png" id="anaconda-python-version"><img alt="_images/anaconda-python-version.png" class="align-center" id="anaconda-python-version" src="_images/anaconda-python-version.png" style="width: 500px;" /></a>
 <p>Quand l’environement est créé, choisissez le. Ensuite:</p>
 <ol class="simple">
@@ -455,13 +454,13 @@ parceque apparemment il y avait un problème avec cette version. Choisissez 3.7 
 <h3>CLI: Installation Jupyter-Book<a class="headerlink" href="#cli-installation-jupyter-book" title="Permalink to this headline">¶</a></h3>
 <p>L’installation Anaconda sera la même que l’étap précédent.</p>
 <ol class="simple">
-<li><p>Pour installer Jupyter-Book ouvrez le terminal dans votre machine.
-Puis ouvrez le terminal de votre machine et tapez “conda” pour voir si c’est reconnu. Si l’installation Anaconda à été correctement fait vou verrez les messages suivant dans le terminal.</p></li>
+<li><p>Pour installer Jupyter-Book ouvrez le terminal de votre machine.
+Puis tapez “conda” pour voir si c’est la commande est reconnue. Si l’installation de Anaconda à été correctement fait vous verrez les messages suivant dans le terminal.</p></li>
 </ol>
 <a class="reference internal image-reference" href="_images/anaconda-cli-conda.png" id="anaconda-cli-conda"><img alt="_images/anaconda-cli-conda.png" class="align-center" id="anaconda-cli-conda" src="_images/anaconda-cli-conda.png" style="width: 600px;" /></a>
 <ol class="simple">
 <li><p>Ensuite nous allons créer l’environment qui contiendra notre package Jupyter-Book.
-La commande pour créer un environment (nous allon nommer notre environment “jupyter-book”):</p></li>
+La commande pour créer un environment. (nous allons nommer notre environment “jupyter-book”):</p></li>
 </ol>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda create -name jupyter-book
 </pre></div>
@@ -476,7 +475,7 @@ La commande pour créer un environment (nous allon nommer notre environment “j
 </div>
 <ol class="simple">
 <li><p>Maintenant on passe à l’installation package jupyter-book dans cet environnement.
-Avant d’installer le package jupyter-book il faut d’abord activer l’environment qu’on vien de créer:</p></li>
+Avant d’installer le package jupyter-book il faut d’abord activer l’environment que nous venons de créer:</p></li>
 </ol>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda activate jupyter-book
 </pre></div>
@@ -496,7 +495,7 @@ installation proprement, suivez en ordre:</p>
 </pre></div>
 </div>
 <a class="reference internal image-reference" href="_images/anaconda-cli-conda-forge.png" id="anaconda-cli-conda-forge"><img alt="_images/anaconda-cli-conda-forge.png" class="align-center" id="anaconda-cli-conda-forge" src="_images/anaconda-cli-conda-forge.png" style="width: 600px;" /></a>
-<p>Ensuite conda teste les différentes sources pour collecter des packages et les installer. Quand la collection est fini conda vous demande de valider l’installation, tappez “y” pour valider et normalement c’est tout!</p>
+<p>Ensuite conda teste les différentes sources pour collecter des packages et les installer. Quand la collecte est fini conda vous demande de valider l’installation, tappez “y” pour valider et normalement c’est tout!</p>
 <a class="reference internal image-reference" href="_images/anaconda-cli-conda-jupyterbook.png" id="anaconda-cli-conda-jupyterbook"><img alt="_images/anaconda-cli-conda-jupyterbook.png" class="align-center" id="anaconda-cli-conda-jupyterbook" src="_images/anaconda-cli-conda-jupyterbook.png" style="width: 600px;" /></a>
 </div>
 <div class="section" id="utilisation-jupyter-book">
@@ -504,13 +503,13 @@ installation proprement, suivez en ordre:</p>
 <p>Pour utiliser jupyter-book vous allez utiliser la ligne de commande, c’est comme ça que ça marche, même si vous avez installer jupyter-book avec le GUI de Anaconda.</p>
 <p>Jupyter-book suit un schemas pour créer le site, on ne peut pas lancer le build depuis n’importe où.</p>
 <a class="reference internal image-reference" href="_images/build-resources.png" id="build-resources"><img alt="_images/build-resources.png" class="align-center" id="build-resources" src="_images/build-resources.png" style="width: 600px;" /></a>
-<p>Dans l’image ci-dessus, on voit le dossier documentation-stage-meta (qui est le dossier on clone depuis Github), les emplacements des fichiers et les sous-dossiers. Le dossier qui nous concerne le plus pour lancer jupyter-book est <strong>src</strong>. Ce dossier contient les documents que vous modifiez pour le site et les photos. De coup c’est depuis ce dossier que vous pouvez lancer jupyter-book et créer le site.</p>
-<p>En utilisant comand cd<a class="footnote-reference brackets" href="#id8" id="id4">4</a> vous pouvez naviguez entre les dossiers. Quand vous êtes bien à l’emplacement dossier source, vous pouvez lancer ce commande:</p>
+<p>Dans l’image ci-dessus, on voit le dossier documentation-stage-meta (qui est le dossier qu’on clone depuis Github), les emplacements des fichiers et les sous-dossiers. Le dossier qui nous concerne le plus pour lancer jupyter-book est <strong>src</strong>. Ce dossier contient les documents que vous allez modifiez pour le site et les photos. De coup c’est depuis ce dossier que vous pouvez lancer jupyter-book et créer le site.</p>
+<p>En utilisant comand cd<a class="footnote-reference brackets" href="#id8" id="id4">4</a> vous pouvez naviguez entre les dossiers. Quand vous êtes bien à l’emplacement dossier source, vous pouvez lancer cette commande:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>jupyter-book build .
 </pre></div>
 </div>
 <a class="reference internal image-reference" href="_images/build-jupyterbook.gif" id="build-jupyterbook"><img alt="_images/build-jupyterbook.gif" class="align-center" id="build-jupyterbook" src="_images/build-jupyterbook.gif" style="width: 600px;" /></a>
-<p>Quand il a bien généré le site, il vous donne un lien vers le site en local, vous pouvez le copiez dans votre navigateur web pour voir les modifications que vous avec dans vos documentations.</p>
+<p>Quand il a bien généré le site, il vous donne un lien vers le site en local, vous pouvez le copiez dans votre navigateur web pour voir les modifications que vous avez effectué dans vos documentations.</p>
 <!-- Refrences dans footer -->
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
