@@ -23,7 +23,7 @@ quelles on travail en format Html qui sera enresgistré et publié via Github.
 
 ## Installation Jupyter-Book
 
-Logiquement nous allons besoin d'installler [1](Anaconda) d'abord mais il est normalement 
+Logiquement nous allons besoin d'installler [Anaconda][1] d'abord mais il est normalement 
 déjà installé sur les postes Gycham et c'est compliqué de l'installer nonplus. 
 
 Il y a plusieurs maniers d'installer Jupyter-Book, depuis GUI[^2] de 

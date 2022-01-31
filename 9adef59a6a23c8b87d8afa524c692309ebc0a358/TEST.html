@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cisco Meraki &#8212; Documentation Technique Chamblandes</title>
+    <title>TEST &#8212; Documentation Technique Chamblandes</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -52,8 +52,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Section Programmation" href="Programmation.html" />
-    <link rel="prev" title="Configurer un switch Netgear GS108T" href="config-switch.html" />
+    <link rel="next" title="Section Utile" href="Utile.html" />
+    <link rel="prev" title="Fermeture Automatique de la sesssion" href="JamfAutoLogout.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -91,16 +91,16 @@
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="current nav bd-sidenav">
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="Jamf.html">
    Section Jamf
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="JamfFirstConnection.html">
      Avant de commencer
@@ -144,6 +144,11 @@
    <li class="toctree-l2">
     <a class="reference internal" href="JamfAutoLogout.html">
      Fermeture Automatique de la sesssion
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     TEST
     </a>
    </li>
   </ul>
@@ -202,16 +207,16 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="ServeurReseau.html">
    Section Réseau
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="ad.html">
      Active Directory de la DGEP
@@ -227,8 +232,8 @@
      Configurer un switch Netgear GS108T
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="Meraki.html">
      Cisco Meraki
     </a>
    </li>
@@ -276,7 +281,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/Meraki.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/TEST.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -301,24 +306,6 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contenu
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#login">
-   Login
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#configuer-un-port">
-   Configuer un port
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -326,147 +313,19 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Cisco Meraki</h1>
+                <h1>TEST</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contenu </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#login">
-   Login
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#configuer-un-port">
-   Configuer un port
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <!--
-Author:		    NoorMohammad Alizadeh
-Date:		    15-nov, 2021
-Description:	Meraki web interface login
--->
-<div class="tex2jax_ignore mathjax_ignore section" id="cisco-meraki">
-<h1>Cisco Meraki<a class="headerlink" href="#cisco-meraki" title="Permalink to this headline">¶</a></h1>
-<blockquote>
-<div><p>Meraki offre une gestion centralisée des appareils
-Cisco qui sont facilement accessible depuis un
-navigateur web ainsi que les telephones portables via
-Application Meraki.</p>
-</div></blockquote>
-<div class="tabbed-set docutils">
-<input checked="checked" id="a7ba5bb9-651d-4466-9bd5-9d04d30c5210" name="410a3d02-4482-4c17-a064-5a8c469384a5" type="radio">
-</input><label class="tabbed-label" for="a7ba5bb9-651d-4466-9bd5-9d04d30c5210">
-WEB</label><div class="tabbed-content docutils">
-<a class="reference internal image-reference" href="_images/meraki-web.gif" id="meraki-web"><img alt="_images/meraki-web.gif" class="align-left" id="meraki-web" src="_images/meraki-web.gif" style="width: 450px;" /></a>
-</div>
-<input id="e5bced32-8c56-4a7d-97b8-64192cc9ab60" name="410a3d02-4482-4c17-a064-5a8c469384a5" type="radio">
-</input><label class="tabbed-label" for="e5bced32-8c56-4a7d-97b8-64192cc9ab60">
-iOS</label><div class="tabbed-content docutils">
-<a class="reference internal image-reference" href="_images/meraki-appstore.png" id="meraki-ios"><img alt="_images/meraki-appstore.png" class="align-left" id="meraki-ios" src="_images/meraki-appstore.png" style="width: 450px;" /></a>
-<p><a class="sphinx-bs btn text-wrap btn-outline-primary reference external" href="https://apps.apple.com/us/app/meraki/id693056161"><span>App Store</span></a></p>
-</div>
-<input id="be644bb1-d37e-4a82-9683-941bf607dcff" name="410a3d02-4482-4c17-a064-5a8c469384a5" type="radio">
-</input><label class="tabbed-label" for="be644bb1-d37e-4a82-9683-941bf607dcff">
-Android</label><div class="tabbed-content docutils">
-<a class="reference internal image-reference" href="_images/meraki-googleplay.png" id="meraki-android"><img alt="_images/meraki-googleplay.png" class="align-left" id="meraki-android" src="_images/meraki-googleplay.png" style="width: 450px;" /></a>
-<p><a class="sphinx-bs btn text-wrap btn-outline-success reference external" href="https://play.google.com/store/apps/details?id=com.meraki.Dashboard&amp;hl=fr_CH&amp;gl=US"><span>Google Play Store</span></a></p>
-</div>
-</div>
-<div class="section" id="login">
-<h2>Login<a class="headerlink" href="#login" title="Permalink to this headline">¶</a></h2>
-<p>Pour se connecter à l’interface WEB du Meraki, dabord
-il faut que vous demandiez à votre personne responsable d
-e céer un accès à cette interface, ensuite un email avec
-le lien pour créer un mot de passe sera envoyé dans votre
-boîte mail.</p>
-<p>Ensuite, pour acceder au dashboard du Meraki, copiez le
-lien ci-dessous dans votre navigateur WEB:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">n213</span><span class="o">.</span><span class="n">meraki</span><span class="o">.</span><span class="n">com</span>
-</pre></div>
-</div>
-<p>Ce lien vous amène ver la page login du site Meraki.
-Vous allez simplement tapper votre e-mail via le quel
-votre compte Meraki a été créé, ensuite tappez votre
-mot de passe.</p>
-<a class="reference internal image-reference" href="_images/meraki-login-2.png" id="meraki-login"><img alt="_images/meraki-login-2.png" class="align-center" id="meraki-login" src="_images/meraki-login-2.png" style="width: 500px;" /></a>
-<p>Après avoir saisie l’identifiant et le mot de passe,
-si les informations ont été correctes, vous serez
-dirigez vers le “dashboard” du Meraki, qui va resembler
-à la photo ci-dessous.</p>
-<a class="reference internal image-reference" href="_images/meraki-dashboard.png" id="meraki-dashboard"><img alt="_images/meraki-dashboard.png" class="align-center" id="meraki-dashboard" src="_images/meraki-dashboard.png" style="width: 500px;" /></a>
-</div>
-<div class="section" id="configuer-un-port">
-<h2>Configuer un port<a class="headerlink" href="#configuer-un-port" title="Permalink to this headline">¶</a></h2>
-<p>Sur meraki vous pouvez configurer le port pour un swuitch à distant et le faire marcher via différents VLAN.
-Je vous montre comment configurer un port pour avoir accès au réseau imprimantes.</p>
-<ol class="simple">
-<li><p>Allez sur le site Meraki et vous logger. Dans le menu à gauche choisissez Switchs.</p></li>
-</ol>
-<a class="reference internal image-reference" href="_images/meraki-switch.png" id="meraki-switch"><img alt="_images/meraki-switch.png" class="align-center" id="meraki-switch" src="_images/meraki-switch.png" style="width: 500px;" /></a>
-<ol class="simple">
-<li><p>Dans la list des switch, je choisis SW-A-A19-01 pour notre test.</p></li>
-</ol>
-<a class="reference internal image-reference" href="_images/meraki-switch-a19.png" id="meraki-switch-a19"><img alt="_images/meraki-switch-a19.png" class="align-center" id="meraki-switch-a19" src="_images/meraki-switch-a19.png" style="width: 500px;" /></a>
-<ol class="simple">
-<li><p>Maintenant on peut choisir quel port on veut configurer.</p></li>
-</ol>
-<a class="reference internal image-reference" href="_images/meraki-switch-port.png" id="meraki-switch-port"><img alt="_images/meraki-switch-port.png" class="align-center" id="meraki-switch-port" src="_images/meraki-switch-port.png" style="width: 500px;" /></a>
-<ol class="simple">
-<li><p>Je prends le port 13 comme c’est un port libre.</p></li>
-</ol>
-<a class="reference internal image-reference" href="_images/meraki-switch-port-13.png" id="meraki-switch-port-13"><img alt="_images/meraki-switch-port-13.png" class="align-center" id="meraki-switch-port-13" src="_images/meraki-switch-port-13.png" style="width: 500px;" /></a>
-<p>On voit que ce port est configurer avec le VLAN 32 qui est le VLAN management, Trunk.
-Cliquez sur l’icône à coté de Configuration pour modifier le port.</p>
-<ol class="simple">
-<li><p>Danse ces photo vous voyez les modifications nécessaire pour changer le VLAN</p></li>
-</ol>
-<div class="sphinx-bs container pb-4 docutils">
-<div class="row docutils">
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-header docutils">
-<p class="card-text"><strong>VLAN 32</strong></p>
-</div>
-<div class="card-body docutils">
-<a class="reference internal image-reference" href="_images/meraki-switch-port-edit.png" id="meraki-switch-port-edit"><img alt="_images/meraki-switch-port-edit.png" class="align-left" id="meraki-switch-port-edit" src="_images/meraki-switch-port-edit.png" style="width: 400px;" /></a>
-</div>
-<div class="card-footer docutils">
-<p class="card-text">Avant de changements</p>
-</div>
-</div>
-</div>
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-header docutils">
-<p class="card-text"><strong>VLAN 38</strong></p>
-</div>
-<div class="card-body docutils">
-<a class="reference internal image-reference" href="_images/meraki-switch-port-edited.png" id="meraki-switch-port-edited"><img alt="_images/meraki-switch-port-edited.png" class="align-right" id="meraki-switch-port-edited" src="_images/meraki-switch-port-edited.png" style="width: 400px;" /></a>
-</div>
-<div class="card-footer docutils">
-<p class="card-text">Après les changements</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<p>Ensuite sauvegardez votre modificaition, l’appareil qui sera connecté à ce port sera dans le VLAN 38, imprimantes.</p>
-</div>
+  <div class="tex2jax_ignore mathjax_ignore section" id="test">
+<h1>TEST<a class="headerlink" href="#test" title="Permalink to this headline">¶</a></h1>
 </div>
 
     <script type="text/x-thebe-config">
@@ -494,17 +353,17 @@ Cliquez sur l’icône à coté de Configuration pour modifier le port.</p>
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="config-switch.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="JamfAutoLogout.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Configurer un switch Netgear GS108T</p>
+            <p class="prev-next-title">Fermeture Automatique de la sesssion</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="Programmation.html" title="next page">
+    <a class='right-next' id="next-link" href="Utile.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Section Programmation</p>
+        <p class="prev-next-title">Section Utile</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
