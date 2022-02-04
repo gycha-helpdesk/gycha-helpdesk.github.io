@@ -105,12 +105,75 @@ Maintenant que vous êtes dans le bon dossier et que vous êtes sur le bonne env
 Voila ! une fois que tout ça est fais vous pouvez voir le changemnt en local mais pas en ligne des modification que vous avez apporté au fichier.
 
 ```{note}
-il suffi de copier le lien qui vous est fourni quand vous tapez la commande build .
+il suffit de copier le lien qui vous est fourni quand vous tapez la commande build .
 ```
 <br/>
 
 ```{image} images/lienSiteLocal.png
-:width: 400px
+:width: 600px
 :name: lienSiteLocal
 :align: center
 ```
+<br/>
+
+Si vous voulez pouvoir voir vos modifiction en ligne il faut aller sur gitHub desktop pour push toute les données que vous avez modifier. Mais avant ça il faut selectionner le bon dossier.
+
+<br/>
+
+```{image} images/selectionDuBonDossier.png
+:width: 400px
+:name: selectionDuBonDossier
+:align: center
+```
+
+<br/>
+
+Un fois que vous êtes sur le bon dossier il faut faire un commmit a la branche principale.
+
+<br/>
+
+```{image} images/Commit.png
+:width: 300px
+:name: Commit
+:align: center
+```
+
+<br/>
+
+une fois que c'est fais il faut cliquer sur push en haut a droite. 
+
+<br/>
+
+```{image} images/push.png
+:width: 800px
+:name: push
+:align: center
+```
+
+<br/>
+
+Ensuite vous selectionner le deuxième dossier et vous faite la même chose. Une fois que c'est fais vous aller dans le finder et vous aller sur le dossier "src > build > html" et vous copier l'intégraliter du dossier.
+
+<br/>
+
+```{image} images/rootToCopyHtml.png
+:width: 800px
+:name: rootToCopyHtml
+:align: center
+```
+
+<br/>
+
+ensuite vous allez sur le dossier (gycha-helpdesk.github.io) est vous coller le tout dans le dossier 9adef59......
+
+<br/>
+
+```{image} images/rootToColler.png
+:width: 700px
+:name: rootToColler
+:align: center
+```
+
+<br/>
+
+si ça ne marche pas du premier coup faite toutes ces actions une deuxième fois. ça dévrais marcher. (c'est parce que il y a des dossier qui dépendent d'autre dossier du coup il faut en générale le faire 2 fois)
