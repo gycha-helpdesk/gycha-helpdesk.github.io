@@ -306,6 +306,19 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenu
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mettre-a-jour-et-modifier-le-site">
+   Mettre a jour et modifier le site
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -318,6 +331,19 @@
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contenu </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mettre-a-jour-et-modifier-le-site">
+   Mettre a jour et modifier le site
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -327,8 +353,72 @@
   <div class="tex2jax_ignore mathjax_ignore section" id="information-complementaire">
 <h1>Information complémentaire<a class="headerlink" href="#information-complementaire" title="Permalink to this headline">¶</a></h1>
 <blockquote>
-<div><p>je suis un text qui sert de test</p>
+<div><p>Dans cette partie du site je vais vous explique comment mettre ajour le site / rajouter du contenu.
+en paralelle je vais vous donnez plein d’information concernant les panes que vous pourrez rencontrez.
+je vais aussi vous expliquer le fonctionnement de l’usi, la dgnsi, la dgep, la dgo et les outils qui sont a notre dispotition.</p>
 </div></blockquote>
+<div class="section" id="mettre-a-jour-et-modifier-le-site">
+<h2>Mettre a jour et modifier le site<a class="headerlink" href="#mettre-a-jour-et-modifier-le-site" title="Permalink to this headline">¶</a></h2>
+<p>Tout d’abord il faut que vous puissez ouvrire les fichiers sur un logiciel de code (j’utiliser visual studio) ensuite il faut que vous vous rendiez dans le finder,
+Dans le dossier “src” du site. c’est dans ce dossier que vous allez soit modifiez des fichier existant soit en rajouter. pour le modifier il suffit d’ouvir un fichier qui existe déjà et de le modifier.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Pour faire des capture d’écrant il faut appuyer sur : commande, MAJ, 4</p>
+</div>
+<br/>
+<a class="reference internal image-reference" href="_images/srcSiteRoot.png" id="srcsiteroot"><img alt="_images/srcSiteRoot.png" class="align-center" id="srcsiteroot" src="_images/srcSiteRoot.png" style="width: 600px;" /></a>
+<br/>
+<p>Pour rajouter une fichier c’est un peut plus compliquer. il faut ouvrire le fichier “_toc.yml” et un fois dedans vous pouvez ajouter une section ou une sous section. Dans tout les cas si vous rajoutez quoique ce soit dans ce fichier il faudra aussi créé un fichier dans le dossier “src” avec le même nom.</p>
+<br/>
+<p>EX : pour créé cette page j’ai du rajouter dans le fichier “_toc.yml” un file du nom de “InformationComplementaire” donc dans le dossier “src” j’ai du créé un fichier du même nom.</p>
+<br/>
+<a class="reference internal image-reference" href="_images/dossierSRCEtFichier.png" id="dossiersrcetfichier"><img alt="_images/dossierSRCEtFichier.png" class="align-center" id="dossiersrcetfichier" src="_images/dossierSRCEtFichier.png" style="width: 600px;" /></a>
+<br/>
+<a class="reference internal image-reference" href="_images/ContenuFichierToc.png" id="contenufichiertoc"><img alt="_images/ContenuFichierToc.png" class="align-center" id="contenufichiertoc" src="_images/ContenuFichierToc.png" style="width: 600px;" /></a>
+<br/>
+<p>pour aplliquer votre modification il faut executer dans le terminal une suite de commande. Pour ce faire aller dans la barre en haut quand vous etes sur le fichier que vous voulez modifier puis cliquer sur terminal : <br/></p>
+<a class="reference internal image-reference" href="_images/AccesTerminal.png" id="accesterminal"><img alt="_images/AccesTerminal.png" class="align-center" id="accesterminal" src="_images/AccesTerminal.png" style="width: 600px;" /></a>
+<br/>
+<p>Ensuite en bas de votre page il devrais y avoir une nouvelle “fenêtre incruster dans vortre fenêtre”.<br/></p>
+<a class="reference internal image-reference" href="_images/TerminalInToFenetre.png" id="terminalintofenetre"><img alt="_images/TerminalInToFenetre.png" class="align-center" id="terminalintofenetre" src="_images/TerminalInToFenetre.png" style="width: 800px;" /></a>
+<br/>
+<p>une fois votre modification faite il faut aller sur le temianl est taper la commande :</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda activate jupyter-book
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Cette commande doit être tapez uniquement si vous n’etes pas déjà sur l’environnement jupyter-book. dans le terminal c’est marqué entre des parenthèse (base) ou (jupyter-book).</p>
+</div>
+<p>ex (ici je suis déjà sur jupyter-book):</p>
+<br/>
+<a class="reference internal image-reference" href="_images/TypeBaseOuJupy.png" id="typebaseoujupy"><img alt="_images/TypeBaseOuJupy.png" class="align-center" id="typebaseoujupy" src="_images/TypeBaseOuJupy.png" style="width: 400px;" /></a>
+<br/>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>pour que la commande fonctionne il faut que vous soyez dans le bon dossier (celui du site).</p>
+</div>
+<br/>
+<p>donc si vous ne savez pas ou vous êtes taper :</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>    <span class="nb">pwd</span>
+</pre></div>
+</div>
+<br/>
+<p>dans le terminal est cela vous indique ou vous vous trouvez. ensuite pour vous placer au bon endroit (si vous n’etez pas au bon endroit) il vous suffit de taper “cd” et de glisser le dossier dans lequel vous voulez vous trouvez dans le terminal.
+<br/></p>
+<p>Maintenant que vous êtes dans le bon dossier et que vous êtes sur le bonne environement (jupyter-book) vous pouvez tapez la commande suivante :</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>    Jupyter-book build .
+</pre></div>
+</div>
+<br/>
+Voila ! une fois que tout ça est fais vous pouvez voir le changemnt en local mais pas en ligne des modification que vous avez apporté au fichier.
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>il suffi de copier le lien qui vous est fourni quand vous tapez la commande build .</p>
+</div>
+<br/>
+<a class="reference internal image-reference" href="_images/lienSiteLocal.png" id="liensitelocal"><img alt="_images/lienSiteLocal.png" class="align-center" id="liensitelocal" src="_images/lienSiteLocal.png" style="width: 400px;" /></a>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
