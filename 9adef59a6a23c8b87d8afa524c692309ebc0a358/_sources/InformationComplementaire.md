@@ -176,4 +176,4 @@ ensuite vous allez sur le dossier (gycha-helpdesk.github.io) est vous coller le 
 
 <br/>
 
-si ça ne marche pas du premier coup faite toutes ces actions une deuxième fois. ça dévrais marcher. (c'est parce que il y a des dossier qui dépendent d'autre dossier du coup il faut en générale le faire 2 fois)
+si ça ne marche pas du premier coup faite toutes ces actions une deuxième fois. ça dévrais marcher. (c'est parce que il y a des dossier qui dépendent d'autre dossier du coup il faut en générale le faire 2 fois).
