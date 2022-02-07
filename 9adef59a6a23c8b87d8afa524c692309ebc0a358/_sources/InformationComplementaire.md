@@ -325,8 +325,39 @@ Sur le mac mini c'est pas compliqué même si il en donne l'impression. Tout a g
 
 ## Fonction / shéma de l'usi / dgep / dgnsi
 
+Pour gérer le support des écoles post obligatoire il on créé un systhème en suivant le model d'ITIL.
 
+Donc pour commencer toutes les écoles on un helpdesk (le niveau 1) si les dommandes dépasse notre compréhension ou si elle dépasse notre domaine d'action. Le niveau 2 c'est  l'usi, le niveau 3 c'est les ingénieur qui son aussi a l'usi mais c 'est une autre partie et pour finir il y a le niveau 4 c'est le fourniesseur des application ou des services.
 
+<br/>
+
+```{note}
+Sur le shéma on peut constater qu'une personne éxecute plusieur fonction en même temps, Symplement c'est le chef de l'usi donc il executer plusieur poste.
+```
+
+<br/>
+
+```{image} images/USI.png
+:width: 800px
+:name: USI
+:align: center
+```
+
+<br/>
+
+```{note}
+L'usi peut assi accèder au serveur sql et y executer des commandes.
+```
+
+<br/>
+
+```{image} images/ShemaDGEP.png
+:width: 600px
+:name: ShemaDGEP
+:align: center
+```
+
+<br/>
 
 
 ## Information supplémentaire
@@ -338,7 +369,7 @@ Sur kahoot il est possible de lancer en boucle un quizz. Pour ce faire il faut a
 <br/>
 
 ```{image} images/kahootBiblioJouer.png
-:width: 600px
+:width: 1000px
 :name: kahootBiblioJouer
 :align: center
 ```
