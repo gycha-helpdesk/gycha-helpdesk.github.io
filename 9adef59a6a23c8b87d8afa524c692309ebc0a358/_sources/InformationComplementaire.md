@@ -25,21 +25,21 @@ Pour faire des captures d'écran il faut appuyer sur : commande, MAJ, 4
 si vous voulez utiliser des images il faut les mettre dans le dossier image 
 
 ```{image} images/rootImage.png
-:width: 600px
+:width: 700px
 :name: rootImage
-:align: center
-```
-
-<br/>
-
-```{image} images/srcSiteRoot.png
-:width: 600px
-:name: srcSiteRoot
 :align: center
 ```
 <br/>
 
 Pour rajouter un fichier c'est un peut plus compliquer. il faut ouvrir le fichier "_toc.yml" et une fois dedans vous pouvez ajouter une section ou une sous-section. Dans tous les cas si vous rajoutez quoique ce soit dans ce fichier il faudra aussi créé un fichier dans le dossier "src" avec le même nom.
+
+<br/>
+
+```{image} images/srcSiteRoot.png
+:width: 700px
+:name: srcSiteRoot
+:align: center
+```
 
 <br/>
 
