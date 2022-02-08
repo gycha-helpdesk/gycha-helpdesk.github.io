@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search &#8212; Documentation Technique Chamblandes</title>
+    <title>Ajouter une règle &#8212; Documentation Technique Chamblandes</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -34,7 +34,6 @@
     
   <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
@@ -44,19 +43,23 @@
     <script src="_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script src="_static/searchtools.js"></script>
-    <script src="_static/language_data.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
-  <script src="searchindex.js" defer></script>
-  
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Section Utile" href="Utile.html" />
+    <link rel="prev" title="Fermeture Automatique de la sesssion" href="JamfAutoLogout.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
 
     <!-- Google Analytics -->
     
-
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
@@ -82,22 +85,22 @@
       <h1 class="site-logo" id="site-title">Documentation Technique Chamblandes</h1>
       
     </a>
-</div><form class="bd-search d-flex align-items-center" action="#" method="get">
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Rechercher dans ce livre ..." aria-label="Rechercher dans ce livre ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="Jamf.html">
    Section Jamf
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="JamfFirstConnection.html">
      Avant de commencer
@@ -143,8 +146,8 @@
      Fermeture Automatique de la sesssion
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="JeSuisUnTest.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Ajouter une règle
     </a>
    </li>
@@ -275,6 +278,23 @@
             </button>
             
             
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Téléchargez cette page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/JeSuisUnTest.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimer au format PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
             <!-- Source interaction buttons -->
 
             <!-- Full screen (wrap in <a> to have style consistency -->
@@ -298,7 +318,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1></h1>
+                <h1>Ajouter une règle</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -309,42 +329,76 @@
             
               <div>
                 
-  <h1 id="search-documentation">Search</h1>
-  
-  <noscript>
-  <div class="admonition warning">
-  <p>
-    Please activate JavaScript to enable the search
-    functionality.
-  </p>
-  </div>
-  </noscript>
-  
-  
-  <p>
-    Searching for multiple words only shows matches that contain
-    all words.
-  </p>
-  
-  
-  <form action="" method="get">
-    <input type="text" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
-    <input type="submit" value="search" />
-    <span id="search-progress" style="padding-left: 10px"></span>
-  </form>
-  
-  
-  
-  <div id="search-results">
-  
-  </div>
-  
+  <div class="tex2jax_ignore mathjax_ignore section" id="ajouter-une-regle">
+<h1>Ajouter une règle<a class="headerlink" href="#ajouter-une-regle" title="Permalink to this headline">¶</a></h1>
+<p>Dans dashboard (accueil) du jamf, allez sous ordinateur en haut à gauche et cliquer “Règles”.</p>
+<a class="reference internal image-reference" href="_images/regle-jamf.png" id="regle"><img alt="_images/regle-jamf.png" class="align-center" id="regle" src="_images/regle-jamf.png" style="width: 300px;" /></a>
+<p><br/>Ensuite, cliquez sur nouveau en haut à droite.</p>
+<a class="reference internal image-reference" href="_images/addRegle-jamf.png" id="addregle"><img alt="_images/addRegle-jamf.png" class="align-center" id="addregle" src="_images/addRegle-jamf.png" style="width: 500px;" /></a>
+<p><br/>Sous Général donner lui un nom (nom de l’application ou ce que vous voulez).</p>
+<a class="reference internal image-reference" href="_images/nomNouvelleRegle-jamf.png" id="nomdelaregle"><img alt="_images/nomNouvelleRegle-jamf.png" class="align-center" id="nomdelaregle" src="_images/nomNouvelleRegle-jamf.png" style="width: 500px;" /></a>
+<p><br/>Toujours dans Général descendez et cochez les options indiquées.</p>
+<a class="reference internal image-reference" href="_images/generalRegle-jamf.png" id="reglebase"><img alt="_images/generalRegle-jamf.png" class="align-center" id="reglebase" src="_images/generalRegle-jamf.png" style="width: 500px;" /></a>
+<p><br/>Maintenant allez sous “Paquets” (dans la colonne de gauche).</p>
+<a class="reference internal image-reference" href="_images/addPaquet-jamf.png" id="adddespaquets"><img alt="_images/addPaquet-jamf.png" class="align-center" id="adddespaquets" src="_images/addPaquet-jamf.png" style="width: 500px;" /></a>
+<p><br/>Cliquez sur “ajouter” à droite sur le paquet que vous voulez.</p>
+<a class="reference internal image-reference" href="_images/choixPaquet-jamf.png" id="choixpaquet"><img alt="_images/choixPaquet-jamf.png" class="align-center" id="choixpaquet" src="_images/choixPaquet-jamf.png" style="width: 500px;" /></a>
+<p><br/>Quelques options suplémentaires comme les mises à jour et le point de distribution.</p>
+<a class="reference internal image-reference" href="_images/finPaquet.png" id="optionsup"><img alt="_images/finPaquet.png" class="align-center" id="optionsup" src="_images/finPaquet.png" style="width: 500px;" /></a>
+<p><br/>Ensuite allez sur Maintenance (dans la colonne de gauche)</p>
+<a class="reference internal image-reference" href="_images/ConfMaintenance-jamf.png" id="maintenance"><img alt="_images/ConfMaintenance-jamf.png" class="align-center" id="maintenance" src="_images/ConfMaintenance-jamf.png" style="width: 500px;" /></a>
+<p><br/>Regardez que la première case est cochée (Mettre à jours dans l’inventaire)</p>
+<a class="reference internal image-reference" href="_images/maintenanceOption-jamf.png" id="optiondemaintenance"><img alt="_images/maintenanceOption-jamf.png" class="align-center" id="optiondemaintenance" src="_images/maintenanceOption-jamf.png" style="width: 500px;" /></a>
+<p><br/>Si tout est bien configurer passons au “Perimètre” de la règle.
+Selectionnez un ordinateur ou un groupe dans ce cas là ça sera un groupe.
+Pour l’ajouter cliquez sur “add” à droite du groupe.</p>
+<a class="reference internal image-reference" href="_images/perimetreGroupe-jamf.png" id="perimetre"><img alt="_images/perimetreGroupe-jamf.png" class="align-center" id="perimetre" src="_images/perimetreGroupe-jamf.png" style="width: 500px;" /></a>
+<p><br/>Permet de mettre à disposition la règle pour tout les utilisateurs.</p>
+<a class="reference internal image-reference" href="_images/selfService-jamf.png" id="selfservice"><img alt="_images/selfService-jamf.png" class="align-center" id="selfservice" src="_images/selfService-jamf.png" style="width: 500px;" /></a>
+<p><br/>Se paramètre permet d’afficher l’état d’avancement de l’implémentation de la règle.</p>
+<a class="reference internal image-reference" href="_images/afficheDansDashboard-jamf.png" id="dashboard"><img alt="_images/afficheDansDashboard-jamf.png" class="align-center" id="dashboard" src="_images/afficheDansDashboard-jamf.png" style="width: 500px;" /></a>
+<p><br/>Félicitation vous savez créé une règle.</p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="JamfAutoLogout.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Fermeture Automatique de la sesssion</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Utile.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Section Utile</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             
         </div>
