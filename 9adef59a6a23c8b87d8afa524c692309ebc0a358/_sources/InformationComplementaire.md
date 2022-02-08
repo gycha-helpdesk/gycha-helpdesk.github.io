@@ -1,3 +1,10 @@
+<!--
+Author:		    Joca Bolli
+Date:		    01.02.2022
+Description:	Information utile et mise a jour du site
+-->
+
+
 # Information complémentaire
 
 > Dans cette partie du site je vais vous explique comment mettre à jour le site / rajouter du contenu.
