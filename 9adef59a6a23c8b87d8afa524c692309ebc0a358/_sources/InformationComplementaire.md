@@ -452,9 +452,19 @@ Pour dépanner les imprimantes en général c'est parce que la personne a mal ta
 ### Problème d'affichage quand on créé une section sur le site
 
 
-Quand on créé une section pour la première fois si vous ne voulez pas qu'il y ai un problème d'affichage il faut impérativement executer la commande suivante : 
+Quand on créé une section pour la première fois si vous ne voulez pas qu'il y ai un problème d'affichage. 
 
 <br/>
+
+```{image} images/JeSuisUnBug.gif
+:width: 800px
+:name: JeSuisUnBug
+:align: center
+```
+
+<br/>
+
+il faut impérativement executer la commande suivante si vous voulez régler le problème : 
 
 ```shell
     jupyter-book clean .
@@ -471,3 +481,7 @@ Ensuite il faut absolument executer la commande :
 ```shell
     jupyter-book build .
 ```
+
+
+
+
