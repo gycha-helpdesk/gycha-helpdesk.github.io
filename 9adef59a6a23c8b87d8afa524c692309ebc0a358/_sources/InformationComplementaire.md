@@ -488,3 +488,89 @@ Ensuite il faut absolument executer la commande :
     jupyter-book build .
 ```
 
+## Créer un PDF à partir de jupyter-book ¶
+
+
+
+Il est possible de créer un seul PDF à partir du code HTML de votre book. Cela commence par convertir tout le contenu de votre book en un seul fichier HTML, puis le rend au format PDF en émulant un navigateur à partir de la ligne de commande.
+
+### Installation
+
+
+
+Votre système devra utiliser pyppeteerpour analyser le HTML généré pour la conversion en PDF.
+
+Vous pouvez l'installer comme ceci :
+
+
+```shell
+    pip install pyppeteer
+```
+
+
+Vous devrez peut-être également installer cet ensemble de packages ci-dessous (sur les systèmes * nix):
+
+```shell
+gconf-service
+libasound2
+libatk1.0-0
+libatk-bridge2.0-0
+libc6
+libcairo2
+libcups2
+libdbus-1-3
+libexpat1
+libfontconfig1
+libgcc1
+libgconf-2-4
+libgdk-pixbuf2.0-0
+libglib2.0-0
+libgtk-3-0
+libnspr4
+libpango-1.0-0
+libpangocairo-1.0-0
+libstdc++6
+libx11-6
+libx11-xcb1
+libxcb1
+libxcomposite1
+libxcursor1
+libxdamage1
+libxext6
+libxfixes3
+libxi6
+libxrandr2
+libxrender1
+libxss1
+libxtst6
+ca-certificates
+fonts-liberation
+libappindicator1
+libnss3
+lsb-release
+xdg-utils
+wget
+```
+### Appliquer les commandes / construire le PDF
+
+Pour créer un seul PDF à partir du code HTML de votre livre, utilisez la commande suivante :
+
+
+```shell
+jupyter-book build . --builder pdfhtml
+```
+ou
+
+```shell
+jb build . --builder pdfhtml
+```
+
+Voilà ensuite aller dans vore dossier src > build > PDF et vous y retrouverez le pdf
+
+```{image} images/rootToPDF.png
+:width: 800px
+:name: rootToPDF
+:align: center
+```
+
+
