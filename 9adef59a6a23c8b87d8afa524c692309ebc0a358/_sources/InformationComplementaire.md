@@ -464,6 +464,12 @@ Quand on créé une section pour la première fois si vous ne voulez pas qu'il y
 
 <br/>
 
+```{note}
+Pour pouvoir mettre un gif sur le site j'ai utiliser un site de [conversion](https://cloudconvert.com/) de fichier .mov en .gif (les fichiers .mov c'est les fichier quand tu fais une vidéo de ton écran). Ensuite tu les place dans le dossier images du site et voilà
+```
+
+<br/>
+
 il faut impérativement executer la commande suivante si vous voulez régler le problème : 
 
 ```shell
@@ -481,7 +487,4 @@ Ensuite il faut absolument executer la commande :
 ```shell
     jupyter-book build .
 ```
-
-
-
 
