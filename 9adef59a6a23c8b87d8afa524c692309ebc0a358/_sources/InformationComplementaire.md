@@ -449,4 +449,25 @@ Les écoles post obligatoire ont des rabais immenses sur les licences, le matér
 
 Pour dépanner les imprimantes en général c'est parce que la personne a mal tapé son mot de passe du coup il faut réafficher le pop-up et pour ça il faut soit relancer une impression soit cliquer en bas à gauche de l'écrant ensuite il faut cliquer sur la petite flèche et normalement ça réaffichera le pop-up.
 
+### Problème d'affichage quand on créé une section sur le site
 
+
+Quand on créé une section pour la première fois si vous ne voulez pas qu'il y ai un problème d'affichage il faut impérativement executer la commande suivante : 
+
+<br/>
+
+```shell
+    jupyter-book clean .
+```
+
+```{Attention}
+pour que la commande fonctionne il faut que vous soyez dans le bon dossier (celui du site). Au même endroit que pour rexecuter la commande jupyter-book build .
+```
+
+```{Attention}
+Ensuite il faut absolument executer la commande : 
+```
+
+```shell
+    jupyter-book build .
+```
