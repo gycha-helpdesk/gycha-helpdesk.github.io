@@ -369,8 +369,8 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#creer-un-pdf-a-partir-de-jupyter-book">
-   Créer un PDF à partir de jupyter-book ¶
+  <a class="reference internal nav-link" href="#creer-un-pdf-du-site-a-partir-de-jupyter-book">
+   Créer un PDF du site à partir de jupyter-book
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -458,8 +458,8 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#creer-un-pdf-a-partir-de-jupyter-book">
-   Créer un PDF à partir de jupyter-book ¶
+  <a class="reference internal nav-link" href="#creer-un-pdf-du-site-a-partir-de-jupyter-book">
+   Créer un PDF du site à partir de jupyter-book
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -493,7 +493,7 @@ Description:	Information utile et mise a jour du site
 <blockquote>
 <div><p>Dans cette partie du site je vais vous explique comment mettre à jour le site / rajouter du contenu.
 En parallèle je vais vous donner plusieur d’informations concernant les pannes que vous pourrez rencontrer et le fonctionnement du réseau de l’école.
-je vais aussi vous expliquer le fonctionnement de l’usi, la dgnsi, la dgep, la dgo et les outils qui sont à notre disposition.</p>
+je vais aussi vous expliquer le fonctionnement de l’usi, la dgnsi, la dgep, la dgo et les outils qui sont à notre disposition. Et plein d’autre chose qui pourrais vous être utile.</p>
 </div></blockquote>
 <div class="section" id="mettre-a-jour-et-modifier-le-site">
 <h2>Mettre a jour et modifier le site<a class="headerlink" href="#mettre-a-jour-et-modifier-le-site" title="Permalink to this headline">¶</a></h2>
@@ -754,9 +754,9 @@ Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local 
 </div>
 </div>
 </div>
-<div class="section" id="creer-un-pdf-a-partir-de-jupyter-book">
-<h2>Créer un PDF à partir de jupyter-book ¶<a class="headerlink" href="#creer-un-pdf-a-partir-de-jupyter-book" title="Permalink to this headline">¶</a></h2>
-<p>Il est possible de créer un seul PDF à partir du code HTML de votre book. Cela commence par convertir tout le contenu de votre book en un seul fichier HTML, puis le rend au format PDF en émulant un navigateur à partir de la ligne de commande.</p>
+<div class="section" id="creer-un-pdf-du-site-a-partir-de-jupyter-book">
+<h2>Créer un PDF du site à partir de jupyter-book<a class="headerlink" href="#creer-un-pdf-du-site-a-partir-de-jupyter-book" title="Permalink to this headline">¶</a></h2>
+<p>Il est possible de créer un PDF à partir du code HTML de votre book.</p>
 <div class="section" id="installation">
 <h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
 <p>Votre système devra utiliser pyppeteerpour analyser le HTML généré pour la conversion en PDF.</p>
@@ -764,7 +764,7 @@ Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local 
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>    pip install pyppeteer
 </pre></div>
 </div>
-<p>Vous devrez peut-être également installer cet ensemble de packages ci-dessous (sur les systèmes * nix):</p>
+<p>Vous devrez peut-être également installer cet ensemble de packages ci-dessous (sur les systèmes * nix (dans le doute je l’ai installer)):</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>gconf-service
 libasound2
 libatk1.0-0
@@ -809,7 +809,7 @@ wget
 </div>
 <div class="section" id="appliquer-les-commandes-construire-le-pdf">
 <h3>Appliquer les commandes / construire le PDF<a class="headerlink" href="#appliquer-les-commandes-construire-le-pdf" title="Permalink to this headline">¶</a></h3>
-<p>Pour créer un seul PDF à partir du code HTML de votre livre, utilisez la commande suivante :</p>
+<p>Pour créer un seul PDF à partir du code HTML de votre book, utilisez la commande suivante :</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>jupyter-book build . --builder pdfhtml
 </pre></div>
 </div>
@@ -817,7 +817,7 @@ wget
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>jb build . --builder pdfhtml
 </pre></div>
 </div>
-<p>Voilà ensuite aller dans vore dossier src &gt; build &gt; PDF et vous y retrouverez le pdf</p>
+<p>Voilà ensuite rendez-vous dans vore dossier src &gt; build &gt; PDF et vous y retrouverez le pdf</p>
 <a class="reference internal image-reference" href="_images/rootToPDF.png" id="roottopdf"><img alt="_images/rootToPDF.png" class="align-center" id="roottopdf" src="_images/rootToPDF.png" style="width: 800px;" /></a>
 </div>
 </div>

@@ -1231,7 +1231,7 @@ Description:	Information utile et mise a jour du site
 <blockquote>
 <div><p>Dans cette partie du site je vais vous explique comment mettre à jour le site / rajouter du contenu.
 En parallèle je vais vous donner plusieur d’informations concernant les pannes que vous pourrez rencontrer et le fonctionnement du réseau de l’école.
-je vais aussi vous expliquer le fonctionnement de l’usi, la dgnsi, la dgep, la dgo et les outils qui sont à notre disposition.</p>
+je vais aussi vous expliquer le fonctionnement de l’usi, la dgnsi, la dgep, la dgo et les outils qui sont à notre disposition. Et plein d’autre chose qui pourrais vous être utile.</p>
 </div></blockquote>
 <div class="section" id="mettre-a-jour-et-modifier-le-site">
 <h4>Mettre a jour et modifier le site<a class="headerlink" href="#mettre-a-jour-et-modifier-le-site" title="Permalink to this headline">¶</a></h4>
@@ -1492,9 +1492,9 @@ Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local 
 </div>
 </div>
 </div>
-<div class="section" id="creer-un-pdf-a-partir-de-jupyter-book">
-<h4>Créer un PDF à partir de jupyter-book ¶<a class="headerlink" href="#creer-un-pdf-a-partir-de-jupyter-book" title="Permalink to this headline">¶</a></h4>
-<p>Il est possible de créer un seul PDF à partir du code HTML de votre book. Cela commence par convertir tout le contenu de votre book en un seul fichier HTML, puis le rend au format PDF en émulant un navigateur à partir de la ligne de commande.</p>
+<div class="section" id="creer-un-pdf-du-site-a-partir-de-jupyter-book">
+<h4>Créer un PDF du site à partir de jupyter-book<a class="headerlink" href="#creer-un-pdf-du-site-a-partir-de-jupyter-book" title="Permalink to this headline">¶</a></h4>
+<p>Il est possible de créer un PDF à partir du code HTML de votre book.</p>
 <div class="section" id="installation">
 <h5>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h5>
 <p>Votre système devra utiliser pyppeteerpour analyser le HTML généré pour la conversion en PDF.</p>
@@ -1502,7 +1502,7 @@ Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local 
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>    pip install pyppeteer
 </pre></div>
 </div>
-<p>Vous devrez peut-être également installer cet ensemble de packages ci-dessous (sur les systèmes * nix):</p>
+<p>Vous devrez peut-être également installer cet ensemble de packages ci-dessous (sur les systèmes * nix (dans le doute je l’ai installer)):</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>gconf-service
 libasound2
 libatk1.0-0
@@ -1547,7 +1547,7 @@ wget
 </div>
 <div class="section" id="appliquer-les-commandes-construire-le-pdf">
 <h5>Appliquer les commandes / construire le PDF<a class="headerlink" href="#appliquer-les-commandes-construire-le-pdf" title="Permalink to this headline">¶</a></h5>
-<p>Pour créer un seul PDF à partir du code HTML de votre livre, utilisez la commande suivante :</p>
+<p>Pour créer un seul PDF à partir du code HTML de votre book, utilisez la commande suivante :</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>jupyter-book build . --builder pdfhtml
 </pre></div>
 </div>
@@ -1555,7 +1555,7 @@ wget
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>jb build . --builder pdfhtml
 </pre></div>
 </div>
-<p>Voilà ensuite aller dans vore dossier src &gt; build &gt; PDF et vous y retrouverez le pdf</p>
+<p>Voilà ensuite rendez-vous dans vore dossier src &gt; build &gt; PDF et vous y retrouverez le pdf</p>
 <a class="reference internal image-reference" href="_images/rootToPDF.png" id="roottopdf"><img alt="_images/rootToPDF.png" class="align-center" id="roottopdf" src="_images/rootToPDF.png" style="width: 800px;" /></a>
 </div>
 </div>
@@ -2029,19 +2029,19 @@ navigateur web ainsi que les telephones portables via
 Application Meraki.</p>
 </div></blockquote>
 <div class="tabbed-set docutils">
-<input checked="checked" id="0c978d40-fa28-4d4f-a2d2-514f6a7ab9ee" name="9e97f5df-9351-43ef-803f-e39c17a2b426" type="radio">
-</input><label class="tabbed-label" for="0c978d40-fa28-4d4f-a2d2-514f6a7ab9ee">
+<input checked="checked" id="17b00fa5-838d-44e2-8f86-30c1b2c82c49" name="8a040e5b-986d-42af-b1d8-f7e0f1df96f9" type="radio">
+</input><label class="tabbed-label" for="17b00fa5-838d-44e2-8f86-30c1b2c82c49">
 WEB</label><div class="tabbed-content docutils">
 <a class="reference internal image-reference" href="_images/meraki-web.gif" id="meraki-web"><img alt="_images/meraki-web.gif" class="align-left" id="meraki-web" src="_images/meraki-web.gif" style="width: 450px;" /></a>
 </div>
-<input id="81c18235-7aa2-4733-8b5a-aa181f7835d8" name="9e97f5df-9351-43ef-803f-e39c17a2b426" type="radio">
-</input><label class="tabbed-label" for="81c18235-7aa2-4733-8b5a-aa181f7835d8">
+<input id="bdbfdb91-ec52-42a8-978e-473d99aa8e6a" name="8a040e5b-986d-42af-b1d8-f7e0f1df96f9" type="radio">
+</input><label class="tabbed-label" for="bdbfdb91-ec52-42a8-978e-473d99aa8e6a">
 iOS</label><div class="tabbed-content docutils">
 <a class="reference internal image-reference" href="_images/meraki-appstore.png" id="meraki-ios"><img alt="_images/meraki-appstore.png" class="align-left" id="meraki-ios" src="_images/meraki-appstore.png" style="width: 450px;" /></a>
 <p><a class="sphinx-bs btn text-wrap btn-outline-primary reference external" href="https://apps.apple.com/us/app/meraki/id693056161"><span>App Store</span></a></p>
 </div>
-<input id="a2d1f1f4-736d-4530-913e-ae53f1e0808c" name="9e97f5df-9351-43ef-803f-e39c17a2b426" type="radio">
-</input><label class="tabbed-label" for="a2d1f1f4-736d-4530-913e-ae53f1e0808c">
+<input id="8af9e1a6-6e0d-4c75-b59c-a5e2168403be" name="8a040e5b-986d-42af-b1d8-f7e0f1df96f9" type="radio">
+</input><label class="tabbed-label" for="8af9e1a6-6e0d-4c75-b59c-a5e2168403be">
 Android</label><div class="tabbed-content docutils">
 <a class="reference internal image-reference" href="_images/meraki-googleplay.png" id="meraki-android"><img alt="_images/meraki-googleplay.png" class="align-left" id="meraki-android" src="_images/meraki-googleplay.png" style="width: 450px;" /></a>
 <p><a class="sphinx-bs btn text-wrap btn-outline-success reference external" href="https://play.google.com/store/apps/details?id=com.meraki.Dashboard&amp;hl=fr_CH&amp;gl=US"><span>Google Play Store</span></a></p>

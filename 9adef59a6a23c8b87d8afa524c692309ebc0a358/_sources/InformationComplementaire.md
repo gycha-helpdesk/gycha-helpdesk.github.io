@@ -7,7 +7,7 @@ Description:	Information utile et mise a jour du site
 
 > Dans cette partie du site je vais vous explique comment mettre à jour le site / rajouter du contenu.
 > En parallèle je vais vous donner plusieur d'informations concernant les pannes que vous pourrez rencontrer et le fonctionnement du réseau de l'école.
-> je vais aussi vous expliquer le fonctionnement de l'usi, la dgnsi, la dgep, la dgo et les outils qui sont à notre disposition.
+> je vais aussi vous expliquer le fonctionnement de l'usi, la dgnsi, la dgep, la dgo et les outils qui sont à notre disposition. Et plein d'autre chose qui pourrais vous être utile.
 
 ## Mettre a jour et modifier le site 
 
@@ -488,11 +488,9 @@ Ensuite il faut absolument executer la commande :
     jupyter-book build .
 ```
 
-## Créer un PDF à partir de jupyter-book ¶
+## Créer un PDF du site à partir de jupyter-book
 
-
-
-Il est possible de créer un seul PDF à partir du code HTML de votre book. Cela commence par convertir tout le contenu de votre book en un seul fichier HTML, puis le rend au format PDF en émulant un navigateur à partir de la ligne de commande.
+Il est possible de créer un PDF à partir du code HTML de votre book. 
 
 ### Installation
 
@@ -508,7 +506,7 @@ Vous pouvez l'installer comme ceci :
 ```
 
 
-Vous devrez peut-être également installer cet ensemble de packages ci-dessous (sur les systèmes * nix):
+Vous devrez peut-être également installer cet ensemble de packages ci-dessous (sur les systèmes * nix (dans le doute je l'ai installer)):
 
 ```shell
 gconf-service
@@ -553,7 +551,7 @@ wget
 ```
 ### Appliquer les commandes / construire le PDF
 
-Pour créer un seul PDF à partir du code HTML de votre livre, utilisez la commande suivante :
+Pour créer un seul PDF à partir du code HTML de votre book, utilisez la commande suivante :
 
 
 ```shell
@@ -565,7 +563,7 @@ ou
 jb build . --builder pdfhtml
 ```
 
-Voilà ensuite aller dans vore dossier src > build > PDF et vous y retrouverez le pdf
+Voilà ensuite rendez-vous dans vore dossier src > build > PDF et vous y retrouverez le pdf
 
 ```{image} images/rootToPDF.png
 :width: 800px
