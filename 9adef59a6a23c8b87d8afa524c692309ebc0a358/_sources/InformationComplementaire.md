@@ -488,6 +488,41 @@ Ensuite il faut absolument executer la commande :
     jupyter-book build .
 ```
 
+### Groupe d'élève / Son dans les salles 
+
+En génlral un élève dervais avoir tout ces groupes :
+
+<br/>
+
+```{image} images/GroupeEleve.png
+:width: 400px
+:name: GroupeEleve
+:align: center
+```
+
+<br/>
+
+Si vous voyez qu'il n'a pas tout les groupes, appelez votre chez et demandez lui si vous pouvez rajouter les groupes mamnquant manuellement.
+
+<br/>
+
+Pour Le son il y a 2 option la première c'est qu'il y a dans les salle de classe une / un empli qui permet d'éméttre du son est dans ce cas il n'y a pas forcement besoin d'allumer le beamer.
+
+<br/>
+
+voilà a quoi resemble un empli dans une salle de classe.
+
+```{image} images/SonSalleDeClasse.jpg
+:width: 600px
+:name: SonSalleDeClasse
+:align: center
+```
+
+<br/>
+
+La deuxième option c'est qu'il n'y a pas d'empli et dans ce cas la il faut allumer le beamer qui vas lui ce connecter automatiquement au haut-parleur qui sont dans les salles de classe et émettre du son.
+
+
 ## Créer un PDF du site à partir de jupyter-book
 
 Il est possible de créer un PDF à partir du code HTML de votre book. 
