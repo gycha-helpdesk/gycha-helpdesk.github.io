@@ -234,6 +234,23 @@ il ne faut pas tapez exactement le nom de la regle. Il faut taper l'événement 
 :align: center
 ```
 
+<br/>
+
+Cette commande sert a mettre à jour l'inventaire de jamf **de votre machine** :
+
+```shell
+    sudo jamf recon 
+```
+<br/>
+
+```{image} images/InvJamf.png
+:width: 1000px
+:name: InvJamf
+:align: center
+```
+
+<br/>
+
 ## Ordinateur de prêt
 
 Pour configurer un ordinateur a prêté il faut commencer en lui [installant](https://support.apple.com/fr-ch/HT211683) l'OS qu'il supporte (Catalina pour 2012 et Big Sur pour 2014). Sur ce site il y a toutes les informations et version. De macOS High Sierra jusqu'à macos Big Sur. Ensuite il faut vérifier que l'rodinateur n'a pas plusieurs disks. Si c'est le cas il faut aller dans "utilitaire de disques" et supprimer ceux en trop et en garder un seul (chamblandesHD). 
@@ -449,6 +466,60 @@ Les écoles post obligatoire ont des rabais immenses sur les licences, le matér
 
 Pour dépanner les imprimantes en général c'est parce que la personne a mal tapé son mot de passe du coup il faut réafficher le pop-up et pour ça il faut soit relancer une impression soit cliquer en bas à gauche de l'écrant ensuite il faut cliquer sur la petite flèche et normalement ça réaffichera le pop-up.
 
+<br/>
+
+Si rien de tout ça ne marche alors vous pouvez aussi redémarrer le serveur d'impression.
+
+<br/>
+
+```{image} images/SrvPrint.png
+:width: 800px
+:name: SrvPrint
+:align: center
+```
+
+<br/>
+
+si le redemarrer ne marche pas non plus vous pouvez aller dans "tools" puis "print management". Ensuite cliquer sur "allPrinter". Dans cette interface vous pouvez régler plusieur chose notament supprimer les impression en file d'attente, etc...
+
+<br/>
+
+```{image} images/InSrvPrint.png
+:width: 800px
+:name: InSrvPrint
+:align: center
+```
+
+<br/>
+
+#### Ajouter l'imprimante du bureau.
+
+aller dans imprimantes et scanners.
+
+ensuite cliquer sur le petit **+** . Ensuite clique droit sur la barre puis selectionner personaliser. ensuite il faut glisser déposer les option avancer dans la barre de recherhce 
+
+<br/>
+
+```{image} images/ImpBureau.gif
+:width: 700px
+:name: ImpBureau
+:align: center
+```
+
+<br/>
+
+Parfais ensuite il faut configurer comme suit : 
+
+```{image} images/ReglageImp.png
+:width: 600px
+:name: ReglageImp
+:align: center
+```
+
+<br/>
+
+et voilà il faut juste cliquer sur ajouter et vous avze rajouter l'imprimante du bureau.
+
 ### Problème d'affichage quand on créé une section sur le site
 
 
@@ -490,7 +561,7 @@ Ensuite il faut absolument executer la commande :
 
 ### Groupe d'élève / Son dans les salles 
 
-En génlral un élève dervais avoir tout ces groupes :
+En générale un élève dervais avoir tout ces groupes :
 
 <br/>
 
@@ -506,11 +577,11 @@ Si vous voyez qu'il n'a pas tout les groupes, appelez votre chez et demandez lui
 
 <br/>
 
-Pour Le son il y a 2 option la première c'est qu'il y a dans les salle de classe une / un empli qui permet d'éméttre du son est dans ce cas il n'y a pas forcement besoin d'allumer le beamer.
+Dans les salles de classes il y a 2 manière don le son fonctionne. 
 
-<br/>
+1. La première c'est qu'il  y a dans les salle de classe une / un empli qui permet d'éméttre du son est dans ce cas il n'y a pas besoin d'allumer le beamer mais il faut ce connecter dessu avec soit son ordinateur perso soit avec le mac mini mis a dispotision dans les salle.
 
-voilà a quoi resemble un empli dans une salle de classe.
+Voilà a quoi resemble une / un empli dans une salle de classe.
 
 ```{image} images/SonSalleDeClasse.jpg
 :width: 600px
@@ -520,8 +591,174 @@ voilà a quoi resemble un empli dans une salle de classe.
 
 <br/>
 
-La deuxième option c'est qu'il n'y a pas d'empli et dans ce cas la il faut allumer le beamer qui vas lui ce connecter automatiquement au haut-parleur qui sont dans les salles de classe et émettre du son.
+2. La deuxième option c'est qu'il n'y a pas d'empli et dans ce cas la il faut allumer le beamer qui vas lui ce connecter automatiquement au haut-parleur qui sont dans les salles de classe et émettre du son.
 
+### Recherche JAMF 
+
+
+Si vous lancez jamf pour **la première fois** il est possible que vous **ne pourrez pas effectuer des recherches** quand vous êtes sur "Ordinateur". Pour résoudre le problème c'est très simple.
+
+Aller sur Jamf, ensuite cliquer sur votre profil
+
+<br/>
+
+```{image} images/RecheJamf.png
+:width: 800px
+:name: RecheJamf
+:align: center
+```
+
+<br/>
+
+Ensuite il faut aller sur préférence de recherche est modifier si vous êtes en "Exact match" en "contains"
+
+<br/>
+
+```{image} images/PrefRecheJamf.png
+:width: 500px
+:name: PrefRecheJamf
+:align: center
+```
+<br/>
+
+## Mettre en ligne des vidéo sur YouTube / Imovie
+
+
+Avant de commancer il vous faut Imovie et une châine YouTube.
+
+<br/>
+
+Sur Imovie pour créé un projet il faut cliquer sur le + et ensuite cliquer sur film. **(si quand vous ouvrez Imovie pour la première fois et que vous nêtes pas sur la bonne fenêtre il faut cliquer sur Projet en haut a gauche de l'écrant)**.
+
+```{image} images/CreationFilmImovie.png
+:width: 300px
+:name: CreationFilmImovie
+:align: center
+```
+
+<br/>
+
+```{Attention}
+Même si vous avez créé un nouveau projet vous pourrez quand même modifier les autres.
+```
+
+```{note}
+Il y a aussi une banque d'image et de son
+```
+
+1. Ici vous retrouverez tout les projet vidéo que vous avez.
+
+
+2. C'est le curseur qui permet que quand vous lancer la vidéo elle se lance la ou le curseur et placé.
+
+
+3. Ici vous verrez tout les fichier son ou image ou je ne sais quoi que vous aurez soit drag and drop soit importer. Vous pouvez faire beaucoup de chose avec un clique droit, comment par exemple ajuster le volume du son ou encore couper la vidéo ou mettre des transition. bref il y a beaucoup de posibilité. Vous pouvez même accelerer la vidéo.
+
+
+4. Fichier son
+
+
+5. Cette règles permet de modifier **la taille d'affichage** des fichiers audio et vidéo.
+
+
+6. Quand vous double cliquer sur une image vous pouvez choisir un point de départ et un point d'arriver pour pouvoir créé des efet pendant la vidéo. (des effet de zoom ou de effet dedroit a gauche)
+
+
+```{image} images/InterfaceImovie.png
+:width: 900px
+:name: InterfaceImovie
+:align: center
+```
+
+<br/>
+
+Une fois que vous avez fini votre projet il faut que vous cliquiez sur **"projets"** en haut a gauche. Pour que vous lui donniez un nom.
+
+Ensuite pour télécharger votre vidéo il faut cliquer sur les 3 petit point **"..."** ensuite sur **"partager le projet"**, et pour finir sur **"fichier"**
+
+
+```{image} images/ImportImovieFilm.png
+:width: 600px
+:name: ImportImovieFilm
+:align: center
+```
+
+<br/>
+
+
+Ensuite une fenêtre apparaitra avec plusieur option je vous conseil de mettre la résolution a 720p (ça suffit largement). Le reste a vous de jugé si vous le voulez ou pas.
+
+```{image} images/ReglImovieFilm.png
+:width: 600px
+:name: ReglImovieFilm
+:align: center
+```
+
+<br/>
+
+Voilà vous savez plus ou moin utiliser Imovie. Maintenant on vas passer a la mise en ligne de la vidéo sur YouTube.
+
+Tout d'abrod il faut que vous vous rendiez sur YouTube Studio (ça permet de gérer vos chaîne YT). Quand vous êtes dessus il faut que vous appuyer sur le menu à gauche **"Tableau de bord"**. Puis **"importer des vidéos**.
+
+
+```{image} images/YTStudio.png
+:width: 800px
+:name: YTStudio
+:align: center
+```
+
+<br/>
+
+Ensuite vous selectionner votre fichier que Imovie vous à fournis puis vous le drag and droper ou alors vous aller le chercher au bon emplacement.
+Une fois que vous avez selectionner le bon fichier vous arriverez sur cette fenêtre :
+
+sur cette fenêtre vous aurrez 2 chose a changer la première c'est que le vidéo n'est pas conçue pour des enfant (sauf si c'est le cas). Ensuite vous cliquer sur **"Plus"**
+
+<br/>
+
+```{image} images/YTLimiteAge.png
+:width: 700px
+:name: YTLimiteAge
+:align: center
+```
+
+<br/>
+
+Ensuite vous dessendez tout en bas de la page et vous selectionner Desactivier les commantaire. (je fais ça utiquement pour éviter les mauvaise surprise du genre troll ou insulte envers la personne qui parle).
+
+```{image} images/YTComm.png
+:width: 700px
+:name: YTComm
+:align: center
+```
+
+<br/>
+
+Après ça vous attendez que votre vidéo finisse de charger et que YouTube finisse de vérifier que votre vidéo est conforme a leur règles. (cette opération peut prendre quelques minnutes). Ensuite vous cliquer sur suivant, suivant,suivant jusqu'a arriver au dernier point. Et vous cocher la case **"non répértoriée"**.
+
+```{note}
+Cela permet de ne pas retrouver la vidéo quand vous effecturez une recherche sur youtube.
+```
+
+<br/>
+
+```{image} images/YTNonrepe.png
+:width: 700px
+:name: YTNonrepe
+:align: center
+```
+
+<br/>
+
+Cliquer sur terminer et revenez sur la page de YouTube Studio, dans le menu a gauche selectionner **"Contenu de la chaîne"** et vous pourez effectivement voir que votre vidéo a été mise en ligne et quelle est en mode **"non répértoriée"**.
+
+```{image} images/YTVerification.png
+:width: 700px
+:name: YTVerification
+:align: center
+```
+
+<br/>
 
 ## Créer un PDF du site à partir de jupyter-book
 

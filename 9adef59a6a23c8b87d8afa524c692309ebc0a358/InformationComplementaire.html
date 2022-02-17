@@ -360,6 +360,13 @@
     <a class="reference internal nav-link" href="#site-de-vente-achat-et-imprimante">
      Site de vente / achat et imprimante
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ajouter-l-imprimante-du-bureau">
+       Ajouter l’imprimante du bureau.
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#probleme-d-affichage-quand-on-cree-une-section-sur-le-site">
@@ -371,7 +378,17 @@
      Groupe d’élève / Son dans les salles
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#recherche-jamf">
+     Recherche JAMF
+    </a>
+   </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mettre-en-ligne-des-video-sur-youtube-imovie">
+   Mettre en ligne des vidéo sur YouTube / Imovie
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#creer-un-pdf-du-site-a-partir-de-jupyter-book">
@@ -454,6 +471,13 @@
     <a class="reference internal nav-link" href="#site-de-vente-achat-et-imprimante">
      Site de vente / achat et imprimante
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ajouter-l-imprimante-du-bureau">
+       Ajouter l’imprimante du bureau.
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#probleme-d-affichage-quand-on-cree-une-section-sur-le-site">
@@ -465,7 +489,17 @@
      Groupe d’élève / Son dans les salles
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#recherche-jamf">
+     Recherche JAMF
+    </a>
+   </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mettre-en-ligne-des-video-sur-youtube-imovie">
+   Mettre en ligne des vidéo sur YouTube / Imovie
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#creer-un-pdf-du-site-a-partir-de-jupyter-book">
@@ -619,6 +653,14 @@ Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local 
 </div>
 <br/>
 <a class="reference internal image-reference" href="_images/eventPersonalise.png" id="eventpersonalise"><img alt="_images/eventPersonalise.png" class="align-center" id="eventpersonalise" src="_images/eventPersonalise.png" style="width: 1000px;" /></a>
+<br/>
+<p>Cette commande sert a mettre à jour l’inventaire de jamf <strong>de votre machine</strong> :</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>    sudo jamf recon 
+</pre></div>
+</div>
+<br/>
+<a class="reference internal image-reference" href="_images/InvJamf.png" id="invjamf"><img alt="_images/InvJamf.png" class="align-center" id="invjamf" src="_images/InvJamf.png" style="width: 1000px;" /></a>
+<br/>
 </div>
 <div class="section" id="ordinateur-de-pret">
 <h2>Ordinateur de prêt<a class="headerlink" href="#ordinateur-de-pret" title="Permalink to this headline">¶</a></h2>
@@ -735,6 +777,27 @@ Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local 
 </div>
 <br/>
 <p>Pour dépanner les imprimantes en général c’est parce que la personne a mal tapé son mot de passe du coup il faut réafficher le pop-up et pour ça il faut soit relancer une impression soit cliquer en bas à gauche de l’écrant ensuite il faut cliquer sur la petite flèche et normalement ça réaffichera le pop-up.</p>
+<br/>
+<p>Si rien de tout ça ne marche alors vous pouvez aussi redémarrer le serveur d’impression.</p>
+<br/>
+<a class="reference internal image-reference" href="_images/SrvPrint.png" id="srvprint"><img alt="_images/SrvPrint.png" class="align-center" id="srvprint" src="_images/SrvPrint.png" style="width: 800px;" /></a>
+<br/>
+<p>si le redemarrer ne marche pas non plus vous pouvez aller dans “tools” puis “print management”. Ensuite cliquer sur “allPrinter”. Dans cette interface vous pouvez régler plusieur chose notament supprimer les impression en file d’attente, etc…</p>
+<br/>
+<a class="reference internal image-reference" href="_images/InSrvPrint.png" id="insrvprint"><img alt="_images/InSrvPrint.png" class="align-center" id="insrvprint" src="_images/InSrvPrint.png" style="width: 800px;" /></a>
+<br/>
+<div class="section" id="ajouter-l-imprimante-du-bureau">
+<h4>Ajouter l’imprimante du bureau.<a class="headerlink" href="#ajouter-l-imprimante-du-bureau" title="Permalink to this headline">¶</a></h4>
+<p>aller dans imprimantes et scanners.</p>
+<p>ensuite cliquer sur le petit <strong>+</strong> . Ensuite clique droit sur la barre puis selectionner personaliser. ensuite il faut glisser déposer les option avancer dans la barre de recherhce</p>
+<br/>
+<a class="reference internal image-reference" href="_images/ImpBureau.gif" id="impbureau"><img alt="_images/ImpBureau.gif" class="align-center" id="impbureau" src="_images/ImpBureau.gif" style="width: 700px;" /></a>
+<br/>
+<p>Parfais ensuite il faut configurer comme suit :</p>
+<a class="reference internal image-reference" href="_images/ReglageImp.png" id="reglageimp"><img alt="_images/ReglageImp.png" class="align-center" id="reglageimp" src="_images/ReglageImp.png" style="width: 600px;" /></a>
+<br/>
+<p>et voilà il faut juste cliquer sur ajouter et vous avze rajouter l’imprimante du bureau.</p>
+</div>
 </div>
 <div class="section" id="probleme-d-affichage-quand-on-cree-une-section-sur-le-site">
 <h3>Problème d’affichage quand on créé une section sur le site<a class="headerlink" href="#probleme-d-affichage-quand-on-cree-une-section-sur-le-site" title="Permalink to this headline">¶</a></h3>
@@ -765,19 +828,92 @@ Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local 
 </div>
 <div class="section" id="groupe-d-eleve-son-dans-les-salles">
 <h3>Groupe d’élève / Son dans les salles<a class="headerlink" href="#groupe-d-eleve-son-dans-les-salles" title="Permalink to this headline">¶</a></h3>
-<p>En génlral un élève dervais avoir tout ces groupes :</p>
+<p>En générale un élève dervais avoir tout ces groupes :</p>
 <br/>
 <a class="reference internal image-reference" href="_images/GroupeEleve.png" id="groupeeleve"><img alt="_images/GroupeEleve.png" class="align-center" id="groupeeleve" src="_images/GroupeEleve.png" style="width: 400px;" /></a>
 <br/>
 <p>Si vous voyez qu’il n’a pas tout les groupes, appelez votre chez et demandez lui si vous pouvez rajouter les groupes mamnquant manuellement.</p>
 <br/>
-<p>Pour Le son il y a 2 option la première c’est qu’il y a dans les salle de classe une / un empli qui permet d’éméttre du son est dans ce cas il n’y a pas forcement besoin d’allumer le beamer.</p>
-<br/>
-<p>voilà a quoi resemble un empli dans une salle de classe.</p>
+<p>Dans les salles de classes il y a 2 manière don le son fonctionne.</p>
+<ol class="simple">
+<li><p>La première c’est qu’il  y a dans les salle de classe une / un empli qui permet d’éméttre du son est dans ce cas il n’y a pas besoin d’allumer le beamer mais il faut ce connecter dessu avec soit son ordinateur perso soit avec le mac mini mis a dispotision dans les salle.</p></li>
+</ol>
+<p>Voilà a quoi resemble une / un empli dans une salle de classe.</p>
 <a class="reference internal image-reference" href="_images/SonSalleDeClasse.jpg" id="sonsalledeclasse"><img alt="_images/SonSalleDeClasse.jpg" class="align-center" id="sonsalledeclasse" src="_images/SonSalleDeClasse.jpg" style="width: 600px;" /></a>
 <br/>
-<p>La deuxième option c’est qu’il n’y a pas d’empli et dans ce cas la il faut allumer le beamer qui vas lui ce connecter automatiquement au haut-parleur qui sont dans les salles de classe et émettre du son.</p>
+<ol class="simple">
+<li><p>La deuxième option c’est qu’il n’y a pas d’empli et dans ce cas la il faut allumer le beamer qui vas lui ce connecter automatiquement au haut-parleur qui sont dans les salles de classe et émettre du son.</p></li>
+</ol>
 </div>
+<div class="section" id="recherche-jamf">
+<h3>Recherche JAMF<a class="headerlink" href="#recherche-jamf" title="Permalink to this headline">¶</a></h3>
+<p>Si vous lancez jamf pour <strong>la première fois</strong> il est possible que vous <strong>ne pourrez pas effectuer des recherches</strong> quand vous êtes sur “Ordinateur”. Pour résoudre le problème c’est très simple.</p>
+<p>Aller sur Jamf, ensuite cliquer sur votre profil</p>
+<br/>
+<a class="reference internal image-reference" href="_images/RecheJamf.png" id="rechejamf"><img alt="_images/RecheJamf.png" class="align-center" id="rechejamf" src="_images/RecheJamf.png" style="width: 800px;" /></a>
+<br/>
+<p>Ensuite il faut aller sur préférence de recherche est modifier si vous êtes en “Exact match” en “contains”</p>
+<br/>
+<a class="reference internal image-reference" href="_images/PrefRecheJamf.png" id="prefrechejamf"><img alt="_images/PrefRecheJamf.png" class="align-center" id="prefrechejamf" src="_images/PrefRecheJamf.png" style="width: 500px;" /></a>
+<br/>
+</div>
+</div>
+<div class="section" id="mettre-en-ligne-des-video-sur-youtube-imovie">
+<h2>Mettre en ligne des vidéo sur YouTube / Imovie<a class="headerlink" href="#mettre-en-ligne-des-video-sur-youtube-imovie" title="Permalink to this headline">¶</a></h2>
+<p>Avant de commancer il vous faut Imovie et une châine YouTube.</p>
+<br/>
+<p>Sur Imovie pour créé un projet il faut cliquer sur le + et ensuite cliquer sur film. <strong>(si quand vous ouvrez Imovie pour la première fois et que vous nêtes pas sur la bonne fenêtre il faut cliquer sur Projet en haut a gauche de l’écrant)</strong>.</p>
+<a class="reference internal image-reference" href="_images/CreationFilmImovie.png" id="creationfilmimovie"><img alt="_images/CreationFilmImovie.png" class="align-center" id="creationfilmimovie" src="_images/CreationFilmImovie.png" style="width: 300px;" /></a>
+<br/>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Même si vous avez créé un nouveau projet vous pourrez quand même modifier les autres.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Il y a aussi une banque d’image et de son</p>
+</div>
+<ol class="simple">
+<li><p>Ici vous retrouverez tout les projet vidéo que vous avez.</p></li>
+<li><p>C’est le curseur qui permet que quand vous lancer la vidéo elle se lance la ou le curseur et placé.</p></li>
+<li><p>Ici vous verrez tout les fichier son ou image ou je ne sais quoi que vous aurez soit drag and drop soit importer. Vous pouvez faire beaucoup de chose avec un clique droit, comment par exemple ajuster le volume du son ou encore couper la vidéo ou mettre des transition. bref il y a beaucoup de posibilité. Vous pouvez même accelerer la vidéo.</p></li>
+<li><p>Fichier son</p></li>
+<li><p>Cette règles permet de modifier <strong>la taille d’affichage</strong> des fichiers audio et vidéo.</p></li>
+<li><p>Quand vous double cliquer sur une image vous pouvez choisir un point de départ et un point d’arriver pour pouvoir créé des efet pendant la vidéo. (des effet de zoom ou de effet dedroit a gauche)</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/InterfaceImovie.png" id="interfaceimovie"><img alt="_images/InterfaceImovie.png" class="align-center" id="interfaceimovie" src="_images/InterfaceImovie.png" style="width: 900px;" /></a>
+<br/>
+<p>Une fois que vous avez fini votre projet il faut que vous cliquiez sur <strong>“projets”</strong> en haut a gauche. Pour que vous lui donniez un nom.</p>
+<p>Ensuite pour télécharger votre vidéo il faut cliquer sur les 3 petit point <strong>“…”</strong> ensuite sur <strong>“partager le projet”</strong>, et pour finir sur <strong>“fichier”</strong></p>
+<a class="reference internal image-reference" href="_images/ImportImovieFilm.png" id="importimoviefilm"><img alt="_images/ImportImovieFilm.png" class="align-center" id="importimoviefilm" src="_images/ImportImovieFilm.png" style="width: 600px;" /></a>
+<br/>
+<p>Ensuite une fenêtre apparaitra avec plusieur option je vous conseil de mettre la résolution a 720p (ça suffit largement). Le reste a vous de jugé si vous le voulez ou pas.</p>
+<a class="reference internal image-reference" href="_images/ReglImovieFilm.png" id="reglimoviefilm"><img alt="_images/ReglImovieFilm.png" class="align-center" id="reglimoviefilm" src="_images/ReglImovieFilm.png" style="width: 600px;" /></a>
+<br/>
+<p>Voilà vous savez plus ou moin utiliser Imovie. Maintenant on vas passer a la mise en ligne de la vidéo sur YouTube.</p>
+<p>Tout d’abrod il faut que vous vous rendiez sur YouTube Studio (ça permet de gérer vos chaîne YT). Quand vous êtes dessus il faut que vous appuyer sur le menu à gauche <strong>“Tableau de bord”</strong>. Puis <strong>“importer des vidéos</strong>.</p>
+<a class="reference internal image-reference" href="_images/YTStudio.png" id="ytstudio"><img alt="_images/YTStudio.png" class="align-center" id="ytstudio" src="_images/YTStudio.png" style="width: 800px;" /></a>
+<br/>
+<p>Ensuite vous selectionner votre fichier que Imovie vous à fournis puis vous le drag and droper ou alors vous aller le chercher au bon emplacement.
+Une fois que vous avez selectionner le bon fichier vous arriverez sur cette fenêtre :</p>
+<p>sur cette fenêtre vous aurrez 2 chose a changer la première c’est que le vidéo n’est pas conçue pour des enfant (sauf si c’est le cas). Ensuite vous cliquer sur <strong>“Plus”</strong></p>
+<br/>
+<a class="reference internal image-reference" href="_images/YTLimiteAge.png" id="ytlimiteage"><img alt="_images/YTLimiteAge.png" class="align-center" id="ytlimiteage" src="_images/YTLimiteAge.png" style="width: 700px;" /></a>
+<br/>
+<p>Ensuite vous dessendez tout en bas de la page et vous selectionner Desactivier les commantaire. (je fais ça utiquement pour éviter les mauvaise surprise du genre troll ou insulte envers la personne qui parle).</p>
+<a class="reference internal image-reference" href="_images/YTComm.png" id="ytcomm"><img alt="_images/YTComm.png" class="align-center" id="ytcomm" src="_images/YTComm.png" style="width: 700px;" /></a>
+<br/>
+<p>Après ça vous attendez que votre vidéo finisse de charger et que YouTube finisse de vérifier que votre vidéo est conforme a leur règles. (cette opération peut prendre quelques minnutes). Ensuite vous cliquer sur suivant, suivant,suivant jusqu’a arriver au dernier point. Et vous cocher la case <strong>“non répértoriée”</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Cela permet de ne pas retrouver la vidéo quand vous effecturez une recherche sur youtube.</p>
+</div>
+<br/>
+<a class="reference internal image-reference" href="_images/YTNonrepe.png" id="ytnonrepe"><img alt="_images/YTNonrepe.png" class="align-center" id="ytnonrepe" src="_images/YTNonrepe.png" style="width: 700px;" /></a>
+<br/>
+<p>Cliquer sur terminer et revenez sur la page de YouTube Studio, dans le menu a gauche selectionner <strong>“Contenu de la chaîne”</strong> et vous pourez effectivement voir que votre vidéo a été mise en ligne et quelle est en mode <strong>“non répértoriée”</strong>.</p>
+<a class="reference internal image-reference" href="_images/YTVerification.png" id="ytverification"><img alt="_images/YTVerification.png" class="align-center" id="ytverification" src="_images/YTVerification.png" style="width: 700px;" /></a>
+<br/>
 </div>
 <div class="section" id="creer-un-pdf-du-site-a-partir-de-jupyter-book">
 <h2>Créer un PDF du site à partir de jupyter-book<a class="headerlink" href="#creer-un-pdf-du-site-a-partir-de-jupyter-book" title="Permalink to this headline">¶</a></h2>
