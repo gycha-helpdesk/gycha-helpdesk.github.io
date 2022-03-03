@@ -621,6 +621,92 @@ Ensuite il faut aller sur préférence de recherche est modifier si vous êtes e
 ```
 <br/>
 
+
+### DashBoard jamf
+
+
+Quand vous vous connecter a jamf vous arriver par défaut sur le dash board. Sur cette il sera afficher toutes les règles que vous avez en "favoris" cela permet de suivre leur avancement, est d'observer graphiquement plusieur information. 
+
+<br/>
+
+```{note}
+Vous pouvez mettre plusieur règles, et pour voir plus d'information il suffis de cliquer sur la règles.
+```
+
+<br/>
+
+```{image} images/DashBoard.png
+:width: 700px
+:name: DashBoard
+:align: center
+```
+
+<br/>
+
+Pour mettre une règles en "favoris", il faut que vous recherchiez votre règles. Une fois que vous êtes dessu **en haut a droite** il y a une case a cocher, il suffis de la cocher est quand vous retiurnerez au dashboard votre règles serra afficher.
+
+
+```{image} images/CheckBoxFavorisJamf.png
+:width: 1100px
+:name: CheckBoxFavorisJamf
+:align: center
+```
+
+### Comment modifier le fichier inventaire.
+
+
+Pour commencer il faut aller sur teams.  Dans l'équipe GychaIT > ensuite dans le groupe > gestion de postes > File > le dossier de l'année corespondantes.
+
+```{image} images/RootTeamsInv.png
+:width: 900px
+:name: RootTeamsInv
+:align: center
+```
+
+<br/>
+
+Ensuite faites les modifications que vous voulez. Une fois fini il faut mettre se fichier sur le serveur en remplacant l'autre fichier déjà existant : 
+
+```{image} images/RootSRVinv.png
+:width: 900px
+:name: RootSRVinv
+:align: center
+```
+
+<br/>
+
+Ensuite il faut lancer le script pyton qui vas renter les données dans un autre fichier.
+
+
+```{note}
+Le script pyton est au même endroit que le fichier excel inventaire. Pour le lancer il faut aller dans le terminal, aller au même endroit ou le script est en utilisant : (cd leCheminOuSeTrouveLeScript)
+```
+
+une fois que vous êtes dans le bon dossier il faut executer cette commande :
+
+```shell
+pyton3 LeNomDuScript
+```
+
+<br/>
+
+Pour vérifier que vos changement on bien été effectuer il faut aller sur le seveur et regarder le fichier
+
+
+```{image} images/RootVerification.png
+:width: 900px
+:name: RootVerification
+:align: center
+```
+
+
+
+
+
+
+
+
+
 ## Mettre en ligne des vidéo sur YouTube / Imovie
 
 

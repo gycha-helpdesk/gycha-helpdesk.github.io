@@ -383,6 +383,16 @@
      Recherche JAMF
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dashboard-jamf">
+     DashBoard jamf
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#comment-modifier-le-fichier-inventaire">
+     Comment modifier le fichier inventaire.
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -492,6 +502,16 @@
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#recherche-jamf">
      Recherche JAMF
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dashboard-jamf">
+     DashBoard jamf
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#comment-modifier-le-fichier-inventaire">
+     Comment modifier le fichier inventaire.
     </a>
    </li>
   </ul>
@@ -856,6 +876,41 @@ Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local 
 <br/>
 <a class="reference internal image-reference" href="_images/PrefRecheJamf.png" id="prefrechejamf"><img alt="_images/PrefRecheJamf.png" class="align-center" id="prefrechejamf" src="_images/PrefRecheJamf.png" style="width: 500px;" /></a>
 <br/>
+</div>
+<div class="section" id="dashboard-jamf">
+<h3>DashBoard jamf<a class="headerlink" href="#dashboard-jamf" title="Permalink to this headline">¶</a></h3>
+<p>Quand vous vous connecter a jamf vous arriver par défaut sur le dash board. Sur cette il sera afficher toutes les règles que vous avez en “favoris” cela permet de suivre leur avancement, est d’observer graphiquement plusieur information.</p>
+<br/>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Vous pouvez mettre plusieur règles, et pour voir plus d’information il suffis de cliquer sur la règles.</p>
+</div>
+<br/>
+<a class="reference internal image-reference" href="_images/DashBoard.png" id="dashboard"><img alt="_images/DashBoard.png" class="align-center" id="dashboard" src="_images/DashBoard.png" style="width: 700px;" /></a>
+<br/>
+<p>Pour mettre une règles en “favoris”, il faut que vous recherchiez votre règles. Une fois que vous êtes dessu <strong>en haut a droite</strong> il y a une case a cocher, il suffis de la cocher est quand vous retiurnerez au dashboard votre règles serra afficher.</p>
+<a class="reference internal image-reference" href="_images/CheckBoxFavorisJamf.png" id="checkboxfavorisjamf"><img alt="_images/CheckBoxFavorisJamf.png" class="align-center" id="checkboxfavorisjamf" src="_images/CheckBoxFavorisJamf.png" style="width: 1100px;" /></a>
+</div>
+<div class="section" id="comment-modifier-le-fichier-inventaire">
+<h3>Comment modifier le fichier inventaire.<a class="headerlink" href="#comment-modifier-le-fichier-inventaire" title="Permalink to this headline">¶</a></h3>
+<p>Pour commencer il faut aller sur teams.  Dans l’équipe GychaIT &gt; ensuite dans le groupe &gt; gestion de postes &gt; File &gt; le dossier de l’année corespondantes.</p>
+<a class="reference internal image-reference" href="_images/RootTeamsInv.png" id="rootteamsinv"><img alt="_images/RootTeamsInv.png" class="align-center" id="rootteamsinv" src="_images/RootTeamsInv.png" style="width: 900px;" /></a>
+<br/>
+<p>Ensuite faites les modifications que vous voulez. Une fois fini il faut mettre se fichier sur le serveur en remplacant l’autre fichier déjà existant :</p>
+<a class="reference internal image-reference" href="_images/RootSRVinv.png" id="rootsrvinv"><img alt="_images/RootSRVinv.png" class="align-center" id="rootsrvinv" src="_images/RootSRVinv.png" style="width: 900px;" /></a>
+<br/>
+<p>Ensuite il faut lancer le script pyton qui vas renter les données dans un autre fichier.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Le script pyton est au même endroit que le fichier excel inventaire. Pour le lancer il faut aller dans le terminal, aller au même endroit ou le script est en utilisant : (cd leCheminOuSeTrouveLeScript)</p>
+</div>
+<p>une fois que vous êtes dans le bon dossier il faut executer cette commande :</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pyton3 LeNomDuScript
+</pre></div>
+</div>
+<br/>
+<p>Pour vérifier que vos changement on bien été effectuer il faut aller sur le seveur et regarder le fichier</p>
+<a class="reference internal image-reference" href="_images/RootVerification.png" id="rootverification"><img alt="_images/RootVerification.png" class="align-center" id="rootverification" src="_images/RootVerification.png" style="width: 900px;" /></a>
 </div>
 </div>
 <div class="section" id="mettre-en-ligne-des-video-sur-youtube-imovie">
