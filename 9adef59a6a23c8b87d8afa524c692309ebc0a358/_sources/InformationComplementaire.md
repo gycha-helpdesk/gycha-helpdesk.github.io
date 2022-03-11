@@ -677,6 +677,17 @@ Ensuite faites les modifications que vous voulez. Une fois fini il faut mettre s
 
 Ensuite il faut lancer le script pyton qui vas renter les données dans un autre fichier.
 
+<br/>
+
+Normalement dans votre terminal vous dévriez avoir quelquechose de similaire.
+
+```{image} images/ScriptInv.png
+:width: 800px
+:name: ScriptInv
+:align: center
+```
+
+<br/>
 
 ```{note}
 Le script pyton est au même endroit que le fichier excel inventaire. Pour le lancer il faut aller dans le terminal, aller au même endroit ou le script est en utilisant : (cd leCheminOuSeTrouveLeScript)
@@ -685,7 +696,7 @@ Le script pyton est au même endroit que le fichier excel inventaire. Pour le la
 une fois que vous êtes dans le bon dossier il faut executer cette commande :
 
 ```shell
-pyton3 LeNomDuScript
+python3 LeNomDuScript
 ```
 
 <br/>

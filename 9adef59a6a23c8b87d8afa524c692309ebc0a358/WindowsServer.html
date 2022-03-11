@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Comment modifier le nom d’un ordinateur avec jamf &#8212; Documentation Technique Chamblandes</title>
+    <title>Windows Server &#8212; Documentation Technique Chamblandes</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -52,8 +52,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Section Utile" href="Utile.html" />
-    <link rel="prev" title="Fermeture Automatique de la sesssion" href="JamfAutoLogout.html" />
+    <link rel="next" title="Information complémentaire" href="InformationComplementaire.html" />
+    <link rel="prev" title="Liens Utiles" href="LiensUtiles.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -91,16 +91,16 @@
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="Jamf.html">
    Section Jamf
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="JamfFirstConnection.html">
      Avant de commencer
@@ -146,23 +146,23 @@
      Fermeture Automatique de la sesssion
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfRename.html">
      Comment modifier le nom d’un ordinateur avec jamf
     </a>
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="Utile.html">
    Section Utile
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="mdp.html">
      Identifiants et mots de passe
@@ -188,8 +188,8 @@
      Liens Utiles
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="WindowsServer.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Windows Server
     </a>
    </li>
@@ -291,7 +291,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/JamfRename.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/WindowsServer.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -322,8 +322,8 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#ou-changer-le-nom-d-un-ordinateur-de-pret-et-comment">
-   Ou changer le nom d’un ordinateur de prêt et comment.
+  <a class="reference internal nav-link" href="#how-to-set-windows-updates-to-manual-on-windows-server">
+   How To Set Windows Updates to Manual on Windows Server
   </a>
  </li>
 </ul>
@@ -336,7 +336,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Comment modifier le nom d’un ordinateur avec jamf</h1>
+                <h1>Windows Server</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -347,8 +347,8 @@
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#ou-changer-le-nom-d-un-ordinateur-de-pret-et-comment">
-   Ou changer le nom d’un ordinateur de prêt et comment.
+  <a class="reference internal nav-link" href="#how-to-set-windows-updates-to-manual-on-windows-server">
+   How To Set Windows Updates to Manual on Windows Server
   </a>
  </li>
 </ul>
@@ -362,17 +362,36 @@
                 
   <!--
 Author:		    Joca Bolli
-Date:		    01.02.2022
+Date:		    11.03.2022
 Description:	Information utile et mise a jour du site
 -->
-<div class="tex2jax_ignore mathjax_ignore section" id="comment-modifier-le-nom-d-un-ordinateur-avec-jamf">
-<h1>Comment modifier le nom d’un ordinateur avec jamf<a class="headerlink" href="#comment-modifier-le-nom-d-un-ordinateur-avec-jamf" title="Permalink to this headline">¶</a></h1>
+<div class="tex2jax_ignore mathjax_ignore section" id="windows-server">
+<h1>Windows Server<a class="headerlink" href="#windows-server" title="Permalink to this headline">¶</a></h1>
 <blockquote>
-<div><p>ici nous allons voir comment modifier le nom d’un ordinateur.
-Malheureusement il ne suffit pas de le renommer il faut aussi aller changer le nom dans le fichier invantaire et d’autre manip.</p>
+<div><p>Toutes les information provienne de ce site : <a class="reference external" href="https://www.urtech.ca/2019/06/solved-how-to-set-windows-updates-to-manual-on-windows-server-2019-2016-2012r2/">https://www.urtech.ca/2019/06/solved-how-to-set-windows-updates-to-manual-on-windows-server-2019-2016-2012r2/</a>.
+Traduit avec <a class="reference external" href="http://www.DeepL.com/Translator">www.DeepL.com/Translator</a> (version gratuite).</p>
 </div></blockquote>
-<div class="section" id="ou-changer-le-nom-d-un-ordinateur-de-pret-et-comment">
-<h2>Ou changer le nom d’un ordinateur de prêt et comment.<a class="headerlink" href="#ou-changer-le-nom-d-un-ordinateur-de-pret-et-comment" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="how-to-set-windows-updates-to-manual-on-windows-server">
+<h2>How To Set Windows Updates to Manual on Windows Server<a class="headerlink" href="#how-to-set-windows-updates-to-manual-on-windows-server" title="Permalink to this headline">¶</a></h2>
+<p>Windows Server 2019, 2016, 2012R2 règle par défaut les mises à jour de Windows sur TÉLÉCHARGER ET INSTALLER et il n’existe aucun moyen évident de modifier ces paramètres.  Voici deux façons simples de configurer Windows Update comme bon vous semble :</p>
+<p>1 - SCONFIG</p>
+<ol class="simple">
+<li><p>Ouvrez un CMD en tant qu’administrateur.</p></li>
+<li><p>Tapez SCONFIG et appuyez sur ENTER</p></li>
+<li><p>Tapez 5 et appuyez sur ENTER</p></li>
+<li><p>Tapez M pour Manual (ou D pour Download Only) et appuyez sur ENTER.</p></li>
+</ol>
+<p>Si SCONFIG indique toujours que WINDOWS UPDATES est réglé sur CUSTOM, passez à la méthode suivante :</p>
+<a class="reference internal image-reference" href="_images/OptionSconfig.png" id="optionsconfig"><img alt="_images/OptionSconfig.png" class="align-center" id="optionsconfig" src="_images/OptionSconfig.png" style="width: 700px;" /></a>
+<br/>
+<p>2 – LOCAL SECURITY POLICY or GROUP POLICY</p>
+<ol class="simple">
+<li><p>Cliquez sur START et tapez GPEDIT.MSC et appuyez sur ENTER (ou ouvrez la CONSOLE DE GESTION DES POLITIQUES DE GROUPE et ouvrez une GPO existante ou démarrez-en une nouvelle)</p></li>
+<li><p>Développez CONFIGURATION ORDINATEUR &gt; OUTILS ADMINISTRATIFS &gt; COMPOSANTS FENÊTRES &gt; MISE À JOUR FENÊTRES.</p></li>
+<li><p>Double-cliquez sur CONFIGURER LES MISES À JOUR AUTOMATIQUES.</p></li>
+<li><p>Sélectionnez soit DISABLED (équivalent de MANUAL) soit ENABLED et sélectionnez ce que vous souhaitez dans la liste déroulante.</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/LSPGP.png" id="lspgp"><img alt="_images/LSPGP.png" class="align-center" id="lspgp" src="_images/LSPGP.png" style="width: 800px;" /></a>
 </div>
 </div>
 
@@ -401,17 +420,17 @@ Malheureusement il ne suffit pas de le renommer il faut aussi aller changer le n
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="JamfAutoLogout.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="LiensUtiles.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Fermeture Automatique de la sesssion</p>
+            <p class="prev-next-title">Liens Utiles</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="Utile.html" title="next page">
+    <a class='right-next' id="next-link" href="InformationComplementaire.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Section Utile</p>
+        <p class="prev-next-title">Information complémentaire</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
