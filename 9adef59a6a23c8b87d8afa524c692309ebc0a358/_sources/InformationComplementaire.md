@@ -1058,4 +1058,6 @@ Pour acceder a la page suivante il faut cliquer sur "Finishing panel". Ensuite i
 :align: center
 ```
 
-
+```{attention}
+Il ne faut surtout pas oublier de cliquer sur SET DEFAULT OPTION pour que les modifications soit sauvegarder.
+```
