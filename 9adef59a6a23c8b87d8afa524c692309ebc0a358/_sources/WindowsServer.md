@@ -37,7 +37,7 @@ Si SCONFIG indique toujours que WINDOWS UPDATES est réglé sur CUSTOM, passez �
 
 
 ```{image} images/LSPGP.png
-:width: 800px
+:width: 700px
 :name: LSPGP
 :align: center
 ```

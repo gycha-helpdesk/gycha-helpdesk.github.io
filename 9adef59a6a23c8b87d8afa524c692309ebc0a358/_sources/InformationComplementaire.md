@@ -940,4 +940,122 @@ Voilà ensuite rendez-vous dans vore dossier src > build > PDF et vous y retrouv
 :align: center
 ```
 
+## Rajouter des imprimantes avec CUPs 2.3.4
+
+```{note}
+Tout d'abord il faut aller sur un navigateur est tapez l'adresse suivante : localhost:631
+```
+<br/>
+
+Normalement vous devrez arriver sur cette page (voir si dessous). Si c'est le cas cliquer sur **"administration"**
+
+<br/>
+
+```{image} images/homepage.png
+:width: 700px
+:name: homepage
+:align: center
+```
+<br/>
+
+Une fois que vous avez cliquer sur **"administration"**. La page si dessous devrais s'afficher. Une fois que vous êtes sur cette pages il vous faut cliquer sur Add printer.
+
+```{image} images/administrationPage.png
+:width: 700px
+:name: administrationPage
+:align: center
+```
+
+```{note}
+Si vous cliquer sur Manage Printer vous pouvez modifier les paramètres que nous allons modifier lors de la création et vous pourrez voir toutes les imprimantes que vous avez rajouter.
+```
+
+<br/>
+
+```{image} images/AddPrinter.png
+:width: 700px
+:name: AddPrinter
+:align: center
+```
+
+Selectionner **"LPD/LR Host or Printer"** ensuite cliquer sur **"continue"**.
+
+<br/>
+
+Ensuite vous arriverez sur cette fenêtre. Ici il faut notez la même chose qu'avant donc : **lpd://gycha-srv-prt01/gycham- La salle de l'imprimante - le driver utiliser**. Puis cliquer sur continue.
+
+```{image} images/AdressPrinter.png
+:width: 700px
+:name: AdressPrinter
+:align: center
+```
+
+<br/>
+
+Sur l'image si dessous, récopier le nom en mettant le bon nom 
+
+```{image} images/PrinterName.png
+:width: 700px
+:name: PrinterName
+:align: center
+```
+
+
+<br/>
+
+Maintenant il faut selectionner **"HP"** et cliquer sur continue (sur l'image si dessous)
+
+```{attention}
+Il ne faut pas cliquer sur "choisir un fichier ni Add Printer" (sur l'image si dessous)
+```
+
+```{image} images/DriverPrinter.png
+:width: 700px
+:name: DriverPrinter
+:align: center
+```
+
+<br/>
+
+ensiute selectionner le bon driver (celuil qui corespond a votre imprimante donc : pour les HP3015 c'est le p3010 pour le PHM506 c'est le M506, pour le HPM552 c'est le M552 etc...)
+
+
+```{image} images/DriverSelection.png
+:width: 700px
+:name: DriverSelection
+:align: center
+```
+
+<br/>
+
+Sur la prochaine fenêtre il faudra changer plusieur petit paramètre pour permettre l'impression recto verso et validé le format de l'impression.
+
+
+```{image} images/OptionInstalled.png
+:width: 700px
+:name: OptionInstalled
+:align: center
+```
+sur l'image si dessus il faut cocher "installé" pour "l'accessoire d'impression recto verso". ensuite cliquer siur General (le bouton et en bleu).
+
+<br/>
+
+```{image} images/OptionGeneral.png
+:width: 700px
+:name: OptionGeneral
+:align: center
+```
+
+sur l'image si dessus il faut selectionner **"Reliure sur bord long"** pour "recto verso" et si ce n'est pas déjà fais il faut selectionner **"a4"** dans "format de page".
+
+<br/>
+
+Pour acceder a la page suivante il faut cliquer sur "Finishing panel". Ensuite il faut modifier "le papier pour brochure" et le mettre en **"a4"**
+
+```{image} images/OptionFinition.png
+:width: 700px
+:name: OptionFinition
+:align: center
+```
+
 

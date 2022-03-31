@@ -146,11 +146,6 @@
      Fermeture Automatique de la sesssion
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="JamfRename.html">
-     Comment modifier le nom d’un ordinateur avec jamf
-    </a>
-   </li>
   </ul>
  </li>
  <li class="toctree-l1 current active has-children">
@@ -422,6 +417,11 @@
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rajouter-des-imprimantes-avec-cups-2-3-4">
+   Rajouter des imprimantes avec CUPs 2.3.4
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -542,6 +542,11 @@
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rajouter-des-imprimantes-avec-cups-2-3-4">
+   Rajouter des imprimantes avec CUPs 2.3.4
+  </a>
  </li>
 </ul>
 
@@ -1045,6 +1050,53 @@ wget
 <p>Voilà ensuite rendez-vous dans vore dossier src &gt; build &gt; PDF et vous y retrouverez le pdf</p>
 <a class="reference internal image-reference" href="_images/rootToPDF.png" id="roottopdf"><img alt="_images/rootToPDF.png" class="align-center" id="roottopdf" src="_images/rootToPDF.png" style="width: 800px;" /></a>
 </div>
+</div>
+<div class="section" id="rajouter-des-imprimantes-avec-cups-2-3-4">
+<h2>Rajouter des imprimantes avec CUPs 2.3.4<a class="headerlink" href="#rajouter-des-imprimantes-avec-cups-2-3-4" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Tout d’abord il faut aller sur un navigateur est tapez l’adresse suivante : localhost:631</p>
+</div>
+<br/>
+<p>Normalement vous devrez arriver sur cette page (voir si dessous). Si c’est le cas cliquer sur <strong>“administration”</strong></p>
+<br/>
+<a class="reference internal image-reference" href="_images/homepage.png" id="homepage"><img alt="_images/homepage.png" class="align-center" id="homepage" src="_images/homepage.png" style="width: 700px;" /></a>
+<br/>
+<p>Une fois que vous avez cliquer sur <strong>“administration”</strong>. La page si dessous devrais s’afficher. Une fois que vous êtes sur cette pages il vous faut cliquer sur Add printer.</p>
+<a class="reference internal image-reference" href="_images/administrationPage.png" id="administrationpage"><img alt="_images/administrationPage.png" class="align-center" id="administrationpage" src="_images/administrationPage.png" style="width: 700px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Si vous cliquer sur Manage Printer vous pouvez modifier les paramètres que nous allons modifier lors de la création et vous pourrez voir toutes les imprimantes que vous avez rajouter.</p>
+</div>
+<br/>
+<a class="reference internal image-reference" href="_images/AddPrinter.png" id="addprinter"><img alt="_images/AddPrinter.png" class="align-center" id="addprinter" src="_images/AddPrinter.png" style="width: 700px;" /></a>
+<p>Selectionner <strong>“LPD/LR Host or Printer”</strong> ensuite cliquer sur <strong>“continue”</strong>.</p>
+<br/>
+<p>Ensuite vous arriverez sur cette fenêtre. Ici il faut notez la même chose qu’avant donc : <strong>lpd://gycha-srv-prt01/gycham- La salle de l’imprimante - le driver utiliser</strong>. Puis cliquer sur continue.</p>
+<a class="reference internal image-reference" href="_images/AdressPrinter.png" id="adressprinter"><img alt="_images/AdressPrinter.png" class="align-center" id="adressprinter" src="_images/AdressPrinter.png" style="width: 700px;" /></a>
+<br/>
+<p>Sur l’image si dessous, récopier le nom en mettant le bon nom</p>
+<a class="reference internal image-reference" href="_images/PrinterName.png" id="printername"><img alt="_images/PrinterName.png" class="align-center" id="printername" src="_images/PrinterName.png" style="width: 700px;" /></a>
+<br/>
+<p>Maintenant il faut selectionner <strong>“HP”</strong> et cliquer sur continue (sur l’image si dessous)</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Il ne faut pas cliquer sur “choisir un fichier ni Add Printer” (sur l’image si dessous)</p>
+</div>
+<a class="reference internal image-reference" href="_images/DriverPrinter.png" id="driverprinter"><img alt="_images/DriverPrinter.png" class="align-center" id="driverprinter" src="_images/DriverPrinter.png" style="width: 700px;" /></a>
+<br/>
+<p>ensiute selectionner le bon driver (celuil qui corespond a votre imprimante donc : pour les HP3015 c’est le p3010 pour le PHM506 c’est le M506, pour le HPM552 c’est le M552 etc…)</p>
+<a class="reference internal image-reference" href="_images/DriverSelection.png" id="driverselection"><img alt="_images/DriverSelection.png" class="align-center" id="driverselection" src="_images/DriverSelection.png" style="width: 700px;" /></a>
+<br/>
+<p>Sur la prochaine fenêtre il faudra changer plusieur petit paramètre pour permettre l’impression recto verso et validé le format de l’impression.</p>
+<a class="reference internal image-reference" href="_images/OptionInstalled.png" id="optioninstalled"><img alt="_images/OptionInstalled.png" class="align-center" id="optioninstalled" src="_images/OptionInstalled.png" style="width: 700px;" /></a>
+<p>sur l’image si dessus il faut cocher “installé” pour “l’accessoire d’impression recto verso”. ensuite cliquer siur General (le bouton et en bleu).</p>
+<br/>
+<a class="reference internal image-reference" href="_images/OptionGeneral.png" id="optiongeneral"><img alt="_images/OptionGeneral.png" class="align-center" id="optiongeneral" src="_images/OptionGeneral.png" style="width: 700px;" /></a>
+<p>sur l’image si dessus il faut selectionner <strong>“Reliure sur bord long”</strong> pour “recto verso” et si ce n’est pas déjà fais il faut selectionner <strong>“a4”</strong> dans “format de page”.</p>
+<br/>
+<p>Pour acceder a la page suivante il faut cliquer sur “Finishing panel”. Ensuite il faut modifier “le papier pour brochure” et le mettre en <strong>“a4”</strong></p>
+<a class="reference internal image-reference" href="_images/OptionFinition.png" id="optionfinition"><img alt="_images/OptionFinition.png" class="align-center" id="optionfinition" src="_images/OptionFinition.png" style="width: 700px;" /></a>
 </div>
 </div>
 
