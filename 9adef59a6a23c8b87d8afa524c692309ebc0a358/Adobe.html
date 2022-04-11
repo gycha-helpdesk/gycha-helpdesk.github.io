@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introduction &#8212; Documentation Technique Chamblandes</title>
+    <title>Adobe &#8212; Documentation Technique Chamblandes</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -52,7 +52,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Section Jamf" href="Jamf.html" />
+    <link rel="next" title="Section MachineVirtuelle" href="MachineVirtuelle.html" />
+    <link rel="prev" title="Information complémentaire" href="InformationComplementaire.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -89,7 +90,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Rechercher dans ce livre ..." aria-label="Rechercher dans ce livre ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="Jamf.html">
    Section Jamf
@@ -147,16 +148,16 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="Utile.html">
    Section Utile
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="mdp.html">
      Identifiants et mots de passe
@@ -192,8 +193,8 @@
      Information complémentaire
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Adobe.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Adobe
     </a>
    </li>
@@ -290,7 +291,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/intro.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/Adobe.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -315,6 +316,24 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenu
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comment-renisialiser-les-liscence-sur-adobe-console">
+   Comment rénisialiser les liscence sur adobe console
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#adobe-console-creer-des-pkg">
+   Adobe Console créer des PKG.
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -322,23 +341,114 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Introduction</h1>
+                <h1>Adobe</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contenu </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comment-renisialiser-les-liscence-sur-adobe-console">
+   Comment rénisialiser les liscence sur adobe console
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#adobe-console-creer-des-pkg">
+   Adobe Console créer des PKG.
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
-<p>Pendant ce stage, vous serez amenés à utiliser des outils et technologies que vous ne connaissez peut-être pas.</p>
-<p>Cette documentation est-là pour vous faciliter la vie; c’est une sorte de tutoriel qui va vous expliquer comment utiliser ces technologies.</p>
-<p>Dans la suite de votre stage, vous allez sans doute aussi être introduit à de nouvelles choses que je n’ai pas connu; ce sera donc à vous d’améliorer ce manuel afin que le stagiaire suivant puisse suivre rapidement et efficacement.</p>
-<div class="toctree-wrapper compound">
+  <!--
+Author:		    Joca Bolli
+Date:		    11.04.2022
+Description:	fonction de base de adobe console et explication.
+-->
+<div class="tex2jax_ignore mathjax_ignore section" id="adobe">
+<h1>Adobe<a class="headerlink" href="#adobe" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>Ici je vais vous expliquer comment remmettre les liscence adobe a zéro (vous n’aurez normalement jamais a le faire mais c’est bien de savoir on c’est).
+Je vais vous montrez également comment crée des PKG avec adobe console.
+et d’autre choses.</p>
+</div></blockquote>
+<div class="section" id="comment-renisialiser-les-liscence-sur-adobe-console">
+<h2>Comment rénisialiser les liscence sur adobe console<a class="headerlink" href="#comment-renisialiser-les-liscence-sur-adobe-console" title="Permalink to this headline">¶</a></h2>
+<p>Pour pouvoir accéder a adobe console (via internet) il faut savoir quel compte utiliser. Pour cela il faut aller sur DGEP passowrd ou l’alternative si il y en a une. Voici le lien pour accéder a DGEP PASSWORD : <a class="reference external" href="https://pass.dgep.edu-vaud.ch:9119/">https://pass.dgep.edu-vaud.ch:9119/</a></p>
+<br/>
+<a class="reference internal image-reference" href="_images/WebDgPassword.png" id="webdgpassword"><img alt="_images/WebDgPassword.png" class="align-center" id="webdgpassword" src="_images/WebDgPassword.png" style="width: 800px;" /></a>
+<br/>
+<p>Une fois que vous avez cliquer sur le lien connecter vous. Dans mon cas j’utiliser mon compte admin a-jbolli. Ensuite cliquer sur Connexion.</p>
+<br/>
+<a class="reference internal image-reference" href="_images/DGpassowrdInterface.png" id="dgpassowrdinterface"><img alt="_images/DGpassowrdInterface.png" class="align-center" id="dgpassowrdinterface" src="_images/DGpassowrdInterface.png" style="width: 800px;" /></a>
+<br/>
+<p>Une fois que vous êtes connecter, aller dans la barre de recherche et taperz “adobe” ensuite vous aller voir le compte, copier l’adresse puis cliquer sur ce lien : <a class="reference external" href="https://adminconsole.adobe.com/">https://adminconsole.adobe.com/</a></p>
+<br/>
+<a class="reference internal image-reference" href="_images/adobeConsoleConexion.png" id="adobeconsoleconexion"><img alt="_images/adobeConsoleConexion.png" class="align-center" id="adobeconsoleconexion" src="_images/adobeConsoleConexion.png" style="width: 800px;" /></a>
+<br/>
+<a class="reference internal image-reference" href="_images/AdobeConnecxionMdp.png" id="adobeconnecxionmdp"><img alt="_images/AdobeConnecxionMdp.png" class="align-center" id="adobeconnecxionmdp" src="_images/AdobeConnecxionMdp.png" style="width: 800px;" /></a>
+<br/>
+<p>Coller l’adresse mail que vous avez copier juste avant puis cliquer sur “Continuer”. copier coller le mot de passe et connecter vous.</p>
+<br/>
+<a class="reference internal image-reference" href="_images/AdobeConsAccueil.png" id="adobeconsaccueil"><img alt="_images/AdobeConsAccueil.png" class="align-center" id="adobeconsaccueil" src="_images/AdobeConsAccueil.png" style="width: 800px;" /></a>
+<br/>
+<p>Une fois connecter rendez-vous sur “pruduits” pour pouvoir ensuite voir tout ce que vous avez accès. Et entre autre pouvoir modifier les licences.</p>
+<br/>
+<a class="reference internal image-reference" href="_images/AdobePosteUtiliser.png" id="adobeposteutiliser"><img alt="_images/AdobePosteUtiliser.png" class="align-center" id="adobeposteutiliser" src="_images/AdobePosteUtiliser.png" style="width: 800px;" /></a>
+<br/>
+<p>Une fois que vous avez réussi a accèder a cette fenêtre cliquer sur les licences par poste (Poste utilisé). Dans mon cas il y en a beaucoup car nous étions entrain de l’installer sur tout les poste des salles d’informatiques du gymnase.</p>
+<br/>
+<a class="reference internal image-reference" href="_images/AdobeDefault.png" id="adobedefault"><img alt="_images/AdobeDefault.png" class="align-center" id="adobedefault" src="_images/AdobeDefault.png" style="width: 800px;" /></a>
+<br/>
+<p>Ensuite cliquer sur “default” pour pouvoir accéder a differents paramètre dont celuil qui nous intersse.</p>
+<br/>
+<a class="reference internal image-reference" href="_images/adobeParam.png" id="adobeparam"><img alt="_images/adobeParam.png" class="align-center" id="adobeparam" src="_images/adobeParam.png" style="width: 800px;" /></a>
+<br/>
+<a class="reference internal image-reference" href="_images/AdobeRecupLiscence.png" id="adoberecupliscence"><img alt="_images/AdobeRecupLiscence.png" class="align-center" id="adoberecupliscence" src="_images/AdobeRecupLiscence.png" style="width: 800px;" /></a>
+<br/>
+<p>Ensuite cliquer sur les trois petit point puis récupérer les licences. ensuite si vous retourner sur produit vous dervriez normalement voir qu’il n’y a plus d’utilisateur (poste utilisé). Et voila vous savez comment récupérer vos licences.</p>
+</div>
+<div class="section" id="adobe-console-creer-des-pkg">
+<h2>Adobe Console créer des PKG.<a class="headerlink" href="#adobe-console-creer-des-pkg" title="Permalink to this headline">¶</a></h2>
+<br/>
+<a class="reference internal image-reference" href="_images/adobePack.png" id="adobepack"><img alt="_images/adobePack.png" class="align-center" id="adobepack" src="_images/adobePack.png" style="width: 800px;" /></a>
+<br/>
+<p>Pour pouvoir rajouter / créer des pkg il faut dans le menu en haut et cliquer sur packs.</p>
+<br/>
+<a class="reference internal image-reference" href="_images/AdobeLicencesPartagee.png" id="adobelicencespartagee"><img alt="_images/AdobeLicencesPartagee.png" class="align-center" id="adobelicencespartagee" src="_images/AdobeLicencesPartagee.png" style="width: 800px;" /></a>
+<br/>
+<p>ensuite selectionner licences partagée, parce que c’est pour un groupe de personne. et elle ne son pas “fixe” et cliquer sur suivant</p>
+<br/>
+<a class="reference internal image-reference" href="_images/adobeConfCreativ.png" id="adobeconfcreativ"><img alt="_images/adobeConfCreativ.png" class="align-center" id="adobeconfcreativ" src="_images/adobeConfCreativ.png" style="width: 800px;" /></a>
+<br/>
+<p>selectionner la même chose que sur l’image si dessus. Ensuite cliqewur sur suivant.</p>
+<br/>
+<a class="reference internal image-reference" href="_images/adobeConfLangue.png" id="adobeconflangue"><img alt="_images/adobeConfLangue.png" class="align-center" id="adobeconflangue" src="_images/adobeConfLangue.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="_images/adobeConfOS.png" id="adobeconfos"><img alt="_images/adobeConfOS.png" class="align-center" id="adobeconfos" src="_images/adobeConfOS.png" style="width: 800px;" /></a>
+<br/>
+<p>sur cette fenêtre il y a plusieur paramètre a changer, tout dabord il faut changer la langue. Ensuite il faut selectionner pour quel OS vous voulez faire les PKG. Une fois que vous avez choisi ce qu’iil vous convient cliquer sur suivant.</p>
+<br/>
+<a class="reference internal image-reference" href="_images/adobeAddApp.png" id="adobeaddapp"><img alt="_images/adobeAddApp.png" class="align-center" id="adobeaddapp" src="_images/adobeAddApp.png" style="width: 800px;" /></a>
+<br/>
+<p>c’est ici que vous allez définir quel application vous aller mettre dans vpotre pkg, le flèche bleu montre comment tout supprimer ou tout rajouter. les carrer rouge a gauche montre les app que vous pouvez rajouter, le carrer rouge a froite montre les app que vous avez rajouter. Une fois que vous vous êtes dessider cliquer sur suivant.</p>
+<br/>
+<a class="reference internal image-reference" href="_images/adobeConfig.png" id="adobeconfig"><img alt="_images/adobeConfig.png" class="align-center" id="adobeconfig" src="_images/adobeConfig.png" style="width: 800px;" /></a>
+<br/>
+<p>sur cette page desselectionner <strong>TOUT</strong>, garder ce qui est selectionner de base. Cliquer ensuite sur suivant</p>
+<br/>
+<a class="reference internal image-reference" href="_images/adobePKGfin.png" id="adobepkgfin"><img alt="_images/adobePKGfin.png" class="align-center" id="adobepkgfin" src="_images/adobePKGfin.png" style="width: 800px;" /></a>
+<br/>
+<p>Une fois que vous avez fais toutes ces étape il sufis de cliquer sur comiler votre pack est attendre. Maintenant vous savez comment faire ;).</p>
 </div>
 </div>
 
@@ -366,11 +476,18 @@
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="Jamf.html" title="next page">
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="InformationComplementaire.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Information complémentaire</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="MachineVirtuelle.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Section Jamf</p>
+        <p class="prev-next-title">Section MachineVirtuelle</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
