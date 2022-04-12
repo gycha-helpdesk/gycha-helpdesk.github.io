@@ -209,4 +209,51 @@ sur cette page desselectionner **TOUT**, garder ce qui est selectionner de base.
 
 <br/>
 
-Une fois que vous avez fais toutes ces étape il sufis de cliquer sur comiler votre pack est attendre. Maintenant vous savez comment faire ;).
+Une fois que vous avez fais toutes ces étapes il sufis de cliquer sur "compiler votre pack" est attendre. Maintenant vous savez comment faire ;).
+
+## Comment donne une licences personnel / mobile 
+
+<br/>
+
+```{image} images/srvGadobeUAC.png
+:width: 700px
+:name: srvGadobeUAC
+:align: center
+```
+
+<br/>
+
+Pour commencer il faut aller sur le serveur windows (l'AD). ensuite il faut selectionner (user and computer).
+
+<br/>
+
+```{image} images/srvGadobeGychG.png
+:width: 600px
+:name: srvGadobeGychG
+:align: center
+```
+
+<br/>
+
+```{image} images/srvAdobeRecherche.png
+:width: 400px
+:name: srvAdobeRecherche
+:align: center
+```
+<br/>
+
+Ensuite vous devez selectionner GYCHA > puis Groups. Si vous avez du mal a trouver le group vous pouvez simplement effectuer une recherche et le trouver plus rapidement.
+
+<br/>
+
+```{image} images/srvAdobeGoption.png
+:width: 400px
+:name: srvAdobeGoption
+:align: center
+```
+
+<br/>
+
+Une fois que vous avez double cliquer sur le groupe vous pourrez rajouter les personne que vous voulez ou alors supprimer des utilisateurs qui fon parti du groupe.
+
+
