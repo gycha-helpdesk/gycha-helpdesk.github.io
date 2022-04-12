@@ -1061,3 +1061,35 @@ Pour acceder a la page suivante il faut cliquer sur "Finishing panel". Ensuite i
 ```{attention}
 Il ne faut surtout pas oublier de cliquer sur SET DEFAULT OPTION pour que les modifications soit sauvegarder.
 ```
+
+<br/>
+
+```{attention}
+Les imprimante des salles de dessin et de la salle des maîtres utilise des drivers différent car se sont des imprimante cannon et non pas HP comme le reste du gymnase. (sdm-est = c5535/5540), (sdm-ouest et sdm-nord = 6555/6565). Le paramètrage et aussi un peux différent.
+```
+
+<br/>
+
+```{image} images/sdm-est.png
+:width: 700px
+:name: sdm-est
+:align: center
+```
+
+<br/>
+
+```{attention}
+- Image du dessus = SDM-EST
+- Image du dessous = SDM-NORD
+```
+
+<br/>
+
+```{image} images/sdm-Nord.png
+:width: 700px
+:name: sdm-Nord
+:align: center
+```
+
+<br/>
+
