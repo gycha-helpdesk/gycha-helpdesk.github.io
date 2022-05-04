@@ -4,7 +4,7 @@ Date:		    01.02.2022
 Description:	Information utile et mise a jour du site
 -->
 # Information complémentaire
-
+>Je m'excuse d'avance pour les fautes d'orthographe.
 > Dans cette partie du site je vais vous explique comment mettre à jour le site / rajouter du contenu.
 > En parallèle je vais vous donner plusieur d'informations concernant les pannes que vous pourrez rencontrer et le fonctionnement du réseau de l'école.
 > je vais aussi vous expliquer le fonctionnement de l'usi, la dgnsi, la dgep, la dgo et les outils qui sont à notre disposition. Et plein d'autre chose qui pourrais vous être utile.
@@ -109,7 +109,7 @@ pour que la commande fonctionne il faut que vous soyez dans le bon dossier (celu
 
 donc si vous ne savez pas ou vous êtes, taper dans le terminal : 
 ```shell
-    pwd
+pwd
 ```
 <br/>
 
@@ -118,7 +118,7 @@ donc si vous ne savez pas ou vous êtes, taper dans le terminal :
 
 Maintenant que vous êtes dans le bon dossier et que vous êtes sur le bon environement (jupyter-book) vous pouvez taper la commande suivante : 
 ```shell
-    Jupyter-book build .
+Jupyter-book build .
 ```
 <br/>
 Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local mais pas en ligne. Des modifications que vous avez apportées au fichier.
@@ -211,14 +211,14 @@ Pour que la commande fonctionne correctement il faut l'éxécuter plusieurs fois
 <br/>
 
 ```shell
-    sudo jamf policy
+sudo jamf policy
 ```
 <br/>
 
 si vous voulez apeller un règle précisement :
 
 ```shell
-    sudo jamf policy -event NomDeLaRegle
+sudo jamf policy -event NomDeLaRegle
 ```
 <br/>
 
@@ -239,7 +239,7 @@ il ne faut pas tapez exactement le nom de la regle. Il faut taper l'événement 
 Cette commande sert a mettre à jour l'inventaire de jamf **de votre machine** :
 
 ```shell
-    sudo jamf recon 
+sudo jamf recon 
 ```
 <br/>
 
@@ -544,7 +544,7 @@ Pour pouvoir mettre un gif sur le site j'ai utiliser un site de [conversion](htt
 il faut impérativement executer la commande suivante si vous voulez régler le problème : 
 
 ```shell
-    jupyter-book clean .
+jupyter-book clean .
 ```
 
 ```{Attention}
@@ -556,7 +556,7 @@ Ensuite il faut absolument executer la commande :
 ```
 
 ```shell
-    jupyter-book build .
+jupyter-book build .
 ```
 
 ### Groupe d'élève / Son dans les salles 
@@ -709,13 +709,6 @@ Pour vérifier que vos changement on bien été effectuer il faut aller sur le s
 :name: RootVerification
 :align: center
 ```
-
-
-
-
-
-
-
 
 
 ## Mettre en ligne des vidéo sur YouTube / Imovie
@@ -871,7 +864,7 @@ Vous pouvez l'installer comme ceci :
 
 
 ```shell
-    pip install pyppeteer
+pip install pyppeteer
 ```
 
 
@@ -943,7 +936,9 @@ Voilà ensuite rendez-vous dans vore dossier src > build > PDF et vous y retrouv
 ## Rajouter des imprimantes avec CUPs 2.3.4
 
 ```{note}
-Tout d'abord il faut aller sur un navigateur est tapez l'adresse suivante : localhost:631
+> - Tout d'abord il faut aller sur un navigateur est tapez l'adresse suivante : localhost:631
+> - voici la commande pour afficher l'interface graphique de cups et potentiellement régler des problème de connexion au site : cupsctl WebInterface=yes 
+> - Attention pour pouvoir rajouter des imprimantes ou simplement utiliser cups il faut que pouvoire ce connecter sur votre machine avec un compte qui a un mot de passe. Sinon vous serez bloquer, car cips demande le mdp du user de la session.
 ```
 <br/>
 
@@ -994,19 +989,26 @@ Ensuite vous arriverez sur cette fenêtre. Ici il faut notez la même chose qu'a
 
 Sur l'image si dessous, récopier le nom en mettant le bon nom 
 
+<br/>
+
+```{attention}
+Sur l'image, à droite de (Connection: juste après le a18 il y a 2 tirêt "- -", c'est une erreur de ma part).
+```
+
+<br/>
+
 ```{image} images/PrinterName.png
 :width: 700px
 :name: PrinterName
 :align: center
 ```
 
-
 <br/>
 
 Maintenant il faut selectionner **"HP"** et cliquer sur continue (sur l'image si dessous)
 
 ```{attention}
-Il ne faut pas cliquer sur "choisir un fichier ni Add Printer" (sur l'image si dessous)
+Il ne faut pas cliquer sur "choisir un fichier ni Add Printer" 
 ```
 
 ```{image} images/DriverPrinter.png
@@ -1017,7 +1019,7 @@ Il ne faut pas cliquer sur "choisir un fichier ni Add Printer" (sur l'image si d
 
 <br/>
 
-ensiute selectionner le bon driver (celuil qui corespond a votre imprimante donc : pour les HP3015 c'est le p3010 pour le PHM506 c'est le M506, pour le HPM552 c'est le M552 etc...)
+ensuite selectionner le bon driver (celuil qui corespond a votre imprimante donc : pour les HP3015 c'est le p3010 pour le PHM506 c'est le M506, pour le HPM552 c'est le M552 etc...)
 
 
 ```{image} images/DriverSelection.png
@@ -1028,7 +1030,7 @@ ensiute selectionner le bon driver (celuil qui corespond a votre imprimante donc
 
 <br/>
 
-Sur la prochaine fenêtre il faudra changer plusieur petit paramètre pour permettre l'impression recto verso et validé le format de l'impression.
+Sur la prochaine fenêtre il faudra changer plusieur petit paramètre pour permettre l'impression recto verso et valider le format de l'impression.
 
 
 ```{image} images/OptionInstalled.png
@@ -1061,8 +1063,6 @@ Pour acceder a la page suivante il faut cliquer sur "Finishing panel". Ensuite i
 ```{attention}
 Il ne faut surtout pas oublier de cliquer sur SET DEFAULT OPTION pour que les modifications soit sauvegarder.
 ```
-
-<br/>
 
 ```{attention}
 Les imprimante des salles de dessin et de la salle des maîtres utilise des drivers différent car se sont des imprimante cannon et non pas HP comme le reste du gymnase. (sdm-est = c5535/5540), (sdm-ouest et sdm-nord = 6555/6565). Le paramètrage et aussi un peux différent.
