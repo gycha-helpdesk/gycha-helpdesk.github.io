@@ -272,7 +272,7 @@ VLAN :
 
 - 34 = serveur.
 - 48 - 49 = ordinateur personel.
-- 40 = Poste de l'école.
+- 40 = Poste de l'école. (wifi)
 - 38 = Imprimante
 - 32 = materiel infra (switch, etc)
 
@@ -577,9 +577,9 @@ Si vous voyez qu'il n'a pas tout les groupes, appelez votre chez et demandez lui
 
 <br/>
 
-Dans les salles de classes il y a 2 manière don le son fonctionne. 
+Dans les salles de classe il y a 2 manière don le son fonctionne. 
 
-1. La première c'est qu'il  y a dans les salle de classe une / un empli qui permet d'éméttre du son est dans ce cas il n'y a pas besoin d'allumer le beamer mais il faut ce connecter dessu avec soit son ordinateur perso soit avec le mac mini mis a dispotision dans les salle.
+1. La première c'est qu'il  y a dans les salle de classe une / un empli qui permet d'éméttre du son est dans ce cas il n'y a pas besoin d'allumer le beamer mais il faut ce connecter dessu avec soit son ordinateur perso soit avec le mac mini mis a dispotision dans les salle. (si ça ne marche pas il faut vérifier la sortie sur l'empli). en général c'est tablette ou un truc du genre.
 
 Voilà a quoi resemble une / un empli dans une salle de classe.
 
@@ -591,7 +591,7 @@ Voilà a quoi resemble une / un empli dans une salle de classe.
 
 <br/>
 
-2. La deuxième option c'est qu'il n'y a pas d'empli et dans ce cas la il faut allumer le beamer qui vas lui ce connecter automatiquement au haut-parleur qui sont dans les salles de classe et émettre du son.
+2. La deuxième option c'est qu'il n'y a pas d'empli et dans ce cas la il faut allumer le beamer qui vas lui ce connecter automatiquement au haut-parleur qui sont dans les salles de classe et émettre du son. (Si ça ne marche pas il faut aller dans préf systhème, est selectionner la 3ème source : la 1 c'est le mac mini en général c'est marquer interne quelque chose, la 2 c'est la wacom en génléral c'est DTK-des chiffres, du coup il faut selectionner la 3ème).
 
 ### Recherche JAMF 
 
@@ -1092,4 +1092,118 @@ Les imprimante des salles de dessin et de la salle des maîtres utilise des driv
 ```
 
 <br/>
+
+## Ajouter une imprimante sur le serveur et lui attribuer une adresse IPV4 fixe.
+
+<br/>
+
+Pour ajouter une imprimante sur le serveur et lui attribuer une adresse IPV4 fixe est plutôt simple. Avant de commencer vérifier que vous avez accès au serveur DHCP et que vous avez également accès au serveur d'impression. Une fois que c'est bon vous pourrez commencer. Tout d'abord il faut aller sur le serveur d'impression (celuil du millieu). Voir image si dessous. (PrintServe).
+
+<br/>
+
+```{image} images/SRVprinter.png
+:width: 900px
+:name: SRVprinter
+:align: center
+```
+
+<br/>
+
+Une fois que vous êtes connecter au serveur d'impression aller dans la console de management et aller dans l'onglet print management. Normalement vous devriez avoir quelque chose de similaie a la capture d'écran si dessous. Maintenant que vous êtes ici, cliuer sur (Print Serveurs) et ensuite clique droit sur "Printer" puis "add Printer..."
+
+<br/>
+
+```{image} images/Srv_add_printer.png
+:width: 400px
+:name: Srv_add_printer
+:align: center
+```
+
+<br/>
+
+Pour la suite il faut "juste" cliquer sur next - next - nest, c'est assez logique (si vous avez de doute demander a David). A un moment donner par exemple il faut savoir l'adresse IP de l'imprimante que vous voulez rajouter, en bref c'est pas super compliqueé mais si vous avez de doute vous pouvez toujours demander a david. Maintenant que vous l'avez rajouter sur le serveur d'impression il faut lui attribuer une adress IPV4 fixe est pour ce faire il faut aller dans le DHCP.
+
+
+```{attention}
+Si vous esseyer d'aller sur le DHCP qu'il y a sur le serveur AD ça ne vas pas marcher, je sais pas pourquoi. (Il faut demander a David).
+```
+
+Du coup il faut ajouter un "serveur DHCP" sur remote desktop. Pour le faire il y a une marche a suivre quelque pars sur ce site mais je vais vous reéxpliquer comment faire. Il fut vous rendre sur remote desktop, et cliquer sur add PC.
+
+<br/>
+
+```{image} images/AddSRVDHCP.png
+:width: 600px
+:name: AddSRVDHCO
+:align: center
+```
+
+<br/>
+
+Une fois que vous avez cliquer sur "add PC" Il faut juste mettre l'adresse IP du serveur en question et de lui donner un nom cohérent dans mon cas DHCP me convient parfaitement. normalement le reste des paramètre de doit pas être changer, en gros vous laisser les parmètres par défaut mais vérifier quand même par rapport a ce que j'ai mis. 
+
+<br/>
+
+```{image} images/ConfigDHCPServeurToadd.png
+:width: 400px
+:name: ConfigDHCPServeurToadd
+:align: center
+```
+
+<br/>
+
+Maintenant vous devriez le voir apparaître dans la fenêtre sur remote desktop. Cliquer dessus (il nous reste quelque peit réglage a faire).
+
+<br/>
+
+```{image} images/dhcp1.png
+:width: 900px
+:name: dhcp1
+:align: center
+```
+
+<br/>
+
+Une fois ie vous êtes connecter sur votre serveur dchp, Rechercher le/la **"console management"** dans la barre de recherche si elle n'est pas déjà ouverte, puis aller sur **tools > DHCP**. Ensuite dans l'onglet DHCP selectionner **"IPv4"** et ouvrez le dossier **"Scope Imprimantes"** puis cliquer droit sur **"reseervation"**. Ensuite cliquer sur **"New Reservation..."**
+
+<br/>
+
+```{image} images/dhcp2.png
+:width: 500px
+:name: dhcp2
+:align: center
+```
+
+```{image} images/dhcp3.png
+:width: 400px
+:name: dhcp3
+:align: center
+```
+
+<br/>
+
+```{note}
+Si vous voulez mettre une nouvelle imprimnates mai garder le nom de l'ancienne (par exemple quand on remplace une imprimante dans une salle de classe). Vous pouvez il faut juste que dans le paramètre de l'image si dessous vous mettez e même nom.
+```
+
+<br/>
+
+```{image} images/dhcp4.png
+:width: 400px
+:name: dhcp4
+:align: center
+```
+
+<br/>
+
+
+
+
+
+
+
+
+
+
+
 
