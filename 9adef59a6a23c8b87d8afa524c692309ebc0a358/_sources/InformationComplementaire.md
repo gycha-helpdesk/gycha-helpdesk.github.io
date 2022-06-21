@@ -6,11 +6,10 @@ Description:	Information utile et mise a jour du site
 # Information complémentaire
 >Je m'excuse d'avance pour les fautes d'orthographe.
 > Dans cette partie du site je vais vous explique comment mettre à jour le site / rajouter du contenu.
-> En parallèle je vais vous donner plusieur d'informations concernant les pannes que vous pourrez rencontrer et le fonctionnement du réseau de l'école.
-> je vais aussi vous expliquer le fonctionnement de l'usi, la dgnsi, la dgep, la dgo et les outils qui sont à notre disposition. Et plein d'autre chose qui pourrais vous être utile.
+> En parallèle je vais vous donner plusieurs d'informations concernant les pannes que vous pourrez rencontrer et le fonctionnement du réseau de l'école.
+> je vais aussi vous expliquer le fonctionnement de l'usi, la dgnsi, la dgep, la dgo et les outils qui sont à notre disposition. Et plein d'autres choses qui pourrais vous être utiles.
 
 ## Mettre a jour et modifier le site 
-
 
 Tout d'abord il faut que vous puissiez ouvrir les fichiers sur un logiciel de code (j'utiliser visual studio) ensuite il faut que vous vous rendiez dans le finder,
 Dans le dossier "src" du site. c'est dans ce dossier que vous allez soit modifier des fichiers existant soit en rajouter. pour le modifier il suffit d'ouvrir un fichier qui existe déjà et de le modifier.
@@ -60,7 +59,7 @@ EX : pour créer cette page j'ai dû rajouter dans le fichier "_toc.yml" un file
 ```
 <br/>
 
-pour appliquer votre modification il faut exécuter dans le terminal une suite de commandes. Pour ce faire aller dans la barre en haut quand vous êtes sur le fichier que vous voulez modifier puis cliquer sur terminal :
+pour appliquer votre modification il faut exécuter dans le terminal une suite de commandes. Pour ce faire aller dans la barre en haut quand vous êtes sur le fichier que vous voulez modifier puis cliquer sur le terminal :
 
  <br/>
 
@@ -116,7 +115,7 @@ pwd
  Cela vous indique où vous vous trouvez. ensuite pour vous placer au bon endroit (si vous n'êtes pas au bon endroit) il vous suffit de taper "cd" et de glisser le dossier dans lequel vous voulez vous trouver dans le terminal.
 <br/>
 
-Maintenant que vous êtes dans le bon dossier et que vous êtes sur le bon environement (jupyter-book) vous pouvez taper la commande suivante : 
+Maintenant que vous êtes dans le bon dossier et que vous êtes sur le bon environnement (jupyter-book) vous pouvez taper la commande suivante : 
 ```shell
 Jupyter-book build .
 ```
@@ -135,7 +134,7 @@ il suffit de copier le lien qui vous est fourni quand vous tapez la commande bui
 ```
 <br/>
 
-Si vous voulez pouvoir voir vos modifictions en ligne il faut aller sur gitHub desktop pour push toutes les données que vous avez modifiées. Mais avant ça il faut sélectionner le bon dossier.
+Si vous voulez pouvoir voir vos modifications en ligne il faut aller sur gitHub desktop pour push toutes les données que vous avez modifiées. Mais avant ça il faut sélectionner le bon dossier.
 
 <br/>
 
@@ -159,7 +158,7 @@ Une fois que vous êtes sur le bon dossier il faut faire un commmit à la branch
 
 <br/>
 
-une fois que c'est faits il faut cliquer sur push en haut à droite. 
+une fois que c'est fait il faut cliquer sur push en haut à droite. 
 
 <br/>
 
@@ -171,7 +170,7 @@ une fois que c'est faits il faut cliquer sur push en haut à droite.
 
 <br/>
 
-Ensuite vous sélectionnez le deuxième dossier est vous faites la même chose. Une fois que c'est fait vous aller dans le finder et vous aller sur le dossier "src > build > html" et vous copier l'intégralité du dossier.
+Ensuite vous sélectionnez le deuxième dossier et vous faites la même chose. Une fois que c'est fait vous aller dans le finder et vous aller sur le dossier "src > build > html" et vous copier l'intégralité du dossier.
 
 <br/>
 
@@ -206,7 +205,7 @@ Pour exécuter une commande jamf il suffit de connecter n'importe quel ordinateu
 <br/>
 
 ```{Attention}
-Pour que la commande fonctionne correctement il faut l'éxécuter plusieurs fois. Parce que il y a beaucoup de règles qui sont éxécutées en même temps est certaine règle dépendent d'autres règle. Du coup il est possible que l'exécuter une seule fois ne suffise pas.
+Pour que la commande fonctionne correctement il faut l'exécuter plusieurs fois. Parce qu'il y a beaucoup de règles qui sont exécutées en même temps est certaine règle dépendent d'autres règles. Du coup il est possible que l'exécuter une seule fois ne suffise pas.
 ```
 <br/>
 
@@ -215,7 +214,7 @@ sudo jamf policy
 ```
 <br/>
 
-si vous voulez apeller un règle précisement :
+si vous voulez appeler une règle précisément :
 
 ```shell
 sudo jamf policy -event NomDeLaRegle
@@ -224,6 +223,8 @@ sudo jamf policy -event NomDeLaRegle
 
 ```{Attention}
 il ne faut pas tapez exactement le nom de la regle. Il faut taper l'événement personnalisé de la règle (l'encadré en vert). (En général c'est le nom de la règle). Pour vérifier si le nom de la règle est celui de son événement personnalisé sont les mêmes il suffit de cliquer sur la règle.
+
+
 ```
 
 <br/>
@@ -264,7 +265,7 @@ Pour configurer un ordinateur a prêté il faut commencer en lui [installant](ht
 
 <br/>
 
-Puis appliquer les règles de jamf (soudo Jamf policy). Il faut vérifier que dans les applications l'ordinateur a bien Outlook, Teams, Word, etc. Une fois que vous avez faits toutes ces étapes il ne reste plus qu'a créé un compte admin (user : adminl et Mdp : Gym _09). Il ne faut pas oublier son compte (un compte utilisateur) et modifier dans les teams le fichier invantaire en classifiant l'ordinateur par rapport a son nom.
+Puis appliquer les règles de jamf (soudo Jamf policy). Il faut vérifier que dans les applications l'ordinateur a bien Outlook, Teams, Word, etc. Une fois que vous avez fait toutes ces étapes il ne reste plus qu'a créé un compte admin (user : adminl et Mdp : Gym _09). Il ne faut pas oublier son compte (un compte utilisateur) et modifier dans les teams le fichier inventaire en classifiant l'ordinateur par rapport a son nom.
 
 ## Shéma réseau des salles de classe en général
 
@@ -332,7 +333,7 @@ Le port HDMI "output" c'est le câble HDMI qui relie le beamer (il sert de sorti
 <br/>
 
 ```{note}
-Sur le Mac mini ce n'est pas compliqué même s'il en donne l'impression. Tout à gauche c'est l'alim du mac mini, ensuite c'est le câble réseau donc internet (sur la photo c'est le câble rouge). Après tout le reste est relié ensemble jusqu'au même câble. Sur ce même câble il y a le câble HDMI du mac mini, un câble USB(il sert à relier les ports USB de la Wacom au mac mini s'il y en a) et pour finir l'alim de la Wacom est tous ces câbles est réuni en un seul est il est connecter a la wacom.
+Sur le mac mini ce n'est pas compliqué même s'il en donne l'impression. Tout à gauche c'est l'alim du mac mini, ensuite c'est le câble réseau donc internet (sur la photo c'est le câble rouge). Après tout le reste est relié ensemble jusqu'au même câble. Sur ce même câble il y a le câble HDMI du mac mini, un câble USB(il sert à relier les ports USB de la Wacom au mac mini s'il y en a) et pour finir l'alim de la Wacom est tous ces câbles est réuni en un seul est il est connecter a la wacom.
 ```
 <br/>
 
@@ -464,7 +465,7 @@ Les écoles post obligatoire ont des rabais immenses sur les licences, le matér
 ```
 <br/>
 
-Pour dépanner les imprimantes en général c'est parce que la personne a mal tapé son mot de passe du coup il faut réafficher le pop-up et pour ça il faut soit relancer une impression soit cliquer en bas à gauche de l'écrant ensuite il faut cliquer sur la petite flèche et normalement ça réaffichera le pop-up.
+Pour dépanner les imprimantes en général c'est parce que la personne a mal tapé son mot de passe du coup il faut réafficher le pop-up et pour ça il faut soit relancer une impression soit cliquer en bas à gauche de l'écran ensuite il faut cliquer sur la petite flèche et normalement ça réaffichera le pop-up.
 
 <br/>
 
@@ -480,7 +481,7 @@ Si rien de tout ça ne marche alors vous pouvez aussi redémarrer le serveur d'i
 
 <br/>
 
-si le redemarrer ne marche pas non plus vous pouvez aller dans "tools" puis "print management". Ensuite cliquer sur "allPrinter". Dans cette interface vous pouvez régler plusieur chose notament supprimer les impression en file d'attente, etc...
+si le redémarrer ne marche pas non plus vous pouvez aller dans "tools" puis "print management". Ensuite cliquer sur "All Printer". Dans cette interface vous pouvez régler plusieurs choses notamment supprimer les impressions en file d'attente, etc...
 
 <br/>
 
@@ -496,7 +497,7 @@ si le redemarrer ne marche pas non plus vous pouvez aller dans "tools" puis "pri
 
 aller dans imprimantes et scanners.
 
-ensuite cliquer sur le petit **+** . Ensuite clique droit sur la barre puis selectionner personaliser. ensuite il faut glisser déposer les option avancer dans la barre de recherhce 
+ensuite cliquer sur le petit **+** . Ensuite clique droit sur la barre puis sélectionner personnaliser. ensuite il faut glisser déposer les options avancées dans la barre de recherche 
 
 <br/>
 
@@ -518,7 +519,7 @@ Parfais ensuite il faut configurer comme suit :
 
 <br/>
 
-et voilà il faut juste cliquer sur ajouter et vous avze rajouter l'imprimante du bureau.
+et voilà il faut juste cliquer sur ajouter et vous avez rajouté l'imprimante du bureau.
 
 ### Problème d'affichage quand on créé une section sur le site
 
@@ -536,12 +537,12 @@ Quand on créé une section pour la première fois si vous ne voulez pas qu'il y
 <br/>
 
 ```{note}
-Pour pouvoir mettre un gif sur le site j'ai utiliser un site de [conversion](https://cloudconvert.com/) de fichier .mov en .gif (les fichiers .mov c'est les fichier quand tu fais une vidéo de ton écran). Ensuite tu les place dans le dossier images du site et voilà
+Pour pouvoir mettre un gif sur le site j'ai utilisé un site de [conversion](https://cloudconvert.com/) de fichier .mov en .gif (les fichiers .mov c'est les fichiers quand tu fais une vidéo de ton écran). Ensuite tu les places dans le dossier images du site et voilà
 ```
 
 <br/>
 
-il faut impérativement executer la commande suivante si vous voulez régler le problème : 
+il faut impérativement exécuter la commande suivante si vous voulez régler le problème : 
 
 ```shell
 jupyter-book clean .
@@ -552,7 +553,7 @@ pour que la commande fonctionne il faut que vous soyez dans le bon dossier (celu
 ```
 
 ```{Attention}
-Ensuite il faut absolument executer la commande : 
+Ensuite il faut absolument exécuter la commande : 
 ```
 
 ```shell
@@ -573,13 +574,14 @@ En générale un élève dervais avoir tout ces groupes :
 
 <br/>
 
-Si vous voyez qu'il n'a pas tout les groupes, appelez votre chez et demandez lui si vous pouvez rajouter les groupes mamnquant manuellement.
+Si vous voyez qu'il n'a pas tous les groupes, appelez votre maître de stage et demandez-lui si vous pouvez rajouter les groupes manquant manuellement.
 
 <br/>
 
-Dans les salles de classe il y a 2 manière don le son fonctionne. 
+Dans les salles de classe il y a 2 manières de comment le son fonctionne. 
 
-1. La première c'est qu'il  y a dans les salle de classe une / un empli qui permet d'éméttre du son est dans ce cas il n'y a pas besoin d'allumer le beamer mais il faut ce connecter dessu avec soit son ordinateur perso soit avec le mac mini mis a dispotision dans les salle. (si ça ne marche pas il faut vérifier la sortie sur l'empli). en général c'est tablette ou un truc du genre.
+1. La première c'est qu'il  y a dans les salles de classe une / un empli qui permet d'émettre du son et dans ce cas il n'y a pas besoin d'allumer le beamer mais il faut se connecter dessus avec soi ordinateur perso soit avec le mac mini mais a disposition dans les salles. (si ça ne marche pas il faut vérifier la source sur l'emplir). en général c'est tablette ou un truc du genre. Si ça ne marche pas aller dans les préférence et vérifier que la sortie soit la bonne
+
 
 Voilà a quoi resemble une / un empli dans une salle de classe.
 
@@ -591,12 +593,12 @@ Voilà a quoi resemble une / un empli dans une salle de classe.
 
 <br/>
 
-2. La deuxième option c'est qu'il n'y a pas d'empli et dans ce cas la il faut allumer le beamer qui vas lui ce connecter automatiquement au haut-parleur qui sont dans les salles de classe et émettre du son. (Si ça ne marche pas il faut aller dans préf systhème, est selectionner la 3ème source : la 1 c'est le mac mini en général c'est marquer interne quelque chose, la 2 c'est la wacom en génléral c'est DTK-des chiffres, du coup il faut selectionner la 3ème).
+2. La deuxième option c'est qu'il n'y a pas d'empli et dans ce cas la il faut allumer le beamer qui va lui se connecter automatiquement au haut-parleur qui est dans les salles de classe et émettre du son. (Si ça ne marche pas il faut aller dans préface système, est sélectionné la 3ème source : la 1 c'est le mac mini en général c'est marquer interne quelque chose, la 2 c'est la Wacom en général c'est DTK-des chiffres, du coup il faut sélectionner la 3ème).
 
 ### Recherche JAMF 
 
 
-Si vous lancez jamf pour **la première fois** il est possible que vous **ne pourrez pas effectuer des recherches** quand vous êtes sur "Ordinateur". Pour résoudre le problème c'est très simple.
+Si vous lancez jamf pour **la première fois** il est possible que vous **ne puissiez pas effectuer des recherches** quand vous êtes sur "ordinateur". Pour résoudre le problème c'est très simple.
 
 Aller sur Jamf, ensuite cliquer sur votre profil
 
@@ -610,7 +612,7 @@ Aller sur Jamf, ensuite cliquer sur votre profil
 
 <br/>
 
-Ensuite il faut aller sur préférence de recherche est modifier si vous êtes en "Exact match" en "contains"
+Ensuite il faut aller sur préférence de recherche est modifié si vous êtes en "Exact match" en "contains"
 
 <br/>
 
@@ -625,12 +627,12 @@ Ensuite il faut aller sur préférence de recherche est modifier si vous êtes e
 ### DashBoard jamf
 
 
-Quand vous vous connecter a jamf vous arriver par défaut sur le dash board. Sur cette il sera afficher toutes les règles que vous avez en "favoris" cela permet de suivre leur avancement, est d'observer graphiquement plusieur information. 
+Quand vous vous connectez à Jam vous arriver par défaut sur le dash board. Sur cette fenêtre il sera affiché toutes les règles que vous avez en "favoris" cela permet de suivre leur avancement, est d'observer graphiquement plusieurs informations. 
 
 <br/>
 
 ```{note}
-Vous pouvez mettre plusieur règles, et pour voir plus d'information il suffis de cliquer sur la règles.
+Vous pouvez mettre plusieurs règles, et pour voir plus d'informations il suffit de cliquer sur la règle.
 ```
 
 <br/>
@@ -643,7 +645,7 @@ Vous pouvez mettre plusieur règles, et pour voir plus d'information il suffis d
 
 <br/>
 
-Pour mettre une règles en "favoris", il faut que vous recherchiez votre règles. Une fois que vous êtes dessu **en haut a droite** il y a une case a cocher, il suffis de la cocher est quand vous retiurnerez au dashboard votre règles serra afficher.
+Pour mettre une règle en "favoris", il faut que vous recherchiez votre règle. Une fois que vous êtes dessus **en haut à droite** il y a une case à cocher, il suffit de la cocher est quand vous retournerez au dashboard votre règle serra afficher.
 
 
 ```{image} images/CheckBoxFavorisJamf.png
@@ -665,7 +667,7 @@ Pour commencer il faut aller sur teams.  Dans l'équipe GychaIT > ensuite dans l
 
 <br/>
 
-Ensuite faites les modifications que vous voulez. Une fois fini il faut mettre se fichier sur le serveur en remplacant l'autre fichier déjà existant : 
+Ensuite faites les modifications que vous voulez. Une fois fini il faut mettre ce fichier sur le serveur en remplaçant l'autre fichier déjà existant : 
 
 ```{image} images/RootSRVinv.png
 :width: 900px
@@ -675,11 +677,11 @@ Ensuite faites les modifications que vous voulez. Une fois fini il faut mettre s
 
 <br/>
 
-Ensuite il faut lancer le script pyton qui vas renter les données dans un autre fichier.
+Ensuite il faut lancer le script python qui va renter les données dans un autre fichier.
 
 <br/>
 
-Normalement dans votre terminal vous dévriez avoir quelquechose de similaire.
+Normalement dans votre terminal vous devriez avoir quelque chose de similaire.
 
 ```{image} images/ScriptInv.png
 :width: 800px
@@ -693,7 +695,7 @@ Normalement dans votre terminal vous dévriez avoir quelquechose de similaire.
 Le script pyton est au même endroit que le fichier excel inventaire. Pour le lancer il faut aller dans le terminal, aller au même endroit ou le script est en utilisant : (cd leCheminOuSeTrouveLeScript)
 ```
 
-une fois que vous êtes dans le bon dossier il faut executer cette commande :
+une fois que vous êtes dans le bon dossier il faut exécuter cette commande :
 
 ```shell
 python3 LeNomDuScript
@@ -701,7 +703,7 @@ python3 LeNomDuScript
 
 <br/>
 
-Pour vérifier que vos changement on bien été effectuer il faut aller sur le seveur et regarder le fichier
+Pour vérifier que vos changements on bien est effectué il faut aller sur le seveur et regarder le fichier
 
 
 ```{image} images/RootVerification.png
@@ -714,11 +716,12 @@ Pour vérifier que vos changement on bien été effectuer il faut aller sur le s
 ## Mettre en ligne des vidéo sur YouTube / Imovie
 
 
-Avant de commancer il vous faut Imovie et une châine YouTube.
+Avant de commencer il vous faut Imovie et une chaîne Youtube.
 
 <br/>
 
-Sur Imovie pour créé un projet il faut cliquer sur le + et ensuite cliquer sur film. **(si quand vous ouvrez Imovie pour la première fois et que vous nêtes pas sur la bonne fenêtre il faut cliquer sur Projet en haut a gauche de l'écrant)**.
+Sur Imovie pour créer un projet il faut cliquer sur le + et ensuite cliquer sur le film. **(si quand vous ouvrez Imovie pour la première fois et que vous n'êtes pas sur la bonne fenêtre il faut cliquer sur projet en haut à gauche de l'écrant)**.
+
 
 ```{image} images/CreationFilmImovie.png
 :width: 300px
@@ -733,26 +736,25 @@ Même si vous avez créé un nouveau projet vous pourrez quand même modifier le
 ```
 
 ```{note}
-Il y a aussi une banque d'image et de son
+Il y a aussi une banque d'images et de son
 ```
 
-1. Ici vous retrouverez tout les projet vidéo que vous avez.
+1. Ici vous retrouverez tous les projets vidéo que vous avez.
 
 
 2. C'est le curseur qui permet que quand vous lancer la vidéo elle se lance la ou le curseur et placé.
 
 
-3. Ici vous verrez tout les fichier son ou image ou je ne sais quoi que vous aurez soit drag and drop soit importer. Vous pouvez faire beaucoup de chose avec un clique droit, comment par exemple ajuster le volume du son ou encore couper la vidéo ou mettre des transition. bref il y a beaucoup de posibilité. Vous pouvez même accelerer la vidéo.
+3. Ici vous verrez tous les fichiers son ou image ou je ne sais quoi que vous aurez soit drag and drop soit importé. Vous pouvez faire beaucoup de choses avec un clique droite, comment par exemple ajuster le volume du son ou encore couper la vidéo ou mettre des transitions. bref il y a beaucoup de possibilités. Vous pouvez même accélérer la vidéo.
 
 
 4. Fichier son
 
 
-5. Cette règles permet de modifier **la taille d'affichage** des fichiers audio et vidéo.
+5. Cette règle permet de modifier **la taille d'affichage** des fichiers audio et vidéo.
 
 
-6. Quand vous double cliquer sur une image vous pouvez choisir un point de départ et un point d'arriver pour pouvoir créé des efet pendant la vidéo. (des effet de zoom ou de effet dedroit a gauche)
-
+6. Quand vous double cliquer sur une image vous pouvez choisir un point de départ et un point d'arrivée pour pouvoir créer des effets pendant la vidéo. (Des effets de zoom ou d'effet de droite à gauche)
 
 ```{image} images/InterfaceImovie.png
 :width: 900px
@@ -764,7 +766,7 @@ Il y a aussi une banque d'image et de son
 
 Une fois que vous avez fini votre projet il faut que vous cliquiez sur **"projets"** en haut a gauche. Pour que vous lui donniez un nom.
 
-Ensuite pour télécharger votre vidéo il faut cliquer sur les 3 petit point **"..."** ensuite sur **"partager le projet"**, et pour finir sur **"fichier"**
+Ensuite pour télécharger votre vidéo il faut cliquer sur les 3 petits point **"..."** ensuite sur **"partager le projet"**, et pour finir sur **"fichier"**
 
 
 ```{image} images/ImportImovieFilm.png
@@ -775,8 +777,7 @@ Ensuite pour télécharger votre vidéo il faut cliquer sur les 3 petit point **
 
 <br/>
 
-
-Ensuite une fenêtre apparaitra avec plusieur option je vous conseil de mettre la résolution a 720p (ça suffit largement). Le reste a vous de jugé si vous le voulez ou pas.
+Ensuite une fenêtre apparaîtra avec plusieurs options je vous conseille de mettre la résolution à 720p (ça suffit largement). Le reste à vous de jugé si vous le voulez ou pas.
 
 ```{image} images/ReglImovieFilm.png
 :width: 600px
@@ -786,9 +787,9 @@ Ensuite une fenêtre apparaitra avec plusieur option je vous conseil de mettre l
 
 <br/>
 
-Voilà vous savez plus ou moin utiliser Imovie. Maintenant on vas passer a la mise en ligne de la vidéo sur YouTube.
+Voilà vous savez plus ou moins utiliser Imovie. Maintenant on va passer à la mise en ligne de la vidéo sur Youtube.
 
-Tout d'abrod il faut que vous vous rendiez sur YouTube Studio (ça permet de gérer vos chaîne YT). Quand vous êtes dessus il faut que vous appuyer sur le menu à gauche **"Tableau de bord"**. Puis **"importer des vidéos**.
+Tout d'abrod il faut que vous vous rendiez sur Youtube Studio (ça permet de gérer vos chaînes YT). Quand vous êtes dessus il faut que vous appuyer sur le menu à gauche **"Tableau de bord"**. Puis **"importer des vidéos**.
 
 
 ```{image} images/YTStudio.png
@@ -799,10 +800,10 @@ Tout d'abrod il faut que vous vous rendiez sur YouTube Studio (ça permet de gé
 
 <br/>
 
-Ensuite vous selectionner votre fichier que Imovie vous à fournis puis vous le drag and droper ou alors vous aller le chercher au bon emplacement.
-Une fois que vous avez selectionner le bon fichier vous arriverez sur cette fenêtre :
+Ensuite vous sélectionner votre fichier qu'Imovie vous a fourni puis vous le drag and droper ou alors vous aller le chercher au bon emplacement.
+Une fois que vous avez sélectionné le bon fichier vous arriverez sur cette fenêtre :
 
-sur cette fenêtre vous aurrez 2 chose a changer la première c'est que le vidéo n'est pas conçue pour des enfant (sauf si c'est le cas). Ensuite vous cliquer sur **"Plus"**
+sur cette fenêtre vous aurez 2 choses a changer la première c'est que la vidéo n'est pas conçue pour des enfants (sauf si c'est le cas). Ensuite vous cliquez sur **"Plus"**
 
 <br/>
 
@@ -814,7 +815,8 @@ sur cette fenêtre vous aurrez 2 chose a changer la première c'est que le vidé
 
 <br/>
 
-Ensuite vous dessendez tout en bas de la page et vous selectionner Desactivier les commantaire. (je fais ça utiquement pour éviter les mauvaise surprise du genre troll ou insulte envers la personne qui parle).
+Ensuite vous descendez tout en bas de la page et vous sélectionner Desactivier les commentaires. (je fais ça uniquement pour éviter les mauvaises surprises du genre troll ou insulte envers la personne qui parle).
+
 
 ```{image} images/YTComm.png
 :width: 700px
@@ -824,10 +826,11 @@ Ensuite vous dessendez tout en bas de la page et vous selectionner Desactivier l
 
 <br/>
 
-Après ça vous attendez que votre vidéo finisse de charger et que YouTube finisse de vérifier que votre vidéo est conforme a leur règles. (cette opération peut prendre quelques minnutes). Ensuite vous cliquer sur suivant, suivant,suivant jusqu'a arriver au dernier point. Et vous cocher la case **"non répértoriée"**.
+Après ça vous attendez que votre vidéo finisse de charger et que Youtube finisse de vérifier que votre vidéo est conforme à leurs règles. (cette opération peut prendre quelques minutes). Ensuite vous cliquez sur le suivant, suivant, suivant jusqu'à arriver au dernier point. Et vous cochez la case **"non répertoriée"**.
+
 
 ```{note}
-Cela permet de ne pas retrouver la vidéo quand vous effecturez une recherche sur youtube.
+Cela permet de ne pas retrouver la vidéo quand vous effectuez une recherche sur Youtube.
 ```
 
 <br/>
@@ -840,7 +843,8 @@ Cela permet de ne pas retrouver la vidéo quand vous effecturez une recherche su
 
 <br/>
 
-Cliquer sur terminer et revenez sur la page de YouTube Studio, dans le menu a gauche selectionner **"Contenu de la chaîne"** et vous pourez effectivement voir que votre vidéo a été mise en ligne et quelle est en mode **"non répértoriée"**.
+Cliquer sur terminer et revenez sur la page de Youtube Studio, dans le menu a gauche sélectionner **"Contenu de la chaîne"** et vous pourrez effectivement voir que votre vidéo a été mise en ligne et quelle est en mode **"non répertoriée"**.
+
 
 ```{image} images/YTVerification.png
 :width: 700px
@@ -868,7 +872,7 @@ pip install pyppeteer
 ```
 
 
-Vous devrez peut-être également installer cet ensemble de packages ci-dessous (sur les systèmes * nix (dans le doute je l'ai installer)):
+Vous devrez peut-être également installer cet ensemble de packages ci-dessous (sur les systèmes * nix (dans le doute je l'ai installé)):
 
 ```shell
 gconf-service
@@ -925,7 +929,8 @@ ou
 jb build . --builder pdfhtml
 ```
 
-Voilà ensuite rendez-vous dans vore dossier src > build > PDF et vous y retrouverez le pdf
+Voilà ensuite rendez-vous dans vore dossier Src > build > PDF et vous y retrouverez le PDF
+
 
 ```{image} images/rootToPDF.png
 :width: 800px
@@ -937,12 +942,12 @@ Voilà ensuite rendez-vous dans vore dossier src > build > PDF et vous y retrouv
 
 ```{note}
 > - Tout d'abord il faut aller sur un navigateur est tapez l'adresse suivante : localhost:631
-> - voici la commande pour afficher l'interface graphique de cups et potentiellement régler des problème de connexion au site : cupsctl WebInterface=yes 
-> - Attention pour pouvoir rajouter des imprimantes ou simplement utiliser cups il faut que pouvoire ce connecter sur votre machine avec un compte qui a un mot de passe. Sinon vous serez bloquer, car cips demande le mdp du user de la session.
+> - voici la commande pour afficher l'interface graphique de cups et potentiellement régler des problèmes de connexion au site : cupsctl WebInterface=yes 
+> - Attention pour pouvoir rajouter des imprimantes où simplement utiliser cups il faut que pour pouvoir se connecter sur votre machine avec un compte qui a un mot de passe. Sinon vous serez bloqué, car cips demande le mdp du user de la session.
 ```
 <br/>
 
-Normalement vous devrez arriver sur cette page (voir si dessous). Si c'est le cas cliquer sur **"administration"**
+Normalement vous devrez arriver sur cette page (voir ci-dessous). Si c'est le cas cliquer sur **"administration"**
 
 <br/>
 
@@ -953,7 +958,7 @@ Normalement vous devrez arriver sur cette page (voir si dessous). Si c'est le ca
 ```
 <br/>
 
-Une fois que vous avez cliquer sur **"administration"**. La page si dessous devrais s'afficher. Une fois que vous êtes sur cette pages il vous faut cliquer sur Add printer.
+Une fois que vous avez cliqué sur **"administration"**. La page ci-dessous devrait s'afficher. Une fois que vous êtes sur cette page il vous faut cliquer sur Add printer.
 
 ```{image} images/administrationPage.png
 :width: 700px
@@ -962,7 +967,7 @@ Une fois que vous avez cliquer sur **"administration"**. La page si dessous devr
 ```
 
 ```{note}
-Si vous cliquer sur Manage Printer vous pouvez modifier les paramètres que nous allons modifier lors de la création et vous pourrez voir toutes les imprimantes que vous avez rajouter.
+Si vous cliquez sur manage Printer vous pouvez modifier les paramètres que nous allons modifier lors de la création et vous pourrez voir toutes les imprimantes que vous avez rajoutées.
 ```
 
 <br/>
@@ -973,11 +978,11 @@ Si vous cliquer sur Manage Printer vous pouvez modifier les paramètres que nous
 :align: center
 ```
 
-Selectionner **"LPD/LR Host or Printer"** ensuite cliquer sur **"continue"**.
+Selectionné **"LPD/LR Host or Printer"** ensuite cliquer sur **"continue"**.
 
 <br/>
 
-Ensuite vous arriverez sur cette fenêtre. Ici il faut notez la même chose qu'avant donc : **lpd://gycha-srv-prt01/gycham- La salle de l'imprimante - le driver utiliser**. Puis cliquer sur continue.
+Ensuite vous arriverez sur cette fenêtre. Ici il faut noter la même chose qu'avant donc : **lpd://gycha-srv-prt01/gycham- La salle de l'imprimante - le driver utiliser**. Puis cliquer sur continue.
 
 ```{image} images/AdressPrinter.png
 :width: 700px
@@ -987,12 +992,12 @@ Ensuite vous arriverez sur cette fenêtre. Ici il faut notez la même chose qu'a
 
 <br/>
 
-Sur l'image si dessous, récopier le nom en mettant le bon nom 
+Sur l'image ci-dessous, recopier le nom en mettant le bon nom 
 
 <br/>
 
 ```{attention}
-Sur l'image, à droite de (Connection: juste après le a18 il y a 2 tirêt "- -", c'est une erreur de ma part).
+Sur l'image, à droite de (Connexion: juste après l'a18 il y a 2 tirets "- -", c'est une erreur de ma part).
 ```
 
 <br/>
@@ -1005,7 +1010,8 @@ Sur l'image, à droite de (Connection: juste après le a18 il y a 2 tirêt "- -"
 
 <br/>
 
-Maintenant il faut selectionner **"HP"** et cliquer sur continue (sur l'image si dessous)
+Maintenant il faut sélectionner **"HP"** et cliquer sur continue (sur l'image ci-dessous)
+
 
 ```{attention}
 Il ne faut pas cliquer sur "choisir un fichier ni Add Printer" 
@@ -1019,7 +1025,7 @@ Il ne faut pas cliquer sur "choisir un fichier ni Add Printer"
 
 <br/>
 
-ensuite selectionner le bon driver (celuil qui corespond a votre imprimante donc : pour les HP3015 c'est le p3010 pour le PHM506 c'est le M506, pour le HPM552 c'est le M552 etc...)
+ensuite sélectionner le bon driver (celuil qui correspond à votre imprimante donc : pour les HP3015 c'est le p3010 pour le PHM506 c'est le M506, pour le HPM552 c'est le M552 etc...)
 
 
 ```{image} images/DriverSelection.png
@@ -1030,7 +1036,7 @@ ensuite selectionner le bon driver (celuil qui corespond a votre imprimante donc
 
 <br/>
 
-Sur la prochaine fenêtre il faudra changer plusieur petit paramètre pour permettre l'impression recto verso et valider le format de l'impression.
+Sur la prochaine fenêtre il faudra changer plusieurs petits paramètres pour permettre l'impression recto-verso et valider le format de l'impression.
 
 
 ```{image} images/OptionInstalled.png
@@ -1038,7 +1044,8 @@ Sur la prochaine fenêtre il faudra changer plusieur petit paramètre pour perme
 :name: OptionInstalled
 :align: center
 ```
-sur l'image si dessus il faut cocher "installé" pour "l'accessoire d'impression recto verso". ensuite cliquer siur General (le bouton et en bleu).
+sur l'image ci-dessus il faut cocher "installé" pour "l'accessoire d'impression recto-verso". ensuite cliquer sur Général (le bouton est en bleu).
+
 
 <br/>
 
@@ -1048,11 +1055,11 @@ sur l'image si dessus il faut cocher "installé" pour "l'accessoire d'impression
 :align: center
 ```
 
-sur l'image si dessus il faut selectionner **"Reliure sur bord long"** pour "recto verso" et si ce n'est pas déjà fais il faut selectionner **"a4"** dans "format de page".
+sur l'image ci-dessus il faut sélectionner **"Reliure sur bord long"** pour "recto-verso" et si ce n'est pas déjà fait il faut sélectionner **"à4"** dans "format de page".
 
 <br/>
 
-Pour acceder a la page suivante il faut cliquer sur "Finishing panel". Ensuite il faut modifier "le papier pour brochure" et le mettre en **"a4"**
+Pour accéder à la page suivante il faut cliquer sur "Finishing panel". Ensuite il faut modifier "le papier pour brochure" et le mettre en **"a4"**
 
 ```{image} images/OptionFinition.png
 :width: 700px
@@ -1061,11 +1068,11 @@ Pour acceder a la page suivante il faut cliquer sur "Finishing panel". Ensuite i
 ```
 
 ```{attention}
-Il ne faut surtout pas oublier de cliquer sur SET DEFAULT OPTION pour que les modifications soit sauvegarder.
+Il ne faut surtout pas oublier de cliquer sur SET DEFAULT OPTION pour que les modifications soient sauvegardées.
 ```
 
 ```{attention}
-Les imprimante des salles de dessin et de la salle des maîtres utilise des drivers différent car se sont des imprimante cannon et non pas HP comme le reste du gymnase. (sdm-est = c5535/5540), (sdm-ouest et sdm-nord = 6555/6565). Le paramètrage et aussi un peux différent.
+Les imprimantes des salles de dessin et de la salle des maîtres utilise des drivers différents car ce sont des imprimantes cannon et non pas HP comme le reste du gymnase. (Sdm-est = c5535/5540), (sdm-ouest et sdm-nord = 6555/6565). Le paramétrage et aussi un peu différent.
 ```
 
 <br/>
@@ -1097,7 +1104,7 @@ Les imprimante des salles de dessin et de la salle des maîtres utilise des driv
 
 <br/>
 
-Pour ajouter une imprimante sur le serveur et lui attribuer une adresse IPV4 fixe est plutôt simple. Avant de commencer vérifier que vous avez accès au serveur DHCP et que vous avez également accès au serveur d'impression. Une fois que c'est bon vous pourrez commencer. Tout d'abord il faut aller sur le serveur d'impression (celuil du millieu). Voir image si dessous. (PrintServe).
+Pour ajouter une imprimante sur le serveur et lui attribuer une adresse IPV4 fixe est plutôt simple. Avant de commencer vérifier que vous avez accès au serveur DHCP et que vous avez également accès au serveur d'impression. Une fois que c'est bon vous pourrez commencer. Tout d'abord il faut aller sur le serveur d'impression (celuil du milieu). Voir image ci-dessous. (PrintServe).
 
 <br/>
 
@@ -1109,7 +1116,7 @@ Pour ajouter une imprimante sur le serveur et lui attribuer une adresse IPV4 fix
 
 <br/>
 
-Une fois que vous êtes connecter au serveur d'impression aller dans la console de management et aller dans l'onglet print management. Normalement vous devriez avoir quelque chose de similaie a la capture d'écran si dessous. Maintenant que vous êtes ici, cliuer sur (Print Serveurs) et ensuite clique droit sur "Printer" puis "add Printer..."
+Une fois que vous êtes connecté au serveur d'impression aller dans la console de management et aller dans l'onglet print management. Normalement vous devriez avoir quelque chose de similaire à la capture d'écran ci-dessous. Maintenant que vous êtes ici, cliquer sur (Print Serveurs) et ensuite cliquez droit sur "Printer" puis "add Printer..."
 
 <br/>
 
@@ -1121,14 +1128,14 @@ Une fois que vous êtes connecter au serveur d'impression aller dans la console 
 
 <br/>
 
-Pour la suite il faut "juste" cliquer sur next - next - nest, c'est assez logique (si vous avez de doute demander a David). A un moment donner par exemple il faut savoir l'adresse IP de l'imprimante que vous voulez rajouter, en bref c'est pas super compliqueé mais si vous avez de doute vous pouvez toujours demander a david. Maintenant que vous l'avez rajouter sur le serveur d'impression il faut lui attribuer une adress IPV4 fixe est pour ce faire il faut aller dans le DHCP.
+Pour la suite il faut "juste" cliquer sur next - next - next, c'est assez logique (si vous avez des doutes demander à David par précaution). À un moment donné par exemple il faut savoir ladresse IP de l'imprimante que vous voulez rajouter, en bref ce n'est pas super-compliquée mais si vous avez de doute vous pouvez toujours demander à David. Maintenant que vous l'avez rajouté sur le serveur d'impression il faut lui attribuer une adresse IPV4 fixe est pour ce faire il faut aller dans le DHCP.
 
 
 ```{attention}
-Si vous esseyer d'aller sur le DHCP qu'il y a sur le serveur AD ça ne vas pas marcher, je sais pas pourquoi. (Il faut demander a David).
+Si vous essayer d'aller sur le DHCP qu'il y a sur le serveur AD ça ne va pas marcher, je sais pas pourquoi. (Il faut demander à David pourquoi ça ne marche pas).
 ```
 
-Du coup il faut ajouter un "serveur DHCP" sur remote desktop. Pour le faire il y a une marche a suivre quelque pars sur ce site mais je vais vous reéxpliquer comment faire. Il fut vous rendre sur remote desktop, et cliquer sur add PC.
+Du coup il faut ajouter un "serveur DHCP" sur remonte desktop. Pour le faire il y a une marche à suivre quelques pars sur ce site mais je vais vous réexpliquer comment faire. Il fut vous rendre sur la remonte desktop, et cliquer sur add PC.
 
 <br/>
 
@@ -1140,7 +1147,7 @@ Du coup il faut ajouter un "serveur DHCP" sur remote desktop. Pour le faire il y
 
 <br/>
 
-Une fois que vous avez cliquer sur "add PC" Il faut juste mettre l'adresse IP du serveur en question et de lui donner un nom cohérent dans mon cas DHCP me convient parfaitement. normalement le reste des paramètre de doit pas être changer, en gros vous laisser les parmètres par défaut mais vérifier quand même par rapport a ce que j'ai mis. 
+Une fois que vous avez cliqué sur "add PC" Il faut juste mettre l'adresse IP du serveur en question et de lui donner un nom cohérent dans mon cas DHCP me convient parfaitement. normalement le reste des paramètres ne doit pas être changé, en gros vous laisser les paramètres par défaut mais vérifier quand même par rapport à ce que j'ai mis. 
 
 <br/>
 
@@ -1152,7 +1159,7 @@ Une fois que vous avez cliquer sur "add PC" Il faut juste mettre l'adresse IP du
 
 <br/>
 
-Maintenant vous devriez le voir apparaître dans la fenêtre sur remote desktop. Cliquer dessus (il nous reste quelque peit réglage a faire).
+Maintenant vous devriez le voir apparaître dans la fenêtre sur remote desktop. Cliquer dessus (il nous reste quelque petit Réglages à faire).
 
 <br/>
 
@@ -1164,7 +1171,7 @@ Maintenant vous devriez le voir apparaître dans la fenêtre sur remote desktop.
 
 <br/>
 
-Une fois ie vous êtes connecter sur votre serveur dchp, Rechercher le/la **"console management"** dans la barre de recherche si elle n'est pas déjà ouverte, puis aller sur **tools > DHCP**. Ensuite dans l'onglet DHCP selectionner **"IPv4"** et ouvrez le dossier **"Scope Imprimantes"** puis cliquer droit sur **"reseervation"**. Ensuite cliquer sur **"New Reservation..."**
+Une fois que vous êtes connecté sur votre serveur dchp, rechercher le/la **"console management"** dans la barre de recherche si elle n'est pas déjà ouverte, puis aller sur **tools > DHCP**. Ensuite dans l'onglet DHCP sélectionner **"IPv4"** et ouvrez le dossier **"Scope Imprimantes"** puis cliquer droit sur **"réservation"**. Ensuite cliquer sur **"New Reservation..."**.
 
 <br/>
 
@@ -1183,7 +1190,7 @@ Une fois ie vous êtes connecter sur votre serveur dchp, Rechercher le/la **"con
 <br/>
 
 ```{note}
-Si vous voulez mettre une nouvelle imprimnates mai garder le nom de l'ancienne (par exemple quand on remplace une imprimante dans une salle de classe). Vous pouvez il faut juste que dans le paramètre de l'image si dessous vous mettez e même nom.
+Si vous voulez mettre une nouvelle imprimante mais garder le nom de l'ancienne (par exemple quand on remplace une imprimante dans une salle de classe). Vous pouvez, il faut juste que dans le paramètre de l'image ci-dessous vous mettez e même nom.
 ```
 
 <br/>

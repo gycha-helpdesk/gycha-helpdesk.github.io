@@ -5,15 +5,15 @@ Description:	fonction de base de adobe console et explication.
 -->
 # Adobe
 
-> Ici je vais vous expliquer comment remmettre les liscence adobe a zéro (vous n'aurez normalement jamais a le faire mais c'est bien de savoir on c'est).
-> Je vais vous montrez également comment crée des PKG avec adobe console.
-> et d'autre choses.
+> Ici je vais vous expliquer comment remettre les licences Adobe à zéro (vous n’aurez normalement jamais a le faire mais c’est bien de savoir on sait jamais).
+> Je vais vous montrer également comment crée des PKG avec Adobe console. 
+> et d’autre chose.
 
 
 
 ## Comment rénisialiser les liscence sur adobe console
 
-Pour pouvoir accéder a adobe console (via internet) il faut savoir quel compte utiliser. Pour cela il faut aller sur DGEP passowrd ou l'alternative si il y en a une. Voici le lien pour accéder a DGEP PASSWORD : https://pass.dgep.edu-vaud.ch:9119/
+Pour pouvoir accéder à adobe console (via internet) il faut savoir quel compte utiliser. Pour cela il faut aller sur DGEP passowrd ou l'alternative s'il y en a une. Voici le lien pour accéder à DGEP PASSWORD : https://pass.dgep.edu-vaud.ch:9119/
 
 <br/>
 
@@ -25,7 +25,7 @@ Pour pouvoir accéder a adobe console (via internet) il faut savoir quel compte 
 
 <br/>
 
-Une fois que vous avez cliquer sur le lien connecter vous. Dans mon cas j'utiliser mon compte admin a-jbolli. Ensuite cliquer sur Connexion.
+Une fois que vous avez cliquer sur le lien connecter vous. Dans mon cas j'utilise mon compte admin : a-jbolli. Ensuite cliquer sur Connexion.
 
 <br/>
 
@@ -37,7 +37,7 @@ Une fois que vous avez cliquer sur le lien connecter vous. Dans mon cas j'utilis
 
 <br/>
 
-Une fois que vous êtes connecter, aller dans la barre de recherche et taperz "adobe" ensuite vous aller voir le compte, copier l'adresse puis cliquer sur ce lien : https://adminconsole.adobe.com/
+Une fois que vous êtes connecté, aller dans la barre de recherche et taper "Adobe" ensuite vous aller voir le compte, copier l'adresse puis cliquer sur ce lien : https://adminconsole.adobe.com/
 
 <br/>
 
@@ -57,7 +57,7 @@ Une fois que vous êtes connecter, aller dans la barre de recherche et taperz "a
 
 <br/>
 
-Coller l'adresse mail que vous avez copier juste avant puis cliquer sur "Continuer". copier coller le mot de passe et connecter vous.
+Coller l'adresse mail que vous avez copié juste avant puis cliquer sur "Continuer". copier coller le mot de passe et connectez-vous.
 
 <br/>
 
@@ -81,7 +81,7 @@ Une fois connecter rendez-vous sur "pruduits" pour pouvoir ensuite voir tout ce 
 
 <br/>
 
-Une fois que vous avez réussi a accèder a cette fenêtre cliquer sur les licences par poste (Poste utilisé). Dans mon cas il y en a beaucoup car nous étions entrain de l'installer sur tout les poste des salles d'informatiques du gymnase.
+Une fois que vous avez réussi à accéder à cette fenêtre cliquée sur les licences par poste (Poste utilisé). Dans mon cas il y en a beaucoup car nous étions en train de l'installer sur tous les postes des salles d'informatiques du gymnase.
 
 <br/>
 
@@ -113,7 +113,7 @@ Ensuite cliquer sur "default" pour pouvoir accéder a differents paramètre dont
 
 <br/>
 
-Ensuite cliquer sur les trois petit point puis récupérer les licences. ensuite si vous retourner sur produit vous dervriez normalement voir qu'il n'y a plus d'utilisateur (poste utilisé). Et voila vous savez comment récupérer vos licences.
+Ensuite cliquer sur les trois petits points puis récupérer les licences. ensuite si vous retournez sur le produit vous devriez normalement voir qu'il n'y a plus d'utilisateur (poste utilisé). Et voilà vous savez comment récupérer vos licences.
 
 ## Adobe Console créer des PKG.
 
@@ -140,7 +140,7 @@ Pour pouvoir rajouter / créer des pkg il faut dans le menu en haut et cliquer s
 
 <br/>
 
-ensuite selectionner licences partagée, parce que c'est pour un groupe de personne. et elle ne son pas "fixe" et cliquer sur suivant
+Quand tu crées ton pkg tu peux choisir 2 choses soit licence partagée qui est pour le gymnase et/ou groupe en gros, ou licences nominatives par utilisateur qui sont utilisées pour gérer une seule personne à la fois. 
 
 <br/>
 
@@ -152,7 +152,7 @@ ensuite selectionner licences partagée, parce que c'est pour un groupe de perso
 
 <br/>
 
-selectionner la même chose que sur l'image si dessus. Ensuite cliqewur sur suivant.
+Sélectionner la même chose que sur l'image ci-dessus. Ensuite cliquer sur le suivant.
 
 <br/>
 
@@ -170,8 +170,7 @@ selectionner la même chose que sur l'image si dessus. Ensuite cliqewur sur suiv
 
 <br/>
 
-
-sur cette fenêtre il y a plusieur paramètre a changer, tout dabord il faut changer la langue. Ensuite il faut selectionner pour quel OS vous voulez faire les PKG. Une fois que vous avez choisi ce qu'iil vous convient cliquer sur suivant.
+sur cette fenêtre il y a plusieur paramètre a changer, tout dabord il faut changer la langue. Ensuite il faut selectionner pour quel OS vous voulez faire les PKG. Une fois que vous avez choisi ce qu'il vous convient cliquer sur suivant.
 
 
 <br/>
@@ -184,7 +183,7 @@ sur cette fenêtre il y a plusieur paramètre a changer, tout dabord il faut cha
 
 <br/>
 
-c'est ici que vous allez définir quel application vous aller mettre dans vpotre pkg, le flèche bleu montre comment tout supprimer ou tout rajouter. les carrer rouge a gauche montre les app que vous pouvez rajouter, le carrer rouge a froite montre les app que vous avez rajouter. Une fois que vous vous êtes dessider cliquer sur suivant.
+c'est ici que vous allez définir quelle application vous allez mettre dans votre pkg, la flèche bleue montre comment tout supprimer ou tout rajouter. Les carrés rouges à gauche montrent les apps que vous pouvez rajouter, le carrer rouge à froite montrent les apps que vous avez rajoutés. Une fois que vous vous êtes dessider cliquer sur le suivant.
 
 <br/>
 
@@ -196,8 +195,7 @@ c'est ici que vous allez définir quel application vous aller mettre dans vpotre
 
 <br/>
 
-
-sur cette page desselectionner **TOUT**, garder ce qui est selectionner de base. Cliquer ensuite sur suivant
+Lors de la sélection de paramètre il faut faire attention au premier paramètre de la page, (Activer l’installation en libre-service). Si vos faites des tests sur votre machine et que vous avez cocher la case cela pourrait vous poser un problème car vous ne pourrez plus installer adobe. Mais sur les postes du gymnase, c'est parfait parce que nous ne voulons pas que n'importe qui installe Adobe.
 
 <br/>
 
@@ -209,7 +207,7 @@ sur cette page desselectionner **TOUT**, garder ce qui est selectionner de base.
 
 <br/>
 
-Une fois que vous avez fais toutes ces étapes il sufis de cliquer sur "compiler votre pack" est attendre. Maintenant vous savez comment faire ;).
+Une fois que vous avez fait toutes ces étapes il sufis de cliquer sur "compiler votre pack" est attendre. Maintenant vous savez comment faire ;).
 
 ## Comment donne une licences personnel / mobile 
 
@@ -223,7 +221,7 @@ Une fois que vous avez fais toutes ces étapes il sufis de cliquer sur "compiler
 
 <br/>
 
-Pour commencer il faut aller sur le serveur windows (l'AD). ensuite il faut selectionner (user and computer).
+Pour commencer il faut aller sur le serveur Windows (l'AD). ensuite il faut sélectionner (user and computer).
 
 <br/>
 
@@ -254,6 +252,5 @@ Ensuite vous devez selectionner GYCHA > puis Groups. Si vous avez du mal a trouv
 
 <br/>
 
-Une fois que vous avez double cliquer sur le groupe vous pourrez rajouter les personne que vous voulez ou alors supprimer des utilisateurs qui fon parti du groupe.
-
+Une fois que vous avez double-cliqué sur le groupe vous pourrez rajouter les personnes que vous voulez ou alors supprimer des utilisateurs qui fon parti du groupe.
 
