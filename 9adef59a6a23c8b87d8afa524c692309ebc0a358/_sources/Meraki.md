@@ -151,3 +151,67 @@ Après les changements
 
 Ensuite sauvegardez votre modificaition, l'appareil qui sera connecté à ce port sera dans le VLAN 38, imprimantes.
 
+
+<!--
+Author:		    Joca Bolli
+Date:		    24.09.2022
+Description:	Information utile et mise a jour du site
+-->
+
+## Rajouter un ou plusieurs plan sur meraki 
+
+
+Connecter vous sur meraki, ensuite aller sur **"Network-wide"** et selcetionner **"Map & Floor plans"**
+
+ <br/>
+
+```{image} images/meraki_mapAndFloor.png
+:width: 400px
+:name: meraki_mapAndFloor
+:align: center
+```
+
+<br/>
+
+Vous devrez avoir quelque chose de similaire. Si c'est le cas cliquer sur le bouton bleu **"add a New floor plan"**
+
+ <br/>
+
+```{image} images/Meraki_addNewPlan.png
+:width: 800px
+:name: Meraki_addNewPlan
+:align: center
+```
+<br/>
+
+Parfais, maintenant il vous faut l'adresse du lieux ou vous voulez poser votre plan, dans mon cas l'adresse du gymnase de Chamblandes, dans le votre certainement aussi. Il suffit de copier l'adresse et de la mettre sur **"location"** juste en dessous du nom qu'aura votre plan. Pour finir séléctionner une image de votre plan et cliquer sur next
+
+ <br/>
+
+```{image} images/meraki_adressGycha.png
+:width: 800px
+:name: meraki_adressGycha
+:align: center
+```
+
+<br/>
+
+```{image} images/Meraki_configPlan.png
+:width: 500px
+:name: Meraki_configPlan
+:align: center
+```
+
+<br/>
+
+Une fois que vous avez mis votre plan a la taille
+
+<br/>
+
+```{image} images/Meraki_saveNewPlan.png
+:width: 700px
+:name: Meraki_saveNewPlan
+:align: center
+```
+
+

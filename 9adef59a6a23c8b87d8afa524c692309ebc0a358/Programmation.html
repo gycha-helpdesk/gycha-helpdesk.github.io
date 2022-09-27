@@ -315,6 +315,41 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenu
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#script-compare-inventory-file">
+   Script compare inventory file
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#marche-a-suivre-pour-recuperer-le-fichier-sur-teams">
+     Marche a suivre pour récupérer le fichier sur teams
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#marche-a-suivre-pour-recuperer-le-fichier-sur-jamf">
+     Marche a suivre pour récupérer le fichier sur jamf
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#demonstration">
+     Démonstration
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#breve-explication-du-code">
+     Brève explication du code
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -327,14 +362,91 @@
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contenu </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#script-compare-inventory-file">
+   Script compare inventory file
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#marche-a-suivre-pour-recuperer-le-fichier-sur-teams">
+     Marche a suivre pour récupérer le fichier sur teams
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#marche-a-suivre-pour-recuperer-le-fichier-sur-jamf">
+     Marche a suivre pour récupérer le fichier sur jamf
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#demonstration">
+     Démonstration
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#breve-explication-du-code">
+     Brève explication du code
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="section-programmation">
+  <!--
+Author:		    Joca Bolli
+Date:		    01.06.2022
+Description:	Information sur les différent script réaliser / démonstration.
+-->
+<div class="tex2jax_ignore mathjax_ignore section" id="section-programmation">
 <h1>Section Programmation<a class="headerlink" href="#section-programmation" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>Dans cette section vous pourrez retrouver les explication ansi que les script réaliser (néhister pas a en rajouter si vous en faite un).</p>
+</div></blockquote>
+<div class="section" id="script-compare-inventory-file">
+<h2>Script compare inventory file<a class="headerlink" href="#script-compare-inventory-file" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="marche-a-suivre-pour-recuperer-le-fichier-sur-teams">
+<h3>Marche a suivre pour récupérer le fichier sur teams<a class="headerlink" href="#marche-a-suivre-pour-recuperer-le-fichier-sur-teams" title="Permalink to this headline">¶</a></h3>
+<p>Pour pouvoir éxécuter le script il faut d’abord que vous téléchargiez 2 fichier a comparrer. Il y a un des deux fichier qui se trouve dans un dossier du nom de “inventaire” sur un des canal du teams de l’équipe. Je vous ai mis a disposition un screen pour vous aidez a trouver son emplacement.</p>
+<br>
+<a class="reference internal image-reference" href="_images/rootOfInvFileTeams.png" id="rootofinvfileteams"><img alt="_images/rootOfInvFileTeams.png" class="align-center" id="rootofinvfileteams" src="_images/rootOfInvFileTeams.png" style="width: 700px;" /></a>
+<br>
+</div>
+<div class="section" id="marche-a-suivre-pour-recuperer-le-fichier-sur-jamf">
+<h3>Marche a suivre pour récupérer le fichier sur jamf<a class="headerlink" href="#marche-a-suivre-pour-recuperer-le-fichier-sur-jamf" title="Permalink to this headline">¶</a></h3>
+<p>Tout d’abord il faut vous rendre sur jamf. Ensuite aller sur ordinateur en haut a droite et cliquer sur “+ Nouveau”, comme indiqué sur l’image du si-dessous.</p>
+<br>
+<a class="reference internal image-reference" href="_images/JamfNewFileCat.png" id="jamfnewfilecat"><img alt="_images/JamfNewFileCat.png" class="align-center" id="jamfnewfilecat" src="_images/JamfNewFileCat.png" style="width: 800px;" /></a>
+<br>
+<p>Une fois que vous avez cliquer sur le bouton “+ Nouveau” cette fenêtre devrais s’ouvrire. Comme vous pouvez le voir vous êtes dans l’onglet Ordinateur sous la partie Affichage, mais il y en a plein d’autre. Comment par exemple Matériel que nous verron juste après. Bref une fois que vous êtes arriver jusq’ici il faut cocher “Computer Name”.</p>
+<br>
+<a class="reference internal image-reference" href="_images/jamfComputerNameSelect.png" id="jamfcomputernameselect"><img alt="_images/jamfComputerNameSelect.png" class="align-center" id="jamfcomputernameselect" src="_images/jamfComputerNameSelect.png" style="width: 600px;" /></a>
+<br>
+<p>Maintenant il faut trouver et selectionner le numéro de série. Pour ce faire il faut ce rendre dans l’onglet “matériel”. Attention vous ne le verrez pas tout de suite il faudra d’abord descendre (scroller) pour pouvoir ensuite selectionner “serial Number”</p>
+<br>
+<a class="reference internal image-reference" href="_images/jamfSerialNumber.png" id="jamfserialnumber"><img alt="_images/jamfSerialNumber.png" class="align-center" id="jamfserialnumber" src="_images/jamfSerialNumber.png" style="width: 600px;" /></a>
+<br>
+<p>Une fois que vous avez selectionner vos deux catégorie si je puis dire, il faut télécharger le rapport. Pour se faire aller dans la partie non pas affichage mais “Rapport”. Ensuite séléctionner le bon format donc fichier .csv séparer par des virgules. Et ce que nous voulons c’est le numéro de série et le nom des ordinateur donc il faut séléctionner “ordinateur”.</p>
+<br>
+<a class="reference internal image-reference" href="_images/jamfTéléchargementRapport.png" id="jamftelechargementrapport"><img alt="_images/jamfTéléchargementRapport.png" class="align-center" id="jamftelechargementrapport" src="_images/jamfTéléchargementRapport.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="demonstration">
+<h3>Démonstration<a class="headerlink" href="#demonstration" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="breve-explication-du-code">
+<h3>Brève explication du code<a class="headerlink" href="#breve-explication-du-code" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">

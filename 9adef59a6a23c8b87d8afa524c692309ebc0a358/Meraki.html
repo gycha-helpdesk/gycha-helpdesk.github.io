@@ -331,6 +331,11 @@
    Configuer un port
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rajouter-un-ou-plusieurs-plan-sur-meraki">
+   Rajouter un ou plusieurs plan sur meraki
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -361,6 +366,11 @@
    Configuer un port
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rajouter-un-ou-plusieurs-plan-sur-meraki">
+   Rajouter un ou plusieurs plan sur meraki
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -384,19 +394,19 @@ navigateur web ainsi que les telephones portables via
 Application Meraki.</p>
 </div></blockquote>
 <div class="tabbed-set docutils">
-<input checked="checked" id="53eca6cc-7d37-4c58-8349-866d52ad1039" name="43a81fe8-6f7d-416b-9fdc-eceb9a5ce2cd" type="radio">
-</input><label class="tabbed-label" for="53eca6cc-7d37-4c58-8349-866d52ad1039">
+<input checked="checked" id="689c2100-a6d1-4767-9769-eb3750610b82" name="5ad45e16-59f6-4454-9dff-3339cbcf7d88" type="radio">
+</input><label class="tabbed-label" for="689c2100-a6d1-4767-9769-eb3750610b82">
 WEB</label><div class="tabbed-content docutils">
 <a class="reference internal image-reference" href="_images/meraki-web.gif" id="meraki-web"><img alt="_images/meraki-web.gif" class="align-left" id="meraki-web" src="_images/meraki-web.gif" style="width: 450px;" /></a>
 </div>
-<input id="5b627c72-30b3-4835-b13f-e246c068c822" name="43a81fe8-6f7d-416b-9fdc-eceb9a5ce2cd" type="radio">
-</input><label class="tabbed-label" for="5b627c72-30b3-4835-b13f-e246c068c822">
+<input id="68428b17-95ce-4740-aa6f-483fa1f066e1" name="5ad45e16-59f6-4454-9dff-3339cbcf7d88" type="radio">
+</input><label class="tabbed-label" for="68428b17-95ce-4740-aa6f-483fa1f066e1">
 iOS</label><div class="tabbed-content docutils">
 <a class="reference internal image-reference" href="_images/meraki-appstore.png" id="meraki-ios"><img alt="_images/meraki-appstore.png" class="align-left" id="meraki-ios" src="_images/meraki-appstore.png" style="width: 450px;" /></a>
 <p><a class="sphinx-bs btn text-wrap btn-outline-primary reference external" href="https://apps.apple.com/us/app/meraki/id693056161"><span>App Store</span></a></p>
 </div>
-<input id="62eac321-bd43-4359-a963-6d2c00e48d5d" name="43a81fe8-6f7d-416b-9fdc-eceb9a5ce2cd" type="radio">
-</input><label class="tabbed-label" for="62eac321-bd43-4359-a963-6d2c00e48d5d">
+<input id="a150a04b-b444-4439-a2be-91d47d1e8555" name="5ad45e16-59f6-4454-9dff-3339cbcf7d88" type="radio">
+</input><label class="tabbed-label" for="a150a04b-b444-4439-a2be-91d47d1e8555">
 Android</label><div class="tabbed-content docutils">
 <a class="reference internal image-reference" href="_images/meraki-googleplay.png" id="meraki-android"><img alt="_images/meraki-googleplay.png" class="align-left" id="meraki-android" src="_images/meraki-googleplay.png" style="width: 450px;" /></a>
 <p><a class="sphinx-bs btn text-wrap btn-outline-success reference external" href="https://play.google.com/store/apps/details?id=com.meraki.Dashboard&amp;hl=fr_CH&amp;gl=US"><span>Google Play Store</span></a></p>
@@ -481,6 +491,31 @@ Cliquez sur l’icône à coté de Configuration pour modifier le port.</p>
 </div>
 </div>
 <p>Ensuite sauvegardez votre modificaition, l’appareil qui sera connecté à ce port sera dans le VLAN 38, imprimantes.</p>
+<!--
+Author:		    Joca Bolli
+Date:		    24.09.2022
+Description:	Information utile et mise a jour du site
+-->
+</div>
+<div class="section" id="rajouter-un-ou-plusieurs-plan-sur-meraki">
+<h2>Rajouter un ou plusieurs plan sur meraki<a class="headerlink" href="#rajouter-un-ou-plusieurs-plan-sur-meraki" title="Permalink to this headline">¶</a></h2>
+<p>Connecter vous sur meraki, ensuite aller sur <strong>“Network-wide”</strong> et selcetionner <strong>“Map &amp; Floor plans”</strong></p>
+ <br/>
+<a class="reference internal image-reference" href="_images/meraki_mapAndFloor.png" id="meraki-mapandfloor"><img alt="_images/meraki_mapAndFloor.png" class="align-center" id="meraki-mapandfloor" src="_images/meraki_mapAndFloor.png" style="width: 400px;" /></a>
+<br/>
+<p>Vous devrez avoir quelque chose de similaire. Si c’est le cas cliquer sur le bouton bleu <strong>“add a New floor plan”</strong></p>
+ <br/>
+<a class="reference internal image-reference" href="_images/Meraki_addNewPlan.png" id="meraki-addnewplan"><img alt="_images/Meraki_addNewPlan.png" class="align-center" id="meraki-addnewplan" src="_images/Meraki_addNewPlan.png" style="width: 800px;" /></a>
+<br/>
+<p>Parfais, maintenant il vous faut l’adresse du lieux ou vous voulez poser votre plan, dans mon cas l’adresse du gymnase de Chamblandes, dans le votre certainement aussi. Il suffit de copier l’adresse et de la mettre sur <strong>“location”</strong> juste en dessous du nom qu’aura votre plan. Pour finir séléctionner une image de votre plan et cliquer sur next</p>
+ <br/>
+<a class="reference internal image-reference" href="_images/meraki_adressGycha.png" id="meraki-adressgycha"><img alt="_images/meraki_adressGycha.png" class="align-center" id="meraki-adressgycha" src="_images/meraki_adressGycha.png" style="width: 800px;" /></a>
+<br/>
+<a class="reference internal image-reference" href="_images/Meraki_configPlan.png" id="meraki-configplan"><img alt="_images/Meraki_configPlan.png" class="align-center" id="meraki-configplan" src="_images/Meraki_configPlan.png" style="width: 500px;" /></a>
+<br/>
+<p>Une fois que vous avez mis votre plan a la taille</p>
+<br/>
+<a class="reference internal image-reference" href="_images/Meraki_saveNewPlan.png" id="meraki-savenewplan"><img alt="_images/Meraki_saveNewPlan.png" class="align-center" id="meraki-savenewplan" src="_images/Meraki_saveNewPlan.png" style="width: 700px;" /></a>
 </div>
 </div>
 
