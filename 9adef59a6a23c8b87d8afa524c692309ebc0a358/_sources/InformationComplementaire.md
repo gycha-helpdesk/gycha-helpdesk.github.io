@@ -250,6 +250,26 @@ sudo jamf recon
 :align: center
 ```
 
+```shell
+defaults write com.apple.dock autohide-time-modifier -float 0.5; killall Dock
+```
+
+Cette commande est plus partique que nécessaire. En gros elle permet d'afficher plus vite la barre de menu en bas de votre mac (Le doc).
+
+```shell
+defaults write -g ApplePressAndHoldEnabled -bool false
+```
+Si vous avez l'habitude de maintenir la touche e pour faire apparaitre les diférentes possibilité d'accents cette commande n'est pas pour vous mais si vous voulez tapper de lettres a la suite vitte cette commande vous plaira ex : dddddddddddd.
+
+
+Du même type si vous aller dans le réglages est que vous les régler comme l'image si dessous vous pourrez effacer a la même vitesse (comme pour vous déplacer).
+
+```{image} images/KeyParam.png
+:width: 700px
+:name: KeyParam
+:align: center
+```
+
 <br/>
 
 ## Ordinateur de prêt
@@ -1193,6 +1213,7 @@ Une fois que vous êtes connecté sur votre serveur dchp, rechercher le/la **"co
 Si vous voulez mettre une nouvelle imprimante mais garder le nom de l'ancienne (par exemple quand on remplace une imprimante dans une salle de classe). Vous pouvez, il faut juste que dans le paramètre de l'image ci-dessous vous mettez e même nom.
 ```
 
+
 <br/>
 
 ```{image} images/dhcp4.png
@@ -1202,15 +1223,5 @@ Si vous voulez mettre une nouvelle imprimante mais garder le nom de l'ancienne (
 ```
 
 <br/>
-
-
-
-
-
-
-
-
-
-
 
 

@@ -231,3 +231,22 @@ Cliquez enfin sur *Apply*.
 ## Verification
 
 Une fois que vous avez cliqué sur *Apply*, le switch ne devrait plus répondre. Pour vérifier qu'il a bien été configuré correctement, branchez le port de management du switch au réseau (le port trunk d'un autre switch par exemple). Il est ensuite normalement possible de se connecter à ce switch si son adresse ip est entrée dans un navigateur. L'ordinateur doit évidemment être connecté au même réseau.
+
+
+## Sécurité / mot de passe
+
+> Pour changer le mot de passe aller sur l'onglet security puis remplisser les champs qu'ils demande.
+> Actuellement le mot de passe que nous utilison pour les switch netgear est le suivant : Gym_09
+> Donc il faut changer la taille minimal du password et la mettre a 6. 
+
+
+ ```{image} images/netgear_minCharacter.png
+:width: 900px
+:name: netgear_minCharacter
+:align: center
+```
+
+```{Attention}
+Ne pas oubliez de cliquer sur apply en bas a droite.
+```
+

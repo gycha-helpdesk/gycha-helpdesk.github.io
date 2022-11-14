@@ -184,7 +184,8 @@ Vous devrez avoir quelque chose de similaire. Si c'est le cas cliquer sur le bou
 ```
 <br/>
 
-Parfais, maintenant il vous faut l'adresse du lieux ou vous voulez poser votre plan, dans mon cas l'adresse du gymnase de Chamblandes, dans le votre certainement aussi. Il suffit de copier l'adresse et de la mettre sur **"location"** juste en dessous du nom qu'aura votre plan. Pour finir séléctionner une image de votre plan et cliquer sur next
+Parfais, maintenant il vous faut l'adresse du lieux ou vous voulez poser votre plan, dans mon cas l'adresse du gymnase de Chamblandes, dans le votre certainement aussi. Il suffit de copier l'adresse et de la mettre sur **"location"** juste en dessous du nom qu'aura votre plan. Pour finir séléctionner une image de votre plan et cliquer sur next 
+
 
  <br/>
 
@@ -204,7 +205,7 @@ Parfais, maintenant il vous faut l'adresse du lieux ou vous voulez poser votre p
 
 <br/>
 
-Une fois que vous avez mis votre plan a la taille
+Une fois que vous avez mis votre plan et que vous l'avez ajuste pour qu'il face la bonne taille et dimension par rapport a l'imeuble de la carte vous pouvez sauvegarder et fermer.
 
 <br/>
 
@@ -213,5 +214,10 @@ Une fois que vous avez mis votre plan a la taille
 :name: Meraki_saveNewPlan
 :align: center
 ```
+
+<br/>
+
+
+
 
 
