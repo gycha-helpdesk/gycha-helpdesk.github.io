@@ -232,7 +232,10 @@ Cliquez enfin sur *Apply*.
 
 Une fois que vous avez cliqué sur *Apply*, le switch ne devrait plus répondre. Pour vérifier qu'il a bien été configuré correctement, branchez le port de management du switch au réseau (le port trunk d'un autre switch par exemple). Il est ensuite normalement possible de se connecter à ce switch si son adresse ip est entrée dans un navigateur. L'ordinateur doit évidemment être connecté au même réseau.
 
-
+<!--
+Author:		    Joca Bolli
+Date:		    14.11.2022
+-->
 ## Sécurité / mot de passe
 
 > Pour changer le mot de passe aller sur l'onglet security puis remplisser les champs qu'ils demande.
@@ -249,4 +252,5 @@ Une fois que vous avez cliqué sur *Apply*, le switch ne devrait plus répondre.
 ```{Attention}
 Ne pas oubliez de cliquer sur apply en bas a droite.
 ```
+
 
