@@ -17,6 +17,9 @@ Editor:
 | [GLPI][16] | Aplication WEB qui permet aux enreprises de gérer leur system d'information. [plus...](GLPI) |
 | [Bases Markdown][15] | Un tuto simple pour MarkDown |
 | [Jupyter-Book MarkDown Guids][9] | **Guide complet pour création des pages MarkDown avec jupyter-book, vous l'aurez besoins pour créer ces pages de documentations** |
+| [Meraki][17]| Interface de gestion des  borne wifi et des switch |
+| [Acronis][18]| Serveur de backup |
+| [Console admin adobe][19]| Gestion des liscences adobe et pkg app |
 
 ## Liens pour les applications utiles
 
@@ -48,12 +51,12 @@ Editor:
 [9]: https://jupyterbook.org/content/myst.html
 [10]: https://macapps.link/fr/
 [12]: https://pass.dgep.edu-vaud.ch:9119/
-[13]: https://10.225.232.161:8443/index.html
+[13]: https://aus000021.dgep.edu-vaud.ch:8443/
 [14]: https://hermes.edu-vaud.ch/login/?next=/
 [15]: https://www.markdowntutorial.com/
 [16]: http://glpi.edu-vaud.ch/
-[17]: 
-[18]: 
-[19]: 
+[17]: https://sts.edu-vaud.ch/adfs/ls/idpinitiatedsignon.aspx?loginToRp=https://dashboard.meraki.com
+[18]: http://gycha-srv-bkp01:9877/#m=Backups&s=vaults-locations&v=c6faaacc-45e5-0d45-31e4-1d57241c4e31&id=GYCHA%20-%20Backup%20-%20VM%20-%20Gycha-srv-fs01%20-%20524C12DB-0982-F77C-01DA-0FF7DC8CC64BA
+[19]: https://adminconsole.adobe.com/8B8125C25B18F99E0A495CEA@AdobeOrg/account
 [20]:  
 
