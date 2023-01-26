@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Information complémentaire &#8212; Documentation Technique Chamblandes</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet">
-  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,37 +20,36 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="_static/myfile.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -61,7 +62,21 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -70,9 +85,10 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -87,7 +103,7 @@
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Rechercher dans ce livre ..." aria-label="Rechercher dans ce livre ..." autocomplete="off" >
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="current nav bd-sidenav">
@@ -144,6 +160,11 @@
    <li class="toctree-l2">
     <a class="reference internal" href="JamfAutoLogout.html">
      Fermeture Automatique de la sesssion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CompareSerialNumberJamfToInv.html">
+     Comparaison etre les poste dans jamf est ceux de l’inventaire
     </a>
    </li>
   </ul>
@@ -262,8 +283,13 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
 </div>
 
 
@@ -271,61 +297,117 @@
 
 
           
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
     
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Basculer la navigation" aria-controls="site-navigation"
-                title="Basculer la navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Téléchargez cette page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
+    <div class="header-article row sticky-top noprint">
         
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/InformationComplementaire.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimer au format PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/InformationComplementaire.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
     </div>
 </div>
 
-            <!-- Source interaction buttons -->
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Mode plein écran"
-        title="Mode plein écran"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contenu
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#mettre-a-jour-et-modifier-le-site">
    Mettre a jour et modifier le site
@@ -439,12 +521,11 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Information complémentaire</h1>
@@ -453,7 +534,7 @@
                     <div id="jb-print-toc">
                         
                         <div>
-                            <h2> Contenu </h2>
+                            <h2> Contents </h2>
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
@@ -574,7 +655,8 @@
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
   <!--
@@ -582,16 +664,16 @@ Author:		    Joca Bolli
 Date:		    01.02.2022
 Description:	Information utile et mise a jour du site
 -->
-<div class="tex2jax_ignore mathjax_ignore section" id="information-complementaire">
-<h1>Information complémentaire<a class="headerlink" href="#information-complementaire" title="Permalink to this headline">¶</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="information-complementaire">
+<h1>Information complémentaire<a class="headerlink" href="#information-complementaire" title="Permalink to this headline">#</a></h1>
 <blockquote>
 <div><p>Je m’excuse d’avance pour les fautes d’orthographe.
 Dans cette partie du site je vais vous explique comment mettre à jour le site / rajouter du contenu.
 En parallèle je vais vous donner plusieurs d’informations concernant les pannes que vous pourrez rencontrer et le fonctionnement du réseau de l’école.
 je vais aussi vous expliquer le fonctionnement de l’usi, la dgnsi, la dgep, la dgo et les outils qui sont à notre disposition. Et plein d’autres choses qui pourrais vous être utiles.</p>
 </div></blockquote>
-<div class="section" id="mettre-a-jour-et-modifier-le-site">
-<h2>Mettre a jour et modifier le site<a class="headerlink" href="#mettre-a-jour-et-modifier-le-site" title="Permalink to this headline">¶</a></h2>
+<section id="mettre-a-jour-et-modifier-le-site">
+<h2>Mettre a jour et modifier le site<a class="headerlink" href="#mettre-a-jour-et-modifier-le-site" title="Permalink to this headline">#</a></h2>
 <p>Tout d’abord il faut que vous puissiez ouvrir les fichiers sur un logiciel de code (j’utiliser visual studio) ensuite il faut que vous vous rendiez dans le finder,
 Dans le dossier “src” du site. c’est dans ce dossier que vous allez soit modifier des fichiers existant soit en rajouter. pour le modifier il suffit d’ouvrir un fichier qui existe déjà et de le modifier.</p>
 <div class="admonition note">
@@ -679,9 +761,9 @@ Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local 
 <br/>
 <p>si ça ne marche pas refaites-le. Mais en général il faut juste attendre un peu et recharger la page.</p>
 <br/>
-</div>
-<div class="section" id="commande-qui-pourrais-vous-etre-utile">
-<h2>commande qui pourrais vous être utile<a class="headerlink" href="#commande-qui-pourrais-vous-etre-utile" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="commande-qui-pourrais-vous-etre-utile">
+<h2>commande qui pourrais vous être utile<a class="headerlink" href="#commande-qui-pourrais-vous-etre-utile" title="Permalink to this headline">#</a></h2>
 <p>Pour exécuter une commande jamf il suffit de connecter n’importe quel ordinateur sur le réseau de l’école par câble et se rendre dans le terminal. Cette commande sert à activer toutes les règles que n’importe quel ordinateur peut recevoir.</p>
 <br/>
 <div class="admonition attention">
@@ -722,17 +804,17 @@ Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local 
 <p>Du même type si vous aller dans le réglages est que vous les régler comme l’image si dessous vous pourrez effacer a la même vitesse (comme pour vous déplacer).</p>
 <a class="reference internal image-reference" href="_images/KeyParam.png" id="keyparam"><img alt="_images/KeyParam.png" class="align-center" id="keyparam" src="_images/KeyParam.png" style="width: 700px;" /></a>
 <br/>
-</div>
-<div class="section" id="ordinateur-de-pret">
-<h2>Ordinateur de prêt<a class="headerlink" href="#ordinateur-de-pret" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="ordinateur-de-pret">
+<h2>Ordinateur de prêt<a class="headerlink" href="#ordinateur-de-pret" title="Permalink to this headline">#</a></h2>
 <p>Pour configurer un ordinateur a prêté il faut commencer en lui <a class="reference external" href="https://support.apple.com/fr-ch/HT211683">installant</a> l’OS qu’il supporte (Catalina pour 2012 et Big Sur pour 2014). Sur ce site il y a toutes les informations et version. De macOS High Sierra jusqu’à macos Big Sur. Ensuite il faut vérifier que l’rodinateur n’a pas plusieurs disks. Si c’est le cas il faut aller dans “utilitaire de disques” et supprimer ceux en trop et en garder un seul (chamblandesHD).
 <br/></p>
 <a class="reference internal image-reference" href="_images/DiskUtility.png" id="diskutility"><img alt="_images/DiskUtility.png" class="align-center" id="diskutility" src="_images/DiskUtility.png" style="width: 400px;" /></a>
 <br/>
 <p>Puis appliquer les règles de jamf (soudo Jamf policy). Il faut vérifier que dans les applications l’ordinateur a bien Outlook, Teams, Word, etc. Une fois que vous avez fait toutes ces étapes il ne reste plus qu’a créé un compte admin (user : adminl et Mdp : Gym _09). Il ne faut pas oublier son compte (un compte utilisateur) et modifier dans les teams le fichier inventaire en classifiant l’ordinateur par rapport a son nom.</p>
-</div>
-<div class="section" id="shema-reseau-des-salles-de-classe-en-general">
-<h2>Shéma réseau des salles de classe en général<a class="headerlink" href="#shema-reseau-des-salles-de-classe-en-general" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="shema-reseau-des-salles-de-classe-en-general">
+<h2>Shéma réseau des salles de classe en général<a class="headerlink" href="#shema-reseau-des-salles-de-classe-en-general" title="Permalink to this headline">#</a></h2>
 <p>VLAN :</p>
 <ul class="simple">
 <li><p>34 = serveur.</p></li>
@@ -776,9 +858,9 @@ Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local 
 <a class="reference internal image-reference" href="_images/macMIiniArriere.jpg" id="macmiiniarriere"><img alt="_images/macMIiniArriere.jpg" class="align-center" id="macmiiniarriere" src="_images/macMIiniArriere.jpg" style="width: 600px;" /></a>
 <br/>
 <a class="reference internal image-reference" href="_images/MultiCableMacMini.jpg" id="multicablemacmini"><img alt="_images/MultiCableMacMini.jpg" class="align-center" id="multicablemacmini" src="_images/MultiCableMacMini.jpg" style="width: 600px;" /></a>
-</div>
-<div class="section" id="fonction-shema-de-l-usi-dgep-dgnsi">
-<h2>Fonction / shéma de l’usi / dgep / dgnsi<a class="headerlink" href="#fonction-shema-de-l-usi-dgep-dgnsi" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="fonction-shema-de-l-usi-dgep-dgnsi">
+<h2>Fonction / shéma de l’usi / dgep / dgnsi<a class="headerlink" href="#fonction-shema-de-l-usi-dgep-dgnsi" title="Permalink to this headline">#</a></h2>
 <p>Pour gérer le support des écoles post obligatoires ils ont créé un système en suivant le modèle d’ITIL.</p>
 <p>Donc pour commencer toutes les écoles ont un helpdesk (le niveau 1) si les commandes dépassent notre compréhension ou si elle dépasse notre domaine d’action. Le niveau 2 c’est  l’usi, le niveau 3 c’est les ingénieurs qui sont aussi a l’usi mais c’est une autre partie et pour finir il y a le niveau 4 c’est le fournisseur des applications ou des services.</p>
 <br/>
@@ -796,11 +878,11 @@ Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local 
 <br/>
 <a class="reference internal image-reference" href="_images/ShemaDGEP.png" id="shemadgep"><img alt="_images/ShemaDGEP.png" class="align-center" id="shemadgep" src="_images/ShemaDGEP.png" style="width: 600px;" /></a>
 <br/>
-</div>
-<div class="section" id="information-supplementaire">
-<h2>Information supplémentaire<a class="headerlink" href="#information-supplementaire" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="kahoot">
-<h3>kahoot<a class="headerlink" href="#kahoot" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="information-supplementaire">
+<h2>Information supplémentaire<a class="headerlink" href="#information-supplementaire" title="Permalink to this headline">#</a></h2>
+<section id="kahoot">
+<h3>kahoot<a class="headerlink" href="#kahoot" title="Permalink to this headline">#</a></h3>
 <p>Sur kahoot il est possible de lancer en boucle un quiz. Pour ce faire il faut accéder à la bibliothèque ou son organiser tous vos quiz. ensuite cliquer sur jouer (sélectionner le quiz que vous voulez lancer en boucle).</p>
 <br/>
 <a class="reference internal image-reference" href="_images/kahootBiblioJouer.png" id="kahootbibliojouer"><img alt="_images/kahootBiblioJouer.png" class="align-center" id="kahootbibliojouer" src="_images/kahootBiblioJouer.png" style="width: 1000px;" /></a>
@@ -812,9 +894,9 @@ Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local 
 <p>Une fois le mode de jeux choisi il faut aller dans les option pour les afficher en selectionner <a class="reference external" href="https://support.kahoot.com/hc/fr/articles/115016055107-Options-de-jeu-en-direct#auto_move">passet automatiquement les questions</a> des questions.</p>
 <br/>
 <a class="reference internal image-reference" href="_images/KahootOptionDeJeu.png" id="kahootoptiondejeu"><img alt="_images/KahootOptionDeJeu.png" class="align-center" id="kahootoptiondejeu" src="_images/KahootOptionDeJeu.png" style="width: 600px;" /></a>
-</div>
-<div class="section" id="vmware-vsphere">
-<h3>VMware / Vsphere<a class="headerlink" href="#vmware-vsphere" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="vmware-vsphere">
+<h3>VMware / Vsphere<a class="headerlink" href="#vmware-vsphere" title="Permalink to this headline">#</a></h3>
 <p><a class="reference external" href="https://vcenter.dgep.edu-vaud.ch/ui/#?extensionId=vsphere.core.inventory.serverObjectViewsExtension&amp;objectId=urn:vmomi:VirtualMachine:vm-127617:93734f74-49db-4644-be85-8dab90d13b02&amp;navigator=vsphere.core.viTree.hostsAndClustersView">Comment ce connecter a Vsphere</a></p>
 <br/>
 <a class="reference internal image-reference" href="_images/VsphereConnection.png" id="vsphereconnection"><img alt="_images/VsphereConnection.png" class="align-center" id="vsphereconnection" src="_images/VsphereConnection.png" style="width: 400px;" /></a>
@@ -828,9 +910,9 @@ Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local 
 <br/>
 <a class="reference internal image-reference" href="_images/VsphereInterface.png" id="vsphereinterface"><img alt="_images/VsphereInterface.png" class="align-center" id="vsphereinterface" src="_images/VsphereInterface.png" style="width: 400px;" /></a>
 <br/>
-</div>
-<div class="section" id="site-de-vente-achat-et-imprimante">
-<h3>Site de vente / achat et imprimante<a class="headerlink" href="#site-de-vente-achat-et-imprimante" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="site-de-vente-achat-et-imprimante">
+<h3>Site de vente / achat et imprimante<a class="headerlink" href="#site-de-vente-achat-et-imprimante" title="Permalink to this headline">#</a></h3>
 <p>L’ancien nom du site de “vente, achat” de matériel pour les établissements post obligatoire s’appelait “le Dol”. Maintenant ils ont changé pour “la place”.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -847,8 +929,8 @@ Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local 
 <br/>
 <a class="reference internal image-reference" href="_images/InSrvPrint.png" id="insrvprint"><img alt="_images/InSrvPrint.png" class="align-center" id="insrvprint" src="_images/InSrvPrint.png" style="width: 800px;" /></a>
 <br/>
-<div class="section" id="ajouter-l-imprimante-du-bureau">
-<h4>Ajouter l’imprimante du bureau.<a class="headerlink" href="#ajouter-l-imprimante-du-bureau" title="Permalink to this headline">¶</a></h4>
+<section id="ajouter-l-imprimante-du-bureau">
+<h4>Ajouter l’imprimante du bureau.<a class="headerlink" href="#ajouter-l-imprimante-du-bureau" title="Permalink to this headline">#</a></h4>
 <p>aller dans imprimantes et scanners.</p>
 <p>ensuite cliquer sur le petit <strong>+</strong> . Ensuite clique droit sur la barre puis sélectionner personnaliser. ensuite il faut glisser déposer les options avancées dans la barre de recherche</p>
 <br/>
@@ -858,10 +940,10 @@ Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local 
 <a class="reference internal image-reference" href="_images/ReglageImp.png" id="reglageimp"><img alt="_images/ReglageImp.png" class="align-center" id="reglageimp" src="_images/ReglageImp.png" style="width: 600px;" /></a>
 <br/>
 <p>et voilà il faut juste cliquer sur ajouter et vous avez rajouté l’imprimante du bureau.</p>
-</div>
-</div>
-<div class="section" id="probleme-d-affichage-quand-on-cree-une-section-sur-le-site">
-<h3>Problème d’affichage quand on créé une section sur le site<a class="headerlink" href="#probleme-d-affichage-quand-on-cree-une-section-sur-le-site" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="probleme-d-affichage-quand-on-cree-une-section-sur-le-site">
+<h3>Problème d’affichage quand on créé une section sur le site<a class="headerlink" href="#probleme-d-affichage-quand-on-cree-une-section-sur-le-site" title="Permalink to this headline">#</a></h3>
 <p>Quand on créé une section pour la première fois si vous ne voulez pas qu’il y ai un problème d’affichage.</p>
 <br/>
 <a class="reference internal image-reference" href="_images/JeSuisUnBug.gif" id="jesuisunbug"><img alt="_images/JeSuisUnBug.gif" class="align-center" id="jesuisunbug" src="_images/JeSuisUnBug.gif" style="width: 800px;" /></a>
@@ -886,9 +968,9 @@ Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local 
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>jupyter-book build .
 </pre></div>
 </div>
-</div>
-<div class="section" id="groupe-d-eleve-son-dans-les-salles">
-<h3>Groupe d’élève / Son dans les salles<a class="headerlink" href="#groupe-d-eleve-son-dans-les-salles" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="groupe-d-eleve-son-dans-les-salles">
+<h3>Groupe d’élève / Son dans les salles<a class="headerlink" href="#groupe-d-eleve-son-dans-les-salles" title="Permalink to this headline">#</a></h3>
 <p>En générale un élève dervais avoir tout ces groupes :</p>
 <br/>
 <a class="reference internal image-reference" href="_images/GroupeEleve.png" id="groupeeleve"><img alt="_images/GroupeEleve.png" class="align-center" id="groupeeleve" src="_images/GroupeEleve.png" style="width: 400px;" /></a>
@@ -905,9 +987,9 @@ Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local 
 <ol class="simple">
 <li><p>La deuxième option c’est qu’il n’y a pas d’empli et dans ce cas la il faut allumer le beamer qui va lui se connecter automatiquement au haut-parleur qui est dans les salles de classe et émettre du son. (Si ça ne marche pas il faut aller dans préface système, est sélectionné la 3ème source : la 1 c’est le mac mini en général c’est marquer interne quelque chose, la 2 c’est la Wacom en général c’est DTK-des chiffres, du coup il faut sélectionner la 3ème).</p></li>
 </ol>
-</div>
-<div class="section" id="recherche-jamf">
-<h3>Recherche JAMF<a class="headerlink" href="#recherche-jamf" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="recherche-jamf">
+<h3>Recherche JAMF<a class="headerlink" href="#recherche-jamf" title="Permalink to this headline">#</a></h3>
 <p>Si vous lancez jamf pour <strong>la première fois</strong> il est possible que vous <strong>ne puissiez pas effectuer des recherches</strong> quand vous êtes sur “ordinateur”. Pour résoudre le problème c’est très simple.</p>
 <p>Aller sur Jamf, ensuite cliquer sur votre profil</p>
 <br/>
@@ -917,9 +999,9 @@ Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local 
 <br/>
 <a class="reference internal image-reference" href="_images/PrefRecheJamf.png" id="prefrechejamf"><img alt="_images/PrefRecheJamf.png" class="align-center" id="prefrechejamf" src="_images/PrefRecheJamf.png" style="width: 500px;" /></a>
 <br/>
-</div>
-<div class="section" id="dashboard-jamf">
-<h3>DashBoard jamf<a class="headerlink" href="#dashboard-jamf" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="dashboard-jamf">
+<h3>DashBoard jamf<a class="headerlink" href="#dashboard-jamf" title="Permalink to this headline">#</a></h3>
 <p>Quand vous vous connectez à Jam vous arriver par défaut sur le dash board. Sur cette fenêtre il sera affiché toutes les règles que vous avez en “favoris” cela permet de suivre leur avancement, est d’observer graphiquement plusieurs informations.</p>
 <br/>
 <div class="admonition note">
@@ -931,9 +1013,9 @@ Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local 
 <br/>
 <p>Pour mettre une règle en “favoris”, il faut que vous recherchiez votre règle. Une fois que vous êtes dessus <strong>en haut à droite</strong> il y a une case à cocher, il suffit de la cocher est quand vous retournerez au dashboard votre règle serra afficher.</p>
 <a class="reference internal image-reference" href="_images/CheckBoxFavorisJamf.png" id="checkboxfavorisjamf"><img alt="_images/CheckBoxFavorisJamf.png" class="align-center" id="checkboxfavorisjamf" src="_images/CheckBoxFavorisJamf.png" style="width: 1100px;" /></a>
-</div>
-<div class="section" id="comment-modifier-le-fichier-inventaire">
-<h3>Comment modifier le fichier inventaire.<a class="headerlink" href="#comment-modifier-le-fichier-inventaire" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="comment-modifier-le-fichier-inventaire">
+<h3>Comment modifier le fichier inventaire.<a class="headerlink" href="#comment-modifier-le-fichier-inventaire" title="Permalink to this headline">#</a></h3>
 <p>Pour commencer il faut aller sur teams.  Dans l’équipe GychaIT &gt; ensuite dans le groupe &gt; gestion de postes &gt; File &gt; le dossier de l’année corespondantes.</p>
 <a class="reference internal image-reference" href="_images/RootTeamsInv.png" id="rootteamsinv"><img alt="_images/RootTeamsInv.png" class="align-center" id="rootteamsinv" src="_images/RootTeamsInv.png" style="width: 900px;" /></a>
 <br/>
@@ -956,10 +1038,10 @@ Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local 
 <br/>
 <p>Pour vérifier que vos changements on bien est effectué il faut aller sur le seveur et regarder le fichier</p>
 <a class="reference internal image-reference" href="_images/RootVerification.png" id="rootverification"><img alt="_images/RootVerification.png" class="align-center" id="rootverification" src="_images/RootVerification.png" style="width: 900px;" /></a>
-</div>
-</div>
-<div class="section" id="mettre-en-ligne-des-video-sur-youtube-imovie">
-<h2>Mettre en ligne des vidéo sur YouTube / Imovie<a class="headerlink" href="#mettre-en-ligne-des-video-sur-youtube-imovie" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="mettre-en-ligne-des-video-sur-youtube-imovie">
+<h2>Mettre en ligne des vidéo sur YouTube / Imovie<a class="headerlink" href="#mettre-en-ligne-des-video-sur-youtube-imovie" title="Permalink to this headline">#</a></h2>
 <p>Avant de commencer il vous faut Imovie et une chaîne Youtube.</p>
 <br/>
 <p>Sur Imovie pour créer un projet il faut cliquer sur le + et ensuite cliquer sur le film. <strong>(si quand vous ouvrez Imovie pour la première fois et que vous n’êtes pas sur la bonne fenêtre il faut cliquer sur projet en haut à gauche de l’écrant)</strong>.</p>
@@ -1014,12 +1096,12 @@ Une fois que vous avez sélectionné le bon fichier vous arriverez sur cette fen
 <p>Cliquer sur terminer et revenez sur la page de Youtube Studio, dans le menu a gauche sélectionner <strong>“Contenu de la chaîne”</strong> et vous pourrez effectivement voir que votre vidéo a été mise en ligne et quelle est en mode <strong>“non répertoriée”</strong>.</p>
 <a class="reference internal image-reference" href="_images/YTVerification.png" id="ytverification"><img alt="_images/YTVerification.png" class="align-center" id="ytverification" src="_images/YTVerification.png" style="width: 700px;" /></a>
 <br/>
-</div>
-<div class="section" id="creer-un-pdf-du-site-a-partir-de-jupyter-book">
-<h2>Créer un PDF du site à partir de jupyter-book<a class="headerlink" href="#creer-un-pdf-du-site-a-partir-de-jupyter-book" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="creer-un-pdf-du-site-a-partir-de-jupyter-book">
+<h2>Créer un PDF du site à partir de jupyter-book<a class="headerlink" href="#creer-un-pdf-du-site-a-partir-de-jupyter-book" title="Permalink to this headline">#</a></h2>
 <p>Il est possible de créer un PDF à partir du code HTML de votre book.</p>
-<div class="section" id="installation">
-<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
+<section id="installation">
+<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">#</a></h3>
 <p>Votre système devra utiliser pyppeteerpour analyser le HTML généré pour la conversion en PDF.</p>
 <p>Vous pouvez l’installer comme ceci :</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install pyppeteer
@@ -1067,9 +1149,9 @@ xdg-utils
 wget
 </pre></div>
 </div>
-</div>
-<div class="section" id="appliquer-les-commandes-construire-le-pdf">
-<h3>Appliquer les commandes / construire le PDF<a class="headerlink" href="#appliquer-les-commandes-construire-le-pdf" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="appliquer-les-commandes-construire-le-pdf">
+<h3>Appliquer les commandes / construire le PDF<a class="headerlink" href="#appliquer-les-commandes-construire-le-pdf" title="Permalink to this headline">#</a></h3>
 <p>Pour créer un seul PDF à partir du code HTML de votre book, utilisez la commande suivante :</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>jupyter-book build . --builder pdfhtml
 </pre></div>
@@ -1080,10 +1162,10 @@ wget
 </div>
 <p>Voilà ensuite rendez-vous dans vore dossier Src &gt; build &gt; PDF et vous y retrouverez le PDF</p>
 <a class="reference internal image-reference" href="_images/rootToPDF.png" id="roottopdf"><img alt="_images/rootToPDF.png" class="align-center" id="roottopdf" src="_images/rootToPDF.png" style="width: 800px;" /></a>
-</div>
-</div>
-<div class="section" id="rajouter-des-imprimantes-avec-cups-2-3-4">
-<h2>Rajouter des imprimantes avec CUPs 2.3.4<a class="headerlink" href="#rajouter-des-imprimantes-avec-cups-2-3-4" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="rajouter-des-imprimantes-avec-cups-2-3-4">
+<h2>Rajouter des imprimantes avec CUPs 2.3.4<a class="headerlink" href="#rajouter-des-imprimantes-avec-cups-2-3-4" title="Permalink to this headline">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <blockquote>
@@ -1116,7 +1198,7 @@ wget
 <br/>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>Sur l’image, à droite de (Connexion: juste après l’a18 il y a 2 tirets “- -“, c’est une erreur de ma part).</p>
+<p>Sur l’image, à droite de (Connexion: juste après l’a18 il y a 2 tirets “- -”, c’est une erreur de ma part).</p>
 </div>
 <br/>
 <a class="reference internal image-reference" href="_images/PrinterName.png" id="printername"><img alt="_images/PrinterName.png" class="align-center" id="printername" src="_images/PrinterName.png" style="width: 700px;" /></a>
@@ -1161,9 +1243,9 @@ wget
 <br/>
 <a class="reference internal image-reference" href="_images/sdm-Nord.png" id="sdm-nord"><img alt="_images/sdm-Nord.png" class="align-center" id="sdm-nord" src="_images/sdm-Nord.png" style="width: 700px;" /></a>
 <br/>
-</div>
-<div class="section" id="ajouter-une-imprimante-sur-le-serveur-et-lui-attribuer-une-adresse-ipv4-fixe">
-<h2>Ajouter une imprimante sur le serveur et lui attribuer une adresse IPV4 fixe.<a class="headerlink" href="#ajouter-une-imprimante-sur-le-serveur-et-lui-attribuer-une-adresse-ipv4-fixe" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="ajouter-une-imprimante-sur-le-serveur-et-lui-attribuer-une-adresse-ipv4-fixe">
+<h2>Ajouter une imprimante sur le serveur et lui attribuer une adresse IPV4 fixe.<a class="headerlink" href="#ajouter-une-imprimante-sur-le-serveur-et-lui-attribuer-une-adresse-ipv4-fixe" title="Permalink to this headline">#</a></h2>
 <br/>
 <p>Pour ajouter une imprimante sur le serveur et lui attribuer une adresse IPV4 fixe est plutôt simple. Avant de commencer vérifier que vous avez accès au serveur DHCP et que vous avez également accès au serveur d’impression. Une fois que c’est bon vous pourrez commencer. Tout d’abord il faut aller sur le serveur d’impression (celuil du milieu). Voir image ci-dessous. (PrintServe).</p>
 <br/>
@@ -1202,8 +1284,8 @@ wget
 <br/>
 <a class="reference internal image-reference" href="_images/dhcp4.png" id="dhcp4"><img alt="_images/dhcp4.png" class="align-center" id="dhcp4" src="_images/dhcp4.png" style="width: 400px;" /></a>
 <br/>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1227,9 +1309,11 @@ wget
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="WindowsServer.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -1245,17 +1329,17 @@ wget
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
-    
-      Par The Jupyter Book community<br/>
-    
-        &copy; droits d'auteur 2021.<br/>
-      <div class="extra_footer">
-        <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The Jupyter Book community<br/>
+  
+      &copy; Copyright 2022.<br/>
+    <div class="extra_footer">
+      <p>
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
 <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
 </a>
@@ -1264,16 +1348,20 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
 </a>.
 </p>
 
-      </div>
-  </p>
-</footer>
-</main>
+    </div>
+</p>
+        </footer>
+    </div>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

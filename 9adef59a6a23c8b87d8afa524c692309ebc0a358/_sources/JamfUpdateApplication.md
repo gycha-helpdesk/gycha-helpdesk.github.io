@@ -10,9 +10,9 @@ Edit:           3-Dec 2021, Noor Alizadeh
 
 ## Types des packages
 
-Quand vous télécharger la nouvelle version de votre application/package, son type/format sera en pkg ou DMG.
+Quand vous téléchargez la nouvelle version de votre application/package, son type/format sera en pkg ou DMG.
 
-Si c'est un PKG on est bon et on peut passer à l'étap **[Charger le PKG dans JamfAdmin](jamf-admin)**. 
+Si c'est un PKG on est bon et on peut passer à l'étape **[Charger le PKG dans JamfAdmin](jamf-admin)**. 
 Si c'est un DMG, nous allons essayer de créer un PKG.
 
 ### Création d'un PKG à partir d'un fichier DMG
