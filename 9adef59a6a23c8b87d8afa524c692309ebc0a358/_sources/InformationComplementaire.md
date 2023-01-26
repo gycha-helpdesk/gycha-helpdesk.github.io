@@ -2,20 +2,25 @@
 Author:		    Joca Bolli
 Date:		    01.02.2022
 Description:	Information utile et mise a jour du site
+
+
+Edit:           Noa Chouriberry
+Date:           26.01.2023
+Description:    Mise à jour des informations de la page
 -->
 # Information complémentaire
 >Je m'excuse d'avance pour les fautes d'orthographe.
 > Dans cette partie du site je vais vous explique comment mettre à jour le site / rajouter du contenu.
 > En parallèle je vais vous donner plusieurs d'informations concernant les pannes que vous pourrez rencontrer et le fonctionnement du réseau de l'école.
-> je vais aussi vous expliquer le fonctionnement de l'usi, la dgnsi, la dgep, la dgo et les outils qui sont à notre disposition. Et plein d'autres choses qui pourrais vous être utiles.
+> je vais aussi vous expliquer le fonctionnement de l'usi, la dgnsi, la dgep, la dgo et les outils qui sont à notre disposition. Et plein d'autres choses qui pourront vous être utiles.
 
 ## Mettre a jour et modifier le site 
 
-Tout d'abord il faut que vous puissiez ouvrir les fichiers sur un logiciel de code (j'utiliser visual studio) ensuite il faut que vous vous rendiez dans le finder,
-Dans le dossier "src" du site. c'est dans ce dossier que vous allez soit modifier des fichiers existant soit en rajouter. pour le modifier il suffit d'ouvrir un fichier qui existe déjà et de le modifier.
+Tout d'abord il faut que vous puissiez ouvrir les fichiers sur un logiciel de code (je vous conseille Visual Studio Code pour la suite_) ensuite il faut que vous vous rendiez dans le finder,
+Dans le dossier "src" du site, c'est dans ce dossier que vous allez soit modifier des fichiers existant soit en rajouter. pour le modifier il suffit d'ouvrir un fichier qui existe déjà et de le modifier.
 
 ```{note}
-Pour faire des captures d'écran il faut appuyer sur : commande, MAJ, 4
+Pour faire des captures d'écran il faut appuyer sur : cmd, MAJ, 4
 ```
 <br/>
 
@@ -28,7 +33,7 @@ si vous voulez utiliser des images il faut les mettre dans le dossier image
 ```
 <br/>
 
-Pour rajouter un fichier c'est un peut plus compliquer. il faut ouvrir le fichier "_toc.yml" et une fois dedans vous pouvez ajouter une section ou une sous-section. Dans tous les cas si vous rajoutez quoique ce soit dans ce fichier il faudra aussi créé un fichier dans le dossier "src" avec le même nom.
+Pour rajouter un fichier c'est un peut plus compliqué. Il faut ouvrir le fichier "_toc.yml" et une fois que c'est fait vous pouvez ajouter une section ou une sous-section. Dans tous les cas si vous rajoutez quoique ce soit dans ce fichier il faudra aussi créé un fichier dans le dossier "src" avec le même nom.
 
 <br/>
 
@@ -40,7 +45,7 @@ Pour rajouter un fichier c'est un peut plus compliquer. il faut ouvrir le fichie
 
 <br/>
 
-EX : pour créer cette page j'ai dû rajouter dans le fichier "_toc.yml" un file du nom de "InformationComplementaire" donc dans le dossier "src" j'ai dû créer un fichier du même nom.
+EX : pour créer cette page j'ai dû rajouter dans le fichier "_toc.yml" une ligne du nom de "- InformationComplementaire" donc dans le dossier "src" j'ai dû créer un fichier du même nom.
 
 <br/>
 
@@ -59,7 +64,7 @@ EX : pour créer cette page j'ai dû rajouter dans le fichier "_toc.yml" un file
 ```
 <br/>
 
-pour appliquer votre modification il faut exécuter dans le terminal une suite de commandes. Pour ce faire aller dans la barre en haut quand vous êtes sur le fichier que vous voulez modifier puis cliquer sur le terminal :
+Pour appliquer votre modification, il faut exécuter dans le terminal une suite de commandes. Pour ce faire, allez dans la barre en haut quand vous êtes sur le fichier que vous voulez modifier puis cliquez sur le terminal :
 
  <br/>
 
@@ -70,7 +75,7 @@ pour appliquer votre modification il faut exécuter dans le terminal une suite d
 ```
 <br/>
 
-Ensuite en bas de votre page il devrait y avoir une nouvelle "fenêtre incruster dans votre fenêtre".
+Ensuite en bas de votre application il devrait y avoir le terminal de VS code prêt à recevoir des commandes.
 
 <br/>
 
@@ -81,16 +86,16 @@ Ensuite en bas de votre page il devrait y avoir une nouvelle "fenêtre incruster
 ```
 <br/>
 
- une fois votre modification faite il faut aller sur le terminal et taper la commande :
+Voici la première commande à entrer:
 
 ```shell
 conda activate jupyter-book
 ```
 
 ```{note}
-Cette commande doit être tapée uniquement si vous n'êtes pas déjà sur l'environnement jupyter-book. dans le terminal s'est marqué entre des parenthèses (base) ou (jupyter-book).
+Cette commande sert à ce que l'on soit dans le bon environnement Anaconda. Sans ça, la commande d'après ne fonctionnera pas et on ne peut pas appliquer nos modifications.
 ```
-ex (ici je suis déjà sur jupyter-book): 
+ex. (ici je suis déjà sur jupyter-book): 
 
 <br/>
 
@@ -112,18 +117,18 @@ pwd
 ```
 <br/>
 
- Cela vous indique où vous vous trouvez. ensuite pour vous placer au bon endroit (si vous n'êtes pas au bon endroit) il vous suffit de taper "cd" et de glisser le dossier dans lequel vous voulez vous trouver dans le terminal.
+ Cela vous indique où vous vous trouvez. ensuite pour vous placer au bon endroit (si vous n'êtes pas au bon endroit) il vous suffit de taper "cd" et de glisser le dossier "src" qui contient les pages modifiées du site.
 <br/>
 
 Maintenant que vous êtes dans le bon dossier et que vous êtes sur le bon environnement (jupyter-book) vous pouvez taper la commande suivante : 
 ```shell
-Jupyter-book build .
+jupyter-book build .
 ```
 <br/>
-Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local mais pas en ligne. Des modifications que vous avez apportées au fichier.
+Voilà ! Une fois que tout ça est fait, vous pouvez voir le changement en local mais pas en ligne. Des modifications que vous avez apportées au fichier.
 
 ```{note}
-il suffit de copier le lien qui vous est fourni quand vous tapez la commande build .
+Il suffit de copier le lien qui vous est fourni après avoir entré la commande "jupyter-book build ."
 ```
 <br/>
 
@@ -134,7 +139,7 @@ il suffit de copier le lien qui vous est fourni quand vous tapez la commande bui
 ```
 <br/>
 
-Si vous voulez pouvoir voir vos modifications en ligne il faut aller sur gitHub desktop pour push toutes les données que vous avez modifiées. Mais avant ça il faut sélectionner le bon dossier.
+Si vous voulez pouvoir voir vos modifications en ligne il faut aller sur GitHub desktop pour push (envoyer) toutes les données que vous avez modifiées. Mais avant ça il faut sélectionner le bon dossier.
 
 <br/>
 
@@ -158,7 +163,7 @@ Une fois que vous êtes sur le bon dossier il faut faire un commmit à la branch
 
 <br/>
 
-une fois que c'est fait il faut cliquer sur push en haut à droite. 
+Une fois que c'est fait il faut cliquer sur push en haut à droite. 
 
 <br/>
 
@@ -170,7 +175,7 @@ une fois que c'est fait il faut cliquer sur push en haut à droite.
 
 <br/>
 
-Ensuite vous sélectionnez le deuxième dossier et vous faites la même chose. Une fois que c'est fait vous aller dans le finder et vous aller sur le dossier "src > build > html" et vous copier l'intégralité du dossier.
+Ensuite vous sélectionnez le deuxième dossier et vous faites la même chose. Une fois que c'est fait vous devez aller dans le Finder et vous aller sur le dossier "src > build > html" et vous copier l'intégralité du dossier.
 
 <br/>
 
@@ -182,7 +187,7 @@ Ensuite vous sélectionnez le deuxième dossier et vous faites la même chose. U
 
 <br/>
 
-ensuite vous allez sur le dossier (gycha-helpdesk.github.io) est vous coller le tout dans le dossier 9adef59......
+Ensuite vous allez sur le dossier (gycha-helpdesk.github.io) et vous collez le tout dans le dossier 9adef59......
 
 <br/>
 
@@ -194,18 +199,18 @@ ensuite vous allez sur le dossier (gycha-helpdesk.github.io) est vous coller le 
 
 <br/>
 
-si ça ne marche pas refaites-le. Mais en général il faut juste attendre un peu et recharger la page.
+Les changements prennent ~5 mins à s'appliquer, mais si vous n'êtes vraiment pas sur n'hésitez pas à refaire la commande jupyter-book build . sur VS code et à glisser les fichiers html de nouveau
 
 <br/>
 
-## commande qui pourrais vous être utile
+## commande qui pourrait vous être utile
 
-Pour exécuter une commande jamf il suffit de connecter n'importe quel ordinateur sur le réseau de l'école par câble et se rendre dans le terminal. Cette commande sert à activer toutes les règles que n'importe quel ordinateur peut recevoir.
+Pour exécuter une commande jamf, il suffit de connecter n'importe quel ordinateur sur le réseau de l'école par câble et se rendre dans le terminal. Cette commande sert à activer toutes les règles que n'importe quel ordinateur peut recevoir.
 
 <br/>
 
 ```{Attention}
-Pour que la commande fonctionne correctement il faut l'exécuter plusieurs fois. Parce qu'il y a beaucoup de règles qui sont exécutées en même temps est certaine règle dépendent d'autres règles. Du coup il est possible que l'exécuter une seule fois ne suffise pas.
+Pour que la commande fonctionne correctement il faut l'exécuter plusieurs fois. Parce qu'il y a beaucoup de règles qui sont exécutées en même temps et certaines règle dépendent d'autres règles. Du coup il est possible que l'exécuter une seule fois ne suffise pas.
 ```
 <br/>
 

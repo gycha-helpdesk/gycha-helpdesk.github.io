@@ -414,8 +414,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#commande-qui-pourrais-vous-etre-utile">
-   commande qui pourrais vous être utile
+  <a class="reference internal nav-link" href="#commande-qui-pourrait-vous-etre-utile">
+   commande qui pourrait vous être utile
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -544,8 +544,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#commande-qui-pourrais-vous-etre-utile">
-   commande qui pourrais vous être utile
+  <a class="reference internal nav-link" href="#commande-qui-pourrait-vous-etre-utile">
+   commande qui pourrait vous être utile
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -663,6 +663,11 @@ title="Print to PDF"
 Author:		    Joca Bolli
 Date:		    01.02.2022
 Description:	Information utile et mise a jour du site
+
+
+Edit:           Noa Chouriberry
+Date:           26.01.2023
+Description:    Mise à jour des informations de la page
 -->
 <section class="tex2jax_ignore mathjax_ignore" id="information-complementaire">
 <h1>Information complémentaire<a class="headerlink" href="#information-complementaire" title="Permalink to this headline">#</a></h1>
@@ -670,47 +675,47 @@ Description:	Information utile et mise a jour du site
 <div><p>Je m’excuse d’avance pour les fautes d’orthographe.
 Dans cette partie du site je vais vous explique comment mettre à jour le site / rajouter du contenu.
 En parallèle je vais vous donner plusieurs d’informations concernant les pannes que vous pourrez rencontrer et le fonctionnement du réseau de l’école.
-je vais aussi vous expliquer le fonctionnement de l’usi, la dgnsi, la dgep, la dgo et les outils qui sont à notre disposition. Et plein d’autres choses qui pourrais vous être utiles.</p>
+je vais aussi vous expliquer le fonctionnement de l’usi, la dgnsi, la dgep, la dgo et les outils qui sont à notre disposition. Et plein d’autres choses qui pourront vous être utiles.</p>
 </div></blockquote>
 <section id="mettre-a-jour-et-modifier-le-site">
 <h2>Mettre a jour et modifier le site<a class="headerlink" href="#mettre-a-jour-et-modifier-le-site" title="Permalink to this headline">#</a></h2>
-<p>Tout d’abord il faut que vous puissiez ouvrir les fichiers sur un logiciel de code (j’utiliser visual studio) ensuite il faut que vous vous rendiez dans le finder,
-Dans le dossier “src” du site. c’est dans ce dossier que vous allez soit modifier des fichiers existant soit en rajouter. pour le modifier il suffit d’ouvrir un fichier qui existe déjà et de le modifier.</p>
+<p>Tout d’abord il faut que vous puissiez ouvrir les fichiers sur un logiciel de code (je vous conseille Visual Studio Code pour la suite_) ensuite il faut que vous vous rendiez dans le finder,
+Dans le dossier “src” du site, c’est dans ce dossier que vous allez soit modifier des fichiers existant soit en rajouter. pour le modifier il suffit d’ouvrir un fichier qui existe déjà et de le modifier.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Pour faire des captures d’écran il faut appuyer sur : commande, MAJ, 4</p>
+<p>Pour faire des captures d’écran il faut appuyer sur : cmd, MAJ, 4</p>
 </div>
 <br/>
 <p>si vous voulez utiliser des images il faut les mettre dans le dossier image</p>
 <a class="reference internal image-reference" href="_images/rootImage.png" id="rootimage"><img alt="_images/rootImage.png" class="align-center" id="rootimage" src="_images/rootImage.png" style="width: 700px;" /></a>
 <br/>
-<p>Pour rajouter un fichier c’est un peut plus compliquer. il faut ouvrir le fichier “_toc.yml” et une fois dedans vous pouvez ajouter une section ou une sous-section. Dans tous les cas si vous rajoutez quoique ce soit dans ce fichier il faudra aussi créé un fichier dans le dossier “src” avec le même nom.</p>
+<p>Pour rajouter un fichier c’est un peut plus compliqué. Il faut ouvrir le fichier “_toc.yml” et une fois que c’est fait vous pouvez ajouter une section ou une sous-section. Dans tous les cas si vous rajoutez quoique ce soit dans ce fichier il faudra aussi créé un fichier dans le dossier “src” avec le même nom.</p>
 <br/>
 <a class="reference internal image-reference" href="_images/srcSiteRoot.png" id="srcsiteroot"><img alt="_images/srcSiteRoot.png" class="align-center" id="srcsiteroot" src="_images/srcSiteRoot.png" style="width: 700px;" /></a>
 <br/>
-<p>EX : pour créer cette page j’ai dû rajouter dans le fichier “_toc.yml” un file du nom de “InformationComplementaire” donc dans le dossier “src” j’ai dû créer un fichier du même nom.</p>
+<p>EX : pour créer cette page j’ai dû rajouter dans le fichier “_toc.yml” une ligne du nom de “- InformationComplementaire” donc dans le dossier “src” j’ai dû créer un fichier du même nom.</p>
 <br/>
 <a class="reference internal image-reference" href="_images/dossierSRCEtFichier.png" id="dossiersrcetfichier"><img alt="_images/dossierSRCEtFichier.png" class="align-center" id="dossiersrcetfichier" src="_images/dossierSRCEtFichier.png" style="width: 600px;" /></a>
 <br/>
 <a class="reference internal image-reference" href="_images/ContenuFichierToc.png" id="contenufichiertoc"><img alt="_images/ContenuFichierToc.png" class="align-center" id="contenufichiertoc" src="_images/ContenuFichierToc.png" style="width: 600px;" /></a>
 <br/>
-<p>pour appliquer votre modification il faut exécuter dans le terminal une suite de commandes. Pour ce faire aller dans la barre en haut quand vous êtes sur le fichier que vous voulez modifier puis cliquer sur le terminal :</p>
+<p>Pour appliquer votre modification, il faut exécuter dans le terminal une suite de commandes. Pour ce faire, allez dans la barre en haut quand vous êtes sur le fichier que vous voulez modifier puis cliquez sur le terminal :</p>
  <br/>
 <a class="reference internal image-reference" href="_images/AccesTerminal.png" id="accesterminal"><img alt="_images/AccesTerminal.png" class="align-center" id="accesterminal" src="_images/AccesTerminal.png" style="width: 600px;" /></a>
 <br/>
-<p>Ensuite en bas de votre page il devrait y avoir une nouvelle “fenêtre incruster dans votre fenêtre”.</p>
+<p>Ensuite en bas de votre application il devrait y avoir le terminal de VS code prêt à recevoir des commandes.</p>
 <br/>
 <a class="reference internal image-reference" href="_images/TerminalInToFenetre.png" id="terminalintofenetre"><img alt="_images/TerminalInToFenetre.png" class="align-center" id="terminalintofenetre" src="_images/TerminalInToFenetre.png" style="width: 800px;" /></a>
 <br/>
-<p>une fois votre modification faite il faut aller sur le terminal et taper la commande :</p>
+<p>Voici la première commande à entrer:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda activate jupyter-book
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Cette commande doit être tapée uniquement si vous n’êtes pas déjà sur l’environnement jupyter-book. dans le terminal s’est marqué entre des parenthèses (base) ou (jupyter-book).</p>
+<p>Cette commande sert à ce que l’on soit dans le bon environnement Anaconda. Sans ça, la commande d’après ne fonctionnera pas et on ne peut pas appliquer nos modifications.</p>
 </div>
-<p>ex (ici je suis déjà sur jupyter-book):</p>
+<p>ex. (ici je suis déjà sur jupyter-book):</p>
 <br/>
 <a class="reference internal image-reference" href="_images/TypeBaseOuJupy.png" id="typebaseoujupy"><img alt="_images/TypeBaseOuJupy.png" class="align-center" id="typebaseoujupy" src="_images/TypeBaseOuJupy.png" style="width: 400px;" /></a>
 <br/>
@@ -724,22 +729,22 @@ Dans le dossier “src” du site. c’est dans ce dossier que vous allez soit m
 </pre></div>
 </div>
 <br/>
-<p>Cela vous indique où vous vous trouvez. ensuite pour vous placer au bon endroit (si vous n’êtes pas au bon endroit) il vous suffit de taper “cd” et de glisser le dossier dans lequel vous voulez vous trouver dans le terminal.
+<p>Cela vous indique où vous vous trouvez. ensuite pour vous placer au bon endroit (si vous n’êtes pas au bon endroit) il vous suffit de taper “cd” et de glisser le dossier “src” qui contient les pages modifiées du site.
 <br/></p>
 <p>Maintenant que vous êtes dans le bon dossier et que vous êtes sur le bon environnement (jupyter-book) vous pouvez taper la commande suivante :</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>Jupyter-book build .
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>jupyter-book build .
 </pre></div>
 </div>
 <br/>
-Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local mais pas en ligne. Des modifications que vous avez apportées au fichier.
+Voilà ! Une fois que tout ça est fait, vous pouvez voir le changement en local mais pas en ligne. Des modifications que vous avez apportées au fichier.
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>il suffit de copier le lien qui vous est fourni quand vous tapez la commande build .</p>
+<p>Il suffit de copier le lien qui vous est fourni après avoir entré la commande “jupyter-book build .”</p>
 </div>
 <br/>
 <a class="reference internal image-reference" href="_images/lienSiteLocal.png" id="liensitelocal"><img alt="_images/lienSiteLocal.png" class="align-center" id="liensitelocal" src="_images/lienSiteLocal.png" style="width: 600px;" /></a>
 <br/>
-<p>Si vous voulez pouvoir voir vos modifications en ligne il faut aller sur gitHub desktop pour push toutes les données que vous avez modifiées. Mais avant ça il faut sélectionner le bon dossier.</p>
+<p>Si vous voulez pouvoir voir vos modifications en ligne il faut aller sur GitHub desktop pour push (envoyer) toutes les données que vous avez modifiées. Mais avant ça il faut sélectionner le bon dossier.</p>
 <br/>
 <a class="reference internal image-reference" href="_images/selectionDuBonDossier.png" id="selectiondubondossier"><img alt="_images/selectionDuBonDossier.png" class="align-center" id="selectiondubondossier" src="_images/selectionDuBonDossier.png" style="width: 400px;" /></a>
 <br/>
@@ -747,28 +752,28 @@ Voilà ! une fois que tout ça et faits vous pouvez voir le changement en local 
 <br/>
 <a class="reference internal image-reference" href="_images/Commit.png" id="commit"><img alt="_images/Commit.png" class="align-center" id="commit" src="_images/Commit.png" style="width: 300px;" /></a>
 <br/>
-<p>une fois que c’est fait il faut cliquer sur push en haut à droite.</p>
+<p>Une fois que c’est fait il faut cliquer sur push en haut à droite.</p>
 <br/>
 <a class="reference internal image-reference" href="_images/push.png" id="push"><img alt="_images/push.png" class="align-center" id="push" src="_images/push.png" style="width: 800px;" /></a>
 <br/>
-<p>Ensuite vous sélectionnez le deuxième dossier et vous faites la même chose. Une fois que c’est fait vous aller dans le finder et vous aller sur le dossier “src &gt; build &gt; html” et vous copier l’intégralité du dossier.</p>
+<p>Ensuite vous sélectionnez le deuxième dossier et vous faites la même chose. Une fois que c’est fait vous devez aller dans le Finder et vous aller sur le dossier “src &gt; build &gt; html” et vous copier l’intégralité du dossier.</p>
 <br/>
 <a class="reference internal image-reference" href="_images/rootToCopyHtml.png" id="roottocopyhtml"><img alt="_images/rootToCopyHtml.png" class="align-center" id="roottocopyhtml" src="_images/rootToCopyHtml.png" style="width: 800px;" /></a>
 <br/>
-<p>ensuite vous allez sur le dossier (<a class="reference external" href="http://gycha-helpdesk.github.io">gycha-helpdesk.github.io</a>) est vous coller le tout dans le dossier 9adef59……</p>
+<p>Ensuite vous allez sur le dossier (<a class="reference external" href="http://gycha-helpdesk.github.io">gycha-helpdesk.github.io</a>) et vous collez le tout dans le dossier 9adef59……</p>
 <br/>
 <a class="reference internal image-reference" href="_images/rootToColler.png" id="roottocoller"><img alt="_images/rootToColler.png" class="align-center" id="roottocoller" src="_images/rootToColler.png" style="width: 700px;" /></a>
 <br/>
-<p>si ça ne marche pas refaites-le. Mais en général il faut juste attendre un peu et recharger la page.</p>
+<p>Les changements prennent ~5 mins à s’appliquer, mais si vous n’êtes vraiment pas sur n’hésitez pas à refaire la commande jupyter-book build . sur VS code et à glisser les fichiers html de nouveau</p>
 <br/>
 </section>
-<section id="commande-qui-pourrais-vous-etre-utile">
-<h2>commande qui pourrais vous être utile<a class="headerlink" href="#commande-qui-pourrais-vous-etre-utile" title="Permalink to this headline">#</a></h2>
-<p>Pour exécuter une commande jamf il suffit de connecter n’importe quel ordinateur sur le réseau de l’école par câble et se rendre dans le terminal. Cette commande sert à activer toutes les règles que n’importe quel ordinateur peut recevoir.</p>
+<section id="commande-qui-pourrait-vous-etre-utile">
+<h2>commande qui pourrait vous être utile<a class="headerlink" href="#commande-qui-pourrait-vous-etre-utile" title="Permalink to this headline">#</a></h2>
+<p>Pour exécuter une commande jamf, il suffit de connecter n’importe quel ordinateur sur le réseau de l’école par câble et se rendre dans le terminal. Cette commande sert à activer toutes les règles que n’importe quel ordinateur peut recevoir.</p>
 <br/>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>Pour que la commande fonctionne correctement il faut l’exécuter plusieurs fois. Parce qu’il y a beaucoup de règles qui sont exécutées en même temps est certaine règle dépendent d’autres règles. Du coup il est possible que l’exécuter une seule fois ne suffise pas.</p>
+<p>Pour que la commande fonctionne correctement il faut l’exécuter plusieurs fois. Parce qu’il y a beaucoup de règles qui sont exécutées en même temps et certaines règle dépendent d’autres règles. Du coup il est possible que l’exécuter une seule fois ne suffise pas.</p>
 </div>
 <br/>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo jamf policy
