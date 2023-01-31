@@ -210,7 +210,7 @@ Pour exécuter une commande jamf, il suffit de connecter n'importe quel ordinate
 <br/>
 
 ```{Attention}
-Pour que la commande fonctionne correctement il faut l'exécuter plusieurs fois. Parce qu'il y a beaucoup de règles qui sont exécutées en même temps et certaines règle dépendent d'autres règles. Du coup il est possible que l'exécuter une seule fois ne suffise pas.
+Pour que la commande fonctionne correctement, il faut l'exécuter plusieurs fois parce qu'il y a beaucoup de règles qui sont exécutées en même temps et certaines règles dépendent d'autres règles. Du coup il est possible que l'exécuter une seule fois ne suffise pas.
 ```
 <br/>
 
@@ -219,7 +219,7 @@ sudo jamf policy
 ```
 <br/>
 
-si vous voulez appeler une règle précisément :
+Si vous voulez appeler une règle précisément :
 
 ```shell
 sudo jamf policy -event NomDeLaRegle
@@ -227,7 +227,7 @@ sudo jamf policy -event NomDeLaRegle
 <br/>
 
 ```{Attention}
-il ne faut pas tapez exactement le nom de la regle. Il faut taper l'événement personnalisé de la règle (l'encadré en vert). (En général c'est le nom de la règle). Pour vérifier si le nom de la règle est celui de son événement personnalisé sont les mêmes il suffit de cliquer sur la règle.
+il ne faut pas taper exactement le nom de la regle. Il faut taper l'événement personnalisé de la règle (l'encadré en vert, en général c'est le nom de la règle). Pour vérifier si le nom de la règle et si celui de son événement personnalisé sont les mêmes il suffit de cliquer sur la règle et vérifier.
 
 
 ```
@@ -259,12 +259,12 @@ sudo jamf recon
 defaults write com.apple.dock autohide-time-modifier -float 0.5; killall Dock
 ```
 
-Cette commande est plus partique que nécessaire. En gros elle permet d'afficher plus vite la barre de menu en bas de votre mac (Le doc).
+Cette commande est plus pratique que nécessaire. En gros elle permet d'afficher plus vite la barre de menu en bas de votre mac (Le doc).
 
 ```shell
 defaults write -g ApplePressAndHoldEnabled -bool false
 ```
-Si vous avez l'habitude de maintenir la touche e pour faire apparaitre les diférentes possibilité d'accents cette commande n'est pas pour vous mais si vous voulez tapper de lettres a la suite vitte cette commande vous plaira ex : dddddddddddd.
+Si vous avez l'habitude de maintenir la touche e pour faire apparaitre les diférentes possibilité d'accents cette commande n'est pas pour vous mais si vous voulez taper des lettres a la suite vite cette commande vous plaira ex : dddddddddddd.
 
 
 Du même type si vous aller dans le réglages est que vous les régler comme l'image si dessous vous pourrez effacer a la même vitesse (comme pour vous déplacer).
@@ -279,7 +279,7 @@ Du même type si vous aller dans le réglages est que vous les régler comme l'i
 
 ## Ordinateur de prêt
 
-Pour configurer un ordinateur a prêté il faut commencer en lui [installant](https://support.apple.com/fr-ch/HT211683) l'OS qu'il supporte (Catalina pour 2012 et Big Sur pour 2014). Sur ce site il y a toutes les informations et version. De macOS High Sierra jusqu'à macos Big Sur. Ensuite il faut vérifier que l'rodinateur n'a pas plusieurs disks. Si c'est le cas il faut aller dans "utilitaire de disques" et supprimer ceux en trop et en garder un seul (chamblandesHD). 
+Pour configurer un ordinateur a prêter il faut commencer en lui [installant](https://support.apple.com/fr-ch/HT211683) l'OS qu'il supporte (Catalina pour 2012 et Big Sur pour 2014). Sur ce site il y a toutes les informations et version. De macOS High Sierra jusqu'à macOS Ventura. Ensuite il faut vérifier que l'ordinateur n'a pas plusieurs disques. Si c'est le cas il faut aller dans "utilitaire de disques" et supprimer ceux en trop et en garder un seul (chamblandesHD). 
 <br/>
 
 ```{image} images/DiskUtility.png
@@ -290,9 +290,9 @@ Pour configurer un ordinateur a prêté il faut commencer en lui [installant](ht
 
 <br/>
 
-Puis appliquer les règles de jamf (soudo Jamf policy). Il faut vérifier que dans les applications l'ordinateur a bien Outlook, Teams, Word, etc. Une fois que vous avez fait toutes ces étapes il ne reste plus qu'a créé un compte admin (user : adminl et Mdp : Gym _09). Il ne faut pas oublier son compte (un compte utilisateur) et modifier dans les teams le fichier inventaire en classifiant l'ordinateur par rapport a son nom.
+Ensuite, il faut appliquer les règles de jamf (sudo jamf policy). Il faut vérifier que dans les applications l'ordinateur a bien Outlook, Teams, Word, etc. Une fois que vous avez fait toutes ces étapes il ne reste plus qu'a créer un compte admin (user : adminl et Mdp : Gym _09). Il ne faut pas oublier son compte (un compte utilisateur) et modifier dans le teams le fichier inventaire en classifiant l'ordinateur par rapport a son nom.
 
-## Shéma réseau des salles de classe en général
+## Schéma réseau des salles de classe en général
 
 VLAN :
 
@@ -304,7 +304,7 @@ VLAN :
 
 <br/>
 
-voici les switchs réseau que vous retrouverez dans toutes les salles de classe. 
+Voici les switchs réseau que vous retrouverez dans toutes les salles de classe. 
 
 <br/>
 
@@ -331,7 +331,7 @@ Comme on peut le voir à l'arrière il n'y a que l'alimentation.
 <br/>
 
 ```{note}
-Normalement a l'avant il y a juste le bouton power et input, le bouton input change quel câble hdmi sera affiché au beamer. Comme on peut le voir sur l'in 1 ça sera la Wacom donc l'ordinateur fixe (le mac mini). In 2 ordis perso donc l'rodinateur que le prof amène ou les élèves. In 3 c'est pour la caméra qui est dans la salle.
+Normalement a l'avant il y a juste le bouton power et input, le bouton input change quel câble hdmi sera affiché au beamer. Comme on peut le voir sur l'in 1 ça sera la Wacom donc l'ordinateur fixe (le mac mini). In 2 ordis perso donc l'ordinateur que le prof amène ou les élèves. In 3 c'est pour la caméra qui est dans la salle.
 ```
 
 <br/>
@@ -344,7 +344,7 @@ Normalement a l'avant il y a juste le bouton power et input, le bouton input cha
 <br/>
 
 ```{note}
-Le port HDMI "output" c'est le câble HDMI qui relie le beamer (il sert de sortie pour toutes les autres entrées hdmi), l'in 3 est relié à la caméra, l'in 2 à l'rodi perso, et l'in 1 au mac mini.
+Le port HDMI "output" c'est le câble HDMI qui relie le beamer (il sert de sortie pour toutes les autres entrées hdmi), l'in 3 est relié à la caméra, l'in 2 à l'ordi perso, et l'in 1 au mac mini.
 ```
 
 <br/>
@@ -358,7 +358,7 @@ Le port HDMI "output" c'est le câble HDMI qui relie le beamer (il sert de sorti
 <br/>
 
 ```{note}
-Sur le mac mini ce n'est pas compliqué même s'il en donne l'impression. Tout à gauche c'est l'alim du mac mini, ensuite c'est le câble réseau donc internet (sur la photo c'est le câble rouge). Après tout le reste est relié ensemble jusqu'au même câble. Sur ce même câble il y a le câble HDMI du mac mini, un câble USB(il sert à relier les ports USB de la Wacom au mac mini s'il y en a) et pour finir l'alim de la Wacom est tous ces câbles est réuni en un seul est il est connecter a la wacom.
+Sur le mac mini ce n'est pas compliqué même s'il en donne l'impression. Tout à gauche c'est l'alim du mac mini, ensuite c'est le câble réseau donc internet (sur la photo c'est le câble rouge). Après tout le reste est relié ensemble jusqu'au même câble. Sur ce même câble il y a le câble HDMI du mac mini, un câble USB (il sert à relier les ports USB de la Wacom au mac mini s'il y en a) et pour finir l'alim de la Wacom et tous ces câbles sont réuni en un seul et il est connecté à la wacom.
 ```
 <br/>
 
@@ -376,16 +376,16 @@ Sur le mac mini ce n'est pas compliqué même s'il en donne l'impression. Tout �
 :align: center
 ```
 
-## Fonction / shéma de l'usi / dgep / dgnsi
+## Fonction / schéma de l'usi / dgep / dgnsi
 
 Pour gérer le support des écoles post obligatoires ils ont créé un système en suivant le modèle d'ITIL.
 
-Donc pour commencer toutes les écoles ont un helpdesk (le niveau 1) si les commandes dépassent notre compréhension ou si elle dépasse notre domaine d'action. Le niveau 2 c'est  l'usi, le niveau 3 c'est les ingénieurs qui sont aussi a l'usi mais c'est une autre partie et pour finir il y a le niveau 4 c'est le fournisseur des applications ou des services.
+Donc pour commencer toutes les écoles ont un helpdesk (le niveau 1) si les commandes dépassent notre compréhension ou si elles dépassent notre domaine d'action. Le niveau 2 c'est l'USI, le niveau 3 c'est les ingénieurs qui sont aussi a l'USI mais c'est une autre partie et pour finir il y a le niveau 4 qui est le fournisseur des applications ou des services.
 
 <br/>
 
 ```{note}
-Sur le schéma on peut constater qu'une personne exécute plusieurs fonctions en même temps, Symplement c'est le chef de l'usi donc il a plusieurs postes.
+Sur le schéma on peut constater qu'une personne exécute plusieurs fonctions en même temps, Simplement c'est le chef de l'USI donc il a plusieurs postes.
 ```
 
 <br/>
@@ -399,7 +399,7 @@ Sur le schéma on peut constater qu'une personne exécute plusieurs fonctions en
 <br/>
 
 ```{note}
-L'usi peut aussi accéder au serveur Sql et y exécuter des commandes.
+L'USI peut aussi accéder au serveur SQL et y exécuter des commandes.
 ```
 
 <br/>
@@ -413,11 +413,11 @@ L'usi peut aussi accéder au serveur Sql et y exécuter des commandes.
 <br/>
 
 
-## Information supplémentaire
+## Informations supplémentaire
 
 ### kahoot
 
-Sur kahoot il est possible de lancer en boucle un quiz. Pour ce faire il faut accéder à la bibliothèque ou son organiser tous vos quiz. ensuite cliquer sur jouer (sélectionner le quiz que vous voulez lancer en boucle).
+Sur kahoot il est possible de lancer en boucle un quiz. Pour ce faire il faut accéder à la bibliothèque ou sont organisés tous vos quiz. Ensuite cliquez sur jouer (sélectionnez le quiz que vous voulez lancer en boucle).
 
 <br/>
 
@@ -441,7 +441,7 @@ Sur kahoot il est possible de lancer en boucle un quiz. Pour ce faire il faut ac
 
 <br/>
 
-Une fois le mode de jeux choisi il faut aller dans les option pour les afficher en selectionner [passet automatiquement les questions](https://support.kahoot.com/hc/fr/articles/115016055107-Options-de-jeu-en-direct#auto_move) des questions. 
+Une fois le mode de jeu choisi il faut aller dans les options pour les afficher en selectionnant [passer automatiquement les questions](https://support.kahoot.com/hc/fr/articles/115016055107-Options-de-jeu-en-direct#auto_move) des questions. 
 
 <br/>
 
@@ -450,9 +450,9 @@ Une fois le mode de jeux choisi il faut aller dans les option pour les afficher 
 :name: KahootOptionDeJeu
 :align: center
 ```
-### VMware / Vsphere
+### VMware / vSphere
 
-[Comment ce connecter a Vsphere](https://vcenter.dgep.edu-vaud.ch/ui/#?extensionId=vsphere.core.inventory.serverObjectViewsExtension&objectId=urn:vmomi:VirtualMachine:vm-127617:93734f74-49db-4644-be85-8dab90d13b02&navigator=vsphere.core.viTree.hostsAndClustersView)
+[Comment se connecter a vSphere](https://vcenter.dgep.edu-vaud.ch/ui/#?extensionId=vsphere.core.inventory.serverObjectViewsExtension&objectId=urn:vmomi:VirtualMachine:vm-127617:93734f74-49db-4644-be85-8dab90d13b02&navigator=vsphere.core.viTree.hostsAndClustersView)
 
 <br/>
 
@@ -464,10 +464,10 @@ Une fois le mode de jeux choisi il faut aller dans les option pour les afficher 
 
 <br/>
 
-Sur Vsphere il y a une notation un peu spécial vous pourrez la retrouver ici :
+Sur vSphere il y a une notation un peu spéciale que vous pourrez retrouver ici :
 
-- DUS = DC (Domain controler)
-- NGE = Netwotk (DHCP, NPS, FFSO)
+- DUS = DC (Domain Controller)
+- NGE = Network (DHCP, NPS, FFSO)
 - PGE = Printer (papercut)
 
 <br/>
