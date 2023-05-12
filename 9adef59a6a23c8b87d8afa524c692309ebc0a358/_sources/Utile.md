@@ -12,5 +12,6 @@ Description:	Mise à jour de la page de la section Utile
 4. [Anaconda](/Anaconda.md)
 5. [Liens utiles](/LiensUtiles.md)
 6. [Windows Server](/WindowsServer.md)
-7. [Information complémentaire](/InformationComplementaire.md)
+7. [Informations complémentaires](/InformationComplementaire.md)
 8. [Adobe](/Adobe.md)
+8. [Réinitialiser un poste](/ReinstallMac.md)

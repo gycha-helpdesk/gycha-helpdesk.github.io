@@ -1,114 +1,75 @@
-<!-- 
-Author:         Noor Mohammad Alizadeh
-Date:           10-Dec 2021
-Description:    Update inventory items, names, etc...
- -->
+<!--
+Author:		    Noa Chouriberry
+Date:		    03.05.2023
+Description:    comment mettre à jour l'Inventaire du gymnase (infos)
+-->
 
-# Mettre à jour l'inventaire
+# Se connecter au serveur de l'inventaire
+Pour voir les fichiers d'inventaire et le script qui nous sera utile, il faut d'abord qu'on se connecte au serveur d'inventaire:
 
-Pour bien suivre et prendre une trace de changements au niveau des matériels
-informatiuques il faut toujours mettre à jour le fichier inventaire dans qui 
-se trouve dans le serveur de fichiers. 
-
-```{note}
-Actuellement (décembre 2021), le fichier inventaire le plus à jour est celui qui se trouve dans: </br>
-Teams > GychaIT > Files > Inventaire > 2020
-```
-
-## Accéder au serveur des fichiers
-
-- Pour commencer, ouvrez le Finder et dans les options Finder, choisissez "Aller" et ensuite "Se connecter au servuer"
-
-```{image} images/inventory-file-server.png
-:width: 600px
-:name: inventory-file-server
+Il faut ouvrir Finder et faire CMD + K à l'intérieur: Vous verrez une fenetre comme ça:
+```{image} images/server-window.png
+:width: 500px
+:name: server-window
 :align: center
 ```
 
-- Dans la fenêtre suivante tappez l'adresse du serveur du fichier puis connecter. Adresse pour acceder au serveur des fichiers:
-
-:::
+voici l'adresse du serveur a mettre: 
+```
 smb://gycha-srv-fs01
-:::
+```
 
-```{image} images/inventory-address.png
-:width: 600px
-:name: inventory-address
+Quand la connexion sera faite, il y aura une fenêtre avec des dossiers à sélectionner. Pour notre part nous allons prendre le dossier IT qui contient les fichiers inventaire:
+
+```{image} images/repertories-window.png
+:width: 500px
+:name: repertories-window
 :align: center
 ```
 
-- Ensuite il vous demande de vous identifier sur le serveur, mettez votre identifiant AD ou Eduvaud puis connectez vous.
-  
-```{image} images/inventory-login.png
-:width: 600px
-:name: inventory-login
+# Ou trouver le(s) fichier d'inventaire ?
+Dans le finder, on va aller dans inventaire > 2023 (l'année) > et le fichier se trouve ici. Si vous voulez créer un nouveau fichier d'inventaire pour une nouvelle année, il faut créer un dossier avec l'année et copier le dernier fichier inventaire à jour.
+
+# Comment ajouter quelque chose à l'intérieur
+En ouvrant le fichier, on se retrouve avec tout ce qui sert à identifier les ordinateurs du gymnase. le type de matériel, la marque, le numéro de serie, le nom...
+Pour ajouter du matériel à l'inventaire, il suffit de rajouter une ligne en respectant la mise en forme des autres lignes de l'inventaire et de la modifier par rapport à vos besoins.
+
+```{image} images/fichier-inventaire.png
+:width: 500px
+:name: fichier-inventaire
 :align: center
 ```
 
-- Si authentification s'est faite sans erreur, une autre fenêtre s'ouvre avec une liste des volumes à disposition. Nous allons evidemment choisir IT.
+Dés que c'est fait, il faut sauvegarder les modifications et se rendre dans le dossier Inventaire, puis modifier le fichier .py pour modifier toutes les dates (2024 au lieu de 2023 par ex) si besoin.
 
-```{image} images/inventory-login-it.png
-:width: 600px
-:name: inventory-login-it
+```{image} images/python-script.png
+:width: 500px
+:name: python-script
 :align: center
 ```
 
-Voilà maintenant vous vous êtes bien connecter au serveur des fichiers et vous avez accès au tout les dossiers et documents inventaire. 
+Ensuite il faut ouvrir un terminal, taper "cd ", prendre le dossier inventaire et le glisser dans le terminal pour pouvoir s'y rendre.
 
-```{image} images/inventory-folder.png
-:width: 600px
-:name: inventory-folder
+Après, il faut appuyer sur entrer et après taper cette commande:
+
+```
+python gycham_naming_export.py
+```
+
+ça permettera au script python de s'exécuter et de mettre a jour l'inventaire.
+
+```{image} images/terminal-inventaire.png
+:width: 500px
+:name: terminal-inventaire
 :align: center
 ```
 
-## Changer nom d'un poste
+# Que faire si le(s) appareils ne prennent pas le bon nom?
 
-Dans les cas où on veut changer le nom d'un pc ou laptop dans l'inventaire nous devons aussi le changer dans Active Directory.
-Cela prend beaucoup de temps si on le fait à la main. Il existe un script Python qui met à jour AD par rappot aux changements dans le fichier inventaire et crée un fichier CSV dans dossier Readonly (il se trouve dans le dossier racine). Donc si on met à jour ce fichier inventaire et lancer le script, AD sera aussi à jour.
-
-Emplacement du fichier inventaire à mettre à jour (dans serveur des fichiers):
-```
-/IT/inventaire/2021/InventaireNaming.xlsx
-```
-
-(python-script)=
-### Lancer le script Python
-
-Dans le même dossier se trouve le fichier script. Il s'appelle ```gycham_naming_export.py``` . </br>
-Pour lancer ce fichier nous aurons besoin du terminal. Dans terminal tappez python ensuite une espace, puis glisser le script dans le terminal. 
-
-```{image} images/inventory-change-post-name.png
-:width: 600px
-:name: inventory-change-post-name
-:align: center
-```
-
-Maintenant il vous faut seulement tappez sur la touche "Enter" pour lancement script. Quand l'operation réussie, nous pouvons aller voir le fichier CSV que ce script à généré pour voir si le changement à été effectué sans erreur. 
-
-Emplacement du fichier CSV (dans serveur des fichiers): 
+Généralement, quand l'enrôlement/le renommage ne se fait pas correctement, c'est à cause d'un problème de connexion internet. Soyez sûr que l'appareil soit bien branché en ethernet avant de passer à la suite. Dés que c'est fait, il faut ouvrir un terminal sur la machine et taper la commande suivante:
 
 ```
-/IT/ReadOnly/GYCH_naming.csv
+sudo jamf policy -event renamecomputerout
 ```
 
-Dans ce fichier vous pouvez chercher le pc dont vous venez de changer le nom.
-
-### Changement du nom sur le poste
-
-Normalement les ordinateurs du GYCHA lance recurremment la régle qui met à jour les information de l'ordinateur avec l'AD. 
-Mais parfois vous avez besoin de changer son nom plus rapidement (par exemple dans les cas où nous faisons le changement d'ordinateur). 
-
-Il existe quatre différentes règles dans Jamf qui nous permettent de mettre ajour le nom de l'ordinateur avec le fichier CSV qu'on a généré dans [l'étap précédente](python-script). 
-
-> **renameComputer** : met à jour le nom de l'ordinateur
-> </br> **renamrComputerAD** : il appelle la règle _renameComputer_ en mettant à jour le même ordinateur dans l'AD
-> </br> **renameComputerIN** : il appelle la règle _renameComputer_ en inserant l'ordinateur (qui n'était pas dans AD/Inventaire) dans Active Directory 
-> </br> **renameComputerOUT** : contrairement la commande précédente, après lancement _renameComputer_, il sort l'ordinateur de l'AD (utilisé pour mettre en horsstock les ordinateurs)
-
-Pour savoir comment lancer ces règles on peut référer à l'article "Déploiment OS depuis Jamf", il y a un exemple de comment lancer une règle Jamf depuis terminal: 
-
-:::{link-button} jamf-terminal
-:type: ref
-:text: cliquez ici
-:classes: btn btn-outline-info
-:::
+Normalement ça devrait mettre un message "Set computer name to xxxxxxxxxx" ou un message qui y ressemble. Si vous ouvrez un nouveau terminal, vous devriez voir quelque chose d'autre que GYCH_(null). (ce que vous avez mis dans le fichier inventaire). Vous pouvez aussi aller dans la barre de recherche et chercher Partages pour contrôler le nom du poste.

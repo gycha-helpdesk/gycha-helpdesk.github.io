@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Mettre à jour l’inventaire &#8212; Documentation Technique Chamblandes</title>
+    <title>Se connecter au serveur de l’inventaire &#8212; Documentation Technique Chamblandes</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -239,7 +239,7 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="ServeurReseau.html">
+  <a class="reference internal" href="SectionReseau.html">
    Section Réseau
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
@@ -255,7 +255,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Mettre à jour l’inventaire
+     Se connecter au serveur de l’inventaire
     </a>
    </li>
    <li class="toctree-l2">
@@ -271,6 +271,16 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="Acronis.html">
      Acronis Cyber Backup
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="MikroTik.html">
+     Se connecter à un appareil MikroTik
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Plex.html">
+     Se connecter au serveur de streaming (Plex)
     </a>
    </li>
   </ul>
@@ -408,27 +418,25 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#acceder-au-serveur-des-fichiers">
-   Accéder au serveur des fichiers
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Se connecter au serveur de l’inventaire
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#changer-nom-d-un-poste">
-   Changer nom d’un poste
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ou-trouver-le-s-fichier-d-inventaire">
+   Ou trouver le(s) fichier d’inventaire ?
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#lancer-le-script-python">
-     Lancer le script Python
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#changement-du-nom-sur-le-poste">
-     Changement du nom sur le poste
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comment-ajouter-quelque-chose-a-l-interieur">
+   Comment ajouter quelque chose à l’intérieur
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#que-faire-si-le-s-appareils-ne-prennent-pas-le-bon-nom">
+   Que faire si le(s) appareils ne prennent pas le bon nom?
+  </a>
  </li>
 </ul>
 
@@ -439,7 +447,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Mettre à jour l’inventaire</h1>
+                <h1>Se connecter au serveur de l’inventaire</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -449,27 +457,25 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#acceder-au-serveur-des-fichiers">
-   Accéder au serveur des fichiers
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Se connecter au serveur de l’inventaire
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#changer-nom-d-un-poste">
-   Changer nom d’un poste
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ou-trouver-le-s-fichier-d-inventaire">
+   Ou trouver le(s) fichier d’inventaire ?
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#lancer-le-script-python">
-     Lancer le script Python
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#changement-du-nom-sur-le-poste">
-     Changement du nom sur le poste
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comment-ajouter-quelque-chose-a-l-interieur">
+   Comment ajouter quelque chose à l’intérieur
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#que-faire-si-le-s-appareils-ne-prennent-pas-le-bon-nom">
+   Que faire si le(s) appareils ne prennent pas le bon nom?
+  </a>
  </li>
 </ul>
 
@@ -481,79 +487,49 @@ title="Print to PDF"
                 
               <div>
                 
-  <!-- 
-Author:         Noor Mohammad Alizadeh
-Date:           10-Dec 2021
-Description:    Update inventory items, names, etc...
- -->
-<section class="tex2jax_ignore mathjax_ignore" id="mettre-a-jour-l-inventaire">
-<h1>Mettre à jour l’inventaire<a class="headerlink" href="#mettre-a-jour-l-inventaire" title="Permalink to this headline">#</a></h1>
-<p>Pour bien suivre et prendre une trace de changements au niveau des matériels
-informatiuques il faut toujours mettre à jour le fichier inventaire dans qui
-se trouve dans le serveur de fichiers.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Actuellement (décembre 2021), le fichier inventaire le plus à jour est celui qui se trouve dans: </br>
-Teams &gt; GychaIT &gt; Files &gt; Inventaire &gt; 2020</p>
-</div>
-<section id="acceder-au-serveur-des-fichiers">
-<h2>Accéder au serveur des fichiers<a class="headerlink" href="#acceder-au-serveur-des-fichiers" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p>Pour commencer, ouvrez le Finder et dans les options Finder, choisissez “Aller” et ensuite “Se connecter au servuer”</p></li>
-</ul>
-<a class="reference internal image-reference" href="_images/inventory-file-server.png" id="inventory-file-server"><img alt="_images/inventory-file-server.png" class="align-center" id="inventory-file-server" src="_images/inventory-file-server.png" style="width: 600px;" /></a>
-<ul class="simple">
-<li><p>Dans la fenêtre suivante tappez l’adresse du serveur du fichier puis connecter. Adresse pour acceder au serveur des fichiers:</p></li>
-</ul>
+  <!--
+Author:		    Noa Chouriberry
+Date:		    03.05.2023
+Description:    comment mettre à jour l'Inventaire du gymnase (infos)
+-->
+<section class="tex2jax_ignore mathjax_ignore" id="se-connecter-au-serveur-de-l-inventaire">
+<h1>Se connecter au serveur de l’inventaire<a class="headerlink" href="#se-connecter-au-serveur-de-l-inventaire" title="Permalink to this headline">#</a></h1>
+<p>Pour voir les fichiers d’inventaire et le script qui nous sera utile, il faut d’abord qu’on se connecte au serveur d’inventaire:</p>
+<p>Il faut ouvrir Finder et faire CMD + K à l’intérieur: Vous verrez une fenetre comme ça:</p>
+<a class="reference internal image-reference" href="_images/server-window.png" id="server-window"><img alt="_images/server-window.png" class="align-center" id="server-window" src="_images/server-window.png" style="width: 500px;" /></a>
+<p>voici l’adresse du serveur a mettre:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">smb</span><span class="p">:</span><span class="o">//</span><span class="n">gycha</span><span class="o">-</span><span class="n">srv</span><span class="o">-</span><span class="n">fs01</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="_images/inventory-address.png" id="inventory-address"><img alt="_images/inventory-address.png" class="align-center" id="inventory-address" src="_images/inventory-address.png" style="width: 600px;" /></a>
-<ul class="simple">
-<li><p>Ensuite il vous demande de vous identifier sur le serveur, mettez votre identifiant AD ou Eduvaud puis connectez vous.</p></li>
-</ul>
-<a class="reference internal image-reference" href="_images/inventory-login.png" id="inventory-login"><img alt="_images/inventory-login.png" class="align-center" id="inventory-login" src="_images/inventory-login.png" style="width: 600px;" /></a>
-<ul class="simple">
-<li><p>Si authentification s’est faite sans erreur, une autre fenêtre s’ouvre avec une liste des volumes à disposition. Nous allons evidemment choisir IT.</p></li>
-</ul>
-<a class="reference internal image-reference" href="_images/inventory-login-it.png" id="inventory-login-it"><img alt="_images/inventory-login-it.png" class="align-center" id="inventory-login-it" src="_images/inventory-login-it.png" style="width: 600px;" /></a>
-<p>Voilà maintenant vous vous êtes bien connecter au serveur des fichiers et vous avez accès au tout les dossiers et documents inventaire.</p>
-<a class="reference internal image-reference" href="_images/inventory-folder.png" id="inventory-folder"><img alt="_images/inventory-folder.png" class="align-center" id="inventory-folder" src="_images/inventory-folder.png" style="width: 600px;" /></a>
+<p>Quand la connexion sera faite, il y aura une fenêtre avec des dossiers à sélectionner. Pour notre part nous allons prendre le dossier IT qui contient les fichiers inventaire:</p>
+<a class="reference internal image-reference" href="_images/repertories-window.png" id="repertories-window"><img alt="_images/repertories-window.png" class="align-center" id="repertories-window" src="_images/repertories-window.png" style="width: 500px;" /></a>
 </section>
-<section id="changer-nom-d-un-poste">
-<h2>Changer nom d’un poste<a class="headerlink" href="#changer-nom-d-un-poste" title="Permalink to this headline">#</a></h2>
-<p>Dans les cas où on veut changer le nom d’un pc ou laptop dans l’inventaire nous devons aussi le changer dans Active Directory.
-Cela prend beaucoup de temps si on le fait à la main. Il existe un script Python qui met à jour AD par rappot aux changements dans le fichier inventaire et crée un fichier CSV dans dossier Readonly (il se trouve dans le dossier racine). Donc si on met à jour ce fichier inventaire et lancer le script, AD sera aussi à jour.</p>
-<p>Emplacement du fichier inventaire à mettre à jour (dans serveur des fichiers):</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">IT</span><span class="o">/</span><span class="n">inventaire</span><span class="o">/</span><span class="mi">2021</span><span class="o">/</span><span class="n">InventaireNaming</span><span class="o">.</span><span class="n">xlsx</span>
+<section class="tex2jax_ignore mathjax_ignore" id="ou-trouver-le-s-fichier-d-inventaire">
+<h1>Ou trouver le(s) fichier d’inventaire ?<a class="headerlink" href="#ou-trouver-le-s-fichier-d-inventaire" title="Permalink to this headline">#</a></h1>
+<p>Dans le finder, on va aller dans inventaire &gt; 2023 (l’année) &gt; et le fichier se trouve ici. Si vous voulez créer un nouveau fichier d’inventaire pour une nouvelle année, il faut créer un dossier avec l’année et copier le dernier fichier inventaire à jour.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="comment-ajouter-quelque-chose-a-l-interieur">
+<h1>Comment ajouter quelque chose à l’intérieur<a class="headerlink" href="#comment-ajouter-quelque-chose-a-l-interieur" title="Permalink to this headline">#</a></h1>
+<p>En ouvrant le fichier, on se retrouve avec tout ce qui sert à identifier les ordinateurs du gymnase. le type de matériel, la marque, le numéro de serie, le nom…
+Pour ajouter du matériel à l’inventaire, il suffit de rajouter une ligne en respectant la mise en forme des autres lignes de l’inventaire et de la modifier par rapport à vos besoins.</p>
+<a class="reference internal image-reference" href="_images/fichier-inventaire.png" id="fichier-inventaire"><img alt="_images/fichier-inventaire.png" class="align-center" id="fichier-inventaire" src="_images/fichier-inventaire.png" style="width: 500px;" /></a>
+<p>Dés que c’est fait, il faut sauvegarder les modifications et se rendre dans le dossier Inventaire, puis modifier le fichier .py pour modifier toutes les dates (2024 au lieu de 2023 par ex) si besoin.</p>
+<a class="reference internal image-reference" href="_images/python-script.png" id="python-script"><img alt="_images/python-script.png" class="align-center" id="python-script" src="_images/python-script.png" style="width: 500px;" /></a>
+<p>Ensuite il faut ouvrir un terminal, taper “cd “, prendre le dossier inventaire et le glisser dans le terminal pour pouvoir s’y rendre.</p>
+<p>Après, il faut appuyer sur entrer et après taper cette commande:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">gycham_naming_export</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
-<section id="lancer-le-script-python">
-<span id="python-script"></span><h3>Lancer le script Python<a class="headerlink" href="#lancer-le-script-python" title="Permalink to this headline">#</a></h3>
-<p>Dans le même dossier se trouve le fichier script. Il s’appelle <code class="docutils literal notranslate"><span class="pre">gycham_naming_export.py</span></code> . </br>
-Pour lancer ce fichier nous aurons besoin du terminal. Dans terminal tappez python ensuite une espace, puis glisser le script dans le terminal.</p>
-<a class="reference internal image-reference" href="_images/inventory-change-post-name.png" id="inventory-change-post-name"><img alt="_images/inventory-change-post-name.png" class="align-center" id="inventory-change-post-name" src="_images/inventory-change-post-name.png" style="width: 600px;" /></a>
-<p>Maintenant il vous faut seulement tappez sur la touche “Enter” pour lancement script. Quand l’operation réussie, nous pouvons aller voir le fichier CSV que ce script à généré pour voir si le changement à été effectué sans erreur.</p>
-<p>Emplacement du fichier CSV (dans serveur des fichiers):</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">IT</span><span class="o">/</span><span class="n">ReadOnly</span><span class="o">/</span><span class="n">GYCH_naming</span><span class="o">.</span><span class="n">csv</span>
+<p>ça permettera au script python de s’exécuter et de mettre a jour l’inventaire.</p>
+<a class="reference internal image-reference" href="_images/terminal-inventaire.png" id="terminal-inventaire"><img alt="_images/terminal-inventaire.png" class="align-center" id="terminal-inventaire" src="_images/terminal-inventaire.png" style="width: 500px;" /></a>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="que-faire-si-le-s-appareils-ne-prennent-pas-le-bon-nom">
+<h1>Que faire si le(s) appareils ne prennent pas le bon nom?<a class="headerlink" href="#que-faire-si-le-s-appareils-ne-prennent-pas-le-bon-nom" title="Permalink to this headline">#</a></h1>
+<p>Généralement, quand l’enrôlement/le renommage ne se fait pas correctement, c’est à cause d’un problème de connexion internet. Soyez sûr que l’appareil soit bien branché en ethernet avant de passer à la suite. Dés que c’est fait, il faut ouvrir un terminal sur la machine et taper la commande suivante:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">jamf</span> <span class="n">policy</span> <span class="o">-</span><span class="n">event</span> <span class="n">renamecomputerout</span>
 </pre></div>
 </div>
-<p>Dans ce fichier vous pouvez chercher le pc dont vous venez de changer le nom.</p>
-</section>
-<section id="changement-du-nom-sur-le-poste">
-<h3>Changement du nom sur le poste<a class="headerlink" href="#changement-du-nom-sur-le-poste" title="Permalink to this headline">#</a></h3>
-<p>Normalement les ordinateurs du GYCHA lance recurremment la régle qui met à jour les information de l’ordinateur avec l’AD.
-Mais parfois vous avez besoin de changer son nom plus rapidement (par exemple dans les cas où nous faisons le changement d’ordinateur).</p>
-<p>Il existe quatre différentes règles dans Jamf qui nous permettent de mettre ajour le nom de l’ordinateur avec le fichier CSV qu’on a généré dans <a class="reference internal" href="#python-script"><span class="std std-ref">l’étap précédente</span></a>.</p>
-<blockquote>
-<div><p><strong>renameComputer</strong> : met à jour le nom de l’ordinateur
-</br> <strong>renamrComputerAD</strong> : il appelle la règle <em>renameComputer</em> en mettant à jour le même ordinateur dans l’AD
-</br> <strong>renameComputerIN</strong> : il appelle la règle <em>renameComputer</em> en inserant l’ordinateur (qui n’était pas dans AD/Inventaire) dans Active Directory
-</br> <strong>renameComputerOUT</strong> : contrairement la commande précédente, après lancement <em>renameComputer</em>, il sort l’ordinateur de l’AD (utilisé pour mettre en horsstock les ordinateurs)</p>
-</div></blockquote>
-<p>Pour savoir comment lancer ces règles on peut référer à l’article “Déploiment OS depuis Jamf”, il y a un exemple de comment lancer une règle Jamf depuis terminal:</p>
-</section>
-</section>
+<p>Normalement ça devrait mettre un message “Set computer name to xxxxxxxxxx” ou un message qui y ressemble. Si vous ouvrez un nouveau terminal, vous devriez voir quelque chose d’autre que GYCH_(null). (ce que vous avez mis dans le fichier inventaire). Vous pouvez aussi aller dans la barre de recherche et chercher Partages pour contrôler le nom du poste.</p>
 </section>
 
     <script type="text/x-thebe-config">

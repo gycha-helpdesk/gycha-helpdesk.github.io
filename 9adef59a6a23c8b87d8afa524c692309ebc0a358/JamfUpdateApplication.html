@@ -239,7 +239,7 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="ServeurReseau.html">
+  <a class="reference internal" href="SectionReseau.html">
    Section Réseau
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
@@ -271,6 +271,16 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="Acronis.html">
      Acronis Cyber Backup
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="MikroTik.html">
+     Se connecter à un appareil MikroTik
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Plex.html">
+     Se connecter au serveur de streaming (Plex)
     </a>
    </li>
   </ul>
@@ -421,8 +431,8 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#charger-le-le-pkg-dans-le-jamfadmin">
-   Charger le le PKG dans le JamfAdmin
+  <a class="reference internal nav-link" href="#charger-le-le-pkg-dans-jamfadmin">
+   Charger le le PKG dans JamfAdmin
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -464,8 +474,8 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#charger-le-le-pkg-dans-le-jamfadmin">
-   Charger le le PKG dans le JamfAdmin
+  <a class="reference internal nav-link" href="#charger-le-le-pkg-dans-jamfadmin">
+   Charger le le PKG dans JamfAdmin
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -529,10 +539,16 @@ aie la même norme de nommage que les autre packages.</p>
 </ol>
 </section>
 </section>
-<section id="charger-le-le-pkg-dans-le-jamfadmin">
-<span id="jamf-admin"></span><h2>Charger le le PKG dans le JamfAdmin<a class="headerlink" href="#charger-le-le-pkg-dans-le-jamfadmin" title="Permalink to this headline">#</a></h2>
-<p>Nous avons maintenant un package en format PKG qui est pret à être chargé dans le JamfAdmin. </br>
-Ouvrez le JamfAdmin, et il vous juste suffit de glissez le .PKG dans JamfAdmin.</p>
+<section id="charger-le-le-pkg-dans-jamfadmin">
+<span id="jamf-admin"></span><h2>Charger le le PKG dans JamfAdmin<a class="headerlink" href="#charger-le-le-pkg-dans-jamfadmin" title="Permalink to this headline">#</a></h2>
+<p>Nous avons maintenant un package en format PKG qui est pret à être chargé dans le JamfAdmin. </br></p>
+<p>Pour se connecter sur jamf admin, voici les identifiants:</p>
+<blockquote>
+<div><p>URL: <a class="reference external" href="https://aus000021.dgep.edu-vaud.ch:8443/">https://aus000021.dgep.edu-vaud.ch:8443/</a> <br/>
+Nom d’utilisateur s’il est demandé: jamfupload <br/>
+Mot de passe: DGEPUpload2019</p>
+</div></blockquote>
+<p>Ouvrez le JamfAdmin, et il vous juste suffit de glissez le .PKG dans JamfAdmin.</p>
 <a class="reference internal image-reference" href="_images/jamf-update-vlc-jamfadmin.png" id="jamf-update-vlc-jamfadmin"><img alt="_images/jamf-update-vlc-jamfadmin.png" class="align-center" id="jamf-update-vlc-jamfadmin" src="_images/jamf-update-vlc-jamfadmin.png" style="width: 500px;" /></a>
 </br>
 <p>Après avoir le mettre dans le JamfAdmin, sauvegardez les changements et le package sera accessible depuis le Jamf dans les règles.</p>

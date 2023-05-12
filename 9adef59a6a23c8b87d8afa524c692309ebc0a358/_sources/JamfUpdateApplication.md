@@ -58,9 +58,15 @@ aie la même norme de nommage que les autre packages.
 2. Choisissez ou vous sauvegardez votre PKG et JamfComposer commence à créer le PKG.
 
 (jamf-admin)=
-## Charger le le PKG dans le JamfAdmin
+## Charger le le PKG dans JamfAdmin
 
 Nous avons maintenant un package en format PKG qui est pret à être chargé dans le JamfAdmin. </br>
+
+Pour se connecter sur jamf admin, voici les identifiants:
+> URL: https://aus000021.dgep.edu-vaud.ch:8443/ <br/>
+> Nom d'utilisateur s'il est demandé: jamfupload <br/>
+> Mot de passe: DGEPUpload2019
+
 Ouvrez le JamfAdmin, et il vous juste suffit de glissez le .PKG dans JamfAdmin.
 
 ```{image} images/jamf-update-vlc-jamfadmin.png
