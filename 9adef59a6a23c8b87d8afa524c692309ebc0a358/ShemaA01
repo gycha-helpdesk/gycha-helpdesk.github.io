@@ -1,0 +1,109 @@
+<mxfile host="app.diagrams.net" modified="2021-02-15T12:10:31.868Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36" etag="dzHCG2QHNYc1Wp6UK_vF" version="14.3.1" type="github">
+  <diagram id="R803rvBWGXz7A5tyZ4-X" name="Page-1">
+    <mxGraphModel dx="1196" dy="690" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9f4Pa1UHcqmvBSJXRtPH-14" value="P01-02-04-03/04" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#434445;aspect=fixed;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.vvd.ethernet_port;fontStyle=0;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="190" y="155" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9f4Pa1UHcqmvBSJXRtPH-16" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#434445;aspect=fixed;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.vvd.ethernet_port;" parent="1" vertex="1">
+          <mxGeometry x="800" y="155" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9f4Pa1UHcqmvBSJXRtPH-17" value="P01-02-04-05/06" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#434445;aspect=fixed;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.vvd.ethernet_port;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="860" y="155" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9f4Pa1UHcqmvBSJXRtPH-24" value="P01-02-04-09/10" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#434445;aspect=fixed;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.vvd.ethernet_port;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="450" y="622" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9f4Pa1UHcqmvBSJXRtPH-25" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#434445;aspect=fixed;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.vvd.ethernet_port;" parent="1" vertex="1">
+          <mxGeometry x="390" y="622" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9f4Pa1UHcqmvBSJXRtPH-26" value="p01-02-04-07/08" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#434445;aspect=fixed;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.vvd.ethernet_port;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="32" y="626" width="56" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="9f4Pa1UHcqmvBSJXRtPH-27" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#434445;aspect=fixed;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.vvd.ethernet_port;" parent="1" vertex="1">
+          <mxGeometry x="32" y="570" width="56" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="9f4Pa1UHcqmvBSJXRtPH-28" value="" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.printer;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="69" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9f4Pa1UHcqmvBSJXRtPH-31" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.mac_client;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="830" y="80" width="70" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="9f4Pa1UHcqmvBSJXRtPH-38" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.mac_client;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="240" y="710" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9f4Pa1UHcqmvBSJXRtPH-39" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.mac_client;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="520" y="710" width="70" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="9f4Pa1UHcqmvBSJXRtPH-41" value="3x" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/energy-and-power-glyph-24-px/24/Electrical_plug_plug_plug_connector_plug_in_power_plug-128.png;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="980" y="147" width="68" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="9f4Pa1UHcqmvBSJXRtPH-43" value="3x" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/energy-and-power-glyph-24-px/24/Electrical_plug_plug_plug_connector_plug_in_power_plug-128.png;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="830" y="620" width="58" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="9f4Pa1UHcqmvBSJXRtPH-44" value="à verifier&amp;nbsp;" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=#b85450;fillColor=#f8cecc;aspect=fixed;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.vvd.ethernet_port;fontSize=15;fontColor=#FF3333;" parent="1" vertex="1">
+          <mxGeometry x="590" y="620" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lpmEQYBYqj0hdO0v_Z0a-1" value="1X" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/energy-and-power-glyph-24-px/24/Electrical_plug_plug_plug_connector_plug_in_power_plug-128.png;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="28" y="200" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lpmEQYBYqj0hdO0v_Z0a-3" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.mac_client;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="630" y="83" width="70" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="lpmEQYBYqj0hdO0v_Z0a-4" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.mac_client;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="445" y="83" width="70" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="lpmEQYBYqj0hdO0v_Z0a-5" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.mac_client;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="200" y="83" width="70" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="lpmEQYBYqj0hdO0v_Z0a-6" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;shape=mxgraph.floorplan.doorLeft;aspect=fixed;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="80" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="lpmEQYBYqj0hdO0v_Z0a-7" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#434445;aspect=fixed;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.vvd.ethernet_port;fontStyle=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="250" y="155" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lpmEQYBYqj0hdO0v_Z0a-8" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.mac_client;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1048" y="242" width="70" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="lpmEQYBYqj0hdO0v_Z0a-9" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.mac_client;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1045" y="360" width="70" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="lpmEQYBYqj0hdO0v_Z0a-10" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.mac_client;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1048" y="480" width="70" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="lpmEQYBYqj0hdO0v_Z0a-11" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.mac_client;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1045" y="600" width="70" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="lpmEQYBYqj0hdO0v_Z0a-12" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#434445;aspect=fixed;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.vvd.ethernet_port;" vertex="1" parent="1">
+          <mxGeometry x="950" y="242" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lpmEQYBYqj0hdO0v_Z0a-13" value="&lt;span style=&quot;font-size: 15px&quot;&gt;P01-02-03-21/22&lt;/span&gt;" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#434445;aspect=fixed;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.vvd.ethernet_port;" vertex="1" parent="1">
+          <mxGeometry x="950" y="300" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lpmEQYBYqj0hdO0v_Z0a-14" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#434445;aspect=fixed;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.vvd.ethernet_port;" vertex="1" parent="1">
+          <mxGeometry x="950" y="390" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lpmEQYBYqj0hdO0v_Z0a-15" value="&lt;span style=&quot;font-size: 15px&quot;&gt;P01-02-03-23/24&lt;/span&gt;" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#434445;aspect=fixed;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.vvd.ethernet_port;" vertex="1" parent="1">
+          <mxGeometry x="950" y="450" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lpmEQYBYqj0hdO0v_Z0a-16" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#434445;aspect=fixed;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.vvd.ethernet_port;" vertex="1" parent="1">
+          <mxGeometry x="950" y="590" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lpmEQYBYqj0hdO0v_Z0a-17" value="&lt;span style=&quot;font-size: 15px&quot;&gt;P01-02-04-01/02&lt;/span&gt;" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#434445;aspect=fixed;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.vvd.ethernet_port;" vertex="1" parent="1">
+          <mxGeometry x="950" y="650" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lpmEQYBYqj0hdO0v_Z0a-18" value="3x" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/energy-and-power-glyph-24-px/24/Electrical_plug_plug_plug_connector_plug_in_power_plug-128.png;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="770" y="620" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lpmEQYBYqj0hdO0v_Z0a-19" value="3x" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/energy-and-power-glyph-24-px/24/Electrical_plug_plug_plug_connector_plug_in_power_plug-128.png;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="712" y="622" width="58" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="lpmEQYBYqj0hdO0v_Z0a-20" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.mac_client;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="790" y="710" width="70" height="58" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
