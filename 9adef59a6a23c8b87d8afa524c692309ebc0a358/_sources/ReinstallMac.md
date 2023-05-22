@@ -16,9 +16,9 @@ Pour aller à l'endroit qui nous intéresse, il faut éteindre le mac s'il est a
 Dés que c'est bon, on devrait arriver sur cette page:
 
 
-```{image} images/DiskUtilityRecover.png
+```{image} images/MenuRecover.png
 :width: 800px
-:name: DiskUtilityRecover
+:name: MenuRecover
 :align: center
 ```
 
@@ -30,9 +30,9 @@ Quand c'est fini, la prochaine étape est de recréer une partition avec le mêm
 
 Le menu devrait ressembler à ça si tout s'est bien passé:
 
-```{image} images/MenuRecover.png
+```{image} images/DiskUtilityRecover.png
 :width: 800px
-:name: MenuRecover
+:name: DiskUtilityRecover
 :align: center
 ```
 
