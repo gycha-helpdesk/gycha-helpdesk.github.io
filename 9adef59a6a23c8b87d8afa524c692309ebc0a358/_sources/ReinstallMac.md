@@ -16,13 +16,25 @@ Pour aller à l'endroit qui nous intéresse, il faut éteindre le mac s'il est a
 Dés que c'est bon, on devrait arriver sur cette page:
 
 
-(image)
+```{image} images/DiskUtilityRecover.png
+:width: 800px
+:name: DiskUtilityRecover
+:align: center
+```
 
 
 # Effacer le disque
 
 Pour effacer le disque, il faut aller dans l'utilitaire de disque qui se trouve tout en bas. Ensuite, il faut cliquer sur le disque Chamblandes HD et sur le petit moins en haut à droite de la fenêtre.
 Quand c'est fini, la prochaine étape est de recréer une partition avec le même nom, ChamblandesHD et de type AFPS. 
+
+Le menu devrait ressembler à ça si tout s'est bien passé:
+
+```{image} images/MenuRecover.png
+:width: 800px
+:name: MenuRecover
+:align: center
+```
 
 # Reinstaller l'OS
 

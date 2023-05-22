@@ -1,6 +1,6 @@
 <!--
 Author:		    Noa Chouriberry
-Date:		    26.01.2023
+Date:		    22.05.2023
 Description:	Mise à jour de la page de la section Utile
 -->
 
@@ -14,4 +14,4 @@ Description:	Mise à jour de la page de la section Utile
 6. [Windows Server](/WindowsServer.md)
 7. [Informations complémentaires](/InformationComplementaire.md)
 8. [Adobe](/Adobe.md)
-8. [Réinitialiser un poste](/ReinstallMac.md)
+9. [Réinitialiser un poste](/ReinstallMac.md)
