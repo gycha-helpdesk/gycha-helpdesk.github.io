@@ -1,0 +1,40 @@
+format: jb-article
+root: intro
+sections:
+- file: Jamf
+  sections:
+  - file: JamfFirstConnection
+  - file: JamfAddRule
+  - file: JamfAddPrinter
+  - file: JamfOSInstall
+  - file: JamfRechercheAvance
+  - file: JamfUpdateApplication
+  - file: JamfEnroll
+  - file: JamfEnrolliPad
+  - file: JamfAutoLogout
+  - file: CompareSerialNumberJamfToInv
+  - file: SupprProfil
+- file: Utile
+  sections:
+  - file: mdp
+  - file: hermes
+  - file: Glpi
+  - file: Anaconda
+  - file: LiensUtiles
+  - file: WindowsServer
+  - file: InformationComplementaire
+  - file: Adobe
+  - file: ReinstallMac
+- file: MachineVirtuelle
+  sections:
+  - file: WMwareFusion
+- file: SectionReseau
+  sections:
+  - file: ad
+  - file: Update-inventory
+  - file: config-switch
+  - file: Meraki
+  - file: Acronis
+  - file: MikroTik
+  - file: Plex
+- file: Programmation
