@@ -1,4 +1,4 @@
-# Créer une règle pour ajouter une imprimante dans Jam
+# Créer une règle pour ajouter une imprimante dans Jamf
 
 ## Avant de débuter 
 

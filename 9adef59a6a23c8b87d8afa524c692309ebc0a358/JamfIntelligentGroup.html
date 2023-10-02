@@ -4,8 +4,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search &#8212; Documentation Technique Chamblandes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Créer un groupe intelligent Jamf &#8212; Documentation Technique Chamblandes</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -31,7 +32,6 @@
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
@@ -51,19 +51,16 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script src="_static/searchtools.js"></script>
-    <script src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
-  <script src="searchindex.js" defer></script>
-  
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Déploiement OS depuis Jamf" href="JamfOSInstall.html" />
+    <link rel="prev" title="Créer une règle pour ajouter une imprimante dans Jamf" href="JamfAddPrinter.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
 
     <!-- Google Analytics -->
     
-
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
 <!-- Checkboxes to toggle the left sidebar -->
@@ -104,22 +101,22 @@ const thebe_selector_output = ".output, .cell_output"
       <h1 class="site-logo" id="site-title">Documentation Technique Chamblandes</h1>
       
     </a>
-</div><form class="bd-search d-flex align-items-center" action="#" method="get">
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="Jamf.html">
    Section Jamf
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="JamfImportantRules.html">
      Liste des règles jamf les plus utiles/importantes
@@ -140,8 +137,8 @@ const thebe_selector_output = ".output, .cell_output"
      Créer une règle pour ajouter une imprimante dans Jamf
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="JamfIntelligentGroup.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Créer un groupe intelligent Jamf
     </a>
    </li>
@@ -384,22 +381,115 @@ title="Fullscreen mode"
 
 </button>
 
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/JamfIntelligentGroup.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Créer un groupe intelligent Jamf
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creation-du-groupe-intelligent">
+   Création du groupe intelligent
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1></h1>
+                <h1>Créer un groupe intelligent Jamf</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Créer un groupe intelligent Jamf
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creation-du-groupe-intelligent">
+   Création du groupe intelligent
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -407,36 +497,44 @@ title="Fullscreen mode"
                 
               <div>
                 
-  <h1 id="search-documentation">Search</h1>
-  
-  <noscript>
-  <div class="admonition warning">
-  <p>
-    Please activate JavaScript to enable the search
-    functionality.
-  </p>
-  </div>
-  </noscript>
-  
-  
-  <p>
-    Searching for multiple words only shows matches that contain
-    all words.
-  </p>
-  
-  
-  <form action="" method="get">
-    <input type="text" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
-    <input type="submit" value="search" />
-    <span id="search-progress" style="padding-left: 10px"></span>
-  </form>
-  
-  
-  
-  <div id="search-results">
-  
-  </div>
-  
+  <section class="tex2jax_ignore mathjax_ignore" id="creer-un-groupe-intelligent-jamf">
+<h1>Créer un groupe intelligent Jamf<a class="headerlink" href="#creer-un-groupe-intelligent-jamf" title="Permalink to this headline">#</a></h1>
+<p>Les groupes intelligents permettent de créer des groupes de postes selon des critères données.
+Par exemple, si je veux grouper tous les ordinateurs de la c06 sans avoir à les ajouter un à un manuellement,
+je peux créer un groupe intelligent qui contient tous les ordinateurs “C06-“.</p>
+<p>Ca peut etre très utile pour des règles jamf, pour cibler un groupe de poste plus facilement et que le groupe se mette à jour automatiquement si on ajoute des postes dans la salle etc.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="creation-du-groupe-intelligent">
+<h1>Création du groupe intelligent<a class="headerlink" href="#creation-du-groupe-intelligent" title="Permalink to this headline">#</a></h1>
+<p>Pour ce faire, il faut aller sous Ordinateurs &gt; Groupes &gt; Groupes d’ordinateurs intelligents et cliquer sur Nouveau+</p>
+<a class="reference internal image-reference" href="_images/addIntelligentGroup.png" id="addintelligentgroup"><img alt="_images/addIntelligentGroup.png" class="align-center" id="addintelligentgroup" src="_images/addIntelligentGroup.png" style="width: 500px;" /></a>
+<p>Ensuite, vous allez devoir mettre un nom de groupe, puis après choisir les critères pour que des postes soit ajoutés au groupe:</p>
+<p>En cliquant sur ajouter, vous avez la liste de critères utilisables pour ajouter des postes: Le nom de l’ordinateur, l’OS, le type de processeur…</p>
+<a class="reference internal image-reference" href="_images/intelligentCriteria.png" id="intelligentcriteria"><img alt="_images/intelligentCriteria.png" class="align-center" id="intelligentcriteria" src="_images/intelligentCriteria.png" style="width: 500px;" /></a>
+<p>Si on choisit “Computer name” par exemple, on peut décider que le nom corresponde à certains critères: like, not like, match,… par rapport a la valeur que l’on souhaiterait mettre.</p>
+<a class="reference internal image-reference" href="_images/intelligentCriteria.png" id="intelligentgroupvalue"><img alt="_images/intelligentCriteria.png" class="align-center" id="intelligentgroupvalue" src="_images/intelligentCriteria.png" style="width: 500px;" /></a>
+<p>Quand le groupe intelligent est créé, on peut voir quels ordinateurs ont été ajoutés en cliquant sur “Afficher” en bas à droite.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -445,6 +543,20 @@ title="Fullscreen mode"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="JamfAddPrinter.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Créer une règle pour ajouter une imprimante dans Jamf</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="JamfOSInstall.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Déploiement OS depuis Jamf</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>
