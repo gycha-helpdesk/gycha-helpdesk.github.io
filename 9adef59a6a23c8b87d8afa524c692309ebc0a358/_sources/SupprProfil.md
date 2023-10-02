@@ -32,6 +32,7 @@ et enter la commande suivante:
 csrutil disable
 ```
 
+
 cette commande sert à désactiver des protections qui empêcheraient des virus d'agir sur le poste. dans notre cas, nous allons désactiver ces protections le temps de supprimer les profils, puis les réactiver dés que c'est fini.
 
 Quand la commande est entrée, vous pouvez redemarrer le poste normalement.
