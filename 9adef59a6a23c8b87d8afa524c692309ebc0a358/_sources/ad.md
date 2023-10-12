@@ -198,6 +198,8 @@ Dans "Account" vous pouvez voir ses identifiants et son email.
 
 ## Réinitialiser le mot de passe d'une personne
 
+### Directement dans l'AD
+
 Rendez-vous sur le résultat de la recherche des comptes utilisateurs.
 
 ```{image} images/AD_recherche_utilisateur.png
@@ -214,7 +216,7 @@ Clic-droit sur le nom de l'utilisateur qui est affiché et cliquez sur reset pas
 :align: center
 ```
   
-Mettez-lui comme code : Chamblades2021.
+Générer un code grâce à ...
 
 Cochez l'option pour que l'utilisateur aille la possibilité de changer son mot de passe.
 Si vous n'avez pas le droit de cocher l'option, c'est que l'utilisateur ne fais pas partie du gymnase
@@ -222,3 +224,17 @@ Si vous n'avez pas le droit de cocher l'option, c'est que l'utilisateur ne fais 
 Envoyez un mail de confirmation à la personne.
 
 Voilà maintenant vous savez tout.
+
+### Grâce au script python
+
+1. Télécharger sous [Teams](https://eduvaud.sharepoint.com/:f:/s/GychaIT/EqflTsCww3hJtMFR56IDhjYBIf6BtOvNYK82x19MPOSVZg?e=XBPTx4) les fichiers "reinitpwd.py" et "Réinitialisation mdp Eduvaud.txt" (à télécharger dans le dossier voulu).
+
+1. Dans le terminal se placer dans le dossier où se trouve les fichiers téléchargés ("**cd _/le chemin_**").
+
+1. Le package python "ldap3" doit être installé pour que le script fonctionne. Si ce n'est pas le cas il faut d'abord taper dans le terminal: "**python -m pip install ldap3**" (à ne faire que la première fois).
+
+1. Dans le terminal taper la ligne "**python3 reinitpwd.py**".
+
+1. Suivre les instructions dans le terminal.
+
+
