@@ -227,7 +227,7 @@ Voilà maintenant vous savez tout.
 
 ### Grâce au script python
 
-md.linkify.fuzzyLink: false
+blabla
 
 1. Télécharger sous [Teams](https://eduvaud.sharepoint.com/:f:/s/GychaIT/EqflTsCww3hJtMFR56IDhjYBIf6BtOvNYK82x19MPOSVZg?e=XBPTx4) les fichiers "reinitpwd<span>.</span>py" et "Réinitialisation mdp Eduvaud.txt" (à télécharger dans le dossier voulu).
 
