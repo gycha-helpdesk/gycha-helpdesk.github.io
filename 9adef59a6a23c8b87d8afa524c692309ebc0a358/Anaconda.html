@@ -1,0 +1,665 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Anaconda &#8212; Documentation Technique Chamblandes</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Anaconda';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Liens Utiles" href="LiensUtiles.html" />
+    <link rel="prev" title="Glpi" href="Glpi.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logoCh.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logoCh.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="Jamf.html">Section Jamf</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="JamfImportantRules.html">Liste des règles jamf les plus utiles/importantes</a></li>
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="JamfFirstConnection.html">Avant de commencer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JamfAddRule.html">Ajouter une règle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JamfAddPrinter.html">Créer une règle pour ajouter une imprimante dans Jamf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JamfIntelligentGroup.html">Créer un groupe intelligent Jamf</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="JamfOSInstall.html">Déploiement OS depuis Jamf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JamfRechercheAvance.html">Recherche avancé</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JamfUpdateApplication.html">Mise à jour des applications dans Jamf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JamfEnroll.html">Comment enrôler un post dans Jamf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JamfEnrolliPad.html">Comment enroller un Ipad dans Jamf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JamfAutoLogout.html">Fermeture Automatique de la sesssion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompareSerialNumberJamfToInv.html">Comparaison etre les poste dans jamf est ceux de l’inventaire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SupprProfil.html">Comment supprimer le(s) profil jamf (et n’importe quel profil)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Utile.html">Section Utile</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="mdp.html">Identifiants et mots de passe</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="hermes.html">Hermes II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Glpi.html">Glpi</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Anaconda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LiensUtiles.html">Liens Utiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="WindowsServer.html">Windows Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="InformationComplementaire.html">Information complémentaire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Adobe.html">Adobe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ReinstallMac.html">Marche a suivre pour tout reinstaller sur un poste</a></li>
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="FixWifi.html">Comment régler le problème de Wi-Fi GYCHA-INTERNE (solution possible)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CheckPosteToDoList.html">Check-list mise en place de poste</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="MachineVirtuelle.html">Section MachineVirtuelle</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="WMwareFusion.html">VMWare  fusion  comment crée une machine virtuelle de base</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="SectionReseau.html">Section Réseau</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ad.html">Active Directory de la DGEP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Update-inventory.html">Se connecter au serveur de l’inventaire</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="config-switch.html">Configurer un switch Netgear GS108T</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Meraki.html">Cisco Meraki</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Acronis.html">Acronis Cyber Backup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MikroTik.html">Se connecter à un appareil MikroTik</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="Plex.html">Se connecter au serveur de streaming (Plex)</a></li>
+
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Programmation.html">Section Programmation</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Anaconda.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Anaconda</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-jupyter-book">Installation Jupyter-Book</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gui-installation-jupyter-book">GUI: Installation Jupyter-Book</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cli-installation-jupyter-book">CLI: Installation Jupyter-Book</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#utilisation-jupyter-book">Utilisation Jupyter-Book</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <!-- 
+Author:         NoorAlizadeh
+Date:           12-Jan 2022
+Description:    Installation Anaconda/Jupyter-Book
+GYCH-set_Preferences_userLevel_BigSur.sh
+ -->
+<section class="tex2jax_ignore mathjax_ignore" id="anaconda">
+<h1>Anaconda<a class="headerlink" href="#anaconda" title="Permalink to this heading">#</a></h1>
+<blockquote>
+<div><p>Anaconda est une distribution libre et open source2 des langages de
+programmation Python et R appliqué au développement d’applications
+dédiées à la science des données et à l’apprentissage automatique
+(traitement de données à grande échelle, analyse prédictive, calcul scientifique),
+qui vise à simplifier la gestion des paquets et de déploiement3. Les versions de
+paquetages sont gérées par le système de gestion de paquets conda4. <a class="footnote-reference brackets" href="#id5" id="id1">1</a>
+(Source: Wikipdeia)</p>
+</div></blockquote>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<p>Dans ce stage/projet pour documenter les differents activié informatique du gymnase,
+nous utilison le package Jupyter-Book qui converti les pages Markdown (.md) dans les
+quelles on travail en format Html qui sera enresgistré et publié via Github.</p>
+</section>
+<section id="installation-jupyter-book">
+<h2>Installation Jupyter-Book<a class="headerlink" href="#installation-jupyter-book" title="Permalink to this heading">#</a></h2>
+<p>Logiquement nous allons besoin d’installler <a class="reference external" href="https://www.anaconda.com/products/individual#macos">Anaconda</a> d’abord mais il est normalement
+déjà installé sur les postes Gycham.</p>
+<p>Il y a plusieurs maniers d’installer Jupyter-Book, depuis GUI<a class="footnote-reference brackets" href="#id6" id="id2">2</a> de
+Anaconda Navigateur ou CLI<a class="footnote-reference brackets" href="#id7" id="id3">3</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Vous aller de toute façon avoir besoin de vos connaissances basiques sur les
+ligne de commandes pour utiliser Jupyter-Book même si on installe le package via la methode GUI.</p>
+</div>
+<section id="gui-installation-jupyter-book">
+<h3>GUI: Installation Jupyter-Book<a class="headerlink" href="#gui-installation-jupyter-book" title="Permalink to this heading">#</a></h3>
+<p>Depuis votre machine, ouvrez Anaconda navigateur. Ce nous intéresess est dans la barre de gauche,
+Environments (les environements).</p>
+<a class="reference internal image-reference" href="_images/anaconda-home.png" id="anaconda-home"><img alt="_images/anaconda-home.png" class="align-center" id="anaconda-home" src="_images/anaconda-home.png" style="width: 600px;" /></a>
+<p>Quand vous cliquez sur “Environments” vous allez voir tout les environements disponibles, dans
+notre cas il y a seulement le “base” a disposition, nous allons donc créer un autre environement pour
+notre package Jupyter-Book.</p>
+<a class="reference internal image-reference" href="_images/anaconda-environment.png" id="anaconda-envorinments"><img alt="_images/anaconda-environment.png" class="align-center" id="anaconda-envorinments" src="_images/anaconda-environment.png" style="width: 600px;" /></a>
+<p>Quand vous allez créer un nouvel environment, il vous demande de nommer votre environement et choisir une version de Python.
+Pour le nom nous allons mettre <strong>jupyter-book</strong> et pour la version vous pouvez choisir soit une version antérieur a la 3.8 ou toutes celles d’après.
+(j’ai actuellement la 3.10 et elle me semble assez stable).</p>
+<a class="reference internal image-reference" href="_images/anaconda-python-version.png" id="anaconda-python-version"><img alt="_images/anaconda-python-version.png" class="align-center" id="anaconda-python-version" src="_images/anaconda-python-version.png" style="width: 500px;" /></a>
+<p>Quand l’environement est créé, choisissez le. Ensuite:</p>
+<ol class="arabic simple">
+<li><p>Choisissez “not installed” pour afficher les packages qui ne sont pas installés</p></li>
+<li><p>cherchez pour le package “jupyter-book”</p></li>
+<li><p>Selectionnez le package “jupyter-book” dans les resultats</p></li>
+<li><p>Appliques votre choix</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/anaconda-jupyterbook.png" id="anaconda-jupyterbook"><img alt="_images/anaconda-jupyterbook.png" class="align-center" id="anaconda-jupyterbook" src="_images/anaconda-jupyterbook.png" style="width: 600px;" /></a>
+<p>Ensuite appliquez de nouveau les packages montrés dans la fenêtre suivante.</p>
+<a class="reference internal image-reference" href="_images/anaconda-jupyterbook-2.png" id="anaconda-jupyterbook-2"><img alt="_images/anaconda-jupyterbook-2.png" class="align-center" id="anaconda-jupyterbook-2" src="_images/anaconda-jupyterbook-2.png" style="width: 500px;" /></a>
+<p>Voilà nous avons fini l’installation Jupyter-Book.</p>
+<a class="reference internal image-reference" href="_images/anaconda-jupyterbook-done.png" id="anaconda-jupyterbook-done"><img alt="_images/anaconda-jupyterbook-done.png" class="align-center" id="anaconda-jupyterbook-done" src="_images/anaconda-jupyterbook-done.png" style="width: 600px;" /></a>
+<p>Nous pouvons maintenant passer à <a class="reference internal" href="#utilisation-jupyterbook"><span class="std std-ref">Comment Utiliser Jupyter-Book</span></a> pour builder notre site.</p>
+</section>
+<section id="cli-installation-jupyter-book">
+<h3>CLI: Installation Jupyter-Book<a class="headerlink" href="#cli-installation-jupyter-book" title="Permalink to this heading">#</a></h3>
+<p>L’installation Anaconda sera la même que l’étap précédent.</p>
+<ol class="arabic simple">
+<li><p>Pour installer Jupyter-Book ouvrez le terminal de votre machine.
+Puis tapez “conda” pour voir si c’est la commande est reconnue. Si l’installation de Anaconda à été correctement fait vous verrez les messages suivant dans le terminal.</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/anaconda-cli-conda.png" id="anaconda-cli-conda"><img alt="_images/anaconda-cli-conda.png" class="align-center" id="anaconda-cli-conda" src="_images/anaconda-cli-conda.png" style="width: 600px;" /></a>
+<ol class="arabic simple" start="2">
+<li><p>Ensuite nous allons créer l’environment qui contiendra notre package Jupyter-Book.
+La commande pour créer un environment. (nous allons nommer notre environment “jupyter-book”):</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-name<span class="w"> </span>jupyter-book
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/anaconda-cli-conda-create-env.png" id="anaconda-cli-conda-create-env"><img alt="_images/anaconda-cli-conda-create-env.png" class="align-center" id="anaconda-cli-conda-create-env" src="_images/anaconda-cli-conda-create-env.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p>Qunad le terminal vous demande de continuer avec l’installation ou pas, tapez “y” pour dire yes.</p></li>
+<li><p>On peut aussi choisir quelle version python à installer pour cette environment avec la commande suivannte:</p></li>
+</ul>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-name<span class="w"> </span>jupyter-book<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Maintenant on passe à l’installation package jupyter-book dans cet environnement.
+Avant d’installer le package jupyter-book il faut d’abord activer l’environment que nous venons de créer:</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>jupyter-book
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/anaconda-cli-conda-activate-jupyter-book.png" id="anaconda-cli-conda-activate-jupyter-book"><img alt="_images/anaconda-cli-conda-activate-jupyter-book.png" class="align-center" id="anaconda-cli-conda-activate-jupyter-book" src="_images/anaconda-cli-conda-activate-jupyter-book.png" style="width: 600px;" /></a>
+<p>Et on voit dans l’image que notre environnement qui était sur (base) est basculer sur jupyter-book.
+4. Enfin nous passon à l’installation jupyter-book.
+Le package jupyter-book peut être installer depuis <a class="reference external" href="https://conda-forge.org/">conda-forge</a>, donc si vous voulez faire cette
+installation proprement, suivez en ordre:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>config<span class="w"> </span>--add<span class="w"> </span>channels<span class="w"> </span>conda-forge
+</pre></div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>config<span class="w"> </span>--set<span class="w"> </span>channel_priority<span class="w"> </span>strict
+</pre></div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>jupyter-book
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/anaconda-cli-conda-forge.png" id="anaconda-cli-conda-forge"><img alt="_images/anaconda-cli-conda-forge.png" class="align-center" id="anaconda-cli-conda-forge" src="_images/anaconda-cli-conda-forge.png" style="width: 600px;" /></a>
+<p>Ensuite conda teste les différentes sources pour collecter des packages et les installer. Quand la collecte est fini conda vous demande de valider l’installation, tappez “y” pour valider et normalement c’est tout!</p>
+<a class="reference internal image-reference" href="_images/anaconda-cli-conda-jupyterbook.png" id="anaconda-cli-conda-jupyterbook"><img alt="_images/anaconda-cli-conda-jupyterbook.png" class="align-center" id="anaconda-cli-conda-jupyterbook" src="_images/anaconda-cli-conda-jupyterbook.png" style="width: 600px;" /></a>
+</section>
+<section id="utilisation-jupyter-book">
+<span id="utilisation-jupyterbook"></span><h3>Utilisation Jupyter-Book<a class="headerlink" href="#utilisation-jupyter-book" title="Permalink to this heading">#</a></h3>
+<p>Pour utiliser jupyter-book vous allez utiliser la ligne de commande, c’est comme ça que ça marche, même si vous avez installer jupyter-book avec le GUI de Anaconda.</p>
+<p>Jupyter-book suit un schemas pour créer le site, on ne peut pas lancer le build depuis n’importe où.</p>
+<a class="reference internal image-reference" href="_images/build-resources.png" id="build-resources"><img alt="_images/build-resources.png" class="align-center" id="build-resources" src="_images/build-resources.png" style="width: 600px;" /></a>
+<p>Dans l’image ci-dessus, on voit le dossier documentation-stage-meta (qui est le dossier qu’on clone depuis Github), les emplacements des fichiers et les sous-dossiers. Le dossier qui nous concerne le plus pour lancer jupyter-book est <strong>src</strong>. Ce dossier contient les documents que vous allez modifiez pour le site et les photos. De coup c’est depuis ce dossier que vous pouvez lancer jupyter-book et créer le site.</p>
+<p>En utilisant comand cd<a class="footnote-reference brackets" href="#id8" id="id4">4</a> vous pouvez naviguez entre les dossiers. Quand vous êtes bien à l’emplacement dossier source, vous pouvez lancer cette commande:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>jupyter-book<span class="w"> </span>build<span class="w"> </span>.
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/build-jupyterbook.gif" id="build-jupyterbook"><img alt="_images/build-jupyterbook.gif" class="align-center" id="build-jupyterbook" src="_images/build-jupyterbook.gif" style="width: 600px;" /></a>
+<p>Quand il a bien généré le site, il vous donne un lien vers le site en local, vous pouvez le copiez dans votre navigateur web pour voir les modifications que vous avez effectué dans vos documentations.</p>
+<!-- Refrences dans footer -->
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id5"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p><a href="https://fr.wikipedia.org/wiki/Anaconda_(distribution_Python)">Anaconda (Wikipedia)</a></p>
+</dd>
+<dt class="label" id="id6"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>Graphical User Interface, GUI (Interface Graphique)</p>
+</dd>
+<dt class="label" id="id7"><span class="brackets"><a class="fn-backref" href="#id3">3</a></span></dt>
+<dd><p>Command Line interface, CLI (Lnterface en Ligne de Commande)</p>
+</dd>
+<dt class="label" id="id8"><span class="brackets"><a class="fn-backref" href="#id4">4</a></span></dt>
+<dd><p>cd ou chdir est une commande pour changer la répertoire (<a href="https://fr.wikipedia.org/wiki/Cd_(commande)">Wikipedia</a>)</p>
+</dd>
+</dl>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Glpi.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Glpi</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="LiensUtiles.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Liens Utiles</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-jupyter-book">Installation Jupyter-Book</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gui-installation-jupyter-book">GUI: Installation Jupyter-Book</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cli-installation-jupyter-book">CLI: Installation Jupyter-Book</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#utilisation-jupyter-book">Utilisation Jupyter-Book</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <p>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+</a>
+<br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+</a>.
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
