@@ -1007,7 +1007,7 @@ Selectionné **"LPD/LR Host or Printer"** ensuite cliquer sur **"continue"**.
 
 <br/>
 
-Ensuite vous arriverez sur cette fenêtre. Ici il faut noter la même chose qu'avant donc : **lpd://pge000001.dgep.edu-vaud.ch/gycham- La salle de l'imprimante - le modèle de l'imprimante (ex. B18-HP3015)**. Puis cliquer sur continue.
+Ensuite vous arriverez sur cette fenêtre. Ici il faut noter la même chose qu'avant donc : **lpd://pge000001.dgep.edu-vaud.ch/gycham- La salle de l'imprimante - le modèle de l'imprimante (ex. gycham-b18-HP3015)**. Puis cliquer sur continue.
 
 ```{image} images/AdressPrinter.png
 :width: 700px
