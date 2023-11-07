@@ -102,7 +102,7 @@ Sélectionez le groupe ou un ordinateur que vous voulez (vous pouvez en choissir
 
 Il manque plus qu'à appuyer sur "Terminer".
 
-Félicitation vous savez créé une règle pour ajouter une imprimante.
+Félicitations, vous avez créé une règle pour ajouter une imprimante.
 
 [//]: # (Links)
 [1]: https://sites.google.com/view/gycha-it/ressources#h.r65nzqlnc3we

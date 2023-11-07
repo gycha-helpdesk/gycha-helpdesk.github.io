@@ -1,4 +1,4 @@
-# Recherche avancé
+# Recherche avancée
 
 Dans le menu de Jamf Pro > le tab "Ordinateurs" , cliquez sur la "Recherche dans l'inventaire"
 
@@ -53,7 +53,7 @@ dans la dernière partie vous touchez au type du rapport et le télécharger.
 </br>
 Cliquez sur afficher pour voir le résultat
 
-## exemple de recherche avancé
+## exemple de recherche avancée
 
 Dans l'exemple , je vais utiliser une recherche avancer déjà crée
 

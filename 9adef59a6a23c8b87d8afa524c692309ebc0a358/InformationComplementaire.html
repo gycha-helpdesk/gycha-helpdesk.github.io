@@ -118,6 +118,11 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
+    <a class="reference internal" href="JamfImportantRules.html">
+     Liste des règles jamf les plus utiles/importantes
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="JamfFirstConnection.html">
      Avant de commencer
     </a>
@@ -129,7 +134,12 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="JamfAddPrinter.html">
-     Créer une règle pour ajouter une imprimante dans Jam
+     Créer une règle pour ajouter une imprimante dans Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfIntelligentGroup.html">
+     Créer un groupe intelligent Jamf
     </a>
    </li>
    <li class="toctree-l2">
@@ -139,7 +149,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="JamfRechercheAvance.html">
-     Recherche avancé
+     Recherche avancée
     </a>
    </li>
    <li class="toctree-l2">
@@ -227,6 +237,21 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="ReinstallMac.html">
      Marche a suivre pour tout reinstaller sur un poste
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="FixWifi.html">
+     Comment régler le problème de Wi-Fi GYCHA-INTERNE (solution possible)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="DisableBluetooth.html">
+     Désactiver complètement le bluetooth d’un poste
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="RemoteDesktopServers.html">
+     Tous les serveurs à ajouter sur Microsoft Remote Desktop
     </a>
    </li>
    <li class="toctree-l2">
@@ -837,11 +862,11 @@ Voilà ! Une fois que tout ça est fait, vous pouvez voir le changement en local
 </section>
 <section id="ordinateur-de-pret">
 <h2>Ordinateur de prêt<a class="headerlink" href="#ordinateur-de-pret" title="Permalink to this headline">#</a></h2>
-<p>Pour configurer un ordinateur a prêter il faut commencer en lui <a class="reference external" href="https://support.apple.com/fr-ch/HT211683">installant</a> l’OS qu’il supporte (Catalina pour 2012 et Big Sur pour 2014). Sur ce site il y a toutes les informations et version. De macOS High Sierra jusqu’à macOS Ventura. Ensuite il faut vérifier que l’ordinateur n’a pas plusieurs disques. Si c’est le cas il faut aller dans “utilitaire de disques” et supprimer ceux en trop et en garder un seul (chamblandesHD).
+<p>Pour configurer un ordinateur a prêter il faut commencer en lui <a class="reference external" href="https://support.apple.com/fr-ch/HT211683">installant</a> l’OS qu’il supporte (Catalina pour 2012 et Big Sur pour 2014). Sur ce site il y a toutes les informations et version. De macOS High Sierra jusqu’à macOS Sonoma. Ensuite il faut vérifier que l’ordinateur n’a pas plusieurs disques. Si c’est le cas il faut aller dans “utilitaire de disques” et supprimer ceux en trop et en garder un seul (chamblandesHD).
 <br/></p>
 <a class="reference internal image-reference" href="_images/DiskUtility.png" id="diskutility"><img alt="_images/DiskUtility.png" class="align-center" id="diskutility" src="_images/DiskUtility.png" style="width: 400px;" /></a>
 <br/>
-<p>Ensuite, il faut appliquer les règles de jamf (sudo jamf policy). Il faut vérifier que dans les applications l’ordinateur a bien Outlook, Teams, Word, etc. Une fois que vous avez fait toutes ces étapes il ne reste plus qu’a créer un compte admin (user : adminl et Mdp : Gym _09). Il ne faut pas oublier son compte (un compte utilisateur) et modifier dans le teams le fichier inventaire en classifiant l’ordinateur par rapport a son nom.</p>
+<p>Ensuite, il faut appliquer les règles de jamf (sudo jamf policy). Il faut vérifier que dans les applications l’ordinateur a bien Outlook, Teams, Word, etc. Une fois que vous avez fait toutes ces étapes il ne reste plus qu’a créer un compte admin (le compte adminl, s’il n’est pas déjà là). Il ne faut pas oublier son compte (un compte utilisateur) et modifier dans le teams le fichier inventaire en classifiant l’ordinateur par rapport a son nom.</p>
 </section>
 <section id="schema-reseau-des-salles-de-classe-en-general">
 <h2>Schéma réseau des salles de classe en général<a class="headerlink" href="#schema-reseau-des-salles-de-classe-en-general" title="Permalink to this headline">#</a></h2>
@@ -1221,7 +1246,7 @@ wget
 <a class="reference internal image-reference" href="_images/AddPrinter.png" id="addprinter"><img alt="_images/AddPrinter.png" class="align-center" id="addprinter" src="_images/AddPrinter.png" style="width: 700px;" /></a>
 <p>Selectionné <strong>“LPD/LR Host or Printer”</strong> ensuite cliquer sur <strong>“continue”</strong>.</p>
 <br/>
-<p>Ensuite vous arriverez sur cette fenêtre. Ici il faut noter la même chose qu’avant donc : <strong>lpd://gycha-srv-prt01/gycham- La salle de l’imprimante - le driver utiliser</strong>. Puis cliquer sur continue.</p>
+<p>Ensuite vous arriverez sur cette fenêtre. Ici il faut noter la même chose qu’avant donc : <strong>lpd://pge000001.dgep.edu-vaud.ch/gycham- La salle de l’imprimante - le modèle de l’imprimante (ex. B18-HP3015)</strong>. Puis cliquer sur continue.</p>
 <a class="reference internal image-reference" href="_images/AdressPrinter.png" id="adressprinter"><img alt="_images/AdressPrinter.png" class="align-center" id="adressprinter" src="_images/AdressPrinter.png" style="width: 700px;" /></a>
 <br/>
 <p>Sur l’image ci-dessous, recopier le nom en mettant le bon nom</p>

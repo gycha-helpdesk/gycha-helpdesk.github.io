@@ -67,7 +67,7 @@ Pour se connecter sur jamf admin, voici les identifiants:
 > Nom d'utilisateur s'il est demandé: jamfupload <br/>
 > Mot de passe: DGEPUpload2019
 
-Ouvrez le JamfAdmin, et il vous juste suffit de glissez le .PKG dans JamfAdmin.
+Ouvrez le JamfAdmin, et il vous juste suffit de glisser le .PKG dans JamfAdmin.
 
 ```{image} images/jamf-update-vlc-jamfadmin.png
 :width: 500px
@@ -76,7 +76,7 @@ Ouvrez le JamfAdmin, et il vous juste suffit de glissez le .PKG dans JamfAdmin.
 ```
 </br>
 
-Après avoir le mettre dans le JamfAdmin, sauvegardez les changements et le package sera accessible depuis le Jamf dans les règles.
+Après avoir mis le package dans Jamf Admin, sauvegardez les changements et le package sera accessible depuis Jamf pro dans les règles.
 
 ### Modification des règles pour le package
 
@@ -90,7 +90,7 @@ Chercher le nom du package (VLC dans notre cas), modifiez le et dans "Paquets", 
 ```
 </br>
 
-Pour finir, aller dans "Groupes intellignets" et chercher le nom de votre package. </br>
+Pour finir, aller dans "Groupes intelligents" et chercher le nom de votre package. </br>
 Vous allez trouver un group qui un nome commençant par "InstallUpdate_"
 
 ```{image} images/goupIntelligent.png

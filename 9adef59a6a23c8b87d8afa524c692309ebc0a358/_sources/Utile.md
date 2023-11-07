@@ -16,3 +16,6 @@ Description:	Mise à jour de la page de la section Utile
 8. [Adobe](/Adobe.md)
 9. [Marche a suivre pour tout reinstaller sur un poste](/ReinstallMac.md)
 10. [Comment régler le problème de Wi-Fi GYCHA-INTERNE (solution possible)](/FixWifi.md)
+11. [Désactiver complètement le bluetooth d'un poste](/DisableBluetooth.md)
+12. [Check-list mise en place de poste](/CheckPosteToDoList.md)
+12. [Check-list configuration d'une Apple TV](/ConfigAppleTV.md)
