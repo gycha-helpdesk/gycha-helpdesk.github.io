@@ -64,9 +64,7 @@ Nous avons maintenant un package en format PKG qui est pret à être chargé dan
 
 Pour se connecter sur jamf admin, voici les identifiants:
 > URL: https://aus000021.dgep.edu-vaud.ch:8443/ <br/>
-> Nom d'utilisateur s'il est demandé: jamfupload <br/>
-> Mot de passe: DGEPUpload2019
-
+> Nom d'utilisateur et mot de passe: Voir DGEP Passwords
 Ouvrez le JamfAdmin, et il vous juste suffit de glisser le .PKG dans JamfAdmin.
 
 ```{image} images/jamf-update-vlc-jamfadmin.png

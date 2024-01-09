@@ -1,0 +1,849 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Erreurs fréquentes et leurs solutions &#8212; Documentation Technique Chamblandes</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Checklist configuration Apple TV" href="ConfigAppleTV.html" />
+    <link rel="prev" title="Check-list mise en place de poste" href="CheckPosteToDoList.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logoCh.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Documentation Technique Chamblandes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="Jamf.html">
+   Section Jamf
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfImportantRules.html">
+     Liste des règles jamf les plus utiles/importantes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfFirstConnection.html">
+     Avant de commencer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfAddRule.html">
+     Ajouter une règle
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfAddPrinter.html">
+     Créer une règle pour ajouter une imprimante dans Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfIntelligentGroup.html">
+     Créer un groupe intelligent Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfOSInstall.html">
+     Déploiement OS depuis Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfRechercheAvance.html">
+     Recherche avancée
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfUpdateApplication.html">
+     Mise à jour des applications dans Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfEnroll.html">
+     Comment enrôler un post dans Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfEnrolliPad.html">
+     Comment enroller un Ipad dans Jamf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="JamfAutoLogout.html">
+     Fermeture Automatique de la sesssion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CompareSerialNumberJamfToInv.html">
+     Comparaison etre les poste dans jamf est ceux de l’inventaire
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="SupprProfil.html">
+     Comment supprimer le(s) profil jamf (et n’importe quel profil)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="Utile.html">
+   Section Utile
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="mdp.html">
+     Identifiants et mots de passe
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="hermes.html">
+     Hermes II
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Glpi.html">
+     Glpi
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Anaconda.html">
+     Anaconda
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LiensUtiles.html">
+     Liens Utiles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="WindowsServer.html">
+     Windows Server
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="InformationComplementaire.html">
+     Information complémentaire
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Adobe.html">
+     Adobe
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ReinstallMac.html">
+     Marche a suivre pour tout reinstaller sur un poste
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="FixWifi.html">
+     Comment régler le problème de Wi-Fi GYCHA-INTERNE (solution possible)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="DisableBluetooth.html">
+     Désactiver complètement le bluetooth d’un poste
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="RemoteDesktopServers.html">
+     Tous les serveurs à ajouter sur Microsoft Remote Desktop
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CheckPosteToDoList.html">
+     Check-list mise en place de poste
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Erreurs fréquentes et leurs solutions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ConfigAppleTV.html">
+     Checklist configuration Apple TV
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CheckListNewCollaborateur.html">
+     Check-list ajout d’un nouveau collaborateur correctement
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="MachineVirtuelle.html">
+   Section MachineVirtuelle
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="WMwareFusion.html">
+     VMWare  fusion  comment crée une machine virtuelle de base
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="SectionReseau.html">
+   Section Réseau
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ad.html">
+     Active Directory de la DGEP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Update-inventory.html">
+     Se connecter au serveur de l’inventaire
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="config-switch.html">
+     Configurer un switch Netgear GS108T
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Meraki.html">
+     Cisco Meraki
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Acronis.html">
+     Acronis Cyber Backup
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="MikroTik.html">
+     Se connecter à un appareil MikroTik
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Plex.html">
+     Se connecter au serveur de streaming (Plex)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Programmation.html">
+   Section Programmation
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/ErreursFrequentes.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Erreurs fréquentes et leurs solutions
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#access-point-meraki-qui-clignote-ne-fonctionne-plus-ou-switch-qui-ne-fonctionne-plus">
+   Access point Meraki qui clignote/ne fonctionne plus ou switch qui ne fonctionne plus
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#imprimante-epson-en-b01-feuille-qui-ne-sort-pas-droite">
+   Imprimante Epson en B01 feuille qui ne sort pas droite
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#que-faire-si-une-imprimante-n-imprime-plus">
+   Que faire si une imprimante n’imprime plus
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#message-ard-desactive-sur-apple-remote-desktop-quand-on-essaie-de-passer-une-regle-unix">
+   Message “ARD Désactivé” sur Apple Remote Desktop, quand on essaie de passer une règle UNIX
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#probleme-de-droits-apple-remote-desktop">
+   Problème de droits Apple Remote Desktop
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#probleme-de-droits-osascript-apple-remote-desktop">
+   Problème de droits osascript (Apple Remote Desktop)
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#probleme-de-cle-ssh-apple-remote-desktop-getdesktop">
+   Problème de clé SSH Apple Remote Desktop (GetDesktop)
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ecrans-en-noir-et-blanc-sur-apple-remote-desktop">
+   Ecrans en noir et blanc sur Apple Remote Desktop
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#redemarrer-eteindre-fermer-la-session-etc-d-ordinateurs-avec-remote">
+   Redémarrer, éteindre, fermer la session etc. d’ordinateurs avec Remote
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#probleme-de-lecteur-dvd-bloque">
+   Problème de lecteur DVD bloqué
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#probleme-disques-qui-se-creeent-tout-seul-sur-le-bureau">
+   Problème disques qui se crééent tout seul sur le bureau
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#probleme-de-connexion-internet-login-pastille-rouge">
+   Problème de connexion internet/login (pastille rouge)
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#que-faire-quand-une-application-ne-parvient-plus-a-se-lancer-qu-elle-est-corrompue">
+   Que faire quand une application “ne parvient plus à se lancer”, qu’elle est corrompue
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#le-son-ne-sort-pas-sur-les-hauts-parleurs-dans-les-salles-de-cours">
+   Le son ne sort pas sur les hauts parleurs dans les salles de cours
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#les-boutons-pour-hausser-baisser-le-bureau-prof-ne-marchent-pas">
+   Les boutons pour hausser/baisser le bureau prof ne marchent pas
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reseau-sur-macmini-qui-est-lent-ne-fonctionne-pas-connexion-session-ad">
+   Réseau sur macmini qui est lent / ne fonctionne pas (connexion session AD)
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Erreurs fréquentes et leurs solutions</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Erreurs fréquentes et leurs solutions
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#access-point-meraki-qui-clignote-ne-fonctionne-plus-ou-switch-qui-ne-fonctionne-plus">
+   Access point Meraki qui clignote/ne fonctionne plus ou switch qui ne fonctionne plus
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#imprimante-epson-en-b01-feuille-qui-ne-sort-pas-droite">
+   Imprimante Epson en B01 feuille qui ne sort pas droite
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#que-faire-si-une-imprimante-n-imprime-plus">
+   Que faire si une imprimante n’imprime plus
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#message-ard-desactive-sur-apple-remote-desktop-quand-on-essaie-de-passer-une-regle-unix">
+   Message “ARD Désactivé” sur Apple Remote Desktop, quand on essaie de passer une règle UNIX
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#probleme-de-droits-apple-remote-desktop">
+   Problème de droits Apple Remote Desktop
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#probleme-de-droits-osascript-apple-remote-desktop">
+   Problème de droits osascript (Apple Remote Desktop)
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#probleme-de-cle-ssh-apple-remote-desktop-getdesktop">
+   Problème de clé SSH Apple Remote Desktop (GetDesktop)
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ecrans-en-noir-et-blanc-sur-apple-remote-desktop">
+   Ecrans en noir et blanc sur Apple Remote Desktop
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#redemarrer-eteindre-fermer-la-session-etc-d-ordinateurs-avec-remote">
+   Redémarrer, éteindre, fermer la session etc. d’ordinateurs avec Remote
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#probleme-de-lecteur-dvd-bloque">
+   Problème de lecteur DVD bloqué
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#probleme-disques-qui-se-creeent-tout-seul-sur-le-bureau">
+   Problème disques qui se crééent tout seul sur le bureau
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#probleme-de-connexion-internet-login-pastille-rouge">
+   Problème de connexion internet/login (pastille rouge)
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#que-faire-quand-une-application-ne-parvient-plus-a-se-lancer-qu-elle-est-corrompue">
+   Que faire quand une application “ne parvient plus à se lancer”, qu’elle est corrompue
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#le-son-ne-sort-pas-sur-les-hauts-parleurs-dans-les-salles-de-cours">
+   Le son ne sort pas sur les hauts parleurs dans les salles de cours
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#les-boutons-pour-hausser-baisser-le-bureau-prof-ne-marchent-pas">
+   Les boutons pour hausser/baisser le bureau prof ne marchent pas
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reseau-sur-macmini-qui-est-lent-ne-fonctionne-pas-connexion-session-ad">
+   Réseau sur macmini qui est lent / ne fonctionne pas (connexion session AD)
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="erreurs-frequentes-et-leurs-solutions">
+<h1>Erreurs fréquentes et leurs solutions<a class="headerlink" href="#erreurs-frequentes-et-leurs-solutions" title="Permalink to this headline">#</a></h1>
+<p>Sur cette page vous trouverez des erreurs que nous avons souvent rencontrés et dont nous n’avons parlé nulle part ailleurs sur le site de la documentation avec leur solution.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="access-point-meraki-qui-clignote-ne-fonctionne-plus-ou-switch-qui-ne-fonctionne-plus">
+<h1>Access point Meraki qui clignote/ne fonctionne plus ou switch qui ne fonctionne plus<a class="headerlink" href="#access-point-meraki-qui-clignote-ne-fonctionne-plus-ou-switch-qui-ne-fonctionne-plus" title="Permalink to this headline">#</a></h1>
+<p>Faites bien attention au port qui va de la prise ethernet qui distribue du réseau à l’access point. il se pourrait qu’elle soit réglée sur le mauvais VLAN. le bon vlan est: 32 pour les access point et 1 pour les switch (port trunk), regardez aussi les cables sur les switch car si un cable est branché sur deux ports du switch, il s’agit d’une boucle réseau et il faut débrancher une des deux extrémités.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="imprimante-epson-en-b01-feuille-qui-ne-sort-pas-droite">
+<h1>Imprimante Epson en B01 feuille qui ne sort pas droite<a class="headerlink" href="#imprimante-epson-en-b01-feuille-qui-ne-sort-pas-droite" title="Permalink to this headline">#</a></h1>
+<p>il faut appuyer sur le bouton avec une icone de feuille a4 au milieu de l’epson pour régler le problème.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="que-faire-si-une-imprimante-n-imprime-plus">
+<h1>Que faire si une imprimante n’imprime plus<a class="headerlink" href="#que-faire-si-une-imprimante-n-imprime-plus" title="Permalink to this headline">#</a></h1>
+<p>Regarder sur le serveur d’impression voir si des jobs sont en attente dans la queue d’impression:
+si oui, vider la queue d’impression, (redémarrer le serveur d’impression sur microsoft remote desktop),</p>
+<p>imprimer une feuille de test et le soucis devrait être réglé.
+/! c’est une solution possible, il peut s’agir d’un problème physique aussi!</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="message-ard-desactive-sur-apple-remote-desktop-quand-on-essaie-de-passer-une-regle-unix">
+<h1>Message “ARD Désactivé” sur Apple Remote Desktop, quand on essaie de passer une règle UNIX<a class="headerlink" href="#message-ard-desactive-sur-apple-remote-desktop-quand-on-essaie-de-passer-une-regle-unix" title="Permalink to this headline">#</a></h1>
+<p>Si vous rencontrez ce probléme (voir image ci-dessous:)</p>
+<a class="reference internal image-reference" href="_images/ardDesactive.png" id="arddesactive"><img alt="_images/ardDesactive.png" class="align-center" id="arddesactive" src="_images/ardDesactive.png" style="width: 500px;" /></a>
+<p>Il faut fermer Apple Remote Desktop et le rouvrir, en faisant un clique droit sur l’icone d’Apple Remote Desktop dans le Dock et en cliquant sur Quitter. Pas d’autre solution trouvée pour le moment, mais celle-ci fonctionne. Il faudrait relancer l’application environ toutes les deux éxécutions de règles UNIX/autres requêtes.</p>
+<a class="reference internal image-reference" href="_images/ardWorking.png" id="ardworking"><img alt="_images/ardWorking.png" class="align-center" id="ardworking" src="_images/ardWorking.png" style="width: 500px;" /></a>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="probleme-de-droits-apple-remote-desktop">
+<h1>Problème de droits Apple Remote Desktop<a class="headerlink" href="#probleme-de-droits-apple-remote-desktop" title="Permalink to this headline">#</a></h1>
+<p>Si un message est affiché disant qu’Apple RemoteDesktop n’a pas les droits, allez sous Partage &gt; Gestion à distance et soyez sûr que les comptes remote et adminl y figurent, et quand c’est bon il faut cliquer sur options et être sur que tout est bien coché. si c’est le cas, décocher et recocher les deux premières coches devrait résoudre le problème.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="probleme-de-droits-osascript-apple-remote-desktop">
+<h1>Problème de droits osascript (Apple Remote Desktop)<a class="headerlink" href="#probleme-de-droits-osascript-apple-remote-desktop" title="Permalink to this headline">#</a></h1>
+<p>Ce problème peut arriver dés qu’on essaie d’éxécuter une commande UNIX sur un poste élève. pour régler le problème, il faut se connecter en adminl sur le poste en question puis aller jusqu’au bureau. Dés que c’est fait, il faut lancer la commande unix ConnexionExam, qui se sert de “osascript” pour fonctionner, puis il y aura un petit message de confirmation pour ajouter les droits nécessaires qu’il faudra accepter.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="probleme-de-cle-ssh-apple-remote-desktop-getdesktop">
+<h1>Problème de clé SSH Apple Remote Desktop (GetDesktop)<a class="headerlink" href="#probleme-de-cle-ssh-apple-remote-desktop-getdesktop" title="Permalink to this headline">#</a></h1>
+<p>Pour régler ce problème, il faut refaire correctement les clés et liaisons SSH sur un poste en session examen vers les poste prof en session remote.</p>
+<p>Quand c’est fait, il faut aller à la racine du dossier examen (/Users/examen/.ssh) et copier le dossier .ssh</p>
+<p>il faut ensuite copier le dossier vers tous les postes élèves des salles informatique et les redémarrer pour que la commande GetDesktop puisse fonctionner.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="ecrans-en-noir-et-blanc-sur-apple-remote-desktop">
+<h1>Ecrans en noir et blanc sur Apple Remote Desktop<a class="headerlink" href="#ecrans-en-noir-et-blanc-sur-apple-remote-desktop" title="Permalink to this headline">#</a></h1>
+<a class="reference internal image-reference" href="_images/ardNoirEtBlanc.png" id="ardnoiretblanc"><img alt="_images/ardNoirEtBlanc.png" class="align-center" id="ardnoiretblanc" src="_images/ardNoirEtBlanc.png" style="width: 500px;" /></a>
+<p>Pour régler ce problème, il faut juste aller en haut à droite de l’ordinateur regardé, puis tirer le slider vers la droite pour afficher l’écran en couleur.</p>
+<a class="reference internal image-reference" href="_images/ardCouleurs.png" id="ardcouleurs"><img alt="_images/ardCouleurs.png" class="align-center" id="ardcouleurs" src="_images/ardCouleurs.png" style="width: 500px;" /></a>
+<p># Comment copier des fichiers ou dossiers vers tous les postes
+Pour copier un/plusieurs fichiers vers des postes, il faut cliquer sur le petit bouton “Copier” au centre de ARD:</p>
+<a class="reference internal image-reference" href="_images/ardCopieBouton.png" id="ardcopiebouton"><img alt="_images/ardCopieBouton.png" class="align-center" id="ardcopiebouton" src="_images/ardCopieBouton.png" style="width: 500px;" /></a>
+<p>Vous arriverez sur ce menu:</p>
+<a class="reference internal image-reference" href="_images/ardCopieMenu.png" id="id1"><img alt="_images/ardCopieMenu.png" class="align-center" id="id1" src="_images/ardCopieMenu.png" style="width: 500px;" /></a>
+<p>Ensuite, il faut glisser le fichier que vous aimeriez copier dans la section du haut, là ou se trouve le “dossier sans titre” sur l’image ci-dessus puis appuyer sur le bouton Copier en bas de la fenêtre.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="redemarrer-eteindre-fermer-la-session-etc-d-ordinateurs-avec-remote">
+<h1>Redémarrer, éteindre, fermer la session etc. d’ordinateurs avec Remote<a class="headerlink" href="#redemarrer-eteindre-fermer-la-session-etc-d-ordinateurs-avec-remote" title="Permalink to this headline">#</a></h1>
+<p>Il faut sélectionner les postes à observer, les observer puis aller sous Gestion &gt; ce que vous souhaiteriez faire aux ordinateurs:</p>
+<a class="reference internal image-reference" href="_images/ardGestion.png" id="ardgestion"><img alt="_images/ardGestion.png" class="align-center" id="ardgestion" src="_images/ardGestion.png" style="width: 500px;" /></a>
+<p>Le temps que les ordinateurs éxécutent la commande, il y aura un point d’exclamation affiché sur leurs écrans depuis Remote.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="probleme-de-lecteur-dvd-bloque">
+<h1>Problème de lecteur DVD bloqué<a class="headerlink" href="#probleme-de-lecteur-dvd-bloque" title="Permalink to this headline">#</a></h1>
+<p>Il peut arriver que le bouton pour éjecter le disque d’un lecteur ne fonctionne pas et donc que le lecteur soit bloqué si vous n’avez pas de trombone sur vous.
+Pour régler ce problème, il faut faire un clic droit sur l’icone de disque sur votre bureau et cliquer sur éjecter.
+Le disque sera éjecté et le problème n’arrivera plus.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="probleme-disques-qui-se-creeent-tout-seul-sur-le-bureau">
+<h1>Problème disques qui se crééent tout seul sur le bureau<a class="headerlink" href="#probleme-disques-qui-se-creeent-tout-seul-sur-le-bureau" title="Permalink to this headline">#</a></h1>
+<p>Ce problème peut surgir à cause d’une régle pour mettre à jour l’OS d’un poste. Si le poste est trop ancien et donc qu’il ne peut pas supporter le nouvel OS, des disques vont se créer car c’est la seule étape de la règle que l’ordinateur peut faire.</p>
+<p>Il faut donc mettre le poste dans la liste des exclusions de la règle jamf et supprimer les disques manuellement en allant dans “Utilitaire de disques” sur le poste.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="probleme-de-connexion-internet-login-pastille-rouge">
+<h1>Problème de connexion internet/login (pastille rouge)<a class="headerlink" href="#probleme-de-connexion-internet-login-pastille-rouge" title="Permalink to this headline">#</a></h1>
+<p>Si vous n’arrivez pas à vous connecter à un poste avec des identifiants eduvaud, cela peut venir de:</p>
+<ol class="simple">
+<li><p>Le poste n’est pas correctement lié à l’AD, il faut donc faire les règles renamecomputerout, enlever le poste de l’AD manuellement et renamecomputerin, puis redémarrer le poste. (tout en adminl)</p></li>
+<li><p>le poste à un mauvais DNS, il faut aller dans les paramètres réseau et l’enlever manuellement.</p></li>
+</ol>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="que-faire-quand-une-application-ne-parvient-plus-a-se-lancer-qu-elle-est-corrompue">
+<h1>Que faire quand une application “ne parvient plus à se lancer”, qu’elle est corrompue<a class="headerlink" href="#que-faire-quand-une-application-ne-parvient-plus-a-se-lancer-qu-elle-est-corrompue" title="Permalink to this headline">#</a></h1>
+<p>Pour commencer, il faudra modifier la règle jamf qui installe l’application s’il y en a une qui existe, puis il faut installer le package le plus récent et le mettre sur jamf admin, la règle…
+Ensuite il faut faire une règle qui la supprime et qui la réinstalle avec le script GYCH_eventSequence, qui va devoir éxécuter dans l’ordre une règle qui va d’abord supprimer l’application, puis une autre règle qui va télécharger le bon pkg et l’installer sur le poste, voir règles jamf fixOpenboard &amp; fixOneDrive comme inspiration.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="le-son-ne-sort-pas-sur-les-hauts-parleurs-dans-les-salles-de-cours">
+<h1>Le son ne sort pas sur les hauts parleurs dans les salles de cours<a class="headerlink" href="#le-son-ne-sort-pas-sur-les-hauts-parleurs-dans-les-salles-de-cours" title="Permalink to this headline">#</a></h1>
+<p>Vérifiez que les hauts parleurs soient bien branchés et que leur volume est bien réglé. (pas à 0)
+Ensuite, il faut aller sur le macmini et aller dans Son &gt; choisir la bonne sortie audio (s’il y a un ampli Denon il faut le choisir, etc..)
+le problème devrait être réglé. Si ce n’est pas le cas, le problème peut soit venir du cable HDMI output/beamer, soit des hauts parleurs (plus rare)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="les-boutons-pour-hausser-baisser-le-bureau-prof-ne-marchent-pas">
+<h1>Les boutons pour hausser/baisser le bureau prof ne marchent pas<a class="headerlink" href="#les-boutons-pour-hausser-baisser-le-bureau-prof-ne-marchent-pas" title="Permalink to this headline">#</a></h1>
+<p>L’alimentation qui passe de derrière les boutons à la multiprise qui se trouve à l’arrière du bureau est probablement mal branchée.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="reseau-sur-macmini-qui-est-lent-ne-fonctionne-pas-connexion-session-ad">
+<h1>Réseau sur macmini qui est lent / ne fonctionne pas (connexion session AD)<a class="headerlink" href="#reseau-sur-macmini-qui-est-lent-ne-fonctionne-pas-connexion-session-ad" title="Permalink to this headline">#</a></h1>
+<p>Le problème peut venir de l’ajout du poste dans l’AD qui n’aurait pas été fait correctement, du coup il faut enlever et remettre l’AD et redémarrer le poste. Si ce n’est pas suffisant, il faut contrôler l’espace disque du poste. Si l’espace disque utilisé correspond à environ la moitié ou plus d’espace total utilisable, il faut faire de la place sur le poste et le problème sera réglé. (oui, ça n’a pas beaucoup de sens, mais c’est une solution)</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="CheckPosteToDoList.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Check-list mise en place de poste</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ConfigAppleTV.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Checklist configuration Apple TV</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The Jupyter Book community<br/>
+  
+      &copy; Copyright 2022.<br/>
+    <div class="extra_footer">
+      <p>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+</a>
+<br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+</a>.
+</p>
+
+    </div>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

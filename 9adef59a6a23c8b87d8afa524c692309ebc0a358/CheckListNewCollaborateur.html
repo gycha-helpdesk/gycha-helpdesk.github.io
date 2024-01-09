@@ -4,8 +4,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; Documentation Technique Chamblandes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Check-list ajout d’un nouveau collaborateur correctement &#8212; Documentation Technique Chamblandes</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,8 +51,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="index" title="Index" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Section MachineVirtuelle" href="MachineVirtuelle.html" />
+    <link rel="prev" title="Checklist configuration Apple TV" href="ConfigAppleTV.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -103,7 +106,7 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="Jamf.html">
    Section Jamf
@@ -181,16 +184,16 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="Utile.html">
    Section Utile
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="mdp.html">
      Identifiants et mots de passe
@@ -266,8 +269,8 @@ const thebe_selector_output = ".output, .cell_output"
      Checklist configuration Apple TV
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="CheckListNewCollaborateur.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Check-list ajout d’un nouveau collaborateur correctement
     </a>
    </li>
@@ -403,6 +406,52 @@ title="Fullscreen mode"
 
 </button>
 
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/CheckListNewCollaborateur.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
     </div>
 </div>
 
@@ -414,7 +463,7 @@ title="Fullscreen mode"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1></h1>
+                <h1>Check-list ajout d’un nouveau collaborateur correctement</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -426,13 +475,89 @@ title="Fullscreen mode"
                 
               <div>
                 
+  <!--
+Author:		    Noa Chouriberry
+Date:		    18.12.2023
+Description:    check list pour les choses à faire lors de l'accueil d'un nouveau collaborateur
+-->
+<section class="tex2jax_ignore mathjax_ignore" id="check-list-ajout-d-un-nouveau-collaborateur-correctement">
+<h1>Check-list ajout d’un nouveau collaborateur correctement<a class="headerlink" href="#check-list-ajout-d-un-nouveau-collaborateur-correctement" title="Permalink to this headline">#</a></h1>
+<!-- style css des checkbox -->
+<style>
+    ul.checklist{
+        list-style-type: none; font-size: 1.35em; margin-top: 10vh; margin-bottom: 10vh; 
+    }
+    input[type='checkbox'] {
+        transform: scale(1.5);
+    }
+    ul.checklist li label{
+        margin-left: 1vw;
+    }
+    .margin{
+        margin-bottom: 27vh;
+    }
+</style>
+<!-- liste à puce html (pastilles enlevées et tailles changées ->> voir style css) -->
+<ul class="checklist">
+    <!--<li>
+        <input type="checkbox" onClick="toggle(this)" />
+        <label>Tout cocher</label>
+    </li>-->
+    <li>
+        <input type="checkbox" name="check">
+        <label>Création fiche ESSAIM</label>
+    </li>
+    <li>
+        <input type="checkbox" name="check">
+        <label>Compte Eduvaud</label>
+    </li>
+    <li>
+        <input type="checkbox" name="check">
+        <label>Compte PaperCut (crédits, code à 6 chiffres envoyé..)</label>
+    </li>
+    <li>
+        <input type="checkbox" name="check">
+        <label>Ajout du compte eduvaud dans les bons groupes(automatique?)</label>
+    </li>
+    <li>
+        <input type="checkbox" name="check">
+        <label>Identifiants transmis par le secrétariat?</label>
+    </li>
+    <li>
+        <input type="checkbox" name="check">
+        <label>Passage au bureau IT (rdv pour logiciels office etc..)</label>
+    </li>
+</ul>
+<!-- script js pour faire un bouton "tout cocher">
+<script>
+    function toggle(source) {
+        checkboxes = document.getElementsByName('check');
+        for (var i = 0, i < checkboxes.length ; i++) {
+            checkboxes[i].checked = source.checked;
+        }
+}
+</script>-->
+</section>
 
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
-</div>
-
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -441,6 +566,20 @@ title="Fullscreen mode"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="ConfigAppleTV.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Checklist configuration Apple TV</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="MachineVirtuelle.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Section MachineVirtuelle</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>

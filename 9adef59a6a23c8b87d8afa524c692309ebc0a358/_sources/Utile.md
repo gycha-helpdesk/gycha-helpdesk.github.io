@@ -18,4 +18,6 @@ Description:	Mise à jour de la page de la section Utile
 10. [Comment régler le problème de Wi-Fi GYCHA-INTERNE (solution possible)](/FixWifi.md)
 11. [Désactiver complètement le bluetooth d'un poste](/DisableBluetooth.md)
 12. [Check-list mise en place de poste](/CheckPosteToDoList.md)
-12. [Check-list configuration d'une Apple TV](/ConfigAppleTV.md)
+13. [Erreurs fréquentes et leurs solutions](/ErreursFrequentes.md)
+14. [Check-list configuration d'une Apple TV](/ConfigAppleTV.md)
+15. [Check-list ajout d'un nouveau collaborateur](/CheckListNewCollaborateur.md)
