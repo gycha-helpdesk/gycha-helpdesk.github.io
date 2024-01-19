@@ -10,11 +10,11 @@ Description:	First steps in using jamf service
 
 C'est une application utilisée par les administrateurs système pour configurer et automatiser les tâches d'administration informatique pour les appareils macOS, iOS
 
-## Connexion au Jamf Pro
+## Connexion à Jamf Pro
 
-Pour accéder au Jamf Pro, vous allez passer par son appliance WEB
+Pour accéder à Jamf Pro, il faut passer par un de ces liens
 </br> -> https://10.225.232.161:8443
-</br> -> [Jamf Pro Serve Server][2]
+</br> -> https://aus000021.dgep.edu-vaud.ch:8443
 
 ### Identification
 
@@ -36,16 +36,18 @@ Jamf Pro vous demande de vous logger avec un compte utilisateur:
 :card: border-2
 Identifiant
 ^^^
-Gychameta
+gychameta
 ---
 ```{dropdown} Mot de passe
 :animate: fade-in
 Gym_09
 ```
-````
+```.
 `````
 
-Identifiant pour un super utilisateur Jamf Pro se trouve dans [Password State][1] (DGEP Password) mais vous allez pas avoir besoin de vous connecter au Jamf en tant que superuser. 
+Vous trouverez les identifiants pour le compte jamf admin (compte pour modifier les scripts, uploader des pkg..) sur [DGEP Passwords][1] (il faut vous logger avec vos identifiants admin). C'est une application séparée de jamf pro-
+
+
 
 
 ### Jamf Pro
@@ -61,6 +63,5 @@ Après avoir se connecter au Jamf Pro sans erreur. Vous aurez une interface qui 
 [//]: # (Links)
 
 [1]: https://pass.dgep.edu-vaud.ch:9119
-[2]: https://Aus000021.dgep.edu-vaud.ch
 
 

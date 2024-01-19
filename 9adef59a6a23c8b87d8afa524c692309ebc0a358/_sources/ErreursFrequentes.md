@@ -1,6 +1,9 @@
 # Erreurs fréquentes et leurs solutions
 Sur cette page vous trouverez des erreurs que nous avons souvent rencontrés et dont nous n'avons parlé nulle part ailleurs sur le site de la documentation avec leur solution. 
 
+# Imprimante bloquée, qui n'imprime plus
+Il faut aller sur le serveur d'impression pge000001 et faire un clic droit sur la bonne imprimante > cancel all jobs et redémarrer le serveur d'impression (clic sur le logo windows et restart), ça peut aider.
+
 # Access point Meraki qui clignote/ne fonctionne plus ou switch qui ne fonctionne plus
 Faites bien attention au port qui va de la prise ethernet qui distribue du réseau à l'access point. il se pourrait qu'elle soit réglée sur le mauvais VLAN. le bon vlan est: 32 pour les access point et 1 pour les switch (port trunk), regardez aussi les cables sur les switch car si un cable est branché sur deux ports du switch, il s'agit d'une boucle réseau et il faut débrancher une des deux extrémités.
 
@@ -68,7 +71,7 @@ Pour copier un/plusieurs fichiers vers des postes, il faut cliquer sur le petit 
 
 ```{image} images/ardCopieBouton.png
 :width: 500px
-:name: ardCopieBouton
+:name: ardCopieBtn
 :align: center
 ```
 

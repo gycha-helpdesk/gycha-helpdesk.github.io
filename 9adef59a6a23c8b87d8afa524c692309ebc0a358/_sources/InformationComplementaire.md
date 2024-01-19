@@ -16,127 +16,80 @@ Description:    Mise à jour des informations de la page
 
 ## Mettre a jour et modifier le site 
 
-Tout d'abord il faut que vous puissiez ouvrir les fichiers sur un logiciel de code (je vous conseille Visual Studio Code pour la suite_) ensuite il faut que vous vous rendiez dans le finder,
-Dans le dossier "src" du site, c'est dans ce dossier que vous allez soit modifier des fichiers existant soit en rajouter. pour le modifier il suffit d'ouvrir un fichier qui existe déjà et de le modifier.
+Pour mettre à jour le site de la doc pour le helpdesk, il faut commencer par avoir les fichiers du site (le stagiaire les à au cas ou) et aller au dossier src.
 
-```{note}
-Pour faire des captures d'écran il faut appuyer sur : cmd, MAJ, 4
-```
-<br/>
-
-si vous voulez utiliser des images il faut les mettre dans le dossier image 
-
-```{image} images/rootImage.png
-:width: 700px
-:name: rootImage
-:align: center
-```
-<br/>
-
-Pour rajouter un fichier c'est un peut plus compliqué. Il faut ouvrir le fichier "_toc.yml" et une fois que c'est fait vous pouvez ajouter une section ou une sous-section. Dans tous les cas si vous rajoutez quoique ce soit dans ce fichier il faudra aussi créé un fichier dans le dossier "src" avec le même nom.
-
-<br/>
-
-```{image} images/srcSiteRoot.png
-:width: 700px
-:name: srcSiteRoot
-:align: center
-```
-
-<br/>
-
-EX : pour créer cette page j'ai dû rajouter dans le fichier "_toc.yml" une ligne du nom de "- InformationComplementaire" donc dans le dossier "src" j'ai dû créer un fichier du même nom.
-
-<br/>
-
-```{image} images/dossierSRCEtFichier.png
-:width: 600px
-:name: dossierSRCEtFichier
-:align: center
-```
-
-<br/>
-
-```{image} images/ContenuFichierToc.png
-:width: 600px
-:name: ContenuFichierToc
-:align: center
-```
-<br/>
-
-Pour appliquer votre modification, il faut exécuter dans le terminal une suite de commandes. Pour ce faire, allez dans la barre en haut quand vous êtes sur le fichier que vous voulez modifier puis cliquez sur le terminal :
-
- <br/>
-
-```{image} images/AccesTerminal.png
-:width: 600px
-:name: AccesTerminal
-:align: center
-```
-<br/>
-
-Ensuite en bas de votre application il devrait y avoir le terminal de VS code prêt à recevoir des commandes.
-
-<br/>
-
-```{image} images/TerminalInToFenetre.png
+```{image} images/dossierSrcDoc.png
 :width: 800px
-:name: TerminalInToFenetre
+:name: dossierSrcDoc
 :align: center
 ```
-<br/>
 
-Voici la première commande à entrer:
+Ensuite, il faut ouvrir Visual Studio Code et importer le dossier src à documentations-stage-meta/src en allant sur File > Open Folder, dans la barre du haut:
 
-```shell
-conda activate jupyter-book
-```
-
-```{note}
-Cette commande sert à ce que l'on soit dans le bon environnement Anaconda. Sans ça, la commande d'après ne fonctionnera pas et on ne peut pas appliquer nos modifications.
-```
-ex. (ici je suis déjà sur jupyter-book): 
-
-<br/>
-
-```{image} images/TypeBaseOuJupy.png
-:width: 400px
-:name: TypeBaseOuJupy
+```{image} images/vsInterface.png
+:width: 800px
+:name: vsInterface
 :align: center
 ```
-<br/>
+---
 
-```{Attention}
-pour que la commande fonctionne il faut que vous soyez dans le bon dossier (celui du site). 
-```
-<br/>
-
-donc si vous ne savez pas ou vous êtes, taper dans le terminal : 
-```shell
-pwd
-```
-<br/>
-
- Cela vous indique où vous vous trouvez. ensuite pour vous placer au bon endroit (si vous n'êtes pas au bon endroit) il vous suffit de taper "cd" et de glisser le dossier "src" qui contient les pages modifiées du site.
-<br/>
-
-Maintenant que vous êtes dans le bon dossier et que vous êtes sur le bon environnement (jupyter-book) vous pouvez taper la commande suivante : 
-```shell
-jupyter-book build .
-```
-<br/>
-Voilà ! Une fois que tout ça est fait, vous pouvez voir le changement en local mais pas en ligne. Des modifications que vous avez apportées au fichier.
-
-```{note}
-Il suffit de copier le lien qui vous est fourni après avoir entré la commande "jupyter-book build ."
-```
-<br/>
-
-```{image} images/lienSiteLocal.png
-:width: 600px
-:name: lienSiteLocal
+```{image} images/vsFileOpenFolder.png
+:width: 800px
+:name: vsFileOpenFolder
 :align: center
 ```
+
+Quand ça sera fait, vous aurez toutes les pages en .md (Markdown) du site qui seront importées dans votre VS code, vous n'aurez plus qu'à les modifier et les sauvegarder.
+
+```{image} images/vsMarkdownPages.png
+:width: 800px
+:name: vsMarkdownPages
+:align: center
+```
+
+Si vous voulez importer des images, il faut les glisser dans le dossier documentation-gycha-meta/src/images, et vous pouvez vous baser sur le code déjà fait pour voir comment importer les images en markdown.  
+---
+
+Pour construire le site sur la base de pages markdown que vous avez (la suite), il faut installer [Anaconda](/Anaconda.md) (si ce n'est pas déjà fait) pour installer la library Jupyter-book qui nous sera utile pour convertir les pages markdown en html, sinon le site ne pourra pas être accessible en ligne.
+
+Ensuite, il faudra taper la commande conda activate jupyter-book (dans un terminal visual studio code, comme sur la capture d'écran ci-dessous:) car vous êtes encore dans l'environnement par défaut et jupyter-book ne peut pas fonctionner dans celui-ci.
+
+```{image} images/condaActivate.png
+:width: 800px
+:name: condaActivate
+:align: center
+```
+
+Dés que c'est fait, vous pourrez voir que vous serez dans l'environnement jupyter-book. C'est là qu'il faut que vous entriez la commande "jupyter-book build ." pour build tous les fichiers markdown du répertoire src dans lequel vous vous trouvez. (les convertir en HTML)
+
+```{image} images/jupyterEnvironment.png
+:width: 800px
+:name: jupyterEnvironment
+:align: center
+```
+---
+```{image} images/jupyterBuild.png
+:width: 800px
+:name: jupyterBuild
+:align: center
+```
+---
+```{image} images/jupyterHtml.png
+:width: 800px
+:name: jupyterHtml
+:align: center
+```
+
+Après il faudra que vous glissiez les fichiers html du dossier documentation-gycha-meta/_build/html/ dans le dossier gycha-helpdesk.github.io/9a.... (voir screenshot) et a push le tout sur github Desktop, comme l'explique la doc ci-dessous.
+
+```{image} images/srcFiles.png
+:width: 800px
+:name: srcFiles
+:align: center
+```
+
+
+
 <br/>
 
 Si vous voulez pouvoir voir vos modifications en ligne il faut aller sur GitHub desktop pour push (envoyer) toutes les données que vous avez modifiées. Mais avant ça il faut sélectionner le bon dossier.
@@ -1230,3 +1183,43 @@ Si vous voulez mettre une nouvelle imprimante mais garder le nom de l'ancienne (
 <br/>
 
 
+## Installer les imprimantes gycha-print (Konica minolta c220) sur ordi perso
+
+Pour installer les imprimantes Konica sur les ordi perso des profs, si jamais on vous le demande, il faut commencer par installer le driver Konica c250i sur le poste.
+Pour ce faire, il faut aller sur https://www.konicaminolta.ch/fr-ch/support/download-centre
+
+et renseigner le modèle de l'imprimante, comme sur la capture d'écran ci-dessous:
+
+<br/>
+
+```{image} images/konicaDlCentre.png
+:width: 400px
+:name: konicaDlCentre
+:align: center
+```
+
+<br/>
+
+Ensuite il faut cliquer sur le petit (+)Pilote et choisir le bon driver. Il faut simplement renseigner la bonne version d'OS (Windows/MacOS) et télécharger le deuxième driver car c'est le plus récent.
+
+<br/>
+
+```{image} images/konicaPilot.png
+:width: 400px
+:name: konicaPilot
+:align: center
+```
+
+<br/>
+
+---
+Il faudra accepter le contrat de licence et télécharger le deuxième fichier (le .dmg).
+Après, il faudra double cliquer sur le dmg installé et aller au répertoire qui a été créé (un disque "IT6" sera monté), et installer le .pkg qui est dans le disque.
+
+<br/>
+
+```{image} images/konicaMountedDisk.png
+:width: 400px
+:name: konicaMountedDisk
+:align: center
+```

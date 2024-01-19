@@ -58,7 +58,7 @@ Dès que c'est bon, vous arriverez sur une interface ou vous pouvez choisir un c
 
 ```{image} images/plex-accounts.png
 :width: 500px
-:name: plex-login
+:name: plex-accounts
 :align: center
 ```
 
@@ -66,7 +66,7 @@ Dés que vous avez cliqué sur le compte gycham, vous devrez arriver sur la page
 
 ```{image} images/plex-index.png
 :width: 500px
-:name: plex-login
+:name: plex-index
 :align: center
 ```
 

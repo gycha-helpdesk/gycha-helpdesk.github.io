@@ -11,6 +11,7 @@ Description:	Mise à jour de la page de la section jamf
 3. [Ajouter une règle](/JamfAddRule.md)
 4. [Créer une règle pour ajouter une imprimante dans Jamf](/JamfAddPrinter.md)
 5. [Créer un groupe intelligent Jamf](/JamfIntelligentGroup.md)
+6. [Créer un profil avec Jamf](/JamfCreateProfile.md)
 6. [Déploiement OS depuis Jamf](/JamfOSInstall.md)
 7. [Recherche avancée](/JamfRechercheAvance.md)
 8. [Mise à jour des applications dans Jamf](/JamfUpdateApplication.md)

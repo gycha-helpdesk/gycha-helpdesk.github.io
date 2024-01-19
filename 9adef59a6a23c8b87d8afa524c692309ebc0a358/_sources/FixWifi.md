@@ -29,6 +29,7 @@ sudo jamf policy -event renamecomputerout
 ```
 
 Ca permettera de sortir le poste de l'AD. Après il faut aller dans Utilisateurs et Groupes > Options et sous Compte serveur réseau, cliquer sur modifier pour supprimer l'ad DGEP. 
+il vous demandera d'entrer l'identifiant adminl 2 fois, puis l'AD sera completement supprimée du poste. 
 
 ```{image} images/adDGEPEdit.png
 :width: 500px
@@ -36,8 +37,20 @@ Ca permettera de sortir le poste de l'AD. Après il faut aller dans Utilisateurs
 :align: center
 ```
 
+Il faut cliquer sur le petit " - " pour supprimer l'AD du poste:
 
-il vous demandera d'entrer l'identifiant adminl 2 fois, puis l'AD sera completement supprimée du poste. 
+
+```{image} images/DGEPUserGroupes.png
+:width: 500px
+:name: DGEPUserGroupes
+:align: center
+```
+
+```{image} images/loginEnleverAD.png
+:width: 500px
+:name: loginEnleverAD
+:align: center
+```
 
 Après il faudra retourner sur le terminal et remettre le poste dans l'AD avec la commande suivante:
 
@@ -45,7 +58,7 @@ Après il faudra retourner sur le terminal et remettre le poste dans l'AD avec l
 sudo jamf policy -event renamecomputerin
 ```
 
-Quand la commande est terminée, il faut redémarrer l'ordi et se connecter. Après avoir ouvert une session, vous pouvez enlever le poste des exclusions du profil GYCHA-INTERNE et le problème devrait être réglé.
+Quand la commande est terminée, il faut redémarrer le poste et se connecter. Après avoir ouvert une session, vous pouvez enlever le poste des exclusions du profil GYCHA-INTERNE et le problème devrait être réglé.
 
 ```{image} images/gychaInterneLogged.png
 :width: 500px
