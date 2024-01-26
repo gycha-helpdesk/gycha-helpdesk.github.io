@@ -517,7 +517,14 @@ Le disque sera éjecté et le problème n’arrivera plus.</p>
 <h1>Problème de connexion internet/login (pastille rouge)<a class="headerlink" href="#probleme-de-connexion-internet-login-pastille-rouge" title="Permalink to this heading">#</a></h1>
 <p>Si vous n’arrivez pas à vous connecter à un poste avec des identifiants eduvaud, cela peut venir de:</p>
 <ol class="arabic simple">
-<li><p>Le poste n’est pas correctement lié à l’AD, il faut donc faire les règles renamecomputerout, enlever le poste de l’AD manuellement et renamecomputerin, puis redémarrer le poste. (tout en adminl)</p></li>
+<li><p>Le poste n’est pas correctement lié à l’AD, il faut donc enlever le poste de l’AD manuellement dans les paramètres -&gt; Utilisateurs et groupes.</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/removeAD1.png" id="removead1"><img alt="_images/removeAD1.png" class="align-center" id="removead1" src="_images/removeAD1.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/removeAD2.png" id="removead2"><img alt="_images/removeAD2.png" class="align-center" id="removead2" src="_images/removeAD2.png" style="width: 500px;" /></a>
+<p>il vous demandera 2 fois le mot de passe de adminl (remplissez tous les champs).
+<br>
+Puis lancer la règle renamecomputerin, puis redémarrer le poste. (tout en adminl)</p>
+<ol class="arabic simple" start="2">
 <li><p>le poste à un mauvais DNS, il faut aller dans les paramètres réseau et l’enlever manuellement.</p></li>
 </ol>
 </section>

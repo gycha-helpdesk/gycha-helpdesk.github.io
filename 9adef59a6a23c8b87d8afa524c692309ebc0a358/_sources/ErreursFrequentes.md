@@ -113,7 +113,21 @@ Il faut donc mettre le poste dans la liste des exclusions de la règle jamf et s
 
 # Problème de connexion internet/login (pastille rouge)
 Si vous n'arrivez pas à vous connecter à un poste avec des identifiants eduvaud, cela peut venir de:
-1. Le poste n'est pas correctement lié à l'AD, il faut donc faire les règles renamecomputerout, enlever le poste de l'AD manuellement et renamecomputerin, puis redémarrer le poste. (tout en adminl)
+1. Le poste n'est pas correctement lié à l'AD, il faut donc enlever le poste de l'AD manuellement dans les paramètres -> Utilisateurs et groupes.
+```{image} images/removeAD1.png
+:width: 500px
+:name: removeAD1
+:align: center
+```
+```{image} images/removeAD2.png
+:width: 500px
+:name: removeAD2
+:align: center
+```
+il vous demandera 2 fois le mot de passe de adminl (remplissez tous les champs).
+<br>
+Puis lancer la règle renamecomputerin, puis redémarrer le poste. (tout en adminl)
+
 2. le poste à un mauvais DNS, il faut aller dans les paramètres réseau et l'enlever manuellement.
 
 # Que faire quand une application "ne parvient plus à se lancer", qu'elle est corrompue
