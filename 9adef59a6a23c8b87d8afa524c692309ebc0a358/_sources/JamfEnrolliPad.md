@@ -1,6 +1,10 @@
 
 # Comment enroller un Ipad dans Jamf
 
+Si vous avez besoin d'un reset de iPad faites la partie 1, sinon faites la partie 2.
+
+## 1.reset l'iPad
+ 
 on aura besoin de l'application gratuite sur l'app store "apple configuratior 2"
 
 ```{image} images/appAppleConfigurator2.png
@@ -26,7 +30,7 @@ et faites confiance à l'ordinateur ( ipad ).
 :align: center
 ```
 
-## Début de la manipulation
+### Début de la manipulation
 
 une fois connecter cliquez sur préparer (barre de menu)
 
@@ -67,5 +71,35 @@ Voilà il ne reste plus qu'appliquer les paramètres  sur l'iPad.
 ```{image} images/loadingConf.jpeg
 :width: 500px
 :name: loadingConf
+:align: center
+```
+
+## 2. enroller l'iPad
+
+Tout d'abord il faut changer le nom de l'iPad en GYCH_iPad_XX, ça se trouve dans réglages->général->informations->nom.
+<br>
+Puis, sur le mac dans partage->partage internet,
+
+```{image} images/Share-Connextion1.png
+:width: 500px
+:name: Share-Connextion1
+:align: center
+```
+
+configurez le partage pour que votre iPad puisse s'enroller. (P.S. il faut que l'iPad soit bracher sur le mac)
+
+```{image} images/Share-Connextion2.png
+:width: 500px
+:name: Share-Connextion2
+:align: center
+```
+
+Sur le mac, téléchargez les profils nécessaire à l'enrollement sans les instaler sur le mac, comme dans "Comment enrôler un post dans Jamf".
+<br>
+Toujour sur le mac dans "apple configuratior", ajoutez les profils nécessaire à l'enrollement et instalez les dans l'iPad.
+
+```{image} images/Add-profilsMDM-iPad.png
+:width: 500px
+:name: Add-profilsMDM-iPad
 :align: center
 ```

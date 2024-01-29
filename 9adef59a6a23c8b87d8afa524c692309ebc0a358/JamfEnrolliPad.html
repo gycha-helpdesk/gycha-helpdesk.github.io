@@ -410,7 +410,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#debut-de-la-manipulation">Début de la manipulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reset-l-ipad">1.reset l’iPad</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#debut-de-la-manipulation">Début de la manipulation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enroller-l-ipad">2. enroller l’iPad</a></li>
 </ul>
             </nav>
         </div>
@@ -424,6 +428,9 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="comment-enroller-un-ipad-dans-jamf">
 <h1>Comment enroller un Ipad dans Jamf<a class="headerlink" href="#comment-enroller-un-ipad-dans-jamf" title="Permalink to this heading">#</a></h1>
+<p>Si vous avez besoin d’un reset de iPad faites la partie 1, sinon faites la partie 2.</p>
+<section id="reset-l-ipad">
+<h2>1.reset l’iPad<a class="headerlink" href="#reset-l-ipad" title="Permalink to this heading">#</a></h2>
 <p>on aura besoin de l’application gratuite sur l’app store “apple configuratior 2”</p>
 <a class="reference internal image-reference" href="_images/appAppleConfigurator2.png" id="appstore"><img alt="_images/appAppleConfigurator2.png" class="align-center" id="appstore" src="_images/appAppleConfigurator2.png" style="width: 500px;" /></a>
 <p>l’application sera comme ceci.</p>
@@ -432,7 +439,7 @@ document.write(`
 et faites confiance à l’ordinateur ( ipad ).</p>
 <a class="reference internal image-reference" href="_images/ConnecterIpad.jpeg" id="cable"><img alt="_images/ConnecterIpad.jpeg" class="align-center" id="cable" src="_images/ConnecterIpad.jpeg" style="width: 500px;" /></a>
 <section id="debut-de-la-manipulation">
-<h2>Début de la manipulation<a class="headerlink" href="#debut-de-la-manipulation" title="Permalink to this heading">#</a></h2>
+<h3>Début de la manipulation<a class="headerlink" href="#debut-de-la-manipulation" title="Permalink to this heading">#</a></h3>
 <p>une fois connecter cliquez sur préparer (barre de menu)</p>
 <p>Choisissez une configuration manuelle, cochez “superviser l’appareil” et autoriser le jumelage.</p>
 <a class="reference internal image-reference" href="_images/superviserIpad.png" id="superviseur"><img alt="_images/superviserIpad.png" class="align-center" id="superviseur" src="_images/superviserIpad.png" style="width: 500px;" /></a>
@@ -444,6 +451,20 @@ et faites confiance à l’ordinateur ( ipad ).</p>
 <a class="reference internal image-reference" href="_images/choixconf.png" id="choixconf"><img alt="_images/choixconf.png" class="align-center" id="choixconf" src="_images/choixconf.png" style="width: 500px;" /></a>
 <p>Voilà il ne reste plus qu’appliquer les paramètres  sur l’iPad.</p>
 <a class="reference internal image-reference" href="_images/loadingConf.jpeg" id="loadingconf"><img alt="_images/loadingConf.jpeg" class="align-center" id="loadingconf" src="_images/loadingConf.jpeg" style="width: 500px;" /></a>
+</section>
+</section>
+<section id="enroller-l-ipad">
+<h2>2. enroller l’iPad<a class="headerlink" href="#enroller-l-ipad" title="Permalink to this heading">#</a></h2>
+<p>Tout d’abord il faut changer le nom de l’iPad en GYCH_iPad_XX, ça se trouve dans réglages-&gt;général-&gt;informations-&gt;nom.
+<br>
+Puis, sur le mac dans partage-&gt;partage internet,</p>
+<a class="reference internal image-reference" href="_images/Share-Connextion1.png" id="share-connextion1"><img alt="_images/Share-Connextion1.png" class="align-center" id="share-connextion1" src="_images/Share-Connextion1.png" style="width: 500px;" /></a>
+<p>configurez le partage pour que votre iPad puisse s’enroller. (P.S. il faut que l’iPad soit bracher sur le mac)</p>
+<a class="reference internal image-reference" href="_images/Share-Connextion2.png" id="share-connextion2"><img alt="_images/Share-Connextion2.png" class="align-center" id="share-connextion2" src="_images/Share-Connextion2.png" style="width: 500px;" /></a>
+<p>Sur le mac, téléchargez les profils nécessaire à l’enrollement sans les instaler sur le mac, comme dans “Comment enrôler un post dans Jamf”.
+<br>
+Toujour sur le mac dans “apple configuratior”, ajoutez les profils nécessaire à l’enrollement et instalez les dans l’iPad.</p>
+<a class="reference internal image-reference" href="_images/Add-profilsMDM-iPad.png" id="add-profilsmdm-ipad"><img alt="_images/Add-profilsMDM-iPad.png" class="align-center" id="add-profilsmdm-ipad" src="_images/Add-profilsMDM-iPad.png" style="width: 500px;" /></a>
 </section>
 </section>
 
@@ -511,7 +532,11 @@ et faites confiance à l’ordinateur ( ipad ).</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#debut-de-la-manipulation">Début de la manipulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reset-l-ipad">1.reset l’iPad</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#debut-de-la-manipulation">Début de la manipulation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enroller-l-ipad">2. enroller l’iPad</a></li>
 </ul>
   </nav></div>
 
