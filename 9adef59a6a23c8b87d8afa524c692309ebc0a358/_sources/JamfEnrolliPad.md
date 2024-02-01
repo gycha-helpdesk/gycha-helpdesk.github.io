@@ -5,9 +5,9 @@ Si vous avez besoin d'un reset de iPad faites la partie 1, sinon faites la parti
 
 ## 1.reset l'iPad
  
-on aura besoin de l'application gratuite sur l'app store "apple configuratior 2"
+on aura besoin de l'application gratuite sur l'app store "apple configuratior" (il ne peut pas être installer sur tout les mac, danc il y a le mac Sonoma "GYCH-a201-bureau1")
 
-```{image} images/appAppleConfigurator2.png
+```{image} images/appAppleConfigurator.png
 :width: 500px
 :name: AppStore
 :align: center

@@ -8,7 +8,7 @@ Description:	How to deploy packages using Jamf
 
 ## Copy le logiciel
 
-Pour déploiement OSX sur une machine, il y a deux étaps principeaux, il nous faut d
+Pour déploiement OSX sur une machine, il y a deux étaps principeaux, il nous faut 
 premièrement copier le package depuis le serveur dans le dossier application de la machine en local, ensuite nous pouvons le lancer pour reinstaller le système.
 
 Tous ces différents règle se trouve dans Jamf.
