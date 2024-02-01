@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Section Jamf &#8212; Documentation Technique Chamblandes</title>
+    <title>Comment installer une application pour le iPad &#8212; Documentation Technique Chamblandes</title>
   
   
   
@@ -63,11 +63,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Jamf';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'JamAddAppiPad';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Liste des règles jamf les plus utiles/importantes" href="JamfImportantRules.html" />
-    <link rel="prev" title="Introduction" href="intro.html" />
+    <link rel="next" title="Fermeture Automatique de la sesssion" href="JamfAutoLogout.html" />
+    <link rel="prev" title="Comment enroller un Ipad dans Jamf" href="JamfEnrolliPad.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -164,7 +164,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Section Jamf</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Jamf.html">Section Jamf</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="JamfImportantRules.html">Liste des règles jamf les plus utiles/importantes</a></li>
 
 
@@ -182,7 +182,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="JamfUpdateApplication.html">Mise à jour des applications dans Jamf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="JamfEnroll.html">Comment enrôler un post dans Jamf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="JamfEnrolliPad.html">Comment enroller un Ipad dans Jamf</a></li>
-<li class="toctree-l2"><a class="reference internal" href="JamAddAppiPad.html">Comment installer une application pour le iPad</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Comment installer une application pour le iPad</a></li>
 <li class="toctree-l2"><a class="reference internal" href="JamfAutoLogout.html">Fermeture Automatique de la sesssion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="CompareSerialNumberJamfToInv.html">Comparaison etre les poste dans jamf est ceux de l’inventaire</a></li>
 <li class="toctree-l2"><a class="reference internal" href="SupprProfil.html">Comment supprimer le(s) profil jamf (et n’importe quel profil)</a></li>
@@ -317,7 +317,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/Jamf.md" target="_blank"
+      <li><a href="_sources/JamAddAppiPad.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -399,7 +399,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Section Jamf</h1>
+    <h1>Comment installer une application pour le iPad</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -413,32 +413,19 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <!--
-Author:		    Noa Chouriberry
-Date:		    26.01.2023
-Description:	Mise à jour de la page de la section jamf
--->
-<section class="tex2jax_ignore mathjax_ignore" id="section-jamf">
-<h1>Section Jamf<a class="headerlink" href="#section-jamf" title="Permalink to this heading">#</a></h1>
-<ol class="arabic simple">
-<li><p><a class="reference internal" href="JamfImportantRules.html"><span class="doc std std-doc">Commandes jamf importantes</span></a></p></li>
-<li><p><a class="reference internal" href="JamfFirstConnection.html"><span class="doc std std-doc">Avant de commencer</span></a></p></li>
-<li><p><a class="reference internal" href="JamfAddRule.html"><span class="doc std std-doc">Ajouter une règle</span></a></p></li>
-<li><p><a class="reference internal" href="JamfAddPrinter.html"><span class="doc std std-doc">Créer une règle pour ajouter une imprimante dans Jamf</span></a></p></li>
-<li><p><a class="reference internal" href="JamfIntelligentGroup.html"><span class="doc std std-doc">Créer un groupe intelligent Jamf</span></a></p></li>
-<li><p><a class="reference internal" href="JamfCreateProfile.html"><span class="doc std std-doc">Créer un profil avec Jamf</span></a></p></li>
-<li><p><a class="reference internal" href="JamfOSInstall.html"><span class="doc std std-doc">Déploiement OS depuis Jamf</span></a></p></li>
-<li><p><a class="reference internal" href="JamfRechercheAvance.html"><span class="doc std std-doc">Recherche avancée</span></a></p></li>
-<li><p><a class="reference internal" href="JamfUpdateApplication.html"><span class="doc std std-doc">Mise à jour des applications dans Jamf</span></a></p></li>
-<li><p><a class="reference internal" href="JamfEnroll.html"><span class="doc std std-doc">Comment enrôler un post dans Jamf</span></a></p></li>
-<li><p><a class="reference internal" href="JamfEnrolliPad.html"><span class="doc std std-doc">Comment enrôler un Ipad dans Jamf</span></a></p></li>
-<li><p><a class="reference internal" href="JamAddAppiPad.html"><span class="doc std std-doc">Comment installer une application pour le iPad</span></a></p></li>
-<li><p><a class="reference internal" href="JamfAutoLogout.html"><span class="doc std std-doc">Fermeture automatique de la session</span></a></p></li>
-<li><p><a class="reference internal" href="CompareSerialNumberJamfToInv.html"><span class="doc std std-doc">Comparaison entre les postes dans jamf et ceux de l’inventaire</span></a></p></li>
-<li><p><a class="reference internal" href="SupprProfil.html"><span class="doc std std-doc">Comment supprimer le(s) profil jamf (et n’importe quel profil)</span></a></p></li>
-</ol>
-<div class="toctree-wrapper compound">
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="comment-installer-une-application-pour-le-ipad">
+<h1>Comment installer une application pour le iPad<a class="headerlink" href="#comment-installer-une-application-pour-le-ipad" title="Permalink to this heading">#</a></h1>
+<p>Dans Appareils-&gt;Apps pour appareils mobiles cliquez sur Nouveau.</p>
+<a class="reference internal image-reference" href="_images/install-app-iPad1.png" id="install-app-ipad1"><img alt="_images/install-app-iPad1.png" class="align-center" id="install-app-ipad1" src="_images/install-app-iPad1.png" style="width: 500px;" /></a>
+<p>Sur la page, vous pouvez choisir si l’app que vous voulez installer vient de l’App Store ou une app en local (Nous allons voir une app qui vient de l’App Store).</p>
+<a class="reference internal image-reference" href="_images/install-app-iPad2.png" id="install-app-ipad2"><img alt="_images/install-app-iPad2.png" class="align-center" id="install-app-ipad2" src="_images/install-app-iPad2.png" style="width: 500px;" /></a>
+<p>Dans la zone recherche, tapez le nom de votre application (pas besoin que ça soit le nom exacte) et dans Pays choissez Switzerland.</p>
+<a class="reference internal image-reference" href="_images/install-app-iPad3.png" id="install-app-ipad3"><img alt="_images/install-app-iPad3.png" class="align-center" id="install-app-ipad3" src="_images/install-app-iPad3.png" style="width: 500px;" /></a>
+<p>Trouvez votre application sur la page et faites “Ajouter” (dé que vous faites “Ajouter” ça change imédatement de page, donc faites gafe).</p>
+<a class="reference internal image-reference" href="_images/install-app-iPad4.png" id="install-app-ipad4"><img alt="_images/install-app-iPad4.png" class="align-center" id="install-app-ipad4" src="_images/install-app-iPad4.png" style="width: 500px;" /></a>
+<p>Dans Général-&gt;Méthode De Distribution, vous pouvez choisir si l’application doit être installé sur le/les appareille(s) ou quel soit disponoble dans “Self Services” qui est une application de Jamf qui permet de trouver plus facilement les applications et les installer.</p>
+<a class="reference internal image-reference" href="_images/install-app-iPad5.png" id="install-app-ipad5"><img alt="_images/install-app-iPad5.png" class="align-center" id="install-app-ipad5" src="_images/install-app-iPad5.png" style="width: 500px;" /></a>
+<p>Il vous reste que de definir le Périmètre (il se configure comme pour les ordinateurs).</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -472,20 +459,20 @@ Description:	Mise à jour de la page de la section jamf
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="intro.html"
+       href="JamfEnrolliPad.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Introduction</p>
+        <p class="prev-next-title">Comment enroller un Ipad dans Jamf</p>
       </div>
     </a>
     <a class="right-next"
-       href="JamfImportantRules.html"
+       href="JamfAutoLogout.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Liste des règles jamf les plus utiles/importantes</p>
+        <p class="prev-next-title">Fermeture Automatique de la sesssion</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

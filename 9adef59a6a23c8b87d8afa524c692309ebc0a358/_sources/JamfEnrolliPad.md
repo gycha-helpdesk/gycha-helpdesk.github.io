@@ -103,3 +103,6 @@ Toujour sur le mac dans "apple configuratior", ajoutez les profils nécessaire �
 :name: Add-profilsMDM-iPad
 :align: center
 ```
+<br>
+
+À la fin de l'instalation des profils il vous demandera de vous connecter pour pouvoir instaler les applications qui se trouve sur Jamf. Connecter vous dessu avec l'email du helpdesk et sur pass dgep il y aura le mot de passe sous l'onglet "apple store", puis vous receverez un appel avec le code pour la double indentification.
