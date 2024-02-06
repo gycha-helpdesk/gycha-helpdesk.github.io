@@ -1,7 +1,5 @@
-# Créer une règle sur Jamf
-```
 
-```
+# Créer une règle sur Jamf
 Pour créer une règle sur jamf, il faut se connecter au dashboard (https://10.225.232.161:8443/) avec vos identifiants admin (ou avec le compte gychameta - même mot de passe qu'adminl)
 
 ```{image} images/jamfLogin.png

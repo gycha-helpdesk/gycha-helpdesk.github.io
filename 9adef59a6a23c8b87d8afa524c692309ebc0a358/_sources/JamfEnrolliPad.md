@@ -1,4 +1,5 @@
 
+
 # Comment enroller un Ipad dans Jamf
 
 Si vous avez besoin d'un reset de iPad faites la partie 1, sinon faites la partie 2.

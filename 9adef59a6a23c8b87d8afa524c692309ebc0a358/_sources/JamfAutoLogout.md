@@ -1,6 +1,8 @@
+<!--
 Author:         Noor Mohammad Alizadeh
 Date:           07-dec 2021
 Description:    Prevent Jamf automatique logout 
+-->
 
 # Fermeture Automatique de la sesssion
 

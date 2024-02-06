@@ -1,3 +1,4 @@
+
 # Créer un groupe intelligent Jamf
 
 Les groupes intelligents permettent de créer des groupes de postes selon des critères données.

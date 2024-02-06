@@ -1,3 +1,4 @@
+
 # Recherche avancée
 
 Dans le menu de Jamf Pro > le tab "Ordinateurs" , cliquez sur la "Recherche dans l'inventaire"

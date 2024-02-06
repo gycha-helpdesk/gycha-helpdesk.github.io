@@ -1,3 +1,4 @@
+
 # Créer un profil avec Jamf
 
 Les profils jamf servent a créer un profil utilisable sur les mac du gymnase. Ils peuvent être très utile pour faire des choses que les règles ne vous permettent pas forcément de faire, comme par exemple bloquer des options sur les postes ou forcer des paramètres. Le wifi du gymnase GYCHA-INTERNE est attribué par un profil du même nom.
