@@ -8,23 +8,9 @@
 :align: center
 ```
 
-<h2>Serveurs d'impression:</h2>
-
-Nouveau serveur (celui qui est utilisé actuellement au gymnase)-<br>
-PC Name: pge000001.dgep.edu-vaud.ch<br>
-Gateway: No Gateway<br>
-
-Ancien serveur-<br>
-PC Name: 10.226.34.21<br>
-Gateway: No Gateway
-
-<h2>Active Directory (pour reset les mots de passe, voir les comptes eduvaud..)</h2>
-
-AD locale (marche que sur le réseau du gymnase):<br><br>
-PC Name: 10.226.34.17<br>
-Gateway: No Gateway<br>
-
-AD en ligne (marche sur le réseau du gymnase ET à l'extérieur):<br><br>
+## Rdfarm
+Le serveur à ajouter est rdfarm. C est le serveur que vous allez utiliser pour vous connectez au autre serveur.<br>
+Voici les information à mettre dans Remote Desktop:<br>
 PC Name: rdfarm.dgep.edu-vaud.ch<br>
 Gateway: GatewayDGEP : <br>cliquer sur gateway > add gateway > Gateway Name: remote.dgep.edu-vaud.ch<br>
 
@@ -35,4 +21,18 @@ pour arriver au même résultat que sur la capture d'écran:
 :align: center
 ```
 
+## AD
 
+Dans rdfarm, faites un **win+R** (sur un clavier mac c est command+R) et entrer **dsa.msc**, vous aurez la page pour géré l'AD.
+
+## Autre serveurs
+
+Dans rdfarm, ouvrez l'application **mRemoteNG**, puis faites un nouveau dossier, ensuite faites un model, comme dans la screen.
+```{image} images/mRemoteNG.png
+:name: mRemoteNG
+:align: center
+```
+Copier le model et changer dans connection->Hostname le nom du serveur.
+Voici quelque nom de serveur qui pourrait vous être utile:
+
+Serveurs d'impression: pge000001.dgep.edu-vaud.ch

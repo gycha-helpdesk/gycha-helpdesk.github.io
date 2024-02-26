@@ -23,3 +23,4 @@ Description:	Mise à jour de la page de la section Utile
 15. [Désactiver complètement le bluetooth d'un poste](/UtileDisableBluetooth.md)
 16. [Tous les serveurs à ajouter sur Microsoft Remote Desktop](/UtileRemoteDesktopServers.md)
 17. [La démarche à suivre pour prêter un poste](/UtileOrdiPret.md)
+18. [La marche à suivre pour renomer un poste](/UtileRenameComuter.md)

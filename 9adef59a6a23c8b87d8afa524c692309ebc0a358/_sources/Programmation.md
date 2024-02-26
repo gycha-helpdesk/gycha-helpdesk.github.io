@@ -7,7 +7,7 @@ Description:	Information sur les différent script réaliser / démonstration.
 
 # Section Programmation
 
->Dans cette section vous pourrez retrouver les explication ansi que les script réaliser (néhister pas a en rajouter si vous en faite un).
+>Dans cette section vous pourrez retrouver les explication ansi que les script réaliser (n'hésitez pas a en rajouter si vous en faite un).
 > 
 
 ## Script compare inventory file 
