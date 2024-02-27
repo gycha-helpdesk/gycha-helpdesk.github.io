@@ -18,7 +18,7 @@ Changer l'inventaire dans teams en changant le nom des deux macs, un prendra la 
 
 ## Changer le fichier csv
 
-Dans ```smb://fge000001.dgep.edu-vaud.ch./IT/Inventaire```, téléchargez le fichier xlsx de l’inventaire qui se trouve dans teams et le mettre à coter du script python, puis changez le nom du fichier d’inventaire en « inventaireNaming.xlsx », puis exécutez le script python pour changer le fichier csv avec les bons noms.
+Dans teams, téléchargez le fichier xlsx de l’inventaire et le mettre à coter du script python qui se trouve dans ```smb://fge000001.dgep.edu-vaud.ch./IT/Inventaire```, puis changez le nom du fichier d’inventaire en « inventaireNaming.xlsx », puis exécutez le script python pour changer le fichier csv avec les bons noms.
 <br>
 
 ## Renomer les macs

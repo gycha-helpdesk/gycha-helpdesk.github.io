@@ -64,7 +64,7 @@ Description:    check list pour controler la mise en place d'un poste
     </li>
     <li>
         <input type="checkbox" name="check">
-        <label>Profils jamf installés (et GYCHA-INTERNE si poste wifi)</label>
+        <label>Profils jamf installés (et EDUVAUD-INTERNE si poste wifi)</label>
     </li>
     <li>
         <input type="checkbox" name="check">

@@ -16,7 +16,7 @@ Il faut ouvrir Finder et faire CMD + K à l'intérieur: Vous verrez une fenetre 
 
 voici l'adresse du serveur a mettre: 
 ```
-smb://gycha-srv-fs01
+smb://fge000001.dgep.edu-vaud.ch.
 ```
 
 Quand la connexion sera faite, il y aura une fenêtre avec des dossiers à sélectionner. Pour notre part nous allons prendre le dossier IT qui contient les fichiers inventaire:

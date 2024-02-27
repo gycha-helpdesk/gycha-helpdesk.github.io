@@ -156,7 +156,7 @@ Les changements prennent ~5 mins à s'appliquer, mais si vous n'êtes vraiment p
 
 ## Schéma réseau des salles de classe en général
 
-VLAN :
+VLAN (à changer !):
 
 - 34 = serveur.
 - 48 - 49 = ordinateur personel.
@@ -166,31 +166,7 @@ VLAN :
 
 <br/>
 
-Voici les switchs réseau que vous retrouverez dans toutes les salles de classe. 
-
-<br/>
-
-```{note}
-Le port 1 est pour internet, le port 2 pour le mac mini (le Pc fixe), le port 3 le beamer, le port 8 c'est pour les ordinateurs personnels des profs.
-```
-
-<br/>
-
-```{image} images/avantSwitchReseau.jpg
-:width: 600px
-:name: avantSwitchReseau
-:align: center
-```
-<br/>
-
-Comme on peut le voir à l'arrière il n'y a que l'alimentation.
-
-```{image} images/ArierreSwitchReseau.jpg
-:width: 600px
-:name: ArierreSwitchReseau
-:align: center
-```
-<br/>
+## Le switch HDMI
 
 ```{note}
 Normalement a l'avant il y a juste le bouton power et input, le bouton input change quel câble hdmi sera affiché au beamer. Comme on peut le voir sur l'in 1 ça sera la Wacom donc l'ordinateur fixe (le mac mini). In 2 ordis perso donc l'ordinateur que le prof amène ou les élèves. In 3 c'est pour la caméra qui est dans la salle.
@@ -217,7 +193,7 @@ Le port HDMI "output" c'est le câble HDMI qui relie le beamer (il sert de sorti
 :align: center
 ```
 
-<br/>
+## Le mac mini
 
 ```{note}
 Sur le mac mini ce n'est pas compliqué même s'il en donne l'impression. Tout à gauche c'est l'alim du mac mini, ensuite c'est le câble réseau donc internet (sur la photo c'est le câble rouge). Après tout le reste est relié ensemble jusqu'au même câble. Sur ce même câble il y a le câble HDMI du mac mini, un câble USB (il sert à relier les ports USB de la Wacom au mac mini s'il y en a) et pour finir l'alim de la Wacom et tous ces câbles sont réuni en un seul et il est connecté à la wacom.

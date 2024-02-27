@@ -206,9 +206,6 @@ const thebe_selector_output = ".output, .cell_output"
 
 <li class="toctree-l2"><a class="reference internal" href="UtileFixReseau.html">Resolution de problème lier au réseau</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileErreursImprimante.html">Erreurs des imprimantes</a></li>
-
-
-
 <li class="toctree-l2"><a class="reference internal" href="UtilePaperCut.html">Problèmes et solutions PaperCut</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileInventaire.html">Se connecter au serveur de l’inventaire:</a></li>
 
@@ -239,13 +236,8 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-<li class="toctree-l2"><a class="reference internal" href="config-switch.html">Configurer un switch Netgear GS108T</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Meraki.html">Cisco Meraki</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Acronis.html">Acronis Cyber Backup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="MikroTik.html">Se connecter à un appareil MikroTik</a></li>
-
-
-
 <li class="toctree-l2"><a class="reference internal" href="Plex.html">Se connecter au serveur de streaming (Plex)</a></li>
 
 </ul>
@@ -254,11 +246,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="Programation.html">Programmation</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Classe.html">Section Classe</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="ProblemesCourants.html">Problèmes les plus communs dans une salle de cours</a></li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Check.html">Section Check</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Check.html">Section Check</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="CheckPosteToDoList.html">Check-list mise en place de poste</a></li>
 <li class="toctree-l2"><a class="reference internal" href="CheckListNewCollaborateur.html">Check-list ajout d’un nouveau collaborateur correctement</a></li>
 <li class="toctree-l2"><a class="reference internal" href="CheckConfigAppleTV.html">Checklist configuration Apple TV</a></li>
@@ -416,6 +404,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-ajouter-une-image-dans-la-doc">Comment ajouter une image dans la doc</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-mettre-le-markdown-en-html">Comment mettre le markdown en HTML</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-reseau-des-salles-de-classe-en-general">Schéma réseau des salles de classe en général</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#le-switch-hdmi">Le switch HDMI</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#le-mac-mini">Le mac mini</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fonction-schema-de-l-usi-dgep-dgnsi">Fonction / schéma de l’usi / dgep / dgnsi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#informations-supplementaire">Informations supplémentaire</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kahoot">kahoot</a></li>
@@ -522,7 +512,7 @@ je vais aussi vous expliquer le fonctionnement de l’usi, la dgnsi, la dgep, la
 </section>
 <section id="schema-reseau-des-salles-de-classe-en-general">
 <h2>Schéma réseau des salles de classe en général<a class="headerlink" href="#schema-reseau-des-salles-de-classe-en-general" title="Permalink to this heading">#</a></h2>
-<p>VLAN :</p>
+<p>VLAN (à changer !):</p>
 <ul class="simple">
 <li><p>34 = serveur.</p></li>
 <li><p>48 - 49 = ordinateur personel.</p></li>
@@ -531,18 +521,9 @@ je vais aussi vous expliquer le fonctionnement de l’usi, la dgnsi, la dgep, la
 <li><p>32 = materiel infra (switch, etc)</p></li>
 </ul>
 <br/>
-<p>Voici les switchs réseau que vous retrouverez dans toutes les salles de classe.</p>
-<br/>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Le port 1 est pour internet, le port 2 pour le mac mini (le Pc fixe), le port 3 le beamer, le port 8 c’est pour les ordinateurs personnels des profs.</p>
-</div>
-<br/>
-<a class="reference internal image-reference" href="_images/avantSwitchReseau.jpg" id="avantswitchreseau"><img alt="_images/avantSwitchReseau.jpg" class="align-center" id="avantswitchreseau" src="_images/avantSwitchReseau.jpg" style="width: 600px;" /></a>
-<br/>
-<p>Comme on peut le voir à l’arrière il n’y a que l’alimentation.</p>
-<a class="reference internal image-reference" href="_images/ArierreSwitchReseau.jpg" id="arierreswitchreseau"><img alt="_images/ArierreSwitchReseau.jpg" class="align-center" id="arierreswitchreseau" src="_images/ArierreSwitchReseau.jpg" style="width: 600px;" /></a>
-<br/>
+</section>
+<section id="le-switch-hdmi">
+<h2>Le switch HDMI<a class="headerlink" href="#le-switch-hdmi" title="Permalink to this heading">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Normalement a l’avant il y a juste le bouton power et input, le bouton input change quel câble hdmi sera affiché au beamer. Comme on peut le voir sur l’in 1 ça sera la Wacom donc l’ordinateur fixe (le mac mini). In 2 ordis perso donc l’ordinateur que le prof amène ou les élèves. In 3 c’est pour la caméra qui est dans la salle.</p>
@@ -556,7 +537,9 @@ je vais aussi vous expliquer le fonctionnement de l’usi, la dgnsi, la dgep, la
 </div>
 <br/>
 <a class="reference internal image-reference" href="_images/arriereSwitchHDMI.jpg" id="arriereswitchhdmi"><img alt="_images/arriereSwitchHDMI.jpg" class="align-center" id="arriereswitchhdmi" src="_images/arriereSwitchHDMI.jpg" style="width: 600px;" /></a>
-<br/>
+</section>
+<section id="le-mac-mini">
+<h2>Le mac mini<a class="headerlink" href="#le-mac-mini" title="Permalink to this heading">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Sur le mac mini ce n’est pas compliqué même s’il en donne l’impression. Tout à gauche c’est l’alim du mac mini, ensuite c’est le câble réseau donc internet (sur la photo c’est le câble rouge). Après tout le reste est relié ensemble jusqu’au même câble. Sur ce même câble il y a le câble HDMI du mac mini, un câble USB (il sert à relier les ports USB de la Wacom au mac mini s’il y en a) et pour finir l’alim de la Wacom et tous ces câbles sont réuni en un seul et il est connecté à la wacom.</p>
@@ -1080,6 +1063,8 @@ Après, il faudra double cliquer sur le dmg installé et aller au répertoire qu
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-ajouter-une-image-dans-la-doc">Comment ajouter une image dans la doc</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-mettre-le-markdown-en-html">Comment mettre le markdown en HTML</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-reseau-des-salles-de-classe-en-general">Schéma réseau des salles de classe en général</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#le-switch-hdmi">Le switch HDMI</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#le-mac-mini">Le mac mini</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fonction-schema-de-l-usi-dgep-dgnsi">Fonction / schéma de l’usi / dgep / dgnsi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#informations-supplementaire">Informations supplémentaire</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kahoot">kahoot</a></li>
