@@ -14,8 +14,7 @@ Description:	Start using Glpi IT management
 > 
 > (source: Wikipedia)
 
-Ici à Gycha, nous utilisons ce service pour la gestion des tickets et 
-des demandes qu'on recevoi par mail.
+Ici à Gycha, nous utilisons ce service pour la gestion des tickets et des demandes qu'on recevoi par mail.
 
 ## Authentification
 
@@ -35,7 +34,7 @@ Vous pouvez vous logger avec votre identifiant et mot de passe eduvaud.
 ## Gestion des tickets
 
 Si vous vous authentifiez correctement, vous entrez à la page d'accueil du Glpi. 
-Depuis ici, vous povez allez vers la section des Tickets pour les gérer.
+Depuis ici, vous pouvez allez vers la section des Tickets pour les gérer.
 
 ```{image} images/glpi-tickets.png
 :width: 500px
@@ -55,7 +54,7 @@ controllez bien que vous êtes en mode supervisor.
 
 ### Liste des tickets
 
-Liste des cas céés par Glpi (soit depuis un email envoyé à la boîte mail de Glpi soit le ticket est 
+Liste des cas créés par Glpi (soit depuis un email envoyé à la boîte mail de Glpi soit le ticket est 
 créé depuis **interface de Glpi**) sont afficher depuis un filtrage par defaut 
 qui affiche tout les tickets "non-résolus"
 
@@ -109,5 +108,3 @@ en vous demandant de choisir le type d'action (Demandeur, observateur, attribuer
 ```
 
 Puis validez votre choix est l'attribution du ticket est faite!
-
-### 

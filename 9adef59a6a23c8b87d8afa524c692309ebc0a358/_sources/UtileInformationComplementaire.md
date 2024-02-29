@@ -156,13 +156,15 @@ Les changements prennent ~5 mins à s'appliquer, mais si vous n'êtes vraiment p
 
 ## Schéma réseau des salles de classe en général
 
-VLAN (à changer !):
+VLAN :
 
-- 34 = serveur.
-- 48 - 49 = ordinateur personel.
-- 40 = Poste de l'école. (wifi)
-- 38 = Imprimante
-- 32 = materiel infra (switch, etc)
+- GYCHA - VLAN 100 - Management
+- GYCHA - VLAN 101 - Printers
+- GYCHA - VLAN 102 – CORP, ce réseau est présenté en WiFi sous - SSID EDUVAUD-INTERNE
+- GYCHA - VLAN 103 - WiFi EDUVAUD-ELEVES
+- GYCHA - VLAN 104 - WiFi Guest
+- GYCHA - VLAN 105 - WiFi EDUVAUD-ENSEIGNANTS
+- GYCHA - VLAN 106 - WiFi IoT
 
 <br/>
 

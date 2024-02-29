@@ -59,7 +59,7 @@ Ensuite, pour acceder au dashboard du Meraki, copiez le
 lien ci-dessous dans votre navigateur WEB:
 
 ```
-https://n213.meraki.com
+https://meraki.dgep.edu-vaud.ch
 ```
 
 Ce lien vous amène ver la page login du site Meraki. 
