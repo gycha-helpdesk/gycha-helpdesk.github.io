@@ -13,7 +13,7 @@ Cette page vous sera utile si vous recherchez de l'aide concernant PaperCut.
 
 <br/>
 
-## Comment retrouver le code PaperCut d'un élève
+# Comment retrouver le code PaperCut d'un élève
 
 Pour commencer, il faut se connecter au serveur papercut (pge000001) depuis Microsoft Remote Desktop:
 
@@ -60,7 +60,7 @@ Dés que vous avez trouvé la personne que vous cherchez, il faut cliquer dessus
 
 <br/><br/>
 
-## Générer un rapport des impressions PaperCut par utilisateur (profs/élèves)
+# Générer un rapport des impressions PaperCut par utilisateur (profs/élèves)
 
 Si vous voulez générer un rapport comme celui ci:(voir screenshot)
 
@@ -105,3 +105,26 @@ Pour exporter le rapport, il faut cliquer sur Run Report en bas de la page.
 :align: center
 ```
 <br/>
+
+# Les cartes Papercut
+
+Le code se trouve sur teams dans GychaIT dans le canal Imprimantes - Copieurs -> Fichiers -> PaperCut -> Création de cartes PaperCut. Il faut juste télécharger le dossier puis executer le script python.
+<br/>
+le script va sortir un csv qui ne faut surtout pas toucher et un pdf avec les cartes à imprimmer
+```{image} images/papercutCards.png
+:width: 400px
+:name: papercutCards
+:align: center
+```
+Dans Papercut, il faut se connecter avec son compte administrateur, puis aller sur l'onglet "Cartes". Sur la droite il y a "Action" et il faut sélectionner "Importer de nouvelles cartes".
+```{image} images/papercutCards1.png
+:width: 400px
+:name: papercutCards1
+:align: center
+```
+Et il faut séléctionner le fichier csv, puis télécharger 
+```{image} images/papercutCards2.png
+:width: 800px
+:name: papercutCards2
+:align: center
+```

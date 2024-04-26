@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Renomer un mac &#8212; Documentation Technique Chamblandes</title>
   
@@ -207,7 +207,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="UtileFixReseau.html">Resolution de problème lier au réseau</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileErreursImprimante.html">Erreurs des imprimantes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtilePaperCut.html">Problèmes et solutions PaperCut</a></li>
-<li class="toctree-l2"><a class="reference internal" href="UtileInventaire.html">Se connecter au serveur de l’inventaire:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UtileInventaire.html">Se connecter au serveur de l’inventaire</a></li>
+
 
 
 <li class="toctree-l2"><a class="reference internal" href="Utilehermes.html">Hermes II</a></li>
@@ -429,15 +430,14 @@ Description:	marche à suivre pour renomer un poste
 </section>
 <section id="changer-le-fichier-csv">
 <h2>Changer le fichier csv<a class="headerlink" href="#changer-le-fichier-csv" title="Permalink to this heading">#</a></h2>
-<p>Dans teams, téléchargez le fichier xlsx de l’inventaire et le mettre à coter du script python qui se trouve dans <code class="docutils literal notranslate"><span class="pre">smb://fge000001.dgep.edu-vaud.ch./IT/Inventaire</span></code>, puis changez le nom du fichier d’inventaire en « inventaireNaming.xlsx », puis exécutez le script python pour changer le fichier csv avec les bons noms.
+<p>Dans teams, téléchargez le fichier xlsx de l’inventaire et le mettre dans le dossier avec comme nom l’année actuel à coter du script python qui se trouve dans <code class="docutils literal notranslate"><span class="pre">smb://fge000001.dgep.edu-vaud.ch./IT/Inventaire</span></code>, puis changez le nom du fichier d’inventaire en « inventaire_chamblandes_(année) », puis vérifier le script pour qu’il cherche dans la bonne année et enfin, exécutez le script python pour changer le fichier csv avec les bons noms.
 <br></p>
 </section>
 <section id="renomer-les-macs">
 <h2>Renomer les macs<a class="headerlink" href="#renomer-les-macs" title="Permalink to this heading">#</a></h2>
-<p>Exécutez la commande « renamecomputerout » sur le Mac qui a été changé (pas celui en prod)<br>
-Puis, exécutez la commande « renamecomputer » sur l’autre Mac<br>
-Finalement, exécutez la commande « renamecomputerin » sur le Mac qui a été changé (pas celui en prod)<br>
-Si il y a  dans Partage -&gt; nom d’hôte local, il y a un 2 après le nom, exécutez la commende «renamecomputer»</p>
+<p>Exécutez la commande « renamecomputerout » sur les Macs<br>
+Finalement, exécutez la commande « renamecomputerin » sur les Macs qui ont été changés<br>
+Si il y a  dans Partage -&gt; nom d’hôte local, il y a un 2 après le nom, exécutez la commande «renamecomputer»</p>
 </section>
 </section>
 
