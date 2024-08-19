@@ -1,8 +1,10 @@
 # Resolution de problème lier au réseau
 
-## Comment régler le problème de Wi-Fi GYCHA-INTERNE (solution possible)
+## Comment régler le problème de Wi-Fi EDUVAUD-INTERNE (solution possible)
+1. Il faut aller dans les profils de la machine et regarder EDUVAUD-INTERNE. Dedans il faut voire à qui a été disribué et si ce n'est pas la même il faut mettre la machine dans les exclusion de la règle (sous profils) JAMF (EDUVAUD-INTERNE) et l'enlever. C'est la même procédure si la machine n a pas de réseau filaire, le profil est Wired-EDUVAUD-INTERNE et le nom de la règle (sous profils) JAMF (Wired-EDUVAUD-INTERNE)
 
-Il peut arriver que le wifi GYCHA-INTERNE se déconnecte et se reconnecte en boucle tout seul, et ça peut être (99% des cas) dû à une mauvaise liaison entre le poste et l'AD.
+
+2. Il peut arriver que le wifi EDUVAUD-INTERNE se déconnecte et se reconnecte en boucle tout seul, et ça peut être (99% des cas) dû à une mauvaise liaison entre le poste et l'AD.
 
 ```{image} images/favNetwork.png
 :width: 500px
@@ -10,7 +12,7 @@ Il peut arriver que le wifi GYCHA-INTERNE se déconnecte et se reconnecte en bou
 :align: center
 ```
 
-Pour régler ce problème, il faut commencer par mettre le poste dans la liste des exclusions du profil jamf GYCHA-INTERNE.
+Pour régler ce problème, il faut commencer par mettre le poste dans la liste des exclusions du profil jamf EDUVAUD-INTERNE.
 
 ```{image} images/gychaInterneExclusion.png
 :width: 500px
@@ -60,7 +62,7 @@ Après il faudra retourner sur le terminal et remettre le poste dans l'AD avec l
 sudo jamf policy -event renamecomputerin
 ```
 
-Quand la commande est terminée, il faut redémarrer le poste et se connecter. Après avoir ouvert une session, vous pouvez enlever le poste des exclusions du profil GYCHA-INTERNE et le problème devrait être réglé.
+Quand la commande est terminée, il faut redémarrer le poste et se connecter. Après avoir ouvert une session, vous pouvez enlever le poste des exclusions du profil EDUVAUD-INTERNE et le problème devrait être réglé.
 
 ```{image} images/gychaInterneLogged.png
 :width: 500px
