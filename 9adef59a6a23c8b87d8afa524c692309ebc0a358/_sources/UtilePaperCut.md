@@ -108,7 +108,7 @@ Pour exporter le rapport, il faut cliquer sur Run Report en bas de la page.
 
 # Les cartes Papercut
 
-Le code se trouve sur teams dans GychaIT dans le canal Imprimantes - Copieurs -> Fichiers -> PaperCut -> Création de cartes PaperCut. Il faut juste télécharger le dossier puis executer le script python.
+Le code se trouve sur teams dans GychaIT dans le canal Imprimantes - Copieurs -> Fichiers -> PaperCut -> Création de cartes PaperCut. Il faut juste télécharger le dossier puis executer le script python dans la dossier du script.
 <br/>
 le script va sortir un csv qui ne faut surtout pas toucher et un pdf avec les cartes à imprimmer
 ```{image} images/papercutCards.png

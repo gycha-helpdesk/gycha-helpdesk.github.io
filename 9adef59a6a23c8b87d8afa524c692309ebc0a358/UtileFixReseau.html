@@ -415,7 +415,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-regler-le-probleme-de-wi-fi-eduvaud-interne-solution-possible">Comment régler le problème de Wi-Fi EDUVAUD-INTERNE (solution possible)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#le-profil-du-wifi-reseau">le profil du wifi/réseau</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#autre-solution">Autre solution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#autre-solution-old">Autre solution (old)</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme-de-connexion-internet-login-pastille-rouge-ou-reseau-sur-macmini-qui-est-lent-ne-fonctionne-pas-connexion-session-ad">Problème de connexion internet/login (pastille rouge) ou Réseau sur macmini qui est lent / ne fonctionne pas (connexion session AD)</a></li>
@@ -436,12 +436,16 @@ document.write(`
 <h2>Comment régler le problème de Wi-Fi EDUVAUD-INTERNE (solution possible)<a class="headerlink" href="#comment-regler-le-probleme-de-wi-fi-eduvaud-interne-solution-possible" title="Link to this heading">#</a></h2>
 <section id="le-profil-du-wifi-reseau">
 <h3>le profil du wifi/réseau<a class="headerlink" href="#le-profil-du-wifi-reseau" title="Link to this heading">#</a></h3>
-<p>Il faut aller dans les profils de la machine et regarder EDUVAUD-INTERNE. Dedans il faut voire à qui a été disribué et si ce n’est pas la même il faut mettre la machine dans les exclusion de la règle (sous profils) JAMF (EDUVAUD-INTERNE) et l’enlever. C’est la même procédure si la machine n a pas de réseau filaire, le profil est Wired-EDUVAUD-INTERNE et le nom de la règle (sous profils) JAMF (Wired-EDUVAUD-INTERNE)</p>
+<p>Il faut aller dans les profils de la machine et regarder EDUVAUD-INTERNE.</p>
+<a class="reference internal image-reference" href="_images/Profil-EDU-Interne.png" id="favnetwork"><img alt="_images/Profil-EDU-Interne.png" class="align-center" id="favnetwork" src="_images/Profil-EDU-Interne.png" style="width: 300px;" /></a>
+<p>Dedans il faut voire à qui a été disribué (en ouvrant le profil et en scrollant un peu il y a le nom)</p>
+<a class="reference internal image-reference" href="_images/Nom-certificat-EDU-Interne.png" id="id1"><img alt="_images/Nom-certificat-EDU-Interne.png" class="align-center" id="id1" src="_images/Nom-certificat-EDU-Interne.png" style="width: 400px;" /></a>
+<p>et si ce n’est pas la même (que le nom de la machine actuel) il faut mettre la machine dans les exclusions des Profils de configuration JAMF (EDUVAUD-INTERNE) et l’enlever. C’est la même procédure si la machine n’a pas de réseau filaire, le profil est Wired-EDUVAUD-INTERNE et le nom sous les Profils de configuration JAMF (Wired-EDUVAUD-INTERNE)</p>
 </section>
-<section id="autre-solution">
-<h3>Autre solution<a class="headerlink" href="#autre-solution" title="Link to this heading">#</a></h3>
+<section id="autre-solution-old">
+<h3>Autre solution (old)<a class="headerlink" href="#autre-solution-old" title="Link to this heading">#</a></h3>
 <p>Il peut arriver que le wifi EDUVAUD-INTERNE se déconnecte et se reconnecte en boucle tout seul, et ça peut être (99% des cas) dû à une mauvaise liaison entre le poste et l’AD.</p>
-<a class="reference internal image-reference" href="_images/favNetwork.png" id="favnetwork"><img alt="_images/favNetwork.png" class="align-center" id="favnetwork" src="_images/favNetwork.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/favNetwork.png" id="id2"><img alt="_images/favNetwork.png" class="align-center" id="id2" src="_images/favNetwork.png" style="width: 500px;" /></a>
 <p>Pour régler ce problème, il faut commencer par mettre le poste dans la liste des exclusions du profil jamf EDUVAUD-INTERNE.</p>
 <a class="reference internal image-reference" href="_images/gychaInterneExclusion.png" id="gychainterneexclusion"><img alt="_images/gychaInterneExclusion.png" class="align-center" id="gychainterneexclusion" src="_images/gychaInterneExclusion.png" style="width: 500px;" /></a>
 <p>Ensuite, il faut ouvrir un terminal et entrer la commande suivante:</p>
@@ -546,7 +550,7 @@ Puis lancer la règle renamecomputerin, puis redémarrer le poste. (tout en admi
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-regler-le-probleme-de-wi-fi-eduvaud-interne-solution-possible">Comment régler le problème de Wi-Fi EDUVAUD-INTERNE (solution possible)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#le-profil-du-wifi-reseau">le profil du wifi/réseau</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#autre-solution">Autre solution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#autre-solution-old">Autre solution (old)</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme-de-connexion-internet-login-pastille-rouge-ou-reseau-sur-macmini-qui-est-lent-ne-fonctionne-pas-connexion-session-ad">Problème de connexion internet/login (pastille rouge) ou Réseau sur macmini qui est lent / ne fonctionne pas (connexion session AD)</a></li>

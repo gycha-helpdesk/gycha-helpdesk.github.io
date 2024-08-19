@@ -2,10 +2,26 @@
 
 ## Comment régler le problème de Wi-Fi EDUVAUD-INTERNE (solution possible)
 ### le profil du wifi/réseau
-Il faut aller dans les profils de la machine et regarder EDUVAUD-INTERNE. Dedans il faut voire à qui a été disribué et si ce n'est pas la même il faut mettre la machine dans les exclusion de la règle (sous profils) JAMF (EDUVAUD-INTERNE) et l'enlever. C'est la même procédure si la machine n a pas de réseau filaire, le profil est Wired-EDUVAUD-INTERNE et le nom de la règle (sous profils) JAMF (Wired-EDUVAUD-INTERNE)
+Il faut aller dans les profils de la machine et regarder EDUVAUD-INTERNE. 
+
+```{image} images/Profil-EDU-Interne.png
+:width: 300px
+:name: favNetwork
+:align: center
+```
+
+Dedans il faut voire à qui a été disribué (en ouvrant le profil et en scrollant un peu il y a le nom) 
+
+```{image} images/Nom-certificat-EDU-Interne.png
+:width: 400px
+:name: favNetwork
+:align: center
+```
+
+et si ce n'est pas la même (que le nom de la machine actuel) il faut mettre la machine dans les exclusions des Profils de configuration JAMF (EDUVAUD-INTERNE) et l'enlever. C'est la même procédure si la machine n'a pas de réseau filaire, le profil est Wired-EDUVAUD-INTERNE et le nom sous les Profils de configuration JAMF (Wired-EDUVAUD-INTERNE)
 
 
-### Autre solution
+### Autre solution (old)
 Il peut arriver que le wifi EDUVAUD-INTERNE se déconnecte et se reconnecte en boucle tout seul, et ça peut être (99% des cas) dû à une mauvaise liaison entre le poste et l'AD.
 
 ```{image} images/favNetwork.png
