@@ -413,7 +413,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-regler-le-probleme-de-wi-fi-eduvaud-interne-solution-possible">Comment régler le problème de Wi-Fi EDUVAUD-INTERNE (solution possible)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-regler-le-probleme-de-wi-fi-eduvaud-interne-solution-possible">Comment régler le problème de Wi-Fi EDUVAUD-INTERNE (solution possible)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#le-profil-du-wifi-reseau">le profil du wifi/réseau</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#autre-solution">Autre solution</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme-de-connexion-internet-login-pastille-rouge-ou-reseau-sur-macmini-qui-est-lent-ne-fonctionne-pas-connexion-session-ad">Problème de connexion internet/login (pastille rouge) ou Réseau sur macmini qui est lent / ne fonctionne pas (connexion session AD)</a></li>
 </ul>
             </nav>
@@ -430,10 +434,13 @@ document.write(`
 <h1>Resolution de problème lier au réseau<a class="headerlink" href="#resolution-de-probleme-lier-au-reseau" title="Link to this heading">#</a></h1>
 <section id="comment-regler-le-probleme-de-wi-fi-eduvaud-interne-solution-possible">
 <h2>Comment régler le problème de Wi-Fi EDUVAUD-INTERNE (solution possible)<a class="headerlink" href="#comment-regler-le-probleme-de-wi-fi-eduvaud-interne-solution-possible" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>Il faut aller dans les profils de la machine et regarder EDUVAUD-INTERNE. Dedans il faut voire à qui a été disribué et si ce n’est pas la même il faut mettre la machine dans les exclusion de la règle (sous profils) JAMF (EDUVAUD-INTERNE) et l’enlever. C’est la même procédure si la machine n a pas de réseau filaire, le profil est Wired-EDUVAUD-INTERNE et le nom de la règle (sous profils) JAMF (Wired-EDUVAUD-INTERNE)</p></li>
-<li><p>Il peut arriver que le wifi EDUVAUD-INTERNE se déconnecte et se reconnecte en boucle tout seul, et ça peut être (99% des cas) dû à une mauvaise liaison entre le poste et l’AD.</p></li>
-</ol>
+<section id="le-profil-du-wifi-reseau">
+<h3>le profil du wifi/réseau<a class="headerlink" href="#le-profil-du-wifi-reseau" title="Link to this heading">#</a></h3>
+<p>Il faut aller dans les profils de la machine et regarder EDUVAUD-INTERNE. Dedans il faut voire à qui a été disribué et si ce n’est pas la même il faut mettre la machine dans les exclusion de la règle (sous profils) JAMF (EDUVAUD-INTERNE) et l’enlever. C’est la même procédure si la machine n a pas de réseau filaire, le profil est Wired-EDUVAUD-INTERNE et le nom de la règle (sous profils) JAMF (Wired-EDUVAUD-INTERNE)</p>
+</section>
+<section id="autre-solution">
+<h3>Autre solution<a class="headerlink" href="#autre-solution" title="Link to this heading">#</a></h3>
+<p>Il peut arriver que le wifi EDUVAUD-INTERNE se déconnecte et se reconnecte en boucle tout seul, et ça peut être (99% des cas) dû à une mauvaise liaison entre le poste et l’AD.</p>
 <a class="reference internal image-reference" href="_images/favNetwork.png" id="favnetwork"><img alt="_images/favNetwork.png" class="align-center" id="favnetwork" src="_images/favNetwork.png" style="width: 500px;" /></a>
 <p>Pour régler ce problème, il faut commencer par mettre le poste dans la liste des exclusions du profil jamf EDUVAUD-INTERNE.</p>
 <a class="reference internal image-reference" href="_images/gychaInterneExclusion.png" id="gychainterneexclusion"><img alt="_images/gychaInterneExclusion.png" class="align-center" id="gychainterneexclusion" src="_images/gychaInterneExclusion.png" style="width: 500px;" /></a>
@@ -454,6 +461,7 @@ il vous demandera d’entrer l’identifiant adminl 2 fois, puis l’AD sera com
 </div>
 <p>Quand la commande est terminée, il faut redémarrer le poste et se connecter. Après avoir ouvert une session, vous pouvez enlever le poste des exclusions du profil EDUVAUD-INTERNE et le problème devrait être réglé.</p>
 <a class="reference internal image-reference" href="_images/gychaInterneLogged.png" id="gychainternelogged"><img alt="_images/gychaInterneLogged.png" class="align-center" id="gychainternelogged" src="_images/gychaInterneLogged.png" style="width: 500px;" /></a>
+</section>
 </section>
 <section id="probleme-de-connexion-internet-login-pastille-rouge-ou-reseau-sur-macmini-qui-est-lent-ne-fonctionne-pas-connexion-session-ad">
 <h2>Problème de connexion internet/login (pastille rouge) ou Réseau sur macmini qui est lent / ne fonctionne pas (connexion session AD)<a class="headerlink" href="#probleme-de-connexion-internet-login-pastille-rouge-ou-reseau-sur-macmini-qui-est-lent-ne-fonctionne-pas-connexion-session-ad" title="Link to this heading">#</a></h2>
@@ -536,7 +544,11 @@ Puis lancer la règle renamecomputerin, puis redémarrer le poste. (tout en admi
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-regler-le-probleme-de-wi-fi-eduvaud-interne-solution-possible">Comment régler le problème de Wi-Fi EDUVAUD-INTERNE (solution possible)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-regler-le-probleme-de-wi-fi-eduvaud-interne-solution-possible">Comment régler le problème de Wi-Fi EDUVAUD-INTERNE (solution possible)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#le-profil-du-wifi-reseau">le profil du wifi/réseau</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#autre-solution">Autre solution</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme-de-connexion-internet-login-pastille-rouge-ou-reseau-sur-macmini-qui-est-lent-ne-fonctionne-pas-connexion-session-ad">Problème de connexion internet/login (pastille rouge) ou Réseau sur macmini qui est lent / ne fonctionne pas (connexion session AD)</a></li>
 </ul>
   </nav></div>
