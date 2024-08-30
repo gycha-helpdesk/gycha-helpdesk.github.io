@@ -416,7 +416,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#authentification">Authentification</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-des-tickets">Gestion des tickets</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#liste-des-tickets">Liste des tickets</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#attribution-des-tickets">Attribution des tickets</a></li>
 </ul>
 </li>
 </ul>
@@ -448,12 +447,14 @@ et de réaliser la gestion des tâches administratives et financières.</p>
 <section id="authentification">
 <h2>Authentification<a class="headerlink" href="#authentification" title="Link to this heading">#</a></h2>
 <p>Le lien pour accèder à l’interface de Glpi est:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">glpi</span><span class="o">.</span><span class="n">edu</span><span class="o">-</span><span class="n">vaud</span><span class="o">.</span><span class="n">ch</span><span class="o">/</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">servicedesk</span><span class="o">.</span><span class="n">edu</span><span class="o">-</span><span class="n">vaud</span><span class="o">.</span><span class="n">ch</span><span class="o">/</span>
 </pre></div>
 </div>
 <p>Ce lien vous dirige vers la page login du Glpi.
-Vous pouvez vous logger avec votre identifiant et mot de passe eduvaud.</p>
+Il faut sélectionner “Connexion standard”, puis vous pouvez vous logger avec votre identifiant et mot de passe eduvaud.</p>
 <a class="reference internal image-reference" href="_images/glpi-login.png" id="glpi-login"><img alt="_images/glpi-login.png" class="align-center" id="glpi-login" src="_images/glpi-login.png" style="width: 500px;" /></a>
+</br>
+<a class="reference internal image-reference" href="_images/glpi-login2.png" id="glpi-login2"><img alt="_images/glpi-login2.png" class="align-center" id="glpi-login2" src="_images/glpi-login2.png" style="width: 500px;" /></a>
 </section>
 <section id="gestion-des-tickets">
 <h2>Gestion des tickets<a class="headerlink" href="#gestion-des-tickets" title="Link to this heading">#</a></h2>
@@ -461,38 +462,12 @@ Vous pouvez vous logger avec votre identifiant et mot de passe eduvaud.</p>
 Depuis ici, vous pouvez allez vers la section des Tickets pour les gérer.</p>
 <a class="reference internal image-reference" href="_images/glpi-tickets.png" id="glpi-tickets"><img alt="_images/glpi-tickets.png" class="align-center" id="glpi-tickets" src="_images/glpi-tickets.png" style="width: 500px;" /></a>
 </br>
-<p>Pour bien pouvoir voir tous les tickets,
-controllez bien que vous êtes en mode supervisor.</p>
-<a class="reference internal image-reference" href="_images/glpi-mode.png" id="glpi-mode"><img alt="_images/glpi-mode.png" class="align-center" id="glpi-mode" src="_images/glpi-mode.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/glpi-tickets-2.png" id="glpi-tickets-2"><img alt="_images/glpi-tickets-2.png" class="align-center" id="glpi-tickets-2" src="_images/glpi-tickets-2.png" style="width: 500px;" /></a>
 <section id="liste-des-tickets">
 <h3>Liste des tickets<a class="headerlink" href="#liste-des-tickets" title="Link to this heading">#</a></h3>
 <p>Liste des cas créés par Glpi (soit depuis un email envoyé à la boîte mail de Glpi soit le ticket est
-créé depuis <strong>interface de Glpi</strong>) sont afficher depuis un filtrage par defaut
-qui affiche tout les tickets “non-résolus”</p>
-<a class="reference internal image-reference" href="_images/glpi-tickets-2.png" id="glpi-tickets-2"><img alt="_images/glpi-tickets-2.png" class="align-center" id="glpi-tickets-2" src="_images/glpi-tickets-2.png" style="width: 500px;" /></a>
-</br>
-<p>Avec cet outils vous pouvez facilement ranger les tickets ou trouver les tickets que vous souhaitez.</p>
-<a class="reference internal image-reference" href="_images/glpi-tickets-filter.png" id="glpi-tickets-filter"><img alt="_images/glpi-tickets-filter.png" class="align-center" id="glpi-tickets-filter" src="_images/glpi-tickets-filter.png" style="width: 500px;" /></a>
-<div class="tip admonition">
-<p class="admonition-title">Tips!</p>
-<p>Vous pouvez aussi savegarder, réinitialiser ou masquer votre filtre avec les options qui sont situés à côté du boutons de la recherche. <img alt="tips-filter" src="_images/glpi-tickets-filter-tips.png" /></p>
-</div>
-</section>
-<section id="attribution-des-tickets">
-<h3>Attribution des tickets<a class="headerlink" href="#attribution-des-tickets" title="Link to this heading">#</a></h3>
-<div class="note admonition">
-<p class="admonition-title">Note!</p>
-<p>Routage des ticket informatique, ou bien l’attribution des ticket permet de circuler les tickets entre l’équipe du support et facilite le traîtement des tickets.</p>
-</div>
-<p>Pour attribuer un ticket à sois même ou a un collègue par exemple, vous allez cliquer sur le ticket,
-ensuite dans la page du ticket cliquer sur le menu déroulant “Action”.
-Depuis la vous verrez l’option “Ajouter un acteur”.</p>
-<a class="reference internal image-reference" href="_images/glpi-tickets-user-attribution.png" id="glpi-tickets-user-attribution"><img alt="_images/glpi-tickets-user-attribution.png" class="align-center" id="glpi-tickets-user-attribution" src="_images/glpi-tickets-user-attribution.png" style="width: 500px;" /></a>
-</br>
-<p>Après avoir cliqué sur la page sur “Ajouter un acteur”, ça vous ouvre une fenêtre
-en vous demandant de choisir le type d’action (Demandeur, observateur, attribuer à).</p>
-<a class="reference internal image-reference" href="_images/glpi-tickets-user-attribution-2.png" id="glpi-tickets-user-attribution-2"><img alt="_images/glpi-tickets-user-attribution-2.png" class="align-center" id="glpi-tickets-user-attribution-2" src="_images/glpi-tickets-user-attribution-2.png" style="width: 500px;" /></a>
-<p>Puis validez votre choix est l’attribution du ticket est faite!</p>
+créé depuis <strong>interface de Glpi</strong>).</p>
+<a class="reference internal image-reference" href="_images/glpi-tickets-2.png" id="id2"><img alt="_images/glpi-tickets-2.png" class="align-center" id="id2" src="_images/glpi-tickets-2.png" style="width: 500px;" /></a>
 </section>
 </section>
 </section>
@@ -564,7 +539,6 @@ en vous demandant de choisir le type d’action (Demandeur, observateur, attribu
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#authentification">Authentification</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-des-tickets">Gestion des tickets</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#liste-des-tickets">Liste des tickets</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#attribution-des-tickets">Attribution des tickets</a></li>
 </ul>
 </li>
 </ul>
