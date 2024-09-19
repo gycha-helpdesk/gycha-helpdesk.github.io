@@ -59,23 +59,20 @@ aie la même norme de nommage que les autre packages.
 2. Choisissez ou vous sauvegardez votre PKG et JamfComposer commence à créer le PKG.
 
 (jamf-admin)=
-## Charger le le PKG dans JamfAdmin
+## Charger le le PKG dans Jamf Sync
 
-Nous avons maintenant un package en format PKG qui est pret à être chargé dans le JamfAdmin. </br>
+Nous avons maintenant un package en format PKG qui est pret à être chargé dans Jamf Sync. </br>
 
-Pour se connecter sur jamf admin, voici les identifiants:
-> URL: https://aus000021.dgep.edu-vaud.ch:8443/ <br/>
-> Nom d'utilisateur et mot de passe: Voir DGEP Passwords
-Ouvrez le JamfAdmin, et il vous juste suffit de glisser le .PKG dans JamfAdmin.
+Pour se connecter sur Jamf Sync, il faut utiliser la doc qui est dans Teams -> GychaIT -> JAMF -> DGEP_RemplacerJamfAdmin.pdf
 
-```{image} images/jamf-update-vlc-jamfadmin.png
+```{image} images/JAMFSync1.png
 :width: 500px
-:name: jamf-update-vlc-jamfadmin
+:name: JAMFSync1
 :align: center
 ```
 </br>
 
-Après avoir mis le package dans Jamf Admin, sauvegardez les changements et le package sera accessible depuis Jamf pro dans les règles.
+Pour ajouter un packet il faut clicker sur le petit bouton plus et choisir son .pkg et le package sera accessible depuis Jamf pro dans les règles.
 
 ### Modification des règles pour le package
 

@@ -27,6 +27,13 @@ Dans rdfarm, faites un **win+R** (sur un clavier mac c est command+R) et entrer 
 
 ## Autre serveurs
 
+### Remote Desktop Connection
+dans la barre de recherche, tapez **Remote Desktop Connection**. Dans l'application enter le nom du serveur, puis connectez vous.
+```{image} images/RemoteDesktopConnection.png
+:name: Remote Desktop Connection
+:align: center
+```
+### mRemoteNG
 Dans rdfarm, ouvrez l'application **mRemoteNG**, puis faites un nouveau dossier, ensuite faites un model, comme dans la screen.
 ```{image} images/mRemoteNG.png
 :name: mRemoteNG

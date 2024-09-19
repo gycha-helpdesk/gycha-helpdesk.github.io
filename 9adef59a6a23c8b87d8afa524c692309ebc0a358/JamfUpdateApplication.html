@@ -417,7 +417,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-d-un-pkg-a-partir-d-un-fichier-dmg">Création d’un PKG à partir d’un fichier DMG</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#charger-le-le-pkg-dans-jamfadmin">Charger le le PKG dans JamfAdmin</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#charger-le-le-pkg-dans-jamf-sync">Charger le le PKG dans Jamf Sync</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modification-des-regles-pour-le-package">Modification des règles pour le package</a></li>
 </ul>
 </li>
@@ -476,18 +476,13 @@ aie la même norme de nommage que les autre packages.</p>
 </ol>
 </section>
 </section>
-<section id="charger-le-le-pkg-dans-jamfadmin">
-<span id="jamf-admin"></span><h2>Charger le le PKG dans JamfAdmin<a class="headerlink" href="#charger-le-le-pkg-dans-jamfadmin" title="Link to this heading">#</a></h2>
-<p>Nous avons maintenant un package en format PKG qui est pret à être chargé dans le JamfAdmin. </br></p>
-<p>Pour se connecter sur jamf admin, voici les identifiants:</p>
-<blockquote>
-<div><p>URL: <a class="reference external" href="https://aus000021.dgep.edu-vaud.ch:8443/">https://aus000021.dgep.edu-vaud.ch:8443/</a> <br/>
-Nom d’utilisateur et mot de passe: Voir DGEP Passwords
-Ouvrez le JamfAdmin, et il vous juste suffit de glisser le .PKG dans JamfAdmin.</p>
-</div></blockquote>
-<a class="reference internal image-reference" href="_images/jamf-update-vlc-jamfadmin.png" id="jamf-update-vlc-jamfadmin"><img alt="_images/jamf-update-vlc-jamfadmin.png" class="align-center" id="jamf-update-vlc-jamfadmin" src="_images/jamf-update-vlc-jamfadmin.png" style="width: 500px;" /></a>
+<section id="charger-le-le-pkg-dans-jamf-sync">
+<span id="jamf-admin"></span><h2>Charger le le PKG dans Jamf Sync<a class="headerlink" href="#charger-le-le-pkg-dans-jamf-sync" title="Link to this heading">#</a></h2>
+<p>Nous avons maintenant un package en format PKG qui est pret à être chargé dans Jamf Sync. </br></p>
+<p>Pour se connecter sur Jamf Sync, il faut utiliser la doc qui est dans Teams -&gt; GychaIT -&gt; JAMF -&gt; DGEP_RemplacerJamfAdmin.pdf</p>
+<a class="reference internal image-reference" href="_images/JAMFSync1.png" id="jamfsync1"><img alt="_images/JAMFSync1.png" class="align-center" id="jamfsync1" src="_images/JAMFSync1.png" style="width: 500px;" /></a>
 </br>
-<p>Après avoir mis le package dans Jamf Admin, sauvegardez les changements et le package sera accessible depuis Jamf pro dans les règles.</p>
+<p>Pour ajouter un packet il faut clicker sur le petit bouton plus et choisir son .pkg et le package sera accessible depuis Jamf pro dans les règles.</p>
 <section id="modification-des-regles-pour-le-package">
 <h3>Modification des règles pour le package<a class="headerlink" href="#modification-des-regles-pour-le-package" title="Link to this heading">#</a></h3>
 <p>Ouvrez le Jamf dans votre navigateur, ensuite aller dans Règles
@@ -572,7 +567,7 @@ Vous allez trouver un group qui un nome commençant par “InstallUpdate_”</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-d-un-pkg-a-partir-d-un-fichier-dmg">Création d’un PKG à partir d’un fichier DMG</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#charger-le-le-pkg-dans-jamfadmin">Charger le le PKG dans JamfAdmin</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#charger-le-le-pkg-dans-jamf-sync">Charger le le PKG dans Jamf Sync</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modification-des-regles-pour-le-package">Modification des règles pour le package</a></li>
 </ul>
 </li>
