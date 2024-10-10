@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/myfile.css?v=5be3136b" />
@@ -468,7 +468,7 @@ Pour ajouter du matériel à l’inventaire, il suffit de rajouter une ligne en 
 <section class="tex2jax_ignore mathjax_ignore" id="que-faire-si-le-s-appareils-ne-prennent-pas-le-bon-nom">
 <h1>Que faire si le(s) appareils ne prennent pas le bon nom?<a class="headerlink" href="#que-faire-si-le-s-appareils-ne-prennent-pas-le-bon-nom" title="Link to this heading">#</a></h1>
 <p>Généralement, quand l’enrôlement/le renommage ne se fait pas correctement, c’est à cause d’un problème de connexion internet. Soyez sûr que l’appareil soit bien branché en ethernet avant de passer à la suite. Dés que c’est fait, il faut ouvrir un terminal sur la machine et taper la commande suivante:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">jamf</span> <span class="n">policy</span> <span class="o">-</span><span class="n">event</span> <span class="n">renamecomputerout</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">jamf</span> <span class="n">policy</span> <span class="o">-</span><span class="n">event</span> <span class="n">binding</span>
 </pre></div>
 </div>
 <p>Normalement ça devrait mettre un message “Set computer name to xxxxxxxxxx” ou un message qui y ressemble. Si vous ouvrez un nouveau terminal, vous devriez voir quelque chose d’autre que GYCH_(null). (ce que vous avez mis dans le fichier inventaire). Vous pouvez aussi aller dans la barre de recherche et chercher Partages pour contrôler le nom du poste.</p>

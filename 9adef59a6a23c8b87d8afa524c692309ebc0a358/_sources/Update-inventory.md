@@ -69,7 +69,7 @@ python gycham_naming_export.py
 Généralement, quand l'enrôlement/le renommage ne se fait pas correctement, c'est à cause d'un problème de connexion internet. Soyez sûr que l'appareil soit bien branché en ethernet avant de passer à la suite. Dés que c'est fait, il faut ouvrir un terminal sur la machine et taper la commande suivante:
 
 ```
-sudo jamf policy -event renamecomputerout
+sudo jamf policy -event binding
 ```
 
 Normalement ça devrait mettre un message "Set computer name to xxxxxxxxxx" ou un message qui y ressemble. Si vous ouvrez un nouveau terminal, vous devriez voir quelque chose d'autre que GYCH_(null). (ce que vous avez mis dans le fichier inventaire). Vous pouvez aussi aller dans la barre de recherche et chercher Partages pour contrôler le nom du poste.

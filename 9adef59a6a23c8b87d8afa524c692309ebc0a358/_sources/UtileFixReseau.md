@@ -49,7 +49,9 @@ Enlever le poste de l'AD manuellement dans les paramètres -> Utilisateurs et gr
 ```
 il vous demandera 1 ou 2 fois le mot de passe de adminl (remplissez tous les champs).
 <br>
-Puis lancer la règle sudo jamf policy -event binding. Si ça na toujour pas résolu le problème, il faut Enlever le poste de l'AD manuellement dans les paramètres -> Utilisateurs et groupes. Puis aller dans l'AD et supprimer le poste et refair (sur la machine) sudo jamf policy -event binding.
+Puis lancer la règle sudo jamf policy -event binding. 
+<br>
+Si ça na toujour pas résolu le problème, il faut Enlever le poste de l'AD manuellement dans les paramètres -> Utilisateurs et groupes. Puis aller dans l'AD et supprimer le poste et refair (sur la machine) sudo jamf policy -event binding.
 
 ## Problème compte AD est un compte réseau et pas un compte mobile
 
