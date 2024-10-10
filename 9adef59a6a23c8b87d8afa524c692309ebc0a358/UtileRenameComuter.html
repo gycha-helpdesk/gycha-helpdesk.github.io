@@ -53,7 +53,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -436,20 +436,19 @@ Description:	marche à suivre pour renomer un poste
 <h1>Renomer un mac<a class="headerlink" href="#renomer-un-mac" title="Link to this heading">#</a></h1>
 <section id="changer-linventaire">
 <h2>Changer l’inventaire<a class="headerlink" href="#changer-linventaire" title="Link to this heading">#</a></h2>
-<p>Changer l’inventaire dans teams en changant le nom des deux macs, un prendra la nom de l’autre (Celui du stock va prendre le nom de celui qui va être remplacé) et l’autre mac va prendre un nom sytle “GYCHA-a201-mm01” et dans la case à coter du nom, mettez l’ancien nom du mac.</p>
+<p>Changer l’inventaire dans teams en changant le nom des deux macs, un prendra la nom de l’autre (Celui du stock va prendre le nom de celui qui va être remplacé) et l’autre mac va prendre un nom sytle “GYCHA-a201-xyz” (max 15 caractères) et dans la case à coter du nom, mettez l’ancien nom du mac.</p>
 <a class="reference internal image-reference" href="_images/ChangeInventaire.png" id="changeinventaire"><img alt="_images/ChangeInventaire.png" class="align-center" id="changeinventaire" src="_images/ChangeInventaire.png" style="width: 600px;" /></a>
 <br>
 </section>
 <section id="changer-le-fichier-csv">
 <h2>Changer le fichier csv<a class="headerlink" href="#changer-le-fichier-csv" title="Link to this heading">#</a></h2>
-<p>Dans teams, téléchargez le fichier xlsx de l’inventaire et le mettre dans le dossier avec comme nom l’année actuel à coter du script python qui se trouve dans <code class="docutils literal notranslate"><span class="pre">smb://fge000001.dgep.edu-vaud.ch./IT/Inventaire</span></code>, puis changez le nom du fichier d’inventaire en « inventaire_chamblandes_(année) », puis vérifier le script pour qu’il cherche dans la bonne année et enfin, exécutez le script python pour changer le fichier csv avec les bons noms.
+<p>Dans <code class="docutils literal notranslate"><span class="pre">smb://jamfrename.dgep.edu-vaud.ch/CSVRepository/GYCHA</span></code>, exécutez le script python nommé “gycham_naming_export.py” pour changer le fichier csv avec les bons noms.
 <br></p>
 </section>
 <section id="renomer-les-macs">
 <h2>Renomer les macs<a class="headerlink" href="#renomer-les-macs" title="Link to this heading">#</a></h2>
-<p>Exécutez la commande « renamecomputerout » sur les Macs<br>
-Finalement, exécutez la commande « renamecomputerin » sur les Macs qui ont été changés<br>
-Si il y a  dans Partage -&gt; nom d’hôte local, il y a un 2 après le nom, exécutez la commande «renamecomputer»</p>
+<p>Exécutez la commande « sudo jamf policy -event binding » sur les Macs<br>
+Si il y a  dans Partage -&gt; nom d’hôte local, il y a un 2 après le nom, exécutez la commande « sudo jamf policy -event binding »</p>
 </section>
 </section>
 

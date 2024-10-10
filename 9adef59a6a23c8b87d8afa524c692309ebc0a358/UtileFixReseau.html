@@ -53,7 +53,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -415,10 +415,10 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-regler-le-probleme-de-wi-fi-eduvaud-interne-solution-possible">Comment régler le problème de Wi-Fi EDUVAUD-INTERNE (solution possible)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#le-profil-du-wifi-reseau">le profil du wifi/réseau</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#autre-solution-old">Autre solution (old)</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme-de-connexion-internet-login-pastille-rouge-ou-reseau-sur-macmini-qui-est-lent-ne-fonctionne-pas-connexion-session-ad">Problème de connexion internet/login (pastille rouge) ou Réseau sur macmini qui est lent / ne fonctionne pas (connexion session AD)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme-compte-ad-est-un-compte-reseau-et-pas-un-compte-mobile">Problème compte AD est un compte réseau et pas un compte mobile</a></li>
 </ul>
             </nav>
         </div>
@@ -442,45 +442,40 @@ document.write(`
 <a class="reference internal image-reference" href="_images/Nom-certificat-EDU-Interne.png" id="id1"><img alt="_images/Nom-certificat-EDU-Interne.png" class="align-center" id="id1" src="_images/Nom-certificat-EDU-Interne.png" style="width: 400px;" /></a>
 <p>et si ce n’est pas la même (que le nom de la machine actuel) il faut mettre la machine dans les exclusions des Profils de configuration JAMF (EDUVAUD-INTERNE) et l’enlever. C’est la même procédure si la machine n’a pas de réseau filaire, le profil est Wired-EDUVAUD-INTERNE et le nom sous les Profils de configuration JAMF (Wired-EDUVAUD-INTERNE)</p>
 </section>
-<section id="autre-solution-old">
-<h3>Autre solution (old)<a class="headerlink" href="#autre-solution-old" title="Link to this heading">#</a></h3>
-<p>Il peut arriver que le wifi EDUVAUD-INTERNE se déconnecte et se reconnecte en boucle tout seul, et ça peut être (99% des cas) dû à une mauvaise liaison entre le poste et l’AD.</p>
-<a class="reference internal image-reference" href="_images/favNetwork.png" id="id2"><img alt="_images/favNetwork.png" class="align-center" id="id2" src="_images/favNetwork.png" style="width: 500px;" /></a>
-<p>Pour régler ce problème, il faut commencer par mettre le poste dans la liste des exclusions du profil jamf EDUVAUD-INTERNE.</p>
-<a class="reference internal image-reference" href="_images/gychaInterneExclusion.png" id="gychainterneexclusion"><img alt="_images/gychaInterneExclusion.png" class="align-center" id="gychainterneexclusion" src="_images/gychaInterneExclusion.png" style="width: 500px;" /></a>
-<p>Ensuite, il faut ouvrir un terminal et entrer la commande suivante:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">jamf</span> <span class="n">policy</span> <span class="o">-</span><span class="n">event</span> <span class="n">renamecomputerout</span>
-</pre></div>
-</div>
-<a class="reference internal image-reference" href="_images/terminalRnComputerOut.png" id="terminalrncomputerout"><img alt="_images/terminalRnComputerOut.png" class="align-center" id="terminalrncomputerout" src="_images/terminalRnComputerOut.png" style="width: 500px;" /></a>
-<p>Ca permettera de sortir le poste de l’AD. Après il faut aller dans Utilisateurs et Groupes &gt; Options et sous Compte serveur réseau, cliquer sur modifier pour supprimer l’ad DGEP.
-il vous demandera d’entrer l’identifiant adminl 2 fois, puis l’AD sera completement supprimée du poste.</p>
-<a class="reference internal image-reference" href="_images/adDGEPEdit.png" id="addgepedit"><img alt="_images/adDGEPEdit.png" class="align-center" id="addgepedit" src="_images/adDGEPEdit.png" style="width: 500px;" /></a>
-<p>Il faut cliquer sur le petit “ - “ pour supprimer l’AD du poste:</p>
-<a class="reference internal image-reference" href="_images/DGEPUserGroupes.png" id="dgepusergroupes"><img alt="_images/DGEPUserGroupes.png" class="align-center" id="dgepusergroupes" src="_images/DGEPUserGroupes.png" style="width: 500px;" /></a>
-<a class="reference internal image-reference" href="_images/loginEnleverAD.png" id="loginenleverad"><img alt="_images/loginEnleverAD.png" class="align-center" id="loginenleverad" src="_images/loginEnleverAD.png" style="width: 500px;" /></a>
-<p>Après il faudra retourner sur le terminal et remettre le poste dans l’AD avec la commande suivante:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">jamf</span> <span class="n">policy</span> <span class="o">-</span><span class="n">event</span> <span class="n">renamecomputerin</span>
-</pre></div>
-</div>
-<p>Quand la commande est terminée, il faut redémarrer le poste et se connecter. Après avoir ouvert une session, vous pouvez enlever le poste des exclusions du profil EDUVAUD-INTERNE et le problème devrait être réglé.</p>
-<a class="reference internal image-reference" href="_images/gychaInterneLogged.png" id="gychainternelogged"><img alt="_images/gychaInterneLogged.png" class="align-center" id="gychainternelogged" src="_images/gychaInterneLogged.png" style="width: 500px;" /></a>
-</section>
 </section>
 <section id="probleme-de-connexion-internet-login-pastille-rouge-ou-reseau-sur-macmini-qui-est-lent-ne-fonctionne-pas-connexion-session-ad">
 <h2>Problème de connexion internet/login (pastille rouge) ou Réseau sur macmini qui est lent / ne fonctionne pas (connexion session AD)<a class="headerlink" href="#probleme-de-connexion-internet-login-pastille-rouge-ou-reseau-sur-macmini-qui-est-lent-ne-fonctionne-pas-connexion-session-ad" title="Link to this heading">#</a></h2>
-<p>Si vous n’arrivez pas à vous connecter à un poste avec des identifiants eduvaud, cela peut venir de:</p>
+<p>Si vous n’arrivez pas à vous connecter à un poste avec des identifiants eduvaud,</p>
 <ol class="arabic simple">
-<li><p>Le poste n’est pas correctement lié à l’AD, il faut donc enlever le poste de l’AD manuellement dans les paramètres -&gt; Utilisateurs et groupes.</p></li>
+<li><p>vérifier les paramètres réseau (ip = <a class="reference external" href="http://10.226.40.xxx">10.226.40.xxx</a> et le DNS pas 127.0.0.1)</p></li>
+<li><p>Executer la commande</p></li>
 </ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">jamf</span> <span class="n">policy</span> <span class="o">-</span><span class="n">event</span> <span class="n">binding</span>
+</pre></div>
+</div>
+<p>Si elle reste bloquer pendant 2-3 min il faut faire un control + C, puis la relancer.</p>
+<br>
+<p>Si ça ne fonctionne pas il faut:</p>
+<p>Enlever le poste de l’AD manuellement dans les paramètres -&gt; Utilisateurs et groupes.</p>
 <a class="reference internal image-reference" href="_images/removeAD1.png" id="removead1"><img alt="_images/removeAD1.png" class="align-center" id="removead1" src="_images/removeAD1.png" style="width: 500px;" /></a>
 <a class="reference internal image-reference" href="_images/removeAD2.png" id="removead2"><img alt="_images/removeAD2.png" class="align-center" id="removead2" src="_images/removeAD2.png" style="width: 500px;" /></a>
-<p>il vous demandera 2 fois le mot de passe de adminl (remplissez tous les champs).
+<p>il vous demandera 1 ou 2 fois le mot de passe de adminl (remplissez tous les champs).
 <br>
-Puis lancer la règle renamecomputerin, puis redémarrer le poste. (tout en adminl)</p>
-<ol class="arabic simple" start="2">
-<li><p>le poste à un mauvais DNS, il faut aller dans les paramètres réseau et l’enlever manuellement.</p></li>
-</ol>
+Puis lancer la règle sudo jamf policy -event binding. Si ça na toujour pas résolu le problème, il faut Enlever le poste de l’AD manuellement dans les paramètres -&gt; Utilisateurs et groupes. Puis aller dans l’AD et supprimer le poste et refair (sur la machine) sudo jamf policy -event binding.</p>
+</section>
+<section id="probleme-compte-ad-est-un-compte-reseau-et-pas-un-compte-mobile">
+<h2>Problème compte AD est un compte réseau et pas un compte mobile<a class="headerlink" href="#probleme-compte-ad-est-un-compte-reseau-et-pas-un-compte-mobile" title="Link to this heading">#</a></h2>
+<p>Pour savoir si les comptes AD deviennent des compte réseau ou mobile, il faut aller dans les paramètres puis dans utilisateurs et groupes et si vous êtes connecter avec adminl, les compte réseau ne sont pas visible et les comptes mobile oui. les compte réseau on moins de fonctionnalité que les comptes mobile.
+<br>
+<br>
+Pour réparer ce problème il faut aller dans l’utilitaire d’annuaire, déverouiller le cadenas.</p>
+<a class="reference internal image-reference" href="_images/ProblemeCompteReseau1.png" id="problemecomptereseau1"><img alt="_images/ProblemeCompteReseau1.png" class="align-center" id="problemecomptereseau1" src="_images/ProblemeCompteReseau1.png" style="width: 500px;" /></a>
+<p>Puis séléctionner le crayon qui est en bas à gauche.</p>
+<a class="reference internal image-reference" href="_images/ProblemeCompteReseau2.png" id="problemecomptereseau2"><img alt="_images/ProblemeCompteReseau2.png" class="align-center" id="problemecomptereseau2" src="_images/ProblemeCompteReseau2.png" style="width: 500px;" /></a>
+<p>Sur la nouvelle fenêtre, il faut afficher les options.</p>
+<a class="reference internal image-reference" href="_images/ProblemeCompteReseau3.png" id="problemecomptereseau3"><img alt="_images/ProblemeCompteReseau3.png" class="align-center" id="problemecomptereseau3" src="_images/ProblemeCompteReseau3.png" style="width: 500px;" /></a>
+<p>Enfin, cocher “crée un compte mobile” et décocher “exiger une confirmation …”.</p>
+<a class="reference internal image-reference" href="_images/ProblemeCompteReseau4.png" id="id2"><img alt="_images/ProblemeCompteReseau4.png" class="align-center" id="id2" src="_images/ProblemeCompteReseau4.png" style="width: 500px;" /></a>
 </section>
 </section>
 
@@ -550,10 +545,10 @@ Puis lancer la règle renamecomputerin, puis redémarrer le poste. (tout en admi
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-regler-le-probleme-de-wi-fi-eduvaud-interne-solution-possible">Comment régler le problème de Wi-Fi EDUVAUD-INTERNE (solution possible)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#le-profil-du-wifi-reseau">le profil du wifi/réseau</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#autre-solution-old">Autre solution (old)</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme-de-connexion-internet-login-pastille-rouge-ou-reseau-sur-macmini-qui-est-lent-ne-fonctionne-pas-connexion-session-ad">Problème de connexion internet/login (pastille rouge) ou Réseau sur macmini qui est lent / ne fonctionne pas (connexion session AD)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme-compte-ad-est-un-compte-reseau-et-pas-un-compte-mobile">Problème compte AD est un compte réseau et pas un compte mobile</a></li>
 </ul>
   </nav></div>
 

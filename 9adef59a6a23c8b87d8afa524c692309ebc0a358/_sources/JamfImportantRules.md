@@ -75,9 +75,7 @@ Du même type si vous aller dans le réglages est que vous les régler comme l'i
 
 
 ## Renommage de postes / AD
-sudo jamf policy -event renamecomputerout <br/>
-sudo jamf policy -event renamecomputerad  <br/>
-sudo jamf policy -event renamecomputerin  
+sudo jamf policy -event binding <br/>
 
 
 
