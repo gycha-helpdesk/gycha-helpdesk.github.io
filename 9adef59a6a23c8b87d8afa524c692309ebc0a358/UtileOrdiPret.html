@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/myfile.css?v=5be3136b" />
@@ -433,10 +433,12 @@ document.write(`
 <br/></p>
 <a class="reference internal image-reference" href="_images/DiskUtility.png" id="diskutility"><img alt="_images/DiskUtility.png" class="align-center" id="diskutility" src="_images/DiskUtility.png" style="width: 400px;" /></a>
 <br/>
-<p>Ensuite, il faut appliquer les règles de jamf (sudo jamf policy). Il faut vérifier que dans les applications l’ordinateur a bien Outlook, Teams, Word, etc. Une fois que vous avez fait toutes ces étapes il ne reste plus qu’a créer un compte admin (le compte adminl, s’il n’est pas déjà là). Il ne faut pas oublier son compte (un compte utilisateur) et modifier dans le teams le fichier inventaire en classifiant l’ordinateur par rapport a son nom.</p>
+<p>Il faut vérifier que dans les applications l’ordinateur a bien Outlook, Teams, Word, etc et qu’elles ont une licence, si elle ont pas de licence et qu’on arrive pas à la mettre, on peut suprimer les applications. Une fois que vous avez fait toutes ces étapes il ne reste plus qu’a créer les comptes admin (le compte adminl, s’il n’est pas déjà là, et le compte pret).</p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="la-demarche-a-suivre-pour-preter-un-poste">
 <h1>La démarche à suivre pour prêter un poste<a class="headerlink" href="#la-demarche-a-suivre-pour-preter-un-poste" title="Link to this heading">#</a></h1>
+<p>Il y a un script dans Teams -&gt; GychaIT -&gt; Gestion postes -&gt; PrestOrdi -&gt; Script pour faire la fiche de prêt. Dans le fichier inventaire.xlsx, il y a une liste des ordinateurs de prêt que vous pouvez compléter (nom, numéro de série, type, …) au besoin.
+Il faut faire signé la fiche de prêt, avant de passer l’ordinateur. Il faut garder la fiche de prêt.</p>
 </section>
 
     <script type="text/x-thebe-config">

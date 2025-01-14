@@ -11,8 +11,9 @@ Pour configurer un ordinateur a prêter il faut commencer en lui [installant](ht
 
 <br/>
 
-Ensuite, il faut appliquer les règles de jamf (sudo jamf policy). Il faut vérifier que dans les applications l'ordinateur a bien Outlook, Teams, Word, etc. Une fois que vous avez fait toutes ces étapes il ne reste plus qu'a créer un compte admin (le compte adminl, s'il n'est pas déjà là). Il ne faut pas oublier son compte (un compte utilisateur) et modifier dans le teams le fichier inventaire en classifiant l'ordinateur par rapport a son nom.
+Il faut vérifier que dans les applications l'ordinateur a bien Outlook, Teams, Word, etc et qu'elles ont une licence, si elle ont pas de licence et qu'on arrive pas à la mettre, on peut suprimer les applications. Une fois que vous avez fait toutes ces étapes il ne reste plus qu'a créer les comptes admin (le compte adminl, s'il n'est pas déjà là, et le compte pret). 
 
 # La démarche à suivre pour prêter un poste
 
-
+Il y a un script dans Teams -> GychaIT -> Gestion postes -> PrestOrdi -> Script pour faire la fiche de prêt. Dans le fichier inventaire.xlsx, il y a une liste des ordinateurs de prêt que vous pouvez compléter (nom, numéro de série, type, ...) au besoin.
+Il faut faire signé la fiche de prêt, avant de passer l'ordinateur. Il faut garder la fiche de prêt.
