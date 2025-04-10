@@ -24,4 +24,5 @@ Description:	Mise à jour de la page de la section Utile
 16. [Tous les serveurs à ajouter sur Microsoft Remote Desktop](/UtileRemoteDesktopServers.md)
 17. [La démarche à suivre pour prêter un poste](/UtileOrdiPret.md)
 18. [La marche à suivre pour renomer un poste](/UtileRenameComuter.md)
-18. [La marche à suivre pour créer un utilisateur wifi-guest](/UtileWifiGuest.md)
+19. [La marche à suivre pour créer un utilisateur wifi-guest](/UtileWifiGuest.md)
+20. [La marche à suivre pour réinstaller les profils](/UtileReinstallerProfiles.md)

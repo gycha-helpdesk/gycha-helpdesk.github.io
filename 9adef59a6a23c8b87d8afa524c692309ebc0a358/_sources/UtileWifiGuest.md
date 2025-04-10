@@ -75,5 +75,3 @@ b.  Dans Authorization, sélectionner Revoke Autorisation
 Pour réac9ver les autorisa9ons :  
 a.  Sélectionner le compte à réactiver  
 b.  Dans Authorization, sélection Authorize Users  
-
-

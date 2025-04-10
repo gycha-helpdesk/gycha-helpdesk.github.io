@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Mise à jour des applications dans Jamf &#8212; Documentation Technique Chamblandes</title>
+    <title>Comment supprimer les profil jamf en cas de problème signature non reconnue &#8212; Documentation Technique Chamblandes</title>
   
   
   
@@ -61,11 +61,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'JamfUpdateApplication';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'UtileReinstallerProfiles';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Fermeture Automatique de la sesssion" href="JamfAutoLogout.html" />
-    <link rel="prev" title="Recherche avancée" href="JamfRechercheAvance.html" />
+    <link rel="next" title="Section MachineVirtuelle" href="VM-MachineVirtuelle.html" />
+    <link rel="prev" title="Wifi EDUVAUD-Guest" href="UtileWifiGuest.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -162,7 +162,7 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="Jamf.html">Section Jamf</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="Jamf.html">Section Jamf</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="JamfFirstConnection.html">Avant de commencer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="JamfImportantRules.html">Liste des règles jamf les plus utiles/importantes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="JamfEnroll.html">Comment enrôler un post dans Jamf</a></li>
@@ -173,7 +173,7 @@
 <li class="toctree-l2"><a class="reference internal" href="JamfCreateProfile.html">Créer un profil avec Jamf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="JamfOSInstall.html">Déploiement OS depuis Jamf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="JamfRechercheAvance.html">Recherche avancée</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Mise à jour des applications dans Jamf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JamfUpdateApplication.html">Mise à jour des applications dans Jamf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="JamfAutoLogout.html">Fermeture Automatique de la sesssion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="JamfCompareSerialNumberJamfToInv.html">Comparaison etre les poste dans jamf est ceux de l’inventaire</a></li>
 <li class="toctree-l2"><a class="reference internal" href="JamfSupprProfil.html">Comment supprimer le(s) profil jamf (et n’importe quel profil)</a></li>
@@ -181,7 +181,7 @@
 <li class="toctree-l2"><a class="reference internal" href="JamAddAppiPad.html">Comment installer une application pour le iPad</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Utile.html">Section Utile</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Utile.html">Section Utile</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Utilemdp.html">Identifiants et mots de passe</a></li>
 
 <li class="toctree-l2"><a class="reference internal" href="UtileLiensUtiles.html">Liens Utiles</a></li>
@@ -227,7 +227,7 @@
 
 <li class="toctree-l2"><a class="reference internal" href="UtileRenameComuter.html">Renomer un mac</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileWifiGuest.html">Wifi EDUVAUD-Guest</a></li>
-<li class="toctree-l2"><a class="reference internal" href="UtileReinstallerProfiles.html">Comment supprimer les profil jamf en cas de problème signature non reconnue</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Comment supprimer les profil jamf en cas de problème signature non reconnue</a></li>
 
 </ul>
 </details></li>
@@ -316,7 +316,7 @@
       
       
       
-      <li><a href="_sources/JamfUpdateApplication.md" target="_blank"
+      <li><a href="_sources/UtileReinstallerProfiles.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -392,7 +392,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Mise à jour des applications dans Jamf</h1>
+    <h1>Comment supprimer les profil jamf en cas de problème signature non reconnue</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -402,15 +402,13 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-des-packages">Types des packages</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-d-un-pkg-a-partir-d-un-fichier-dmg">Création d’un PKG à partir d’un fichier DMG</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#charger-le-le-pkg-dans-jamf-sync">Charger le le PKG dans Jamf Sync</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modification-des-regles-pour-le-package">Modification des règles pour le package</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Comment supprimer les profil jamf en cas de problème signature non reconnue</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-enroler-un-post-dans-jamf">Comment enrôler un post dans Jamf</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#se-connecter-a-dgep-enroll">Se connecter à DGEP Enroll</a></li>
 </ul>
 </li>
 </ul>
+
             </nav>
         </div>
     </div>
@@ -421,70 +419,87 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <!-- 
-Author:         -
-Date:           2020    
-Description:    How to update packages in jamf
-----------------------------------------------
-Edit:           3-Dec 2021, Noor Alizadeh
- -->
-<section class="tex2jax_ignore mathjax_ignore" id="mise-a-jour-des-applications-dans-jamf">
-<h1>Mise à jour des applications dans Jamf<a class="headerlink" href="#mise-a-jour-des-applications-dans-jamf" title="Link to this heading">#</a></h1>
-<section id="types-des-packages">
-<h2>Types des packages<a class="headerlink" href="#types-des-packages" title="Link to this heading">#</a></h2>
-<p>Quand vous téléchargez la nouvelle version de votre application/package, son type/format sera en pkg ou DMG.</p>
-<p>Si c’est un PKG on est bon et on peut passer à l’étape <strong><a class="reference internal" href="#jamf-admin"><span class="std std-ref">Charger le PKG dans JamfAdmin</span></a></strong>.
-Si c’est un DMG, nous allons essayer de créer un PKG.</p>
-<section id="creation-d-un-pkg-a-partir-d-un-fichier-dmg">
-<h3>Création d’un PKG à partir d’un fichier DMG<a class="headerlink" href="#creation-d-un-pkg-a-partir-d-un-fichier-dmg" title="Link to this heading">#</a></h3>
-<p>Prenons comme exemple VLC qui est un DMG.</p>
-<a class="reference internal image-reference" href="_images/update-pkg-vlc.png" id="vlc-update"><img alt="_images/update-pkg-vlc.png" class="align-center" id="vlc-update" src="_images/update-pkg-vlc.png" style="width: 500px;" /></a>
-</br>
+  <!--
+Author:		    Mussa AL Hussein
+Date:		    10.04.2024
+Description:    marche a suivre pour reinstaller les profiles de JAMF
+-->
+<section class="tex2jax_ignore mathjax_ignore" id="comment-supprimer-les-profil-jamf-en-cas-de-probleme-signature-non-reconnue">
+<h1>Comment supprimer les profil jamf en cas de problème signature non reconnue<a class="headerlink" href="#comment-supprimer-les-profil-jamf-en-cas-de-probleme-signature-non-reconnue" title="Link to this heading">#</a></h1>
+<p>Si jamais vous avez besoin d’installer/de réinstaller jamf a cause d’un problème ou autre, ou même tout simplement de supprimer un profil du poste, voici comment faire:</p>
+<p>Avec un peu de chance, vous pourrez simplement cliquer sur le petit “-” en bas du profil pour pouvoir le supprimer. Comme ce n’est généralement pas possible, il va falloir le faire autrement.</p>
+<a class="reference internal image-reference" href="_images/profilPasSupprimable.png" id="profilpassupprimable"><img alt="_images/profilPasSupprimable.png" class="align-center" id="profilpassupprimable" src="_images/profilPasSupprimable.png" style="width: 800px;" /></a>
+<p>Si ce n’est pas possible, il va falloir redémarrer le poste en mode récupération/sans échec (touches CMD + R en allumant l’ordinateur):
+on devrait arriver sur ce menu:</p>
+<a class="reference internal image-reference" href="_images/MenuRecover.png" id="menurecover"><img alt="_images/MenuRecover.png" class="align-center" id="menurecover" src="_images/MenuRecover.png" style="width: 800px;" /></a>
+<p>Ensuite, dans la barre en haut, il faut aller dans utilitaires &gt; terminal</p>
+<p>et enter la commande suivante:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>csrutil<span class="w"> </span>disable
+</pre></div>
+</div>
+<p>cette commande sert à désactiver des protections qui empêcheraient des virus d’agir sur le poste. dans notre cas, nous allons désactiver ces protections le temps de supprimer les profils, puis les réactiver dés que c’est fini.</p>
+<p>Quand la commande est entrée, vous pouvez redemarrer le poste normalement.</p>
+<p>Dés que vous vous êtes connectés (en adminl), il faut ouvrir un terminal, puis entrer les commandes suivantes dans l’ordre:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>/var/db/ConfigurationProfiles
+</pre></div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>rm<span class="w"> </span>-rf<span class="w"> </span>*
+</pre></div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>mkdir<span class="w"> </span>Settings
+</pre></div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>touch<span class="w"> </span>Settings/.profilesAreInstalled
+</pre></div>
+</div>
+<p>ces commandes serviront à supprimer les profils à la racine de l’ordinateur. quand tout est fini, il faut redémarrer le mac en mode sans échec une dernière fois (cmd+r) pour réactiver les protections de l’intégrité du système:</p>
+<a class="reference internal image-reference" href="_images/MenuRecover.png" id="id1"><img alt="_images/MenuRecover.png" class="align-center" id="id1" src="_images/MenuRecover.png" style="width: 800px;" /></a>
+<p>utilitaires &gt; terminal
+puis entrer la commande suivante:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>csrutil<span class="w"> </span><span class="nb">enable</span>
+</pre></div>
+</div>
+<p>On peut maintenant redémarrer le poste normalement, et si tout s’est bien passé, il ne devrait plus y avoir de profil.
+maintenant pour réinstaller jamf, il faudra suivre <a class="reference internal" href="JamfEnroll.html"><span class="std std-doc">les étapes d’enrôlement</span></a>. ce sont exactement les mêmes</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="comment-enroler-un-post-dans-jamf">
+<h1>Comment enrôler un post dans Jamf<a class="headerlink" href="#comment-enroler-un-post-dans-jamf" title="Link to this heading">#</a></h1>
+<p>il y a différent moyen d’enrôler un poste :</p>
 <ol class="arabic simple">
-<li><p>Double cliquez sur ce package et l’installez sur votre système.</p></li>
-<li><p>Ensuite dans le dossier /Applications vous aurez la nouvelle version du VLC, glissez le dans le paneau gauche du JamfComposer</p></li>
-<li><p>Cela sera ajouté dans la liste des packages à traiter dans JamfComposer.</p></li>
+<li><p>Cela ce fait automatiquement des le moment de l’installation (configuration du post du tout début)</p></li>
+<li><p>Ou grace a un site web (après configuration)</p></li>
 </ol>
-<a class="reference internal image-reference" href="_images/jamf-update-vlc.png" id="jamf-update-vlc"><img alt="_images/jamf-update-vlc.png" class="align-center" id="jamf-update-vlc" src="_images/jamf-update-vlc.png" style="width: 500px;" /></a>
+<p>Dans ce doc, je vous explique la deuxième méthode</p>
+<section id="se-connecter-a-dgep-enroll">
+<h2>Se connecter à DGEP Enroll<a class="headerlink" href="#se-connecter-a-dgep-enroll" title="Link to this heading">#</a></h2>
+<p>sur la machine que vous voulez enrôler, ouvrez un navigateur et notez dans l’URL cette adresse</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>https://aus000021.dgep.edu-vaud.ch:8443/enroll
+</pre></div>
+</div>
+<p>n’oubliez pas le <strong>https</strong>
+</br></p>
+<a class="reference internal image-reference" href="_images/adresseURL.png" id="url"><img alt="_images/adresseURL.png" class="align-center" id="url" src="_images/adresseURL.png" style="width: 500px;" /></a>
 </br>
-<p>Ensuite nous pouvons aller changer le nom du package pour que il
-aie la même norme de nommage que les autre packages.</p>
-<blockquote>
-<div><p><strong>GYCH_VLC_3.0.16.pkg</strong></p>
-<ul class="simple">
-<li><p><strong><em>GYCH</em></strong> ou <strong><em>ALL</em></strong> pour montrer que c’est un packet global (ALL) ou specifique pour un etablissement (GYCH)</p></li>
-<li><p><strong><em>VLC</em></strong>: ici vous mettez le nom du package, normalement vous n’avez pas besoin de changer le nom du package</p></li>
-<li><p><strong><em>3.0.16</em></strong>: la version du package vient après le nom du package, l’info sur la version du package se trouve dans “à propos” de chaque application</p></li>
-</ul>
-</div></blockquote>
-<a class="reference internal image-reference" href="_images/jamf-update-vlc-rename.png" id="jamf-update-vlc-rename"><img alt="_images/jamf-update-vlc-rename.png" class="align-center" id="jamf-update-vlc-rename" src="_images/jamf-update-vlc-rename.png" style="width: 600px;" /></a>
+pour vous identifier:
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Identifiant</p></th>
+<th class="head text-center"><p>Mot de passe</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>jamfenroll</p></td>
+<td class="text-center"><p>DGEPEnroll2019</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Après ne remplissez pas la première ligne et indiquer juste dans quel gymnase vous êtes “GYCHA”</p>
+<a class="reference internal image-reference" href="_images/enrollename.png" id="enroll"><img alt="_images/enrollename.png" class="align-center" id="enroll" src="_images/enrollename.png" style="width: 500px;" /></a>
 </br>
-<ol class="arabic simple">
-<li><p>Maintenant on peut passer à créer le package en cliquant sur le “Build as PKG”</p></li>
-<li><p>Choisissez ou vous sauvegardez votre PKG et JamfComposer commence à créer le PKG.</p></li>
-</ol>
-</section>
-</section>
-<section id="charger-le-le-pkg-dans-jamf-sync">
-<span id="jamf-admin"></span><h2>Charger le le PKG dans Jamf Sync<a class="headerlink" href="#charger-le-le-pkg-dans-jamf-sync" title="Link to this heading">#</a></h2>
-<p>Nous avons maintenant un package en format PKG qui est pret à être chargé dans Jamf Sync. </br></p>
-<p>Pour se connecter sur Jamf Sync, il faut utiliser la doc qui est dans Teams -&gt; GychaIT -&gt; JAMF -&gt; DGEP_RemplacerJamfAdmin.pdf</p>
-<a class="reference internal image-reference" href="_images/JAMFSync1.png" id="jamfsync1"><img alt="_images/JAMFSync1.png" class="align-center" id="jamfsync1" src="_images/JAMFSync1.png" style="width: 500px;" /></a>
-</br>
-<p>Pour ajouter un packet il faut clicker sur le petit bouton plus et choisir son .pkg et le package sera accessible depuis Jamf pro dans les règles.</p>
-<section id="modification-des-regles-pour-le-package">
-<h3>Modification des règles pour le package<a class="headerlink" href="#modification-des-regles-pour-le-package" title="Link to this heading">#</a></h3>
-<p>Ouvrez le Jamf dans votre navigateur, ensuite aller dans Règles
-Chercher le nom du package (VLC dans notre cas), modifiez le et dans “Paquets”, effacer l’ancien package et ajouter le nouveau puis sauvegardez.</p>
-<a class="reference internal image-reference" href="_images/addNewVersionVlc.png" id="addnewversionvlc"><img alt="_images/addNewVersionVlc.png" class="align-center" id="addnewversionvlc" src="_images/addNewVersionVlc.png" style="width: 500px;" /></a>
-</br>
-<p>Pour finir, aller dans “Groupes intelligents” et chercher le nom de votre package. </br>
-Vous allez trouver un group qui un nome commençant par “InstallUpdate_”</p>
-<a class="reference internal image-reference" href="_images/goupIntelligent.png" id="goupintelligent"><img alt="_images/goupIntelligent.png" class="align-center" id="goupintelligent" src="_images/goupIntelligent.png" style="width: 500px;" /></a>
-</br>
-<p>Ensuite, tapez la nouvelle version du package dans le champ et sauvegardez.</p>
-<a class="reference internal image-reference" href="_images/ModifCritere.png" id="modifcritere"><img alt="_images/ModifCritere.png" class="align-center" id="modifcritere" src="_images/ModifCritere.png" style="width: 500px;" /></a>
-</section>
+En suite cliquer et télécharger le premier profils
+<p>⚠ <strong>Quand le profil est installé revenez sur la page pour installer les autres profiles restants.</strong></p>
+<p>Voilà vous l’avez enrôler.</p>
 </section>
 </section>
 
@@ -519,20 +534,20 @@ Vous allez trouver un group qui un nome commençant par “InstallUpdate_”</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="JamfRechercheAvance.html"
+       href="UtileWifiGuest.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Recherche avancée</p>
+        <p class="prev-next-title">Wifi EDUVAUD-Guest</p>
       </div>
     </a>
     <a class="right-next"
-       href="JamfAutoLogout.html"
+       href="VM-MachineVirtuelle.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Fermeture Automatique de la sesssion</p>
+        <p class="prev-next-title">Section MachineVirtuelle</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -553,15 +568,13 @@ Vous allez trouver un group qui un nome commençant par “InstallUpdate_”</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-des-packages">Types des packages</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-d-un-pkg-a-partir-d-un-fichier-dmg">Création d’un PKG à partir d’un fichier DMG</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#charger-le-le-pkg-dans-jamf-sync">Charger le le PKG dans Jamf Sync</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modification-des-regles-pour-le-package">Modification des règles pour le package</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Comment supprimer les profil jamf en cas de problème signature non reconnue</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-enroler-un-post-dans-jamf">Comment enrôler un post dans Jamf</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#se-connecter-a-dgep-enroll">Se connecter à DGEP Enroll</a></li>
 </ul>
 </li>
 </ul>
+
   </nav></div>
 
 </div></div>
