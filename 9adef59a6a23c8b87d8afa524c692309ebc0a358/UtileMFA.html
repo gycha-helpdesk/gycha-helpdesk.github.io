@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Ordinateur de prêt &#8212; Documentation Technique Chamblandes</title>
+    <title>Réinitialisation de l’Authentification Multi-Facteurs (MFA) &#8212; Documentation Technique Chamblandes</title>
   
   
   
@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/myfile.css?v=5be3136b" />
@@ -61,11 +61,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'UtileOrdiPret';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'UtileMFA';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Renomer un mac" href="UtileRenameComuter.html" />
-    <link rel="prev" title="Désactiver complètement le bluetooth d’un poste" href="UtileDisableBluetooth.html" />
+    <link rel="next" title="Section MachineVirtuelle" href="VM-MachineVirtuelle.html" />
+    <link rel="prev" title="Comment supprimer les profil jamf en cas de problème signature non reconnue" href="UtileReinstallerProfiles.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -213,7 +213,7 @@
 
 
 <li class="toctree-l2"><a class="reference internal" href="Utilehermes.html">Hermes II</a></li>
-<li class="toctree-l2"><a class="reference internal" href="UtileGlpi.html">Réinitialisation de l’Authentification Multi-Facteurs (MFA)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UtileGlpi.html">Glpi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileAnaconda.html">Anaconda</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileWindowsServer.html">Windows Server</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileAdobe.html">Adobe</a></li>
@@ -223,13 +223,13 @@
 
 
 <li class="toctree-l2"><a class="reference internal" href="UtileDisableBluetooth.html">Désactiver complètement le bluetooth d’un poste</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Ordinateur de prêt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UtileOrdiPret.html">Ordinateur de prêt</a></li>
 
 <li class="toctree-l2"><a class="reference internal" href="UtileRenameComuter.html">Renomer un mac</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileWifiGuest.html">Wifi EDUVAUD-Guest</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileReinstallerProfiles.html">Comment supprimer les profil jamf en cas de problème signature non reconnue</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="UtileMFA.html">Réinitialisation de l’Authentification Multi-Facteurs (MFA)</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Réinitialisation de l’Authentification Multi-Facteurs (MFA)</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="VM-MachineVirtuelle.html">Section MachineVirtuelle</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -317,7 +317,7 @@
       
       
       
-      <li><a href="_sources/UtileOrdiPret.md" target="_blank"
+      <li><a href="_sources/UtileMFA.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -380,9 +380,7 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -393,21 +391,11 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Ordinateur de prêt</h1>
+    <h1>Réinitialisation de l’Authentification Multi-Facteurs (MFA)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Ordinateur de prêt</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#la-demarche-a-suivre-pour-preter-un-poste">La démarche à suivre pour prêter un poste</a></li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -417,18 +405,107 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="ordinateur-de-pret">
-<h1>Ordinateur de prêt<a class="headerlink" href="#ordinateur-de-pret" title="Link to this heading">#</a></h1>
-<p>Pour configurer un ordinateur a prêter il faut commencer en lui <a class="reference external" href="https://support.apple.com/fr-ch/HT211683">installant</a> l’OS qu’il supporte (Catalina pour 2012 et Big Sur pour 2014). Sur ce site il y a toutes les informations et version. De macOS High Sierra jusqu’à macOS Sonoma. Ensuite il faut vérifier que l’ordinateur n’a pas plusieurs disques. Si c’est le cas il faut aller dans “utilitaire de disques” et supprimer ceux en trop et en garder un seul (chamblandesHD).
-<br/></p>
-<a class="reference internal image-reference" href="_images/DiskUtility.png" id="diskutility"><img alt="_images/DiskUtility.png" class="align-center" id="diskutility" src="_images/DiskUtility.png" style="width: 400px;" /></a>
-<br/>
-<p>Il faut vérifier que dans les applications l’ordinateur a bien Outlook, Teams, Word, etc et qu’elles ont une licence, si elle ont pas de licence et qu’on arrive pas à la mettre, on peut suprimer les applications. Une fois que vous avez fait toutes ces étapes il ne reste plus qu’a créer les comptes admin (le compte adminl, s’il n’est pas déjà là, et le compte pret).</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="la-demarche-a-suivre-pour-preter-un-poste">
-<h1>La démarche à suivre pour prêter un poste<a class="headerlink" href="#la-demarche-a-suivre-pour-preter-un-poste" title="Link to this heading">#</a></h1>
-<p>Il y a un script dans Teams -&gt; GychaIT -&gt; Gestion postes -&gt; PrestOrdi -&gt; Script pour faire la fiche de prêt. Dans le fichier inventaire.xlsx, il y a une liste des ordinateurs de prêt que vous pouvez compléter (nom, numéro de série, type, …) au besoin.
-Il faut faire signé la fiche de prêt, avant de passer l’ordinateur. Il faut garder la fiche de prêt.</p>
+  <!--
+Author:		    Mussa AL Hussein
+Date:		    10.04.2024
+Description:    marche a suivre pour reinstaller les profiles de JAMF
+-->
+<section class="tex2jax_ignore mathjax_ignore" id="reinitialisation-de-l-authentification-multi-facteurs-mfa">
+<h1>Réinitialisation de l’Authentification Multi-Facteurs (MFA)<a class="headerlink" href="#reinitialisation-de-l-authentification-multi-facteurs-mfa" title="Link to this heading">#</a></h1>
+<p>Procédure de Réinitialisation de l’Authentification Multi-Facteurs (MFA)<br />
+et utilisation de la Méthode TAP dans Microsoft Entra ID (Azure AD)</p>
+<p><strong>Objectif</strong> <strong>:</strong></p>
+<p>Cette procédure décrit les étapes que doit suivre un administrateur pour<br />
+réinitialiser l’authentification multi-facteurs (MFA) et configurer la<br />
+méthode TAP (Temporary Access Pass) lorsqu’un utilisateur a oublié son<br />
+moyen d’authentification (par exemple, son téléphone).</p>
+<p><strong>Important</strong> <strong>:</strong> La méthode TAP ne doit être utilisée qu’en cas<br />
+d’oubli temporaire ou de perte du téléphone et ne constitue pas une<br />
+méthode d’authentification standard ou régulière.</p>
+<hr class="docutils" />
+<p><strong>1.</strong> <strong>Prérequis</strong> <strong>:</strong></p>
+<blockquote>
+<div><p>• Accès au <strong>portail</strong> <strong>Entra</strong> <strong>ID</strong> avec un compte disposant du<br />
+rôle <strong>Authentication</strong> <strong>Administrator</strong> .</p>
+<p>• Vérification préalable que l’oubli du téléphone est bien la cause de<br />
+la demande.</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>2.</strong> <strong>Accéder</strong> <strong>au</strong> <strong>Portail</strong> <strong>Azure</strong> <strong>AD</strong> <strong>:</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Connectez-vous au portail Azure via l’URL :  <a class="reference external" href="https://entra.microsoft.com/"><u>https://entra.microsoft.com/</u></a></p></li>
+<li><p>Utilisez vos identifiants « a-xxxxxxx » pour vous authentifier.</p></li>
+<li><p>Dans le menu de navigation de gauche, sélectionnez <strong>Identité</strong>.</p></li>
+</ol>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>3.</strong> <strong>Identification</strong> <strong>de</strong> <strong>l’Utilisateur</strong> <strong>:</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Allez dans <strong>Utilisateurs</strong> &gt; <strong>Tous les utilisateurs</strong>.</p></li>
+<li><p>Recherchez l’utilisateur en question en utilisant son nom ou son identifiant.</p></li>
+</ol>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/UtileMFA01.png" id="mfa"><img alt="_images/UtileMFA01.png" class="align-center" id="mfa" src="_images/UtileMFA01.png" style="width: 1000px;" /></a>
+<blockquote>
+<div><ol class="arabic simple" start="3">
+<li><p>Cliquez sur le profil de l’utilisateur pour accéder aux détails.</p></li>
+</ol>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>4.</strong> <strong>Réinitialisation</strong> <strong>de</strong> <strong>l’Authentification</strong> <strong>MFA</strong> <strong>:</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Dans la fiche utilisateur, allez dans la section <strong>Méthodes</strong><br />
+<strong>d’authentification</strong>.</p></li>
+<li><p>Cliquez sur l’option <strong>Exiger</strong> <strong>une réinscription</strong> <strong>de</strong><br />
+<strong>l’authentification multifacteur</strong></p></li>
+</ol>
+</div></blockquote>
+<img alt="_images/uw4l00h5.png" class="align-center" id="id1" src="_images/uw4l00h5.png" />
+<blockquote>
+<div><ol class="arabic simple" start="3">
+<li><p>Confirmez l’action en cliquant sur <strong>OK</strong>.</p></li>
+</ol>
+</div></blockquote>
+<p>Cette étape force l’utilisateur à réenregistrer ses informations MFA<br />
+lors de sa prochaine connexion.</p>
+<hr class="docutils" />
+<p><strong>5.</strong> <strong>Utilisation</strong> <strong>de</strong> <strong>la</strong> <strong>Méthode</strong> <strong>TAP</strong> <strong>(uniquement</strong> <strong>en</strong> <strong>cas</strong> <strong>d’oubli</strong> <strong>du</strong> <strong>téléphone)</strong> <strong>:</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Retournez à l’interface <strong>Méthodes d’authentification</strong>.</p></li>
+<li><p>Cliquez sur « <strong>Ajouter une méthode d’authentification</strong> » et sélectionnez <strong>Droits d’accès temporaire (TAP)</strong> dans la liste des méthodes.</p></li>
+</ol>
+<ul class="simple">
+<li><p><strong>Durée</strong> : Définir une période limitée conformément aux politiques<br />
+de sécurité. Max 1 jour (1440 minutes)</p></li>
+<li><p><strong>Utilisation ponctuelle</strong> : au choix selon le contexte.</p></li>
+</ul>
+</div></blockquote>
+<img alt="_images/ep4nke2n.png" class="align-center" id="id2" src="_images/ep4nke2n.png" />
+<blockquote>
+<div><ol class="arabic simple" start="3">
+<li><p>Cliquez sur <strong>Ajouter</strong> pour enregistrer la nouvelle configuration.</p></li>
+<li><p>Transmettez le <strong>nouveau TAP</strong> de manière sécurisée à l’utilisateur<br />
+en précisant qu’il doit être utilisé uniquement pour la réinitialisation<br />
+temporaire en cas d’oubli de l’appareil MFA.</p></li>
+</ol>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>6.</strong> <strong>Vérification</strong> <strong>de</strong> <strong>l’Accès</strong> <strong>:</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Demandez à l’utilisateur de se connecter pour vérifier le bon<br />
+fonctionnement du processus MFA réinitialisé.</p></li>
+<li><p>Vérifiez dans le portail Entra que l’utilisateur a correctement<br />
+réenregistré son authentification MFA.</p></li>
+<li><p>Une fois l’accès restauré, supprimez le TAP si celui-ci n’est plus<br />
+nécessaire.</p></li>
+</ol>
+</div></blockquote>
+<img alt="_images/glc42ffw.png" class="align-center" id="id3" src="_images/glc42ffw.png" />
 </section>
 
     <script type="text/x-thebe-config">
@@ -462,20 +539,20 @@ Il faut faire signé la fiche de prêt, avant de passer l’ordinateur. Il faut 
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="UtileDisableBluetooth.html"
+       href="UtileReinstallerProfiles.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Désactiver complètement le bluetooth d’un poste</p>
+        <p class="prev-next-title">Comment supprimer les profil jamf en cas de problème signature non reconnue</p>
       </div>
     </a>
     <a class="right-next"
-       href="UtileRenameComuter.html"
+       href="VM-MachineVirtuelle.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Renomer un mac</p>
+        <p class="prev-next-title">Section MachineVirtuelle</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -485,24 +562,6 @@ Il faut faire signé la fiche de prêt, avant de passer l’ordinateur. Il faut 
             </div>
             
             
-              
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Ordinateur de prêt</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#la-demarche-a-suivre-pour-preter-un-poste">La démarche à suivre pour prêter un poste</a></li>
-</ul>
-
-  </nav></div>
-
-</div></div>
               
             
           </div>
