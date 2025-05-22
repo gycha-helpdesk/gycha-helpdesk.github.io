@@ -231,6 +231,9 @@
 
 <li class="toctree-l2"><a class="reference internal" href="UtileMFA.html">Réinitialisation de l’Authentification Multi-Facteurs (MFA)</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Préparation des CO</a></li>
+
+
+
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="VM-MachineVirtuelle.html">Section MachineVirtuelle</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -381,7 +384,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -397,6 +402,18 @@
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Préparation des CO</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-dun-utilisateur-local-via-jamf">1.Création d’un utilisateur local via JAMF</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#partager-le-fichier-co-mp3-sur-les-ordinateurs">Partager le fichier CO.mp3 sur les ordinateurs</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#modifier-le-mot-de-passe-de-lutilisateur-local">Modifier le mot de passe de l’utilisateur local</a></li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -415,7 +432,9 @@ Description:    marche a suivre pour reinstaller les profiles de JAMF
 <h1>Préparation des CO<a class="headerlink" href="#preparation-des-co" title="Link to this heading">#</a></h1>
 <p>Procédure de Réinitialisation de l’Authentification Multi-Facteurs (MFA)<br />
 et utilisation de la Méthode TAP dans Microsoft Entra ID (Azure AD)</p>
-<p><strong>1.Création d’un utilisateur local via JAMF</strong> <strong>:</strong></p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="creation-dun-utilisateur-local-via-jamf">
+<h1>1.Création d’un utilisateur local via JAMF<a class="headerlink" href="#creation-dun-utilisateur-local-via-jamf" title="Link to this heading">#</a></h1>
 <p>Connectez-vous au dashboard JAMF (<a class="reference external" href="https://10.225.232.161:8443/%5C">https://10.225.232.161:8443/\</a>) avec vos identifiants admin</p>
 <p>Ensuite sous « Règles » Créer une nouvelle règle.</p>
 <a class="reference internal image-reference" href="_images/CO_01.png" id="co"><img alt="_images/CO_01.png" class="align-center" id="co" src="_images/CO_01.png" style="width: 1000px;" /></a>
@@ -425,8 +444,10 @@ et utilisation de la Méthode TAP dans Microsoft Entra ID (Azure AD)</p>
 <a class="reference internal image-reference" href="_images/CO_03.png" id="id2"><img alt="_images/CO_03.png" class="align-center" id="id2" src="_images/CO_03.png" style="width: 1000px;" /></a>
 <p>Ensuite dans périmètre, choisissez les ordinateurs cibles.</p>
 <a class="reference internal image-reference" href="_images/CO_04.png" id="id3"><img alt="_images/CO_04.png" class="align-center" id="id3" src="_images/CO_04.png" style="width: 1000px;" /></a>
+</section>
 <hr class="docutils" />
-<p><strong>Partager le fichier CO.mp3 sur les ordinateurs</strong> <strong>:</strong></p>
+<section class="tex2jax_ignore mathjax_ignore" id="partager-le-fichier-co-mp3-sur-les-ordinateurs">
+<h1>Partager le fichier CO.mp3 sur les ordinateurs<a class="headerlink" href="#partager-le-fichier-co-mp3-sur-les-ordinateurs" title="Link to this heading">#</a></h1>
 <p>Tout d’abord, il faut télécharger le fichier « CO_Fichier.sh » depuis le teams GYCHA dans GychaIT &gt;Examen&gt;Fichiers.</p>
 <p>Ensuite, ouvrez le fichier dans visual studio code.</p>
 <p>Puis, modifiez. Le scripte en fonction de vos besoins.</p>
@@ -436,8 +457,10 @@ et utilisation de la Méthode TAP dans Microsoft Entra ID (Azure AD)</p>
 <a class="reference internal image-reference" href="_images/CO_05.png" id="id4"><img alt="_images/CO_05.png" class="align-center" id="id4" src="_images/CO_05.png" style="width: 1000px;" /></a>
 <p>Une fois que les modifications sont faites, ouvrez un terminal puis exécutez le scripte.</p>
 <a class="reference internal image-reference" href="_images/CO_06.png" id="id5"><img alt="_images/CO_06.png" class="align-center" id="id5" src="_images/CO_06.png" style="width: 1000px;" /></a>
+</section>
 <hr class="docutils" />
-<p><strong>1.</strong> **Modifier le mot de passe de l’utilisateur local ** <strong>:</strong></p>
+<section class="tex2jax_ignore mathjax_ignore" id="modifier-le-mot-de-passe-de-lutilisateur-local">
+<h1>Modifier le mot de passe de l’utilisateur local<a class="headerlink" href="#modifier-le-mot-de-passe-de-lutilisateur-local" title="Link to this heading">#</a></h1>
 <p>Connectez-vous au dashboard JAMF (<a class="reference external" href="https://10.225.232.161:8443/%5C">https://10.225.232.161:8443/\</a>) avec vos identifiants admin</p>
 <p>Ensuite sous « Règles » allez sur la page de la règle puis dans utilisateurs locaux.</p>
 <p>1) Désactiver l’utilisateur pour FileVault 2</p>
@@ -504,6 +527,26 @@ et utilisation de la Méthode TAP dans Microsoft Entra ID (Azure AD)</p>
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Préparation des CO</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-dun-utilisateur-local-via-jamf">1.Création d’un utilisateur local via JAMF</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#partager-le-fichier-co-mp3-sur-les-ordinateurs">Partager le fichier CO.mp3 sur les ordinateurs</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#modifier-le-mot-de-passe-de-lutilisateur-local">Modifier le mot de passe de l’utilisateur local</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>

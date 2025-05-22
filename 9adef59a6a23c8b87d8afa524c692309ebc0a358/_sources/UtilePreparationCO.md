@@ -9,7 +9,7 @@ Description:    marche a suivre pour reinstaller les profiles de JAMF
 Procédure de Réinitialisation de l'Authentification Multi-Facteurs (MFA)  
 et utilisation de la Méthode TAP dans Microsoft Entra ID (Azure AD)
 
-**1.Création d’un utilisateur local via JAMF** **:**
+# 1.Création d’un utilisateur local via JAMF
 
 Connectez-vous au dashboard JAMF \(https://10.225.232.161:8443/\) avec vos identifiants admin 
 
@@ -43,7 +43,7 @@ Ensuite dans périmètre, choisissez les ordinateurs cibles.
 ```
 ---
 
-**Partager le fichier CO.mp3 sur les ordinateurs** **:** 
+# Partager le fichier CO.mp3 sur les ordinateurs
 
 Tout d’abord, il faut télécharger le fichier « CO\_Fichier.sh » depuis le teams GYCHA dans GychaIT >Examen>Fichiers. 
 
@@ -73,7 +73,7 @@ Une fois que les modifications sont faites, ouvrez un terminal puis exécutez le
 
 ---
 
-**1.** **Modifier le mot de passe de l’utilisateur local ** **:**
+# Modifier le mot de passe de l’utilisateur local
 
 Connectez-vous au dashboard JAMF \(https://10.225.232.161:8443/\) avec vos identifiants admin 
 
