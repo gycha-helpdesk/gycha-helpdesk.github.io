@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Marche a suivre pour tout reinstaller sur un poste &#8212; Documentation Technique Chamblandes</title>
+    <title>Préparation des CO &#8212; Documentation Technique Chamblandes</title>
   
   
   
@@ -61,11 +61,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'UtileReinstallMac';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'UtilePreparationCO';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Désactiver complètement le bluetooth d’un poste" href="UtileDisableBluetooth.html" />
-    <link rel="prev" title="Adobe" href="UtileAdobe.html" />
+    <link rel="next" title="Section MachineVirtuelle" href="VM-MachineVirtuelle.html" />
+    <link rel="prev" title="Réinitialisation de l’Authentification Multi-Facteurs (MFA)" href="UtileMFA.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -217,7 +217,7 @@
 <li class="toctree-l2"><a class="reference internal" href="UtileAnaconda.html">Anaconda</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileWindowsServer.html">Windows Server</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileAdobe.html">Adobe</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Marche a suivre pour tout reinstaller sur un poste</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UtileReinstallMac.html">Marche a suivre pour tout reinstaller sur un poste</a></li>
 
 
 
@@ -230,7 +230,7 @@
 <li class="toctree-l2"><a class="reference internal" href="UtileReinstallerProfiles.html">Comment supprimer les profil jamf en cas de problème signature non reconnue</a></li>
 
 <li class="toctree-l2"><a class="reference internal" href="UtileMFA.html">Réinitialisation de l’Authentification Multi-Facteurs (MFA)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="UtilePreparationCO.html">Préparation des CO</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Préparation des CO</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="VM-MachineVirtuelle.html">Section MachineVirtuelle</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -318,7 +318,7 @@
       
       
       
-      <li><a href="_sources/UtileReinstallMac.md" target="_blank"
+      <li><a href="_sources/UtilePreparationCO.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -381,9 +381,7 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -394,24 +392,11 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Marche a suivre pour tout reinstaller sur un poste</h1>
+    <h1>Préparation des CO</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Marche a suivre pour tout reinstaller sur un poste</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#centre-de-restauration">Centre de restauration</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#effacer-le-disque">Effacer le disque</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reinstaller-l-os">Reinstaller l’OS</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reinstaller-les-logiciels">Réinstaller les logiciels</a></li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -422,34 +407,47 @@
                 <article class="bd-article">
                   
   <!--
-Author:		    Noa Chouriberry
-Date:		    10.05.2023
-Description:    marche a suivre pour reinstaller l'os d'un mac si besoin
+Author:		    Mussa AL Hussein
+Date:		    10.04.2024
+Description:    marche a suivre pour reinstaller les profiles de JAMF
 -->
-<section class="tex2jax_ignore mathjax_ignore" id="marche-a-suivre-pour-tout-reinstaller-sur-un-poste">
-<h1>Marche a suivre pour tout reinstaller sur un poste<a class="headerlink" href="#marche-a-suivre-pour-tout-reinstaller-sur-un-poste" title="Link to this heading">#</a></h1>
-<p>Cette marche a suivre sera utile si jamais il y a des problèmes au démarrage du mac (dans 99% des cas c’est a cause d’un manque d’espace disque) ou pour régler des problèmes qui ne sont pas réglables en ouvrant une session.</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="centre-de-restauration">
-<h1>Centre de restauration<a class="headerlink" href="#centre-de-restauration" title="Link to this heading">#</a></h1>
-<p>Pour aller à l’endroit qui nous intéresse, il faut éteindre le mac s’il est allumé puis l’allumer en appuyant sur CMD + R le temps du démarrage. Il faut le faire dés le moment ou on a pressé sur le bouton allumer du poste.</p>
-<p>Dés que c’est bon, on devrait arriver sur cette page:</p>
-<a class="reference internal image-reference" href="_images/MenuRecover.png" id="menurecover"><img alt="_images/MenuRecover.png" class="align-center" id="menurecover" src="_images/MenuRecover.png" style="width: 800px;" /></a>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="effacer-le-disque">
-<h1>Effacer le disque<a class="headerlink" href="#effacer-le-disque" title="Link to this heading">#</a></h1>
-<p>Pour effacer le disque, il faut aller dans l’utilitaire de disque qui se trouve tout en bas. Ensuite, il faut cliquer sur le disque Chamblandes HD et sur le petit moins en haut à droite de la fenêtre.
-Quand c’est fini, la prochaine étape est de recréer une partition avec le même nom, ChamblandesHD et de type AFPS.</p>
-<p>Le menu devrait ressembler à ça si tout s’est bien passé:</p>
-<a class="reference internal image-reference" href="_images/DiskUtilityRecover.png" id="diskutilityrecover"><img alt="_images/DiskUtilityRecover.png" class="align-center" id="diskutilityrecover" src="_images/DiskUtilityRecover.png" style="width: 800px;" /></a>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="reinstaller-l-os">
-<h1>Reinstaller l’OS<a class="headerlink" href="#reinstaller-l-os" title="Link to this heading">#</a></h1>
-<p>Pour réinstaller l’OS sur le disque que nous avons nettoyé, il faut retourner au menu principal et cliquer sur Installer (le nom de l’os). Il faudra sélectionner le disque et puis attendre l’installation.</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="reinstaller-les-logiciels">
-<h1>Réinstaller les logiciels<a class="headerlink" href="#reinstaller-les-logiciels" title="Link to this heading">#</a></h1>
-<p>Quand tout est bon, il faudra se connecter en adminl sur le poste et faire un sudo jamf policy. Faites attention à bien vous brancher en ethernet.</p>
+<section class="tex2jax_ignore mathjax_ignore" id="preparation-des-co">
+<h1>Préparation des CO<a class="headerlink" href="#preparation-des-co" title="Link to this heading">#</a></h1>
+<p>Procédure de Réinitialisation de l’Authentification Multi-Facteurs (MFA)<br />
+et utilisation de la Méthode TAP dans Microsoft Entra ID (Azure AD)</p>
+<p><strong>1.Création d’un utilisateur local via JAMF</strong> <strong>:</strong></p>
+<p>Connectez-vous au dashboard JAMF (<a class="reference external" href="https://10.225.232.161:8443/%5C">https://10.225.232.161:8443/\</a>) avec vos identifiants admin</p>
+<p>Ensuite sous « Règles » Créer une nouvelle règle.</p>
+<a class="reference internal image-reference" href="_images/CO_01.png" id="co"><img alt="_images/CO_01.png" class="align-center" id="co" src="_images/CO_01.png" style="width: 1000px;" /></a>
+<p>Ensuite dans Général, Ajoutez un nom d’aUichage et cochez les 2 cases (Actvé et Check-in récurrent)</p>
+<a class="reference internal image-reference" href="_images/CO_02.png" id="id1"><img alt="_images/CO_02.png" class="align-center" id="id1" src="_images/CO_02.png" style="width: 1000px;" /></a>
+<p>Puis dans « Comptes locaux » Créer un nouveau compte.</p>
+<a class="reference internal image-reference" href="_images/CO_03.png" id="id2"><img alt="_images/CO_03.png" class="align-center" id="id2" src="_images/CO_03.png" style="width: 1000px;" /></a>
+<p>Ensuite dans périmètre, choisissez les ordinateurs cibles.</p>
+<a class="reference internal image-reference" href="_images/CO_04.png" id="id3"><img alt="_images/CO_04.png" class="align-center" id="id3" src="_images/CO_04.png" style="width: 1000px;" /></a>
+<hr class="docutils" />
+<p><strong>Partager le fichier CO.mp3 sur les ordinateurs</strong> <strong>:</strong></p>
+<p>Tout d’abord, il faut télécharger le fichier « CO_Fichier.sh » depuis le teams GYCHA dans GychaIT &gt;Examen&gt;Fichiers.</p>
+<p>Ensuite, ouvrez le fichier dans visual studio code.</p>
+<p>Puis, modifiez. Le scripte en fonction de vos besoins.</p>
+<p>Explication Variables :</p>
+<p>ALL_IP : il faut mettre la fin des adresses IP des ordinateurs cible.</p>
+<p>FILE_NAME : il faut mettre le nom du fichier qu’on veut transférer.</p>
+<a class="reference internal image-reference" href="_images/CO_05.png" id="id4"><img alt="_images/CO_05.png" class="align-center" id="id4" src="_images/CO_05.png" style="width: 1000px;" /></a>
+<p>Une fois que les modifications sont faites, ouvrez un terminal puis exécutez le scripte.</p>
+<a class="reference internal image-reference" href="_images/CO_06.png" id="id5"><img alt="_images/CO_06.png" class="align-center" id="id5" src="_images/CO_06.png" style="width: 1000px;" /></a>
+<hr class="docutils" />
+<p><strong>1.</strong> **Modifier le mot de passe de l’utilisateur local ** <strong>:</strong></p>
+<p>Connectez-vous au dashboard JAMF (<a class="reference external" href="https://10.225.232.161:8443/%5C">https://10.225.232.161:8443/\</a>) avec vos identifiants admin</p>
+<p>Ensuite sous « Règles » allez sur la page de la règle puis dans utilisateurs locaux.</p>
+<p>1) Désactiver l’utilisateur pour FileVault 2</p>
+<p>2) Appuyez sur le + en haut à droite.</p>
+<a class="reference internal image-reference" href="_images/CO_07.png" id="id6"><img alt="_images/CO_07.png" class="align-center" id="id6" src="_images/CO_07.png" style="width: 1000px;" /></a>
+<p>Si vous descendez, vous allez voir un deuxième utilisateur comme ci-dessous.</p>
+<p>Ici, il faut ajouter le nouveau mot de passe.</p>
+<a class="reference internal image-reference" href="_images/CO_08.png" id="id7"><img alt="_images/CO_08.png" class="align-center" id="id7" src="_images/CO_08.png" style="width: 1000px;" /></a>
+<p>Et enfin, sauvegardez votre règle.</p>
+<hr class="docutils" />
 </section>
 
     <script type="text/x-thebe-config">
@@ -483,20 +481,20 @@ Quand c’est fini, la prochaine étape est de recréer une partition avec le m�
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="UtileAdobe.html"
+       href="UtileMFA.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Adobe</p>
+        <p class="prev-next-title">Réinitialisation de l’Authentification Multi-Facteurs (MFA)</p>
       </div>
     </a>
     <a class="right-next"
-       href="UtileDisableBluetooth.html"
+       href="VM-MachineVirtuelle.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Désactiver complètement le bluetooth d’un poste</p>
+        <p class="prev-next-title">Section MachineVirtuelle</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -506,27 +504,6 @@ Quand c’est fini, la prochaine étape est de recréer une partition avec le m�
             </div>
             
             
-              
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Marche a suivre pour tout reinstaller sur un poste</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#centre-de-restauration">Centre de restauration</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#effacer-le-disque">Effacer le disque</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reinstaller-l-os">Reinstaller l’OS</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reinstaller-les-logiciels">Réinstaller les logiciels</a></li>
-</ul>
-
-  </nav></div>
-
-</div></div>
               
             
           </div>

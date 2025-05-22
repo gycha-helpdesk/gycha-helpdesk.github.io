@@ -27,3 +27,4 @@ Description:	Mise à jour de la page de la section Utile
 19. [La marche à suivre pour créer un utilisateur wifi-guest](/UtileWifiGuest.md)
 20. [La marche à suivre pour réinstaller les profils](/UtileReinstallerProfiles.md)
 21. [La marche à suivre pour Réinitialisation Authentification Multi-Facteur - Procédure](/UtileMFA.md)
+22. [La marche à suivre pour la Préparation des CO](/UtilePreparationCO.md)
