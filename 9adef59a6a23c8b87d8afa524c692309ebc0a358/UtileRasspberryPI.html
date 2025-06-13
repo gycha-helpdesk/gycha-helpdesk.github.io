@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Resolution de problème lier au réseau &#8212; Documentation Technique Chamblandes</title>
+    <title>Raspberry Pi : Affichage automatique de photos &amp; vidéos &#8212; Documentation Technique Chamblandes</title>
   
   
   
@@ -61,11 +61,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'UtileFixReseau';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'UtileRasspberryPI';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Erreurs des imprimantes" href="UtileErreursImprimante.html" />
-    <link rel="prev" title="Erreurs fréquentes et leurs solutions" href="UtileErreursFrequentes.html" />
+    <link rel="next" title="Section MachineVirtuelle" href="VM-MachineVirtuelle.html" />
+    <link rel="prev" title="Préparation des CO" href="UtilePreparationCO.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -202,7 +202,7 @@
 
 
 
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Resolution de problème lier au réseau</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UtileFixReseau.html">Resolution de problème lier au réseau</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileErreursImprimante.html">Erreurs des imprimantes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtilePaperCut.html">Problèmes et solutions PaperCut</a></li>
 
@@ -234,7 +234,7 @@
 
 
 
-<li class="toctree-l2"><a class="reference internal" href="UtileRasspberryPI.html">Raspberry Pi : Affichage automatique de photos &amp; vidéos</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Raspberry Pi : Affichage automatique de photos &amp; vidéos</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="VM-MachineVirtuelle.html">Section MachineVirtuelle</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -322,7 +322,7 @@
       
       
       
-      <li><a href="_sources/UtileFixReseau.md" target="_blank"
+      <li><a href="_sources/UtileRasspberryPI.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -398,7 +398,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Resolution de problème lier au réseau</h1>
+    <h1>Raspberry Pi : Affichage automatique de photos & vidéos</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -408,12 +408,42 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-regler-le-probleme-de-wi-fi-eduvaud-interne-solution-possible">Comment régler le problème de Wi-Fi EDUVAUD-INTERNE (solution possible)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#le-profil-du-wifi-reseau">le profil du wifi/réseau</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#emplacement-des-fichiers">📂 Emplacement des fichiers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lancement-automatique">🚀 Lancement automatique</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commandes-utiles">▶ Commandes utiles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#demarrer-manuellement-le-script">Démarrer manuellement le script</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arreter-le-script">⏹ Arrêter le script</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#redemarrer-le-script">🔄 Redémarrer le script</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme-de-connexion-internet-login-pastille-rouge-ou-reseau-sur-macmini-qui-est-lent-ne-fonctionne-pas-connexion-session-ad">Problème de connexion internet/login (pastille rouge) ou Réseau sur macmini qui est lent / ne fonctionne pas (connexion session AD)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme-compte-ad-est-un-compte-reseau-et-pas-un-compte-mobile">Problème compte AD est un compte réseau et pas un compte mobile</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#copier-des-fichiers-depuis-un-mac-vers-le-raspberry-pi">📤 Copier des fichiers depuis un Mac vers le Raspberry Pi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etapes-recommandees">✅ Étapes recommandées</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#copier-dans-bloc1">🔁 Copier dans <code class="docutils literal notranslate"><span class="pre">bloc1</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#images">Images</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#videos">Vidéos</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#copier-dans-bloc2">🔁 Copier dans <code class="docutils literal notranslate"><span class="pre">bloc2</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Images</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Vidéos</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#copier-dans-le-dossier-general-par-defaut">📁 Copier dans le dossier général (par défaut)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Images</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Vidéos</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#copier-depuis-une-cle-usb">📦 Copier depuis une clé USB</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#copier-toutes-les-images">Copier toutes les images</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#copier-toutes-les-videos">Copier toutes les vidéos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modifier-le-script-python-si-besoin">🛠 Modifier le script Python (si besoin)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#redemarrer-le-raspberry-pi">🔁 Redémarrer le Raspberry Pi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supprimer-tout-le-contenu-dun-dossier">🧹 Supprimer tout le contenu d’un dossier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modifier-le-texte-affiche-en-bas-de-lecran">✏ Modifier le texte affiché en bas de l’écran</a></li>
 </ul>
             </nav>
         </div>
@@ -425,54 +455,193 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="resolution-de-probleme-lier-au-reseau">
-<h1>Resolution de problème lier au réseau<a class="headerlink" href="#resolution-de-probleme-lier-au-reseau" title="Link to this heading">#</a></h1>
-<section id="comment-regler-le-probleme-de-wi-fi-eduvaud-interne-solution-possible">
-<h2>Comment régler le problème de Wi-Fi EDUVAUD-INTERNE (solution possible)<a class="headerlink" href="#comment-regler-le-probleme-de-wi-fi-eduvaud-interne-solution-possible" title="Link to this heading">#</a></h2>
-<section id="le-profil-du-wifi-reseau">
-<h3>le profil du wifi/réseau<a class="headerlink" href="#le-profil-du-wifi-reseau" title="Link to this heading">#</a></h3>
-<p>Il faut aller dans les profils de la machine et regarder EDUVAUD-INTERNE.</p>
-<a class="reference internal image-reference" href="_images/Profil-EDU-Interne.png" id="favnetwork"><img alt="_images/Profil-EDU-Interne.png" class="align-center" id="favnetwork" src="_images/Profil-EDU-Interne.png" style="width: 300px;" /></a>
-<p>Dedans il faut voire à qui a été disribué (en ouvrant le profil et en scrollant un peu il y a le nom)</p>
-<a class="reference internal image-reference" href="_images/Nom-certificat-EDU-Interne.png" id="id1"><img alt="_images/Nom-certificat-EDU-Interne.png" class="align-center" id="id1" src="_images/Nom-certificat-EDU-Interne.png" style="width: 400px;" /></a>
-<p>et si ce n’est pas la même (que le nom de la machine actuel) il faut mettre la machine dans les exclusions des Profils de configuration JAMF (EDUVAUD-INTERNE) et l’enlever. C’est la même procédure si la machine n’a pas de réseau filaire, le profil est Wired-EDUVAUD-INTERNE et le nom sous les Profils de configuration JAMF (Wired-EDUVAUD-INTERNE)</p>
+  <!--
+Author:         Gycha IT
+Date:           2024-06-13
+Description:    Guide pour affichage automatique de photos & vidéos sur Raspberry Pi
+-->
+<section class="tex2jax_ignore mathjax_ignore" id="raspberry-pi-affichage-automatique-de-photos-videos">
+<h1>Raspberry Pi : Affichage automatique de photos &amp; vidéos<a class="headerlink" href="#raspberry-pi-affichage-automatique-de-photos-videos" title="Link to this heading">#</a></h1>
+<section id="emplacement-des-fichiers">
+<h2>📂 Emplacement des fichiers<a class="headerlink" href="#emplacement-des-fichiers" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Chemin</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Script Python</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/home/gycha/.media/media_display.py</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Service systemd</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/etc/systemd/system/media_display.service</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Bloc 1 – images</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/home/gycha/.media/bloc1/images/</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Bloc 1 – videos</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/home/gycha/.media/bloc1/videos/</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Bloc 2 – images</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/home/gycha/.media/bloc2/images/</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Bloc 2 – videos</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/home/gycha/.media/bloc2/videos/</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Images (défaut)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/home/gycha/.media/images/</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Videos (défaut)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/home/gycha/.media/videos/</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Fichier texte</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/home/gycha/.media/texte.txt</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<a class="reference internal image-reference" href="_images/rasp_01.png" id="raspberry"><img alt="_images/rasp_01.png" class="align-center" id="raspberry" src="_images/rasp_01.png" style="width: 1000px;" /></a>
 </section>
+<hr class="docutils" />
+<section id="lancement-automatique">
+<h2>🚀 Lancement automatique<a class="headerlink" href="#lancement-automatique" title="Link to this heading">#</a></h2>
+<p>Le script démarre automatiquement au démarrage du Raspberry Pi grâce à un service <code class="docutils literal notranslate"><span class="pre">systemd</span></code>.</p>
+<ul class="simple">
+<li><p>Adresse : <code class="docutils literal notranslate"><span class="pre">gycha&#64;gycha.local</span></code></p></li>
+<li><p>Utilisateur : <code class="docutils literal notranslate"><span class="pre">gycha</span></code></p></li>
+<li><p>Mot de passe : gycha_2025*</p></li>
+</ul>
 </section>
-<section id="probleme-de-connexion-internet-login-pastille-rouge-ou-reseau-sur-macmini-qui-est-lent-ne-fonctionne-pas-connexion-session-ad">
-<h2>Problème de connexion internet/login (pastille rouge) ou Réseau sur macmini qui est lent / ne fonctionne pas (connexion session AD)<a class="headerlink" href="#probleme-de-connexion-internet-login-pastille-rouge-ou-reseau-sur-macmini-qui-est-lent-ne-fonctionne-pas-connexion-session-ad" title="Link to this heading">#</a></h2>
-<p>Si vous n’arrivez pas à vous connecter à un poste avec des identifiants eduvaud,</p>
-<ol class="arabic simple">
-<li><p>vérifier les paramètres réseau (ip = <a class="reference external" href="http://10.226.40.xxx">10.226.40.xxx</a> et le DNS pas 127.0.0.1)</p></li>
-<li><p>Executer la commande</p></li>
-</ol>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">jamf</span> <span class="n">policy</span> <span class="o">-</span><span class="n">event</span> <span class="n">binding</span>
+<hr class="docutils" />
+<section id="commandes-utiles">
+<h2>▶ Commandes utiles<a class="headerlink" href="#commandes-utiles" title="Link to this heading">#</a></h2>
+<section id="demarrer-manuellement-le-script">
+<h3>Démarrer manuellement le script<a class="headerlink" href="#demarrer-manuellement-le-script" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>media_display.service
 </pre></div>
 </div>
-<p>Si elle reste bloquer pendant 2-3 min il faut faire un control + C, puis la relancer.</p>
-<br>
-<p>Si ça ne fonctionne pas il faut:</p>
-<p>Enlever le poste de l’AD manuellement dans les paramètres -&gt; Utilisateurs et groupes.</p>
-<a class="reference internal image-reference" href="_images/removeAD1.png" id="removead1"><img alt="_images/removeAD1.png" class="align-center" id="removead1" src="_images/removeAD1.png" style="width: 500px;" /></a>
-<a class="reference internal image-reference" href="_images/removeAD2.png" id="removead2"><img alt="_images/removeAD2.png" class="align-center" id="removead2" src="_images/removeAD2.png" style="width: 500px;" /></a>
-<p>il vous demandera 1 ou 2 fois le mot de passe de adminl (remplissez tous les champs).
-<br>
-Puis lancer la règle sudo jamf policy -event binding.
-<br>
-Si ça na toujour pas résolu le problème, il faut Enlever le poste de l’AD manuellement dans les paramètres -&gt; Utilisateurs et groupes. Puis aller dans l’AD et supprimer le poste et refair (sur la machine) sudo jamf policy -event binding.</p>
 </section>
-<section id="probleme-compte-ad-est-un-compte-reseau-et-pas-un-compte-mobile">
-<h2>Problème compte AD est un compte réseau et pas un compte mobile<a class="headerlink" href="#probleme-compte-ad-est-un-compte-reseau-et-pas-un-compte-mobile" title="Link to this heading">#</a></h2>
-<p>Pour savoir si les comptes AD deviennent des compte réseau ou mobile, il faut aller dans les paramètres puis dans utilisateurs et groupes et si vous êtes connecter avec adminl, les compte réseau ne sont pas visible et les comptes mobile oui. les compte réseau on moins de fonctionnalité que les comptes mobile.
-<br>
-<br>
-Pour réparer ce problème il faut aller dans l’utilitaire d’annuaire, déverouiller le cadenas.</p>
-<a class="reference internal image-reference" href="_images/ProblemeCompteReseau1.png" id="problemecomptereseau1"><img alt="_images/ProblemeCompteReseau1.png" class="align-center" id="problemecomptereseau1" src="_images/ProblemeCompteReseau1.png" style="width: 500px;" /></a>
-<p>Puis séléctionner le crayon qui est en bas à gauche.</p>
-<a class="reference internal image-reference" href="_images/ProblemeCompteReseau2.png" id="problemecomptereseau2"><img alt="_images/ProblemeCompteReseau2.png" class="align-center" id="problemecomptereseau2" src="_images/ProblemeCompteReseau2.png" style="width: 500px;" /></a>
-<p>Sur la nouvelle fenêtre, il faut afficher les options.</p>
-<a class="reference internal image-reference" href="_images/ProblemeCompteReseau3.png" id="problemecomptereseau3"><img alt="_images/ProblemeCompteReseau3.png" class="align-center" id="problemecomptereseau3" src="_images/ProblemeCompteReseau3.png" style="width: 500px;" /></a>
-<p>Enfin, cocher “crée un compte mobile” et décocher “exiger une confirmation …”.</p>
-<a class="reference internal image-reference" href="_images/ProblemeCompteReseau4.png" id="id2"><img alt="_images/ProblemeCompteReseau4.png" class="align-center" id="id2" src="_images/ProblemeCompteReseau4.png" style="width: 500px;" /></a>
+<section id="arreter-le-script">
+<h3>⏹ Arrêter le script<a class="headerlink" href="#arreter-le-script" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>systemctl<span class="w"> </span>stop<span class="w"> </span>media_display.service
+</pre></div>
+</div>
+<p><em>Attention : cela peut prendre 2-3 minutes.</em></p>
+</section>
+<section id="redemarrer-le-script">
+<h3>🔄 Redémarrer le script<a class="headerlink" href="#redemarrer-le-script" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>media_display.service
+</pre></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="copier-des-fichiers-depuis-un-mac-vers-le-raspberry-pi">
+<h2>📤 Copier des fichiers depuis un Mac vers le Raspberry Pi<a class="headerlink" href="#copier-des-fichiers-depuis-un-mac-vers-le-raspberry-pi" title="Link to this heading">#</a></h2>
+<section id="etapes-recommandees">
+<h3>✅ Étapes recommandées<a class="headerlink" href="#etapes-recommandees" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Crée un dossier <code class="docutils literal notranslate"><span class="pre">images</span></code> et un dossier <code class="docutils literal notranslate"><span class="pre">videos</span></code> sur ton bureau Mac.</p></li>
+<li><p>Exécute les commandes suivantes dans <strong>un nouveau terminal</strong> (ne pas être connecté en SSH).</p></li>
+</ol>
+</section>
+<section id="copier-dans-bloc1">
+<h3>🔁 Copier dans <code class="docutils literal notranslate"><span class="pre">bloc1</span></code><a class="headerlink" href="#copier-dans-bloc1" title="Link to this heading">#</a></h3>
+<section id="images">
+<h4>Images<a class="headerlink" href="#images" title="Link to this heading">#</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>scp<span class="w"> </span>~/Desktop/images/*<span class="w"> </span>gycha@gycha.local:/home/gycha/.media/bloc1/images/
+</pre></div>
+</div>
+</section>
+<section id="videos">
+<h4>Vidéos<a class="headerlink" href="#videos" title="Link to this heading">#</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>scp<span class="w"> </span>~/Desktop/videos/*<span class="w"> </span>gycha@gycha.local:/home/gycha/.media/bloc1/videos/
+</pre></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="copier-dans-bloc2">
+<h3>🔁 Copier dans <code class="docutils literal notranslate"><span class="pre">bloc2</span></code><a class="headerlink" href="#copier-dans-bloc2" title="Link to this heading">#</a></h3>
+<section id="id1">
+<h4>Images<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>scp<span class="w"> </span>~/Desktop/images/*<span class="w"> </span>gycha@gycha.local:/home/gycha/.media/bloc2/images/
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h4>Vidéos<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>scp<span class="w"> </span>~/Desktop/videos/*<span class="w"> </span>gycha@gycha.local:/home/gycha/.media/bloc2/videos/
+</pre></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="copier-dans-le-dossier-general-par-defaut">
+<h3>📁 Copier dans le dossier général (par défaut)<a class="headerlink" href="#copier-dans-le-dossier-general-par-defaut" title="Link to this heading">#</a></h3>
+<section id="id3">
+<h4>Images<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>scp<span class="w"> </span>~/Desktop/images/*<span class="w"> </span>gycha@gycha.local:/home/gycha/.media/images/
+</pre></div>
+</div>
+</section>
+<section id="id4">
+<h4>Vidéos<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>scp<span class="w"> </span>~/Desktop/videos/*<span class="w"> </span>gycha@gycha.local:/home/gycha/.media/videos/
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="copier-depuis-une-cle-usb">
+<h2>📦 Copier depuis une clé USB<a class="headerlink" href="#copier-depuis-une-cle-usb" title="Link to this heading">#</a></h2>
+<p>Si la clé USB est montée sur <code class="docutils literal notranslate"><span class="pre">/media/gycha/USB</span></code>, utiliser :</p>
+<section id="copier-toutes-les-images">
+<h3>Copier toutes les images<a class="headerlink" href="#copier-toutes-les-images" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cp<span class="w"> </span>/media/gycha/USB/*.jpg<span class="w"> </span>/home/gycha/.media/images/
+cp<span class="w"> </span>/media/gycha/USB/*.png<span class="w"> </span>/home/gycha/.media/images/
+</pre></div>
+</div>
+</section>
+<section id="copier-toutes-les-videos">
+<h3>Copier toutes les vidéos<a class="headerlink" href="#copier-toutes-les-videos" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cp<span class="w"> </span>/media/gycha/USB/*.mp4<span class="w"> </span>/home/gycha/.media/videos/
+</pre></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="modifier-le-script-python-si-besoin">
+<h2>🛠 Modifier le script Python (si besoin)<a class="headerlink" href="#modifier-le-script-python-si-besoin" title="Link to this heading">#</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nano<span class="w"> </span>/home/gycha/.media/media_display.py
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="redemarrer-le-raspberry-pi">
+<h2>🔁 Redémarrer le Raspberry Pi<a class="headerlink" href="#redemarrer-le-raspberry-pi" title="Link to this heading">#</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>reboot
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="supprimer-tout-le-contenu-dun-dossier">
+<h2>🧹 Supprimer tout le contenu d’un dossier<a class="headerlink" href="#supprimer-tout-le-contenu-dun-dossier" title="Link to this heading">#</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>/chemin/dossier
+rm<span class="w"> </span>-rf<span class="w"> </span>*
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="modifier-le-texte-affiche-en-bas-de-lecran">
+<h2>✏ Modifier le texte affiché en bas de l’écran<a class="headerlink" href="#modifier-le-texte-affiche-en-bas-de-lecran" title="Link to this heading">#</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nano<span class="w"> </span>/home/gycha/.media/texte.txt
+</pre></div>
+</div>
+<p>Puis, écris dans ce fichier le texte à afficher.</p>
+<hr class="docutils" />
 </section>
 </section>
 
@@ -507,20 +676,20 @@ Pour réparer ce problème il faut aller dans l’utilitaire d’annuaire, déve
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="UtileErreursFrequentes.html"
+       href="UtilePreparationCO.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Erreurs fréquentes et leurs solutions</p>
+        <p class="prev-next-title">Préparation des CO</p>
       </div>
     </a>
     <a class="right-next"
-       href="UtileErreursImprimante.html"
+       href="VM-MachineVirtuelle.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Erreurs des imprimantes</p>
+        <p class="prev-next-title">Section MachineVirtuelle</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -541,12 +710,42 @@ Pour réparer ce problème il faut aller dans l’utilitaire d’annuaire, déve
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-regler-le-probleme-de-wi-fi-eduvaud-interne-solution-possible">Comment régler le problème de Wi-Fi EDUVAUD-INTERNE (solution possible)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#le-profil-du-wifi-reseau">le profil du wifi/réseau</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#emplacement-des-fichiers">📂 Emplacement des fichiers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lancement-automatique">🚀 Lancement automatique</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commandes-utiles">▶ Commandes utiles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#demarrer-manuellement-le-script">Démarrer manuellement le script</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arreter-le-script">⏹ Arrêter le script</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#redemarrer-le-script">🔄 Redémarrer le script</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme-de-connexion-internet-login-pastille-rouge-ou-reseau-sur-macmini-qui-est-lent-ne-fonctionne-pas-connexion-session-ad">Problème de connexion internet/login (pastille rouge) ou Réseau sur macmini qui est lent / ne fonctionne pas (connexion session AD)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme-compte-ad-est-un-compte-reseau-et-pas-un-compte-mobile">Problème compte AD est un compte réseau et pas un compte mobile</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#copier-des-fichiers-depuis-un-mac-vers-le-raspberry-pi">📤 Copier des fichiers depuis un Mac vers le Raspberry Pi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etapes-recommandees">✅ Étapes recommandées</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#copier-dans-bloc1">🔁 Copier dans <code class="docutils literal notranslate"><span class="pre">bloc1</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#images">Images</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#videos">Vidéos</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#copier-dans-bloc2">🔁 Copier dans <code class="docutils literal notranslate"><span class="pre">bloc2</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Images</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Vidéos</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#copier-dans-le-dossier-general-par-defaut">📁 Copier dans le dossier général (par défaut)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Images</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Vidéos</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#copier-depuis-une-cle-usb">📦 Copier depuis une clé USB</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#copier-toutes-les-images">Copier toutes les images</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#copier-toutes-les-videos">Copier toutes les vidéos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modifier-le-script-python-si-besoin">🛠 Modifier le script Python (si besoin)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#redemarrer-le-raspberry-pi">🔁 Redémarrer le Raspberry Pi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supprimer-tout-le-contenu-dun-dossier">🧹 Supprimer tout le contenu d’un dossier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modifier-le-texte-affiche-en-bas-de-lecran">✏ Modifier le texte affiché en bas de l’écran</a></li>
 </ul>
   </nav></div>
 

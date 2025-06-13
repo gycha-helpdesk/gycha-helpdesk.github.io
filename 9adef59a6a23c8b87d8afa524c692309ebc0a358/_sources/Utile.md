@@ -28,3 +28,4 @@ Description:	Mise à jour de la page de la section Utile
 20. [La marche à suivre pour réinstaller les profils](/UtileReinstallerProfiles.md)
 21. [La marche à suivre pour Réinitialisation Authentification Multi-Facteur - Procédure](/UtileMFA.md)
 22. [La marche à suivre pour la Préparation des CO](/UtilePreparationCO.md)
+22. [Documentation et démarche pour la configuration RasspberryPI](/UtileRasspberryPI.md)
