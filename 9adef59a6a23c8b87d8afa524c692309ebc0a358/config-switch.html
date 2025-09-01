@@ -16,34 +16,31 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!--
-    this give us a css class that will be invisible only if js is disabled
-  -->
-  <noscript>
-    <style>
-      .pst-js-only { display: none !important; }
-
-    </style>
-  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/myfile.css?v=5be3136b" />
   
-  <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
@@ -66,7 +63,6 @@
     <link rel="search" title="Search" href="search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -82,8 +78,19 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <dialog id="pst-search-dialog">
-    
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -91,6 +98,7 @@
   <input type="search"
          class="form-control"
          name="q"
+         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -98,8 +106,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-  </dialog>
+</form></div>
+  </div>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -117,8 +125,7 @@
       
         
       
-      <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -148,17 +155,21 @@
     
     
     <img src="_static/logoCh.png" class="logo__image only-light" alt="Documentation Technique Chamblandes - Home"/>
-    <img src="_static/logoCh.png" class="logo__image only-dark pst-js-only" alt="Documentation Technique Chamblandes - Home"/>
+    <script>document.write(`<img src="_static/logoCh.png" class="logo__image only-dark" alt="Documentation Technique Chamblandes - Home"/>`);</script>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="nav bd-sidenav">
@@ -235,6 +246,7 @@
 
 
 <li class="toctree-l2"><a class="reference internal" href="UtileRasspberryPI.html">Raspberry Pi : Affichage automatique de photos &amp; vidéos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UtileSelfService.html">Documentation JAMF Self-Service</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="VM-MachineVirtuelle.html">Section MachineVirtuelle</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -271,14 +283,9 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
-      <div class="sidebar-primary-item">
-<div id="ethical-ad-placement"
-      class="flat"
-      data-ea-publisher="readthedocs"
-      data-ea-type="readthedocs-sidebar"
-      data-ea-manual="true">
-</div></div>
   </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -375,16 +382,24 @@
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button>
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-</button>
+  </button>
+`);
+</script>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -441,7 +456,8 @@
 <p>Désactivez tout d’abord votre wifi s’il est actif.</p>
 <p>Branchez ensuite un câble ethernet depuis le port “1” du switch (celui qui est en jaune) jusqu’à votre ordinateur.</p>
 <p>Ensuite, allez dans <em>Préférences Système</em> &gt; <em>Réseau</em>.</p>
-<a class="reference internal image-reference" href="_images/manual_ip.png" id="manual-ip"><img alt="_images/manual_ip.png" class="align-center" id="manual-ip" src="_images/manual_ip.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/manual_ip.png" id="manual-ip"><img alt="_images/manual_ip.png" class="align-center" id="manual-ip" src="_images/manual_ip.png" style="width: 500px;" />
+</a>
 <p>Configurez le réseau ethernet comme sur l’image ci-dessus.</p>
 <blockquote>
 <div><p><em>Configurer IPv4</em>: Manuellement</p>
@@ -455,27 +471,33 @@
 <p>Appuyez ensuite sur <em>Appliquer</em>.</p>
 <p>Ouvrez ensuite un navigateur et tapez l’adresse IP du switch dans la barre de recherche. Par défaut cette adresse est : 192.168.0.239.</p>
 <p>Vous devriez tomber sur la page suivante :</p>
-<a class="reference internal image-reference" href="_images/connexion.png" id="connexion"><img alt="_images/connexion.png" class="align-center" id="connexion" src="_images/connexion.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/connexion.png" id="connexion"><img alt="_images/connexion.png" class="align-center" id="connexion" src="_images/connexion.png" style="width: 500px;" />
+</a>
 <p>Le mot de passe par défaut de ce modèle est : <em>password</em>.</p>
 <p>Si vous tombez sur la page suivante, c’est que tout fonctionne :</p>
-<a class="reference internal image-reference" href="_images/home.png" id="home"><img alt="_images/home.png" class="align-center" id="home" src="_images/home.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/home.png" id="home"><img alt="_images/home.png" class="align-center" id="home" src="_images/home.png" style="width: 500px;" />
+</a>
 </section>
 <hr class="docutils" />
 <section id="system-information">
 <h2>System Information<a class="headerlink" href="#system-information" title="Link to this heading">#</a></h2>
 <p>Dans la page d’accueil, complétez le formulaire <em>System Information</em>.</p>
 <p>Dans <em>System Name</em>, mettez le nom que vous voulez tout comme <em>System Location</em>. Les autres champs n’ont pas besoin d’être complétés.</p>
-<a class="reference internal image-reference" href="_images/systemInfo.png" id="system-info"><img alt="_images/systemInfo.png" class="align-center" id="system-info" src="_images/systemInfo.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/systemInfo.png" id="system-info"><img alt="_images/systemInfo.png" class="align-center" id="system-info" src="_images/systemInfo.png" style="width: 500px;" />
+</a>
 </section>
 <hr class="docutils" />
 <section id="vlan-configuration">
 <h2>VLAN Configuration<a class="headerlink" href="#vlan-configuration" title="Link to this heading">#</a></h2>
 <p>Allez ensuite dans l’onglet <em>Switching</em> &gt; <em>VLAN</em>.</p>
-<a class="reference internal image-reference" href="_images/go_switching.png" id="go-switching"><img alt="_images/go_switching.png" class="align-center" id="go-switching" src="_images/go_switching.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/go_switching.png" id="go-switching"><img alt="_images/go_switching.png" class="align-center" id="go-switching" src="_images/go_switching.png" style="width: 500px;" />
+</a>
 <p>Vous devez ensuite ajouter 4 lignes dans le tableau de <em>VLAN Configuration</em>:</p>
-<a class="reference internal image-reference" href="_images/final_vlan_config.png" id="final-vlan-config"><img alt="_images/final_vlan_config.png" class="align-center" id="final-vlan-config" src="_images/final_vlan_config.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/final_vlan_config.png" id="final-vlan-config"><img alt="_images/final_vlan_config.png" class="align-center" id="final-vlan-config" src="_images/final_vlan_config.png" style="width: 500px;" />
+</a>
 <p>Pour ajouter une ligne, entrez l’ID du nouveau VLAN dans <em>VLAN ID</em>, puis son nom dans <em>VLAN Name</em>. Le <em>VLAN Type</em> doit être laissé en “Static”. Une fois que c’est fait, il suffit d’appuyer sur le bouton “Add” tout en bas à droite de la page.</p>
-<a class="reference internal image-reference" href="_images/add_vlan_line.png" id="add-vlan-line"><img alt="_images/add_vlan_line.png" class="align-center" id="add-vlan-line" src="_images/add_vlan_line.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/add_vlan_line.png" id="add-vlan-line"><img alt="_images/add_vlan_line.png" class="align-center" id="add-vlan-line" src="_images/add_vlan_line.png" style="width: 500px;" />
+</a>
 <p>Rajoutez donc ces quatres lignes:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -509,11 +531,14 @@
 <section id="vlan-membership">
 <h2>VLAN Membership<a class="headerlink" href="#vlan-membership" title="Link to this heading">#</a></h2>
 <p>Allez ensuite dans <em>Advanced</em> &gt; <em>VLAN Membership</em>, comme suit:</p>
-<a class="reference internal image-reference" href="_images/vlan_membership.png" id="id1"><img alt="_images/vlan_membership.png" class="align-center" id="id1" src="_images/vlan_membership.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/vlan_membership.png" id="id1"><img alt="_images/vlan_membership.png" class="align-center" id="id1" src="_images/vlan_membership.png" style="width: 500px;" />
+</a>
 <p>Dans cette page, vous pouvez configurer quel VLAN est reconnu par quel port du switch:</p>
-<a class="reference internal image-reference" href="_images/membership_config.png" id="membership-config"><img alt="_images/membership_config.png" class="align-center" id="membership-config" src="_images/membership_config.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/membership_config.png" id="membership-config"><img alt="_images/membership_config.png" class="align-center" id="membership-config" src="_images/membership_config.png" style="width: 500px;" />
+</a>
 <p>Je peux prendre n’importe quel VLAN qui à été créé auparavant et le configurer de telle manière à ce que certains ports reconnaissent ce VLAN en <em>tagged</em> ou en <em>untagged</em>. Par exemple, voici une configuration possible du port 48:</p>
-<a class="reference internal image-reference" href="_images/VLAN_48_membership.png" id="vlan-48-membership"><img alt="_images/VLAN_48_membership.png" class="align-center" id="vlan-48-membership" src="_images/VLAN_48_membership.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/VLAN_48_membership.png" id="vlan-48-membership"><img alt="_images/VLAN_48_membership.png" class="align-center" id="vlan-48-membership" src="_images/VLAN_48_membership.png" style="width: 500px;" />
+</a>
 <p>Dans cet exemple, le premier port <em>tag</em> (<em>tagged</em> → T) le VLAN et les ports 5, 6 et 7 ne le <em>tag</em> pas (<em>untagged</em> → U). Les ports 2, 3, 4 et 8 ne reconnaissent donc pas du tout le VLAN.</p>
 <p>Ainsi, vous pouvez configurer quels VLAN passera dans quel port. De manière générale, tous les VLAN seront en <em>tagged</em> dans le premier port et en <em>untagged</em> dans les ports spécifiques dans lesquels ils passeront.</p>
 <section id="exemple-de-configuration-vlan-membership">
@@ -654,9 +679,11 @@
 <h2>Port PVID Configuration<a class="headerlink" href="#port-pvid-configuration" title="Link to this heading">#</a></h2>
 <p>Ensuite, dans Port PVID Configuration, il est question de définir quels VLAN passera part quel port. Cette étape peut ressembler à l’étape précédente, mais elle est toutefois nécessaire.</p>
 <p>Allez tout d’abord dans Port PVID Configuration :</p>
-<a class="reference internal image-reference" href="_images/go_port_pvid.png" id="go-port-pvid"><img alt="_images/go_port_pvid.png" class="align-center" id="go-port-pvid" src="_images/go_port_pvid.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/go_port_pvid.png" id="go-port-pvid"><img alt="_images/go_port_pvid.png" class="align-center" id="go-port-pvid" src="_images/go_port_pvid.png" style="width: 500px;" />
+</a>
 <p>Ensuite, il s’agit de modifier les lignes afin de définir le VLAN que donnera chaque port. Une ligne peut-être modifiée en cliquant sur le carré à sa gauche, ensuite, l’ID peut être modifié à celui correspondant:</p>
-<a class="reference internal image-reference" href="_images/port_pvid_select.png" id="port-pvid-select"><img alt="_images/port_pvid_select.png" class="align-center" id="port-pvid-select" src="_images/port_pvid_select.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/port_pvid_select.png" id="port-pvid-select"><img alt="_images/port_pvid_select.png" class="align-center" id="port-pvid-select" src="_images/port_pvid_select.png" style="width: 500px;" />
+</a>
 <p>Une fois que l’ID est entré, cliquez sur <em>Apply</em>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -664,16 +691,19 @@
 </div>
 <p>Faites bien attention à garder la 1ère ligne avec le PVID 1, et à ne pas mettre le PVID 32.</p>
 <p>Le résultat final pourrait ressembler à cela :</p>
-<a class="reference internal image-reference" href="_images/port_pvid_final.png" id="port-pvid-final"><img alt="_images/port_pvid_final.png" class="align-center" id="port-pvid-final" src="_images/port_pvid_final.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/port_pvid_final.png" id="port-pvid-final"><img alt="_images/port_pvid_final.png" class="align-center" id="port-pvid-final" src="_images/port_pvid_final.png" style="width: 500px;" />
+</a>
 </section>
 <section id="ip-configuration">
 <h2>IP Configuration<a class="headerlink" href="#ip-configuration" title="Link to this heading">#</a></h2>
 <p>Enfin, la dernière chose qu’il reste à faire est de configurer l’adresse IP finale du switch, son masque de sous-réseau, son gateway ainsi que son port de management.</p>
 <p>Pour ce faire, allez dans l’onglet System, puis IP Configuration :</p>
-<a class="reference internal image-reference" href="_images/go_ip_config.png" id="go-ip-config"><img alt="_images/go_ip_config.png" class="align-center" id="go-ip-config" src="_images/go_ip_config.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/go_ip_config.png" id="go-ip-config"><img alt="_images/go_ip_config.png" class="align-center" id="go-ip-config" src="_images/go_ip_config.png" style="width: 500px;" />
+</a>
 <p>Changez la configuration de <em>Dynamic IP Adress</em> à <em>Static IP Adress</em>.</p>
 <p>Complétez ensuite le formulaire, l’image suivante est un exemple correct :</p>
-<a class="reference internal image-reference" href="_images/ip_config_final.png" id="ip-config-final"><img alt="_images/ip_config_final.png" class="align-center" id="ip-config-final" src="_images/ip_config_final.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/ip_config_final.png" id="ip-config-final"><img alt="_images/ip_config_final.png" class="align-center" id="ip-config-final" src="_images/ip_config_final.png" style="width: 500px;" />
+</a>
 <p>Pour le champ <em>IP Adress</em>, une adresse IP pas encore utilisée sur le réseau doit être entrée. Pour voir tous les objets sur le réseau, vous pouvez aller sur <a class="reference external" href="http://ipam.dgep.edu-vaud.ch">http://ipam.dgep.edu-vaud.ch</a>.</p>
 <p>Pour le champ <em>Subnet Mask</em>, mettez 255.255.255.0.</p>
 <p>Pour le champ <em>Default Gateway</em>, l’IP du gateway doit être mise, sur ce réseau elle est 10.226.32.1.</p>
@@ -695,7 +725,8 @@ Date:		    14.11.2022
 Actuellement le mot de passe que nous utilison pour les switch netgear est le suivant : Gym_09
 Donc il faut changer la taille minimal du password et la mettre a 6.</p>
 </div></blockquote>
-<a class="reference internal image-reference" href="_images/netgear_minCharacter.png" id="netgear-mincharacter"><img alt="_images/netgear_minCharacter.png" class="align-center" id="netgear-mincharacter" src="_images/netgear_minCharacter.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="_images/netgear_minCharacter.png" id="netgear-mincharacter"><img alt="_images/netgear_minCharacter.png" class="align-center" id="netgear-mincharacter" src="_images/netgear_minCharacter.png" style="width: 900px;" />
+</a>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>Ne pas oubliez de cliquer sur apply en bas a droite.</p>
@@ -740,8 +771,7 @@ Donc il faut changer la taille minimal du password et la mettre a 6.</p>
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -821,8 +851,8 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

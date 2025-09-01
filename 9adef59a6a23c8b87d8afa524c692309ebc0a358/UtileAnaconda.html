@@ -16,34 +16,31 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!--
-    this give us a css class that will be invisible only if js is disabled
-  -->
-  <noscript>
-    <style>
-      .pst-js-only { display: none !important; }
-
-    </style>
-  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/myfile.css?v=5be3136b" />
   
-  <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
@@ -68,7 +65,6 @@
     <link rel="prev" title="Glpi" href="UtileGlpi.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -84,8 +80,19 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <dialog id="pst-search-dialog">
-    
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -93,6 +100,7 @@
   <input type="search"
          class="form-control"
          name="q"
+         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -100,8 +108,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-  </dialog>
+</form></div>
+  </div>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -117,8 +125,7 @@
       
       
       
-      <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -148,17 +155,21 @@
     
     
     <img src="_static/logoCh.png" class="logo__image only-light" alt="Documentation Technique Chamblandes - Home"/>
-    <img src="_static/logoCh.png" class="logo__image only-dark pst-js-only" alt="Documentation Technique Chamblandes - Home"/>
+    <script>document.write(`<img src="_static/logoCh.png" class="logo__image only-dark" alt="Documentation Technique Chamblandes - Home"/>`);</script>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
@@ -235,6 +246,7 @@
 
 
 <li class="toctree-l2"><a class="reference internal" href="UtileRasspberryPI.html">Raspberry Pi : Affichage automatique de photos &amp; vidéos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UtileSelfService.html">Documentation JAMF Self-Service</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="VM-MachineVirtuelle.html">Section MachineVirtuelle</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -271,14 +283,9 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
-      <div class="sidebar-primary-item">
-<div id="ethical-ad-placement"
-      class="flat"
-      data-ea-publisher="readthedocs"
-      data-ea-type="readthedocs-sidebar"
-      data-ea-manual="true">
-</div></div>
   </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -375,16 +382,24 @@
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button>
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-</button>
+  </button>
+`);
+</script>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -464,15 +479,18 @@ ligne de commandes pour utiliser Jupyter-Book même si on installe le package vi
 <h3>GUI: Installation Jupyter-Book<a class="headerlink" href="#gui-installation-jupyter-book" title="Link to this heading">#</a></h3>
 <p>Depuis votre machine, ouvrez Anaconda navigateur. Ce nous intéresess est dans la barre de gauche,
 Environments (les environements).</p>
-<a class="reference internal image-reference" href="_images/anaconda-home.png" id="anaconda-home"><img alt="_images/anaconda-home.png" class="align-center" id="anaconda-home" src="_images/anaconda-home.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/anaconda-home.png" id="anaconda-home"><img alt="_images/anaconda-home.png" class="align-center" id="anaconda-home" src="_images/anaconda-home.png" style="width: 600px;" />
+</a>
 <p>Quand vous cliquez sur “Environments” vous allez voir tout les environements disponibles, dans
 notre cas il y a seulement le “base” a disposition, nous allons donc créer un autre environement pour
 notre package Jupyter-Book.</p>
-<a class="reference internal image-reference" href="_images/anaconda-environment.png" id="anaconda-envorinments"><img alt="_images/anaconda-environment.png" class="align-center" id="anaconda-envorinments" src="_images/anaconda-environment.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/anaconda-environment.png" id="anaconda-envorinments"><img alt="_images/anaconda-environment.png" class="align-center" id="anaconda-envorinments" src="_images/anaconda-environment.png" style="width: 600px;" />
+</a>
 <p>Quand vous allez créer un nouvel environment, il vous demande de nommer votre environement et choisir une version de Python.
 Pour le nom nous allons mettre <strong>jupyter-book</strong> et pour la version vous pouvez choisir soit une version antérieur a la 3.8 ou toutes celles d’après.
 (j’ai actuellement la 3.10 et elle me semble assez stable).</p>
-<a class="reference internal image-reference" href="_images/anaconda-python-version.png" id="anaconda-python-version"><img alt="_images/anaconda-python-version.png" class="align-center" id="anaconda-python-version" src="_images/anaconda-python-version.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/anaconda-python-version.png" id="anaconda-python-version"><img alt="_images/anaconda-python-version.png" class="align-center" id="anaconda-python-version" src="_images/anaconda-python-version.png" style="width: 500px;" />
+</a>
 <p>Quand l’environement est créé, choisissez le. Ensuite:</p>
 <ol class="arabic simple">
 <li><p>Choisissez “not installed” pour afficher les packages qui ne sont pas installés</p></li>
@@ -480,11 +498,14 @@ Pour le nom nous allons mettre <strong>jupyter-book</strong> et pour la version 
 <li><p>Selectionnez le package “jupyter-book” dans les resultats</p></li>
 <li><p>Appliques votre choix</p></li>
 </ol>
-<a class="reference internal image-reference" href="_images/anaconda-jupyterbook.png" id="anaconda-jupyterbook"><img alt="_images/anaconda-jupyterbook.png" class="align-center" id="anaconda-jupyterbook" src="_images/anaconda-jupyterbook.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/anaconda-jupyterbook.png" id="anaconda-jupyterbook"><img alt="_images/anaconda-jupyterbook.png" class="align-center" id="anaconda-jupyterbook" src="_images/anaconda-jupyterbook.png" style="width: 600px;" />
+</a>
 <p>Ensuite appliquez de nouveau les packages montrés dans la fenêtre suivante.</p>
-<a class="reference internal image-reference" href="_images/anaconda-jupyterbook-2.png" id="anaconda-jupyterbook-2"><img alt="_images/anaconda-jupyterbook-2.png" class="align-center" id="anaconda-jupyterbook-2" src="_images/anaconda-jupyterbook-2.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/anaconda-jupyterbook-2.png" id="anaconda-jupyterbook-2"><img alt="_images/anaconda-jupyterbook-2.png" class="align-center" id="anaconda-jupyterbook-2" src="_images/anaconda-jupyterbook-2.png" style="width: 500px;" />
+</a>
 <p>Voilà nous avons fini l’installation Jupyter-Book.</p>
-<a class="reference internal image-reference" href="_images/anaconda-jupyterbook-done.png" id="anaconda-jupyterbook-done"><img alt="_images/anaconda-jupyterbook-done.png" class="align-center" id="anaconda-jupyterbook-done" src="_images/anaconda-jupyterbook-done.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/anaconda-jupyterbook-done.png" id="anaconda-jupyterbook-done"><img alt="_images/anaconda-jupyterbook-done.png" class="align-center" id="anaconda-jupyterbook-done" src="_images/anaconda-jupyterbook-done.png" style="width: 600px;" />
+</a>
 <p>Nous pouvons maintenant passer à <a class="reference internal" href="#utilisation-jupyterbook"><span class="std std-ref">Comment Utiliser Jupyter-Book</span></a> pour builder notre site.</p>
 </section>
 <section id="cli-installation-jupyter-book">
@@ -494,7 +515,8 @@ Pour le nom nous allons mettre <strong>jupyter-book</strong> et pour la version 
 <li><p>Pour installer Jupyter-Book ouvrez le terminal de votre machine.
 Puis tapez “conda” pour voir si c’est la commande est reconnue. Si l’installation de Anaconda à été correctement fait vous verrez les messages suivant dans le terminal.</p></li>
 </ol>
-<a class="reference internal image-reference" href="_images/anaconda-cli-conda.png" id="anaconda-cli-conda"><img alt="_images/anaconda-cli-conda.png" class="align-center" id="anaconda-cli-conda" src="_images/anaconda-cli-conda.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/anaconda-cli-conda.png" id="anaconda-cli-conda"><img alt="_images/anaconda-cli-conda.png" class="align-center" id="anaconda-cli-conda" src="_images/anaconda-cli-conda.png" style="width: 600px;" />
+</a>
 <ol class="arabic simple" start="2">
 <li><p>Ensuite nous allons créer l’environment qui contiendra notre package Jupyter-Book.
 La commande pour créer un environment. (nous allons nommer notre environment “jupyter-book”):</p></li>
@@ -502,7 +524,8 @@ La commande pour créer un environment. (nous allons nommer notre environment �
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-name<span class="w"> </span>jupyter-book
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="_images/anaconda-cli-conda-create-env.png" id="anaconda-cli-conda-create-env"><img alt="_images/anaconda-cli-conda-create-env.png" class="align-center" id="anaconda-cli-conda-create-env" src="_images/anaconda-cli-conda-create-env.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/anaconda-cli-conda-create-env.png" id="anaconda-cli-conda-create-env"><img alt="_images/anaconda-cli-conda-create-env.png" class="align-center" id="anaconda-cli-conda-create-env" src="_images/anaconda-cli-conda-create-env.png" style="width: 600px;" />
+</a>
 <ul class="simple">
 <li><p>Qunad le terminal vous demande de continuer avec l’installation ou pas, tapez “y” pour dire yes.</p></li>
 <li><p>On peut aussi choisir quelle version python à installer pour cette environment avec la commande suivannte:</p></li>
@@ -517,7 +540,8 @@ Avant d’installer le package jupyter-book il faut d’abord activer l’enviro
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>jupyter-book
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="_images/anaconda-cli-conda-activate-jupyter-book.png" id="anaconda-cli-conda-activate-jupyter-book"><img alt="_images/anaconda-cli-conda-activate-jupyter-book.png" class="align-center" id="anaconda-cli-conda-activate-jupyter-book" src="_images/anaconda-cli-conda-activate-jupyter-book.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/anaconda-cli-conda-activate-jupyter-book.png" id="anaconda-cli-conda-activate-jupyter-book"><img alt="_images/anaconda-cli-conda-activate-jupyter-book.png" class="align-center" id="anaconda-cli-conda-activate-jupyter-book" src="_images/anaconda-cli-conda-activate-jupyter-book.png" style="width: 600px;" />
+</a>
 <p>Et on voit dans l’image que notre environnement qui était sur (base) est basculer sur jupyter-book.
 4. Enfin nous passon à l’installation jupyter-book.
 Le package jupyter-book peut être installer depuis <a class="reference external" href="https://conda-forge.org/">conda-forge</a>, donc si vous voulez faire cette
@@ -531,21 +555,25 @@ installation proprement, suivez en ordre:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>jupyter-book
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="_images/anaconda-cli-conda-forge.png" id="anaconda-cli-conda-forge"><img alt="_images/anaconda-cli-conda-forge.png" class="align-center" id="anaconda-cli-conda-forge" src="_images/anaconda-cli-conda-forge.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/anaconda-cli-conda-forge.png" id="anaconda-cli-conda-forge"><img alt="_images/anaconda-cli-conda-forge.png" class="align-center" id="anaconda-cli-conda-forge" src="_images/anaconda-cli-conda-forge.png" style="width: 600px;" />
+</a>
 <p>Ensuite conda teste les différentes sources pour collecter des packages et les installer. Quand la collecte est fini conda vous demande de valider l’installation, tappez “y” pour valider et normalement c’est tout!</p>
-<a class="reference internal image-reference" href="_images/anaconda-cli-conda-jupyterbook.png" id="anaconda-cli-conda-jupyterbook"><img alt="_images/anaconda-cli-conda-jupyterbook.png" class="align-center" id="anaconda-cli-conda-jupyterbook" src="_images/anaconda-cli-conda-jupyterbook.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/anaconda-cli-conda-jupyterbook.png" id="anaconda-cli-conda-jupyterbook"><img alt="_images/anaconda-cli-conda-jupyterbook.png" class="align-center" id="anaconda-cli-conda-jupyterbook" src="_images/anaconda-cli-conda-jupyterbook.png" style="width: 600px;" />
+</a>
 </section>
 <section id="utilisation-jupyter-book">
 <span id="utilisation-jupyterbook"></span><h3>Utilisation Jupyter-Book<a class="headerlink" href="#utilisation-jupyter-book" title="Link to this heading">#</a></h3>
 <p>Pour utiliser jupyter-book vous allez utiliser la ligne de commande, c’est comme ça que ça marche, même si vous avez installer jupyter-book avec le GUI de Anaconda.</p>
 <p>Jupyter-book suit un schemas pour créer le site, on ne peut pas lancer le build depuis n’importe où.</p>
-<a class="reference internal image-reference" href="_images/build-resources.png" id="build-resources"><img alt="_images/build-resources.png" class="align-center" id="build-resources" src="_images/build-resources.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/build-resources.png" id="build-resources"><img alt="_images/build-resources.png" class="align-center" id="build-resources" src="_images/build-resources.png" style="width: 600px;" />
+</a>
 <p>Dans l’image ci-dessus, on voit le dossier documentation-stage-meta (qui est le dossier qu’on clone depuis Github), les emplacements des fichiers et les sous-dossiers. Le dossier qui nous concerne le plus pour lancer jupyter-book est <strong>src</strong>. Ce dossier contient les documents que vous allez modifiez pour le site et les photos. De coup c’est depuis ce dossier que vous pouvez lancer jupyter-book et créer le site.</p>
 <p>En utilisant comand cd<a class="footnote-reference brackets" href="#id8" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a> vous pouvez naviguez entre les dossiers. Quand vous êtes bien à l’emplacement dossier source, vous pouvez lancer cette commande:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>jupyter-book<span class="w"> </span>build<span class="w"> </span>.
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="_images/build-jupyterbook.gif" id="build-jupyterbook"><img alt="_images/build-jupyterbook.gif" class="align-center" id="build-jupyterbook" src="_images/build-jupyterbook.gif" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/build-jupyterbook.gif" id="build-jupyterbook"><img alt="_images/build-jupyterbook.gif" class="align-center" id="build-jupyterbook" src="_images/build-jupyterbook.gif" style="width: 600px;" />
+</a>
 <p>Quand il a bien généré le site, il vous donne un lien vers le site en local, vous pouvez le copiez dans votre navigateur web pour voir les modifications que vous avez effectué dans vos documentations.</p>
 <!-- Refrences dans footer -->
 <hr class="footnotes docutils" />
@@ -626,8 +654,7 @@ installation proprement, suivez en ordre:</p>
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -702,8 +729,8 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
