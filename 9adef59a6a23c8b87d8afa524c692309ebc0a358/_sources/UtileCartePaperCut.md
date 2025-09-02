@@ -25,7 +25,7 @@ nouvelles cartes”.
 :align: center
 ```
 
-### 1
+### 
 
 Sur la page “Importer Numéros de carte”, il faut juste choisir le csv du script qui
 s’appelle “importFile.csv” et télécharger.
@@ -53,7 +53,7 @@ création et un numéro aléatoire.
 :align: center
 ```
 
-### 2
+### 
 
 # Détail du script
 
