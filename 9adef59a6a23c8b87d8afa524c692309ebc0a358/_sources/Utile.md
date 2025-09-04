@@ -29,3 +29,5 @@ Description:	Mise à jour de la page de la section Utile
 21. [La marche à suivre pour Réinitialisation Authentification Multi-Facteur - Procédure](/UtileMFA.md)
 22. [La marche à suivre pour la Préparation des CO](/UtilePreparationCO.md)
 22. [Documentation et démarche pour la configuration RasspberryPI](/UtileRasspberryPI.md)
+23. [Documentation Ajout application sur Jamf Self Service](/UtileSelfService.md)
+24. [Documentation sur la création de carte sur PaperCut](/UtileCartePaperCut.md)
