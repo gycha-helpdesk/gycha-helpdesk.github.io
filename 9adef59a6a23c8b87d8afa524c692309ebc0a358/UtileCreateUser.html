@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Déploiement OS depuis Jamf &#8212; Documentation Technique Chamblandes</title>
+    <title>Documentation JAMF - Création d’un utilisateur local &#8212; Documentation Technique Chamblandes</title>
   
   
   
@@ -58,11 +58,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'JamfOSInstall';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'UtileCreateUser';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Recherche avancée" href="JamfRechercheAvance.html" />
-    <link rel="prev" title="Créer un profil avec Jamf" href="JamfCreateProfile.html" />
+    <link rel="next" title="Section MachineVirtuelle" href="VM-MachineVirtuelle.html" />
+    <link rel="prev" title="Les Cartes Papercut" href="UtileCartePaperCut.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -173,7 +173,7 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="Jamf.html">Section Jamf</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="Jamf.html">Section Jamf</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="JamfFirstConnection.html">Avant de commencer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="JamfImportantRules.html">Liste des règles jamf les plus utiles/importantes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="JamfEnroll.html">Comment enrôler un post dans Jamf</a></li>
@@ -182,7 +182,7 @@
 <li class="toctree-l2"><a class="reference internal" href="JamfIntelligentGroup.html">Créer un groupe intelligent Jamf</a></li>
 
 <li class="toctree-l2"><a class="reference internal" href="JamfCreateProfile.html">Créer un profil avec Jamf</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Déploiement OS depuis Jamf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JamfOSInstall.html">Déploiement OS depuis Jamf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="JamfRechercheAvance.html">Recherche avancée</a></li>
 <li class="toctree-l2"><a class="reference internal" href="JamfUpdateApplication.html">Mise à jour des applications dans Jamf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="JamfAutoLogout.html">Fermeture Automatique de la sesssion</a></li>
@@ -192,7 +192,7 @@
 <li class="toctree-l2"><a class="reference internal" href="JamAddAppiPad.html">Comment installer une application pour le iPad</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Utile.html">Section Utile</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Utile.html">Section Utile</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Utilemdp.html">Identifiants et mots de passe</a></li>
 
 <li class="toctree-l2"><a class="reference internal" href="UtileLiensUtiles.html">Liens Utiles</a></li>
@@ -250,7 +250,7 @@
 <li class="toctree-l2"><a class="reference internal" href="UtileCartePaperCut.html">Les Cartes Papercut</a></li>
 
 
-<li class="toctree-l2"><a class="reference internal" href="UtileCreateUser.html">Documentation JAMF - Création d’un utilisateur local</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Documentation JAMF - Création d’un utilisateur local</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="VM-MachineVirtuelle.html">Section MachineVirtuelle</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -333,7 +333,7 @@
       
       
       
-      <li><a href="_sources/JamfOSInstall.md" target="_blank"
+      <li><a href="_sources/UtileCreateUser.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -417,7 +417,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Déploiement OS depuis Jamf</h1>
+    <h1>Documentation JAMF - Création d’un utilisateur local</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -427,15 +427,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#copy-le-logiciel">Copy le logiciel</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jamf-regles">Jamf/Règles</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jamf-terminal">Jamf/Terminal</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#copier-le-package">Copier le package</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#effacer-le-systeme-et-le-reinstaller-du-zero">Effacer le système et le reinstaller du zéro</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-creer-un-utilisateur-local-via-jamf">Comment créer un utilisateur local via JAMF ?</a></li>
 </ul>
             </nav>
         </div>
@@ -448,80 +440,35 @@ document.write(`
                 <article class="bd-article">
                   
   <!--
-Author: 	Noor Mohammad Alizadeh
-Date:		September 2021
-Description:	How to deploy packages using Jamf
+Author:         Mussa AL Hussein
+Date:           09.09.2025
+Description:    Ajout utilisateur local via JAMF
 -->
-<section class="tex2jax_ignore mathjax_ignore" id="deploiement-os-depuis-jamf">
-<h1>Déploiement OS depuis Jamf<a class="headerlink" href="#deploiement-os-depuis-jamf" title="Link to this heading">#</a></h1>
-<section id="copy-le-logiciel">
-<h2>Copy le logiciel<a class="headerlink" href="#copy-le-logiciel" title="Link to this heading">#</a></h2>
-<p>Pour déploiement OSX sur une machine, il y a deux étaps principeaux, il nous faut
-premièrement copier le package depuis le serveur dans le dossier application de la machine en local, ensuite nous pouvons le lancer pour reinstaller le système.</p>
-<p>Tous ces différents règle se trouve dans Jamf.</p>
-<section id="jamf-regles">
-<h3>Jamf/Règles<a class="headerlink" href="#jamf-regles" title="Link to this heading">#</a></h3>
-<p>Allez sur l’onglet ordinateur de Jamf et ensuite “Règles”.
-Ici vous pouvez faire une recherche pour trouver une règle qui nous aide à copier le package OS depuis le serveur.
-Si vous ecrivez “copy” dans le champ de recherche il vous affiche les differents packages d’OS.</p>
-<a class="reference internal image-reference" href="_images/copyOS.png" id="copyosrule"><img alt="_images/copyOS.png" class="align-center" id="copyosrule" src="_images/copyOS.png" style="width: 600px;" />
+<section class="tex2jax_ignore mathjax_ignore" id="documentation-jamf-creation-dun-utilisateur-local">
+<h1>Documentation JAMF - Création d’un utilisateur local<a class="headerlink" href="#documentation-jamf-creation-dun-utilisateur-local" title="Link to this heading">#</a></h1>
+<section id="comment-creer-un-utilisateur-local-via-jamf">
+<h2>Comment créer un utilisateur local via JAMF ?<a class="headerlink" href="#comment-creer-un-utilisateur-local-via-jamf" title="Link to this heading">#</a></h2>
+<p>Pour créer un utilisateur local via Jamf, il faut se connecter au dashboard :<a class="reference external" href="https://jamf.dgep.edu-vaud.ch:8443/">https://jamf.dgep.edu-vaud.ch:8443/</a> avec vos identifiants admin (<strong>a-xxxxx</strong>).</p>
+<a class="reference internal image-reference" href="_images/jamfRuleDashboard.png" id="jamfruledashboard"><img alt="_images/jamfRuleDashboard.png" class="align-center" id="jamfruledashboard" src="_images/jamfRuleDashboard.png" style="width: 500px;" />
 </a>
-<blockquote>
-<div><p>La version de l’OS (HighSierra, BigSur, etc…) va dependre de la machine sur laquelle vous vous voulez faire cette installation.
-Pour trouver des infos sur l’OS de la machine vous pouvez maintenant cliquer sur l’icône d’Apple  au coin de votre monitor et choisir “à propos de ce Mac”.</p>
-</div></blockquote>
-<p>Quand vous êtes sur de la version de l’OS que vous allez installer, vous pouvez selectionner n’import quelle règle et regarder ses configurations.
-Ici vous voyez un champ qui s’appelle “Evenement personalisé” la valeur de ce champ permet de declancher l’execution de cette règle.</p>
-<a class="reference internal image-reference" href="_images/copyOSgeneral.png" id="copyosgeneral"><img alt="_images/copyOSgeneral.png" class="align-center" id="copyosgeneral" src="_images/copyOSgeneral.png" style="width: 750px;" />
+<hr class="docutils" />
+<p>Ensuite il faut aller sur Ordinateurs &gt; Règles</p>
+<a class="reference internal image-reference" href="_images/jamfRuleButton.png" id="jamfrulebutton"><img alt="_images/jamfRuleButton.png" class="align-center" id="jamfrulebutton" src="_images/jamfRuleButton.png" style="width: 500px;" />
 </a>
-<p>Ce processus est similaire entre les règles et on peut les appeler par leurs propres declancheurs.</p>
-</section>
-<section id="jamf-terminal">
-<span id="id1"></span><h3>Jamf/Terminal<a class="headerlink" href="#jamf-terminal" title="Link to this heading">#</a></h3>
-<section id="copier-le-package">
-<h4>Copier le package<a class="headerlink" href="#copier-le-package" title="Link to this heading">#</a></h4>
-<p>Nous pouvons maintenant passer à faire l’installation sur la machine client.
-Ovrez d’abord le Terminal de la machine, l’installation des packages depuis Jamf peut se faire en ligne de commande.</p>
-<a class="reference internal image-reference" href="_images/terminal.png" id="terminal"><img alt="_images/terminal.png" class="align-center" id="terminal" src="_images/terminal.png" style="width: 500px;" />
+<hr class="docutils" />
+<p>Et la vous verrez toutes les règles jamf du gymnase. Après il faut cliquer sur “Nouveau”</p>
+<a class="reference internal image-reference" href="_images/jamfNewRule.png" id="jamfnewrule"><img alt="_images/jamfNewRule.png" class="align-center" id="jamfnewrule" src="_images/jamfNewRule.png" style="width: 500px;" />
 </a>
-<p>Il nous faut d’abord copier le package depuis le serveur sur la machine client en local. \Ce-ci est la commande pour copier avec Jamf.</p>
-<div class="highlight-Shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>jamf<span class="w"> </span>policy<span class="w"> </span>-event<span class="w"> </span>copycatalina
-</pre></div>
-</div>
-<a class="reference internal image-reference" href="_images/terminalCopyOS.png" id="terminalcopyos"><img alt="_images/terminalCopyOS.png" class="align-center" id="terminalcopyos" src="_images/terminalCopyOS.png" style="width: 500px;" />
+<hr class="docutils" />
+<p>Dans la section « Option » dégilez jusqu’à « Compte locaux »</p>
+<a class="reference internal image-reference" href="_images/userlocal4.png" id="id1"><img alt="_images/userlocal4.png" class="align-center" id="id1" src="_images/userlocal4.png" style="width: 500px;" />
 </a>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<ul class="simple">
-<li><p><strong>sudo</strong>: il vous permet de lancer des commandes en tant qu’administrateur, dans notre cas pour lancer la commande “jamf” il faut un droit d’administrateur.</p></li>
-<li><p><strong>jamf</strong>: la commande que permet de lancer le jamf-CLI (Commande Line Interface) et donner des tâches spéicifique à Jamf</p></li>
-<li><p><strong>policy</strong>: cette commande dit à jamf de contôler les differents stratégie dans le serveur de logiciel Jamf (JSS - Jamf Software Server)</p></li>
-<li><p><strong>event</strong>: cette une option/flag qui modifie le fonctionnement d’une commande. Ici notre flag appelle un declancheur pour notre package. Il dit à commande “policy” de prendre l’evenement “copycatalina” dans JSS.</p></li>
-<li><p><strong>declancheur</strong>: c’est un evenement personalisé qu’on avait vu dans les paramètres de cette règle</p></li>
-</ul>
-</div>
-</br>
-<p>Quand le package est copié, on peut le voir dans le dossier /Applications, on peut maintenant passer à l’étap suivant.</p>
-<a class="reference internal image-reference" href="_images/terminalCopyOS_2.png" id="copyosinapps"><img alt="_images/terminalCopyOS_2.png" class="align-center" id="copyosinapps" src="_images/terminalCopyOS_2.png" style="width: 750px;" />
+<hr class="docutils" />
+<p>Ensuite pour créer un utilisateur, il faut cocher « Créer un nouveau compte »
+Il y a aussi d’autre paramètre comme « Réinitialiser le mot de passe d’un compte », « Supprimer un compte », je vous laisse découvrir par vous-même.</p>
+<a class="reference internal image-reference" href="_images/userlocal5.png" id="id2"><img alt="_images/userlocal5.png" class="align-center" id="id2" src="_images/userlocal5.png" style="width: 500px;" />
 </a>
-</section>
-<section id="effacer-le-systeme-et-le-reinstaller-du-zero">
-<h4>Effacer le système et le reinstaller du zéro<a class="headerlink" href="#effacer-le-systeme-et-le-reinstaller-du-zero" title="Link to this heading">#</a></h4>
-<p>Toujours sur la machine client, ouvrez le Terminal. Cette fois pour effacer l’OS et le reinstaller de nouveau. Cette commande efface le système entièrement ensuite install le package OS qu’on vient de copier dans le répertoire /Applications.</p>
-<div class="highlight-Shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>jamf<span class="w"> </span>policy<span class="w"> </span>-event<span class="w"> </span>eraseinstallcatalina
-</pre></div>
-</div>
-<a class="reference internal image-reference" href="_images/terminalEraseInstallCatalina.png" id="terminaleraseinstallcatalina"><img alt="_images/terminalEraseInstallCatalina.png" class="align-center" id="terminaleraseinstallcatalina" src="_images/terminalEraseInstallCatalina.png" style="width: 500px;" />
-</a>
-<p>Comme on voit dans la photo, le declancheur pour effacer et installer est “eraseInstallCatalina”.
-Quand cette commande est lancée on peut le laisser, il fera ce procès tout seul.</p>
-<p>Après l’installation il rest que les configuration de la langue et region à faire.</p>
-<!---
-[1]
-[2]
---->
-</section>
-</section>
+<hr class="docutils" />
 </section>
 </section>
 
@@ -556,20 +503,20 @@ Quand cette commande est lancée on peut le laisser, il fera ce procès tout seu
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="JamfCreateProfile.html"
+       href="UtileCartePaperCut.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Créer un profil avec Jamf</p>
+        <p class="prev-next-title">Les Cartes Papercut</p>
       </div>
     </a>
     <a class="right-next"
-       href="JamfRechercheAvance.html"
+       href="VM-MachineVirtuelle.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Recherche avancée</p>
+        <p class="prev-next-title">Section MachineVirtuelle</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -589,15 +536,7 @@ Quand cette commande est lancée on peut le laisser, il fera ce procès tout seu
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#copy-le-logiciel">Copy le logiciel</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jamf-regles">Jamf/Règles</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jamf-terminal">Jamf/Terminal</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#copier-le-package">Copier le package</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#effacer-le-systeme-et-le-reinstaller-du-zero">Effacer le système et le reinstaller du zéro</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-creer-un-utilisateur-local-via-jamf">Comment créer un utilisateur local via JAMF ?</a></li>
 </ul>
   </nav></div>
 

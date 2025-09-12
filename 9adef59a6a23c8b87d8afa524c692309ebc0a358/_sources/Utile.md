@@ -31,3 +31,4 @@ Description:	Mise à jour de la page de la section Utile
 22. [Documentation et démarche pour la configuration RasspberryPI](/UtileRasspberryPI.md)
 23. [Documentation Ajout application sur Jamf Self Service](/UtileSelfService.md)
 24. [Documentation sur la création de carte sur PaperCut](/UtileCartePaperCut.md)
+25. [Documentation sur la création d'utilisateur local sur JAMF](/UtileCreateUser.md)
