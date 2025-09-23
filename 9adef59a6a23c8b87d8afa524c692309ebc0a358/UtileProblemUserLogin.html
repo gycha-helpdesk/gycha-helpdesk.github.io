@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Glpi &#8212; Documentation Technique Chamblandes</title>
+    <title>Problème « Vous ne pouvez pas vous connecter au compte utilisateur « John Cina » pour le moment » &#8212; Documentation Technique Chamblandes</title>
   
   
   
@@ -58,11 +58,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'UtileGlpi';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'UtileProblemUserLogin';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Anaconda" href="UtileAnaconda.html" />
-    <link rel="prev" title="Hermes II" href="Utilehermes.html" />
+    <link rel="next" title="Section MachineVirtuelle" href="VM-MachineVirtuelle.html" />
+    <link rel="prev" title="Documentation JAMF - Création d’un utilisateur local" href="UtileCreateUser.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -224,7 +224,7 @@
 
 
 <li class="toctree-l2"><a class="reference internal" href="Utilehermes.html">Hermes II</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Glpi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UtileGlpi.html">Glpi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileAnaconda.html">Anaconda</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileWindowsServer.html">Windows Server</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileAdobe.html">Adobe</a></li>
@@ -251,7 +251,7 @@
 
 
 <li class="toctree-l2"><a class="reference internal" href="UtileCreateUser.html">Documentation JAMF - Création d’un utilisateur local</a></li>
-<li class="toctree-l2"><a class="reference internal" href="UtileProblemUserLogin.html">Problème « Vous ne pouvez pas vous connecter au compte utilisateur « John Cina » pour le moment »</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Problème « Vous ne pouvez pas vous connecter au compte utilisateur « John Cina » pour le moment »</a></li>
 
 </ul>
 </details></li>
@@ -335,7 +335,7 @@
       
       
       
-      <li><a href="_sources/UtileGlpi.md" target="_blank"
+      <li><a href="_sources/UtileProblemUserLogin.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -419,7 +419,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Glpi</h1>
+    <h1>Problème « Vous ne pouvez pas vous connecter au compte utilisateur « John Cina » pour le moment »</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -429,12 +429,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#authentification">Authentification</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-des-tickets">Gestion des tickets</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#liste-des-tickets">Liste des tickets</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Problème « Vous ne pouvez pas vous connecter au compte utilisateur « John Cina » pour le moment »</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#si-vous-rencontrez-ce-probleme-il-faut">Si vous rencontrez ce problème, il faut :</a></li>
 </ul>
-</li>
-</ul>
+
             </nav>
         </div>
     </div>
@@ -446,51 +444,30 @@ document.write(`
                 <article class="bd-article">
                   
   <!--
-Author:		    NoorMohammad Alizadeh
-Date:		    November 2021
-Description:	Start using Glpi IT management
+Author:         Mussa AL Hussein
+Date:           23.09.2025
+Description:    Problème login"Vous ne pouvez ps vous connecter en ce moment", comment résoudre ce problème ? 
 -->
-<!-- reference pour (GLPI)= dans la page LienUtile -->
-<section class="tex2jax_ignore mathjax_ignore" id="glpi">
-<span id="id1"></span><h1>Glpi<a class="headerlink" href="#glpi" title="Link to this heading">#</a></h1>
-<blockquote>
-<div><p>Glpi est une application WEB qui aide les entreprises à gérer leur système d’information.
-Cette solution est capable de construire un inventaire de toutes les ressources de la société
-et de réaliser la gestion des tâches administratives et financières.</p>
-<p>(source: Wikipedia)</p>
-</div></blockquote>
-<p>Ici à Gycha, nous utilisons ce service pour la gestion des tickets et des demandes qu’on recevoi par mail.</p>
-<section id="authentification">
-<h2>Authentification<a class="headerlink" href="#authentification" title="Link to this heading">#</a></h2>
-<p>Le lien pour accèder à l’interface de Glpi est:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">servicedesk</span><span class="o">.</span><span class="n">edu</span><span class="o">-</span><span class="n">vaud</span><span class="o">.</span><span class="n">ch</span><span class="o">/</span>
-</pre></div>
-</div>
-<p>Ce lien vous dirige vers la page login du Glpi.
-Il faut sélectionner “Connexion standard”, puis vous pouvez vous logger avec votre identifiant et mot de passe eduvaud.</p>
-<a class="reference internal image-reference" href="_images/glpi-login.png" id="glpi-login"><img alt="_images/glpi-login.png" class="align-center" id="glpi-login" src="_images/glpi-login.png" style="width: 500px;" />
-</a>
-</br>
-<a class="reference internal image-reference" href="_images/glpi-login2.png" id="glpi-login2"><img alt="_images/glpi-login2.png" class="align-center" id="glpi-login2" src="_images/glpi-login2.png" style="width: 500px;" />
-</a>
+<section class="tex2jax_ignore mathjax_ignore" id="probleme-vous-ne-pouvez-pas-vous-connecter-au-compte-utilisateur-john-cina-pour-le-moment">
+<h1>Problème « Vous ne pouvez pas vous connecter au compte utilisateur « John Cina » pour le moment »<a class="headerlink" href="#probleme-vous-ne-pouvez-pas-vous-connecter-au-compte-utilisateur-john-cina-pour-le-moment" title="Link to this heading">#</a></h1>
+<p>Ce problème arrive souvent car l’élève est inscrite sur 2 gymnases au même temps dans l’AD.</p>
+<hr class="docutils" />
+<br/>
 </section>
-<section id="gestion-des-tickets">
-<h2>Gestion des tickets<a class="headerlink" href="#gestion-des-tickets" title="Link to this heading">#</a></h2>
-<p>Si vous vous authentifiez correctement, vous entrez à la page d’accueil du Glpi.
-Depuis ici, vous pouvez allez vers la section des Tickets pour les gérer.</p>
-<a class="reference internal image-reference" href="_images/glpi-tickets.png" id="glpi-tickets"><img alt="_images/glpi-tickets.png" class="align-center" id="glpi-tickets" src="_images/glpi-tickets.png" style="width: 500px;" />
+<section class="tex2jax_ignore mathjax_ignore" id="si-vous-rencontrez-ce-probleme-il-faut">
+<h1>Si vous rencontrez ce problème, il faut :<a class="headerlink" href="#si-vous-rencontrez-ce-probleme-il-faut" title="Link to this heading">#</a></h1>
+<a class="reference internal image-reference" href="_images/Userlogin1.png" id="userlogin"><img alt="_images/Userlogin1.png" class="align-center" id="userlogin" src="_images/Userlogin1.png" style="width: 800px;" />
 </a>
-</br>
-<a class="reference internal image-reference" href="_images/glpi-tickets-2.png" id="glpi-tickets-2"><img alt="_images/glpi-tickets-2.png" class="align-center" id="glpi-tickets-2" src="_images/glpi-tickets-2.png" style="width: 500px;" />
+<ol class="arabic simple">
+<li><p>Se connecter en Adminl sur la machine</p></li>
+<li><p>Ouvrire « Utilitaire d’annuaire »  et double cliquer sur « Active Directory »</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/Userlogin2.png" id="id1"><img alt="_images/Userlogin2.png" class="align-center" id="id1" src="_images/Userlogin2.png" style="width: 800px;" />
 </a>
-<section id="liste-des-tickets">
-<h3>Liste des tickets<a class="headerlink" href="#liste-des-tickets" title="Link to this heading">#</a></h3>
-<p>Liste des cas créés par Glpi (soit depuis un email envoyé à la boîte mail de Glpi soit le ticket est
-créé depuis <strong>interface de Glpi</strong>).</p>
-<a class="reference internal image-reference" href="_images/glpi-tickets-2.png" id="id2"><img alt="_images/glpi-tickets-2.png" class="align-center" id="id2" src="_images/glpi-tickets-2.png" style="width: 500px;" />
+<hr class="docutils" />
+<p>Il faut décocher l’option « Utiliser le chemin UNC depuis Active Directory »</p>
+<a class="reference internal image-reference" href="_images/Userlogin3.png" id="id2"><img alt="_images/Userlogin3.png" class="align-center" id="id2" src="_images/Userlogin3.png" style="width: 800px;" />
 </a>
-</section>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -524,20 +501,20 @@ créé depuis <strong>interface de Glpi</strong>).</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Utilehermes.html"
+       href="UtileCreateUser.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Hermes II</p>
+        <p class="prev-next-title">Documentation JAMF - Création d’un utilisateur local</p>
       </div>
     </a>
     <a class="right-next"
-       href="UtileAnaconda.html"
+       href="VM-MachineVirtuelle.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Anaconda</p>
+        <p class="prev-next-title">Section MachineVirtuelle</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -557,12 +534,10 @@ créé depuis <strong>interface de Glpi</strong>).</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#authentification">Authentification</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-des-tickets">Gestion des tickets</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#liste-des-tickets">Liste des tickets</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Problème « Vous ne pouvez pas vous connecter au compte utilisateur « John Cina » pour le moment »</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#si-vous-rencontrez-ce-probleme-il-faut">Si vous rencontrez ce problème, il faut :</a></li>
 </ul>
-</li>
-</ul>
+
   </nav></div>
 
 </div></div>
