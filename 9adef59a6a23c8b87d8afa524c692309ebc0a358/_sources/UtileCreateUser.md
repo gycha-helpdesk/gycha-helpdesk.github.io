@@ -1,15 +1,22 @@
+
 <!--
-Author:         Mussa AL Hussein
-Date:           09.09.2025
-Description:    Ajout utilisateur local via JAMF
+Auteur : Mussa AL Hussein
+Date : 09.09.2025
+Description : Ajout d’un utilisateur local via JAMF
 -->
 
-# Documentation JAMF - Création d’un utilisateur local
+
+# Documentation JAMF — Création d’un utilisateur local
 
 ## Comment créer un utilisateur local via JAMF ?
 
-Pour créer un utilisateur local via Jamf, il faut se connecter au dashboard :[https://jamf.dgep.edu-vaud.ch:8443/](https://jamf.dgep.edu-vaud.ch:8443/) avec vos identifiants admin (**a-xxxxx**).
+Voici les étapes pour ajouter un utilisateur local sur un Mac via JAMF :
 
+---
+
+### 1. Connexion au Dashboard JAMF
+
+Connectez-vous au dashboard : [https://jamf.dgep.edu-vaud.ch:8443/](https://jamf.dgep.edu-vaud.ch:8443/) avec vos identifiants administrateur (**a-xxxxx**).
 
 ```{image} images/jamfRuleDashboard.png
 :width: 500px
@@ -18,39 +25,65 @@ Pour créer un utilisateur local via Jamf, il faut se connecter au dashboard :[h
 ```
 
 ---
-  Ensuite il faut aller sur Ordinateurs > Règles
+
+### 2. Accéder aux règles
+
+Allez dans le menu : **Ordinateurs > Règles**
 
 ```{image} images/jamfRuleButton.png
 :width: 500px
 :name: jamfRuleButton
 :align: center
 ```
+
 ---
-Et la vous verrez toutes les règles jamf du gymnase. Après il faut cliquer sur "Nouveau"
+
+### 3. Créer une nouvelle règle
+
+Vous verrez la liste des règles JAMF du gymnase. Cliquez sur **Nouveau**.
 
 ```{image} images/jamfNewRule.png
 :width: 500px
 :name: jamfNewRule
 :align: center
 ```
+
 ---
 
-Dans la section « Option » dégilez jusqu’à « Compte locaux » 
+### 4. Ajouter un compte local
+
+Dans la section « Options », faites défiler jusqu’à **Comptes locaux**.
+
 ```{image} images/userlocal4.png
 :width: 500px
-:name: jamfNewRule
+:name: userlocal4
 :align: center
 ```
 
 ---
 
-Ensuite pour créer un utilisateur, il faut cocher « Créer un nouveau compte » 
-Il y a aussi d’autre paramètre comme « Réinitialiser le mot de passe d’un compte », « Supprimer un compte », je vous laisse découvrir par vous-même.
+### 5. Créer l’utilisateur
+
+Cochez **Créer un nouveau compte**.
+
+Vous pouvez aussi :
+- Réinitialiser le mot de passe d’un compte
+- Supprimer un compte
+
+N’hésitez pas à explorer les autres paramètres selon vos besoins.
 
 ```{image} images/userlocal5.png
 :width: 500px
-:name: jamfNewRule
+:name: userlocal5
 :align: center
 ```
 
 ---
+
+## Conseils
+
+- Vérifiez que le nom d’utilisateur respecte la convention de votre établissement.
+- Attribuez un mot de passe sécurisé.
+- Testez la connexion du nouvel utilisateur après la création.
+
+Pour toute question, contactez le support informatique.

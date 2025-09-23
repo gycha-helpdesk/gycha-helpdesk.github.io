@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Documentation JAMF - Création d’un utilisateur local &#8212; Documentation Technique Chamblandes</title>
+    <title>Documentation JAMF — Création d’un utilisateur local &#8212; Documentation Technique Chamblandes</title>
   
   
   
@@ -250,7 +250,7 @@
 <li class="toctree-l2"><a class="reference internal" href="UtileCartePaperCut.html">Les Cartes Papercut</a></li>
 
 
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Documentation JAMF - Création d’un utilisateur local</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Documentation JAMF — Création d’un utilisateur local</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileProblemUserLogin.html">Problème « Vous ne pouvez pas vous connecter au compte utilisateur pour le moment »</a></li>
 </ul>
 </details></li>
@@ -418,7 +418,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Documentation JAMF - Création d’un utilisateur local</h1>
+    <h1>Documentation JAMF — Création d’un utilisateur local</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -428,7 +428,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-creer-un-utilisateur-local-via-jamf">Comment créer un utilisateur local via JAMF ?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-creer-un-utilisateur-local-via-jamf">Comment créer un utilisateur local via JAMF ?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connexion-au-dashboard-jamf">1. Connexion au Dashboard JAMF</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#acceder-aux-regles">2. Accéder aux règles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creer-une-nouvelle-regle">3. Créer une nouvelle règle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ajouter-un-compte-local">4. Ajouter un compte local</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creer-lutilisateur">5. Créer l’utilisateur</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conseils">Conseils</a></li>
 </ul>
             </nav>
         </div>
@@ -441,35 +449,66 @@ document.write(`
                 <article class="bd-article">
                   
   <!--
-Author:         Mussa AL Hussein
-Date:           09.09.2025
-Description:    Ajout utilisateur local via JAMF
+Auteur : Mussa AL Hussein
+Date : 09.09.2025
+Description : Ajout d’un utilisateur local via JAMF
 -->
 <section class="tex2jax_ignore mathjax_ignore" id="documentation-jamf-creation-dun-utilisateur-local">
-<h1>Documentation JAMF - Création d’un utilisateur local<a class="headerlink" href="#documentation-jamf-creation-dun-utilisateur-local" title="Link to this heading">#</a></h1>
+<h1>Documentation JAMF — Création d’un utilisateur local<a class="headerlink" href="#documentation-jamf-creation-dun-utilisateur-local" title="Link to this heading">#</a></h1>
 <section id="comment-creer-un-utilisateur-local-via-jamf">
 <h2>Comment créer un utilisateur local via JAMF ?<a class="headerlink" href="#comment-creer-un-utilisateur-local-via-jamf" title="Link to this heading">#</a></h2>
-<p>Pour créer un utilisateur local via Jamf, il faut se connecter au dashboard :<a class="reference external" href="https://jamf.dgep.edu-vaud.ch:8443/">https://jamf.dgep.edu-vaud.ch:8443/</a> avec vos identifiants admin (<strong>a-xxxxx</strong>).</p>
+<p>Voici les étapes pour ajouter un utilisateur local sur un Mac via JAMF :</p>
+<hr class="docutils" />
+<section id="connexion-au-dashboard-jamf">
+<h3>1. Connexion au Dashboard JAMF<a class="headerlink" href="#connexion-au-dashboard-jamf" title="Link to this heading">#</a></h3>
+<p>Connectez-vous au dashboard : <a class="reference external" href="https://jamf.dgep.edu-vaud.ch:8443/">https://jamf.dgep.edu-vaud.ch:8443/</a> avec vos identifiants administrateur (<strong>a-xxxxx</strong>).</p>
 <a class="reference internal image-reference" href="_images/jamfRuleDashboard.png" id="jamfruledashboard"><img alt="_images/jamfRuleDashboard.png" class="align-center" id="jamfruledashboard" src="_images/jamfRuleDashboard.png" style="width: 500px;" />
 </a>
+</section>
 <hr class="docutils" />
-<p>Ensuite il faut aller sur Ordinateurs &gt; Règles</p>
+<section id="acceder-aux-regles">
+<h3>2. Accéder aux règles<a class="headerlink" href="#acceder-aux-regles" title="Link to this heading">#</a></h3>
+<p>Allez dans le menu : <strong>Ordinateurs &gt; Règles</strong></p>
 <a class="reference internal image-reference" href="_images/jamfRuleButton.png" id="jamfrulebutton"><img alt="_images/jamfRuleButton.png" class="align-center" id="jamfrulebutton" src="_images/jamfRuleButton.png" style="width: 500px;" />
 </a>
+</section>
 <hr class="docutils" />
-<p>Et la vous verrez toutes les règles jamf du gymnase. Après il faut cliquer sur “Nouveau”</p>
+<section id="creer-une-nouvelle-regle">
+<h3>3. Créer une nouvelle règle<a class="headerlink" href="#creer-une-nouvelle-regle" title="Link to this heading">#</a></h3>
+<p>Vous verrez la liste des règles JAMF du gymnase. Cliquez sur <strong>Nouveau</strong>.</p>
 <a class="reference internal image-reference" href="_images/jamfNewRule.png" id="jamfnewrule"><img alt="_images/jamfNewRule.png" class="align-center" id="jamfnewrule" src="_images/jamfNewRule.png" style="width: 500px;" />
 </a>
+</section>
 <hr class="docutils" />
-<p>Dans la section « Option » dégilez jusqu’à « Compte locaux »</p>
-<a class="reference internal image-reference" href="_images/userlocal4.png" id="id1"><img alt="_images/userlocal4.png" class="align-center" id="id1" src="_images/userlocal4.png" style="width: 500px;" />
+<section id="ajouter-un-compte-local">
+<h3>4. Ajouter un compte local<a class="headerlink" href="#ajouter-un-compte-local" title="Link to this heading">#</a></h3>
+<p>Dans la section « Options », faites défiler jusqu’à <strong>Comptes locaux</strong>.</p>
+<a class="reference internal image-reference" href="_images/userlocal4.png" id="userlocal4"><img alt="_images/userlocal4.png" class="align-center" id="userlocal4" src="_images/userlocal4.png" style="width: 500px;" />
 </a>
+</section>
 <hr class="docutils" />
-<p>Ensuite pour créer un utilisateur, il faut cocher « Créer un nouveau compte »
-Il y a aussi d’autre paramètre comme « Réinitialiser le mot de passe d’un compte », « Supprimer un compte », je vous laisse découvrir par vous-même.</p>
-<a class="reference internal image-reference" href="_images/userlocal5.png" id="id2"><img alt="_images/userlocal5.png" class="align-center" id="id2" src="_images/userlocal5.png" style="width: 500px;" />
+<section id="creer-lutilisateur">
+<h3>5. Créer l’utilisateur<a class="headerlink" href="#creer-lutilisateur" title="Link to this heading">#</a></h3>
+<p>Cochez <strong>Créer un nouveau compte</strong>.</p>
+<p>Vous pouvez aussi :</p>
+<ul class="simple">
+<li><p>Réinitialiser le mot de passe d’un compte</p></li>
+<li><p>Supprimer un compte</p></li>
+</ul>
+<p>N’hésitez pas à explorer les autres paramètres selon vos besoins.</p>
+<a class="reference internal image-reference" href="_images/userlocal5.png" id="userlocal5"><img alt="_images/userlocal5.png" class="align-center" id="userlocal5" src="_images/userlocal5.png" style="width: 500px;" />
 </a>
+</section>
+</section>
 <hr class="docutils" />
+<section id="conseils">
+<h2>Conseils<a class="headerlink" href="#conseils" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Vérifiez que le nom d’utilisateur respecte la convention de votre établissement.</p></li>
+<li><p>Attribuez un mot de passe sécurisé.</p></li>
+<li><p>Testez la connexion du nouvel utilisateur après la création.</p></li>
+</ul>
+<p>Pour toute question, contactez le support informatique.</p>
 </section>
 </section>
 
@@ -537,7 +576,15 @@ Il y a aussi d’autre paramètre comme « Réinitialiser le mot de passe d’un
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-creer-un-utilisateur-local-via-jamf">Comment créer un utilisateur local via JAMF ?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-creer-un-utilisateur-local-via-jamf">Comment créer un utilisateur local via JAMF ?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connexion-au-dashboard-jamf">1. Connexion au Dashboard JAMF</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#acceder-aux-regles">2. Accéder aux règles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creer-une-nouvelle-regle">3. Créer une nouvelle règle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ajouter-un-compte-local">4. Ajouter un compte local</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creer-lutilisateur">5. Créer l’utilisateur</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conseils">Conseils</a></li>
 </ul>
   </nav></div>
 
