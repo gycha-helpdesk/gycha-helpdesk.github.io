@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Documentation JAMF Self-Service &#8212; Documentation Technique Chamblandes</title>
+    <title>Documentation JAMF — Self Service &#8212; Documentation Technique Chamblandes</title>
   
   
   
@@ -246,7 +246,7 @@
 
 
 <li class="toctree-l2"><a class="reference internal" href="UtileRasspberryPI.html">Raspberry Pi : Affichage automatique de photos &amp; vidéos</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Documentation JAMF Self-Service</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Documentation JAMF — Self Service</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileCartePaperCut.html">Les Cartes Papercut</a></li>
 
 
@@ -418,7 +418,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Documentation JAMF Self-Service</h1>
+    <h1>Documentation JAMF — Self Service</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -428,11 +428,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-ajouter-une-application-dans-self-service">Comment ajouter une application dans Self-Service ?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#self-service">Self Service</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perimetre">Périmètre</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-ajouter-une-application-dans-self-service">Comment ajouter une application dans Self Service ?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connexion-au-dashboard-jamf">1. Connexion au Dashboard JAMF</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#acceder-aux-regles">2. Accéder aux règles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creer-une-nouvelle-regle">3. Créer une nouvelle règle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configurer-la-regle">4. Configurer la règle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rendre-la-regle-disponible-dans-self-service">5. Rendre la règle disponible dans Self Service</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definir-le-perimetre">6. Définir le périmètre</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resultat">Résultat</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conseils">Conseils</a></li>
 </ul>
             </nav>
         </div>
@@ -445,46 +451,77 @@ document.write(`
                 <article class="bd-article">
                   
   <!--
-Author:         Mussa AL Hussein
-Date:           01.09.2025
-Description:    Ajout application sur Self Service (JAMF)
+Auteur : Mussa AL Hussein
+Date : 01.09.2025
+Description : Ajout d’une application dans Self Service (JAMF)
 -->
 <section class="tex2jax_ignore mathjax_ignore" id="documentation-jamf-self-service">
-<h1>Documentation JAMF Self-Service<a class="headerlink" href="#documentation-jamf-self-service" title="Link to this heading">#</a></h1>
+<h1>Documentation JAMF — Self Service<a class="headerlink" href="#documentation-jamf-self-service" title="Link to this heading">#</a></h1>
 <section id="comment-ajouter-une-application-dans-self-service">
-<h2>Comment ajouter une application dans Self-Service ?<a class="headerlink" href="#comment-ajouter-une-application-dans-self-service" title="Link to this heading">#</a></h2>
-<p>Pour ajouter une application sur Jamf, il faut se connecter au dashboard :<br />
-👉 <a class="reference external" href="https://jamf.dgep.edu-vaud.ch:8443/">https://jamf.dgep.edu-vaud.ch:8443/</a> avec vos identifiants admin (<strong>a-xxxxx</strong>).</p>
+<h2>Comment ajouter une application dans Self Service ?<a class="headerlink" href="#comment-ajouter-une-application-dans-self-service" title="Link to this heading">#</a></h2>
+<p>Voici les étapes pour rendre une application disponible dans Self Service via JAMF :</p>
+<hr class="docutils" />
+<section id="connexion-au-dashboard-jamf">
+<h3>1. Connexion au Dashboard JAMF<a class="headerlink" href="#connexion-au-dashboard-jamf" title="Link to this heading">#</a></h3>
+<p>Connectez-vous au dashboard : <a class="reference external" href="https://jamf.dgep.edu-vaud.ch:8443/">https://jamf.dgep.edu-vaud.ch:8443/</a> avec vos identifiants administrateur (<strong>a-xxxxx</strong>).</p>
 <a class="reference internal image-reference" href="_images/jamfRuleDashboard.png" id="jamfruledashboard"><img alt="_images/jamfRuleDashboard.png" class="align-center" id="jamfruledashboard" src="_images/jamfRuleDashboard.png" style="width: 500px;" />
 </a>
+</section>
 <hr class="docutils" />
-<p>Ensuite il faut aller sur Ordinateurs &gt; Règles</p>
+<section id="acceder-aux-regles">
+<h3>2. Accéder aux règles<a class="headerlink" href="#acceder-aux-regles" title="Link to this heading">#</a></h3>
+<p>Allez dans le menu : <strong>Ordinateurs &gt; Règles</strong></p>
 <a class="reference internal image-reference" href="_images/jamfRuleButton.png" id="jamfrulebutton"><img alt="_images/jamfRuleButton.png" class="align-center" id="jamfrulebutton" src="_images/jamfRuleButton.png" style="width: 500px;" />
 </a>
+</section>
 <hr class="docutils" />
-<p>Et la vous verrez toutes les règles jamf du gymnase. Après il faut cliquer sur “Nouveau”</p>
+<section id="creer-une-nouvelle-regle">
+<h3>3. Créer une nouvelle règle<a class="headerlink" href="#creer-une-nouvelle-regle" title="Link to this heading">#</a></h3>
+<p>Vous verrez la liste des règles JAMF du gymnase. Cliquez sur <strong>Nouveau</strong>.</p>
 <a class="reference internal image-reference" href="_images/jamfNewRule.png" id="jamfnewrule"><img alt="_images/jamfNewRule.png" class="align-center" id="jamfnewrule" src="_images/jamfNewRule.png" style="width: 500px;" />
 </a>
+</section>
 <hr class="docutils" />
-<p>Vous arriverez sur cette page: Vous pouvez mettre un nom à la règle, y lier un paquet d’application (.pkg), lier un script (voir jamf admin), etc.. Je vous conseille de fouiller par vous même comme ça vous verrez tout ce que vous pouvez faire avec une règle jamf.</p>
+<section id="configurer-la-regle">
+<h3>4. Configurer la règle<a class="headerlink" href="#configurer-la-regle" title="Link to this heading">#</a></h3>
+<p>Sur la page de création, vous pouvez :</p>
+<ul class="simple">
+<li><p>Donner un nom à la règle</p></li>
+<li><p>Lier un paquet d’application (.pkg)</p></li>
+<li><p>Lier un script (voir JAMF Admin)</p></li>
+</ul>
+<p>N’hésitez pas à explorer les différentes options pour découvrir tout ce que vous pouvez faire avec une règle JAMF.</p>
 <a class="reference internal image-reference" href="_images/jamfRuleOptions.png" id="jamfruleoptions"><img alt="_images/jamfRuleOptions.png" class="align-center" id="jamfruleoptions" src="_images/jamfRuleOptions.png" style="width: 500px;" />
 </a>
 </section>
 <hr class="docutils" />
-<section id="self-service">
-<h2>Self Service<a class="headerlink" href="#self-service" title="Link to this heading">#</a></h2>
-<p>Ensuite dans l’onglet Self-Service, coche la case Rendre la règle disponbile dans Self-Service</p>
-<a class="reference internal image-reference" href="_images/selfservice5.png" id="jamfdeclencheurs"><img alt="_images/selfservice5.png" class="align-center" id="jamfdeclencheurs" src="_images/selfservice5.png" style="width: 500px;" />
+<section id="rendre-la-regle-disponible-dans-self-service">
+<h3>5. Rendre la règle disponible dans Self Service<a class="headerlink" href="#rendre-la-regle-disponible-dans-self-service" title="Link to this heading">#</a></h3>
+<p>Dans l’onglet <strong>Self Service</strong>, cochez la case :<br />
+<strong>Rendre la règle disponible dans Self Service</strong></p>
+<a class="reference internal image-reference" href="_images/selfservice5.png" id="selfservice5"><img alt="_images/selfservice5.png" class="align-center" id="selfservice5" src="_images/selfservice5.png" style="width: 500px;" />
 </a>
-<hr class="docutils" />
-<section id="perimetre">
-<h3>Périmètre<a class="headerlink" href="#perimetre" title="Link to this heading">#</a></h3>
-<p>Ensuite dans l’onglet « Périmètre » Il faut choisir pour qui vous voulez que cette application soit disponible.
-Dans mon cas, j’ai mis les salles d’informatique :</p>
-<a class="reference internal image-reference" href="_images/selfservice6.png" id="id1"><img alt="_images/selfservice6.png" class="align-center" id="id1" src="_images/selfservice6.png" style="width: 500px;" />
-</a>
-<p>Et ensuite votre application sera disponible dans Self- Servie.</p>
 </section>
+<hr class="docutils" />
+<section id="definir-le-perimetre">
+<h3>6. Définir le périmètre<a class="headerlink" href="#definir-le-perimetre" title="Link to this heading">#</a></h3>
+<p>Dans l’onglet <strong>Périmètre</strong>, choisissez les utilisateurs ou groupes qui auront accès à cette application.<br />
+Exemple : salles d’informatique.</p>
+<a class="reference internal image-reference" href="_images/selfservice6.png" id="selfservice6"><img alt="_images/selfservice6.png" class="align-center" id="selfservice6" src="_images/selfservice6.png" style="width: 500px;" />
+</a>
+</section>
+</section>
+<hr class="docutils" />
+<section id="resultat">
+<h2>Résultat<a class="headerlink" href="#resultat" title="Link to this heading">#</a></h2>
+<p>L’application sera alors disponible dans Self Service pour les utilisateurs concernés.</p>
+</section>
+<hr class="docutils" />
+<section id="conseils">
+<h2>Conseils<a class="headerlink" href="#conseils" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Testez l’installation via Self Service sur un poste avant un déploiement large.</p></li>
+</ul>
 </section>
 </section>
 
@@ -552,11 +589,17 @@ Dans mon cas, j’ai mis les salles d’informatique :</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-ajouter-une-application-dans-self-service">Comment ajouter une application dans Self-Service ?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#self-service">Self Service</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perimetre">Périmètre</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-ajouter-une-application-dans-self-service">Comment ajouter une application dans Self Service ?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connexion-au-dashboard-jamf">1. Connexion au Dashboard JAMF</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#acceder-aux-regles">2. Accéder aux règles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creer-une-nouvelle-regle">3. Créer une nouvelle règle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configurer-la-regle">4. Configurer la règle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rendre-la-regle-disponible-dans-self-service">5. Rendre la règle disponible dans Self Service</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definir-le-perimetre">6. Définir le périmètre</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resultat">Résultat</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conseils">Conseils</a></li>
 </ul>
   </nav></div>
 
