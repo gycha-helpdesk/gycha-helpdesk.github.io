@@ -82,8 +82,6 @@ N’hésitez pas à explorer les autres paramètres selon vos besoins.
 
 ## Conseils
 
-- Vérifiez que le nom d’utilisateur respecte la convention de votre établissement.
-- Attribuez un mot de passe sécurisé.
 - Testez la connexion du nouvel utilisateur après la création.
 
 Pour toute question, contactez le support informatique.
