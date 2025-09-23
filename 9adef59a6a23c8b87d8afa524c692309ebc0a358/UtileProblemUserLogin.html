@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Problème « Vous ne pouvez pas vous connecter au compte utilisateur « John Cina » pour le moment » &#8212; Documentation Technique Chamblandes</title>
+    <title>Problème « Vous ne pouvez pas vous connecter au compte utilisateur pour le moment » &#8212; Documentation Technique Chamblandes</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/myfile.css?v=5be3136b" />
@@ -251,8 +251,7 @@
 
 
 <li class="toctree-l2"><a class="reference internal" href="UtileCreateUser.html">Documentation JAMF - Création d’un utilisateur local</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Problème « Vous ne pouvez pas vous connecter au compte utilisateur « John Cina » pour le moment »</a></li>
-
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Problème « Vous ne pouvez pas vous connecter au compte utilisateur pour le moment »</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="VM-MachineVirtuelle.html">Section MachineVirtuelle</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -419,7 +418,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problème « Vous ne pouvez pas vous connecter au compte utilisateur « John Cina » pour le moment »</h1>
+    <h1>Problème « Vous ne pouvez pas vous connecter au compte utilisateur pour le moment »</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -429,10 +428,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Problème « Vous ne pouvez pas vous connecter au compte utilisateur « John Cina » pour le moment »</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#si-vous-rencontrez-ce-probleme-il-faut">Si vous rencontrez ce problème, il faut :</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etapes-de-resolution">Étapes de résolution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connexion-en-administrateur">1. Connexion en administrateur</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ouvrir-lutilitaire-dannuaire">2. Ouvrir l’Utilitaire d’annuaire</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modifier-les-options-ad">3. Modifier les options AD</a></li>
 </ul>
-
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conseils-supplementaires">Conseils supplémentaires</a></li>
+</ul>
             </nav>
         </div>
     </div>
@@ -444,30 +447,50 @@ document.write(`
                 <article class="bd-article">
                   
   <!--
-Author:         Mussa AL Hussein
-Date:           23.09.2025
-Description:    Problème login"Vous ne pouvez ps vous connecter en ce moment", comment résoudre ce problème ? 
+Auteur : Mussa AL Hussein
+Date : 23.09.2025
+Description : Problème de connexion « Vous ne pouvez pas vous connecter en ce moment » — comment résoudre ce problème ?
 -->
-<section class="tex2jax_ignore mathjax_ignore" id="probleme-vous-ne-pouvez-pas-vous-connecter-au-compte-utilisateur-john-cina-pour-le-moment">
-<h1>Problème « Vous ne pouvez pas vous connecter au compte utilisateur « John Cina » pour le moment »<a class="headerlink" href="#probleme-vous-ne-pouvez-pas-vous-connecter-au-compte-utilisateur-john-cina-pour-le-moment" title="Link to this heading">#</a></h1>
-<p>Ce problème arrive souvent car l’élève est inscrite sur 2 gymnases au même temps dans l’AD.</p>
-<hr class="docutils" />
-<br/>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="si-vous-rencontrez-ce-probleme-il-faut">
-<h1>Si vous rencontrez ce problème, il faut :<a class="headerlink" href="#si-vous-rencontrez-ce-probleme-il-faut" title="Link to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="probleme-vous-ne-pouvez-pas-vous-connecter-au-compte-utilisateur-pour-le-moment">
+<h1>Problème « Vous ne pouvez pas vous connecter au compte utilisateur pour le moment »<a class="headerlink" href="#probleme-vous-ne-pouvez-pas-vous-connecter-au-compte-utilisateur-pour-le-moment" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p><strong>Symptôme</strong> : Message d’erreur « Vous ne pouvez pas vous connecter au compte utilisateur “John Cina” pour le moment ».</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Cause fréquente</strong> : L’élève est inscrit dans deux gymnases en même temps dans l’Active Directory (AD).</p>
+</div></blockquote>
 <a class="reference internal image-reference" href="_images/Userlogin1.png" id="userlogin"><img alt="_images/Userlogin1.png" class="align-center" id="userlogin" src="_images/Userlogin1.png" style="width: 800px;" />
 </a>
-<ol class="arabic simple">
-<li><p>Se connecter en Adminl sur la machine</p></li>
-<li><p>Ouvrire « Utilitaire d’annuaire »  et double cliquer sur « Active Directory »</p></li>
-</ol>
+<hr class="docutils" />
+<section id="etapes-de-resolution">
+<h2>Étapes de résolution<a class="headerlink" href="#etapes-de-resolution" title="Link to this heading">#</a></h2>
+<section id="connexion-en-administrateur">
+<h3>1. Connexion en administrateur<a class="headerlink" href="#connexion-en-administrateur" title="Link to this heading">#</a></h3>
+<p>Connectez-vous sur la machine avec un compte administrateur.</p>
+</section>
+<section id="ouvrir-lutilitaire-dannuaire">
+<h3>2. Ouvrir l’Utilitaire d’annuaire<a class="headerlink" href="#ouvrir-lutilitaire-dannuaire" title="Link to this heading">#</a></h3>
+<p>Ouvrez « Utilitaire d’annuaire » puis double-cliquez sur « Active Directory ».</p>
 <a class="reference internal image-reference" href="_images/Userlogin2.png" id="id1"><img alt="_images/Userlogin2.png" class="align-center" id="id1" src="_images/Userlogin2.png" style="width: 800px;" />
 </a>
-<hr class="docutils" />
-<p>Il faut décocher l’option « Utiliser le chemin UNC depuis Active Directory »</p>
+</section>
+<section id="modifier-les-options-ad">
+<h3>3. Modifier les options AD<a class="headerlink" href="#modifier-les-options-ad" title="Link to this heading">#</a></h3>
+<p>Dans la fenêtre des options, décochez l’option :<br />
+<strong>« Utiliser le chemin UNC depuis Active Directory »</strong></p>
 <a class="reference internal image-reference" href="_images/Userlogin3.png" id="id2"><img alt="_images/Userlogin3.png" class="align-center" id="id2" src="_images/Userlogin3.png" style="width: 800px;" />
 </a>
+</section>
+</section>
+<hr class="docutils" />
+<section id="conseils-supplementaires">
+<h2>Conseils supplémentaires<a class="headerlink" href="#conseils-supplementaires" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Vérifiez que l’élève n’est inscrit que dans un seul gymnase dans l’AD.</p></li>
+<li><p>Redémarrez la machine après modification si le problème persiste.</p></li>
+</ul>
+<p>Si le problème n’est pas résolu, contactez le support informatique.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -534,10 +557,14 @@ Description:    Problème login"Vous ne pouvez ps vous connecter en ce moment", 
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Problème « Vous ne pouvez pas vous connecter au compte utilisateur « John Cina » pour le moment »</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#si-vous-rencontrez-ce-probleme-il-faut">Si vous rencontrez ce problème, il faut :</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etapes-de-resolution">Étapes de résolution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connexion-en-administrateur">1. Connexion en administrateur</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ouvrir-lutilitaire-dannuaire">2. Ouvrir l’Utilitaire d’annuaire</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modifier-les-options-ad">3. Modifier les options AD</a></li>
 </ul>
-
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conseils-supplementaires">Conseils supplémentaires</a></li>
+</ul>
   </nav></div>
 
 </div></div>
