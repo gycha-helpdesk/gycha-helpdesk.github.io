@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Comment enrôler un post dans Jamf &#8212; Documentation Technique Chamblandes</title>
+    <title>Documentation — Semaine Silence On Lit &#8212; Documentation Technique Chamblandes</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/myfile.css?v=5be3136b" />
@@ -58,11 +58,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'JamfEnroll';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'UtileSpo';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Créer une règle sur Jamf" href="JamfAddRule.html" />
-    <link rel="prev" title="Liste des règles jamf les plus utiles/importantes" href="JamfImportantRules.html" />
+    <link rel="next" title="Section MachineVirtuelle" href="VM-MachineVirtuelle.html" />
+    <link rel="prev" title="Problème « Vous ne pouvez pas vous connecter au compte utilisateur pour le moment »" href="UtileProblemUserLogin.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -173,10 +173,10 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="Jamf.html">Section Jamf</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="Jamf.html">Section Jamf</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="JamfFirstConnection.html">Avant de commencer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="JamfImportantRules.html">Liste des règles jamf les plus utiles/importantes</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Comment enrôler un post dans Jamf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JamfEnroll.html">Comment enrôler un post dans Jamf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="JamfAddRule.html">Créer une règle sur Jamf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="JamfAddPrinter.html">Créer une règle pour ajouter une imprimante dans Jamf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="JamfIntelligentGroup.html">Créer un groupe intelligent Jamf</a></li>
@@ -192,7 +192,7 @@
 <li class="toctree-l2"><a class="reference internal" href="JamAddAppiPad.html">Comment installer une application pour le iPad</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Utile.html">Section Utile</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Utile.html">Section Utile</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Utilemdp.html">Identifiants et mots de passe</a></li>
 
 <li class="toctree-l2"><a class="reference internal" href="UtileLiensUtiles.html">Liens Utiles</a></li>
@@ -252,7 +252,7 @@
 
 <li class="toctree-l2"><a class="reference internal" href="UtileCreateUser.html">Documentation JAMF — Création d’un utilisateur local</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileProblemUserLogin.html">Problème « Vous ne pouvez pas vous connecter au compte utilisateur pour le moment »</a></li>
-<li class="toctree-l2"><a class="reference internal" href="UtileSpo.html">Documentation — Semaine Silence On Lit</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Documentation — Semaine Silence On Lit</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="VM-MachineVirtuelle.html">Section MachineVirtuelle</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -335,7 +335,7 @@
       
       
       
-      <li><a href="_sources/JamfEnroll.md" target="_blank"
+      <li><a href="_sources/UtileSpo.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -419,7 +419,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Comment enrôler un post dans Jamf</h1>
+    <h1>Documentation — Semaine Silence On Lit</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -429,7 +429,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#se-connecter-a-dgep-enroll">Se connecter à DGEP Enroll</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organisation-des-dossiers">Organisation des dossiers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lancer-le-script">Lancer le script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fonctionnement">Fonctionnement</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-des-horaires-de-lecture">Configuration des horaires de lecture</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-des-dates-de-debut-et-de-fin">Configuration des dates de début et de fin</a></li>
 </ul>
             </nav>
         </div>
@@ -441,46 +445,89 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="comment-enroler-un-post-dans-jamf">
-<h1>Comment enrôler un post dans Jamf<a class="headerlink" href="#comment-enroler-un-post-dans-jamf" title="Link to this heading">#</a></h1>
-<p>il y a différent moyen d’enrôler un poste :</p>
-<ol class="arabic simple">
-<li><p>Cela ce fait automatiquement des le moment de l’installation (configuration du post du tout début)</p></li>
-<li><p>Ou grace a un site web (après configuration)</p></li>
-</ol>
-<p>Dans ce doc, je vous explique la deuxième méthode</p>
-<section id="se-connecter-a-dgep-enroll">
-<h2>Se connecter à DGEP Enroll<a class="headerlink" href="#se-connecter-a-dgep-enroll" title="Link to this heading">#</a></h2>
-<p>sur la machine que vous voulez enrôler, ouvrez un navigateur et notez dans l’URL cette adresse</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>https://aus000021.dgep.edu-vaud.ch:8443/enroll
+  <!--
+Auteur : [À compléter]
+Date : [À compléter]
+Description : Documentation d’utilisation du script Semaine Silence On Lit
+-->
+<section class="tex2jax_ignore mathjax_ignore" id="documentation-semaine-silence-on-lit">
+<h1>Documentation — Semaine Silence On Lit<a class="headerlink" href="#documentation-semaine-silence-on-lit" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p><strong>Objectif</strong> : Automatiser la lecture de fichiers audio (.mp3) à des horaires précis pour l’événement « Silence On Lit ».</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="organisation-des-dossiers">
+<h2>Organisation des dossiers<a class="headerlink" href="#organisation-des-dossiers" title="Link to this heading">#</a></h2>
+<p>Sur le bureau, il y a deux dossiers :</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">scripte_musique</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">musique</span></code></p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/spo1.png" id="spo"><img alt="_images/spo1.png" class="align-center" id="spo" src="_images/spo1.png" style="width: 800px;" />
+</a>
+</section>
+<hr class="docutils" />
+<section id="lancer-le-script">
+<h2>Lancer le script<a class="headerlink" href="#lancer-le-script" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>Ouvrez un terminal.</p></li>
+<li><p>Déplacez-vous dans le dossier du script :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/Desktop/scripte_musique
 </pre></div>
 </div>
-<p>n’oubliez pas le <strong>https</strong>
-</br></p>
-<a class="reference internal image-reference" href="_images/adresseURL.png" id="url"><img alt="_images/adresseURL.png" class="align-center" id="url" src="_images/adresseURL.png" style="width: 500px;" />
-</a>
-</br>
-pour vous identifier:
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head text-center"><p>Identifiant</p></th>
-<th class="head text-center"><p>Mot de passe</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-center"><p>jamfenroll</p></td>
-<td class="text-center"><p>DGEPEnroll2019</p></td>
-</tr>
-</tbody>
-</table>
+</li>
+<li><p>Lancez le script :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>music.py
+</pre></div>
 </div>
-<p>Après ne remplissez pas la première ligne et indiquer juste dans quel gymnase vous êtes “GYCHA”</p>
-<a class="reference internal image-reference" href="_images/enrollename.png" id="enroll"><img alt="_images/enrollename.png" class="align-center" id="enroll" src="_images/enrollename.png" style="width: 500px;" />
+</li>
+</ol>
+<a class="reference internal image-reference" href="_images/spo2.png" id="id1"><img alt="_images/spo2.png" class="align-center" id="id1" src="_images/spo2.png" style="width: 800px;" />
 </a>
-</br>
-En suite cliquer et télécharger le premier profils
-<p>⚠ <strong>Quand le profil est installé revenez sur la page pour installer les autres profiles restants.</strong></p>
-<p>Voilà vous l’avez enrôler.</p>
+</section>
+<hr class="docutils" />
+<section id="fonctionnement">
+<h2>Fonctionnement<a class="headerlink" href="#fonctionnement" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Les fichiers audio (.mp3) doivent être placés dans le dossier <code class="docutils literal notranslate"><span class="pre">Musique</span></code>.</p></li>
+<li><p>Ils seront lus par ordre alphabétique.</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/spo3.png" id="id2"><img alt="_images/spo3.png" class="align-center" id="id2" src="_images/spo3.png" style="width: 600px;" />
+</a>
+</section>
+<hr class="docutils" />
+<section id="configuration-des-horaires-de-lecture">
+<h2>Configuration des horaires de lecture<a class="headerlink" href="#configuration-des-horaires-de-lecture" title="Link to this heading">#</a></h2>
+<p>Pour modifier les horaires de lecture des fichiers :</p>
+<ul>
+<li><p>Rendez-vous aux lignes 74 à 78 du script.</p></li>
+<li><p>La première ligne indique que le premier fichier mp3 sera lu à 07h40, la deuxième ligne que le deuxième fichier sera lu à 10h15:20, etc.<br />
+Vous pouvez ainsi définir l’heure de lecture de chaque fichier mp3.</p></li>
+<li><p>Exemple :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">allMp3Files</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;07:40:00&quot;</span><span class="p">),</span>
+<span class="p">(</span><span class="n">allMp3Files</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;10:15:20&quot;</span><span class="p">),</span>
+<span class="p">(</span><span class="n">allMp3Files</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;10:30:00&quot;</span><span class="p">),</span>
+<span class="c1"># Ajouter ici d’autres fichiers si besoin</span>
+<span class="p">(</span><span class="n">allMp3Files</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;10:35:00&quot;</span><span class="p">),</span>
+</pre></div>
+</div>
+</li>
+<li><p>Ajoutez une ligne par fichier supplémentaire.</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/spo4.png" id="id3"><img alt="_images/spo4.png" class="align-center" id="id3" src="_images/spo4.png" style="width: 800px;" />
+</a>
+</section>
+<hr class="docutils" />
+<section id="configuration-des-dates-de-debut-et-de-fin">
+<h2>Configuration des dates de début et de fin<a class="headerlink" href="#configuration-des-dates-de-debut-et-de-fin" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Rendez-vous aux lignes 82 à 84 du script.</p></li>
+<li><p>Modifiez les dates de début et de fin selon vos besoins (possible sur plusieurs jours).</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/spo5.png" id="id4"><img alt="_images/spo5.png" class="align-center" id="id4" src="_images/spo5.png" style="width: 800px;" />
+</a>
+<hr class="docutils" />
+<hr class="docutils" />
 </section>
 </section>
 
@@ -515,20 +562,20 @@ En suite cliquer et télécharger le premier profils
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="JamfImportantRules.html"
+       href="UtileProblemUserLogin.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Liste des règles jamf les plus utiles/importantes</p>
+        <p class="prev-next-title">Problème « Vous ne pouvez pas vous connecter au compte utilisateur pour le moment »</p>
       </div>
     </a>
     <a class="right-next"
-       href="JamfAddRule.html"
+       href="VM-MachineVirtuelle.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Créer une règle sur Jamf</p>
+        <p class="prev-next-title">Section MachineVirtuelle</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -548,7 +595,11 @@ En suite cliquer et télécharger le premier profils
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#se-connecter-a-dgep-enroll">Se connecter à DGEP Enroll</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organisation-des-dossiers">Organisation des dossiers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lancer-le-script">Lancer le script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fonctionnement">Fonctionnement</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-des-horaires-de-lecture">Configuration des horaires de lecture</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-des-dates-de-debut-et-de-fin">Configuration des dates de début et de fin</a></li>
 </ul>
   </nav></div>
 

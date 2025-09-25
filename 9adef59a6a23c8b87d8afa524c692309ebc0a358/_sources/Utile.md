@@ -33,3 +33,4 @@ Description:	Mise à jour de la page de la section Utile
 24. [Documentation sur la création de carte sur PaperCut](/UtileCartePaperCut.md)
 25. [Documentation sur la création d'utilisateur local sur JAMF](/UtileCreateUser.md)
 26. [Documentation sur comment résoudre le problème de login ](/UtileProblemUserLogin.md)
+27. [Automatiser la lecture de fichiers audio (.mp3) à des horaires précis pour l’événement « Silence On Lit ». ](/UtileSpo.md)
