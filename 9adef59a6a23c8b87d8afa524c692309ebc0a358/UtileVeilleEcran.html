@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Les Cartes Papercut &#8212; Documentation Technique Chamblandes</title>
+    <title>Désactiver la veille et l’extinction automatique sur un Mac &#8212; Documentation Technique Chamblandes</title>
   
   
   
@@ -58,11 +58,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'UtileCartePaperCut';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'UtileVeilleEcran';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Documentation JAMF — Création d’un utilisateur local" href="UtileCreateUser.html" />
-    <link rel="prev" title="Documentation JAMF — Self Service" href="UtileSelfService.html" />
+    <link rel="next" title="Section MachineVirtuelle" href="VM-MachineVirtuelle.html" />
+    <link rel="prev" title="Documentation — Semaine Silence On Lit" href="UtileSpo.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -247,13 +247,13 @@
 
 <li class="toctree-l2"><a class="reference internal" href="UtileRasspberryPI.html">Raspberry Pi : Affichage automatique de photos &amp; vidéos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileSelfService.html">Documentation JAMF — Self Service</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Les Cartes Papercut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UtileCartePaperCut.html">Les Cartes Papercut</a></li>
 
 
 <li class="toctree-l2"><a class="reference internal" href="UtileCreateUser.html">Documentation JAMF — Création d’un utilisateur local</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileProblemUserLogin.html">Problème « Vous ne pouvez pas vous connecter au compte utilisateur pour le moment »</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileSpo.html">Documentation — Semaine Silence On Lit</a></li>
-<li class="toctree-l2"><a class="reference internal" href="UtileVeilleEcran.html">Désactiver la veille et l’extinction automatique sur un Mac</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Désactiver la veille et l’extinction automatique sur un Mac</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="VM-MachineVirtuelle.html">Section MachineVirtuelle</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -336,7 +336,7 @@
       
       
       
-      <li><a href="_sources/UtileCartePaperCut.md" target="_blank"
+      <li><a href="_sources/UtileVeilleEcran.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -420,7 +420,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Les Cartes Papercut</h1>
+    <h1>Désactiver la veille et l’extinction automatique sur un Mac</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -430,21 +430,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Les Cartes Papercut</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#execution-du-script-et-importation-des-cartes">Exécution du script et importation des cartes</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#retirer-les-profils-de-veille-via-jamf">1. Retirer les profils de veille via Jamf</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regler-le-temps-decran-sur-jamais">2. Régler le temps d’écran sur « Jamais »</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#desactiver-la-fermeture-automatique-de-session">3. Désactiver la fermeture automatique de session</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifier-et-annuler-les-arrets-redemarrages-programmes-via-le-terminal">4. Vérifier et annuler les arrêts/redémarrages programmés via le terminal</a></li>
 </ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#utiliser-les-cartes">Utiliser les cartes</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5"></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#detail-du-script">Détail du script</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#bon-a-savoir">Bon à savoir</a></li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -455,65 +445,74 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="les-cartes-papercut">
-<h1>Les Cartes Papercut<a class="headerlink" href="#les-cartes-papercut" title="Link to this heading">#</a></h1>
-<section id="execution-du-script-et-importation-des-cartes">
-<h2>Exécution du script et importation des cartes<a class="headerlink" href="#execution-du-script-et-importation-des-cartes" title="Link to this heading">#</a></h2>
-<p>Il faut juste télécharger le dossier puis exécuter le script python. Quand vous lancerez
-le script, il va vous demander le nombre de carte que vous voulez faire et la valeur de
-chaque carte en CHF, puis le script va sortir un csv qui ne faut surtout pas toucher ni
-ouvrir et un PDF avec les cartes à imprimer.</p>
-<a class="reference internal image-reference" href="_images/cartepapercut1.png" id="jamfruledashboard"><img alt="_images/cartepapercut1.png" class="align-center" id="jamfruledashboard" src="_images/cartepapercut1.png" style="width: 500px;" />
+  <!--
+Auteur : [Mussa]
+Date : [30.09.2025]
+Description : Désactiver la veille et l’extinction automatique sur un Mac via Jamf et les réglages système.
+-->
+<section class="tex2jax_ignore mathjax_ignore" id="desactiver-la-veille-et-lextinction-automatique-sur-un-mac">
+<h1>Désactiver la veille et l’extinction automatique sur un Mac<a class="headerlink" href="#desactiver-la-veille-et-lextinction-automatique-sur-un-mac" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p><strong>Objectif</strong> : Configurer un Mac pour qu’il ne se mette pas en veille et ne s’éteigne pas automatiquement.</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="retirer-les-profils-de-veille-via-jamf">
+<h2>1. Retirer les profils de veille via Jamf<a class="headerlink" href="#retirer-les-profils-de-veille-via-jamf" title="Link to this heading">#</a></h2>
+<p>Connectez-vous au dashboard Jamf avec vos identifiants administrateur (<strong>a-xxxxx</strong>) :<br />
+<a class="reference external" href="https://jamf.dgep.edu-vaud.ch:8443/">https://jamf.dgep.edu-vaud.ch:8443/</a></p>
+<a class="reference internal image-reference" href="_images/jamfRuleDashboard.png" id="userveille"><img alt="_images/jamfRuleDashboard.png" class="align-center" id="userveille" src="_images/jamfRuleDashboard.png" style="width: 500px;" />
 </a>
-<p>Dans Papercut, il faut se connecter avec son compte administrateur, puis aller sur
-l’onglet “Cartes”. Sur la droite il y a “Action” et il faut sélectionner “Importer de
-nouvelles cartes”.</p>
-<a class="reference internal image-reference" href="_images/cartepapercut2.png" id="id1"><img alt="_images/cartepapercut2.png" class="align-center" id="id1" src="_images/cartepapercut2.png" style="width: 500px;" />
+<p>Dans le menu <strong>Profils de configuration</strong>, repérez les trois profils suivants :</p>
+<ul class="simple">
+<li><p>EconomiseurEnergie</p></li>
+<li><p>EconomiseurEnergieCo</p></li>
+<li><p>ChangeUser</p></li>
+</ul>
+<p>Pour chacun de ces profils, ajoutez l’ordinateur cible dans le champ <strong>Exclusion</strong>.</p>
+<a class="reference internal image-reference" href="_images/userveille1.png" id="id1"><img alt="_images/userveille1.png" class="align-center" id="id1" src="_images/userveille1.png" style="width: 500px;" />
 </a>
-<section id="id2">
-<h3><a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
-<p>Sur la page “Importer Numéros de carte”, il faut juste choisir le csv du script qui
-s’appelle “importFile.csv” et télécharger.</p>
-<a class="reference internal image-reference" href="_images/cartepapercut3.png" id="id3"><img alt="_images/cartepapercut3.png" class="align-center" id="id3" src="_images/cartepapercut3.png" style="width: 500px;" />
+</section>
+<hr class="docutils" />
+<section id="regler-le-temps-decran-sur-jamais">
+<h2>2. Régler le temps d’écran sur « Jamais »<a class="headerlink" href="#regler-le-temps-decran-sur-jamais" title="Link to this heading">#</a></h2>
+<p>Sur le Mac, ouvrez les <strong>Réglages Système</strong> puis allez dans <strong>Écran verrouillé</strong>.<br />
+Réglez le temps d’écran sur <strong>Jamais</strong>.</p>
+<a class="reference internal image-reference" href="_images/userveille2.png" id="id2"><img alt="_images/userveille2.png" class="align-center" id="id2" src="_images/userveille2.png" style="width: 500px;" />
 </a>
-<p>Et finalement sur la page “Cartes” il y aura les nouvelles cartes qui seront prêtes à être
-utiliser.</p>
 </section>
-</section>
-<section id="utiliser-les-cartes">
-<h2>Utiliser les cartes<a class="headerlink" href="#utiliser-les-cartes" title="Link to this heading">#</a></h2>
-<p>Pour utiliser les cartes il faut aller sur Papercut en tant qu’utilisateur et sur la page
-“Utiliser une carte prépayée” et entrer le numéro de la carte qui est la date de
-création et un numéro aléatoire.</p>
-<a class="reference internal image-reference" href="_images/cartepapercut4.png" id="id4"><img alt="_images/cartepapercut4.png" class="align-center" id="id4" src="_images/cartepapercut4.png" style="width: 500px;" />
+<hr class="docutils" />
+<section id="desactiver-la-fermeture-automatique-de-session">
+<h2>3. Désactiver la fermeture automatique de session<a class="headerlink" href="#desactiver-la-fermeture-automatique-de-session" title="Link to this heading">#</a></h2>
+<p>Toujours dans les <strong>Réglages Système</strong>, rendez-vous dans <strong>Confidentialité et sécurité</strong>.<br />
+Défilez tout en bas et cliquez sur <strong>Avancé</strong>.</p>
+<a class="reference internal image-reference" href="_images/userveille3.png" id="id3"><img alt="_images/userveille3.png" class="align-center" id="id3" src="_images/userveille3.png" style="width: 500px;" />
 </a>
-<section id="id5">
-<h3><a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<p>Décochez l’option <strong>Fermer automatiquement la session en cas d’inactivité</strong>.</p>
+<a class="reference internal image-reference" href="_images/userveille4.png" id="id4"><img alt="_images/userveille4.png" class="align-center" id="id4" src="_images/userveille4.png" style="width: 500px;" />
+</a>
 </section>
+<hr class="docutils" />
+<section id="verifier-et-annuler-les-arrets-redemarrages-programmes-via-le-terminal">
+<h2>4. Vérifier et annuler les arrêts/redémarrages programmés via le terminal<a class="headerlink" href="#verifier-et-annuler-les-arrets-redemarrages-programmes-via-le-terminal" title="Link to this heading">#</a></h2>
+<p>Pour empêcher que le Mac ne s’éteigne ou ne redémarre automatiquement, utilisez le terminal :</p>
+<ol class="arabic">
+<li><p><strong>Vérifier les arrêts ou redémarrages programmés</strong><br />
+Tapez la commande suivante :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pmset<span class="w"> </span>-g<span class="w"> </span>sched
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/userveille5.png" id="id5"><img alt="_images/userveille5.png" class="align-center" id="id5" src="_images/userveille5.png" style="width: 500px;" />
+</a>
+</li>
+<li><p><strong>Annuler tous les arrêts/redémarrages programmés</strong><br />
+Saisissez la commande suivante :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>pmset<span class="w"> </span>schedule<span class="w"> </span>cancelall
+</pre></div>
+</div>
+</li>
+</ol>
+<hr class="docutils" />
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="detail-du-script">
-<h1>Détail du script<a class="headerlink" href="#detail-du-script" title="Link to this heading">#</a></h1>
-<p>La partie à adapter selon vos besoins se trouve aux lignes 70- 96 qui construise le PDF
-à imprimer qui a les cartes à distribuer.
-À la ligne 73, il y a notre logo qui est dans le dossier qui faut juste remplacer.
-À la ligne 74, il y a le titre qui sera sur les cartes (pour nous c’est “Recharge
-impression Konica Minolta salle A301“).
-De la ligne 83 à 89, nous avons les explications pour utiliser les cartes qui faudra
-adapter pour votre infrastructure.
-De la ligne 90 à 91, il y a un rappel sur les frais d’impression.</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="bon-a-savoir">
-<h1>Bon à savoir<a class="headerlink" href="#bon-a-savoir" title="Link to this heading">#</a></h1>
-<p>Si dans le script vous voulez modifiez le code que les utilisateurs doivent rentrer, il y a
-un format spécifique qu’il doit y avoir que nous ne connaissons pas très bien sinon la
-DB des cartes plante. Donc il faut éviter de toucher à cette partie.</p>
-<p>Actuellement avec le script il peut faire un lot par jour, car le code contient la date du
-jour de création et pas avec les minutes et les secondes.</p>
-<p>Les cartes expirent le prochain 31 juil. si vous voulez modifier ce fonctionnement il se
-trouve à aux lignes 59- 62</p>
-<p>Il ne faut pas ouvrir ni modifier le csv crée par le script car il devient inutilisable, donc
-il faut refaire le script pour ravoir un csv qui fonctionne.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -547,20 +546,20 @@ il faut refaire le script pour ravoir un csv qui fonctionne.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="UtileSelfService.html"
+       href="UtileSpo.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Documentation JAMF — Self Service</p>
+        <p class="prev-next-title">Documentation — Semaine Silence On Lit</p>
       </div>
     </a>
     <a class="right-next"
-       href="UtileCreateUser.html"
+       href="VM-MachineVirtuelle.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Documentation JAMF — Création d’un utilisateur local</p>
+        <p class="prev-next-title">Section MachineVirtuelle</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -580,21 +579,11 @@ il faut refaire le script pour ravoir un csv qui fonctionne.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Les Cartes Papercut</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#execution-du-script-et-importation-des-cartes">Exécution du script et importation des cartes</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#retirer-les-profils-de-veille-via-jamf">1. Retirer les profils de veille via Jamf</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regler-le-temps-decran-sur-jamais">2. Régler le temps d’écran sur « Jamais »</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#desactiver-la-fermeture-automatique-de-session">3. Désactiver la fermeture automatique de session</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifier-et-annuler-les-arrets-redemarrages-programmes-via-le-terminal">4. Vérifier et annuler les arrêts/redémarrages programmés via le terminal</a></li>
 </ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#utiliser-les-cartes">Utiliser les cartes</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5"></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#detail-du-script">Détail du script</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#bon-a-savoir">Bon à savoir</a></li>
-</ul>
-
   </nav></div>
 
 </div></div>
