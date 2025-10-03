@@ -430,8 +430,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les-scripts-pour-la-semaine-silence-on-lit-sont-disponibles-sur-teams-dans-gychait-mav-silence-on-lit">Les scripts pour la semaine « Silence On Lit » sont disponibles sur Teams, dans GychaIT &gt; MAV &gt; Silence on lit.</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organisation-des-dossiers">Organisation des dossiers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lancer-le-script">Lancer le script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#script-complet">Script complet</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fonctionnement">Fonctionnement</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-des-horaires-de-lecture">Configuration des horaires de lecture</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-des-dates-de-debut-et-de-fin">Configuration des dates de début et de fin</a></li>
@@ -456,7 +458,9 @@ Description : Documentation d’utilisation du script Semaine Silence On Lit
 <blockquote>
 <div><p><strong>Objectif</strong> : Automatiser la lecture de fichiers audio (.mp3) à des horaires précis pour l’événement « Silence On Lit ».</p>
 </div></blockquote>
-<hr class="docutils" />
+<section id="les-scripts-pour-la-semaine-silence-on-lit-sont-disponibles-sur-teams-dans-gychait-mav-silence-on-lit">
+<h2>Les scripts pour la semaine « Silence On Lit » sont disponibles sur Teams, dans GychaIT &gt; MAV &gt; Silence on lit.<a class="headerlink" href="#les-scripts-pour-la-semaine-silence-on-lit-sont-disponibles-sur-teams-dans-gychait-mav-silence-on-lit" title="Link to this heading">#</a></h2>
+</section>
 <section id="organisation-des-dossiers">
 <h2>Organisation des dossiers<a class="headerlink" href="#organisation-des-dossiers" title="Link to this heading">#</a></h2>
 <p>Sur le bureau, il y a deux dossiers :</p>
@@ -483,6 +487,174 @@ Description : Documentation d’utilisation du script Semaine Silence On Lit
 </div>
 </li>
 </ol>
+</section>
+<hr class="docutils" />
+<section id="script-complet">
+<h2>Script complet<a class="headerlink" href="#script-complet" title="Link to this heading">#</a></h2>
+<p>Voici le script utilisé pour la semaine Silence On Lit :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">subprocess</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+
+<span class="n">VOLUME</span> <span class="o">=</span> <span class="mi">63</span>
+
+<span class="c1"># Régle le volume de sortie du système</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">set_volume</span><span class="p">():</span>
+    <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="s2">&quot;osascript&quot;</span><span class="p">,</span> <span class="s2">&quot;-e&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;set volume output volume </span><span class="si">{</span><span class="n">VOLUME</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">])</span>
+
+<span class="c1"># Lance VLC pour lire un fichier MP3</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">play_mp3</span><span class="p">(</span><span class="n">mp3_file</span><span class="p">):</span>
+    <span class="n">set_volume</span><span class="p">()</span>
+    <span class="n">subprocess</span><span class="o">.</span><span class="n">call</span><span class="p">([</span><span class="s2">&quot;pkill&quot;</span><span class="p">,</span> <span class="s2">&quot;VLC&quot;</span><span class="p">])</span>  <span class="c1"># Ferme toute instance VLC en cours d&#39;exécution</span>
+    <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">([</span><span class="n">vlc_path</span><span class="p">,</span> <span class="n">mp3_file</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Lecture de </span><span class="si">{</span><span class="n">mp3_file</span><span class="si">}</span><span class="s2"> démarrée.&quot;</span><span class="p">)</span>
+
+<span class="c1"># Planifie l&#39;exécution de plusieurs musiques avec des dates et heures précises</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">schedule_multiple_mp3_playbacks</span><span class="p">(</span><span class="n">playback_schedule</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Planifie la lecture de fichiers MP3 à des dates et heures précises.</span>
+<span class="sd">    Args:</span>
+<span class="sd">        playback_schedule: Liste de tuples (fichier_mp3, date, heure)</span>
+<span class="sd">                          où date est au format &quot;YYYY-MM-DD&quot; et heure au format &quot;HH:MM:SS&quot;</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Démarrage de la planification des lectures musicales...&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Nombre de fichiers planifiés : </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">playback_schedule</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">sorted_schedule</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">mp3_file</span><span class="p">,</span> <span class="n">target_date</span><span class="p">,</span> <span class="n">target_time</span> <span class="ow">in</span> <span class="n">playback_schedule</span><span class="p">:</span>
+        <span class="n">target_datetime</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">target_date</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">target_time</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)</span>
+        <span class="n">sorted_schedule</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">mp3_file</span><span class="p">,</span> <span class="n">target_datetime</span><span class="p">))</span>
+    <span class="n">sorted_schedule</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Planification triée par ordre chronologique :&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">mp3_file</span><span class="p">,</span> <span class="n">target_datetime</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sorted_schedule</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">mp3_file</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="si">:</span><span class="s2">2d</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">target_datetime</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> à %H:%M:%S&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">🔄 Démarrage de la surveillance des heures précises...&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;⚡ Mode strict : les chansons ne seront jouées qu&#39;à l&#39;heure exacte !&quot;</span><span class="p">)</span>
+    <span class="n">played_songs</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="n">last_next_song_display</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">now</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+        <span class="n">current_time_str</span> <span class="o">=</span> <span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">mp3_file</span><span class="p">,</span> <span class="n">target_datetime</span> <span class="ow">in</span> <span class="n">sorted_schedule</span><span class="p">:</span>
+            <span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">mp3_file</span><span class="p">)</span>
+            <span class="n">target_time_str</span> <span class="o">=</span> <span class="n">target_datetime</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)</span>
+            <span class="n">schedule_id</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">mp3_file</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">target_time_str</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="k">if</span> <span class="n">current_time_str</span> <span class="o">==</span> <span class="n">target_time_str</span> <span class="ow">and</span> <span class="n">schedule_id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">played_songs</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">🎵 HEURE EXACTE ! Lecture de &#39;</span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s2">&#39; à </span><span class="si">{</span><span class="n">current_time_str</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">play_mp3</span><span class="p">(</span><span class="n">mp3_file</span><span class="p">)</span>
+                <span class="n">played_songs</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">schedule_id</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">target_datetime</span> <span class="o">&lt;</span> <span class="n">now</span> <span class="ow">and</span> <span class="n">schedule_id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">played_songs</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;⏭️  RATÉ : &#39;</span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s2">&#39; devait être joué à </span><span class="si">{</span><span class="n">target_time_str</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">played_songs</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">schedule_id</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">played_songs</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">sorted_schedule</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">✅ Toutes les planifications ont été traitées.&quot;</span><span class="p">)</span>
+            <span class="k">break</span>
+        <span class="n">remaining</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">sorted_schedule</span><span class="p">)</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">played_songs</span><span class="p">)</span>
+        <span class="n">next_song</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">next_datetime</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">for</span> <span class="n">mp3_file</span><span class="p">,</span> <span class="n">target_datetime</span> <span class="ow">in</span> <span class="n">sorted_schedule</span><span class="p">:</span>
+            <span class="n">schedule_id</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">mp3_file</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">target_datetime</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="k">if</span> <span class="n">schedule_id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">played_songs</span> <span class="ow">and</span> <span class="n">target_datetime</span> <span class="o">&gt;</span> <span class="n">now</span><span class="p">:</span>
+                <span class="n">next_song</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">mp3_file</span><span class="p">)</span>
+                <span class="n">next_datetime</span> <span class="o">=</span> <span class="n">target_datetime</span>
+                <span class="k">break</span>
+        <span class="n">current_display</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="n">next_song</span> <span class="ow">and</span> <span class="n">next_datetime</span><span class="p">:</span>
+            <span class="n">time_until_next</span> <span class="o">=</span> <span class="p">(</span><span class="n">next_datetime</span> <span class="o">-</span> <span class="n">now</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">time_until_next</span> <span class="o">&gt;</span> <span class="mi">3600</span><span class="p">:</span>
+                <span class="n">time_display</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;dans </span><span class="si">{</span><span class="n">time_until_next</span><span class="o">/</span><span class="mi">3600</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">h&quot;</span>
+            <span class="k">elif</span> <span class="n">time_until_next</span> <span class="o">&gt;</span> <span class="mi">60</span><span class="p">:</span>
+                <span class="n">time_display</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;dans </span><span class="si">{</span><span class="n">time_until_next</span><span class="o">/</span><span class="mi">60</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">min&quot;</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">time_display</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;dans </span><span class="si">{</span><span class="n">time_until_next</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2">s&quot;</span>
+            <span class="n">current_display</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;🎵 Prochaine : &#39;</span><span class="si">{</span><span class="n">next_song</span><span class="si">}</span><span class="s2">&#39; le </span><span class="si">{</span><span class="n">next_datetime</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">/%m à %H:%M:%S&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">time_display</span><span class="si">}</span><span class="s2">) | Restantes : </span><span class="si">{</span><span class="n">remaining</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">current_display</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;⏰ Aucune chanson à venir | Restantes : </span><span class="si">{</span><span class="n">remaining</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="k">if</span> <span class="n">current_display</span> <span class="o">!=</span> <span class="n">last_next_song_display</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">current_display</span><span class="p">)</span>
+            <span class="n">last_next_song_display</span> <span class="o">=</span> <span class="n">current_display</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">✅ Planification terminée. Toutes les musiques ont été jouées.&quot;</span><span class="p">)</span>
+
+<span class="c1"># Récupère tous les fichiers MP3 dans un dossier</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">getMusic</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+    <span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">natural_sort_key</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">text</span><span class="p">)</span> <span class="k">if</span> <span class="n">text</span><span class="o">.</span><span class="n">isdigit</span><span class="p">()</span> <span class="k">else</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">re</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;([0-9]+)&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="p">)]</span>
+    <span class="n">allMp3Files</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">mp3_files</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">path</span><span class="p">)</span> <span class="k">if</span> <span class="n">f</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.mp3&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">f</span><span class="p">))]</span>
+    <span class="k">for</span> <span class="n">nom_fichier</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">mp3_files</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">natural_sort_key</span><span class="p">):</span>
+        <span class="n">chemin_complet</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">nom_fichier</span><span class="p">)</span>
+        <span class="n">allMp3Files</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">chemin_complet</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;📁 Fichiers trouvés dans </span><span class="si">{</span><span class="n">path</span><span class="si">}</span><span class="s2">:&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">fichier</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">allMp3Files</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">nom_fichier</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">fichier</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   </span><span class="si">{</span><span class="n">i</span><span class="si">:</span><span class="s2">2d</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">nom_fichier</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">allMp3Files</span>
+
+<span class="c1"># Ajoute un intervalle de temps à une heure donnée</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">addTime</span><span class="p">(</span><span class="n">heure_départ</span><span class="p">,</span> <span class="n">interval</span><span class="p">):</span>
+    <span class="n">heure_cible_obj</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">heure_départ</span><span class="p">,</span> <span class="s2">&quot;%H:%M:%S&quot;</span><span class="p">)</span>
+    <span class="n">interval</span> <span class="o">=</span> <span class="n">interval</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+    <span class="n">nouvelle_heure</span> <span class="o">=</span> <span class="n">heure_cible_obj</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">hours</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">interval</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">minutes</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">interval</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="n">seconds</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">interval</span><span class="p">[</span><span class="mi">2</span><span class="p">]))</span>
+    <span class="k">return</span> <span class="n">nouvelle_heure</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%H:%M:%S&quot;</span><span class="p">)</span>
+
+<span class="c1"># Fonction utilitaire pour créer facilement une planification sur plusieurs jours</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">create_daily_schedule</span><span class="p">(</span><span class="n">mp3_files</span><span class="p">,</span> <span class="n">start_date</span><span class="p">,</span> <span class="n">end_date</span><span class="p">,</span> <span class="n">daily_times</span><span class="p">):</span>
+    <span class="n">schedule</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">start_date_obj</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">start_date</span><span class="p">,</span> <span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">end_date_obj</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">end_date</span><span class="p">,</span> <span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">current_date</span> <span class="o">=</span> <span class="n">start_date_obj</span>
+    <span class="n">file_index</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">current_date</span> <span class="o">&lt;=</span> <span class="n">end_date_obj</span><span class="p">:</span>
+        <span class="n">date_str</span> <span class="o">=</span> <span class="n">current_date</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">time_str</span> <span class="ow">in</span> <span class="n">daily_times</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">file_index</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">mp3_files</span><span class="p">):</span>
+                <span class="n">schedule</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">mp3_files</span><span class="p">[</span><span class="n">file_index</span><span class="p">],</span> <span class="n">date_str</span><span class="p">,</span> <span class="n">time_str</span><span class="p">))</span>
+                <span class="n">file_index</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">file_index</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="n">schedule</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">mp3_files</span><span class="p">[</span><span class="n">file_index</span><span class="p">],</span> <span class="n">date_str</span><span class="p">,</span> <span class="n">time_str</span><span class="p">))</span>
+                <span class="n">file_index</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">current_date</span> <span class="o">+=</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">schedule</span>
+
+<span class="c1"># Chemin du dossier musique</span>
+<span class="n">folderMusicPath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="s2">&quot;~/Desktop/musique&quot;</span><span class="p">)</span>
+
+<span class="c1"># Récupère tous les fichiers MP3 du dossier</span>
+<span class="n">allMp3Files</span> <span class="o">=</span> <span class="n">getMusic</span><span class="p">(</span><span class="n">folderMusicPath</span><span class="p">)</span>
+
+<span class="c1"># Liste des planifications avec date et heure précise pour chaque fichier MP3</span>
+<span class="n">playback_schedule</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="n">allMp3Files</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;2025-09-27&quot;</span><span class="p">,</span> <span class="s2">&quot;07:35:10&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">allMp3Files</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;2025-09-27&quot;</span><span class="p">,</span> <span class="s2">&quot;10:15:10&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">allMp3Files</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;2025-09-27&quot;</span><span class="p">,</span> <span class="s2">&quot;11:04:00&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">allMp3Files</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;2025-09-27&quot;</span><span class="p">,</span> <span class="s2">&quot;11:10:36&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">allMp3Files</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="s2">&quot;2025-09-27&quot;</span><span class="p">,</span> <span class="s2">&quot;11:25:00&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">allMp3Files</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="s2">&quot;2025-09-28&quot;</span><span class="p">,</span> <span class="s2">&quot;10:27:55&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">allMp3Files</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="s2">&quot;2025-09-29&quot;</span><span class="p">,</span> <span class="s2">&quot;07:32:46&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">allMp3Files</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span> <span class="s2">&quot;2025-09-29&quot;</span><span class="p">,</span> <span class="s2">&quot;10:15:10&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">allMp3Files</span><span class="p">[</span><span class="mi">8</span><span class="p">],</span> <span class="s2">&quot;2025-09-29&quot;</span><span class="p">,</span> <span class="s2">&quot;10:27:55&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">allMp3Files</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span> <span class="s2">&quot;2025-09-30&quot;</span><span class="p">,</span> <span class="s2">&quot;07:40:34&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">allMp3Files</span><span class="p">[</span><span class="mi">10</span><span class="p">],</span> <span class="s2">&quot;2025-09-30&quot;</span><span class="p">,</span> <span class="s2">&quot;10:15:10&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">allMp3Files</span><span class="p">[</span><span class="mi">11</span><span class="p">],</span> <span class="s2">&quot;2025-09-30&quot;</span><span class="p">,</span> <span class="s2">&quot;10:27:55&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">allMp3Files</span><span class="p">[</span><span class="mi">12</span><span class="p">],</span> <span class="s2">&quot;2025-10-01&quot;</span><span class="p">,</span> <span class="s2">&quot;07:33:16&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">allMp3Files</span><span class="p">[</span><span class="mi">13</span><span class="p">],</span> <span class="s2">&quot;2025-10-01&quot;</span><span class="p">,</span> <span class="s2">&quot;10:15:10&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">allMp3Files</span><span class="p">[</span><span class="mi">14</span><span class="p">],</span> <span class="s2">&quot;2025-10-01&quot;</span><span class="p">,</span> <span class="s2">&quot;10:27:55&quot;</span><span class="p">),</span>
+<span class="p">]</span>
+    
+<span class="c1"># ⚠️ Il est impératif d&#39;avoir le même nombre de fichiers .mp3 dans le dossier que de lignes dans la planification !</span>
+<span class="c1"># Par exemple, ici il y a 15 lignes, donc il faut 15 fichiers .mp3 dans le dossier &#39;musique&#39;.</span>
+
+<span class="c1"># Chemin vers VLC (par défaut sur macOS)</span>
+<span class="n">vlc_path</span> <span class="o">=</span> <span class="s2">&quot;/Applications/VLC.app/Contents/MacOS/VLC&quot;</span>
+
+<span class="c1"># Planifie la lecture de la playlist avec dates et heures précises</span>
+<span class="n">schedule_multiple_mp3_playbacks</span><span class="p">(</span><span class="n">playback_schedule</span><span class="p">)</span>
+</pre></div>
+</div>
 <a class="reference internal image-reference" href="_images/spo2.png" id="id1"><img alt="_images/spo2.png" class="align-center" id="id1" src="_images/spo2.png" style="width: 800px;" />
 </a>
 </section>
@@ -596,8 +768,10 @@ Vous pouvez ainsi définir l’heure de lecture de chaque fichier mp3.</p></li>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les-scripts-pour-la-semaine-silence-on-lit-sont-disponibles-sur-teams-dans-gychait-mav-silence-on-lit">Les scripts pour la semaine « Silence On Lit » sont disponibles sur Teams, dans GychaIT &gt; MAV &gt; Silence on lit.</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organisation-des-dossiers">Organisation des dossiers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lancer-le-script">Lancer le script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#script-complet">Script complet</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fonctionnement">Fonctionnement</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-des-horaires-de-lecture">Configuration des horaires de lecture</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-des-dates-de-debut-et-de-fin">Configuration des dates de début et de fin</a></li>
