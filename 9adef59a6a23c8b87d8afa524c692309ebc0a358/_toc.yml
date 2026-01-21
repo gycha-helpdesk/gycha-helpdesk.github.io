@@ -1,0 +1,70 @@
+format: jb-article
+root: intro
+sections:
+- file: Jamf
+  sections:
+    - file: JamfFirstConnection
+    - file: JamfImportantRules 
+    - file: JamfEnroll
+    - file: JamfAddRule
+    - file: JamfAddPrinter
+    - file: JamfIntelligentGroup
+    - file: JamfCreateProfile
+    - file: JamfOSInstall
+    - file: JamfRechercheAvance
+    - file: JamfUpdateApplication
+    - file: JamfAutoLogout
+    - file: JamfCompareSerialNumberJamfToInv
+    - file: JamfSupprProfil
+    - file: JamfEnrolliPad
+    - file: JamAddAppiPad
+- file: Utile
+  sections:
+    - file: Utilemdp
+    - file: UtileLiensUtiles
+    - file: UtileInformationComplementaire
+    - file: UtileRemoteDesktopServers
+    - file: UtileErreursFrequentes
+    - file: UtileFixReseau
+    - file: UtileErreursImprimante
+    - file: UtilePaperCut
+    - file: UtileInventaire
+    - file: Utilehermes
+    - file: UtileGlpi
+    - file: UtileAnaconda
+    - file: UtileWindowsServer
+    - file: UtileAdobe
+    - file: UtileReinstallMac
+    - file: UtileDisableBluetooth   
+    - file: UtileOrdiPret
+    - file: UtileRenameComuter
+    - file: UtileWifiGuest
+    - file: UtileReinstallerProfiles
+    - file: UtileMFA
+    - file: UtilePreparationCO
+    - file: UtileRasspberryPI
+    - file: UtileSelfService
+    - file: UtileCartePaperCut
+    - file: UtileCreateUser
+    - file: UtileProblemUserLogin
+    - file: UtileSpo
+    - file: UtileVeilleEcran
+    - file: Utilemajteams
+- file: VM-MachineVirtuelle
+  sections:
+    - file: VMwareFusion
+- file: SectionReseau
+  sections:
+    - file: ad
+    - file: Update-inventory
+    - file: Meraki
+    - file: Acronis
+    - file: Plex
+- file: Programmation
+  sections:
+    - file: Programation
+- file: Check
+  sections:
+    - file: CheckPosteToDoList
+    - file: CheckListNewCollaborateur
+    - file: CheckConfigAppleTV
