@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Se connecter à un appareil MikroTik &#8212; Documentation Technique Chamblandes</title>
+    <title>https://jamf.dgep.edu-vaud.ch:8443/ &#8212; Documentation Technique Chamblandes</title>
   
   
   
@@ -58,7 +58,7 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'MikroTik';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'UtileUserExpo';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -337,7 +337,7 @@
       
       
       
-      <li><a href="_sources/MikroTik.md" target="_blank"
+      <li><a href="_sources/UtileUserExpo.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -408,9 +408,7 @@ document.write(`
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -421,26 +419,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Se connecter à un appareil MikroTik</h1>
+    <h1>https://jamf.dgep.edu-vaud.ch:8443/</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Se connecter à un appareil MikroTik</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#login">Login</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#interface">Interface</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#desactiver-le-wi-fi-de-la-borne">Désactiver le wi-fi de la borne</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#liste-des-adresses-ip-des-switchs-mikrotik-netgear">Liste des adresses IP des switchs Mikrotik &amp; Netgear</a></li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -450,103 +433,32 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <!--
-Author:		    Noa Chouriberry
-Date:		    29.03.2023
-Description:    Etapes pour se connecter a une borne mikrotik
--->
-<section class="tex2jax_ignore mathjax_ignore" id="se-connecter-a-un-appareil-mikrotik">
-<h1>Se connecter à un appareil MikroTik<a class="headerlink" href="#se-connecter-a-un-appareil-mikrotik" title="Link to this heading">#</a></h1>
-<blockquote>
-<div><p>Les bornes MikroTik ont leur propre interface. Sur cette page, nous allons voir comment s’y connecter pour pouvoir paramétrer les switch et autre.</p>
-</div></blockquote>
-<section id="login">
-<h2>Login<a class="headerlink" href="#login" title="Link to this heading">#</a></h2>
-<p>Pour se connecter à l’interface du switch MikroTik, il faut prendre un adaptateur ethernet et se brancher au switch.
-Ensuite, il faut rentrer l’adresse ip du switch dans un navigateur (on peut voir la fin de l’adresse sur le switch: elle commence toujours par 10.226.xx.xx)</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="mf">10.226</span><span class="o">.</span><span class="n">xx</span><span class="o">.</span><span class="n">xx</span>
-</pre></div>
-</div>
-<p>Dans mon exemple, voici à quoi cela ressemblerait:</p>
-<a class="reference internal image-reference" href="_images/mikrotik-ip.png" id="microtik-ip"><img alt="_images/mikrotik-ip.png" class="align-center" id="microtik-ip" src="_images/mikrotik-ip.png" style="width: 500px;" />
-</a>
-<p>Quand vous serez connecté au switch, il faudra vous connecter avec ces identifiants:</p>
-<blockquote>
-<div><p>Utilisateur: adminl <br/>
-Mot de passe: 6.67e-11_B32</p>
-</div></blockquote>
-<a class="reference internal image-reference" href="_images/mikrotik-login.png" id="mikrotik-login"><img alt="_images/mikrotik-login.png" class="align-center" id="mikrotik-login" src="_images/mikrotik-login.png" style="width: 500px;" />
-</a>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="interface">
-<h1>Interface<a class="headerlink" href="#interface" title="Link to this heading">#</a></h1>
-<p>Après avoir saisi l’identifiant et le mot de passe, vous serez
-dirigé vers le “dashboard” du MikroTik, qui va ressembler
-à la photo ci-dessous.</p>
-<a class="reference internal image-reference" href="_images/mikrotik-dashboard.png" id="mikrotik-dashboard"><img alt="_images/mikrotik-dashboard.png" class="align-center" id="mikrotik-dashboard" src="_images/mikrotik-dashboard.png" style="width: 500px;" />
-</a>
-<br/>
-Maintenant, vérifiez que vous vous trouvez bien dans la section "WebFig" et dans "Interface"
-<a class="reference internal image-reference" href="_images/mikrotik-webfig.png" id="mikrotik-webfig"><img alt="_images/mikrotik-webfig.png" class="align-center" id="mikrotik-webfig" src="_images/mikrotik-webfig.png" style="width: 500px;" />
-</a>
-<a class="reference internal image-reference" href="_images/mikrotik-interface.png" id="mikrotik-interface"><img alt="_images/mikrotik-interface.png" class="align-center" id="mikrotik-interface" src="_images/mikrotik-interface.png" style="width: 500px;" />
-</a>
-<br/>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="desactiver-le-wi-fi-de-la-borne">
-<h1>Désactiver le wi-fi de la borne<a class="headerlink" href="#desactiver-le-wi-fi-de-la-borne" title="Link to this heading">#</a></h1>
-<p>Pour désactiver le wi-fi de la borne mikrotik, il faut descendre tout en bas sur la même page jusqu’a se retrouver à la ligne “wlan1” de type Wireless:</p>
-<a class="reference internal image-reference" href="_images/mikrotik-wireless.png" id="mikrotik-wireless"><img alt="_images/mikrotik-wireless.png" class="align-center" id="mikrotik-wireless" src="_images/mikrotik-wireless.png" style="width: 500px;" />
-</a>
-<p>Et ensuite il faut cliquer sur le petit “D” au début de la ligne (=disable) pour désactiver le wi-fi.
-Voici à quoi la ligne devrait ressembler:</p>
-<a class="reference internal image-reference" href="_images/mikrotik-disable.png" id="mikrotik-disable"><img alt="_images/mikrotik-disable.png" class="align-center" id="mikrotik-disable" src="_images/mikrotik-disable.png" style="width: 500px;" />
-</a>
-<br/>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="liste-des-adresses-ip-des-switchs-mikrotik-netgear">
-<h1>Liste des adresses IP des switchs Mikrotik &amp; Netgear<a class="headerlink" href="#liste-des-adresses-ip-des-switchs-mikrotik-netgear" title="Link to this heading">#</a></h1>
-<p>Voici la liste des adresses IP de chaque borne mikrotik comme certaines n’ont pas d’étiquettes:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Elles</span> <span class="n">commencent</span> <span class="n">toutes</span> <span class="n">par</span><span class="p">:</span> <span class="mf">10.226</span><span class="o">.</span><span class="n">XX</span><span class="o">.</span><span class="n">XX</span>
-</pre></div>
-</div>
-<p>.32.22 - celui en dessous de notre bureau (il s’appelle c02)<br />
-.32.23 - c05<br />
-.32.30 - b22<br />
-.32.31 - b32<br />
-.32.35 - b45<br />
-.32.46 - spt2<br />
-.32.47 - sport3<br />
-.32.65 - a19b (celui dans notre bureau sur la petite table)
-.32.66 - a18<br />
-.32.67 - C26<br />
-.32.69 - a16<br />
-.32.74 - a34<br />
-.32.75 - a36<br />
-.32.80 - ar8</p>
-<p>Si jamais, voici une liste des adresses IP des switch netgear (dans l’ordre):</p>
-<p>10.226.32.91<br />
-10.226.32.93<br />
-10.226.32.95<br />
-10.226.32.97<br />
-10.226.32.100<br />
-10.226.32.103<br />
-10.226.32.104<br />
-10.226.32.105<br />
-10.226.32.106<br />
-10.226.32.110<br />
-10.226.32.111<br />
-10.226.32.112<br />
-10.226.32.113<br />
-10.226.32.235<br />
-10.226.32.236<br />
-10.226.32.237<br />
-10.226.32.239<br />
-10.226.32.240<br />
-10.226.32.241<br />
-10.226.32.242<br />
-10.226.32.243</p>
+  <p>Le mot de passe de l’utilisateur Expo se trouver dans DGEP Passe.</p>
+<p>Tout d’abord rendez-vous sur Jamf puis connectez-vous avec le compte
+a-xxx</p>
+<hr class="docutils" />
+<section id="https-jamf-dgep-edu-vaud-ch-8443">
+<h1><a class="reference external" href="https://jamf.dgep.edu-vaud.ch:8443/">https://jamf.dgep.edu-vaud.ch:8443/</a><a class="headerlink" href="#https-jamf-dgep-edu-vaud-ch-8443" title="Link to this heading">#</a></h1>
+<hr class="docutils" />
+<p>Ensuite dans la barre à gauche, sélectionnez « Réglges » puis rechercher
+« user expo change MDP »</p>
+<p><img alt="Une image contenant capture d'écran, texte Le contenu généré par l'IApeut être incorrect." src="zshrboaeo.png" />{width=”5.9863517060367455in”
+height=”2.1327034120734907in”}<br />
+<br />
+Une fois que vous êtes dans sur la règle, c’est très simple : Défillez
+jusqu’à « Comptes locaux » puis définissez le nouveau mot de passe.<br />
+<img alt="Une image contenant texte, capture d'écran Le contenu généré par l'IApeut être incorrect." src="imasaswsge2.png" />{width=”6.026388888888889in”
+height=”3.4396653543307085in”}<br />
+<br />
+Ensuite il faut enregistrer la règle, et se rendre dans « Journaux »
+<img alt="Une image contenant texte, capture d'écran Le contenu généré par l'IApeut être incorrect." src="imageasasas3.png" />{width=”5.31496062992126in”
+height=”2.6539654418197727in”}</p>
+<p>Puis il faut Flush tous les MacBook pour que la règle se lance sur tous.</p>
+<p><img alt="Une image contenant texte, ligne, capture d'écran, nombre Le contenugénéré par l'IA peut êtreincorrect." src="imagewad4asw.png" />{width=”5.668278652668416in”
+height=”2.602334864391951in”}</p>
+<p>Enfin, il faut s’assurer que la règle s’est lancée sur tous les
+ordinateurs. Il suffit de lancer cette commande sur les MacBook :</p>
+<p>Sudo jamf policy -event mdpexpo</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -585,28 +497,6 @@ Voici à quoi la ligne devrait ressembler:</p>
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Se connecter à un appareil MikroTik</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#login">Login</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#interface">Interface</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#desactiver-le-wi-fi-de-la-borne">Désactiver le wi-fi de la borne</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#liste-des-adresses-ip-des-switchs-mikrotik-netgear">Liste des adresses IP des switchs Mikrotik &amp; Netgear</a></li>
-</ul>
-
-  </nav></div>
-
-</div></div>
               
             
           </div>

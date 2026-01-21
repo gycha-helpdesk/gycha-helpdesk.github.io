@@ -200,9 +200,10 @@ playback_schedule = [
     (allMp3Files[13], "2025-10-01", "10:15:10"),
     (allMp3Files[14], "2025-10-01", "10:27:55"),
 ]
-    
+
 # ⚠️ Il est impératif d'avoir le même nombre de fichiers .mp3 dans le dossier que de lignes dans la planification !
 # Par exemple, ici il y a 15 lignes, donc il faut 15 fichiers .mp3 dans le dossier 'musique'.
+
 
 # Chemin vers VLC (par défaut sur macOS)
 vlc_path = "/Applications/VLC.app/Contents/MacOS/VLC"
