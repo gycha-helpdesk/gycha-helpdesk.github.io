@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Resolution de problème lier au réseau &#8212; Documentation Technique Chamblandes</title>
+    <title>Supprimer un job d’impression sur une imprimante &#8212; Documentation Technique Chamblandes</title>
   
   
   
@@ -58,11 +58,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'UtileFixReseau';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'UtilePrintJob';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Erreurs des imprimantes" href="UtileErreursImprimante.html" />
-    <link rel="prev" title="Erreurs fréquentes et leurs solutions" href="UtileErreursFrequentes.html" />
+    <link rel="next" title="Section MachineVirtuelle" href="VM-MachineVirtuelle.html" />
+    <link rel="prev" title="Désactiver la veille et l’extinction automatique sur un Mac" href="UtileVeilleEcran.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -213,7 +213,7 @@
 
 
 
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Resolution de problème lier au réseau</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UtileFixReseau.html">Resolution de problème lier au réseau</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileErreursImprimante.html">Erreurs des imprimantes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtilePaperCut.html">Problèmes et solutions PaperCut</a></li>
 
@@ -254,7 +254,7 @@
 <li class="toctree-l2"><a class="reference internal" href="UtileProblemUserLogin.html">Problème « Vous ne pouvez pas vous connecter au compte utilisateur pour le moment »</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileSpo.html">Documentation — Semaine Silence On Lit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UtileVeilleEcran.html">Désactiver la veille et l’extinction automatique sur un Mac</a></li>
-<li class="toctree-l2"><a class="reference internal" href="UtilePrintJob.html">Supprimer un job d’impression sur une imprimante</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Supprimer un job d’impression sur une imprimante</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="VM-MachineVirtuelle.html">Section MachineVirtuelle</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -337,7 +337,7 @@
       
       
       
-      <li><a href="_sources/UtileFixReseau.md" target="_blank"
+      <li><a href="_sources/UtilePrintJob.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -408,9 +408,7 @@ document.write(`
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -421,24 +419,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Resolution de problème lier au réseau</h1>
+    <h1>Supprimer un job d’impression sur une imprimante</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-regler-le-probleme-de-wi-fi-eduvaud-interne-solution-possible">Comment régler le problème de Wi-Fi EDUVAUD-INTERNE (solution possible)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#le-profil-du-wifi-reseau">le profil du wifi/réseau</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme-de-connexion-internet-login-pastille-rouge-ou-reseau-sur-macmini-qui-est-lent-ne-fonctionne-pas-connexion-session-ad">Problème de connexion internet/login (pastille rouge) ou Réseau sur macmini qui est lent / ne fonctionne pas (connexion session AD)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme-compte-ad-est-un-compte-reseau-et-pas-un-compte-mobile">Problème compte AD est un compte réseau et pas un compte mobile</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -448,63 +433,28 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="resolution-de-probleme-lier-au-reseau">
-<h1>Resolution de problème lier au réseau<a class="headerlink" href="#resolution-de-probleme-lier-au-reseau" title="Link to this heading">#</a></h1>
-<section id="comment-regler-le-probleme-de-wi-fi-eduvaud-interne-solution-possible">
-<h2>Comment régler le problème de Wi-Fi EDUVAUD-INTERNE (solution possible)<a class="headerlink" href="#comment-regler-le-probleme-de-wi-fi-eduvaud-interne-solution-possible" title="Link to this heading">#</a></h2>
-<section id="le-profil-du-wifi-reseau">
-<h3>le profil du wifi/réseau<a class="headerlink" href="#le-profil-du-wifi-reseau" title="Link to this heading">#</a></h3>
-<p>Il faut aller dans les profils de la machine et regarder EDUVAUD-INTERNE.</p>
-<a class="reference internal image-reference" href="_images/Profil-EDU-Interne.png" id="favnetwork"><img alt="_images/Profil-EDU-Interne.png" class="align-center" id="favnetwork" src="_images/Profil-EDU-Interne.png" style="width: 300px;" />
+  <!--
+Auteur : Maxence Lopez
+Date : 03.02.2026
+Description : Nettoyer la queue d'impression d'une imprimante
+-->
+<section class="tex2jax_ignore mathjax_ignore" id="supprimer-un-job-d-impression-sur-une-imprimante">
+<h1>Supprimer un job d’impression sur une imprimante<a class="headerlink" href="#supprimer-un-job-d-impression-sur-une-imprimante" title="Link to this heading">#</a></h1>
+<p>Pour commancer il ets nécessaire de se trouver sur le serveur d’impression.
+PC Name: <a class="reference external" href="http://pge000001.dgep.edu-vaud.ch">pge000001.dgep.edu-vaud.ch</a><br>
+Pour se connecter au serveur d’impression il est nécessaire de passer par le serveur.
+PC Name: <a class="reference external" href="http://rdfarm.dgep.edu-vaud.ch">rdfarm.dgep.edu-vaud.ch</a><br>
+Une fois sur rdfarm ouvrez mRemoteNG
+Créez une nouvelle connexion et ajouter le hostname dans le champ en en bas.</p>
+<a class="reference internal image-reference" href="_images/prisrv-mrng.png" id="prisrv-mrng"><img alt="_images/prisrv-mrng.png" class="align-center" id="prisrv-mrng" src="_images/prisrv-mrng.png" style="width: 400px;" />
 </a>
-<p>Dedans il faut voire à qui a été disribué (en ouvrant le profil et en scrollant un peu il y a le nom)</p>
-<a class="reference internal image-reference" href="_images/Nom-certificat-EDU-Interne.png" id="id1"><img alt="_images/Nom-certificat-EDU-Interne.png" class="align-center" id="id1" src="_images/Nom-certificat-EDU-Interne.png" style="width: 400px;" />
+<p>Une fois dans le serveur d’impression allez dans le gestionnaire de serveur puis “tools” &gt; “Print Management”</p>
+<a class="reference internal image-reference" href="_images/print-mng.png" id="print-mng"><img alt="_images/print-mng.png" class="align-center" id="print-mng" src="_images/print-mng.png" style="width: 600px;" />
 </a>
-<p>et si ce n’est pas la même (que le nom de la machine actuel) il faut mettre la machine dans les exclusions des Profils de configuration JAMF (EDUVAUD-INTERNE) et l’enlever. C’est la même procédure si la machine n’a pas de réseau filaire, le profil est Wired-EDUVAUD-INTERNE et le nom sous les Profils de configuration JAMF (Wired-EDUVAUD-INTERNE)</p>
-</section>
-</section>
-<section id="probleme-de-connexion-internet-login-pastille-rouge-ou-reseau-sur-macmini-qui-est-lent-ne-fonctionne-pas-connexion-session-ad">
-<h2>Problème de connexion internet/login (pastille rouge) ou Réseau sur macmini qui est lent / ne fonctionne pas (connexion session AD)<a class="headerlink" href="#probleme-de-connexion-internet-login-pastille-rouge-ou-reseau-sur-macmini-qui-est-lent-ne-fonctionne-pas-connexion-session-ad" title="Link to this heading">#</a></h2>
-<p>Si vous n’arrivez pas à vous connecter à un poste avec des identifiants eduvaud,</p>
-<ol class="arabic simple">
-<li><p>vérifier les paramètres réseau (ip = <a class="reference external" href="http://10.226.40.xxx">10.226.40.xxx</a> et le DNS pas 127.0.0.1)</p></li>
-<li><p>Executer la commande</p></li>
-</ol>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">jamf</span> <span class="n">policy</span> <span class="o">-</span><span class="n">event</span> <span class="n">binding</span>
-</pre></div>
-</div>
-<p>Si elle reste bloquer pendant 2-3 min il faut faire un control + C, puis la relancer.</p>
-<br>
-<p>Si ça ne fonctionne pas il faut:</p>
-<p>Enlever le poste de l’AD manuellement dans les paramètres -&gt; Utilisateurs et groupes.</p>
-<a class="reference internal image-reference" href="_images/removeAD1.png" id="removead1"><img alt="_images/removeAD1.png" class="align-center" id="removead1" src="_images/removeAD1.png" style="width: 500px;" />
+<p>Allez dans Printers et faites clique droit sur l’imprimante que vous souhaitez nettoyer puis “Open Printer Queue…”</p>
+<a class="reference internal image-reference" href="_images/printers-list.png" id="printers-lists"><img alt="_images/printers-list.png" class="align-center" id="printers-lists" src="_images/printers-list.png" style="width: 600px;" />
 </a>
-<a class="reference internal image-reference" href="_images/removeAD2.png" id="removead2"><img alt="_images/removeAD2.png" class="align-center" id="removead2" src="_images/removeAD2.png" style="width: 500px;" />
-</a>
-<p>il vous demandera 1 ou 2 fois le mot de passe de adminl (remplissez tous les champs).
-<br>
-Puis lancer la règle sudo jamf policy -event binding.
-<br>
-Si ça na toujour pas résolu le problème, il faut Enlever le poste de l’AD manuellement dans les paramètres -&gt; Utilisateurs et groupes. Puis aller dans l’AD et supprimer le poste et refair (sur la machine) sudo jamf policy -event binding.</p>
-</section>
-<section id="probleme-compte-ad-est-un-compte-reseau-et-pas-un-compte-mobile">
-<h2>Problème compte AD est un compte réseau et pas un compte mobile<a class="headerlink" href="#probleme-compte-ad-est-un-compte-reseau-et-pas-un-compte-mobile" title="Link to this heading">#</a></h2>
-<p>Pour savoir si les comptes AD deviennent des compte réseau ou mobile, il faut aller dans les paramètres puis dans utilisateurs et groupes et si vous êtes connecter avec adminl, les compte réseau ne sont pas visible et les comptes mobile oui. les compte réseau on moins de fonctionnalité que les comptes mobile.
-<br>
-<br>
-Pour réparer ce problème il faut aller dans l’utilitaire d’annuaire, déverouiller le cadenas.</p>
-<a class="reference internal image-reference" href="_images/ProblemeCompteReseau1.png" id="problemecomptereseau1"><img alt="_images/ProblemeCompteReseau1.png" class="align-center" id="problemecomptereseau1" src="_images/ProblemeCompteReseau1.png" style="width: 500px;" />
-</a>
-<p>Puis séléctionner le crayon qui est en bas à gauche.</p>
-<a class="reference internal image-reference" href="_images/ProblemeCompteReseau2.png" id="problemecomptereseau2"><img alt="_images/ProblemeCompteReseau2.png" class="align-center" id="problemecomptereseau2" src="_images/ProblemeCompteReseau2.png" style="width: 500px;" />
-</a>
-<p>Sur la nouvelle fenêtre, il faut afficher les options.</p>
-<a class="reference internal image-reference" href="_images/ProblemeCompteReseau3.png" id="problemecomptereseau3"><img alt="_images/ProblemeCompteReseau3.png" class="align-center" id="problemecomptereseau3" src="_images/ProblemeCompteReseau3.png" style="width: 500px;" />
-</a>
-<p>Enfin, cocher “crée un compte mobile” et décocher “exiger une confirmation …”.</p>
-<a class="reference internal image-reference" href="_images/ProblemeCompteReseau4.png" id="id2"><img alt="_images/ProblemeCompteReseau4.png" class="align-center" id="id2" src="_images/ProblemeCompteReseau4.png" style="width: 500px;" />
-</a>
-</section>
+<p>Une fois dans la queue d’impression vous pouvez selecrtionner le/les jobs à supprimer.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -538,20 +488,20 @@ Pour réparer ce problème il faut aller dans l’utilitaire d’annuaire, déve
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="UtileErreursFrequentes.html"
+       href="UtileVeilleEcran.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Erreurs fréquentes et leurs solutions</p>
+        <p class="prev-next-title">Désactiver la veille et l’extinction automatique sur un Mac</p>
       </div>
     </a>
     <a class="right-next"
-       href="UtileErreursImprimante.html"
+       href="VM-MachineVirtuelle.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Erreurs des imprimantes</p>
+        <p class="prev-next-title">Section MachineVirtuelle</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -561,26 +511,6 @@ Pour réparer ce problème il faut aller dans l’utilitaire d’annuaire, déve
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-regler-le-probleme-de-wi-fi-eduvaud-interne-solution-possible">Comment régler le problème de Wi-Fi EDUVAUD-INTERNE (solution possible)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#le-profil-du-wifi-reseau">le profil du wifi/réseau</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme-de-connexion-internet-login-pastille-rouge-ou-reseau-sur-macmini-qui-est-lent-ne-fonctionne-pas-connexion-session-ad">Problème de connexion internet/login (pastille rouge) ou Réseau sur macmini qui est lent / ne fonctionne pas (connexion session AD)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probleme-compte-ad-est-un-compte-reseau-et-pas-un-compte-mobile">Problème compte AD est un compte réseau et pas un compte mobile</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
