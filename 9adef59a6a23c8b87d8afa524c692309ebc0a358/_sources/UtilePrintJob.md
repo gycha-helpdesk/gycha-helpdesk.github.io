@@ -8,7 +8,7 @@ Description : Nettoyer la queue d'impression d'une imprimante
 
 # Supprimer un job d'impression sur une imprimante
 Pour commancer il ets nécessaire de se trouver sur le serveur d'impression.
-PC Name: pge000001.dgep.edu-vaud.ch<br>
+PC Name: gycha-pu-psp01.dgep.edu-vaud.ch<br>
 Pour se connecter au serveur d'impression il est nécessaire de passer par le serveur.
 PC Name: rdfarm.dgep.edu-vaud.ch<br>
 Une fois sur rdfarm ouvrez mRemoteNG

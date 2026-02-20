@@ -15,7 +15,7 @@ Cette page vous sera utile si vous recherchez de l'aide concernant PaperCut.
 
 # Comment retrouver le code PaperCut d'un élève
 
-Pour commencer, il faut se connecter au serveur papercut (pge000001) depuis Microsoft Remote Desktop:
+Pour commencer, il faut se connecter au serveur papercut (gycha-pu-psp01) depuis Microsoft Remote Desktop:
 
 Ensuite, il faut cliquer sur le logo Windows, aller au dossier PaperCut MF et ouvrir Admin Login:
 

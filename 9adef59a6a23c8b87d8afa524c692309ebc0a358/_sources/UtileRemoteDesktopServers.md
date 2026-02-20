@@ -42,4 +42,4 @@ Dans rdfarm, ouvrez l'application **mRemoteNG**, puis faites un nouveau dossier,
 Copier le model et changer dans connection->Hostname le nom du serveur.
 Voici quelque nom de serveur qui pourrait vous être utile:
 
-Serveurs d'impression: pge000001.dgep.edu-vaud.ch
+Serveurs d'impression: gycha-pu-psp01.dgep.edu-vaud.ch
